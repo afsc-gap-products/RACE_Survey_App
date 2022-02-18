@@ -14,7 +14,7 @@ for (p in pkg) {
 # Sign into google drive-------------------------------------------------------
 
 googledrive::drive_deauth()
-googledrive::drive_auth() #only need to run this once per session
+googledrive::drive_auth() 
 1
 
 
@@ -46,9 +46,9 @@ site <- full_site %>%
 
 # Render Site ------------------------------------------------------------------
 
-# ## we need a column in the spreadsheet to auto-generate proper htmls. Currently they are being manually generated and don't match up with spreadsheet; can use this loop when we have updated
-# 
-# sections <- unique(site$page)
+## we need a column in the spreadsheet to auto-generate proper htmls. Currently they are being manually generated and don't match up with spreadsheet; can use this loop when we update
+
+# sections <- gsub(" ", "_", tolower(unique(site$section)))
 # 
 # 
 # # Knit the HTML version

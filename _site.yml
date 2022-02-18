@@ -1,12 +1,9 @@
-name: "RACE_Survey_App_Distill"
-title: "RACE Survey App via Distill"
-description: |
-  RACE Survey App via Distill
+name: "RACE_Survey_App"
+title: "RACE Survey App"
 output_dir: "docs"
 navbar:
+  search: true
   right:
-    - text: "Home"
-      href: index.html
     - text: "Survey Team"
       href: survey_team.html
     - text: "Safety"
@@ -18,5 +15,7 @@ navbar:
     - text: "Gear Info"
       href: gears.html      
     - text: "Special Projects"
-      href: special_projects.html      
-output: distill::distill_article
+      href: special_projects.html  
+output: 
+  distill::distill_article
+
