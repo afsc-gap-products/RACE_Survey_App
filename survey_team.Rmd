@@ -4,17 +4,36 @@ output: html_document
 ---
 
 ```{r, results = 'asis', echo = F}
+# sub categories for page
+sub_docs <- site %>%
+  filter(subsection == "Survey Team")
 
-sub_docs <- subset(x = site, section == "Survey Team")
+#cleaned sub categories for page
+clean_titles <- gsub(" ", "_", tolower(sub_docs$title))
 
-string <- ""
+#list of html files to check sub categories against
+htmls <- tolower(sub(".html", "", list.files("docs/")))
 
-for (irow in 1:nrow(sub_docs)) {
-  string <- paste0(string,
-            paste0("[", sub_docs$title[irow], "](../",
-                   sub_docs$url_loc[irow], ")", "<br><br>")
-            )
+
+#link to html if files exists, otherwise link to forms_files folder
+for (i in 1:nrow(sub_docs)) {
+  if(clean_titles[[i]] %in% htmls){
+  string <- paste0("[", sub_docs$title[[i]], "](", clean_titles[[i]], ".html)", "<br><br>")
+} else {
+  string <- paste0("[", sub_docs$title[[i]], "](../", sub_docs$url_loc[irow], ")", "<br><br>")
+}
+  cat(string)
 }
 
-cat(string)
+
+# string <- ""
+# 
+# for (irow in 1:nrow(sub_docs)) {
+#   string <- paste0(string,
+#             paste0("[", sub_docs$title[irow], "](../",
+#                    sub_docs$url_loc[irow], ")", "<br><br>")
+#             )
+# }
+#
+# cat(string)
 ```

@@ -7,7 +7,7 @@ output: html_document
 folder <- "forms_files/Travel/flight itineraries/"
 year <- as.numeric(format(Sys.Date(), "%Y"))
 
-#if updated folder not yet created, run last years
+#if updated folder not yet created run last years info
 if(year %in% list.files(folder)){
   yr  <- year
 } else {
@@ -32,6 +32,9 @@ tmp_table <- tibble(full_file = travel_plans,
 tabl <- tmp_table %>%
   select(Name:Link)
 
+
+
+cat(paste("####", yr, "Survey Year"), '\n\n')
 
 kableExtra::kable(tabl, format = "html", linesep = "",
                   align = c("l", rep("c",4),"l"))
