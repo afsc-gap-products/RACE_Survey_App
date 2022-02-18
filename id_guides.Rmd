@@ -1,0 +1,13 @@
+---
+title: "Identification Guides"
+output: html_document
+---
+
+
+This is where information will be stored for the following sections:
+
+* ID Guides
+
+* Species Manuals
+
+* Protected Species

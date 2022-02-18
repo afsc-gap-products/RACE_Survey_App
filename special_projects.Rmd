@@ -1,0 +1,10 @@
+---
+title: "Special Projects"
+output: html_document
+---
+
+This is where information will be stored for the following sections:
+
+* AIGOA Special Projects
+
+* EBS Special Projects

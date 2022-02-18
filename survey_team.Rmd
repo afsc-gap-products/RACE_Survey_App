@@ -1,0 +1,20 @@
+---
+title: "Survey Team"
+output: html_document
+---
+
+```{r, results = 'asis', echo = F}
+
+sub_docs <- subset(x = site, section == "Survey Team")
+
+string <- ""
+
+for (irow in 1:nrow(sub_docs)) {
+  string <- paste0(string,
+            paste0("[", sub_docs$title[irow], "](../",
+                   sub_docs$url_loc[irow], ")", "<br><br>")
+            )
+}
+
+cat(string)
+```

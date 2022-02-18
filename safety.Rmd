@@ -1,0 +1,18 @@
+---
+title: "Safety Information"
+output: html_document
+---
+
+This is where information will be stored for the following sections:
+
+* Safety
+ 
+* [COVID-19](safety_covid.html)
+
+* [Work Environment](safety_work_environment.html)
+
+* Accidents
+
+* Hazmat
+
+* Chemical Handling
