@@ -3,11 +3,33 @@ title: "Identification Guides"
 output: html_document
 ---
 
+```{r, results = 'asis', echo = F}
+path <- "forms_files/species_identification/"
 
-This is where information will be stored for the following sections:
+codes_path <- paste0(path, "/Species and SurveyCodes_2019.pdf")
 
-* ID Guides
+cat(paste("####Species and Survey Codebook"), '\n\n')
+```
 
-* Species Manuals
 
-* Protected Species
+
+## Invertebrates
+```{r, results = 'asis', echo = F}
+
+```
+
+## Fishes
+```{r, results = 'asis', echo = F}
+
+```
+
+## Mammals
+```{r, results = 'asis', echo = F}
+
+```
+
+## Algae
+```{r, results = 'asis', echo = F}
+
+```
+

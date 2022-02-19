@@ -10,8 +10,18 @@ navbar:
       href: safety.html
     - text: "Manuals"
       href: manuals.html
-    - text: "ID Guides"
-      href: id_guides.html
+    - text: "Species ID"
+      menu:
+        - text: "Protected Species"
+          href: protected_species.html
+        - text: "Guides"    
+          href: id_guides.html
+        - text: "ID by taxa"
+          menu:
+            - text: "Inverts"
+              href: inverts_by_taxa.html
+            - text: "Fishes"
+              href: fishes_by_taxa.html
     - text: "Gear Info"
       href: gears.html      
     - text: "Special Projects"

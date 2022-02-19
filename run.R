@@ -93,9 +93,9 @@ rmarkdown::render(paste0("safety_covid.Rmd"),
 #                   output_dir = "docs/",
 #                   output_file =  "special_projects.html")
 # 
-# rmarkdown::render(paste0("id_guides.Rmd"),
-#                   output_dir = "docs/",
-#                   output_file =  "id_guides.html")
+rmarkdown::render(paste0("id_guides.Rmd"),
+                  output_dir = "docs/",
+                  output_file =  "id_guides.html")
 # 
 # rmarkdown::render(paste0("manuals.Rmd"),
 #                   output_dir = "docs/",
