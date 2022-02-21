@@ -19,4 +19,6 @@ navbar:
       href: gears.html      
     - text: "Special Projects"
       href: special_projects.html      
+  search: true
 output: distill::distill_article
+
