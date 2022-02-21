@@ -9,11 +9,23 @@ sub_docs <- subset(x = site, section == "Survey Team")
 
 string <- ""
 
+<<<<<<< HEAD
 for (irow in 1:nrow(sub_docs)) {
   string <- paste0(string,
             paste0("[", sub_docs$title[irow], "](../",
                    sub_docs$url_loc[irow], ")", "<br><br>")
             )
+=======
+
+#link to html if files exists, otherwise link to forms_files folder
+for (i in 1:nrow(sub_docs)) {
+  if(clean_titles[[i]] %in% htmls){
+  string <- paste0("[", sub_docs$title[[i]], "](", clean_titles[[i]], ".html)", "<br><br>")
+} else {
+  string <- paste0("[", sub_docs$title[[i]], "](../", sub_docs$url_loc[i], ")", "<br><br>")
+}
+  cat(string)
+>>>>>>> 8dd70123d5f18c1c77d4ca266629ba0c7678dd62
 }
 
 cat(string)

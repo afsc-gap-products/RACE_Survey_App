@@ -13,19 +13,29 @@ travel_plans <- dir(path)
 tmp_table <- tibble(full_file = travel_plans, 
        file = tools::file_path_sans_ext(gsub(" ", "_", travel_plans))) %>%
   mutate(Name = str_extract(file, "^[A-Za-z]+"),
-         `Leg 1` = ifelse(grepl("leg_1|leg1|l1|_l.+1", tolower(file)), "x", ""), 
-         `Leg 2` = ifelse(grepl("leg_2|leg2|l2|_l.+2", tolower(file)), "x", ""), 
-         `Leg 3` = ifelse(grepl("leg_3|leg3|l3|_l.+3", tolower(file)), "x", ""), 
-         `Leg 4` = ifelse(grepl("leg_4|leg4|l4|_l.+4", tolower(file)), "x", ""), 
+         `Leg 1` = ifelse(grepl("l1|_l.+1", tolower(file)), "x", ""), 
+         `Leg 2` = ifelse(grepl("l2|_l.+2", tolower(file)), "x", ""), 
+         `Leg 3` = ifelse(grepl("l3|_l.+3", tolower(file)), "x", ""), 
+         `Leg 4` = ifelse(grepl("l4|_l.+4", tolower(file)), "x", ""), 
          Conf_No = str_extract(file, "[A-Za-z]+$"),
          Link = paste0("[travel info](\"../", path, gsub(" ","%20",full_file), "\")")) 
 
 tabl <- tmp_table %>%
-  select(Name:Link)
+  select(Name:Link) %>%
+  arrange(Name, Conf_No) %>%
+  filter(!duplicated(.[,1:4]))
 
+options(knitr.kable.NA = '')
 
+<<<<<<< HEAD:personnel_flight_itineraries.Rmd
+=======
+  
+
+cat(paste("####", yr, "Survey Year"), '\n\n')
+
+>>>>>>> 8dd70123d5f18c1c77d4ca266629ba0c7678dd62:flight_itineraries.Rmd
 kableExtra::kable(tabl, format = "html", linesep = "",
-                  align = c("l", rep("c",4),"l"))
+                  align = c("l", rep("c",4),"l")) 
 
 # string <- ""
 # 
