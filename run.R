@@ -88,37 +88,9 @@ for (jj in 1:nrow(comb)){
 #                   output_dir = "./docs/",
 #                   output_file =  "index.html")
 # 
-<<<<<<< HEAD
 # rmarkdown::render(paste0("survey_team.Rmd"),
 #                   output_dir = "docs/",
 #                   output_file =  "survey_team.html")
-=======
-# You will see the link with a combination of numbers and letters at the end, and what you see after `id =`  is the File ID.
-# https://drive.google.com/open?id=***ThisIsFileID***
-#   
-# If your file is already open in a browser, you can obtain File ID from its link:
-# https://docs.google.com/spreadsheets/d/***ThisIsFileID***/edit#gid=123456789 
-
-googledrive::drive_download(file = as_id("1AIQ0JEUA20D-g32uRQfRMZb0wW4SXl2n8Lwb_62uW-o"), 
-                            type = "csv", 
-                            overwrite = TRUE, 
-                            path = paste0("./survey_app_data.csv"))
-
-full_site <- read_csv("./survey_app_data.csv", skip = 1) %>%
-  clean_names()
-
-
-site <- full_site %>%
-  filter(in_survey_app == TRUE)
-
-
-
-# Render Site ------------------------------------------------------------------
-
-## we need a column in the spreadsheet to auto-generate proper htmls. Currently they are being manually generated and don't match up with spreadsheet; can use this loop when we update
-
-# sections <- gsub(" ", "_", tolower(unique(site$section)))
->>>>>>> 8dd70123d5f18c1c77d4ca266629ba0c7678dd62
 # 
 # # rmarkdown::render(paste0("flight_itineraries.Rmd"),
 # #                   output_dir = "./docs/",

@@ -15,13 +15,7 @@ navbar:
     - text: "Gear Info"
       href: gears.html      
     - text: "Special Projects"
-<<<<<<< HEAD
       href: special_projects.html      
   search: true
 output: distill::distill_article
-=======
-      href: special_projects.html  
-output: 
-  distill::distill_article
->>>>>>> 8dd70123d5f18c1c77d4ca266629ba0c7678dd62
 
