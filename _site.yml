@@ -1,15 +1,71 @@
 name: "RACE_Survey_App"
-title: "RACE Survey App"
 output_dir: "docs"
 navbar:
+  title: "RACE_Survey_App"
+  logo:
+    image: img/logo.png
+    href: https://github.com/zoyafuso-NOAA/RACE_Survey_App_TEST.io
   search: true
   right:
-    - text: "Survey Team"
-      href: survey_team.html
-    - text: "Safety"
-      href: safety.html
+    - text: "Aatest"
+      href: aatest.html
+      menu:
+        - text: "Btest"
+          href: aatest_btest.html
+    - text: "Accidents"
+      href: accidents.html
+      menu:
+        - text: "Accidents"
+          href: accidents_accidents.html
+    - text: "Checklist End"
+      href: checklist_end.html
+      menu:
+        - text: "Checklist For Fpc And Deck Lead At End Of Survey"
+          href: checklist_end_checklist_for_fpc_and_deck_lead_at_end_of_survey.html
+    - text: "Checklist In"
+      href: checklist_in.html
+      menu:
+        - text: "Checklist For Incoming Fpc And Deck Lead"
+          href: checklist_in_checklist_for_incoming_fpc_and_deck_lead.html
+    - text: "Checklist Out"
+      href: checklist_out.html
+      menu:
+        - text: "Checklist For Fpc And Deck Lead Between Legs"
+          href: checklist_out_checklist_for_fpc_and_deck_lead_between_legs.html
+    - text: "Main"
+      href: main.html
+      menu:
+        - text: "Alaska Species Id"
+          href: main_alaska_species_id.html
+        - text: "Contacts"
+          href: main_contacts.html
+        - text: "Forms"
+          href: main_forms.html
+        - text: "General Info"
+          href: main_general_info.html
+        - text: "Incident Illness Accident And Emergency Flowchart"
+          href: main_incident_illness_accident_and_emergency_flowchart.html
+        - text: "Lists"
+          href: main_lists.html
+        - text: "Manuals And References"
+          href: main_manuals_and_references.html
+        - text: "Protected Species Mitigation"
+          href: main_protected_species_mitigation.html
+        - text: "Safety"
+          href: main_safety.html
+        - text: "Software And Drivers"
+          href: main_software_and_drivers.html
+        - text: "Special Projects"
+          href: main_special_projects.html
+        - text: "Survey Operations"
+          href: main_survey_operations.html
+        - text: "Survey Team"
+          href: main_survey_team.html
+        - text: "Videos"
+          href: main_videos.html
     - text: "Manuals"
       href: manuals.html
+<<<<<<< HEAD
     - text: "Species ID"
       menu:
         - text: "Protected Species"
@@ -28,4 +84,19 @@ navbar:
       href: special_projects.html  
 output: 
   distill::distill_article
+=======
+      menu:
+    - text: "Personnel"
+      href: personnel.html
+      menu:
+        - text: "Flight Itineraries"
+          href: personnel_flight_itineraries.html
+    - text: "Software"
+      href: software.html
+      menu:
+        - text: "Software & Drivers"
+          href: software_software_&_drivers.html
+
+output: distill::distill_article
+>>>>>>> ee2077882433da24fe0300bd2de3b3cd385842bc
 
