@@ -1,4 +1,5 @@
 # --------------------------------------
+# Project: RACE SURVEY APP
 # Developed by: Zach Oyafuso, Sarah Friedman, Emily Markowitz, Liz Dawson
 # Date: Feb 2022
 # --------------------------------------
@@ -6,8 +7,10 @@
 
 # EHM TO DO
  # - fix how images are shown on pages
- # - automate yaml to match heirarchy in spreadsheet
+ # - fix how check_links checks local links
+ # - automate yaml to match heirarchy in spreadsheet - DONE EHM
  # - fix how descrip column works in template pages 
+ # - page_desc <- "blank" # TOLEDO, need to change
 
 # Knowns ----------------------------------------------------------------------
 
@@ -37,17 +40,6 @@ checkLinks(URLs = full_site0$url_loc)
 checkLinks(URLs = full_site0$url_web)
 
 checkLinks(URLs = full_site0$img)
-
-# comb <- tidyr::crossing(page0 = unique(site$page0), 
-#                         sub_page0 = unique(site$sub_page0)) %>% 
-comb <- site %>% 
-  dplyr::select(page0, sub_page0, web_page) %>% 
-  dplyr::distinct() %>%
-  dplyr::arrange(page0, sub_page0) %>%
-  # CHECK! - define here pages that you don't want to use the template for!
-  dplyr::mutate(template = dplyr::case_when(
-    sub_page0 == "flight_itineraries" ~ FALSE, 
-    TRUE ~ TRUE)) 
 
 # create all pages
 for (jj in 1:nrow(comb)){

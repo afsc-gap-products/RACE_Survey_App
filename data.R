@@ -1,6 +1,12 @@
+# --------------------------------------
+# Project: RACE SURVEY APP
+# Developed by: Zach Oyafuso, Sarah Friedman, Emily Markowitz, Liz Dawson
+# Date: Feb 2022
+# --------------------------------------
 
 
 # Load Data --------------------------------------------------------------------
+
 # How to find the google drive ID of a document
 # Google Drive File ID is a unique identifier of the file on Google Drive. File IDs are stable throughout the lifespan of the file, even if the file name changes.
 # 
@@ -85,12 +91,12 @@ for (i in 1:length(temp)) {
 full_site <- full_site %>%
   janitor::clean_names() %>% 
   dplyr::filter(!is.na(page)) %>% 
-  # bind decription bullets together
+  # bind description bullets together
   # dplyr::mutate(across(starts_with('description'), ifelse())) %>% # TOLEDO, add periods to ends of sentences without them in description_ columns
   tidyr::unite( 
     tidyr::starts_with('description'),
     col = "descrip",
-    sep = "\n- - ",
+    sep = "\n - ",
     remove = FALSE,
     na.rm = TRUE
   )  %>% 
@@ -161,3 +167,49 @@ site <- full_site %>%
   dplyr::select(-in_survey_app) %>%
   dplyr::select(-starts_with("url_"), -starts_with("img"), -starts_with("description_")) %>% 
   dplyr::distinct()
+
+
+# Write yml --------------------------------------------------------------------
+
+# find combinations of pages
+comb <- site %>% 
+  dplyr::select(page0, page, sub_page0, sub_page, web_page) %>% 
+  dplyr::distinct() %>%
+  # CHECK! - define here pages that you don't want to use the template for!
+  dplyr::mutate(
+    template = dplyr::case_when(
+      page0 == "index" ~ FALSE, 
+      sub_page0 == "flight_itineraries" ~ FALSE, 
+      TRUE ~ TRUE))  %>%
+  dplyr::arrange(page0, sub_page0)
+
+# Write _site.yml
+site_yml <- base::readLines("_site_template.txt")
+
+a <- paste0(
+ifelse(comb$sub_page0=="", "    - ", "        - "), 
+'text: "', 
+ifelse(comb$sub_page0=="", comb$page, comb$sub_page),'"
+', 
+ifelse(comb$sub_page0=="", "      ", "          "),
+'href: ',comb$web_page, '
+', 
+ifelse(comb$sub_page0=="", "      menu:
+", ""), 
+collapse = "")
+
+site_yml<-gsub(
+  pattern = "INSERT_NAVIGATION",
+  replacement = a,
+  x = site_yml, fixed = TRUE)
+
+# write new yml file
+utils::write.table(x = site_yml,
+                   file = "_site.yml",
+                   row.names = FALSE,
+                   col.names = FALSE,
+                   quote = FALSE)
+
+# make comb neat :)
+comb <- comb %>% 
+  dplyr::select(page0, page, sub_page0, sub_page, web_page, template) 
