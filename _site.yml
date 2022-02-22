@@ -32,9 +32,6 @@ navbar:
       menu:
         - text: "Checklist For Fpc And Deck Lead Between Legs"
           href: checklist_out_checklist_for_fpc_and_deck_lead_between_legs.html
-    - text: "Index"
-      href: index.html
-      menu:
     - text: "Main"
       href: main.html
       menu:

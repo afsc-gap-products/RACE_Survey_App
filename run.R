@@ -5,12 +5,12 @@
 #' --------------------------------------
 
 # TO DO
- # fix template title of website
  # fix how images are shown on pages
  # fix how check_links checks local links
  # fix how descrip column works in template pages 
  # page_desc <- "blank" # need to change
  # add periods at the end of the title/subtitles before links
+ # [DONE - EHM] fix template title of website
  # [DONE - EHM] automate yaml to match heirarchy in spreadsheet
 
 # Knowns ----------------------------------------------------------------------
@@ -56,7 +56,11 @@ comb <- comb %>%
 for (jj in 1:nrow(comb)){
   
   page_desc <- "blank" # TOLEDO, need to change
-  
+  page_title <- ifelse(
+    page_dat$sub_page[1]=="", 
+    page_dat$page[1],
+    stringr::str_to_title(paste0(page_dat$page[1], ' | ', 
+                                 page_dat$sub_page[1])))
   # if the the page requires a non-template page structure
   if (comb$template[jj] == FALSE) {
     rmarkdown::render(gsub(pattern = ".html", replacement = ".rmd", x = comb$web_page[jj]),

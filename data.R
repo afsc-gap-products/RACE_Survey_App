@@ -198,15 +198,18 @@ comb <- site %>%
 # Write _site.yml
 site_yml <- base::readLines("_site_template.txt")
 
+comb0 <- comb %>%
+  dplyr::filter(page0 != "index")
+
 a <- paste0(
-  ifelse(comb$sub_page0 == "", "    - ", "        - "),
+  ifelse(comb0$sub_page0 == "", "    - ", "        - "),
   'text: "',
-  ifelse(comb$sub_page0 == "", comb$page, comb$sub_page), '"
+  ifelse(comb0$sub_page0 == "", comb0$page, comb0$sub_page), '"
 ',
-  ifelse(comb$sub_page0 == "", "      ", "          "),
-  "href: ", comb$web_page, "
+  ifelse(comb0$sub_page0 == "", "      ", "          "),
+  "href: ", comb0$web_page, "
 ",
-  ifelse(comb$sub_page0 == "", "      menu:
+  ifelse(comb0$sub_page0 == "", "      menu:
 ", ""),
   collapse = ""
 )
