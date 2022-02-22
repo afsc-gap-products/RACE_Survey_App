@@ -6,7 +6,7 @@ output: html_document
 ```{r, results = 'asis', echo = F}
 #this_year <- format(Sys.Date(), "%Y")
 
-path <- paste0("/forms_files/Travel/flight itineraries/", this_year, "/")
+path <- paste0("./forms_files/Travel/flight itineraries/", this_year, "/")
 travel_plans <- dir(path)
 
 
@@ -27,13 +27,8 @@ tabl <- tmp_table %>%
 
 options(knitr.kable.NA = '')
 
-<<<<<<< HEAD:personnel_flight_itineraries.Rmd
-=======
-  
+cat(paste("####", this_year, "Survey Year"), '\n\n')
 
-cat(paste("####", yr, "Survey Year"), '\n\n')
-
->>>>>>> 8dd70123d5f18c1c77d4ca266629ba0c7678dd62:flight_itineraries.Rmd
 kableExtra::kable(tabl, format = "html", linesep = "",
                   align = c("l", rep("c",4),"l")) 
 

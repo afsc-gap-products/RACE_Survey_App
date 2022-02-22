@@ -1,3 +1,9 @@
+#' --------------------------------------
+#' Project: RACE SURVEY APP
+#' Developed by: Zach Oyafuso, Sarah Friedman, Emily Markowitz, Liz Dawson
+#' Date: Feb 2022
+#' --------------------------------------
+
 ## Load packages -----------------------------------------------------------
 pkg <- c(#"tidyverse",
          "stringr",

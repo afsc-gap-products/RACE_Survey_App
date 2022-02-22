@@ -1,10 +1,11 @@
-# --------------------------------------
-# Project: RACE SURVEY APP
-# Developed by: Zach Oyafuso, Sarah Friedman, Emily Markowitz, Liz Dawson
-# Date: Feb 2022
-# --------------------------------------
+#' --------------------------------------
+#' Project: RACE SURVEY APP
+#' Developed by: Zach Oyafuso, Sarah Friedman, Emily Markowitz, Liz Dawson
+#' Date: Feb 2022
+#' --------------------------------------
 
 # TO DO
+ # fix template title of website
  # fix how images are shown on pages
  # fix how check_links checks local links
  # fix how descrip column works in template pages 
@@ -35,11 +36,11 @@ source("./data.R")
 
 # listed below are links that do not work
 
-checkLinks(URLs = full_site0$url_loc)
-
-checkLinks(URLs = full_site0$url_web)
-
-checkLinks(URLs = full_site0$img)
+# checkLinks(URLs = full_site0$url_loc)
+# 
+# checkLinks(URLs = full_site0$url_web)
+# 
+# checkLinks(URLs = full_site0$img)
 
 # create all pages -------------------------------------------------------------
 
