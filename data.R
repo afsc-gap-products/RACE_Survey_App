@@ -71,7 +71,7 @@ for (i in 1:length(temp)) {
   }
   
   # if downloading a PDF from a webage
-  # TOLEDO - need to make more accomendating to links without ".pdf" at the end
+  # TOLEDO - need to make more accommodating to links without ".pdf" at the end
   if (grepl(pattern = ".pdf", x = temp[i], fixed = TRUE)) { 
     counter_pdf <- 1 + counter_pdf
     dest <- paste0("./downloaded/downloadedpdf_",counter_pdf,".pdf")
@@ -206,4 +206,4 @@ utils::write.table(x = site_yml,
 
 # make comb neat :)
 comb <- comb %>% 
-  dplyr::select(page0, page, sub_page0, sub_page, web_page, template) 
+  dplyr::select(page0, page, sub_page0, sub_page, web_page) 

@@ -32,6 +32,9 @@ navbar:
       menu:
         - text: "Checklist For Fpc And Deck Lead Between Legs"
           href: checklist_out_checklist_for_fpc_and_deck_lead_between_legs.html
+    - text: "Index"
+      href: index.html
+      menu:
     - text: "Main"
       href: main.html
       menu:
@@ -65,26 +68,6 @@ navbar:
           href: main_videos.html
     - text: "Manuals"
       href: manuals.html
-<<<<<<< HEAD
-    - text: "Species ID"
-      menu:
-        - text: "Protected Species"
-          href: protected_species.html
-        - text: "Guides"    
-          href: id_guides.html
-        - text: "ID by taxa"
-          menu:
-            - text: "Inverts"
-              href: inverts_by_taxa.html
-            - text: "Fishes"
-              href: fishes_by_taxa.html
-    - text: "Gear Info"
-      href: gears.html      
-    - text: "Special Projects"
-      href: special_projects.html  
-output: 
-  distill::distill_article
-=======
       menu:
     - text: "Personnel"
       href: personnel.html
@@ -98,5 +81,4 @@ output:
           href: software_software_&_drivers.html
 
 output: distill::distill_article
->>>>>>> ee2077882433da24fe0300bd2de3b3cd385842bc
 

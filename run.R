@@ -4,13 +4,13 @@
 # Date: Feb 2022
 # --------------------------------------
 
-
-# EHM TO DO
- # - fix how images are shown on pages
- # - fix how check_links checks local links
- # - automate yaml to match heirarchy in spreadsheet - DONE EHM
- # - fix how descrip column works in template pages 
- # - page_desc <- "blank" # TOLEDO, need to change
+# TO DO
+ # fix how images are shown on pages
+ # fix how check_links checks local links
+ # fix how descrip column works in template pages 
+ # page_desc <- "blank" # need to change
+ # add periods at the end of the title/subtitles before links
+ # [DONE - EHM] automate yaml to match heirarchy in spreadsheet
 
 # Knowns ----------------------------------------------------------------------
 

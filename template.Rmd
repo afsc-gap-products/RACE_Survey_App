@@ -9,7 +9,7 @@ site: distill::distill_website
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE)
 ```
 
-## `r ifelse(exists("subpages"), paste0("Subpages"), "") `
+# `r ifelse(exists("subpages"), paste0("Subpages"), "") `
 
 ```{r}
 # stringr::str_to_title(ifelse(page_dat$sub_page[1] == "", page_dat$page[1], paste0(page_dat$page[1], ' | ', page_dat$sub_page[1])))
@@ -25,7 +25,7 @@ if (exists("subpages")){
 
 `r str0`
 
-## `r ifelse(nrow(page_dat) == 0, "", "Content")`
+# `r ifelse(nrow(page_dat) == 0, "", "Content")`
 
 ```{r}
 page_dat <- page_dat %>% 
@@ -48,7 +48,7 @@ for (i in 1:length(unique(page_dat$section))) {
   
   str0 <- paste0("
 
-### ",unique(temp$section)[1], "
+## ",unique(temp$section)[1], "
 
 ", str0)
   
