@@ -273,5 +273,5 @@ comb <- comb %>%
   dplyr::select(page0, page, sub_page0, sub_page, web_page)
 
 ## Remove misc variables
-rm(comb0, full_site, full_site0, metadata, temp, a, counter_pdf,
+rm(comb0, full_site, metadata, temp, a, counter_pdf,
    dest, i, jj, site_yml, type)
