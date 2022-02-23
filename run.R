@@ -19,11 +19,11 @@ dir_googledrive <- "1AIQ0JEUA20D-g32uRQfRMZb0wW4SXl2n8Lwb_62uW-o"
 access_googledrive <- TRUE
 this_year <- "2021" # just doing this for proof of concept
 
-page_data <- data.frame(file_name = c("main", "travel_itinerary"), 
-                        name = c("main", "travel_itinerary"), 
-                        descr = c("Welcome to the website. I hope you enjoy it!", "travel_itinerary"), 
-                        file_folder = c(NA, paste0("forms_files/Travel/flight itineraries/", this_year, "/")), 
-                        template = c(T, F))
+# page_data <- data.frame(file_name = c("main", "travel_itinerary"), 
+#                         name = c("main", "travel_itinerary"), 
+#                         descr = c("Welcome to the website. I hope you enjoy it!", "travel_itinerary"), 
+#                         file_folder = c(NA, paste0("forms_files/Travel/flight itineraries/", this_year, "/")), 
+#                         template = c(T, F))
 
 # Helper files ----------------------------------------------------------------
 googledrive::drive_deauth()

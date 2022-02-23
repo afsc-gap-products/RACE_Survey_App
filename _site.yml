@@ -17,26 +17,18 @@ navbar:
       menu:
         - text: "Accidents"
           href: accidents_accidents.html
-    - text: "Checklist End"
-      href: checklist_end.html
+    - text: "Checklists"
+      href: checklists.html
       menu:
-        - text: "Checklist For Fpc And Deck Lead At End Of Survey"
-          href: checklist_end_checklist_for_fpc_and_deck_lead_at_end_of_survey.html
-    - text: "Checklist In"
-      href: checklist_in.html
-      menu:
-        - text: "Checklist For Incoming Fpc And Deck Lead"
-          href: checklist_in_checklist_for_incoming_fpc_and_deck_lead.html
-    - text: "Checklist Out"
-      href: checklist_out.html
-      menu:
-        - text: "Checklist For Fpc And Deck Lead Between Legs"
-          href: checklist_out_checklist_for_fpc_and_deck_lead_between_legs.html
+        - text: "Checklist End"
+          href: checklists_checklist_end.html
+        - text: "Checklist In"
+          href: checklists_checklist_in.html
+        - text: "Checklist Out"
+          href: checklists_checklist_out.html
     - text: "Main"
       href: main.html
       menu:
-        - text: "Alaska Species Id"
-          href: main_alaska_species_id.html
         - text: "Contacts"
           href: main_contacts.html
         - text: "Forms"
@@ -49,8 +41,6 @@ navbar:
           href: main_lists.html
         - text: "Manuals And References"
           href: main_manuals_and_references.html
-        - text: "Protected Species Mitigation"
-          href: main_protected_species_mitigation.html
         - text: "Safety"
           href: main_safety.html
         - text: "Software And Drivers"
@@ -76,6 +66,15 @@ navbar:
       menu:
         - text: "Software & Drivers"
           href: software_software_&_drivers.html
+    - text: "Species Id"
+      href: species_id.html
+      menu:
+        - text: "Codebook"
+          href: species_id_codebook.html
+        - text: "Guides"
+          href: species_id_guides.html
+        - text: "Protected Species"
+          href: species_id_protected_species.html
 
 output: distill::distill_article
 
