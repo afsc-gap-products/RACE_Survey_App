@@ -1,7 +1,8 @@
 forms_files/
 to_delete/
 Manuals/
-SpecialProject_files/
+SpecialProjects_files/
+
 #.gitignore
 
 # want this to be pulled from googledrive each time
