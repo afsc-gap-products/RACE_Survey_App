@@ -1,0 +1,8 @@
+---
+title: "Checklist for Incoming FPCs and Deck Leads"
+output: html_document
+---
+
+```{r Subset Checklist documents}
+checklist_items <- subset(site, sub_page0 == "checklist_in")
+```

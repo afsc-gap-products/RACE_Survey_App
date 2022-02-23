@@ -50,7 +50,7 @@ comb <- comb %>%
   dplyr::mutate(
     template = dplyr::case_when(
       page0 == "index" ~ FALSE, 
-      sub_page0 == "flight_itineraries" ~ FALSE, 
+      sub_page0 %in% c("flight_itineraries", "checklist_in") ~ FALSE, 
       TRUE ~ TRUE))
 
 for (jj in 1:nrow(comb)){
@@ -90,9 +90,9 @@ for (jj in 1:nrow(comb)){
 }
 
 
-# rmarkdown::render(paste0("index.Rmd"),
+# rmarkdown::render(paste0("checklist_in.Rmd"),
 #                   output_dir = "./docs/",
-#                   output_file =  "index.html")
+#                   output_file =  "checklist_in.html")
 # 
 # rmarkdown::render(paste0("survey_team.Rmd"),
 #                   output_dir = "docs/",
