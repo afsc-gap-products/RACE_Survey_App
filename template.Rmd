@@ -1,0 +1,64 @@
+---
+title: "`r page_title`"
+description: |
+  "`r page_desc `"
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE)
+```
+
+# `r ifelse(exists("subpages"), paste0("Subpages"), "") `
+
+```{r}
+# stringr::str_to_title(ifelse(page_dat$sub_page[1] == "", page_dat$page[1], paste0(page_dat$page[1], ' | ', page_dat$sub_page[1])))
+
+str0 <- ""
+if (exists("subpages")){
+  str0 <- paste("  - [",subpages$sub_page, "](", subpages$web_page,")
+
+", collapse = "") 
+  remove("subpages")
+}
+```
+
+`r str0`
+
+# `r ifelse(nrow(page_dat) == 0, "", "Content")`
+
+```{r}
+str0 <- ""
+
+if (nrow(page_dat) != 0) {
+  page_dat <- page_dat %>% 
+    dplyr::arrange(survey, title)
+  
+  str0 <- ""
+  
+  # need to build in subsection loop
+  
+  for (i in 1:length(unique(page_dat$section))) {
+    temp <- page_dat %>% 
+      dplyr::filter(section == page_dat$section[i])
+    
+    str0 <- paste(paste0("**",temp$title, "**", # title
+            ifelse(is.na(temp$subtitle), "", paste0(": *", temp$subtitle, "*")), # subtitle
+            " ",temp$Links_inline, "
+  ", temp$descrip, "
+  
+  "), collapse = "")
+    
+    str0 <- paste0("
+  
+  ## ",unique(temp$section)[1], "
+  
+  ", str0)
+    
+  }
+}
+```
+
+## `r ifelse((nrow(page_dat) != 0), page_dat$sub_page[1], "") `
+
+`r str0 `

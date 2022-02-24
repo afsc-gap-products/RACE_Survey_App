@@ -1,0 +1,19 @@
+---
+title: "Survey Team"
+output: html_document
+---
+
+```{r, results = 'asis', echo = F}
+string <- ""
+
+for (irow in 1:nrow(site)) {
+  string <- paste0(string,
+            paste0("[", site$title[irow], "](../",
+                   site$url_loc[irow], ")", "<br><br>")
+            )
+}
+
+cat(string)
+
+
+```

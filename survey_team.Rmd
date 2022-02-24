@@ -1,0 +1,23 @@
+---
+title: "Survey Team"
+output: html_document
+---
+
+```{r, results = 'asis', echo = F}
+
+sub_docs <- subset(x = site, section == "Survey Team")
+
+string <- ""
+
+#link to html if files exists, otherwise link to forms_files folder
+for (i in 1:nrow(sub_docs)) {
+  if(clean_titles[[i]] %in% htmls){
+  string <- paste0("[", sub_docs$title[[i]], "](", clean_titles[[i]], ".html)", "<br><br>")
+} else {
+  string <- paste0("[", sub_docs$title[[i]], "](../", sub_docs$url_loc[i], ")", "<br><br>")
+}
+  cat(string)
+}
+
+cat(string)
+```

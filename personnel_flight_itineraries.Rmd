@@ -1,0 +1,45 @@
+---
+title: "Travel Itineraries"
+output: html_document
+---
+
+```{r, results = 'asis', echo = F}
+# this code parses the names of the flight itineraries in this year's folder and generates a table with the person's name, what legs they are one, and the confirmation code. Files must be named with the following information in this order: NAME_Leg1_2_CONFIRMATIONCODE
+
+this_year <- format(Sys.Date(), "%Y")
+
+dir <- "./forms_files/Travel/flight itineraries/"
+
+if(this_year %in% list.files(dir)){
+  year <- this_year
+} else{
+  year <- as.numeric(this_year) - 1
+}
+
+path <- paste0(dir, year, "/")
+travel_plans <- dir(path)
+
+
+tmp_table <- tibble(full_file = travel_plans, 
+       file = tools::file_path_sans_ext(gsub(" ", "_", travel_plans))) %>%
+  mutate(Name = str_extract(file, "^[A-Za-z]+"),
+         `Leg 1` = ifelse(grepl("l1|_l.+1", tolower(file)), "x", ""), 
+         `Leg 2` = ifelse(grepl("l2|_l.+2", tolower(file)), "x", ""), 
+         `Leg 3` = ifelse(grepl("l3|_l.+3", tolower(file)), "x", ""), 
+         `Leg 4` = ifelse(grepl("l4|_l.+4", tolower(file)), "x", ""), 
+         Conf_No = str_extract(file, "[A-Za-z]+$"),
+         Link = paste0("[travel info](../", path, gsub(" ","%20",full_file), ")")) 
+
+tabl <- tmp_table %>%
+  select(Name:Link) %>%
+  arrange(Name, Conf_No) %>%
+  filter(!duplicated(.[,1:4]))
+
+options(knitr.kable.NA = '')
+
+cat(paste("####", year, "Survey Year"), '\n\n')
+
+kableExtra::kable(tabl, format = "html", linesep = "",
+                  align = c("l", rep("c",4),"l")) 
+
+```

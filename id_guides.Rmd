@@ -1,0 +1,35 @@
+---
+title: "Identification Guides"
+output: html_document
+---
+
+```{r, results = 'asis', echo = F}
+path <- "forms_files/species_identification/"
+
+codes_path <- paste0(path, "/Species and SurveyCodes_2019.pdf")
+
+cat(paste("####Species and Survey Codebook"), '\n\n')
+```
+
+
+
+## Invertebrates
+```{r, results = 'asis', echo = F}
+
+```
+
+## Fishes
+```{r, results = 'asis', echo = F}
+
+```
+
+## Mammals
+```{r, results = 'asis', echo = F}
+
+```
+
+## Algae
+```{r, results = 'asis', echo = F}
+
+```
+
