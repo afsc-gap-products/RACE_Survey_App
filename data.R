@@ -149,7 +149,7 @@ full_site <- full_site %>%
     section = ifelse(test = is.na(section), yes = "", no = section),
     subsection = ifelse(test = is.na(subsection), yes = "", no = subsection),
     survey = ifelse(test = is.na(survey), yes = "", no = survey),
-    in_survey_app = ifelse(test = is.na(in_survey_app), yes = FALSE, no = TRUE),
+    # in_survey_app = ifelse(test = is.na(in_survey_app), yes = FALSE, no = TRUE),
     
     # Images
     images = ifelse(test = is.na(img), 
@@ -188,6 +188,9 @@ full_site <- full_site %>%
   dplyr::arrange(page0, sub_page0) %>%
   dplyr::relocate(survey, page, page0, sub_page, sub_page0, section, 
                   subsection, title, subtitle, descrip, images, Links_inline)
+
+## Remove rows not included in survey app (yet)
+full_site <- subset(x = full_site, subset = in_survey_app == TRUE)
 
 # create general pages for each page if not already specified
 for (jj in 1:length(unique(full_site$page0))) {

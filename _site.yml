@@ -7,16 +7,6 @@ navbar:
     href: https://github.com/zoyafuso-NOAA/RACE_Survey_App_TEST.io
   search: true
   right:
-    - text: "Aatest"
-      href: aatest.html
-      menu:
-        - text: "Btest"
-          href: aatest_btest.html
-    - text: "Accidents"
-      href: accidents.html
-      menu:
-        - text: "Accidents"
-          href: accidents_accidents.html
     - text: "Checklists"
       href: checklists.html
       menu:
@@ -26,41 +16,39 @@ navbar:
           href: checklists_checklist_in.html
         - text: "Checklist Out"
           href: checklists_checklist_out.html
-    - text: "Main"
-      href: main.html
+        - text: "Inventory"
+          href: checklists_inventory.html
+    - text: "General Info"
+      href: general_info.html
       menu:
-        - text: "Contacts"
-          href: main_contacts.html
         - text: "Forms"
-          href: main_forms.html
+          href: general_info_forms.html
         - text: "General Info"
-          href: main_general_info.html
-        - text: "Incident Illness Accident And Emergency Flowchart"
-          href: main_incident_illness_accident_and_emergency_flowchart.html
-        - text: "Lists"
-          href: main_lists.html
+          href: general_info_general_info.html
         - text: "Manuals And References"
-          href: main_manuals_and_references.html
-        - text: "Safety"
-          href: main_safety.html
-        - text: "Software And Drivers"
-          href: main_software_and_drivers.html
+          href: general_info_manuals_and_references.html
         - text: "Special Projects"
-          href: main_special_projects.html
+          href: general_info_special_projects.html
         - text: "Survey Operations"
-          href: main_survey_operations.html
-        - text: "Survey Team"
-          href: main_survey_team.html
+          href: general_info_survey_operations.html
         - text: "Videos"
-          href: main_videos.html
-    - text: "Manuals"
-      href: manuals.html
-      menu:
+          href: general_info_videos.html
     - text: "Personnel"
       href: personnel.html
       menu:
-        - text: "Flight Itineraries"
-          href: personnel_flight_itineraries.html
+        - text: "Contacts"
+          href: personnel_contacts.html
+        - text: "Survey Team"
+          href: personnel_survey_team.html
+    - text: "Safety"
+      href: safety.html
+      menu:
+        - text: "Covid"
+          href: safety_covid.html
+        - text: "Emergency Flowchart"
+          href: safety_emergency_flowchart.html
+        - text: "Work Environment"
+          href: safety_work_environment.html
     - text: "Software"
       href: software.html
       menu:
