@@ -4,26 +4,11 @@
 #' Date: Feb 2022
 #' --------------------------------------
 
-# TO DO
- # fix how images are shown on pages
- # fix how check_links checks local links
- # fix how descrip column works in template pages 
- # page_desc <- "blank" # need to change
- # add periods at the end of the title/subtitles before links
- # [DONE - EHM] fix template title of website
- # [DONE - EHM] automate yaml to match heirarchy in spreadsheet
-
 # Knowns ----------------------------------------------------------------------
 
 dir_googledrive <- "1AIQ0JEUA20D-g32uRQfRMZb0wW4SXl2n8Lwb_62uW-o"
 access_googledrive <- TRUE
 this_year <- "2021" # just doing this for proof of concept
-
-# page_data <- data.frame(file_name = c("main", "travel_itinerary"), 
-#                         name = c("main", "travel_itinerary"), 
-#                         descr = c("Welcome to the website. I hope you enjoy it!", "travel_itinerary"), 
-#                         file_folder = c(NA, paste0("forms_files/Travel/flight itineraries/", this_year, "/")), 
-#                         template = c(T, F))
 
 # Helper files ----------------------------------------------------------------
 googledrive::drive_deauth()
