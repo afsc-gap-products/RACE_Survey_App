@@ -4,7 +4,7 @@ navbar:
   title: "RACE Survey App"
   logo:
     image: img/logo.png
-    href: https://zoyafuso-noaa.github.io/RACE_Survey_App_TEST.io/index.html
+    href: index.html
   search: true
   right:
 INSERT_NAVIGATION

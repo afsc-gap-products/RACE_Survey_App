@@ -4,12 +4,18 @@ navbar:
   title: "RACE Survey App"
   logo:
     image: img/logo.png
-    href: https://zoyafuso-noaa.github.io/RACE_Survey_App_TEST.io/index.html
+    href: index.html
   search: true
   right:
     - text: "General Info"
       href: general_info.html
       menu:
+        - text: "General Info"
+          href: general_info_general_info.html
+        - text: "Survey Operations"
+          href: general_info_survey_operations.html
+        - text: "Videos"
+          href: general_info_videos.html
     - text: "Inventory"
       href: inventory.html
       menu:
@@ -23,12 +29,24 @@ navbar:
     - text: "Safety"
       href: safety.html
       menu:
+        - text: "Covid"
+          href: safety_covid.html
+        - text: "Emergency Flowchart"
+          href: ..\accidents/accident.htm
+        - text: "Work Environment"
+          href: safety_work_environment.html
     - text: "Software"
       href: software.html
       menu:
     - text: "Species Id"
       href: species_id.html
       menu:
+        - text: "Codebook"
+          href: ..\forms_files\species%20identification\Species%20and%20SurveyCodes_2019.pdf
+        - text: "Guides"
+          href: species_id_guides.html
+        - text: "Protected Species"
+          href: species_id_protected_species.html
     - text: "Survey Ops"
       href: survey_ops.html
       menu:

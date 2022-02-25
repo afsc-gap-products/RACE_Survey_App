@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE)
 
 str0 <- ""
 if (exists("subpages")){
-  str0 <- paste("  - [",subpages$sub_page, "](", subpages$web_page,")
+  str0 <- paste("  - [", subpages$sub_page, "](", subpages$web_page,")
 
 ", collapse = "") 
   remove("subpages")

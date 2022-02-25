@@ -261,7 +261,7 @@ for (jj in 1:length(unique(full_site$page0))) {
 
 
 
-dir_pdfs <- tolower(c("codebook", "emergency_flowchart")) # link directly to a non-html file in drop down menu
+dir_pdfs <- make_clean_names(c("codebook", "emergency_flowchart")) # link directly to a non-html file in drop down menu
 
 full_site <- full_site %>%
   dplyr::mutate(web_page = case_when(

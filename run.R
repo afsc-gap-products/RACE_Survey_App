@@ -14,7 +14,7 @@ this_year <- "2021" # just doing this for proof of concept
 # CHECK! - define here pages that you don't want to use the template for!
 # non-template pages MUST be named with the web_page name listed in the 'comb' object
 
-no_templ <- make_clean_names(c("survey_team", "flight_itineraries", 
+no_templ <- make_clean_names(c("survey_team", "flight_itineraries", "guides",
                                "checklist_in", "checklist_out", "checklist_end"))
 
 
@@ -34,6 +34,7 @@ source("./data.R")
 # checkLinks(URLs = full_site0$url_web)
 # 
 # checkLinks(URLs = full_site0$img)
+
 
 # create all pages -------------------------------------------------------------
 

@@ -1,0 +1,25 @@
+---
+title: "Species Identification Guides"
+output: html_document
+---
+
+## Invertebrates
+```{r, results = 'asis', echo = F}
+
+```
+
+## Fishes
+```{r, results = 'asis', echo = F}
+
+```
+
+## Mammals
+```{r, results = 'asis', echo = F}
+
+```
+
+## Algae
+```{r, results = 'asis', echo = F}
+
+```
+
