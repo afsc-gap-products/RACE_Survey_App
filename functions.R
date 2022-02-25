@@ -2,6 +2,9 @@
 #' Project: RACE SURVEY APP
 #' Developed by: Zach Oyafuso, Sarah Friedman, Emily Markowitz, Liz Dawson
 #' Date: Feb 2022
+#' 
+#' Notes: 1) Load Required Packages
+#'        2) checkLinks() checks whether a URL is valid or not
 #' --------------------------------------
 
 ## Load packages -----------------------------------------------------------
@@ -34,6 +37,9 @@ for (p in pkg) {
     require(p, character.only = TRUE)
   }
 }
+
+
+rm(p, pkg)
 
 #' Check that your links work
 #'

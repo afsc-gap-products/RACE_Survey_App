@@ -1,0 +1,72 @@
+---
+title: "Checklist for Incoming FPCs and Deck Leads at End of Survey"
+output: html_document
+---
+
+```{r Subset Checklist documents, results = 'asis', echo = F}
+checklist_items <- subset(full_site0, sub_page == "checklist_end")
+main_sections <- unique(checklist_items$subsection)
+
+string <- "<ul>"
+for(isection in main_sections[]) {
+  
+  subdf <- subset(x = checklist_items, subset = subsection == isection)
+  string <- paste0(string, paste0("<h2>", isection, "</h2>"))
+  
+  main_bullets <- unique(subdf$title)
+  
+  for(ibullet in main_bullets[]) {
+    
+    subdf2 <- subset(x = subdf, subset = title == ibullet)
+    
+    if (nrow(subdf2) == 1) { ## if a single main bullet
+      type <- ifelse(test = is.na(subdf2$url_loc),
+                     yes = "text",
+                     no = "link")
+      
+      string <- paste0(string,
+                       paste0("<li>",
+                              ifelse(type == "link", yes = "[", no = ""),
+                              subdf2$title,
+                              ifelse(type == "link",
+                                     yes = paste0("](",
+                                                  subdf2$url_loc,
+                                                  ")"),
+                                     no = ""),
+                              "</li>"))
+    }
+    
+    if (nrow(subdf2) > 1) { ## if bullet with sub_levels
+      string <- paste0(string,
+                       paste0("<li>", ibullet, "<ul>"))
+      
+      for (irow in 1:nrow(subdf2)) {
+        type <- ifelse(test = is.na(subdf2$url_loc[irow]),
+                       yes = "text",
+                       no = "link")
+        
+        string <- paste0(string,
+                         paste0("<li>",
+                                ifelse(type == "link", yes = "[", no = ""),
+                                subdf2$subtitle[irow],
+                                ifelse(type == "link",
+                                       yes = paste0("](",
+                                                    subdf2$url_loc[irow],
+                                                    ")"),
+                                       no = ""),
+                                "</li>"))
+      }
+      
+           
+        string <- paste0(string, "</ul></li>")
+      
+    }
+    
+  }
+  string <- paste0(string, "<br>")
+}
+
+string <- paste0(string, "</ul>" )
+cat(string)
+
+```

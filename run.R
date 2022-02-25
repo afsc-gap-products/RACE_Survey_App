@@ -4,16 +4,6 @@
 #' Date: Feb 2022
 #' --------------------------------------
 
-# TO DO
- # fix how images are shown on pages
- # fix how check_links checks local links
- # fix how descrip column works in template pages 
- # page_desc <- "blank" # need to change
- # add periods at the end of the title/subtitles before links
- # [DONE - EHM] fix template title of website
- # [DONE - EHM] automate yaml to match heirarchy in spreadsheet
- # make search bar for app
-
 # Knowns ----------------------------------------------------------------------
 
 dir_googledrive <- "1AIQ0JEUA20D-g32uRQfRMZb0wW4SXl2n8Lwb_62uW-o"
@@ -42,17 +32,18 @@ source("./data.R")
 
 # CHECK! - define here pages that you don't want to use the template for!
 # non-template pages MUST be named with the web_page name listed in the 'comb' object
+
+no_templ <- c("flight_itineraries", "checklist_in")
+
 comb <- comb %>% 
   dplyr::mutate(
     template = dplyr::case_when(
       page0 == "index" ~ FALSE, 
-      sub_page0 == "flight_itineraries" ~ FALSE, 
-      sub_page0 == "codebook" ~ FALSE, 
-      sub_page0 == "id_guides" ~ FALSE, 
+      sub_page0 %in% no_templ ~ FALSE, 
       TRUE ~ TRUE))
 
 
-clear_htmls() #removes all existing htmls in docs folder
+# clear_htmls() #removes all existing htmls in docs folder
 
 
 for (jj in 1:nrow(comb)){
@@ -90,4 +81,3 @@ for (jj in 1:nrow(comb)){
                       output_file =  comb$web_page[jj])
   }
 }
-

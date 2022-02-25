@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: "RACE Survey App"
+=======
+title: "RACE Survey App via Distill"
+>>>>>>> b1847100d19944d2b9608a58f594058648d65f11
 description: |
   Welcome to the website. I hope you enjoy it!
 site: distill::distill_website

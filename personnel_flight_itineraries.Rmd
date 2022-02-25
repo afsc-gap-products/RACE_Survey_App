@@ -4,6 +4,7 @@ output: html_document
 ---
 
 ```{r, results = 'asis', echo = F}
+<<<<<<< HEAD
 # this code parses the names of the flight itineraries in this year's folder and generates a table with the person's name, what legs they are one, and the confirmation code. Files must be named with the following information in this order: NAME_Leg1_2_CONFIRMATIONCODE
 
 this_year <- format(Sys.Date(), "%Y")
@@ -17,6 +18,11 @@ if(this_year %in% list.files(dir)){
 }
 
 path <- paste0(dir, year, "/")
+=======
+#this_year <- format(Sys.Date(), "%Y")
+
+path <- paste0("./forms_files/Travel/flight itineraries/", this_year, "/")
+>>>>>>> b1847100d19944d2b9608a58f594058648d65f11
 travel_plans <- dir(path)
 
 
@@ -28,7 +34,11 @@ tmp_table <- tibble(full_file = travel_plans,
          `Leg 3` = ifelse(grepl("l3|_l.+3", tolower(file)), "x", ""), 
          `Leg 4` = ifelse(grepl("l4|_l.+4", tolower(file)), "x", ""), 
          Conf_No = str_extract(file, "[A-Za-z]+$"),
+<<<<<<< HEAD
          Link = paste0("[travel info](../", path, gsub(" ","%20",full_file), ")")) 
+=======
+         Link = paste0("[travel info](\"../", path, gsub(" ","%20",full_file), "\")")) 
+>>>>>>> b1847100d19944d2b9608a58f594058648d65f11
 
 tabl <- tmp_table %>%
   select(Name:Link) %>%
@@ -37,9 +47,26 @@ tabl <- tmp_table %>%
 
 options(knitr.kable.NA = '')
 
+<<<<<<< HEAD
 cat(paste("####", year, "Survey Year"), '\n\n')
+=======
+cat(paste("####", this_year, "Survey Year"), '\n\n')
+>>>>>>> b1847100d19944d2b9608a58f594058648d65f11
 
 kableExtra::kable(tabl, format = "html", linesep = "",
                   align = c("l", rep("c",4),"l")) 
 
+<<<<<<< HEAD
+=======
+# string <- ""
+# 
+# for (iperson in travel_plans) {
+#     string <- paste0(string,
+#             paste0("[", iperson, "](../", travel_plans,
+#                    iperson, ")", "<br>")
+#             )
+# }
+# 
+# cat(string)
+>>>>>>> b1847100d19944d2b9608a58f594058648d65f11
 ```

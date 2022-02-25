@@ -46,7 +46,11 @@ navbar:
         - text: "Covid"
           href: safety_covid.html
         - text: "Emergency Flowchart"
+<<<<<<< HEAD
           href: ..\accidents/accident.htm
+=======
+          href: safety_emergency_flowchart.html
+>>>>>>> b1847100d19944d2b9608a58f594058648d65f11
         - text: "Work Environment"
           href: safety_work_environment.html
     - text: "Software"
@@ -58,7 +62,11 @@ navbar:
       href: species_id.html
       menu:
         - text: "Codebook"
+<<<<<<< HEAD
           href: ..\forms_files\species%20identification\Species%20and%20SurveyCodes_2019.pdf
+=======
+          href: species_id_codebook.html
+>>>>>>> b1847100d19944d2b9608a58f594058648d65f11
         - text: "Guides"
           href: species_id_guides.html
         - text: "Protected Species"
