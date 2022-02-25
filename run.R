@@ -11,6 +11,13 @@ access_googledrive <- TRUE
 this_year <- "2021" # just doing this for proof of concept
 
 
+# CHECK! - define here pages that you don't want to use the template for!
+# non-template pages MUST be named with the web_page name listed in the 'comb' object
+
+no_templ <- c("survey_team", "flight_itineraries", "checklist_in",
+              "checklist_out", "checklist_end")
+
+
 # Helper files ----------------------------------------------------------------
 googledrive::drive_deauth()
 googledrive::drive_auth() 
@@ -29,11 +36,6 @@ source("./data.R")
 # checkLinks(URLs = full_site0$img)
 
 # create all pages -------------------------------------------------------------
-
-# CHECK! - define here pages that you don't want to use the template for!
-# non-template pages MUST be named with the web_page name listed in the 'comb' object
-
-no_templ <- c("flight_itineraries", "checklist_in")
 
 comb <- comb %>% 
   dplyr::mutate(

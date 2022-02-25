@@ -329,6 +329,6 @@ comb <- comb %>%
 
 ## Remove misc variables
 rm(
-  comb0, full_site, metadata, temp, a, counter_pdf, no_templ,
+  comb0, full_site, metadata, temp, a, counter_pdf,
   dest, i, jj, site_yml, type
 )
