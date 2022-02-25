@@ -10,9 +10,9 @@ See the website [here](https://zoyafuso-noaa.github.io/RACE_Survey_App_TEST.io/)
 
 ## This code is primarally maintained by: 
 
-**Zach Oyafuso** (Zach.Oyafuso AT noaa.gov; @EmilyMarkowitz-NOAA)
+**Zack Oyafuso** (Zack.Oyafuso AT noaa.gov; @ZOyafuso-NOAA)
 
-**Sarah Friedman** (Sarah Friedman AT noaa.gov; @EmilyMarkowitz-NOAA)
+**Sarah Friedman** (Sarah.Friedman AT noaa.gov; @SarahFriedman-NOAA)
 
 **Emily Markowitz** (Emily.Markowitz AT noaa.gov; @EmilyMarkowitz-NOAA)
 
