@@ -1,38 +1,18 @@
-name: "RACE_Survey_App"
+name: "RACE Survey App"
 output_dir: "docs"
 navbar:
-  title: "RACE_Survey_App"
+  title: "RACE Survey App"
   logo:
     image: img/logo.png
-    href: https://github.com/zoyafuso-NOAA/RACE_Survey_App_TEST.io
+    href: https://zoyafuso-noaa.github.io/RACE_Survey_App_TEST.io/index.html
   search: true
   right:
-    - text: "Checklists"
-      href: checklists.html
-      menu:
-        - text: "Checklist End"
-          href: checklists_checklist_end.html
-        - text: "Checklist In"
-          href: checklists_checklist_in.html
-        - text: "Checklist Out"
-          href: checklists_checklist_out.html
-        - text: "Inventory"
-          href: checklists_inventory.html
     - text: "General Info"
       href: general_info.html
       menu:
-        - text: "Forms"
-          href: general_info_forms.html
-        - text: "General Info"
-          href: general_info_general_info.html
-        - text: "Manuals And References"
-          href: general_info_manuals_and_references.html
-        - text: "Special Projects"
-          href: general_info_special_projects.html
-        - text: "Survey Operations"
-          href: general_info_survey_operations.html
-        - text: "Videos"
-          href: general_info_videos.html
+    - text: "Inventory"
+      href: inventory.html
+      menu:
     - text: "Personnel"
       href: personnel.html
       menu:
@@ -43,26 +23,15 @@ navbar:
     - text: "Safety"
       href: safety.html
       menu:
-        - text: "Covid"
-          href: safety_covid.html
-        - text: "Emergency Flowchart"
-          href: ..\accidents/accident.htm
-        - text: "Work Environment"
-          href: safety_work_environment.html
     - text: "Software"
       href: software.html
       menu:
-        - text: "Software & Drivers"
-          href: software_software_&_drivers.html
     - text: "Species Id"
       href: species_id.html
       menu:
-        - text: "Codebook"
-          href: ..\forms_files\species%20identification\Species%20and%20SurveyCodes_2019.pdf
-        - text: "Guides"
-          href: species_id_guides.html
-        - text: "Protected Species"
-          href: species_id_protected_species.html
+    - text: "Survey Ops"
+      href: survey_ops.html
+      menu:
 
 output: distill::distill_article
 

@@ -1,7 +1,7 @@
-name: "RACE_Survey_App"
+name: "RACE Survey App"
 output_dir: "docs"
 navbar:
-  title: "RACE_Survey_App"
+  title: "RACE Survey App"
   logo:
     image: img/logo.png
     href: https://zoyafuso-noaa.github.io/RACE_Survey_App_TEST.io/index.html

@@ -6,7 +6,7 @@ output: html_document
 ```{r, results = 'asis', echo = F}
 
 sub_docs <- subset(x = site, sub_page0 == "survey_team")
-clean_titles <- gsub(" ", "_", tolower(sub_docs$title)) 
+clean_titles <- make_clean_names(sub_docs$title)
 
 string <- ""
 
@@ -21,6 +21,4 @@ for (i in 1:nrow(sub_docs)) {
 }
   cat(string)
 }
-
-cat(string)
 ```

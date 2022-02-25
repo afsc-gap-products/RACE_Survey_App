@@ -264,11 +264,12 @@ for (jj in 1:length(unique(full_site$page0))) {
 dir_pdfs <- tolower(c("codebook", "emergency_flowchart")) # link directly to a non-html file in drop down menu
 
 full_site <- full_site %>%
-  dplyr::mutate(web_page = ifelse(test = (sub_page0 != ""),
-    yes = paste0(page0, "_", sub_page0, ".html"),
-    no = paste0(page0, ".html")
-  )) %>%
-  dplyr::mutate(web_page = ifelse(sub_page0 %in% dir_pdfs, to_html(Links), web_page))
+  dplyr::mutate(web_page = case_when(
+    make_clean_names(title) %in% no_templ ~ paste0(page0, "_", make_clean_names(title), ".html"), # direct link to htmls on subpages
+    sub_page0 %in% dir_pdfs ~ html_to_link(Links), #create direct links to a file on menu
+    sub_page0 == "" ~  paste0(page0, ".html"),
+    TRUE ~ paste0(page0, "_", sub_page0, ".html")
+  ))
 
 
 # subset of data we will actually use ------------------------------------------
@@ -292,8 +293,9 @@ comb <- site %>%
 site_yml <- base::readLines("_site_template.txt")
 
 comb0 <- comb %>%
-  dplyr::filter(page0 != "index")
-
+  dplyr::filter(page0 != "index") %>%
+  dplyr::distinct(across(page0:sub_page), .keep_all = TRUE)
+  
 a <- paste0(
   ifelse(comb0$sub_page0 == "", "    - ", "        - "),
   'text: "',
