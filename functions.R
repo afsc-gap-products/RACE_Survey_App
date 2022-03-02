@@ -20,6 +20,7 @@ pkg <- c(#"tidyverse",
          
          # read url
          "XML",
+         "fansi", 
          
          # read csv
          "readr",
@@ -73,6 +74,7 @@ checkLinks <- function(URLs,
     URL <- URLs[i]
     
     if (substr(x = URL, start = 1, stop = 2) == "./") {
+  # if (substr(x = URL, start = 1, stop = 2) == "./") {
       if (URL == "./") {
         URL <- gsub(replacement = getwd(), pattern = "./",
                     x = URL, fixed = TRUE, useBytes = TRUE)
@@ -83,6 +85,7 @@ checkLinks <- function(URLs,
       
     }
     
+    # fix for for a directory
     if (substr(x = URL, start = nchar(URL), stop = nchar(URL)) == "/") {
       URL <- substr(x = URL, start = 1, stop = (nchar(URL)-1))
     }
@@ -127,3 +130,98 @@ clear_htmls <- function(){
   invisible(file.remove(l))
   cat('all HTML files deleted from \'docs\' folder')
 }
+
+
+
+download_web_urls <- function(dat, col_in, dir_out) {
+  dir.create(path = dir_out, showWarnings = FALSE)
+  dat$col <- dat[,names(dat) == col_in]
+  dat$col_out_link <- ""
+  dat$col_out_link_txt <- ""
+  dat$col_out_img <- ""
+  dat$col_out_img_txt <- ""
+  
+  temp <- unique(dat$col[!is.na(dat$col)]) # links to download
+  counter <- 0
+  
+  for (i in 1:length(temp)) { ## Loop over URLs -- start
+    
+    # if downloading a png
+    if (grepl(pattern = ".png", x = temp[i], fixed = TRUE)) {
+      counter <- 1 + counter
+      dest <- paste0(dir_out, "dl_img_", counter, ".pdf")
+      utils::download.file(url = temp[i], destfile = dest, mode = "wb")
+      dat$col_out_img_txt[dat$col == temp[i]] <- "Downloaded image from web"
+      dat$col_out_img[dat$col == temp[i]] <- dest
+    }
+    
+    # if download google doc
+    # if (grepl(pattern = "docs.google.com", x = temp[i])) {
+    #   if (access_googledrive) {
+    #     temp1 <- googledrive::drive_get(id = temp[i])
+    #     type <- ifelse(grepl(pattern = "document", x = temp[i], ignore.case = TRUE),
+    #                    "docx", "csv"
+    #     )
+    #     dest <- paste0(dir_out, temp1$name, ".", type)
+    #     googledrive::drive_download(
+    #       file = temp1$id,
+    #       type = type,
+    #       overwrite = TRUE,
+    #       path = dest
+    #     )
+    #     dat$col_out_link_txt[dat$col == temp[i]] <- "Downloaded from google drive"
+    #     dat$col_out_link[dat$col == temp[i]] <- dest
+    #   }
+    # }
+    
+    # if download google doc
+    if (grepl(pattern = "docs.google.com", x = temp[i])) {
+        ## Access metadata of the google doc so that you can specify a
+        ## name of the destination file
+        metadata <- googledrive::drive_get(id = temp[i])
+        type <- ifelse(test = grepl(
+          pattern = "document",
+          x = temp[i],
+          ignore.case = TRUE
+        ),
+        yes = "docx", ## Indicates a google doc
+        no = "csv" ## Indicates a google spreadsheet?
+        )
+        dest <- paste0(dir_out, metadata$name, ".", type)
+        
+        ## Pull document from google drive, format it in the type specified,
+        ## and write to dest path
+        googledrive::drive_download(
+          file = metadata$id,
+          type = type,
+          overwrite = TRUE,
+          path = dest
+        )
+        
+        ## Update the full_site info
+        dat$col_out_link_txt[dat$col == temp[i]] <- "Downloaded from google drive"
+        dat$col_out_link[dat$col == temp[i]] <- dest
+    }
+    
+    # if downloading a webpage HTML
+    if (grepl(pattern = ".html", x = temp[i], fixed = TRUE)) {
+      counter <- 1 + counter
+      dest <- paste0(dir_out, "dl_html_", counter, ".pdf")
+      chrome_print(temp[i], output = dest)
+      dat$col_out_link_txt[dat$col == temp[i]] <- "web page downloaded from web as pdf"
+      dat$col_out_link[dat$col == temp[i]] <- dest
+    }
+    
+    # if downloading a PDF from a webage
+    # TOLEDO - need to make more accommodating to links without ".pdf" at the end
+    if (grepl(pattern = ".pdf", x = temp[i], fixed = TRUE)) {
+      counter <- 1 + counter
+      dest <- paste0(dir_out, "dl_pdf_", counter, ".pdf")
+      download.file(url = temp[i], destfile = dest, mode = "wb")
+      dat$col_out_link_txt[dat$col == temp[i]] <- "PDF downloaded from web"
+      dat$col_out_link[dat$col == temp[i]] <- dest
+    }
+  } ## Loop over URLs -- end
+  return(dat)
+}
+

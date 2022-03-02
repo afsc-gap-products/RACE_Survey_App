@@ -16,8 +16,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE)
 
 str0 <- ""
 if (exists("subpages")){
-  str0 <- paste("  - [",subpages$sub_page, "](", subpages$web_page,")
-
+  str0 <- paste0("  - [",subpages$sub_page, "](", subpages$web_page,")
 ", collapse = "") 
   remove("subpages")
 }
@@ -36,12 +35,19 @@ if (nrow(page_dat) != 0) {
   
   str0 <- ""
   
-  # need to build in subsection loop
-  
+# For each section, subset data
   for (i in 1:length(unique(page_dat$section))) {
-    temp <- page_dat %>% 
-      dplyr::filter(section == page_dat$section[i])
     
+    temp0 <- page_dat %>% 
+      dplyr::filter(section == unique(page_dat$section)[i])
+    
+    # for each subsection, further subset data from section
+    for (ii in 1:length(unique(temp0$subsection))) {
+      
+      temp <- temp0 %>% 
+        dplyr::filter(subsection == unique(temp0$subsection)[ii])
+    
+      # compuile text that will go on the page
     str0 <- paste(paste0("**",temp$title, "**", # title
             ifelse(is.na(temp$subtitle), "", paste0(": *", temp$subtitle, "*")), # subtitle
             " ",temp$Links_inline, "
@@ -49,12 +55,23 @@ if (nrow(page_dat) != 0) {
   
   "), collapse = "")
     
+      if (unique(temp$subsection)[1] != "") {
+      str0 <- paste0("
+    
+    ### ",unique(temp$subsection)[1], "
+    
+    ", str0)
+      }
+    
+    }
+  
+      if (unique(temp$section)[1] != "") {
     str0 <- paste0("
   
-  ## ",unique(temp$section)[1], "
+  ## ",unique(temp0$section)[1], "
   
   ", str0)
-    
+      }
   }
 }
 ```

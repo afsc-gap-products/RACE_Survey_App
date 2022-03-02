@@ -7,12 +7,24 @@ navbar:
     href: https://zoyafuso-noaa.github.io/RACE_Survey_App_TEST.io/index.html
   search: true
   right:
+    - text: "Checklists"
+      href: checklists.html
+      menu:
+        - text: "Checklist End"
+          href: checklists_checklist_end.html
+        - text: "Checklist In"
+          href: checklists_checklist_in.html
+        - text: "Checklist Out"
+          href: checklists_checklist_out.html
     - text: "General Info"
       href: general_info.html
       menu:
-    - text: "Inventory"
-      href: inventory.html
-      menu:
+        - text: "Forms"
+          href: general_info_forms.html
+        - text: "Manuals And References"
+          href: general_info_manuals_and_references.html
+        - text: "Videos"
+          href: general_info_videos.html
     - text: "Personnel"
       href: personnel.html
       menu:
@@ -23,15 +35,47 @@ navbar:
     - text: "Safety"
       href: safety.html
       menu:
+        - text: "Cold Patient"
+          href: safety_cold_patient.html
+        - text: "Covid"
+          href: safety_covid.html
+        - text: "Emergency Flowchart"
+          href: ..\forms_files/accidents/accident.htm
+        - text: "Forms"
+          href: safety_forms.html
+        - text: "Manuals"
+          href: safety_manuals.html
+        - text: "Manuals And References"
+          href: safety_manuals_and_references.html
+        - text: "Work Environment"
+          href: safety_work_environment.html
     - text: "Software"
       href: software.html
       menu:
+        - text: "Software & Drivers"
+          href: software_software_&_drivers.html
     - text: "Species Id"
       href: species_id.html
       menu:
+        - text: "Codebook"
+          href: ..\forms_files\species%20identification\Species%20and%20SurveyCodes_2019.pdf
+        - text: "Guides"
+          href: species_id_guides.html
+        - text: "Protected Species"
+          href: species_id_protected_species.html
     - text: "Survey Ops"
       href: survey_ops.html
       menu:
+        - text: "General Info"
+          href: survey_ops_general_info.html
+        - text: "Inventory"
+          href: survey_ops_inventory.html
+        - text: "Manuals And References"
+          href: survey_ops_manuals_and_references.html
+        - text: "Special Projects"
+          href: survey_ops_special_projects.html
+        - text: "Survey Operations"
+          href: survey_ops_survey_operations.html
 
 output: distill::distill_article
 

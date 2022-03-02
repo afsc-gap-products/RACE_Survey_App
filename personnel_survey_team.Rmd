@@ -17,7 +17,7 @@ for (i in 1:nrow(sub_docs)) {
   if(clean_titles[[i]] %in% no_templ){
   string <- paste0("[", sub_docs$title[[i]], "](../docs/personnel_", clean_titles[[i]], ".html)", "<br><br>")
 } else {
-  string <- paste0("[", sub_docs$title[[i]], "](../", to_html(sub_docs$Links)[i], ")", "<br><br>")
+  string <- paste0("[", sub_docs$title[[i]], "](../", fansi::to_html(sub_docs$Links)[i], ")", "<br><br>")
 }
   cat(string)
 }
