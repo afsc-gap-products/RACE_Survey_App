@@ -15,8 +15,8 @@ this_year <- "2021" # just doing this for proof of concept
 # CHECK! - define here pages that you don't want to use the template for!
 # non-template pages MUST be named with the web_page name listed in the 'comb' object
 
-no_templ <- c("survey_team", "flight_itineraries", 
-              "contacts",
+no_templ <- c("survey_team", "flight_itineraries", "contacts",
+              "covid", "work_environment", 
               "checklist_in", "checklist_out", "checklist_end")
 
 
