@@ -16,6 +16,7 @@ this_year <- "2021" # just doing this for proof of concept
 # non-template pages MUST be named with the web_page name listed in the 'comb' object
 
 no_templ <- c("survey_team", "flight_itineraries", 
+              "contacts",
               "checklist_in", "checklist_out", "checklist_end")
 
 
