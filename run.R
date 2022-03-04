@@ -10,7 +10,7 @@
 dir_googledrive <- "1AIQ0JEUA20D-g32uRQfRMZb0wW4SXl2n8Lwb_62uW-o"
 dir_species_guides <- "172nNe_qrK0CWGNC4kR9gh27B-nyTgEj03uf4opGv5iU"
 
-access_googledrive <- TRUE
+access_to_internet <- TRUE
 
 this_year <- "2021" # just doing this for proof of concept
 

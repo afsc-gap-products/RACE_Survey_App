@@ -16,12 +16,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE)
 
 str0 <- ""
 if (exists("subpages")){
-<<<<<<< HEAD
-  str0 <- paste("  - [", subpages$sub_page, "](", subpages$web_page,")
-
-=======
   str0 <- paste0("  - [",subpages$sub_page, "](", subpages$web_page,")
->>>>>>> c46e171244996e1c2d3c9df8d335217c261725b8
 ", collapse = "") 
   remove("subpages")
 }
