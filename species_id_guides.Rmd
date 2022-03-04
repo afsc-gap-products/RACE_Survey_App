@@ -1,6 +1,6 @@
 ---
 title: "Species Identification Guides"
-site: distill::distill_website
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -22,12 +22,13 @@ all_files <- guides_data %>%
                   taxa == "algae" ~ "Algae",
                   TRUE ~ "Inverts"
                 ),
+                url_loc = str_replace(url_loc, "\\.","\\.."),
                 reference = paste0("[", title, "](", gsub(" ","%20", url_loc), ")"))
 ```
 
 
 ```{r, results = "asis"}
-fish_id <- paste0("[ID by Taxa](../docs/id_by_taxa.html)")
+fish_id <- paste0("[ID by Taxa](../id_by_taxa.html)")
 
 tabl <- all_files %>%
   mutate(taxa = ifelse(section == "Fishes", family, tools::toTitleCase(taxa))) %>%
