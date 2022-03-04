@@ -17,7 +17,7 @@ this_year <- "2021" # just doing this for proof of concept
 
 no_templ <- c("survey_team", "flight_itineraries", "contacts",
               "covid", "work_environment", "Inventory",
-              "Software & Drivers", 
+              "Software & Drivers", "General Info",
               "checklist_in", "checklist_out", "checklist_end")
 
 
