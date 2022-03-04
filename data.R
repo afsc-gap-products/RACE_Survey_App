@@ -26,6 +26,13 @@ if (access_googledrive) {
     overwrite = TRUE,
     path = paste0("./data/survey_app_data.csv")
   )
+  
+  googledrive::drive_download(
+    file = as_id(dir_species_guides),
+    type = "csv",
+    overwrite = TRUE,
+    path = paste0("./data/id_guides_data.csv")
+  )
 }
 
 full_site0 <- full_site <- readr::read_csv("./data/survey_app_data.csv", skip = 1)
@@ -253,7 +260,8 @@ for (jj in 1:length(unique(full_site$page0))) {
       dplyr::mutate(
         page = page_dat$page[1],
         page0 = page_dat$page0[1],
-        in_survey_app = TRUE
+        in_survey_app = TRUE,
+        order = NA
       )
     full_site <- dplyr::bind_rows(full_site, temp)
   }

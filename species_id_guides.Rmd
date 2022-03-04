@@ -1,25 +1,61 @@
 ---
 title: "Species Identification Guides"
-output: html_document
+site: distill::distill_website
 ---
 
-## Invertebrates
-```{r, results = 'asis', echo = F}
-
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE)
 ```
 
-## Fishes
-```{r, results = 'asis', echo = F}
 
+```{r}
+guides_data <- readr::read_csv("./data/id_guides_data.csv")
+
+all_files <- guides_data %>%
+  filter(page == "species_id_guides") %>%
+  filter(in_survey_app) %>%
+  select(title, taxa, family, url_loc) %>%
+  dplyr::mutate(filename = basename(url_loc),
+                section = case_when(
+                  taxa %in% c("bird", "mammal") ~ "Birds and Mammals",
+                  taxa == "fish" ~ "Fishes",
+                  taxa == "algae" ~ "Algae",
+                  TRUE ~ "Inverts"
+                ),
+                reference = paste0("[", title, "](", gsub(" ","%20", url_loc), ")"))
 ```
 
-## Mammals
-```{r, results = 'asis', echo = F}
 
-```
+```{r, results = "asis"}
+fish_id <- paste0("[ID by Taxa](../docs/id_by_taxa.html)")
 
-## Algae
-```{r, results = 'asis', echo = F}
+tabl <- all_files %>%
+  mutate(taxa = ifelse(section == "Fishes", family, tools::toTitleCase(taxa))) %>%
+  arrange(section, taxa, title)
+
+options(knitr.kable.NA = '')
+
+sec <- unique(tabl$section)
+
+for(i in 1:length(sec)){
+  tmp <- tabl %>%
+    filter(section == sec[[i]]) %>%
+    select(Taxa = taxa, Reference = reference) %>%
+    arrange(Taxa)
+  
+  if(sec[i] == "Fishes"){
+      cat(paste0("## ", sec[[i]], " — ", fish_id, ""), '\n \n \n')
+  } else {
+    cat(paste0("## ", sec[[i]]), '\n \n \n')
+  }
+
+  k <- kableExtra::kable(tmp, format = "html", linesep = "",
+                  align = rep("l", 2)) %>%
+  column_spec(1, bold = TRUE) %>%
+  collapse_rows(1, latex_hline = "custom", valign = "top") 
+  
+  cat(k)
+}
 
 ```
 
