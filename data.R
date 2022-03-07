@@ -214,7 +214,8 @@ no_templ <- janitor::make_clean_names(no_templ)
 
 full_site <- full_site %>%
   dplyr::mutate(web_page = case_when(
-    make_clean_names(title) %in% no_templ ~ paste0(page0, "_", make_clean_names(title), ".html"), # direct link to htmls on subpages
+    make_clean_names(title) %in% no_templ ~ 
+      paste0(page0, "_", make_clean_names(title), ".html"), # direct link to htmls on subpages
     sub_page0 %in% dir_pdfs ~ html_to_link(Links), #create direct links to a file on menu
     sub_page0 == "" ~  paste0(page0, ".html"),
     TRUE ~ paste0(page0, "_", sub_page0, ".html")

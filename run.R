@@ -80,16 +80,16 @@ for (jj in 1:nrow(comb)){
                         sub_page0 == comb$sub_page0[jj] &
                         (title != "" | Links != "")) 
       
-    # list of subpages (if the main page and not a subpage)
-    if (sum(site$sub_page[site$page0==comb$page0[jj]]=="")>0) {
-      subpages <- site %>% 
-        dplyr::filter(page0 == comb$page0[jj])  %>%
-        dplyr::filter(sub_page!="") %>% 
-        dplyr::select(page, page0, sub_page, sub_page0, web_page, 
-                      dplyr::starts_with("srvy_")) %>% 
-        dplyr::distinct() %>% 
-        dplyr::arrange(sub_page0)
-    }
+    # # list of subpages (if the main page and not a subpage)
+    # if (sum(site$sub_page[site$page0==comb$page0[jj]]=="")>0) {
+    #   subpages <- site %>% 
+    #     dplyr::filter(page0 == comb$page0[jj])  %>%
+    #     dplyr::filter(sub_page!="") %>% 
+    #     dplyr::select(page, page0, sub_page, sub_page0, web_page, 
+    #                   dplyr::starts_with("srvy_")) %>% 
+    #     dplyr::distinct() %>% 
+    #     dplyr::arrange(sub_page0)
+    # }
     
     rmarkdown::render(paste0("template.Rmd"),
                       output_dir = "./docs/",
