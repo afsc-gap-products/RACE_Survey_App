@@ -18,9 +18,9 @@ this_year <- "2021" # just doing this for proof of concept
 # CHECK! - define here pages that you don't want to use the template for!
 # non-template pages MUST be named with the web_page name listed in the 'comb' object
 
-no_templ <- c("survey_team", "flight_itineraries", "contacts",
-              "covid", "work_environment", "Inventory", "guides",
-              "Software & Drivers", "General Info",
+no_templ <- c("survey_team", "flight_itineraries", 
+              #"Inventory", 
+              "guides", 
               "checklist_in", "checklist_out", "checklist_end")
 
 
@@ -60,8 +60,8 @@ for (jj in 1:nrow(comb)){
   
   page_title <- stringr::str_to_title(comb$page[jj])
   page_desc <- ifelse(
-      is.na(comb$sub_page[jj]), 
-      "Parent directory", 
+      is.na(comb$sub_page[jj]),
+      "Parent directory",
       stringr::str_to_title(comb$sub_page[jj]))
   
   # if the the page requires a non-template page structure

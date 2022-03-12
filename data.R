@@ -149,11 +149,11 @@ full_site <- full_site %>%
     ),
     Links = ifelse(test = url_loc == "",
                    yes = "",
-                   no = paste0("[", url_loc_txt, "](", url_loc, ")")
+                   no = paste0("[", url_loc_txt, "](../", url_loc, ")")
     ),
     Links = ifelse(test = url_web == "",
                    yes = Links,
-                   no = paste0(Links, " \n\n [", url_web_txt, "](", url_web, ")")
+                   no = paste0(Links, " \n\n [", url_web_txt, "](../", url_web, ")")
     ),
     Links_inline = ifelse(test = Links == "",
                           yes = "",

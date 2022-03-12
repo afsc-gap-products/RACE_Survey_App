@@ -40,7 +40,7 @@ navbar:
         - text: "Covid"
           href: safety_covid.html
         - text: "Emergency Flowchart"
-          href: ..\forms_files/accidents/accident.htm
+          href: ..\../forms_files/accidents/accident.htm
         - text: "Forms"
           href: safety_forms.html
         - text: "Manuals"
@@ -54,11 +54,20 @@ navbar:
       menu:
         - text: "Software & Drivers"
           href: software_software_&_drivers.html
+    - text: "Special Projects"
+      href: special_projects.html
+      menu:
+        - text: "Detailed Protocols"
+          href: special_projects_detailed_protocols.html
+        - text: "Es-60 Data Collection"
+          href: special_projects_es-60_data_collection.html
+        - text: "Special Collection Descriptions And Posters"
+          href: special_projects_special_collection_descriptions_and_posters.html
     - text: "Species Id"
       href: species_id.html
       menu:
         - text: "Codebook"
-          href: ..\forms_files\species%20identification\Species%20and%20SurveyCodes_2019.pdf
+          href: ..\../forms_files\species%20identification\Species%20and%20SurveyCodes_2019.pdf
         - text: "Guides"
           href: species_id_guides.html
         - text: "Protected Species"
@@ -72,8 +81,6 @@ navbar:
           href: survey_ops_inventory.html
         - text: "Manuals And References"
           href: survey_ops_manuals_and_references.html
-        - text: "Special Projects"
-          href: survey_ops_special_projects.html
         - text: "Survey Operations"
           href: survey_ops_survey_operations.html
 

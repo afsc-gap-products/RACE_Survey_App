@@ -1,7 +1,6 @@
 ---
 title: "`r page_title`"
-description: |
-  "`r page_desc `"
+description: "`r page_desc`"
 site: distill::distill_website
 ---
 
@@ -9,26 +8,6 @@ site: distill::distill_website
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE)
 ```
 
-
-```{r}
-
-# <!-- # `r ifelse(exists("subpages"), paste0("Subpages"), "") ` -->
-
-# stringr::str_to_title(ifelse(page_dat$sub_page[1] == "", page_dat$page[1], paste0(page_dat$page[1], ' | ', page_dat$sub_page[1])))
-
-# str0 <- ""
-# if (exists("subpages")){
-#   str0 <- paste0("  - [",subpages$sub_page, "](", subpages$web_page,")
-# ", collapse = "") 
-#   remove("subpages")
-# }
-
-# `r str0`
-
-```
-
-
-# `r ifelse(nrow(page_dat) == 0, "", "Content")`
 
 ```{r}
 str0 <- ""
@@ -79,7 +58,5 @@ if (nrow(page_dat) != 0) {
   }
 }
 ```
-
-## `r ifelse((nrow(page_dat) != 0), page_dat$sub_page[1], "") `
 
 `r str0 `
