@@ -56,6 +56,8 @@ comb <- comb %>%
 
 for (jj in 1:nrow(comb)){
   
+  if (janitor::make_clean_names(comb$sub_page[jj]) %in% dir_pdfs) next
+  
   print(comb[jj,])
   
   page_title <- stringr::str_to_title(comb$page[jj])

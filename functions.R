@@ -119,7 +119,8 @@ checkLinks <- function(URLs,
 
 # function to extract link from formatted html link
 html_to_link <- function(x){
-  tmp <- paste0("..\\", str_extract(x, "(?<=\\().*?(?=\\))")) 
+  tmp <- paste0(#"..\\", 
+                str_extract(x, "(?<=\\().*?(?=\\))")) 
   gsub(" ", "%20", tmp)
 }
 
