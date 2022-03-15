@@ -7,9 +7,6 @@ navbar:
     href: index.html
   search: true
   right:
-    - text: "Aatest"
-      href: aatest.html
-      menu:
     - text: "Checklists"
       href: checklists.html
       menu:
@@ -19,6 +16,9 @@ navbar:
           href: checklists_checklist_in.html
         - text: "Checklist Out"
           href: checklists_checklist_out.html
+    - text: "Collections"
+      href: collections.html
+      menu:
         - text: "AI Specific Collections"
           href: collections_ai_specific_collections.html
         - text: "BSS Specific Collections"

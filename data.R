@@ -100,9 +100,11 @@ full_site <- full_site %>%
     )),
     # section and subsection name management
     section = ifelse(test = is.na(section), yes = "", 
-                     no = stringr::str_to_sentence(section)),
+                     no = #stringr::str_to_sentence
+                     (section)),
     subsection = ifelse(test = is.na(subsection), yes = "", 
-                        no = stringr::str_to_sentence(subsection)),
+                        no = #stringr::str_to_sentence
+                          (subsection)),
     # which surveys do each of these documents belong to?
     # srvy_all = ifelse(test = is.na(survey), yes = TRUE, no = FALSE),
     survey = ifelse(test = is.na(survey), 
@@ -179,31 +181,6 @@ full_site <- full_site %>%
   )
 
 
-# create general pages for each page if not already specified
-for (jj in 1:length(unique(full_site$page0))) {
-  page_dat <- full_site %>%
-    dplyr::filter(page0 == unique(full_site$page0)[jj]) %>%
-    dplyr::select(page, page0, sub_page, sub_page0) %>%
-    dplyr::distinct()
-  if (sum(is.na(page_dat$sub_page)) == 0) { # there is no info for a general page
-    temp <- as_tibble(data.frame(matrix(
-      data = "",
-      nrow = 1,
-      ncol = ncol(full_site)
-    )))
-    names(temp) <- names(full_site)
-    temp <- temp %>%
-      dplyr::mutate(
-        page = page_dat$page[1],
-        page0 = page_dat$page0[1],
-        order = as.numeric(order),
-        across(dplyr::starts_with("srvy_"), as.logical),
-        in_survey_app = TRUE
-      )
-    full_site <- dplyr::bind_rows(full_site, temp)
-  }
-}
-
 # create survey-specific collection pages
 temp <- full_site %>% 
   dplyr::filter(page0 == "collections" &
@@ -244,6 +221,34 @@ full_site <- dplyr::bind_rows(
     dplyr::filter(page0 != "collections" &
                   sub_page0 != "specific_collections"), 
   data_to_insert ) # need to think about how to remove srvy content we are not using (e.g., 2022 goa)
+
+
+# create general pages for each page if not already specified
+for (jj in 1:length(unique(full_site$page0))) {
+  page_dat <- full_site %>%
+    dplyr::filter(page0 == unique(full_site$page0)[jj]) %>%
+    dplyr::select(page, page0, sub_page, sub_page0) %>%
+    dplyr::distinct()
+  if (sum(is.na(page_dat$sub_page)) == 0) { # there is no info for a general page
+    temp <- as_tibble(data.frame(matrix(
+      data = "",
+      nrow = 1,
+      ncol = ncol(full_site)
+    )))
+    names(temp) <- names(full_site)
+    temp <- temp %>%
+      dplyr::mutate(
+        page = page_dat$page[1],
+        page0 = page_dat$page0[1],
+        order = as.numeric(order),
+        across(dplyr::starts_with("srvy_"), as.logical),
+        in_survey_app = TRUE
+      )
+    full_site <- dplyr::bind_rows(full_site, temp)
+  }
+}
+
+
 
 ## Remove rows not included in survey app (yet)
 full_site <- subset(x = full_site, subset = in_survey_app == TRUE)
@@ -323,6 +328,5 @@ comb <- comb %>%
 
 ## Remove misc variables
 rm(
-  comb0, full_site, metadata, temp, a, counter_pdf,
-  dest, i, jj, site_yml, type
+  comb0, full_site, temp, a, i, jj, site_yml, type
 )

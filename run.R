@@ -60,11 +60,13 @@ for (jj in 1:nrow(comb)){
   
   print(comb[jj,])
   
-  page_title <- stringr::str_to_title(comb$page[jj])
+  page_title <- #stringr::str_to_title
+  (comb$page[jj])
   page_desc <- ifelse(
       is.na(comb$sub_page[jj]),
       "Parent directory",
-      stringr::str_to_title(comb$sub_page[jj]))
+      #stringr::str_to_title
+      (comb$sub_page[jj]))
   
   # if the the page requires a non-template page structure
   # to use, simply name the rmd with the name in the comb$web_page column, so it knows what to grab
