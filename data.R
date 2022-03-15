@@ -181,10 +181,10 @@ full_site <- full_site %>%
   )
 
 
-# create survey-specific collection pages
+# create survey-specific collection pages --------------------------------------
 temp <- full_site %>% 
-  dplyr::filter(page0 == "collections" &
-                  sub_page0 == "specific_collections")
+  dplyr::filter((page0 == "collections" &
+                  sub_page0 == "specific_collections"))
 # TOLEDO - will there be a time when there are no surveys id'ed for this
 
 data_to_insert <- data.frame()
@@ -216,14 +216,28 @@ for (i in 1:nrow(temp)) {
   }
 }
 
+# only use srvy pages that are used this year
+# not the most efficent, but wanna be done!
+data_to_insert1 <- data.frame()
+for (i in 1:nrow(data_to_insert)){
+  for (ii in 1:length(this_year_surveys)) {
+   if (grepl(pattern = this_year_surveys[ii], 
+            x = data_to_insert$sub_page[i], 
+            ignore.case = TRUE)) {
+     data_to_insert1 <- dplyr::bind_rows(data_to_insert1, data_to_insert[i,])
+   }
+  }
+}
+
 full_site <- dplyr::bind_rows(
   full_site %>% 
-    dplyr::filter(page0 != "collections" &
-                  sub_page0 != "specific_collections"), 
-  data_to_insert ) # need to think about how to remove srvy content we are not using (e.g., 2022 goa)
+    dplyr::filter(!(page0 == "collections" &
+                  sub_page0 == "specific_collections")), 
+  data_to_insert1) 
+# need to think about how to remove srvy content we are not using (e.g., 2022 goa)
 
 
-# create general pages for each page if not already specified
+# create general pages for each page if not already specified ------------------
 for (jj in 1:length(unique(full_site$page0))) {
   page_dat <- full_site %>%
     dplyr::filter(page0 == unique(full_site$page0)[jj]) %>%
@@ -328,5 +342,5 @@ comb <- comb %>%
 
 ## Remove misc variables
 rm(
-  comb0, full_site, temp, a, i, jj, site_yml, type
+  comb0, full_site, a, i, jj, site_yml
 )

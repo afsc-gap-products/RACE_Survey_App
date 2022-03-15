@@ -21,14 +21,12 @@ navbar:
       menu:
         - text: "AI Specific Collections"
           href: collections_ai_specific_collections.html
-        - text: "BSS Specific Collections"
-          href: collections_bss_specific_collections.html
         - text: "EBS Specific Collections"
           href: collections_ebs_specific_collections.html
-        - text: "GOA Specific Collections"
-          href: collections_goa_specific_collections.html
         - text: "NBS Specific Collections"
           href: collections_nbs_specific_collections.html
+        - text: "Technical Guides"
+          href: collections_technical_guides.html
     - text: "General Info"
       href: general_info.html
       menu:
@@ -36,8 +34,6 @@ navbar:
           href: general_info_forms.html
         - text: "Manuals And References"
           href: general_info_manuals_and_references.html
-        - text: "Software & Drivers"
-          href: general_info_software_&_drivers.html
         - text: "Videos"
           href: general_info_videos.html
     - text: "Personnel"
@@ -45,6 +41,8 @@ navbar:
       menu:
         - text: "Contacts"
           href: personnel_contacts.html
+        - text: "Forms"
+          href: personnel_forms.html
         - text: "Survey Team"
           href: personnel_survey_team.html
     - text: "Safety"
@@ -54,8 +52,6 @@ navbar:
           href: safety_cold_patient.html
         - text: "Covid"
           href: safety_covid.html
-        - text: "Emergency Flowchart"
-          href: ../forms_files/accidents/accident.htm
         - text: "Forms"
           href: safety_forms.html
         - text: "Manuals And References"
@@ -65,13 +61,13 @@ navbar:
     - text: "Software"
       href: software.html
       menu:
+        - text: "Software & Drivers"
+          href: software_software_&_drivers.html
     - text: "Species Id"
       href: species_id.html
       menu:
         - text: "Codebook"
           href: ../forms_files\species%20identification\Species%20and%20SurveyCodes_2019.pdf
-        - text: "Guides"
-          href: species_id_guides.html
         - text: "Protected Species"
           href: species_id_protected_species.html
     - text: "Survey Ops"
