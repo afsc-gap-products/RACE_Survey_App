@@ -7,6 +7,9 @@ navbar:
     href: index.html
   search: true
   right:
+    - text: "Aatest"
+      href: aatest.html
+      menu:
     - text: "Checklists"
       href: checklists.html
       menu:
@@ -16,6 +19,16 @@ navbar:
           href: checklists_checklist_in.html
         - text: "Checklist Out"
           href: checklists_checklist_out.html
+        - text: "AI Specific Collections"
+          href: collections_ai_specific_collections.html
+        - text: "BSS Specific Collections"
+          href: collections_bss_specific_collections.html
+        - text: "EBS Specific Collections"
+          href: collections_ebs_specific_collections.html
+        - text: "GOA Specific Collections"
+          href: collections_goa_specific_collections.html
+        - text: "NBS Specific Collections"
+          href: collections_nbs_specific_collections.html
     - text: "General Info"
       href: general_info.html
       menu:
@@ -49,15 +62,9 @@ navbar:
           href: safety_manuals_and_references.html
         - text: "Work Environment"
           href: safety_work_environment.html
-    - text: "Special Projects"
-      href: special_projects.html
+    - text: "Software"
+      href: software.html
       menu:
-        - text: "Detailed Protocols"
-          href: special_projects_detailed_protocols.html
-        - text: "Es-60 Data Collection"
-          href: special_projects_es-60_data_collection.html
-        - text: "Special Collection Descriptions And Posters"
-          href: special_projects_special_collection_descriptions_and_posters.html
     - text: "Species Id"
       href: species_id.html
       menu:

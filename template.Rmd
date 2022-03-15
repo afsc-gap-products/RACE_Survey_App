@@ -10,13 +10,13 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE)
 
 
 ```{r}
-str0 <- ""
+str00 <- ""
 
 if (nrow(page_dat) != 0) {
   page_dat <- page_dat %>% 
-    dplyr::arrange(survey, title)
+    dplyr::arrange(section, subsection, order, title)
   
-  str0 <- ""
+  # str0 <- ""
   
 # For each section, subset data
   for (i in 1:length(unique(page_dat$section))) {
@@ -25,38 +25,46 @@ if (nrow(page_dat) != 0) {
       dplyr::filter(section == unique(page_dat$section)[i])
     
     # for each subsection, further subset data from section
+    str0 <- ""
+    # str000 <- ""
     for (ii in 1:length(unique(temp0$subsection))) {
       
       temp <- temp0 %>% 
         dplyr::filter(subsection == unique(temp0$subsection)[ii])
     
-      # compuile text that will go on the page
-    str0 <- paste(paste0("**",temp$title, "**", # title
+      # compile text that will go on the page
+    str000 <- paste0( paste(temp$title, "**", # title
             ifelse(is.na(temp$subtitle), "", paste0(": *", temp$subtitle, "*")), # subtitle
             " ",temp$Links_inline, "
-  ", temp$descrip, "
-  
-  "), collapse = "")
+", temp$descrip, "
+
+"), collapse = "")
     
       if (unique(temp$subsection)[1] != "") {
-      str0 <- paste0("
-    
-    ### ",unique(temp$subsection)[1], "
-    
-    ", str0)
+      
+      str000 <- paste0("
+
+### ",unique(temp$subsection)[1], "
+
+", str000)
+      # } else {
+      #   str0 <- str000
       }
+    str0 <- paste0(str0, str000)
     
     }
   
       if (unique(temp$section)[1] != "") {
     str0 <- paste0("
-  
-  ## ",unique(temp0$section)[1], "
-  
-  ", str0)
+
+## ",unique(temp0$section)[1], "
+
+", str0)
       }
+    str00 <- paste0(str00, str0)
   }
+
 }
 ```
 
-`r str0 `
+`r str00 `

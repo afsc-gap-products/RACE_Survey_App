@@ -21,7 +21,7 @@
 
 if (access_to_internet) {
   googledrive::drive_download(
-    file = as_id(dir_googledrive),
+    file = as_id(dir_pagecontent),
     type = "csv",
     overwrite = TRUE,
     path = paste0("./data/survey_app_data.csv")
@@ -41,7 +41,6 @@ full_site$url_web[is.na(full_site$url_web)] <- ""
 full_site$url_loc[is.na(full_site$url_loc)] <- ""
 
 # download links from online ---------------------------------------------------
-
 
 if (access_to_internet) { # aka, access to internet?
   download_web_urls(dat = full_site, col_in = "url_web", dir_out = "./downloaded/")
@@ -64,8 +63,7 @@ full_site <- full_site %>%
   dplyr::mutate(
     descrip = ifelse(test = descrip != "",
                      yes = paste0("\n- ", descrip),
-                     no = ""
-    ),
+                     no = ""),
     
     # page name management
     page = gsub(
@@ -106,29 +104,31 @@ full_site <- full_site %>%
     subsection = ifelse(test = is.na(subsection), yes = "", 
                         no = stringr::str_to_sentence(subsection)),
     # which surveys do each of these documents belong to?
-    srvy_all = ifelse(test = is.na(survey), yes = TRUE, no = FALSE),
-    survey = ifelse(test = is.na(survey), yes = TRUE, 
+    # srvy_all = ifelse(test = is.na(survey), yes = TRUE, no = FALSE),
+    survey = ifelse(test = is.na(survey), 
+                    yes = NA,
                     no = gsub(pattern = " ",
-                              replacement = "", 
-                              fixed = TRUE, 
+                              replacement = "",
+                              fixed = TRUE,
                               x = paste0(",", survey,","))), # TOLEDO - can delete?
     # by having "svy_*" before it, we can use `dplyr::starts_with("svy_")`` to collect all of these columns
-    srvy_ebs = ifelse(#survey == TRUE | 
-                       grepl(pattern = ",bs,", x = survey, ignore.case = TRUE) | 
+    srvy_ebs = ifelse(
+      grepl(pattern = ",all,", x = survey, ignore.case = TRUE) |
+        grepl(pattern = ",bs,", x = survey, ignore.case = TRUE) | 
                        grepl(pattern = ",ebs,", x = survey, ignore.case = TRUE), 
                      TRUE, FALSE), 
-    srvy_nbs = ifelse(#survey == TRUE | 
+    srvy_nbs = ifelse(grepl(pattern = ",all,", x = survey, ignore.case = TRUE) | 
                        grepl(pattern = ",bs,", x = survey, ignore.case = TRUE) | 
                        grepl(pattern = ",nbs,", x = survey, ignore.case = TRUE), 
                      TRUE, FALSE), 
-    srvy_bss = ifelse(#survey == TRUE | 
+    srvy_bss = ifelse(grepl(pattern = ",all,", x = survey, ignore.case = TRUE) | 
                        grepl(pattern = ",bs,", x = survey, ignore.case = TRUE) | 
                        grepl(pattern = ",bss,", x = survey, ignore.case = TRUE), 
                      TRUE, FALSE), 
-    srvy_ai = ifelse(#survey == TRUE | 
+    srvy_ai = ifelse(grepl(pattern = ",all,", x = survey, ignore.case = TRUE) | 
                       grepl(pattern = ",ai,", x = survey, ignore.case = TRUE), 
                     TRUE, FALSE), 
-    srvy_goa = ifelse(#survey == TRUE | 
+    srvy_goa = ifelse(grepl(pattern = ",all,", x = survey, ignore.case = TRUE) |
                        grepl(pattern = ",goa,", x = survey, ignore.case = TRUE), 
                      TRUE, FALSE), 
     # in_survey_app = ifelse(in_survey_app == TRUE, TRUE, FALSE),
@@ -178,9 +178,6 @@ full_site <- full_site %>%
     dplyr::starts_with("svy_")
   )
 
-## Remove rows not included in survey app (yet)
-full_site <- subset(x = full_site, subset = in_survey_app == TRUE)
-
 
 # create general pages for each page if not already specified
 for (jj in 1:length(unique(full_site$page0))) {
@@ -206,6 +203,50 @@ for (jj in 1:length(unique(full_site$page0))) {
     full_site <- dplyr::bind_rows(full_site, temp)
   }
 }
+
+# create survey-specific collection pages
+temp <- full_site %>% 
+  dplyr::filter(page0 == "collections" &
+                  sub_page0 == "specific_collections")
+# TOLEDO - will there be a time when there are no surveys id'ed for this
+
+data_to_insert <- data.frame()
+for (i in 1:nrow(temp)) {
+  dat <- temp[i,] 
+  temp1 <- dat %>% 
+    dplyr::select(dplyr::starts_with("srvy_")) %>% 
+    unlist()
+  srvys <- gsub(pattern = "srvy_", x = names(temp1[which(temp1 == TRUE)]), replacement = "")
+  # print(srvys) # check the line above is working
+  if (length(srvys)==1) {
+    data_to_insert <- dplyr::bind_rows(
+      data_to_insert, 
+      dat %>% 
+        dplyr::mutate(sub_page0 = paste0(srvys, "_", sub_page0), 
+                      sub_page = paste0(toupper(srvys), " ", sub_page)))
+  } else {
+    for (ii in 1:length(srvys)) {
+      dat0 <- dat %>% 
+          dplyr::mutate(sub_page0 = paste0(srvys[ii], "_", sub_page0), 
+                        sub_page = paste0(toupper(srvys[ii]), " ", sub_page))
+      dat0[, grepl(pattern = "srvy_", x = names(dat0))] <- FALSE
+      dat0[, paste0("srvy_", srvys[ii])] <- TRUE      
+      
+      data_to_insert <- dplyr::bind_rows(
+        data_to_insert, 
+        dat0)
+    }
+  }
+}
+
+full_site <- dplyr::bind_rows(
+  full_site %>% 
+    dplyr::filter(page0 != "collections" &
+                  sub_page0 != "specific_collections"), 
+  data_to_insert ) # need to think about how to remove srvy content we are not using (e.g., 2022 goa)
+
+## Remove rows not included in survey app (yet)
+full_site <- subset(x = full_site, subset = in_survey_app == TRUE)
 
 
 dir_pdfs <- make_clean_names(c("codebook", "emergency_flowchart",
