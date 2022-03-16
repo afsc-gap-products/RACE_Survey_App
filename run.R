@@ -20,7 +20,7 @@ this_year_surveys <- c("nbs", "ebs", "ai")
 
 no_templ <- c("survey_team", "flight_itineraries", 
               #"Inventory", 
-              "guides", 
+              "guides", "id_by_taxa",
               "checklist_in", "checklist_out", "checklist_end")
 
 
@@ -45,6 +45,9 @@ source("./data.R")
 # Create all pages -------------------------------------------------------------
 
 comb <- comb %>% 
+  dplyr::add_row(page0 = "species_id", #don't want this in the yaml but need to render html
+                 sub_page0 = "id_by_taxa",
+                 web_page = "species_id_id_by_taxa.html") %>%
   dplyr::mutate(
     template = dplyr::case_when(
       page0 == "index" ~ FALSE, 

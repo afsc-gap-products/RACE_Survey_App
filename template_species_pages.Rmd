@@ -1,0 +1,28 @@
+---
+title: "`r title`"
+description: "`r subtitle`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE)
+```
+
+```{r, fig.align='center'}
+knitr::include_graphics(c(species_page$url_loc), dpi = 150)
+content <- paste(
+  species_page$species_descrip[1], "\n \n",
+  "**Occurence:** ", species_page$range[1], "\n \n",
+  "**Depth:** ", species_page$depth_m[1], "meters  &nbsp; &nbsp;",
+  "**Size:** ", species_page$size_cm[1], "cm \n \n",
+  "**Species code:** ", species_page$species_code[1], "\n \n \n"
+)
+
+back <- paste0("[Back to Group](../species_pages/", group_title, ".html)")
+```
+
+`r content`
+
+
+
+`r back`

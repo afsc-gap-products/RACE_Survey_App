@@ -1,0 +1,1215 @@
+ca-<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+
+
+<head>
+
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+
+
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+p\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+v\:textbox {display:none;}
+</style>
+<![endif]-->
+<title>Accidents</title>
+<meta name=Description content="5/2/2019">
+<link rel=Stylesheet href="master03_stylesheet.css">
+
+<![if !ppt]>
+<style media=print>
+
+<!--.sld
+	{left:0px !important;
+	width:6.0in !important;
+	height:7.87in !important;
+	font-size:136% !important;}
+-->
+</style>
+<script><!--
+function LoadSld()
+{
+	var sld=GetObj("SlideObj")
+	if( !g_supportsPPTHTML ) {		
+		sld.style.visibility="visible"
+		return
+	}
+
+	if( MakeNotesVis() ) return
+
+	runAnimations = _InitAnimations();
+	
+	if( IsWin("PPTSld") )
+		parent.SldUpdated(GetSldId())
+	g_origSz=parseInt(SlideObj.style.fontSize)
+	g_origH=sld.style.posHeight
+	g_origW=sld.style.posWidth
+	g_scaleHyperlinks=(document.all.tags("AREA").length>0)
+	if( g_scaleHyperlinks )
+		InitHLinkArray()
+	if( g_scaleInFrame||(IsWin("PPTSld") && parent.IsFullScrMode() ) )
+		document.body.scroll="no"
+	_RSW()
+	if( IsWin("PPTSld") && parent.IsFullScrMode() )
+		FullScrInit();
+	
+	MakeSldVis();
+	
+	if( runAnimations )
+	{
+		if( document.all("NSPlay") )
+			document.all("NSPlay").autoStart = false;
+
+		if( sld.filters && sld.filters.revealtrans )
+			setTimeout( "document.body.start()", sld.filters.revealtrans.duration * 1000 );
+		else
+			document.body.start();
+	}
+}
+
+function MakeSldVis() 
+{
+	var fTrans=g_showAnimation && SldHasTrans()
+	if( fTrans )	
+	{
+		if( g_bgSound ) {
+			idx=g_bgSound.indexOf(",");
+			pptSound.src=g_bgSound.substr( 0, idx );
+			pptSound.loop= -(parseInt(g_bgSound.substr(idx+1)));
+		}
+		SlideObj.filters.revealtrans.Apply()	
+    }
+	SlideObj.style.visibility="visible"
+	if( fTrans )
+		SlideObj.filters.revealtrans.Play()
+}
+function MakeNotesVis() 
+{
+	if( !IsNts() ) return false 
+	SlideObj.style.display="none"
+	nObj = document.all.item("NotesObj")
+	parent.SetHasNts(0)
+	if( nObj ) { 
+		nObj.style.display=""
+		parent.SetHasNts(1)
+	}
+	return 1
+}
+function ChkAutoAdv()
+{
+	if(SldHasTrans())
+		SlideObj.onfilterchange=AutoAdv
+	else
+		AutoAdv()
+}
+function AutoAdv()
+{
+	if(!IsWin("PPTSld") || !gUseSldTimings )return
+	var sld=GetCurSld()
+	if( (sld.mAdvDelay>0) && !parent.IsFramesMode() )
+		setTimeout("parent.GoToNextSld()",sld.mAdvDelay)
+}
+function GetObj(id)
+{
+	if(g_supportsPPTHTML) return document.all(id);
+	else return document.getElementById(id);
+}
+function SldHasTrans() { return SlideObj.style.filter != ""; }
+function GetSldId() { return sId=location.href.substring(location.href.lastIndexOf('/')+1) }
+function HideMenu() { if( frames["PPTSld"] && PPTSld.document.all.item("ctxtmenu") && PPTSld.ctxtmenu.style.display!="none" ) { PPTSld.ctxtmenu.style.display='none'; return true } return false }
+function IsWin( name ) { return window.name == name }
+function IsNts() { return IsWin("PPTNts") }
+function IsSldOrNts() { return( IsWin("PPTSld")||IsWin("PPTNts") ) }
+function SupportsPPTAnimation() { return( navigator.platform == "Win32" && navigator.appVersion.indexOf("Windows")>0 ) }
+function SupportsPPTHTML()
+{
+	var appVer=navigator.appVersion, msie=appVer.indexOf("MSIE "), ver=0
+	if( msie >= 0 )
+		ver=parseFloat( appVer.substring( msie+5, appVer.indexOf(";",msie) ) )
+	else
+		ver=parseInt(appVer)
+
+	return( ver >= 4 && msie >= 0 )
+}
+function _RSW()
+{
+	if( !g_supportsPPTHTML || IsNts() ||
+	  ( !g_scaleInFrame && (!IsWin("PPTSld") || !parent.IsFullScrMode()) ) )
+		return
+
+        var padding=0;
+        if( IsWin("PPTSld") && parent.IsFramesMode() ) padding=6
+
+	cltWidth=document.body.clientWidth-padding
+	cltHeight=document.body.clientHeight-padding
+	factor=(1.0*cltWidth)/g_origW
+	if( cltHeight < g_origH*factor )
+		factor=(1.0*cltHeight)/g_origH
+
+	newSize = g_origSz * factor
+	if( newSize < 1 ) newSize=1
+
+	s=SlideObj.style
+	s.fontSize=newSize+"px"
+	s.posWidth=g_origW*factor
+	s.posHeight=g_origH*factor
+	s.posLeft=(cltWidth-s.posWidth+padding)/2
+	s.posTop=(cltHeight-s.posHeight+padding)/2
+
+	if( g_scaleHyperlinks )
+		ScaleHyperlinks( factor )
+}
+function _InitAnimations()
+{
+	animRuntimeInstalled = ''+document.body.localTime != 'undefined';
+	isFullScreen = (window.name == "PPTSld") && !parent.IsFramesMode();
+	g_animUseRuntime = g_showAnimation && animRuntimeInstalled && !(isFullScreen && parent.IsSldVisited());
+	if( g_animUseRuntime ) {
+		collSeq = document.all.tags("seq");
+		if( collSeq != null ) {
+			for(ii=0;ii<collSeq.length;ii++) {
+				if( collSeq[ii].getAttribute( "p:nodeType" ) == "mainSeq" ) {
+					g_animMainSequence = collSeq[ii];
+					break;
+				}
+			}
+		}
+	
+		if( g_animItemsToHide && document.body.playAnimations != false ) {
+			for(jj = 0; jj < g_animItemsToHide.length; jj++) {
+				if( hideObj = GetObj(g_animItemsToHide[jj]) )
+					hideObj.runtimeStyle.visibility="hidden";
+			}
+		}
+
+		if( g_animInteractiveItems ){
+			for(jj = 0; jj < g_animInteractiveItems.length; jj++) {
+				if( triggerObj = GetObj(g_animInteractiveItems[jj]) )
+					triggerObj.runtimeStyle.cursor="hand";
+			}
+		}
+		
+		if( gUseSldTimings && ''+g_animSlideTime != 'undefined' ) {
+			adjustedTime = document.body.calculateAutoAdvanceTimes( g_animSlideTime, g_animEffectTimings );
+			if( IsWin("PPTSld") && adjustedTime != g_animSlideTime ) {
+			   var sld = GetCurSld();
+			   sld.mAdvDelay = adjustedTime * 1000;
+			}
+		}
+	}
+
+	return g_animUseRuntime;
+}
+
+
+var g_supportsPPTHTML = SupportsPPTHTML(), g_scaleInFrame = 1, gId="", g_bgSound="",
+    g_scaleHyperlinks = false, g_allowAdvOnClick = 1, g_showInBrowser = 0, gLoopCont = 0, gUseSldTimings = 1;
+var g_showAnimation = g_supportsPPTHTML && SupportsPPTAnimation() && g_showInBrowser;
+var g_animManager = null;
+var g_animUseRuntime = false;
+var g_animItemsToHide, g_animInteractiveItems, g_animSlideTime;
+var g_animMainSequence = null;
+
+//--></script><!--[if vml]><script>g_vml = 1;
+</script><![endif]--><![endif]>
+</head>
+
+
+
+
+
+<body lang=EN-US style='margin:0px;background-color:white' onresize="_RSW()"
+onload="LoadSld()">
+
+<div id=SlideObj class=sld style='position:absolute;top:0px;left:0px;
+width:422px;height:554px;font-size:16px;background-color:white;clip:rect(0%, 101%, 101%, 0%);
+visibility:hidden'><p:slide coordsize="576,756"
+ colors="#ffffff,#000000,#eeece1,#1f497d,#4f81bd,#c0504d,#0563c1,#800080"
+ masterhref="master03.xml" href="slide0001.xml">
+ <p:shaperange href="master03.xml#_x0000_s1025"/><![if !ppt]><p:shaperange
+  href="master03.xml#bk_x0020_object_x0020_16"/><![if !vml]><img border=0
+ v:shapes="bk_x0020_object_x0020_16" src="master03_image003.gif"
+ style='position:absolute;top:2.88%;left:6.87%;width:9.71%;height:4.87%'><![endif]><p:shaperange
+  href="master03.xml#bk_x0020_object_x0020_17"/><![if !vml]><img border=0
+ v:shapes="bk_x0020_object_x0020_17" src="master03_image004.gif"
+ style='position:absolute;top:2.7%;left:7.1%;width:9.47%;height:4.69%'><![endif]><p:shaperange
+  href="master03.xml#bk_x0020_object_x0020_18"/><![if !vml]><img border=0
+ v:shapes="bk_x0020_object_x0020_18" src="master03_image005.gif"
+ style='position:absolute;top:2.52%;left:6.87%;width:9.95%;height:4.87%'><![endif]><![endif]><p:shaperange
+  href="slide0001.xml#object_x0020_2"/>
+  
+ 
+ <div v:shape="object_x0020_2">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:29;
+ mso-text-indent-alt:8'><span style='position:absolute;top:3.2%;left:8.53%;
+ width:6.87%;height:1.44%'><span lang=X-NONE style='font-size:60%;color:white'><b>Incident<br>Occurs</b></span>
+ </span></div>
+ </div>
+ 
+
+ 
+ 
+ <div "object_x0020_3">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:8'>
+ <span style='position:absolute;text-align:center;top:1.44%;left:22.74%;width:34.19%;height:2.52%'>
+ <span  style='font-size:89%'>
+ <b>AFSC At-Sea<br>Incident Reporting</b></span></span></div>
+ </div>
+ 
+ <div "object_x0020_4">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:8;position:absolute;top:20.03%;left:7.58%;width:3.55%;height:1.44%'>
+ <span  style='font-size:50%'>Yes</span></div>
+ </div>
+ 
+ <div "object_x0020_5">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:8;position:absolute;top:12.09%;left:18.24%;width:2.84%;height:1.62%'>
+ <span  style='font-size:50%'>No</span></div>
+ </div>
+ 
+ <div "object_x0020_6">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:8'>
+ <span style='position:absolute;top:94.94%;left:84.59%;width:13.27%;height:1.62%'>
+ <span  style='font-size:60%'>
+ Revised<br>MAY 2018</span></span></div>
+ </div>
+ 
+ <div "object_x0020_7">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:8;position:absolute;top:27.07%;left:21.09%;width:3.55%; height:1.44%'>
+ <span  style='font-size:50%'>Yes</span></div>
+ </div>
+ 
+ <div "object_x0020_8">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:8;position:absolute;top:36.82%;left:13%;width:2.84%;height:1.44%'>
+ <span  style='font-size:50%'>No</span></div>
+ </div>
+ 
+ <img border=0 "object_x0020_9" src="slide0001_image007.gif" style='position:absolute;top:24.36%;left:24.17%;width:19.19%;height:13.71%'>
+
+
+ <div "object_x0020_10">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:66;mso-text-indent-alt:66'>
+ <span style='position:absolute;text-align:center;top:26%; left:25.5%; width:16.82%; height:15%'>
+ <span style='font-size:70%;color:white'><b>SEEK<br>EMERGENCY<br>Medical<br>attention<br>NOW</a></b>
+ </span></span>
+ </div>
+ </div>
+ 
+ 
+ <div "object_x0020_11">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8; mso-text-indent-alt:8;position:absolute;top:40.97%;left:18.0%;width:3.55%; height:1.44%'>
+ <span  style='font-size:50%'>Yes</span></div>
+ </div>
+ 
+ <div "object_x0020_12">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:8;position:absolute;top:48.73%;left:13%;width:2.84%; height:1.44%'>
+ <span  style='font-size:50%'>No</span></div>
+ </div>
+ 
+ <div "object_x0020_13">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:8;position:absolute;top:54.15%;left:18.0%;width:3.55%; height:1.44%'>
+ <span  style='font-size:50%'>Yes</span></div>
+ </div>
+ 
+ <div "object_x0020_14">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:8;position:absolute;top:61.19%;left:13%;width:2.84%;height:1.44%'>
+ <span  style='font-size:50%'>No</span></div>
+ </div>
+ 
+<img border=0 "object_x0020_15" src="slide0001_image010.gif" style='position:absolute;top:65.88%;left:21.09%;width:12.08%;height:7.76%'>
+
+ 
+ <div "object_x0020_16">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:37;mso-text-indent-alt:8'>
+ <span style='position:absolute;top:67.5%;left:24.17%;width:4.97%;height:1.44%'>
+  <span  style='font-size:60%'>Notify<br>FPC</span></span></div>
+ </div>
+ 
+  <div "object_x0020_100">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:8;position:absolute;top:66%;left:18.0%;width:3.55%;height:1.44%'>
+ <span  style='font-size:50%'>Yes</span></div>
+ </div>
+ 
+ <div "object_x0020_17">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:8;position:absolute;top:78.33%;left:18.0%;width:3.55%;height:1.44%'>
+ <span  style='font-size:50%'>Yes</span></div>
+ </div>
+ 
+ <div "object_x0020_18">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:8;position:absolute;top:85.55%;left:14.5%;width:2.84%;height:1.44%'>
+ <span  style='font-size:50%'>No</span></div>
+ </div>
+ 
+<img border=0 "object_x0020_19" src="slide0001_image012.gif" style='position:absolute; top:77.07%;left:21.09%;width:10.18%;height:8.48%'>
+ 
+
+ 
+ <div "object_x0020_20">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:34;mso-text-indent-alt:32'>
+ <span style='position:absolute;top:77.5%;left:21.56%;width:7.81%;height:1.44%'>
+ <span  style='font-size:58%'>Notify police<br>
+ <span style='font-size:100%;color:red'><b>Call 911 if needed</b></span></span></span>
+ </div>
+ </div>
+ 
+ 
+ <img border=0
+"object_x0020_21,object_x0020_22" src="slide0001_image013.gif"
+ style='position:absolute;top:7.03%;left:10.9%;width:1.89%;height:3.24%'>
+ 
+ <img border=0
+"object_x0020_23,object_x0020_24" src="slide0001_image014.gif"
+ style='position:absolute;top:14.25%;left:17.53%;width:4.26%;height:6.44'>
+ 
+ <img border=0
+"object_x0020_25,object_x0020_26" src="slide0001_image015.gif"
+ style='position:absolute;top:47.83%;left:10.9%;width:1.89%;height:3.61%'>
+ 
+  <img border=0
+"object_x0020_155,object_x0020_155" src="slide0001_image015b.gif"
+ style='position:absolute;top:37%;left:8.4%;width:1.89%;height:3.61%'>
+ 
+   <img border=0
+"object_x0020_155,object_x0020_155" src="slide0001_image015b.gif"
+ style='position:absolute;top:49%;left:8.7%;width:1.89%;height:3.61%'>
+ 
+ <img border=0
+"object_x0020_27,object_x0020_28" src="slide0001_image016.gif"
+ style='position:absolute;top:19.13%;left:10.9%;width:1.89%;height:3.42%'>
+ 
+  <img border=0
+"object_x0020_27,object_x0020_28" src="slide0001_image016.gif"
+ style='position:absolute;top:62%;left:8.7%;width:1.89%;height:3.42%'>
+ 
+   <img border=0
+"object_x0020_27,object_x0020_28" src="slide0001_image016.gif"
+ style='position:absolute;top:74%;left:8.7%;width:1.89%;height:3.42%'>
+ 
+    <img border=0
+"object_x0020_27,object_x0020_28" src="slide0001_image016.gif"
+ style='position:absolute;top:86.6%;left:8.7%;width:1.89%;height:3.42%'>
+  
+ 
+ <img border=0
+"object_x0020_29,object_x0020_30" src="slide0001_image017.gif"
+ style='position:absolute;top:36.28%;left:10.9%;width:1.89%;height:2.7%'>
+ 
+ <img border=0
+"object_x0020_31,object_x0020_32" src="slide0001_image018.gif"
+ style='position:absolute;top:60.28%;left:10.9%;width:1.89%;height:3.79%'>
+ 
+ <img border=0
+"object_x0020_33,object_x0020_34" src="slide0001_image019.gif"
+ style='position:absolute;top:48.37%;left:75.59%;width:7.58%;height:1.44%'>
+ <img border=0
+"object_x0020_35,object_x0020_36" src="slide0001_image020.gif"
+ style='position:absolute;top:42.77%;left:17.53%;width:4.26%;height:1.44%'>
+ 
+ <img border=0
+"object_x0020_37,object_x0020_38" src="slide0001_image021.gif"
+ style='position:absolute;top:80.14%;left:17.53%;width:4.26%;height:1.44%'>
+ 
+ <img border=0
+"object_x0020_39,object_x0020_40" src="slide0001_image022.gif"
+ style='position:absolute;top:55.41%;left:17.53%;width:4.26%;height:1.44%'>
+ 
+ <img border=0
+"object_x0020_41,object_x0020_42" src="slide0001_image023.gif"
+ style='position:absolute;top:28.88%;left:20.61%;width:4.26%;height:1.44%'>
+ 
+ <img border=0
+"object_x0020_43,object_x0020_44" src="slide0001_image024.gif"
+ style='position:absolute;top:20.03%;left:31.75%;width:3.79%;height:5.23%'>
+ 
+
+ 
+ 
+ <img border=0
+"object_x0020_46" src="slide0001_image028.gif" style='position:absolute;
+ top:10.1%;left:5.45%;width:12.79%;height:9.74%'>
+ 
+ <div "object_x0020_46">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O><span style='position:absolute;top:10.1%;left:5.45%;width:12.79%;
+ height:1.44%'><span  style='font-size:100%;mso-special-format:lastCR;
+ display:none'></span></span></div>
+ </div>
+ 
+<img border=0
+"object_x0020_47,object_x0020_49" src="slide0001_image030.gif"
+ style='position:absolute;top:9.92%;left:2.13%;width:19.43%;height:27.25%'>
+ 
+ <div "object_x0020_48">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ 
+ <div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:28;mso-text-indent-alt:8'>
+ <span style='position:absolute;top:12.45%;left:4%;width:15.0%; height:1.44%'>
+ <span  style='font-size:50%'><b>Injuries or<br>property<br>damage</b></span></span></div>
+ </div>
+ 
+
+ 
+ 
+ <img border=0
+"object_x0020_50,object_x0020_51" src="slide0001_image031.gif"
+ style='position:absolute;top:22.2%;left:2.13%;width:19.43%;height:14.8%'>
+ 
+ <div "object_x0020_52">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:66;mso-text-indent-alt:66'>
+ 
+ <span style='position:absolute;top:25.5%;left:6.5%;width:10.42%;height:1.44%'>
+ <span  style='font-size:50%;color:white'><b>EMERGENCY<br>or<br>Immediate<br>medical<br>attention<br>needed<span style='mso-spacerun:yes'>
+ </span></span></span>
+ </div></div>
+ 
+ <img border=0
+"object_x0020_53" src="slide0001_image032.gif" style='position:absolute;
+ top:63.71%;left:5.21%;width:13.03%;height:9.92%'>
+ 
+
+ <img border=0
+"object_x0020_54" src="slide0001_image034.gif" style='position:absolute;
+ top:63.53%;left:5.21%;width:12.79%;height:9.74%'>
+ 
+
+ 
+ <img border=0
+"object_x0020_55,object_x0020_57" src="slide0001_image035.gif"
+ style='position:absolute;top:63.35%;left:5.21%;width:13.27%;height:22.74%'>
+ 
+ <div "object_x0020_56">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+<div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:7'>
+ <span style='position:absolute;top:66.6%;left:7%;width:9.0%;height:1.44%'>
+ <span  style='font-size:50%'>Small boat<br>accident</span></span>
+ </div>
+ </div>
+ 
+
+ <img border=0
+"object_x0020_58" src="slide0001_image036.gif" style='position:absolute;
+ top:75.99%;left:5.21%;width:12.79%;height:9.74%'>
+ 
+ 
+ <img border=0 "object_x0020_59" src="slide0001_image037.gif" style='position:absolute;
+ top:75.81%;left:5.21%;width:13.27%;height:10.1%'>
+ 
+ <div "object_x0020_60">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:42;position:absolute;top:78.5%;left:8.53%;width:5.92%; height:4.33%'>
+ <span  style='font-size:50%'>Motor<br>vehicle<br>accident</span>
+ </div>
+ </div>
+ 
+ <img border=0
+"object_x0020_61" src="slide0001_image038.gif" style='position:absolute;
+ top:38.62%;left:5.21%;width:13.03%;height:9.92%'>
+ 
+ 
+ 
+ <img border=0
+"object_x0020_62" src="slide0001_image040.gif" style='position:absolute;
+ top:38.44%;left:5.21%;width:12.79%;height:9.74%'>
+ 
+  
+ <img border=0
+"object_x0020_63" src="slide0001_image041.gif" style='position:absolute;
+ top:38.44%;left:4.97%;width:13.27%;height:10.1%'>
+ 
+ <div "object_x0020_64">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ 
+ <div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt: 8;mso-text-indent-alt:8'>
+ <span style='position:absolute;top:41.15%;left:7.34%;width:8.76%;height:1.44%'>
+ <span  style='font-size:50%'>Treatment<br>by first aid<br>only</span></span></div>
+ </div>
+ 
+ <img border=0 "object_x0020_68" src="slide0001_image044.gif" style='position:absolute;top:41.87%;left:62.55%;width:37.2%;height:12.99%'>
+ 
+
+  
+ 
+ <div "object_x0020_69">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:8'>
+ <span style='position:absolute;top:46%;left:83.88%;width:13.27%;height:1.62%'>
+ <span  style='font-size:50%'>AFSC Safety<br>Office fills out<br>NOAA Online<br>Incident Report</span></span>
+ </div>
+ </div>
+ 
+ <img border=0 "object_x0020_70" src="slide0001_image046.gif" style='position:absolute;top:18.23%;left:16.58%;width:16.82%;height:5.77%'>
+ 
+ 
+ 
+ <img border=0
+"object_x0020_73,object_x0020_74" src="slide0001_image047.gif"
+ style='position:absolute;top:20.03%;left:11.61%;width:5.92%;height:1.44%'>
+ 
+<img border=0
+"object_x0020_75" src="slide0001_image049.gif" style='position:absolute;
+ top:61.01%;left:42.65%;width:12.55%;height:5.77%'>
+ 
+   <div "object_x0020_71">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:8; mso-text-indent-alt:8;position:absolute;top:18.75%;left:17.3%;width:14.45%; height:1.44%'>
+ <span  style='font-size:60%'><a target="blank" href="EMERGENCY NOTIFICATION PLAN.pdf">EMERGENCY<br>Notification Plan</span><br>
+ <b><u><span><a style='font-size:40%'target="blank" href="CA_16_expires_2018_mar_2021.pdf">CA-16 if needed</a></u></b>
+ </span>
+ </div>
+ </div>
+ 
+ 
+ <div "object_x0020_76">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:37;mso-text-indent-alt:8'>
+ <span style='text-align:center;position:absolute;top:61.5%;left:44.5%;width:6.39%;height:1.44%'>
+ <span  style='font-size:60%'>Notify<br>VOC</span></span>
+ </div>
+ </div>
+ 
+ <img border=0
+"object_x0020_77" src="slide0001_image051.gif" style='position:absolute;
+ top:40.97%;left:21.09%;width:12.32%;height:5.77%'>
+ 
+ 
+ <div "object_x0020_78">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+<div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:37;mso-text-indent-alt:8'>
+ <span style='text-align:center;position:absolute;top:41.8%;left:23.3%; width:6.39%;height:1.44%'>
+ <span  style='font-size:60%'>Notify<br>FPC</span></span></div>
+ </div>
+ 
+<img border=0
+"object_x0020_79,object_x0020_80" src="slide0001_image052.gif"
+ style='position:absolute;top:42.77%;left:31.75%;width:4.26%;height:1.44%'>
+ 
+<img border=0
+"object_x0020_81,object_x0020_82,object_x0020_83"
+ src="slide0001_image054.gif" style='position:absolute;top:22.02%;left:80.56%;
+ width:15.63%;height:6.31%'>
+ 
+ 
+ <img border=0
+"object_x0020_84" src="slide0001_image056.gif" style='position:absolute;
+ top:21.84%;left:84.59%;width:11.61%;height:6.13%'>
+ 
+  
+ <img border=0
+"object_x0020_85" src="slide0001_image057.gif" style='position:absolute; top:21.84%;left:84.59%;width:11.84%;height:6.31%'>
+ 
+ <div "object_x0020_86">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:37'>
+ <span style='position:absolute;text-align:center;top:23.3%;left:87%;width:7.1%;height:1.44%'>
+ <span  style='font-size:50%;color:white'><b>Process<br>complete</b></span></span>
+ </div>
+ </div>
+ 
+<img border=0
+"object_x0020_87,object_x0020_88" src="slide0001_image058.gif"
+ style='position:absolute;top:83.93%;left:13.27%;width:22.98%;height:8.3%'>
+ 
+ <img border=0
+"object_x0020_89,object_x0020_90,object_x0020_91"
+ src="slide0001_image060.gif" style='position:absolute;top:14.25%;left:48.34%;
+ width:14.92%;height:16.24%'>
+ 
+  
+ <div "object_x0020_92">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:
+ 7;mso-text-indent-alt:7'><span style='position:absolute;top:22.92%;left:49.76%;
+ width:11.61%;height:1.44%'><span  style='font-size:50%'><b>AFSC
+ Safety<br>Office will<br>contact you if<br>needed</span></span></div>
+ </div>
+ 
+ <img border=0
+"object_x0020_93" src="slide0001_image062.gif" style='position:absolute;
+ top:11.91%;left:21.09%;width:12.32%;height:5.77%'>
+ 
+ 
+ <div "object_x0020_94">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:79'>
+ <span style='text-align:center;position:absolute;top:12.4%;left:23.3%; width:6.39%;height:1.44%'>
+ <span  style='font-size:60%'>Notify<br>FPC</span></span>
+ </div>
+ </div>
+ 
+ <img border=0
+"object_x0020_95,object_x0020_96" src="slide0001_image063.gif"
+ style='position:absolute;top:14.25%;left:31.75%;width:4.26%;height:1.44%'>
+ 
+ <img border=0
+"object_x0020_97,object_x0020_98" src="slide0001_image064.gif"
+ style='position:absolute;top:29.24%;left:48.34%;width:8.53%;height:14.8%'>
+ 
+ <img border=0
+"object_x0020_99,object_x0020_102,object_x0020_103,object_x0020_104,object_x0020_105,object_x0020_106,object_x0020_111,object_x0020_112,object_x0020_114,object_x0020_115,object_x0020_116,object_x0020_117,object_x0020_119,object_x0020_120,object_x0020_123,_x0000_s2172,_x0000_s2173,_x0000_s2174,_x0000_s2175,_x0000_s2176,_x0000_s2177,_x0000_s2178,_x0000_s2179,_x0000_s2180"
+ src="slide0001_image067.gif" style='position:absolute;top:6.85%;left:29.38%; width:69.19%;height:84.83%'>
+ 
+ 
+ <div "object_x0020_107">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8; mso-text-indent-alt:8'>
+ <span style='position:absolute;top:55.8%;left:63.74%;width:27.01%;height:1.62%'>
+ <span  style='font-size:50%'><b>Employee and Supervisor :<br>Additional forms (as needed):</b></span>
+</span></div>
+ </div>
+ 
+ <div "object_x0020_108">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ 
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8; mso-text-indent-alt:8'>
+ <span style='position:absolute;top:59%;left:63.74%; width:35%;height:1.62%;font-size:45%'> 
+ Managed Care Advisors (MCA)<br>
+  <u>DOCWCCliams@managedcareadvisors.com<br></u>or (844) 362-2524&nbsp;&nbsp;&nbsp;&nbsp;&nbspEcomp instructions:</span>
+ </div>
+ </div>
+ 
+<div "object_x0020_109">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8; mso-text-indent-alt:8;position:absolute;top:63%;left:76%; width:65%;height:1.62%;font-size:40%'> 
+ <b><u><a target="_blank" href="Filing CA-1 and CA-2 Employee Instructions.pdf">Employee</a></b></u>
+ <a target="_blank" href="Workers Comp Supr Completion CA1.pdf">Supervisor</a></u></b>
+  
+</div>
+</div>
+ 
+ <div "object_x0020_113">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:
+ 7;mso-text-indent-alt:7'><span style='position:absolute;top:20.5%;left:67.4%;
+ width:12%;height:1.44%'><span  style='font-size:50%'>Safety
+ Office, FPC <br>and supervisor<br>will review and<br>implement<br>operational<br>change if<br>needed</span></span></div>
+ </div>
+ 
+ <div "object_x0020_118">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:
+ 8;mso-text-indent-alt:8'><span style='position:absolute;top:80%;left:70.5%;
+ width:12%;height:1.44%'><span  style='font-size:50%'>Safety Office, FPC <br>and supervisor<br>will review and<br>implement<br>operational<br>change if<br>needed</span></span></div>
+ </div>
+ 
+ <div "object_x0020_121">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ 
+ <div class=O style='position:absolute;top:1.5%;left:61.13%;width:35%;height:1.98%'>
+ <span  style='font-size:80%'><b>AFSC Safety Office Contact Info</b></span></div>
+ </div>
+ 
+ <div "object_x0020_122">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8; mso-text-indent-alt:8'>
+ <span style='position:absolute;top:2.16%;left:61.13%;width:22.98%;height:1.98%'>
+ </span>
+ <span style='position:absolute;top:4.15%;left:61.13%;width:22.03%;height:1.62%'>
+ <span  style='font-size:70%;color:#0563C1'><b><u>
+ <a href="mailto:afsc.safety@noaa.gov" target="_parent"
+ onclick="window.event.cancelBubble=true;">afsc.safety@noaa.gov</a></u></b></span></div>
+ </div>
+ 
+ <div "_x0000_s2172">
+ <div class=Tbl1 style='mso-margin-left-alt:468'></div>
+ <div class=Tbl2 style='mso-margin-left-alt:720'></div>
+ <div class=Tbl3 style='mso-margin-left-alt:1008'></div>
+ <div class=Tbl4 style='mso-margin-left-alt:1296'></div>
+ <div class=Tbl style='mso-line-spacing:"-91 0 0";mso-margin-left-alt:20;
+ mso-text-indent-alt:20;mso-char-wrap:1;mso-kinsoku-overflow:1;position:absolute;
+ top:7.03%;left:61.13%;width:13.74%;height:1.44%'><span 
+ style='font-size:60%'><u>Rich Koster</u></span></div>
+ </div>
+ 
+
+ 
+ <div "_x0000_s2174">
+ <div class=Tbl1 style='mso-margin-left-alt:468'></div>
+ <div class=Tbl2 style='mso-margin-left-alt:720'></div>
+ <div class=Tbl3 style='mso-margin-left-alt:1008'></div>
+ <div class=Tbl4 style='mso-margin-left-alt:1296'></div>
+ <div class=Tbl style='mso-line-spacing:"-91 0 0";mso-margin-left-alt:111;
+ mso-text-indent-alt:111;mso-char-wrap:1;mso-kinsoku-overflow:1;position:absolute;
+ top:7.03%;left:86.25%;width:12.32%;height:1.44%'><span 
+ style='font-size:60%'><u>Jon Buzitis</u></span></div>
+ </div>
+ 
+ <div "_x0000_s2175">
+ <div class=Tbl1 style='mso-margin-left-alt:468'></div>
+ <div class=Tbl2 style='mso-margin-left-alt:720'></div>
+ <div class=Tbl3 style='mso-margin-left-alt:1008'></div>
+ <div class=Tbl4 style='mso-margin-left-alt:1296'></div>
+ <div class=Tbl style='mso-line-spacing:"-101 0 0";mso-margin-left-alt:20;
+ mso-text-indent-alt:20;mso-char-wrap:1;mso-kinsoku-overflow:1;position:absolute;
+ top:8.84%;left:61.13%;width:13.74%;height:1.44%'><span 
+ style='font-size:60%'>206 526 4165</span></div>
+ </div>
+ 
+ <div "_x0000_s2176">
+ <div class=Tbl1 style='mso-margin-left-alt:468'></div>
+ <div class=Tbl2 style='mso-margin-left-alt:720'></div>
+ <div class=Tbl3 style='mso-margin-left-alt:1008'></div>
+ <div class=Tbl4 style='mso-margin-left-alt:1296'></div>
+ <div class=Tbl style='mso-line-spacing:"-101 0 0";mso-margin-left-alt:88;
+ mso-text-indent-alt:88;mso-char-wrap:1;mso-kinsoku-overflow:1;position:absolute;
+ top:8.84%;left:76.54%;width:7.34%;height:1.44%'><span 
+ style='font-size:60%'>office</span></div>
+ </div>
+ 
+ <div "_x0000_s2177">
+ <div class=Tbl1 style='mso-margin-left-alt:468'></div>
+ <div class=Tbl2 style='mso-margin-left-alt:720'></div>
+ <div class=Tbl3 style='mso-margin-left-alt:1008'></div>
+ <div class=Tbl4 style='mso-margin-left-alt:1296'></div>
+ <div class=Tbl style='mso-line-spacing:"-101 0 0";mso-margin-left-alt:111;
+ mso-text-indent-alt:111;mso-char-wrap:1;mso-kinsoku-overflow:1;position:absolute;
+ top:8.84%;left:86.25%;width:12.32%;height:1.44%'><span 
+ style='font-size:60%'>206 526 4361</span></div>
+ </div>
+
+ <div "_x0000_s2178">
+ <div class=Tbl1 style='mso-margin-left-alt:468'></div>
+ <div class=Tbl2 style='mso-margin-left-alt:720'></div>
+ <div class=Tbl3 style='mso-margin-left-alt:1008'></div>
+ <div class=Tbl4 style='mso-margin-left-alt:1296'></div>
+ <div class=Tbl style='mso-line-spacing:"-98 0 0";mso-margin-left-alt:20;
+ mso-text-indent-alt:20;mso-char-wrap:1;mso-kinsoku-overflow:1;position:absolute;
+ top:10.64%;left:61.13%;width:13.74%;height:1.44%'><span 
+ style='font-size:60%'>206 406 6717</span></div>
+ </div>
+
+<div "_x0000_s2179">
+ <div class=Tbl1 style='mso-margin-left-alt:468'></div>
+ <div class=Tbl2 style='mso-margin-left-alt:720'></div>
+ <div class=Tbl3 style='mso-margin-left-alt:1008'></div>
+ <div class=Tbl4 style='mso-margin-left-alt:1296'></div>
+ <div class=Tbl style='mso-line-spacing:"-98 0 0";mso-margin-left-alt:88;
+ mso-text-indent-alt:88;mso-char-wrap:1;mso-kinsoku-overflow:1;position:absolute;
+ top:10.64%;left:76.54%;width:7.34%;height:1.44%'><span 
+ style='font-size:60%'>cell</span></div>
+ </div>
+ 
+ <div "_x0000_s2180">
+ <div class=Tbl1 style='mso-margin-left-alt:468'></div>
+ <div class=Tbl2 style='mso-margin-left-alt:720'></div>
+ <div class=Tbl3 style='mso-margin-left-alt:1008'></div>
+ <div class=Tbl4 style='mso-margin-left-alt:1296'></div>
+ <div class=Tbl style='mso-line-spacing:"-98 0 0";mso-margin-left-alt:111;
+ mso-text-indent-alt:111;mso-char-wrap:1;mso-kinsoku-overflow:1;position:absolute;
+ top:10.64%;left:86.25%;width:12.32%;height:1.44%'><span 
+ style='font-size:60%'>206 643 5001</span></div>
+ </div>
+ 
+ <img
+ border=0 src="slide0001_image068.gif"
+ style='position:absolute;top:.36%;left:60.18%;width:39.57%;height:12.99%'>
+ 
+ <img border=0
+"object_x0020_125" src="slide0001_image069.gif" style='position:absolute;
+ top:83.03%;left:86.72%;width:11.61%;height:6.31%'>
+
+ 
+ <img
+ border=0 src="slide0001_image071.gif"
+ style='position:absolute;top:82.85%;left:86.72%;width:11.61%;height:6.13%'>
+ 
+ 
+ <img
+ border=0 src="slide0001_image072.gif"
+ style='position:absolute;top:82.67%;left:86.72%;width:11.84%;height:6.31%'>
+ 
+ <div "object_x0020_128">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:37'>
+  <span style='position:absolute;text-align:center;top:84.11%;left:88.6%;width:7.1%;height:1.44%'>
+ <span  style='font-size:50%;color:white'><b>Process<br>complete</b></span></span></div>
+ </div>
+ 
+ <img
+ border=0
+ src="slide0001_image074.gif" style='position:absolute;top:68.23%;left:40.75%;
+ width:17.06%;height:7.76%'>
+ 
+
+ <div "object_x0020_132">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;
+ mso-text-indent-alt:33'><span style='position:absolute;top:69.13%;left:43.12%;
+ width:13.5%;height:1.62%'><span  style='font-size:50%'>Notify Division<br>Vehicle Monitor</span></span></div>
+ </div>
+ 
+ <img
+ border=0 src="slide0001_image075.gif"
+ style='position:absolute;top:51.44%;left:4.97%;width:13.03%;height:9.92%'>
+ <div "object_x0020_133">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O><span style='position:absolute;top:51.44%;left:4.97%;width:13.03%;
+ height:1.44%'><span  style='font-size:100%;mso-special-format:lastCR;
+ display:none'></span></span></div>
+ </div>
+
+<img
+ border=0 src="slide0001_image076.gif"
+ style='position:absolute;top:51.26%;left:5.21%;width:12.79%;height:9.74%'>
+ 
+ 
+ <img border=0 src="slide0001_image077.gif"
+ style='position:absolute;top:51.08%;left:4.97%;width:13.27%;height:10.1%'>
+ 
+ <div "object_x0020_136">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ 
+
+ 
+ <div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:7'>
+ <span style='position:absolute;top:54.15%;left:9%;width:4.97%;height:1.44%'>
+ <span  style='font-size:50%'>Dive<br>accident</span></span></div>
+ </div>
+ 
+ <div "object_x0020_137">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;
+ mso-text-indent-alt:8;position:absolute;top:73.64%;left:13%;width:2.84%; height:1.44%'>
+ <span  style='font-size:50%'>No</span></div>
+ </div>
+ 
+<img border=0 src="slide0001_image078.gif" style='position:absolute;top:72.56%;left:10.9%;
+ width:1.89%;height:3.79%'>
+ 
+ <img border=0 src="slide0001_image080.gif" style='position:absolute;
+ top:52.88%;left:21.09%;width:17.53%;height:7.58%'>
+ 
+ 
+ <div "object_x0020_141">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:
+ 7;mso-text-indent-alt:7'><span style='position:absolute;top:54.0%;left:21.32%;
+ width:16.11%;height:1.44%'><span  style='font-size:50%'>Follow </span>
+ <span  style='font-size:50%;color:#EE07FF'><b>NOAA Dive Incident Reporting</b></span>
+ <span style='font-size:50%'><b>instructions</span></div>
+ </div>
+ 
+<img
+ border=0
+ src="slide0001_image081.gif" style='position:absolute;top:67.68%;left:17.53%;
+ width:4.5%;height:1.44%'>
+ 
+ <img border=0
+"object_x0020_144,object_x0020_145" src="slide0001_image082.gif"
+ style='position:absolute;top:63.53%;left:26.54%;width:16.82%;height:3.06%'>
+ 
+ <img border=0
+"object_x0020_146,object_x0020_147" src="slide0001_image083.gif"
+ style='position:absolute;top:52.52%;left:77.48%;width:17.77%;height:26.89%'>
+ 
+ <img border=0
+"object_x0020_148" src="slide0001_image085.gif" style='position:absolute;
+ top:88.26%;left:35.3%;width:12.08%;height:6.49%'>
+ 
+ 
+ <div "object_x0020_149">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:79'>
+ <span style='text-align:center;position:absolute;top:89.5%;left:37.5%;width:6.39%;height:1.44%'> 
+ <span  style='font-size:60%'>Notify<br>FPC</span></span></div>
+ </div>
+ 
+ <img
+ border=0 src="slide0001_image086.gif" style='position:absolute;top:58.84%;left:47.15%;
+ width:1.89%;height:2.88%'>
+ 
+ <img border=0
+"object_x0020_152,object_x0020_153" src="slide0001_image087.gif"
+ style='position:absolute;top:49.27%;left:47.86%;width:15.63%;height:2.34%'>
+ 
+ <img border=0
+"object_x0020_154,object_x0020_155" src="slide0001_image088.gif"
+ style='position:absolute;top:10.64%;left:35.54%;width:14.69%;height:8.48%'>
+ 
+ <div "object_x0020_156">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:
+ 63;mso-text-indent-alt:63;position:absolute;top:12.2%;left:36.8%;width:12%;height:1.44%'>
+ <span  style='font-size:50%'><b>Fill-out & email</span></b>
+ <span  style='font-size:50%;color:#0563C1'><b><u>
+  <a target="_blank"  href="At-Sea Incident Report Form_fillable.pdf">
+  At-Sea<br>Incident Report</a></u></b></span>
+ </div>
+ </div>
+ 
+ <img border=0
+"object_x0020_157,object_x0020_158,object_x0020_160,object_x0020_161,object_x0020_163,object_x0020_164,object_x0020_165,object_x0020_166,object_x0020_167,object_x0020_168,object_x0020_169,object_x0020_170,object_x0020_176,object_x0020_177"
+ src="slide0001_image089.gif" style='position:absolute;top:39.35%;left:9.24%;
+ width:57.34%;height:56.31%'>
+ 
+ <div "object_x0020_159">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:
+ 33;mso-text-indent-alt:33;position:absolute;top:51%;left:43%;width:12%;
+ height:1.44%'><span  style='font-size:50.0%'><b>Fill-out & email</span></b>
+<br>
+ <span  style='font-size:50%;color:#0563C1'><b><u>
+  <a target="_blank"  href="At-Sea Incident Report Form_fillable.pdf">At-Sea<br>Incident Report</a></u></b></span>
+ </div>
+ </div>
+ 
+ <div "object_x0020_162">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:
+ 63;mso-text-indent-alt:63;position:absolute;top:39.5%;left:37%;width:12%;
+ height:1.44%'><span  style='font-size:50%'><b>Fill-out & email</span></b>
+<br>
+ <span style='font-size:50%;color:#0563C1'><b><u><a target="_blank"  href="At-Sea Incident Report Form_fillable.pdf">At-Sea<br>Incident Report</a></u></b></span>
+</div>
+ </div>
+ 
+ <div "object_x0020_171">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;
+ mso-text-indent-alt:8'><span style='position:absolute;top:93.86%;left:10.66%;
+ width:50%;height:1.44%'><span  style='font-size:60%'><b><BR>Employee & Supervisor
+ initiate additional forms if needed</b></span></div>
+ </div>
+ 
+ <div "object_x0020_172">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8;mso-text-indent-alt:8;position:absolute;top:52.88%;left:55.5%;width:4.97%;height:1.44%'>
+ <span  style='font-size:50%;position:relative;top:-.1em;mso-text-raise:7%'><b>Supervisor</b></span>
+ </div>
+ </div>
+ 
+ 
+ 
+   <div "object_x0020_109">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+ 
+  <div><span class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8; mso-text-indent-alt:8;position:absolute;top:75%;left:34.83%;width:26.54%;height:1.44%'>
+ <span  style='font-size:50%;color:#0563C1'><b><u>
+ <a target="_blank"  href="ASFC MVA Guideance Doc v2.pdf">AFSC Guidance document</a></u></span>
+ <br>
+ <span  style='font-size:50%'><b>for vehicle accidents</a></b><br></span></span>
+</div>
+
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8; mso-text-indent-alt:8;position:absolute;top:81.04%;left:34.83%; width:26.54%;height:1.44%'>
+ <span  style='font-size:50%;color:#0563C1'><b><u>
+ <a target="_blank"  href="SF-91.pdf">SF-91 Vehicle accident report</a>
+ <br>
+ <a target="_blank"  href="SF-94.pdf">SF-94 Witness statement</a>
+ <br>
+ <a target="_blank"  href="sf95.pdf">SF-95 Tort claim form</a></u></b>
+</span></div>
+</div>
+ 
+  
+ 
+ <div class=O style='mso-line-spacing:"100 -8 0";mso-margin-left-alt:8; mso-text-indent-alt:8;position:absolute;top:64.9%;left:63.74%;width:26%; height:1.44%'>
+ <span  style='font-size:40%;color:#0563C1'><b><u>
+ <a target="_blank"  href="Pay Compensation Form ca-1.pdf">CA-1 Injury claim</a>
+ <br>
+ <a target="_blank"  href="CA-2 Dept. of Labor Claim for Compensation.pdf">CA-2 Illness claim</a>
+ <br>
+ <a target="_blank"  href="CA_16_expires_2018_mar_2021.pdf">CA-16 Authorization for treatment</a>
+  <br>
+ <a target="_blank"  href="Cd-137.pdf">CD-137 Report of Incident, Injury, Illness</a>
+ <br> 
+ <a target="blank" href="CD-351 report of Safety Hazard.pdf">CD-351 Report of safety hazard</a>
+ </u></b>
+</span></div>
+
+ 
+ <div "object_x0020_65">
+ <div class=O1 style='mso-margin-left-alt:468'></div>
+ <div class=O2 style='mso-margin-left-alt:720'></div>
+ <div class=O3 style='mso-margin-left-alt:1008'></div>
+ <div class=O4 style='mso-margin-left-alt:1296'></div>
+  <span class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt: 63;mso-text-indent-alt:63;position:absolute;top:44%;left:59%;width:24%;height:2%;font-size:50%'>
+Notify<br>
+ <span style='color:#0563C1'><b><u><a target="_blank" href="contacts.htm">Div. Directorate</a></u></b></span>
+ </span>
+ 
+ <span class=O style='text-align:center;mso-line-spacing:"100 -8 0";mso-margin-left-alt:8; mso-text-indent-alt:8;position:absolute;font-size:50%;top:48.5%;left:59%;width:24%;height:2%'>
+ and<br>
+ <span style='color:#0563C1'><b><u><a target="_blank" href="contacts.htm">AFSC Safety Office</a></u></b></span>
+ </span>
+
+ </div>
+
+</body>
+
+</html>
+
+ 

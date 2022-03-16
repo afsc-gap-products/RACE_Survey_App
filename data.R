@@ -133,7 +133,7 @@ full_site <- full_site %>%
     srvy_goa = ifelse(grepl(pattern = ",all,", x = survey, ignore.case = TRUE) |
                        grepl(pattern = ",goa,", x = survey, ignore.case = TRUE), 
                      TRUE, FALSE), 
-    # in_survey_app = ifelse(in_survey_app == TRUE, TRUE, FALSE),
+    in_survey_app = ifelse(in_survey_app == TRUE| in_survey_app == "T", TRUE, FALSE),
     # Images
     images = ifelse(test = is.na(img),
                     yes = "",
