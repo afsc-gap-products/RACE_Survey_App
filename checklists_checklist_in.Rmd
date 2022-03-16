@@ -3,20 +3,35 @@ title: "Checklist for Incoming FPCs and Deck Leads"
 output: html_document
 ---
 
-```{r Subset Checklist documents, results = 'asis', echo = F}
-checklist_items <- subset(full_site0, sub_page == "checklist_in")
+```{r panelset, echo=FALSE}
+library(xaringanExtra)
+xaringanExtra::use_panelset()
+```
+
+::: c-screen
+
+::::: {.panelset}
+
+
+::: {.panel}
+
+## Eastern Bering Sea {.panel-name}
+
+```{r Subset Checklist documents for BS, results = 'asis', echo = F}
+checklist_items <- subset(x = full_site0, 
+                          sub_page == "checklist_in" & Survey %in% c("bs", "all"))
 main_bullets <- unique(checklist_items$subsection)
 
 string <- "<ul>"
 for(isection in main_bullets) {
   subdf <- subset(x = checklist_items, subset = subsection == isection)
   string <- paste0(string, paste0("<h2>", isection, "</h2>"))
-  
+
   for(irow in 1:nrow(subdf)) {
   type <- ifelse(test = is.na(subdf$url_loc[irow]),
                  yes = "text",
                  no = "link")
-  
+
   string <- paste0(string,
                    paste0("<li>",
                           ifelse(type == "link", yes = "[", no = ""),
@@ -35,3 +50,52 @@ string <- paste0(string, "</ul>" )
 cat(string)
 
 ```
+
+:::
+
+
+::: {.panel}
+
+## AI/GOA {.panel-name}
+
+```{r Subset Checklist documents for AIGOA, results = 'asis', echo = F}
+checklist_items <- subset(x = full_site0, 
+                          sub_page == "checklist_in" & Survey %in% c("goa", "ai", "all"))
+main_bullets <- unique(checklist_items$subsection)
+
+string <- "<ul>"
+for(isection in main_bullets) {
+  subdf <- subset(x = checklist_items, subset = subsection == isection)
+  string <- paste0(string, paste0("<h2>", isection, "</h2>"))
+
+  for(irow in 1:nrow(subdf)) {
+  type <- ifelse(test = is.na(subdf$url_loc[irow]),
+                 yes = "text",
+                 no = "link")
+
+  string <- paste0(string,
+                   paste0("<li>",
+                          ifelse(type == "link", yes = "[", no = ""),
+                          subdf$title[irow],
+                          ifelse(type == "link",
+                                 yes = paste0("](",
+                                              subdf$url_loc[irow],
+                                              ")"),
+                                 no = ""),
+                          "</li>"))
+  }
+  string <- paste0(string, "<br>")
+}
+
+string <- paste0(string, "</ul>" )
+cat(string)
+
+```
+
+:::
+
+
+:::::
+
+:::
+
