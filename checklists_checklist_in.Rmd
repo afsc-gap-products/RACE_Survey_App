@@ -17,6 +17,8 @@ xaringanExtra::use_panelset()
 
 ## Eastern Bering Sea {.panel-name}
 
+Download checklist [here](../downloaded/EBS_checklist_in.docx)
+
 ```{r Subset Checklist documents for BS, results = 'asis', echo = F}
 checklist_items <- subset(x = full_site0, 
                           sub_page == "checklist_in" & Survey %in% c("bs", "all"))
@@ -48,7 +50,16 @@ for(isection in main_bullets) {
 
 string <- paste0(string, "</ul>" )
 cat(string)
+```
 
+```{r create EBS doc, echo = F, results="hide"}
+survey_name <- "Eastern Bering Sea"
+rmarkdown::render(input = "create_checklist_worddoc.Rmd", 
+                  output_format = "word_document", 
+                  output_file = "downloaded/EBS_checklist_in.docx",
+                  params = list(checklist_items = checklist_items,
+                                main_bullets = main_bullets,
+                                survey_name = survey_name))
 ```
 
 :::
@@ -57,6 +68,8 @@ cat(string)
 ::: {.panel}
 
 ## AI/GOA {.panel-name}
+
+Download checklist [here](../downloaded/AIGOA_checklist_in.docx)
 
 ```{r Subset Checklist documents for AIGOA, results = 'asis', echo = F}
 checklist_items <- subset(x = full_site0, 
@@ -89,7 +102,16 @@ for(isection in main_bullets) {
 
 string <- paste0(string, "</ul>" )
 cat(string)
+```
 
+```{r create AIGOA doc, echo = F, results="hide"}
+survey_name <- "Aleutian Islands/Gulf of Alaska"
+rmarkdown::render(input = "create_checklist_worddoc.Rmd", 
+                  output_format = "word_document", 
+                  output_file = "downloaded/AIGOA_checklist_in.docx",
+                  params = list(checklist_items = checklist_items,
+                                main_bullets = main_bullets,
+                                survey_name = survey_name))
 ```
 
 :::
