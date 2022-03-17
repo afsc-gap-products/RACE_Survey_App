@@ -87,6 +87,8 @@ navbar:
           href: ../forms_files\species%20identification\Species%20and%20SurveyCodes_2019.pdf
         - text: "Guides"
           href: species_id_guides.html
+        - text: "Minimum Id"
+          href: species_id_minimum_id.html
         - text: "Protected Species"
           href: species_id_protected_species.html
     - text: "Survey Ops"

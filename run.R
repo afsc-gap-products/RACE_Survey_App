@@ -9,6 +9,7 @@
 
 dir_pagecontent <- "1AIQ0JEUA20D-g32uRQfRMZb0wW4SXl2n8Lwb_62uW-o"
 dir_species_guides <- "172nNe_qrK0CWGNC4kR9gh27B-nyTgEj03uf4opGv5iU"
+dir_min_id <- "18MNidntx-qAHJPbeBX7-M7g3dQpZee_3Osr0rbAdQnU"
 
 access_to_internet <- FALSE
 
@@ -20,7 +21,7 @@ this_year_surveys <- c("nbs", "ebs", "ai")
 
 no_templ <- c("survey_team", "flight_itineraries", 
               #"Inventory", 
-              "guides", "id_by_taxa",
+              "guides", "id_by_taxa", "minimum_ID",
               "checklist_in", "checklist_out", "checklist_end")
 
 

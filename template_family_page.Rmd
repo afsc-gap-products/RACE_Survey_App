@@ -15,13 +15,18 @@ if (fam_page & length(subgrps) > 2) {
   tabl <- page_data %>%
     group_by(subgroup) %>%
     mutate(n = 1:n()) %>%
-    filter(n == 1) %>%
+    filter(n == 1 | subgroup == "") %>%
     ungroup() %>%
     mutate(rowid = 1:n()) %>%
     mutate(
       species_page = paste0("./", group_title, "_subpage", rowid, ".html"),
       img = paste0("![](", url_loc, ")"),
-      descrip = paste0("<br>[*", subgroup, "*](", species_page, ")")
+      descrip = ifelse(subgroup == "",
+        paste0(
+          "<br>[*", species, "*](", group_title, "_", gsub(" ", "_", species), ".html)<br>",
+          str_to_title(common_name), "<br>"),
+        paste0("<br>[*", subgroup, "*](", species_page, ")")
+      )
     ) %>%
     select(img, descrip)
 } else {

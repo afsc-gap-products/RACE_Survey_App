@@ -33,6 +33,13 @@ if (access_to_internet) {
     overwrite = TRUE,
     path = paste0("./data/id_guides_data.csv")
   )
+  
+  googledrive::drive_download(
+    file = as_id(dir_min_id),
+    type = "csv",
+    overwrite = TRUE,
+    path = paste0("./data/min_id.csv")
+  )
 }
 
 full_site0 <- full_site <- readr::read_csv("./data/survey_app_data.csv", skip = 1)
