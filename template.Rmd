@@ -1,7 +1,9 @@
 ---
 title: "`r page_title`"
 description: "`r page_desc`"
-site: distill::distill_website
+site: 
+  distill::distill_website: 
+    toc: true
 ---
 
 ```{r setup, include=FALSE}

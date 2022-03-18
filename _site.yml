@@ -82,5 +82,14 @@ navbar:
         - text: "Survey Protocol"
           href: ../forms_files/manuals\NOAA%20trawl%20protocols.pdf
 
-output: distill::distill_article
+favicon: img/logo.png
+base_url: https://github.com/zoyafuso-NOAA/RACE_Survey_App_TEST.io
+output:
+  distill::distill_article:
+    theme: flatly # “cerulean”, “cosmo”, “flatly”, “journal”, “lumen”, “paper”, “readable”, “sandstone”, “simplex”, “spacelab”, “united”, and “yeti”
+    # highlight: monochrome # “default”, “tango”, “pygments”, “kate”, “monochrome”, “espresso”, “zenburn”, “haddock”, “breezedark”, “textmate”
+    css: "theme.css"
+editor_options:
+  chunk_output_type: console
+repository_url: https://github.com/zoyafuso-NOAA/RACE_Survey_App_TEST.io
 
