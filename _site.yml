@@ -27,9 +27,18 @@ navbar:
           href: collections_nbs_specific_collections.html
         - text: "Technical Guides"
           href: collections_technical_guides.html
+    - text: "Fpc And Deck Lead Resources"
+      href: fpc_and_deck_lead_resources.html
+      menu:
+        - text: "Decklead Resources"
+          href: fpc_and_deck_lead_resources_decklead_resources.html
+        - text: "Fpc Resources"
+          href: fpc_and_deck_lead_resources_fpc_resources.html
     - text: "General Info"
       href: general_info.html
       menu:
+        - text: "Codebook"
+          href: ../forms_files/species%20identification/Species%20and%20SurveyCodes_2019.pdf
         - text: "Forms"
           href: general_info_forms.html
         - text: "Manuals And References"
@@ -54,6 +63,8 @@ navbar:
           href: safety_covid.html
         - text: "Forms"
           href: safety_forms.html
+        - text: "Hazmat"
+          href: safety_hazmat.html
         - text: "Manuals And References"
           href: safety_manuals_and_references.html
         - text: "Work Environment"
@@ -61,34 +72,41 @@ navbar:
     - text: "Software"
       href: software.html
       menu:
+        - text: "R Packages"
+          href: software_r_packages.html
+        - text: "R Versions"
+          href: software_r_versions.html
+        - text: "Rstudio Versions"
+          href: software_rstudio_versions.html
         - text: "Software & Drivers"
           href: software_software_&_drivers.html
     - text: "Species Id"
       href: species_id.html
       menu:
         - text: "Codebook"
-          href: ../forms_files\species%20identification\Species%20and%20SurveyCodes_2019.pdf
+          href: ../forms_files/species%20identification/Species%20and%20SurveyCodes_2019.pdf
+        - text: "Guides"
+          href: species_id_guides.html
+        - text: "Minimum Id"
+          href: species_id_minimum_id.html
         - text: "Protected Species"
           href: species_id_protected_species.html
     - text: "Survey Ops"
       href: survey_ops.html
       menu:
-        - text: "General Info"
-          href: survey_ops_general_info.html
+        - text: "Administrative"
+          href: survey_ops_administrative.html
         - text: "Inventory"
           href: survey_ops_inventory.html
         - text: "Survey Operations"
           href: survey_ops_survey_operations.html
-        - text: "Survey Protocol"
-          href: ../forms_files/manuals\NOAA%20trawl%20protocols.pdf
 
 favicon: img/logo.png
 base_url: https://github.com/zoyafuso-NOAA/RACE_Survey_App_TEST.io
 output:
   distill::distill_article:
-    theme: flatly # “cerulean”, “cosmo”, “flatly”, “journal”, “lumen”, “paper”, “readable”, “sandstone”, “simplex”, “spacelab”, “united”, and “yeti”
-    # highlight: monochrome # “default”, “tango”, “pygments”, “kate”, “monochrome”, “espresso”, “zenburn”, “haddock”, “breezedark”, “textmate”
     css: "theme.css"
+    toc: true
 editor_options:
   chunk_output_type: console
 repository_url: https://github.com/zoyafuso-NOAA/RACE_Survey_App_TEST.io

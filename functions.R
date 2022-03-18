@@ -33,7 +33,9 @@ pkg <- c(#"tidyverse",
          "flextable",
          
          #webpage enhancements
-         "xaringanExtra")
+         "xaringanExtra" # devtools::install_github("gadenbuie/xaringanExtra")
+
+         )
 
 for (p in pkg) {
   if (!require(p, character.only = TRUE)) {

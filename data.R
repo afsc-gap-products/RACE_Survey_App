@@ -299,13 +299,15 @@ site <- full_site %>%
   dplyr::distinct()
 
 
-# Write yml --------------------------------------------------------------------
+# find page and subpage combinations -------------------------------------------
 
 # find combinations of pages
 comb <- site %>%
   dplyr::select(page0, page, sub_page0, sub_page, web_page) %>%
   dplyr::distinct() %>%
   dplyr::arrange(page0, sub_page0)
+
+# Write yml --------------------------------------------------------------------
 
 # Write _site.yml
 site_yml <- base::readLines("_site_template.txt")
