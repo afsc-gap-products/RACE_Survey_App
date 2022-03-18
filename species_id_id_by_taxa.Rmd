@@ -1,0 +1,108 @@
+---
+title: "Alaska Fish ID by Family"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE, results = "asis")
+```
+
+```{r}
+guides_data <- readr::read_csv("./data/id_guides_data.csv") %>%
+  filter(page == "id_by_taxon") %>%
+  mutate(size_cm = as.character(size_cm)) %>%
+  replace(is.na(.), "")
+
+grps <- guides_data %>%
+  select(group) %>%
+  unique() %>%
+  mutate(
+    group_page = paste0("./species_pages/", make_clean_names(group), ".html"),
+    link = paste0("[", group, "](", group_page, ")")
+  ) %>%
+  arrange(group)
+
+links <- paste0(grps$link, collapse = "<br>")
+```
+
+`r links`
+
+
+```{r, eval = FALSE}
+## this chunk generates all individual species and family pages; takes a long time to run
+
+for (k in 1:nrow(grps)) {
+  group_data <- guides_data %>%
+    filter(group == grps$group[k])
+
+  group_title <- make_clean_names(group_data$group[1])
+
+  fam <- group_data$group[1]
+  spp <- unique(group_data$species)
+
+
+
+
+  ## making subgroup pages
+  subgrps <- unique(group_data$subgroup)
+  subgrps[is.na(subgrps)] <- ""
+
+  if (length(subgrps) > 1) { # generates subgroup level pages
+    fam_page <- FALSE
+    for (i in 1:length(subgrps)) {
+      subtitle <- str_to_title(subgrps[i])
+
+      page_data <- group_data %>%
+        mutate(subgroup = ifelse(is.na(subgroup), "", subgroup)) %>%
+        filter(subgroup == subgrps[i]) %>%
+        group_by(species) %>%
+        mutate(n = 1:n()) %>%
+        filter(n == 1)
+
+      page <- paste0(group_title, "_subpage", i, ".html")
+
+
+      rmarkdown::render(paste0("template_family_page.Rmd"),
+        output_dir = "./docs/species_pages/",
+        output_file = page
+      )
+      rm(ncols, colnms, page)
+    }
+  }
+
+
+
+  # generates group-level page
+  fam_page <- TRUE
+  if (all(grepl(group_data$family[[1]], group_data$family))) {
+    subtitle <- group_data$family[1]
+  } else {
+    subtitle <- ""
+  }
+  page_data <- group_data
+  page <- paste0(group_title, ".html")
+
+  rmarkdown::render(paste0("template_family_page.Rmd"),
+    output_dir = "./docs/species_pages/",
+    output_file = page
+  )
+
+
+
+  # making species pages
+  for (i in 1:length(spp)) {
+    species_page <- group_data %>%
+      filter(species == spp[i])
+
+    title <- str_to_title(species_page$common_name[1])
+    subtitle <- paste0("*", species_page$species[1], "*")
+
+    page <- paste0(group_title, "_", gsub(" ", "_", species_page$species[1]), ".html")
+
+    rmarkdown::render(paste0("template_species_pages.Rmd"),
+      output_dir = "./docs/species_pages/",
+      output_file = page
+    )
+  }
+}
+```

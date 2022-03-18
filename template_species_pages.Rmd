@@ -1,0 +1,52 @@
+---
+title: "`r title`"
+description: "`r subtitle`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE)
+```
+
+```{r, fig.align='center'}
+# blank image if not present
+url <- species_page$url_loc
+for (i in 1:length(url)) {
+  if (!file.exists(url[i])) {
+    url[i] <- "./img/no-image.png"
+  }
+}
+
+knitr::include_graphics(c(url), dpi = 150, error = FALSE)
+
+if (species_page$family[1] != "Scorpaenidae") {
+  content <- paste(
+    species_page$species_descrip[1], "\n \n",
+    "**Occurence:** ", species_page$range[1], "\n \n",
+    "**Depth:** ", species_page$depth_m[1], "meters  &nbsp; &nbsp;",
+    "**Size:** ", species_page$size_cm[1], "cm \n \n",
+    "**Species code:** ", species_page$species_code[1], "\n \n \n"
+  )
+} else {
+  des <- species_page$species_descrip[1]
+  content <- paste(
+    "**Body color:**", sub(".*Body color: *(.*?) *Maximum.*", "\\1", des), "\n \n",
+    "**Peritoneum color:**", sub(".*Peritoneum color: *(.*?) *Maximum.*", "\\1", des), "&nbsp; &nbsp;",
+    "**Shape between eyes:**", sub(".*eyes: *(.*?) *Common.*", "\\1", des), "\n \n",
+    "**Counts:**", sub(".*Counts: *(.*?) *Similar.*", "\\1", des), "\n \n",
+    "**Occurence:** ", species_page$range[1], "\n \n",
+    "**Depth:** ", species_page$depth_m[1], "meters  &nbsp; &nbsp;",
+    "**Size:** ", species_page$size_cm[1], "cm &nbsp; &nbsp;",
+    "**Species code:** ", species_page$species_code[1], "\n \n \n",
+    "**Similar species:**", sub(".*species: *(.*?) *Distribution.*", "\\1", des), "\n \n"
+  )
+}
+
+back <- paste0("[Back to Group](../species_pages/", group_title, ".html)")
+```
+
+`r content`
+
+
+
+`r back`

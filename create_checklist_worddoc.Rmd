@@ -1,0 +1,38 @@
+---
+title: "Checklist for Incoming FPCs and Deck Leads"
+output: word_document
+---
+
+## `r survey_name`
+
+```{r, results = 'asis', echo = F}
+string <- ""
+
+for(isection in main_bullets) {
+  subdf <- subset(x = checklist_items, subset = subsection == isection)
+ 
+  string <- paste0(string, 
+                   " \n\n ",
+                   "**", isection, "**", " \n\n ")
+  
+  for(irow in 1:nrow(subdf)) {
+  type <- ifelse(test = is.na(subdf$url_loc[irow]),
+                 yes = "text",
+                 no = "link")
+
+  string <- paste0(string,
+                   paste0("* ",
+                          ifelse(type == "link", yes = "[", no = ""),
+                          subdf$title[irow],
+                          ifelse(type == "link",
+                                 yes = paste0("](",
+                                              subdf$url_loc[irow],
+                                              ")"),
+                                 no = ""),
+                          " \n "))
+  }
+  
+}
+
+cat(string)
+```

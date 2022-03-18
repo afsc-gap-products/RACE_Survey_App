@@ -33,6 +33,13 @@ if (access_to_internet) {
     overwrite = TRUE,
     path = paste0("./data/id_guides_data.csv")
   )
+  
+  googledrive::drive_download(
+    file = as_id(dir_min_id),
+    type = "csv",
+    overwrite = TRUE,
+    path = paste0("./data/min_id.csv")
+  )
 }
 
 full_site0 <- full_site <- readr::read_csv("./data/survey_app_data.csv", skip = 1)
@@ -133,7 +140,7 @@ full_site <- full_site %>%
     srvy_goa = ifelse(grepl(pattern = ",all,", x = survey, ignore.case = TRUE) |
                        grepl(pattern = ",goa,", x = survey, ignore.case = TRUE), 
                      TRUE, FALSE), 
-    # in_survey_app = ifelse(in_survey_app == TRUE, TRUE, FALSE),
+    in_survey_app = ifelse(in_survey_app == TRUE| in_survey_app == "T", TRUE, FALSE),
     # Images
     images = ifelse(test = is.na(img),
                     yes = "",

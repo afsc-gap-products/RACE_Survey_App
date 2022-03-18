@@ -9,6 +9,7 @@
 
 dir_pagecontent <- "1AIQ0JEUA20D-g32uRQfRMZb0wW4SXl2n8Lwb_62uW-o"
 dir_species_guides <- "172nNe_qrK0CWGNC4kR9gh27B-nyTgEj03uf4opGv5iU"
+dir_min_id <- "18MNidntx-qAHJPbeBX7-M7g3dQpZee_3Osr0rbAdQnU"
 
 access_to_internet <- FALSE
 
@@ -20,7 +21,7 @@ this_year_surveys <- c("nbs", "ebs", "ai")
 
 no_templ <- c("survey_team", "flight_itineraries", 
               #"Inventory", 
-              "guides", 
+              "guides", "id_by_taxa", "minimum_ID",
               "checklist_in", "checklist_out", "checklist_end")
 
 
@@ -45,6 +46,9 @@ source("./data.R")
 # Create all pages -------------------------------------------------------------
 
 comb <- comb %>% 
+  dplyr::add_row(page0 = "species_id", #don't want this in the yaml but need to render html
+                 sub_page0 = "id_by_taxa",
+                 web_page = "species_id_id_by_taxa.html") %>%
   dplyr::mutate(
     template = dplyr::case_when(
       page0 == "index" ~ FALSE, 

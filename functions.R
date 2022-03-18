@@ -30,7 +30,10 @@ pkg <- c(#"tidyverse",
          
          # make tables
          "kableExtra", 
-         "flextable")
+         "flextable",
+         
+         #webpage enhancements
+         "xaringanExtra")
 
 for (p in pkg) {
   if (!require(p, character.only = TRUE)) {
