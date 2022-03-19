@@ -12,8 +12,8 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE, results = "a
 ```{r}
 if (fam_page & length(subgrps) > 1) {
   subgrps <- subgrps[subgrps != ""]
-  # list subgroups and photos (if present)
-  if(fam == "Rockfishes") h <- str_remove(cols[ii], "/") else h <- ""
+  if(fam != "Rockfishes") page_data$color_cat <- NA
+  # makes page with links to groups of species based on the subgroup column
   tabl <- page_data %>%
     group_by(subgroup) %>%
     mutate(n = 1:n()) %>%
@@ -26,8 +26,8 @@ if (fam_page & length(subgrps) > 1) {
     ungroup() %>%
     mutate(
       species_page = case_when(
-        group == "Rockfishes" & fp == TRUE ~ paste0(group_title, "_",  str_remove(tolower(subgroup), "/"), ".html"),
-        group == "Rockfishes" & fp == FALSE ~ paste0(group_title, "_", str_remove(tolower(subgroup), "/"), "_subpage_", spg_id, ".html"),
+        group == "Rockfishes" & fp == TRUE ~ paste0(group_title, "_",  str_remove(tolower(color_cat), "/"), ".html"),
+        group == "Rockfishes" & fp == FALSE ~ paste0(group_title, "_", str_remove(tolower(color_cat), "/"), "_subpage_", spg_id, ".html"),
         TRUE ~ paste0("./", group_title, "_subpage", rowid, ".html")
       ),                                 
       img = paste0("![](", url_loc, ")"),
@@ -39,7 +39,7 @@ if (fam_page & length(subgrps) > 1) {
       )
     ) %>%
     select(img, descrip)
-} else {
+} else {  #makes page with links to species pages
   tabl <- page_data %>%
     group_by(species) %>%
     mutate(n = 1:n()) %>%

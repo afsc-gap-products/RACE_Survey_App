@@ -43,6 +43,7 @@ if(check_codes){
      tabl <- x
 }
 
+options(knitr.kable.NA = '')
 
 k <- kableExtra::kable(tabl, format = "html", linesep = "",
                   align = rep("l", 6)) %>%
