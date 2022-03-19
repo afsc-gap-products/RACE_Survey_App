@@ -20,6 +20,7 @@
 # https://docs.google.com/spreadsheets/d/***ThisIsFileID***/edit#gid=123456789
 
 if (access_to_internet) {
+  
   googledrive::drive_download(
     file = as_id(dir_pagecontent),
     type = "csv",
@@ -153,7 +154,14 @@ full_site <- full_site %>%
                          no = url_web_txt
     ),
     url_loc_txt = ifelse(test = is.na(url_loc_txt) & !is.na(url_loc),
-                         yes = "Local link",
+                         yes = "Local file",
+                         no = url_loc_txt
+    ),
+    url_loc_txt = ifelse(test = (url_loc_txt == "Local file" & 
+                                   !grepl(pattern = ".", 
+                                          x = substr(x = url_loc, start = (nchar(url_loc)-5), stop = nchar(url_loc)), 
+                                          fixed = TRUE)),
+                         yes = "Local directory",
                          no = url_loc_txt
     ),
     Links = ifelse(test = url_loc == "",
@@ -224,7 +232,7 @@ for (i in 1:nrow(temp)) {
 }
 
 # only use srvy pages that are used this year
-# not the most efficent, but wanna be done!
+# not the most efficient, but wanna be done!
 data_to_insert1 <- data.frame()
 for (i in 1:nrow(data_to_insert)){
   for (ii in 1:length(this_year_surveys)) {
