@@ -6,8 +6,12 @@ navbar:
     image: img/logo.png
     href: index.html
   search: true
+  repository_url: https://github.com/zoyafuso-NOAA/RACE_Survey_App_TEST.io
+  source_url: true
   right:
 INSERT_NAVIGATION
+    - icon: fab fa-github
+      href: https://github.com/zoyafuso-NOAA/RACE_Survey_App_TEST.io
 favicon: img/logo.png
 base_url: https://github.com/zoyafuso-NOAA/RACE_Survey_App_TEST.io
 output:
