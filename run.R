@@ -13,6 +13,10 @@ dir_min_id <- "18MNidntx-qAHJPbeBX7-M7g3dQpZee_3Osr0rbAdQnU"
 
 access_to_internet <- FALSE
 
+# toggle to regenerate htmls for the fish ID by taxa pages; takes a long time!
+regenerate_species_pages <- FALSE 
+
+
 this_year <- "2021" # just doing this for proof of concept
 this_year_surveys <- c("nbs", "ebs", "ai")
 

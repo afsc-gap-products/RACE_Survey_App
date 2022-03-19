@@ -29,6 +29,17 @@ if (species_page$family[1] != "Scorpaenidae") {
   )
 } else {
   des <- species_page$species_descrip[1]
+  sim_spp <- sub(".*species: *(.*?) *Distribution.*", "\\1", des)
+  x <- tibble(sp = str_split(sim_spp, "\\.")[[1]] %>% trimws) %>%
+  filter(sp != "") %>%
+  separate(sp, into = c("species", "diff"), sep = " - ") %>%
+  mutate(species = gsub("RF", "rockfish", species),
+         species = paste0("- *", species, "* - ")) %>%
+  unite(sim_spp, species, diff, sep = "") %>%
+  pull(sim_spp)
+  
+  sims <- paste0(x, collapse = "\n \n")
+  
   content <- paste(
     "**Body color:**", sub(".*Body color: *(.*?) *Maximum.*", "\\1", des), "\n \n",
     "**Peritoneum color:**", sub(".*Peritoneum color: *(.*?) *Maximum.*", "\\1", des), "&nbsp; &nbsp;",
@@ -37,8 +48,8 @@ if (species_page$family[1] != "Scorpaenidae") {
     "**Occurence:** ", species_page$range[1], "\n \n",
     "**Depth:** ", species_page$depth_m[1], "meters  &nbsp; &nbsp;",
     "**Size:** ", species_page$size_cm[1], "cm &nbsp; &nbsp;",
-    "**Species code:** ", species_page$species_code[1], "\n \n \n",
-    "**Similar species:**", sub(".*species: *(.*?) *Distribution.*", "\\1", des), "\n \n"
+    "**Species code:** ", species_page$species_code[1], "\n \n \n \n",
+    "**Similar species:**\n \n", sims , "\n \n"
   )
 }
 

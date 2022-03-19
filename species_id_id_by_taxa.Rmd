@@ -28,7 +28,7 @@ links <- paste0(grps$link, collapse = "<br>")
 `r links`
 
 
-```{r, eval = FALSE}
+```{r, eval = regenerate_species_pages}
 ## this chunk generates all individual species and family pages; takes a long time to run
 
 for (k in 1:nrow(grps)) {
@@ -46,9 +46,55 @@ for (k in 1:nrow(grps)) {
   ## making subgroup pages
   subgrps <- unique(group_data$subgroup)
   subgrps[is.na(subgrps)] <- ""
-
+  
+  
+  
   if (length(subgrps) > 1) { # generates subgroup level pages
-    fam_page <- FALSE
+    if(fam == "Rockfishes"){ #rockfishes are a strange case with nested subgroups
+      cols <- c("red", "red/black", "black", "striped", "spotted")
+      for(ii in 1:length(cols)){
+      fam_page <- TRUE
+      subtitle <- str_to_title(cols[ii])
+      rf_data <- group_data %>%
+        separate(subgroup, into = c("color_cat", "subgroup"), sep = " ", extra = "merge") %>%
+        mutate(subgroup = str_remove(subgroup, "category; |category"),
+                subgroup = ifelse(is.na(subgroup), "", subgroup)) 
+      
+      page_data <- rf_data %>%
+        filter(tolower(color_cat) == cols[ii]) %>%
+        group_by(species) %>%
+        mutate(n = 1:n()) %>%
+        filter(n == 1)
+      
+      page <- paste0(group_title, "_", str_remove(cols[ii], "/"), ".html")
+      fp <- FALSE
+     
+      subgrps <- unique(tolower(page_data$subgroup))
+      
+      rmarkdown::render(paste0("template_family_page.Rmd"),
+        output_dir = "./docs/species_pages/",
+        output_file = page)
+      rm(ncols, colnms, page)
+      
+
+      for(jj in 1:length(subgrps)){
+        subtitle <- subgrps[jj]
+        fam_page <- FALSE
+        page_data <- rf_data %>%
+          filter(tolower(color_cat) == cols[ii]) %>%
+          filter(subgroup == subgrps[[jj]])
+          
+      page <- paste0(group_title, "_", str_remove(cols[ii], "/"), "_subpage_", jj, ".html")
+      
+      rmarkdown::render(paste0("template_family_page.Rmd"),
+        output_dir = "./docs/species_pages/",
+        output_file = page)
+      rm(ncols, colnms, page)
+      }
+  } 
+      } else {
+    
+    fam_page  <- FALSE
     for (i in 1:length(subgrps)) {
       subtitle <- str_to_title(subgrps[i])
 
@@ -60,13 +106,14 @@ for (k in 1:nrow(grps)) {
         filter(n == 1)
 
       page <- paste0(group_title, "_subpage", i, ".html")
-
-
-      rmarkdown::render(paste0("template_family_page.Rmd"),
+      
+     rmarkdown::render(paste0("template_family_page.Rmd"),
         output_dir = "./docs/species_pages/",
-        output_file = page
-      )
-      rm(ncols, colnms, page)
+        output_file = page)
+    
+     rm(ncols, colnms, page)
+    }
+
     }
   }
 
@@ -74,20 +121,40 @@ for (k in 1:nrow(grps)) {
 
   # generates group-level page
   fam_page <- TRUE
+  
+  if(fam == "Rockfishes"){
+    fp <- TRUE
+    subtitle <- "Color Categories"
+    page_data <- rf_data %>%
+          mutate(subgroup = color_cat)
+    subgrps <- cols
+    
+    } else {
+    
   if (all(grepl(group_data$family[[1]], group_data$family))) {
     subtitle <- group_data$family[1]
-  } else {
+ 
+     } else {
     subtitle <- ""
-  }
+     }
+    
   page_data <- group_data
+  
+  }
+  
   page <- paste0(group_title, ".html")
-
+  
+  
   rmarkdown::render(paste0("template_family_page.Rmd"),
     output_dir = "./docs/species_pages/",
-    output_file = page
-  )
+    output_file = page)
 
 
+  
+  
+  
+  
+  
 
   # making species pages
   for (i in 1:length(spp)) {
@@ -105,4 +172,3 @@ for (k in 1:nrow(grps)) {
     )
   }
 }
-```
