@@ -10,8 +10,6 @@ navbar:
   source_url: true
   right:
 INSERT_NAVIGATION
-    - icon: fab fa-github
-      href: https://github.com/zoyafuso-NOAA/RACE_Survey_App_TEST.io
 favicon: img/logo.png
 base_url: https://github.com/zoyafuso-NOAA/RACE_Survey_App_TEST.io
 output:
