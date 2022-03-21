@@ -14,7 +14,8 @@ str00 <- ""
 
 if (nrow(page_dat) != 0) {
   page_dat <- page_dat %>% 
-    dplyr::arrange(section, subsection, order, title)
+    dplyr::arrange(section, subsection, order, title) %>%
+    mutate(subsection = str_to_title(subsection))
   
   # str0 <- ""
   
