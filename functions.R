@@ -29,7 +29,7 @@ pkg <- c(#"tidyverse",
          "pagedown",
          
          # make tables
-         "kableExtra", 
+         "kableExtra", # devtools::install_github("haozhu233/kableExtra")
          "flextable",
          
          #webpage enhancements

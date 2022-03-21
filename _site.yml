@@ -27,8 +27,8 @@ navbar:
           href: collections_ebs_specific_collections.html
         - text: "NBS Specific Collections"
           href: collections_nbs_specific_collections.html
-        - text: "Technical Guides"
-          href: collections_technical_guides.html
+        - text: "Resources"
+          href: collections_resources.html
     - text: "Fpc And Deck Lead Resources"
       href: fpc_and_deck_lead_resources.html
       menu:
@@ -36,17 +36,6 @@ navbar:
           href: fpc_and_deck_lead_resources_decklead_resources.html
         - text: "Fpc Resources"
           href: fpc_and_deck_lead_resources_fpc_resources.html
-    - text: "General Info"
-      href: general_info.html
-      menu:
-        - text: "Codebook"
-          href: .././forms_files/species%20identification/Species%20and%20SurveyCodes_2019.pdf
-        - text: "Forms"
-          href: general_info_forms.html
-        - text: "Manuals And References"
-          href: general_info_manuals_and_references.html
-        - text: "Videos"
-          href: general_info_videos.html
     - text: "Personnel"
       href: personnel.html
       menu:
@@ -69,6 +58,8 @@ navbar:
           href: safety_hazmat.html
         - text: "Manuals And References"
           href: safety_manuals_and_references.html
+        - text: "Manuals And Resources"
+          href: safety_manuals_and_resources.html
         - text: "Work Environment"
           href: safety_work_environment.html
     - text: "Software"
