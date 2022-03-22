@@ -31,12 +31,12 @@ if (species_page$family[1] != "Scorpaenidae") {
   des <- species_page$species_descrip[1]
   sim_spp <- sub(".*species: *(.*?) *Distribution.*", "\\1", des)
   x <- tibble(sp = str_split(sim_spp, "\\.")[[1]] %>% trimws) %>%
-  filter(sp != "") %>%
-  separate(sp, into = c("species", "diff"), sep = " - ") %>%
-  mutate(species = gsub("RF", "rockfish", species),
-         species = paste0("- *", species, "* - ")) %>%
-  unite(sim_spp, species, diff, sep = "") %>%
-  pull(sim_spp)
+    filter(sp != "") %>%
+    separate(sp, into = c("species", "diff"), sep = " - ") %>%
+    mutate(species = gsub("RF", "rockfish", species),
+           species = paste0("- *", species, "* - ")) %>%
+    unite(sim_spp, species, diff, sep = "") %>%
+    pull(sim_spp)
   
   sims <- paste0(x, collapse = "\n \n")
   
