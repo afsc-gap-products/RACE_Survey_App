@@ -1,9 +1,13 @@
 ---
 title: "RACE Survey App"
 description: |
-  Welcome to the website. I hope you enjoy it!
+  Welcome to the RACE Survey App!
 site: distill::distill_website
 ---
+
+An improved version of the OLD SAD BAD survey RACE app. 
+
+[Liz will insert a heart warming message here]
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)

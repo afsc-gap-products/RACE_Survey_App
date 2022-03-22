@@ -1,6 +1,6 @@
 ---
 title: "Checklist for Incoming FPCs and Deck Leads"
-output: html_document
+site: distill::distill_website
 ---
 
 ```{r panelset, echo=FALSE}
