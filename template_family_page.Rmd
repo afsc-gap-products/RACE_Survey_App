@@ -10,6 +10,17 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE, results = "a
 
 
 ```{r}
+
+# fixing empty or broken image links
+url <- page_data$url_loc
+for (i in 1:length(url)) {
+  if (!file.exists(url[i]) | url[i] == "") {
+    url[i] <- "./img/no-image.png"
+  }
+}
+page_data$url_loc <- url
+
+
 if (fam_page & length(subgrps) > 1) {
   subgrps <- subgrps[subgrps != ""]
   if(fam != "Rockfishes") page_data$color_cat <- NA
@@ -35,9 +46,10 @@ if (fam_page & length(subgrps) > 1) {
         paste0(
           "<br>[*", species, "*](", group_title, "_", gsub(" ", "_", species), ".html)<br>",
           str_to_title(common_name), "<br>"),
-        paste0("<br>[*", subgroup, "*](", species_page, ")")
+        paste0("<br>[**", str_to_title(subgroup), "**](", species_page, ")")
       )
     ) %>%
+    arrange(desc(subgroup, subtitle)) %>%
     select(img, descrip)
 } else {  #makes page with links to species pages
   tabl <- page_data %>%
@@ -54,6 +66,7 @@ if (fam_page & length(subgrps) > 1) {
         species_code
       )
     ) %>%
+    arrange(desc(subgroup, subtitle)) %>%
     select(img, descrip)
 }
 

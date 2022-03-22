@@ -51,13 +51,13 @@ for (k in 1:nrow(grps)) {
   
   if (length(subgrps) > 1) { # generates subgroup level pages
     if(fam == "Rockfishes"){ #rockfishes are a strange case with nested subgroups
-      cols <- c("red", "red/black", "black", "striped", "spotted")
+      cols <- c("red", "red/black", "black", "striped/spotted")
       for(ii in 1:length(cols)){
       fam_page <- TRUE
       subtitle <- str_to_title(cols[ii])
       rf_data <- group_data %>%
         separate(subgroup, into = c("color_cat", "subgroup"), sep = " ", extra = "merge") %>%
-        mutate(subgroup = str_remove(subgroup, "category; |category"),
+        mutate(subgroup = tolower(str_remove(subgroup, "category; |category")),
                 subgroup = ifelse(is.na(subgroup), "", subgroup)) 
       
       page_data <- rf_data %>%
@@ -82,7 +82,7 @@ for (k in 1:nrow(grps)) {
         fam_page <- FALSE
         page_data <- rf_data %>%
           filter(tolower(color_cat) == cols[ii]) %>%
-          filter(subgroup == subgrps[[jj]])
+          filter(tolower(subgroup) == subgrps[[jj]])
           
       page <- paste0(group_title, "_", str_remove(cols[ii], "/"), "_subpage_", jj, ".html")
       
@@ -94,7 +94,8 @@ for (k in 1:nrow(grps)) {
   } 
       } else {
     
-    fam_page  <- FALSE
+    fp <- FALSE
+    fam_page <- FALSE
     for (i in 1:length(subgrps)) {
       subtitle <- str_to_title(subgrps[i])
 
@@ -126,7 +127,7 @@ for (k in 1:nrow(grps)) {
     fp <- TRUE
     subtitle <- "Color Categories"
     page_data <- rf_data %>%
-          mutate(subgroup = color_cat)
+          mutate(subgroup = tolower(color_cat))
     subgrps <- cols
     
     } else {

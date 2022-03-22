@@ -1,6 +1,6 @@
 ---
 title: "Species Identification Guides"
-output: html_document
+site: distill::distill_website
 ---
 
 ```{r setup, include=FALSE}
