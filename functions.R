@@ -29,7 +29,7 @@ pkg <- c(#"tidyverse",
          "pagedown",
          
          # make tables
-         "kableExtra", # devtools::install_github("haozhu233/kableExtra")
+         "kableExtra", # devtools::install_github(repo="haozhu233/kableExtra", ref="a6af5c0")
          "flextable",
          
          #webpage enhancements
@@ -44,6 +44,10 @@ for (p in pkg) {
   }
 }
 
+if(packageVersion("kableExtra") != "1.3.4.9000"){
+  devtools::install_github(repo="haozhu233/kableExtra", ref="a6af5c0")
+  library(kableExtra)
+}
 
 rm(p, pkg)
 
