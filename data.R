@@ -266,7 +266,10 @@ for (jj in 1:length(unique(full_site$page0))) {
       nrow = 1,
       ncol = ncol(full_site)
     )))
+    
     names(temp) <- names(full_site)
+    temp[sapply(full_site, class) == "logical"] <- NA
+    
     temp <- temp %>%
       dplyr::mutate(
         page = page_dat$page[1],
@@ -279,8 +282,6 @@ for (jj in 1:length(unique(full_site$page0))) {
     full_site <- dplyr::bind_rows(full_site, temp)
   }
 }
-
-
 
 ## Remove rows not included in survey app (yet)
 full_site <- subset(x = full_site, subset = in_survey_app == TRUE)
@@ -337,8 +338,7 @@ a <- paste0(
 ",
 ifelse(comb0$sub_page0 == "", "      menu:
 ", ""),
-collapse = ""
-)
+collapse = "")
 
 site_yml <- gsub(
   pattern = "INSERT_NAVIGATION",
