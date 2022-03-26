@@ -51,7 +51,9 @@ full_site$url_loc[is.na(full_site$url_loc)] <- ""
 # download links from online ---------------------------------------------------
 
 if (access_to_internet) { # aka, access to internet?
-  download_web_urls(dat = full_site, col_in = "url_web", dir_out = "./downloaded/")
+  download_web_urls(dat = full_site, 
+                    col_in = "url_web", 
+                    dir_out = "./downloaded/")
 }
 # wrangle data -----------------------------------------------------------------
 
@@ -270,6 +272,7 @@ for (jj in 1:length(unique(full_site$page0))) {
         page = page_dat$page[1],
         page0 = page_dat$page0[1],
         order = as.numeric(order),
+        update_annually = as.logical(update_annually),
         across(dplyr::starts_with("srvy_"), as.logical),
         in_survey_app = TRUE
       )

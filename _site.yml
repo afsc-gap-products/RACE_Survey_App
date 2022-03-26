@@ -9,15 +9,6 @@ navbar:
   repository_url: https://github.com/zoyafuso-NOAA/RACE_Survey_App_TEST.io
   source_url: true
   right:
-    - text: "Checklists"
-      href: checklists.html
-      menu:
-        - text: "Checklist End"
-          href: checklists_checklist_end.html
-        - text: "Checklist In"
-          href: checklists_checklist_in.html
-        - text: "Checklist Out"
-          href: checklists_checklist_out.html
     - text: "Collections"
       href: collections.html
       menu:
@@ -36,6 +27,12 @@ navbar:
           href: fpc_and_deck_lead_resources_decklead_resources.html
         - text: "Fpc Resources"
           href: fpc_and_deck_lead_resources_fpc_resources.html
+        - text: "Tasklist End"
+          href: fpc_and_deck_lead_resources_tasklist_end.html
+        - text: "Tasklist In"
+          href: fpc_and_deck_lead_resources_tasklist_in.html
+        - text: "Tasklist Out"
+          href: fpc_and_deck_lead_resources_tasklist_out.html
     - text: "Personnel"
       href: personnel.html
       menu:
@@ -43,28 +40,28 @@ navbar:
           href: personnel_contacts.html
         - text: "Forms"
           href: personnel_forms.html
-        - text: "Survey Team"
-          href: personnel_survey_team.html
+        - text: "Timekeeping T&A"
+          href: personnel_timekeeping_t&a.html
     - text: "Safety"
       href: safety.html
       menu:
-        - text: "Cold Patient"
-          href: safety_cold_patient.html
-        - text: "Covid"
-          href: safety_covid.html
+        - text: "Emergency Flowchart"
+          href: .././forms_files/Safety/Accidents/Accidents.pdf
         - text: "Forms"
           href: safety_forms.html
         - text: "Hazmat"
           href: safety_hazmat.html
+        - text: "Illness"
+          href: safety_illness.html
         - text: "Manuals And References"
           href: safety_manuals_and_references.html
-        - text: "Manuals And Resources"
-          href: safety_manuals_and_resources.html
         - text: "Work Environment"
           href: safety_work_environment.html
     - text: "Software"
       href: software.html
       menu:
+        - text: "Other R Survey Scripts"
+          href: software_other_r_survey_scripts.html
         - text: "R Packages"
           href: software_r_packages.html
         - text: "R Versions"
@@ -77,7 +74,7 @@ navbar:
       href: species_id.html
       menu:
         - text: "Codebook"
-          href: .././forms_files/species%20identification/Species%20and%20SurveyCodes_2019.pdf
+          href: .././forms_files/Species%20identification/2021_Species_Codebook.pdf
         - text: "Guides"
           href: species_id_guides.html
         - text: "Minimum Id"
@@ -87,12 +84,10 @@ navbar:
     - text: "Survey Ops"
       href: survey_ops.html
       menu:
-        - text: "Administrative"
-          href: survey_ops_administrative.html
         - text: "Inventory"
           href: survey_ops_inventory.html
-        - text: "Survey Operations"
-          href: survey_ops_survey_operations.html
+        - text: "Survey Ops"
+          href: survey_ops_survey_ops.html
 
     - icon: fab fa-github
       href: https://github.com/zoyafuso-NOAA/RACE_Survey_App_TEST.io

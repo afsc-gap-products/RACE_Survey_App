@@ -122,7 +122,7 @@ checkLinks <- function(URLs,
     }
   }
   
-  return(notworking)
+  return(sort(unique(notworking)))
 }
 
 
@@ -144,6 +144,7 @@ clear_htmls <- function(){
 
 
 download_web_urls <- function(dat, col_in, dir_out) {
+  
   dir.create(path = dir_out, showWarnings = FALSE)
   dat$col <- dat[,names(dat) == col_in]
   dat$col_out_link <- ""
@@ -197,13 +198,13 @@ download_web_urls <- function(dat, col_in, dir_out) {
         yes = "docx", ## Indicates a google doc
         no = "csv" ## Indicates a google spreadsheet?
         )
-        dest <- paste0(dir_out, metadata$name, ".", type)
-        
+        dest <- paste0(dir_out, metadata$name)#, ".", type)
+
         ## Pull document from google drive, format it in the type specified,
         ## and write to dest path
         googledrive::drive_download(
           file = metadata$id,
-          type = type,
+          type = "pdf", #type,
           overwrite = TRUE,
           path = dest
         )
