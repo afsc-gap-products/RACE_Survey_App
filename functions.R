@@ -45,6 +45,7 @@ for (p in pkg) {
 }
 
 if(packageVersion("kableExtra") != "1.3.4.9000"){
+  detach("kableExxtra")
   devtools::install_github(repo="haozhu233/kableExtra", ref="a6af5c0")
   library(kableExtra)
 }

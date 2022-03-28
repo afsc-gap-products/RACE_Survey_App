@@ -24,6 +24,7 @@ grps <- guides_data %>%
   arrange(group)
 
 links <- paste0(grps$link, collapse = "<br>")
+
 ```
 
 `r links`

@@ -23,9 +23,7 @@ this_year_surveys <- c("nbs", "ebs", "ai")
 # CHECK! - define here pages that you don't want to use the template for!
 # non-template pages MUST be named with the web_page name listed in the 'comb' object
 
-no_templ <- c("survey_team", "flight_itineraries", 
-              #"Inventory", 
-              "guides", "id_by_taxa", "minimum_ID",
+no_templ <- c("guides", "id_by_taxa", "minimum_ID",
               "tasklist_in", "tasklist_out", "tasklist_end")
 
 
@@ -57,6 +55,7 @@ comb <- comb %>%
     template = dplyr::case_when(
       page0 == "index" ~ FALSE, 
       sub_page0 %in% no_templ ~ FALSE, 
+      web_page == "personnel_flight_itineraries.html" ~ FALSE,
       TRUE ~ TRUE))
 
 

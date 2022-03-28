@@ -47,6 +47,8 @@ navbar:
       menu:
         - text: "Emergency Flowchart"
           href: .././forms_files/Safety/Accidents/Accidents.pdf
+        - text: "Emergency Notification Plan"
+          href: safety_emergency_notification_plan.html
         - text: "Forms"
           href: safety_forms.html
         - text: "Hazmat"
