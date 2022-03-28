@@ -49,7 +49,7 @@ if (fam_page & length(subgrps) > 1) {
         paste0("<br>[**", str_to_title(subgroup), "**](", species_page, ")")
       )
     ) %>%
-    arrange(desc(subgroup, subtitle)) %>%
+    arrange(desc(subgroup)) %>%
     select(img, descrip)
 } else {  #makes page with links to species pages
   tabl <- page_data %>%

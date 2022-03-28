@@ -5,9 +5,7 @@ description: |
 site: distill::distill_website
 ---
 
-An improved version of the OLD SAD BAD survey RACE app. 
-
-[Liz will insert a heart warming message here]
+The RACE Survey App is a comprehensive resource for all scientific personnel to use during the RACE bottom trawl surveys. The goal is for the Survey App to contain all information, manuals, forms, or other resources that could possibly ever be needed during the surveys.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)

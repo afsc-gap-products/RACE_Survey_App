@@ -10,7 +10,8 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE, results = "a
 ```{r}
 guides_data <- readr::read_csv("./data/id_guides_data.csv") %>%
   filter(page == "id_by_taxon") %>%
-  mutate(size_cm = as.character(size_cm)) %>%
+  mutate(size_cm = as.character(size_cm),
+         species_code = as.character(species_code)) %>%
   replace(is.na(.), "")
 
 grps <- guides_data %>%
@@ -61,6 +62,7 @@ for (k in 1:nrow(grps)) {
                 subgroup = ifelse(is.na(subgroup), "", subgroup)) 
       
       page_data <- rf_data %>%
+        filter(species != "subgroup") %>%
         filter(tolower(color_cat) == cols[ii]) %>%
         group_by(species) %>%
         mutate(n = 1:n()) %>%
@@ -71,7 +73,7 @@ for (k in 1:nrow(grps)) {
      
       subgrps <- unique(tolower(page_data$subgroup))
       
-      rmarkdown::render(paste0("template_family_page.Rmd"),
+      rmarkdown::render(paste0("template_family_pages.Rmd"),
         output_dir = "./docs/species_pages/",
         output_file = page)
       rm(ncols, colnms, page)
@@ -86,7 +88,7 @@ for (k in 1:nrow(grps)) {
           
       page <- paste0(group_title, "_", str_remove(cols[ii], "/"), "_subpage_", jj, ".html")
       
-      rmarkdown::render(paste0("template_family_page.Rmd"),
+      rmarkdown::render(paste0("template_family_pages.Rmd"),
         output_dir = "./docs/species_pages/",
         output_file = page)
       rm(ncols, colnms, page)
@@ -108,7 +110,7 @@ for (k in 1:nrow(grps)) {
 
       page <- paste0(group_title, "_subpage", i, ".html")
       
-     rmarkdown::render(paste0("template_family_page.Rmd"),
+     rmarkdown::render(paste0("template_family_pages.Rmd"),
         output_dir = "./docs/species_pages/",
         output_file = page)
     
@@ -146,7 +148,7 @@ for (k in 1:nrow(grps)) {
   page <- paste0(group_title, ".html")
   
   
-  rmarkdown::render(paste0("template_family_page.Rmd"),
+  rmarkdown::render(paste0("template_family_pages.Rmd"),
     output_dir = "./docs/species_pages/",
     output_file = page)
 
@@ -160,6 +162,7 @@ for (k in 1:nrow(grps)) {
   # making species pages
   for (i in 1:length(spp)) {
     species_page <- group_data %>%
+      filter(species != "subgroup") %>%
       filter(species == spp[i])
 
     title <- str_to_title(species_page$common_name[1])
