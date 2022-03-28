@@ -60,7 +60,7 @@ comb <- comb %>%
       TRUE ~ TRUE))
 
 
-# clear_htmls() #removes all existing htmls in docs folder
+clear_htmls() #removes all existing htmls in docs folder
 
 for (jj in 1:nrow(comb)){
   
