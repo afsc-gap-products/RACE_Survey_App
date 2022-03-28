@@ -26,7 +26,7 @@ this_year_surveys <- c("nbs", "ebs", "ai")
 no_templ <- c("survey_team", "flight_itineraries", 
               #"Inventory", 
               "guides", "id_by_taxa", "minimum_ID",
-              "checklist_in", "checklist_out", "checklist_end")
+              "tasklist_in", "tasklist_out", "tasklist_end")
 
 
 # Helper files ----------------------------------------------------------------
