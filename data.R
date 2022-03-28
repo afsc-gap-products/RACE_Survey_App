@@ -155,32 +155,17 @@ full_site <- full_site %>%
                          yes = "Web link",
                          no = url_web_txt
     ),
-    url_loc_txt = dplyr::case_when(
-      !is.na(url_loc_txt) & # there is a specified url_loc_txt
-        !is.na(url_loc) ~ url_loc_txt,
-      is.na(url_loc_txt) & # there is no specified url_loc_txt and we use title instead
-        !is.na(url_loc) & 
-        !is.na(title) ~ title, 
-      is.na(url_loc_txt) & # there is no specified url_loc_txt or title, and it is a link to a directory
-        !is.na(url_loc) & 
-        !is.na(title) & 
-        !grepl(pattern = ".", 
-               x = substr(x = url_loc, start = (nchar(url_loc)-5), stop = nchar(url_loc)), 
-               fixed = TRUE) ~ "Local directory", 
-      TRUE ~ "Local file"
-    ), 
-    title = ifelse(title == url_loc_txt, NA, title), 
-    # url_loc_txt = ifelse(test = ,
-    #                      yes = "Local file",
-    #                      no = url_loc_txt
-    # ),
-    # url_loc_txt = ifelse(test = (url_loc_txt == "Local file" & 
-    #                                !grepl(pattern = ".", 
-    #                                       x = substr(x = url_loc, start = (nchar(url_loc)-5), stop = nchar(url_loc)), 
-    #                                       fixed = TRUE)),
-    #                      yes = "Local directory",
-    #                      no = url_loc_txt
-    # ),
+    url_loc_txt = ifelse(test = is.na(url_loc_txt) & !is.na(url_loc),
+                         yes = "Local file",
+                         no = url_loc_txt
+    ),
+    url_loc_txt = ifelse(test = (url_loc_txt == "Local file" & 
+                                   !grepl(pattern = ".", 
+                                          x = substr(x = url_loc, start = (nchar(url_loc)-5), stop = nchar(url_loc)), 
+                                          fixed = TRUE)),
+                         yes = "Local directory",
+                         no = url_loc_txt
+    ),
     Links = ifelse(test = url_loc == "",
                    yes = "",
                    no = paste0("[", url_loc_txt, "](../", url_loc, ")")
@@ -191,8 +176,7 @@ full_site <- full_site %>%
     ),
     Links_inline = ifelse(test = Links == "",
                           yes = "",
-                          no = paste0(#"Links: ", 
-                                      gsub(
+                          no = paste0("Links: ", gsub(
                             pattern = " \n\n ",
                             replacement = ", ",
                             x = Links
@@ -282,10 +266,7 @@ for (jj in 1:length(unique(full_site$page0))) {
       nrow = 1,
       ncol = ncol(full_site)
     )))
-    
     names(temp) <- names(full_site)
-    temp[sapply(full_site, class) == "logical"] <- NA
-    
     temp <- temp %>%
       dplyr::mutate(
         page = page_dat$page[1],
@@ -298,6 +279,8 @@ for (jj in 1:length(unique(full_site$page0))) {
     full_site <- dplyr::bind_rows(full_site, temp)
   }
 }
+
+
 
 ## Remove rows not included in survey app (yet)
 full_site <- subset(x = full_site, subset = in_survey_app == TRUE)
@@ -354,7 +337,8 @@ a <- paste0(
 ",
 ifelse(comb0$sub_page0 == "", "      menu:
 ", ""),
-collapse = "")
+collapse = ""
+)
 
 site_yml <- gsub(
   pattern = "INSERT_NAVIGATION",

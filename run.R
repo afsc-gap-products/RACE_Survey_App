@@ -34,6 +34,7 @@ googledrive::drive_deauth()
 googledrive::drive_auth() 
 1
 source("./functions.R")
+3
 source("./data.R")
 
 # Check that links work --------------------------------------------------------
