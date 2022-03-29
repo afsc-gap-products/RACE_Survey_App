@@ -28,7 +28,9 @@ this_year_surveys <- c("nbs", "ebs", "ai") #"goa", "bss"
 # non-template pages MUST be named with the web_page name listed in the 'comb' object
 
 no_templ <- c("guides", "id_by_taxa", "minimum_ID",
-              "tasklist_in", "tasklist_out", "tasklist_end")
+              "tasklist_1_-_beginning_of_survey_or_leg", 
+              "tasklist_2_-_end_of_leg", 
+              "tasklist_3_-_end_of_survey")
 
 
 # Helper files ----------------------------------------------------------------

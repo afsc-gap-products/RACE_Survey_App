@@ -25,12 +25,12 @@ navbar:
           href: fpc_and_deck_lead_decklead_resources.html
         - text: "FPC Resources"
           href: fpc_and_deck_lead_fpc_resources.html
-        - text: "Tasklist End"
-          href: fpc_and_deck_lead_tasklist_end.html
-        - text: "Tasklist In"
-          href: fpc_and_deck_lead_tasklist_in.html
-        - text: "Tasklist Out"
-          href: fpc_and_deck_lead_tasklist_out.html
+        - text: "Tasklist 1 - Beginning Of Survey Or Leg"
+          href: fpc_and_deck_lead_tasklist_1_-_beginning_of_survey_or_leg.html
+        - text: "Tasklist 2 - End Of Leg"
+          href: fpc_and_deck_lead_tasklist_2_-_end_of_leg.html
+        - text: "Tasklist 3 - End Of Survey"
+          href: fpc_and_deck_lead_tasklist_3_-_end_of_survey.html
     - text: "Personnel"
       menu:
         - text: "Contacts"
@@ -73,10 +73,10 @@ navbar:
       menu:
         - text: "Operation Manuals"
           href: survey_ops_operation_manuals.html
-        - text: "Reference"
-          href: survey_ops_reference.html
-        - text: "Ship Inventory"
-          href: survey_ops_ship_inventory.html
+        - text: "Survey Inventories"
+          href: survey_ops_survey_inventories.html
+        - text: "Training Resources and Tech Memos"
+          href: survey_ops_training_resources_and_tech_memos.html
 
     - icon: fab fa-github
       href: https://github.com/zoyafuso-NOAA/RACE_Survey_App_TEST.io
