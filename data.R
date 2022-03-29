@@ -50,11 +50,11 @@ full_site$url_loc[is.na(full_site$url_loc)] <- ""
 
 # download links from online ---------------------------------------------------
 
-if (access_to_internet) { # aka, access to internet?
-  download_web_urls(dat = full_site, 
-                    col_in = "url_web", 
-                    dir_out = "./downloaded/")
-}
+# if (access_to_internet) { # aka, access to internet?
+#   download_web_urls(dat = full_site, 
+#                     col_in = "url_web", 
+#                     dir_out = "./downloaded/")
+# }
 # wrangle data -----------------------------------------------------------------
 
 # Clean up entries dataframe to format we need it for printing
@@ -88,12 +88,12 @@ full_site <- full_site %>%
       x = page,
       fixed = TRUE
     )),
-    page0 = tolower(gsub(
+    page0 = (tolower(gsub(
       pattern = " ",
       replacement = "_",
       x = page,
       fixed = TRUE
-    )),
+    ))),
     # subpage name management
     sub_page = ifelse(test = is.na(sub_page), yes = "", no = sub_page),
     sub_page = stringr::str_to_title(gsub(
@@ -102,19 +102,17 @@ full_site <- full_site %>%
       x = sub_page,
       fixed = TRUE
     )),
-    sub_page0 = tolower(gsub(
+    sub_page0 = (tolower(gsub(
       pattern = " ",
       replacement = "_",
       x = sub_page,
       fixed = TRUE
-    )),
+    ))),
     # section and subsection name management
     section = ifelse(test = is.na(section), yes = "", 
-                     no = #stringr::str_to_sentence
-                     (section)),
+                     no = stringr::str_to_title(section)),
     subsection = ifelse(test = is.na(subsection), yes = "", 
-                        no = #stringr::str_to_sentence
-                          (subsection)),
+                        no = stringr::str_to_sentence(subsection)),
     # which surveys do each of these documents belong to?
     # srvy_all = ifelse(test = is.na(survey), yes = TRUE, no = FALSE),
     survey = ifelse(test = is.na(survey), 
@@ -127,22 +125,22 @@ full_site <- full_site %>%
     srvy_ebs = ifelse(
       grepl(pattern = ",all,", x = survey, ignore.case = TRUE) |
         grepl(pattern = ",bs,", x = survey, ignore.case = TRUE) | 
-                       grepl(pattern = ",ebs,", x = survey, ignore.case = TRUE), 
-                     TRUE, FALSE), 
+        grepl(pattern = ",ebs,", x = survey, ignore.case = TRUE), 
+      TRUE, FALSE), 
     srvy_nbs = ifelse(grepl(pattern = ",all,", x = survey, ignore.case = TRUE) | 
-                       grepl(pattern = ",bs,", x = survey, ignore.case = TRUE) | 
-                       grepl(pattern = ",nbs,", x = survey, ignore.case = TRUE), 
-                     TRUE, FALSE), 
+                        grepl(pattern = ",bs,", x = survey, ignore.case = TRUE) | 
+                        grepl(pattern = ",nbs,", x = survey, ignore.case = TRUE), 
+                      TRUE, FALSE), 
     srvy_bss = ifelse(grepl(pattern = ",all,", x = survey, ignore.case = TRUE) | 
-                       grepl(pattern = ",bs,", x = survey, ignore.case = TRUE) | 
-                       grepl(pattern = ",bss,", x = survey, ignore.case = TRUE), 
-                     TRUE, FALSE), 
+                        grepl(pattern = ",bs,", x = survey, ignore.case = TRUE) | 
+                        grepl(pattern = ",bss,", x = survey, ignore.case = TRUE), 
+                      TRUE, FALSE), 
     srvy_ai = ifelse(grepl(pattern = ",all,", x = survey, ignore.case = TRUE) | 
-                      grepl(pattern = ",ai,", x = survey, ignore.case = TRUE), 
-                    TRUE, FALSE), 
-    srvy_goa = ifelse(grepl(pattern = ",all,", x = survey, ignore.case = TRUE) |
-                       grepl(pattern = ",goa,", x = survey, ignore.case = TRUE), 
+                       grepl(pattern = ",ai,", x = survey, ignore.case = TRUE), 
                      TRUE, FALSE), 
+    srvy_goa = ifelse(grepl(pattern = ",all,", x = survey, ignore.case = TRUE) |
+                        grepl(pattern = ",goa,", x = survey, ignore.case = TRUE), 
+                      TRUE, FALSE), 
     in_survey_app = ifelse(in_survey_app == TRUE| in_survey_app == "T", TRUE, FALSE),
     # Images
     images = ifelse(test = is.na(img),
@@ -151,72 +149,18 @@ full_site <- full_site %>%
     ),
     
     # # Hyperlinked titles URL links
-    
-    # title = ifelse(test = (!is.na(url_web) & 
-    #                          is.na(title)  & 
-    #                          !grepl(pattern = ".",
-    #                                 x = substr(x = url_loc, 
-    #                                            start = (nchar(url_loc)-5), 
-    #                                            stop = nchar(url_loc)), 
-    #                                 fixed = TRUE)),
-    #                        yes = "Local directory",
-    #                        no = url_loc_txt),
-    # title = ifelse(test = !is.na(url_web) & is.na(title), 
-    #                yes = "Local link", 
-    #                no = title), 
-    # url_web_txt = ifelse(test = !is.na(url_web),
-    #                      yes = "Web link",
-    #                      no = url_web_txt
-    # ),
     title_link = ifelse(test = url_loc == "",
-                       yes = "",
-                       no = paste0("[", title, "](../", url_loc, ")")
-        ),
+                        yes = title,
+                        no = paste0("[", title, "](../", url_loc, ")")
+    ),
     Links = ifelse(test = url_web == "",
-                       yes = title_link,
-                       no = paste0(title, " \n\n ([Web link](../", url_web, "))")
-        ), 
+                   yes = title_link,
+                   no = paste0(title, " \n\n ([Web link](../", url_web, "))")
+    ), 
     title_link_inline = ifelse(test = url_web == "",
-                        yes = title_link,
-                        no = paste0(title, " ([Web link](../", url_web, "))")
+                               yes = title_link,
+                               no = paste0(title, " ([Web link](../", url_web, "))")
     )
-    
-
-  #   url_loc_txt = ifelse(test = is.na(url_loc_txt) & !is.na(url_loc) & !is.na(title),
-  #                        yes = title,
-  #                        no = url_loc_txt
-  #   ),
-  #   title = ifelse(test = url_loc_txt == title,
-  #                  yes = NA,
-  #                  no = title
-  #   ),
-  #   url_loc_txt = ifelse(test = is.na(url_loc_txt) & !is.na(url_loc),
-  #                        yes = "Local file",
-  #                        no = url_loc_txt
-  #   ),
-  #   url_loc_txt = ifelse(test = (url_loc_txt == "Local file" & 
-  #                                  !grepl(pattern = ".", 
-  #                                         x = substr(x = url_loc, start = (nchar(url_loc)-5), stop = nchar(url_loc)), 
-  #                                         fixed = TRUE)),
-  #                        yes = "Local directory",
-  #                        no = url_loc_txt
-  #   ),
-  #   Links = ifelse(test = url_loc == "",
-  #                  yes = "",
-  #                  no = paste0("[", url_loc_txt, "](../", url_loc, ")")
-  #   ),
-  #   Links = ifelse(test = url_web == "",
-  #                  yes = Links,
-  #                  no = paste0(Links, " \n\n [", url_web_txt, "](../", url_web, ")")
-  #   ),
-  #   Links_inline = ifelse(test = Links == "",
-  #                         yes = "",
-  #                         no = paste0("Links: ", gsub(
-  #                           pattern = " \n\n ",
-  #                           replacement = ", ",
-  #                           x = Links
-  #                         ), "")
-  #   )
   ) %>%
   dplyr::select(
     # -survey,
@@ -236,7 +180,7 @@ full_site <- full_site %>%
 # create survey-specific collection pages --------------------------------------
 temp <- full_site %>% 
   dplyr::filter((page0 == "collections" &
-                  sub_page0 == "specific_collections"))
+                   sub_page0 == "specific_collections"))
 # TOLEDO - will there be a time when there are no surveys id'ed for this
 
 data_to_insert <- data.frame()
@@ -256,8 +200,8 @@ for (i in 1:nrow(temp)) {
   } else {
     for (ii in 1:length(srvys)) {
       dat0 <- dat %>% 
-          dplyr::mutate(sub_page0 = paste0(srvys[ii], "_", sub_page0), 
-                        sub_page = paste0(toupper(srvys[ii]), " ", sub_page))
+        dplyr::mutate(sub_page0 = paste0(srvys[ii], "_", sub_page0), 
+                      sub_page = paste0(toupper(srvys[ii]), " ", sub_page))
       dat0[, grepl(pattern = "srvy_", x = names(dat0))] <- FALSE
       dat0[, paste0("srvy_", srvys[ii])] <- TRUE      
       
@@ -273,18 +217,18 @@ for (i in 1:nrow(temp)) {
 data_to_insert1 <- data.frame()
 for (i in 1:nrow(data_to_insert)){
   for (ii in 1:length(this_year_surveys)) {
-   if (grepl(pattern = this_year_surveys[ii], 
-            x = data_to_insert$sub_page[i], 
-            ignore.case = TRUE)) {
-     data_to_insert1 <- dplyr::bind_rows(data_to_insert1, data_to_insert[i,])
-   }
+    if (grepl(pattern = this_year_surveys[ii], 
+              x = data_to_insert$sub_page[i], 
+              ignore.case = TRUE)) {
+      data_to_insert1 <- dplyr::bind_rows(data_to_insert1, data_to_insert[i,])
+    }
   }
 }
 
 full_site <- dplyr::bind_rows(
   full_site %>% 
     dplyr::filter(!(page0 == "collections" &
-                  sub_page0 == "specific_collections")), 
+                      sub_page0 == "specific_collections")), 
   data_to_insert1) 
 # need to think about how to remove srvy content we are not using (e.g., 2022 goa)
 
@@ -336,6 +280,17 @@ full_site <- full_site %>%
   ))
 
 
+## Make key words all caps -----------------------------------------------------
+phrases <- c("FPC", "BVRD", " ID", "ES60 ", "CTD", "MSDS", "COVID", 
+             "GPS", "SIRF", " R ", " and ", "A B C's")
+
+for (i in 1:length(phrases)){
+  full_site$page <- gsub(pattern = phrases[i], replacement = phrases[i], x = full_site$page, ignore.case = TRUE)
+  full_site$sub_page <- gsub(pattern = phrases[i], replacement = phrases[i], x = full_site$sub_page, ignore.case = TRUE)
+  full_site$section <- gsub(pattern = phrases[i], replacement = phrases[i], x = full_site$section, ignore.case = TRUE)
+  full_site$subsection <- gsub(pattern = phrases[i], replacement = phrases[i], x = full_site$subsection, ignore.case = TRUE)
+}
+
 # subset of data we will actually use ------------------------------------------
 
 site <- full_site %>%
@@ -344,14 +299,14 @@ site <- full_site %>%
   dplyr::select(-starts_with("url_"), -starts_with("img"), -starts_with("description_")) %>%
   dplyr::distinct()
 
-
 # find page and subpage combinations -------------------------------------------
 
 # find combinations of pages
 comb <- site %>%
   dplyr::select(page0, page, sub_page0, sub_page, web_page) %>%
   dplyr::distinct() %>%
-  dplyr::arrange(page0, sub_page0)
+  dplyr::arrange(page0, sub_page0) #%>% 
+  # dplyr::filter(sub_page0 != "" | (sub_page0 == "" & page0 == "index"))
 
 # Write yml --------------------------------------------------------------------
 
@@ -367,12 +322,14 @@ a <- paste0(
   'text: "',
   ifelse(comb0$sub_page0 == "", comb0$page, comb0$sub_page), '"
 ',
-  ifelse(comb0$sub_page0 == "", "      ", "          "),
-  "href: ", comb0$web_page, "
-",
-ifelse(comb0$sub_page0 == "", "      menu:
+  ifelse(comb0$sub_page0 == "", "",#"      ", 
+         "          "),
+  ifelse((comb0$sub_page0 != ""), 
+  paste0("href: ", comb0$web_page, "
+"), ""),
+  ifelse(comb0$sub_page0 == "", "      menu:
 ", ""),
-collapse = ""
+  collapse = ""
 )
 
 site_yml <- gsub(
@@ -392,7 +349,8 @@ utils::write.table(
 
 # make comb neat :)
 comb <- comb %>%
-  dplyr::select(page0, page, sub_page0, sub_page, web_page)
+  dplyr::select(page0, page, sub_page0, sub_page, web_page) %>% 
+  dplyr::filter(sub_page0 != "" | (sub_page0 == "" & page0 == "index"))
 
 
 ## Remove misc variables
