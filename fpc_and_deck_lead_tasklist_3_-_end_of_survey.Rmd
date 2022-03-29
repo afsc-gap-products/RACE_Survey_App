@@ -1,60 +1,47 @@
 ---
 title: "Tasklist at End of Survey"
-output: 
-  html_document:
-    toc: true
+output: html_document
 ---
-
-
-```{r panelset, echo=FALSE}
-library(xaringanExtra)
-xaringanExtra::use_panelset()
-```
-
-::: c-screen
-
-::::: {.panelset}
-
-::: {.panel}
-
-## Eastern Bering Sea {.panel-name}
-
 ```{r Subset Checklist documents for BS, echo = F, results="asis"}
 checklist_items <- subset(x = full_site0, 
-                          sub_page == "tasklist_end" & 
-                            Survey %in% c("ebs", "nbs", "all"))
+                          sub_page == "Tasklist 3 - End of Survey")
 main_sections <- unique(checklist_items$subsection)
 
 for (isection in main_sections) {
   subdf <- subset(x = checklist_items, subset = subsection == isection)
   duty_matrix <- matrix(data = "", 
                         nrow = 0, 
-                        ncol = 4, 
+                        ncol = 8, 
                         dimnames = list(NULL, 
-                                        c("Task", "fpc", "decklead", "safety lead")))
+                                        c("Task", "fpc", 
+                                          "decklead", "safety lead",
+                                          "EBS", "NBS", "AI", "GOA")))
   
   main_bullets <- unique(subdf$title)
   
   for(irow in 1:length(main_bullets)) {
     
     subdf2 <- subset(subdf, title == main_bullets[irow])
+    temp_matrix <- matrix(data = "", 
+                          nrow = 1, 
+                          ncol = 8, 
+                          dimnames = list(NULL, 
+                                          c("Task", "fpc", 
+                                            "decklead", "safety lead",
+                                            "EBS", "NBS", "AI", "GOA")))
     
     if (nrow(subdf2) == 1) {
       type <- ifelse(test = is.na(subdf$url_loc[irow]),
                      yes = "text",
                      no = "link")
       
-      temp_matrix <- matrix(data = "", 
-                            nrow = 1, 
-                            ncol = 4, 
-                            dimnames = list(NULL, 
-                                            c("Task", "fpc", "decklead", "safety lead")))
+      
       temp_matrix[1, "Task"] <- paste0(irow, ") ", 
                                        ifelse(type == "link", yes = "[", no = ""),
-                                       subdf$title[irow],
+                                       subdf2$title,
                                        ifelse(type == "link",
                                               yes = paste0("](",
-                                                           subdf$url_loc[irow],
+                                                           subdf2$url_loc,
                                                            ")"),
                                               no = ""))
       
@@ -64,16 +51,13 @@ for (isection in main_sections) {
         temp_matrix[duty_idx, duty] <- "X"
       } 
       
+      temp_matrix[, c("EBS", "NBS", "AI", "GOA")] <- "X"
+      
+      
       duty_matrix <- rbind(duty_matrix, temp_matrix)
     }
     
     if (nrow(subdf2) > 1) { ## Requires one level of sub-bullets
-      
-      temp_matrix <- matrix(data = "", 
-                            nrow = nrow(subdf2), 
-                            ncol = 4, 
-                            dimnames = list(NULL, 
-                                            c("Task", "fpc", "decklead", "safety lead")))
       temp <- paste0(irow, ") ", main_bullets[irow], "\n")
       
       for (jrow in 1:nrow(subdf2)) {
@@ -82,7 +66,7 @@ for (isection in main_sections) {
                        yes = "text",
                        no = "link")
         
-        temp <- paste0(temp, " * ", 
+        temp <- paste0(temp, "    - ", 
                        ifelse(type == "link", yes = "[", no = ""),
                        subdf2$subtitle[jrow],
                        ifelse(type == "link",
@@ -90,130 +74,30 @@ for (isection in main_sections) {
                                            subdf2$url_loc[jrow],
                                            ")"),
                               no = ""),
-                       "\n")
-        temp_matrix[jrow, "Task"] <- temp
+                       " \n ")
       }
       
-      
+      temp_matrix[1, "Task"] <- temp
       
       for (duty in c("fpc", "decklead", "safety lead")){
-        duty_idx <- grep(x = subdf2$description_3, 
-                         pattern = paste0("everyone|", duty))
-        temp_matrix[duty_idx, duty] <- "X"
+        duty_idx <- grepl(x = unique(subdf2$description_3), 
+                          pattern = paste0("everyone|", duty))
+        if(duty_idx) temp_matrix[1, duty] <- "X"
       } 
       
+      temp_matrix[, c("EBS", "NBS", "AI", "GOA")] <- "X"
       duty_matrix <- rbind(duty_matrix, temp_matrix)
     }
     
   }
   
-  cat(paste0("# ", isection, " \n"))
-  cat(knitr::kable(duty_matrix))
+  cat(paste0("\n# ", isection, " \n"))
+  cat(kableExtra::add_header_above(kable_input = knitr::kable(duty_matrix, 
+                                                              format = "html",
+                                                              table.attr = "style='width:125%;'"),
+                                   header = c(" " = 1, 
+                                              "Duty" = 3, 
+                                              "Survey" = 4)) )
 }
 ```
-
-:::
-
-
-::: {.panel}
-
-## AI/GOA {.panel-name}
-```{r setup AIGOA, echo = F, results="asis"}
-checklist_items <- subset(x = full_site0, 
-                          sub_page == "tasklist_end" & 
-                            Survey %in% c("goa", "ai", "all"))
-main_sections <- unique(checklist_items$subsection)
-
-for (isection in main_sections) {
-  subdf <- subset(x = checklist_items, subset = subsection == isection)
-  duty_matrix <- matrix(data = "", 
-                        nrow = 0, 
-                        ncol = 4, 
-                        dimnames = list(NULL, 
-                                        c("Task", "fpc", "decklead", "safety lead")))
-  
-  main_bullets <- unique(subdf$title)
-  
-  for(irow in 1:length(main_bullets)) {
-    
-    subdf2 <- subset(subdf, title == main_bullets[irow])
-    
-    if (nrow(subdf2) == 1) {
-      type <- ifelse(test = is.na(subdf$url_loc[irow]),
-                     yes = "text",
-                     no = "link")
-      
-      temp_matrix <- matrix(data = "", 
-                            nrow = 1, 
-                            ncol = 4, 
-                            dimnames = list(NULL, 
-                                            c("Task", "fpc", "decklead", "safety lead")))
-      temp_matrix[1, "Task"] <- paste0(irow, ") ", 
-                                       ifelse(type == "link", yes = "[", no = ""),
-                                       subdf$title[irow],
-                                       ifelse(type == "link",
-                                              yes = paste0("](",
-                                                           subdf$url_loc[irow],
-                                                           ")"),
-                                              no = ""))
-      
-      for (duty in c("fpc", "decklead", "safety lead")){
-        duty_idx <- grep(x = subdf2$description_3, 
-                         pattern = paste0("everyone|", duty))
-        temp_matrix[duty_idx, duty] <- "X"
-      } 
-      
-      duty_matrix <- rbind(duty_matrix, temp_matrix)
-    }
-    
-    if (nrow(subdf2) > 1) { ## Requires one level of sub-bullets
-      
-      temp_matrix <- matrix(data = "", 
-                            nrow = nrow(subdf2), 
-                            ncol = 4, 
-                            dimnames = list(NULL, 
-                                            c("Task", "fpc", "decklead", "safety lead")))
-      temp <- paste0(irow, ") ", main_bullets[irow], "\n")
-      
-      for (jrow in 1:nrow(subdf2)) {
-        
-        type <- ifelse(test = is.na(subdf2$url_loc[jrow]),
-                       yes = "text",
-                       no = "link")
-        
-        temp <- paste0(temp, " * ", 
-                       ifelse(type == "link", yes = "[", no = ""),
-                       subdf2$subtitle[jrow],
-                       ifelse(type == "link",
-                              yes = paste0("](",
-                                           subdf2$url_loc[jrow],
-                                           ")"),
-                              no = ""),
-                       "\n")
-        temp_matrix[jrow, "Task"] <- temp
-      }
-      
-      
-      
-      for (duty in c("fpc", "decklead", "safety lead")){
-        duty_idx <- grep(x = subdf2$description_3, 
-                         pattern = paste0("everyone|", duty))
-        temp_matrix[, duty] <- "X"
-      } 
-      
-      duty_matrix <- rbind(duty_matrix, temp_matrix)
-    }
-    
-  }
-  
-  cat(paste0("# ", isection, " \n"))
-  cat(knitr::kable(duty_matrix))
-}
-```
-
-:::
-
-:::::
-
-:::
 
