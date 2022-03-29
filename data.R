@@ -150,38 +150,73 @@ full_site <- full_site %>%
                     no = paste0("![*", img_txt, "*](", img, "){width='400px'}")
     ),
     
-    # URL links
-    url_web_txt = ifelse(test = is.na(url_web_txt) & !is.na(url_web),
-                         yes = "Web link",
-                         no = url_web_txt
-    ),
-    url_loc_txt = ifelse(test = is.na(url_loc_txt) & !is.na(url_loc),
-                         yes = "Local file",
-                         no = url_loc_txt
-    ),
-    url_loc_txt = ifelse(test = (url_loc_txt == "Local file" & 
-                                   !grepl(pattern = ".", 
-                                          x = substr(x = url_loc, start = (nchar(url_loc)-5), stop = nchar(url_loc)), 
-                                          fixed = TRUE)),
-                         yes = "Local directory",
-                         no = url_loc_txt
-    ),
-    Links = ifelse(test = url_loc == "",
-                   yes = "",
-                   no = paste0("[", url_loc_txt, "](../", url_loc, ")")
-    ),
+    # # Hyperlinked titles URL links
+    
+    # title = ifelse(test = (!is.na(url_web) & 
+    #                          is.na(title)  & 
+    #                          !grepl(pattern = ".",
+    #                                 x = substr(x = url_loc, 
+    #                                            start = (nchar(url_loc)-5), 
+    #                                            stop = nchar(url_loc)), 
+    #                                 fixed = TRUE)),
+    #                        yes = "Local directory",
+    #                        no = url_loc_txt),
+    # title = ifelse(test = !is.na(url_web) & is.na(title), 
+    #                yes = "Local link", 
+    #                no = title), 
+    # url_web_txt = ifelse(test = !is.na(url_web),
+    #                      yes = "Web link",
+    #                      no = url_web_txt
+    # ),
+    title_link = ifelse(test = url_loc == "",
+                       yes = "",
+                       no = paste0("[", title, "](../", url_loc, ")")
+        ),
     Links = ifelse(test = url_web == "",
-                   yes = Links,
-                   no = paste0(Links, " \n\n [", url_web_txt, "](../", url_web, ")")
-    ),
-    Links_inline = ifelse(test = Links == "",
-                          yes = "",
-                          no = paste0("Links: ", gsub(
-                            pattern = " \n\n ",
-                            replacement = ", ",
-                            x = Links
-                          ), "")
+                       yes = title_link,
+                       no = paste0(title, " \n\n ([Web link](../", url_web, "))")
+        ), 
+    title_link_inline = ifelse(test = url_web == "",
+                        yes = title_link,
+                        no = paste0(title, " ([Web link](../", url_web, "))")
     )
+    
+
+  #   url_loc_txt = ifelse(test = is.na(url_loc_txt) & !is.na(url_loc) & !is.na(title),
+  #                        yes = title,
+  #                        no = url_loc_txt
+  #   ),
+  #   title = ifelse(test = url_loc_txt == title,
+  #                  yes = NA,
+  #                  no = title
+  #   ),
+  #   url_loc_txt = ifelse(test = is.na(url_loc_txt) & !is.na(url_loc),
+  #                        yes = "Local file",
+  #                        no = url_loc_txt
+  #   ),
+  #   url_loc_txt = ifelse(test = (url_loc_txt == "Local file" & 
+  #                                  !grepl(pattern = ".", 
+  #                                         x = substr(x = url_loc, start = (nchar(url_loc)-5), stop = nchar(url_loc)), 
+  #                                         fixed = TRUE)),
+  #                        yes = "Local directory",
+  #                        no = url_loc_txt
+  #   ),
+  #   Links = ifelse(test = url_loc == "",
+  #                  yes = "",
+  #                  no = paste0("[", url_loc_txt, "](../", url_loc, ")")
+  #   ),
+  #   Links = ifelse(test = url_web == "",
+  #                  yes = Links,
+  #                  no = paste0(Links, " \n\n [", url_web_txt, "](../", url_web, ")")
+  #   ),
+  #   Links_inline = ifelse(test = Links == "",
+  #                         yes = "",
+  #                         no = paste0("Links: ", gsub(
+  #                           pattern = " \n\n ",
+  #                           replacement = ", ",
+  #                           x = Links
+  #                         ), "")
+  #   )
   ) %>%
   dplyr::select(
     # -survey,
@@ -193,7 +228,7 @@ full_site <- full_site %>%
   dplyr::relocate(
     # survey, 
     page, page0, sub_page, sub_page0, section,
-    subsection, title, subtitle, descrip, images, Links_inline, 
+    subsection, title, title_link_inline, subtitle, descrip, images, #Links_inline, 
     dplyr::starts_with("svy_")
   )
 
