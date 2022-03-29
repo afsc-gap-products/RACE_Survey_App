@@ -21,8 +21,8 @@ navbar:
           href: collections_resources.html
     - text: "FPC and Deck Lead"
       menu:
-        - text: "Decklead Resources"
-          href: fpc_and_deck_lead_decklead_resources.html
+        - text: "Deck Lead Resources"
+          href: fpc_and_deck_lead_deck_lead_resources.html
         - text: "FPC Resources"
           href: fpc_and_deck_lead_fpc_resources.html
         - text: "Tasklist 1 - Beginning Of Survey Or Leg"

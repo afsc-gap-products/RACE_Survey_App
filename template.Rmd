@@ -95,4 +95,6 @@ function myFunction() {
 ```
 
 
-This page was last updated `r format(Sys.Date(), format='%B %d %Y') `. 
+</br>
+
+*This page was last updated `r format(Sys.Date(), format='%B %d %Y') `. *
