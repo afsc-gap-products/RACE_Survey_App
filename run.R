@@ -5,13 +5,17 @@
 #' Current date: March 2022
 #' --------------------------------------
 
+
+# source("run.R")
+# 1
+
 # Knowns ----------------------------------------------------------------------
 
 dir_pagecontent <- "1AIQ0JEUA20D-g32uRQfRMZb0wW4SXl2n8Lwb_62uW-o"
 dir_species_guides <- "172nNe_qrK0CWGNC4kR9gh27B-nyTgEj03uf4opGv5iU"
 dir_min_id <- "18MNidntx-qAHJPbeBX7-M7g3dQpZee_3Osr0rbAdQnU"
 
-access_to_internet <- FALSE
+access_to_internet <- TRUE
 
 # toggle to remake htmls for the fish ID by taxa pages; takes a long time!
 regenerate_species_pages <- FALSE 
@@ -24,7 +28,9 @@ this_year_surveys <- c("nbs", "ebs", "ai") #"goa", "bss"
 # non-template pages MUST be named with the web_page name listed in the 'comb' object
 
 no_templ <- c("guides", "id_by_taxa", "minimum_ID",
-              "tasklist_in", "tasklist_out", "tasklist_end")
+              "tasklist_1_-_beginning_of_survey_or_leg", 
+              "tasklist_2_-_end_of_leg", 
+              "tasklist_3_-_end_of_survey")
 
 
 # Helper files ----------------------------------------------------------------
@@ -60,7 +66,7 @@ comb <- comb %>%
       TRUE ~ TRUE))
 
 
-# clear_htmls() #removes all existing htmls in docs folder
+clear_htmls() #removes all existing htmls in docs folder
 
 for (jj in 1:nrow(comb)){
   

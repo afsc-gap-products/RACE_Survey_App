@@ -15,7 +15,7 @@ str00 <- ""
 if (nrow(page_dat) != 0) {
   page_dat <- page_dat %>% 
     dplyr::arrange(section, subsection, order, title) %>%
-    mutate(subsection = str_to_title(subsection))
+    mutate(subsection = (subsection))
   
   # str0 <- ""
   
@@ -34,9 +34,10 @@ if (nrow(page_dat) != 0) {
         dplyr::filter(subsection == unique(temp0$subsection)[ii])
     
       # compile text that will go on the page
-    str000 <- paste( paste0("**", temp$title, "**", # title
+    str000 <- paste( paste0("|      ", temp$title_link_inline, # title
             ifelse(is.na(temp$subtitle), "", paste0(": *", temp$subtitle, "*")), # subtitle
-            " ",temp$Links_inline, "
+            # " ",temp$Links_inline, 
+            "
 ", temp$descrip, "
 
 "), collapse = "")
@@ -45,7 +46,7 @@ if (nrow(page_dat) != 0) {
       
       str000 <- paste0("
 
-### ", str_to_title(unique(temp$subsection)[1]), "
+### ", (unique(temp$subsection)[1]), "
 
 ", str000)
       # } else {
@@ -58,7 +59,7 @@ if (nrow(page_dat) != 0) {
       if (unique(temp$section)[1] != "") {
     str0 <- paste0("
 
-## ", str_to_title(unique(temp0$section)[1]), "
+## ", (unique(temp0$section)[1]), "
 
 ", str0)
       }
@@ -69,3 +70,29 @@ if (nrow(page_dat) != 0) {
 ```
 
 `r str00 `
+
+```{=html}
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+```
+
+
+-----------------------------------

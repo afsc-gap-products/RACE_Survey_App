@@ -30,12 +30,7 @@ pkg <- c(#"tidyverse",
          
          # make tables
          "kableExtra", # devtools::install_github(repo="haozhu233/kableExtra", ref="a6af5c0")
-         "flextable",
-         
-         #webpage enhancements
-         "xaringanExtra" # devtools::install_github("gadenbuie/xaringanExtra")
-
-         )
+         "flextable")
 
 for (p in pkg) {
   if (!require(p, character.only = TRUE)) {

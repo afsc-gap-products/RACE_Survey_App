@@ -5,16 +5,26 @@ description: |
 site: distill::distill_website
 ---
 
-The RACE Survey App is a comprehensive resource for all scientific personnel to use during the RACE bottom trawl surveys. The goal is for the Survey App to contain all information, manuals, forms, or other resources that could possibly ever be needed during the surveys.
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
-
-# Learn more about publishing to GitHub Pages at:
-# https://rstudio.github.io/distill/publish_website.html#github-pages
-
 ```
+
+
+:::: {style="display: flex;"}
+
+::: {}
+The RACE Survey App is a comprehensive resource for all scientific personnel to use during the RACE bottom trawl surveys. The goal is for the Survey App to contain all information, manuals, forms, or other resources that could possibly ever be needed during the surveys.
+:::
+
+::: {}
+```{r, layout="l-body-outset"}
+knitr::include_graphics("img/IMG_9489.jpg")
+```
+:::
+
+::::
+
+
+
+
 
