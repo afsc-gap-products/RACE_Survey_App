@@ -1,5 +1,6 @@
 ---
-title: "Tasklist for Beginning of Survey"
+title: "`r page_title`"
+description: "`r page_desc`"
 site: distill::distill_website
 ---
 

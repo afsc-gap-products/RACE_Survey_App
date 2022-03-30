@@ -1,6 +1,7 @@
 ---
-title: "Tasklist Between Survey Legs"
-output: html_document
+title: "`r page_title`"
+description: "`r page_desc`"
+site: distill::distill_website
 ---
 
 ```{r Subset Checklist documents for BS, echo = F, results="asis"}

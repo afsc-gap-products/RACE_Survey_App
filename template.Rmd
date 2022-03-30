@@ -34,7 +34,7 @@ if (nrow(page_dat) != 0) {
         dplyr::filter(subsection == unique(temp0$subsection)[ii])
     
       # compile text that will go on the page
-    str000 <- paste( paste0(temp$title_link_inline, # title
+    str000 <- paste( paste0("|      ", temp$title_link_inline, # title
             ifelse(is.na(temp$subtitle), "", paste0(": *", temp$subtitle, "*")), # subtitle
             # " ",temp$Links_inline, 
             "
@@ -95,6 +95,4 @@ function myFunction() {
 ```
 
 
-</br>
-
-*This page was last updated `r format(Sys.Date(), format='%B %d %Y') `. *
+-----------------------------------
