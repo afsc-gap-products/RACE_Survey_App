@@ -6,18 +6,21 @@ navbar:
     image: img/logo.png
     href: index.html
   search: true
-  repository_url: https://github.com/zoyafuso-NOAA/RACE_Survey_App_TEST.io
+  repository_url: https://github.com/zoyafuso-NOAA/RACE_Survey_App
   source_url: true
   right:
 INSERT_NAVIGATION
     - icon: fab fa-github
-      href: https://github.com/zoyafuso-NOAA/RACE_Survey_App_TEST.io
+      href: https://github.com/zoyafuso-NOAA/RACE_Survey_App
 favicon: img/logo.png
-base_url: https://github.com/zoyafuso-NOAA/RACE_Survey_App_TEST.io
+base_url: https://github.com/zoyafuso-NOAA/RACE_Survey_App
 output:
   distill::distill_article:
     css: "theme.css"
     toc: true
+    includes:
+      after_body:
+      - footer.html
 editor_options:
   chunk_output_type: console
 
