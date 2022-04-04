@@ -8,6 +8,7 @@
 #' --------------------------------------
 
 ## Load packages -----------------------------------------------------------
+
 pkg <- c(#"tidyverse",
          "stringr",
          "tidyr", 
@@ -35,6 +36,7 @@ pkg <- c(#"tidyverse",
 for (p in pkg) {
   if (!require(p, character.only = TRUE)) {
     install.packages(p)
+    1
     require(p, character.only = TRUE)
   }
 }

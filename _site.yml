@@ -35,6 +35,8 @@ navbar:
       menu:
         - text: "Contacts"
           href: personnel_contacts.html
+        - text: "Flight Itineraries"
+          href: personnel_flight_itineraries.html
         - text: "Timekeeping T&A"
           href: personnel_timekeeping_t&a.html
     - text: "Safety"
