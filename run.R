@@ -62,6 +62,7 @@ comb <- comb %>%
     template = dplyr::case_when(
       page0 == "index" ~ FALSE, 
       sub_page0 %in% no_templ ~ FALSE, 
+      make_clean_names(sub_page0) %in% no_templ ~ FALSE,
       web_page == "personnel_flight_itineraries.html" ~ FALSE,
       TRUE ~ TRUE))
 

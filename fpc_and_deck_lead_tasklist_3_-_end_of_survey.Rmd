@@ -1,22 +1,21 @@
 ---
-title: "`r page_title`"
-description: "`r page_desc`"
+title: "Tasklist at End of Survey"
 site: distill::distill_website
 ---
 
 ```{r Subset Checklist documents for BS, echo = F, results="asis"}
 checklist_items <- subset(x = full_site0, 
                           sub_page == "Tasklist 3 - End of Survey")
-main_sections <- unique(checklist_items$subsection)
+main_sections <- unique(checklist_items$section)
 
 for (isection in main_sections) {
-  subdf <- subset(x = checklist_items, subset = subsection == isection)
+  subdf <- subset(x = checklist_items, subset = section == isection)
   duty_matrix <- matrix(data = "", 
                         nrow = 0, 
                         ncol = 8, 
                         dimnames = list(NULL, 
-                                        c("Task", "fpc", 
-                                          "decklead", "safety lead",
+                                        c("Task", "FPC", 
+                                          "Deck Lead", "Safety Lead",
                                           "EBS", "NBS", "AI", "GOA")))
   
   main_bullets <- unique(subdf$title)
@@ -28,8 +27,8 @@ for (isection in main_sections) {
                           nrow = 1, 
                           ncol = 8, 
                           dimnames = list(NULL, 
-                                          c("Task", "fpc", 
-                                            "decklead", "safety lead",
+                                          c("Task", "FPC", 
+                                            "Deck Lead", "Safety Lead",
                                             "EBS", "NBS", "AI", "GOA")))
     
     if (nrow(subdf2) == 1) {
@@ -47,7 +46,7 @@ for (isection in main_sections) {
                                                            ")"),
                                               no = ""))
       
-      for (duty in c("fpc", "decklead", "safety lead")){
+      for (duty in c("FPC", "Deck Lead", "Safety Lead")){
         duty_idx <- grep(x = subdf2$description_3, 
                          pattern = paste0("everyone|", duty))
         temp_matrix[duty_idx, duty] <- "X"
@@ -81,7 +80,7 @@ for (isection in main_sections) {
       
       temp_matrix[1, "Task"] <- temp
       
-      for (duty in c("fpc", "decklead", "safety lead")){
+      for (duty in c("FPC", "Deck Lead", "Safety Lead")){
         duty_idx <- grepl(x = unique(subdf2$description_3), 
                           pattern = paste0("everyone|", duty))
         if(duty_idx) temp_matrix[1, duty] <- "X"
