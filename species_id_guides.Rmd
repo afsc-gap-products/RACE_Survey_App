@@ -28,7 +28,7 @@ all_files <- guides_data %>%
 
 
 ```{r, results = "asis"}
-fish_id <- paste0("[ID by Taxa](../docs/species_id_id_by_taxa.html)")
+fish_id <- paste0("[ID by Taxa](./species_id_id_by_taxa.html)")
 
 tabl <- all_files %>%
   mutate(taxa = ifelse(section == "Fishes", family, tools::toTitleCase(taxa))) %>%
