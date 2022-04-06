@@ -18,11 +18,17 @@ dir_min_id <- "18MNidntx-qAHJPbeBX7-M7g3dQpZee_3Osr0rbAdQnU"
 access_to_internet <- TRUE
 
 # toggle to remake htmls for the fish ID by taxa pages; takes a long time!
-regenerate_species_pages <- FALSE 
+remake_species_pages <- FALSE 
 
 
-this_year <- "2021" # just doing this for proof of concept
-this_year_surveys <- c("nbs", "ebs", "ai") #"goa", "bss"
+this_year <- 2021 # just doing this for proof of concept
+if((this_year %% 2) == 0){
+  this_year_surveys <- c("nbs", "ebs", "ai") #"goa", "bss" 
+} else {
+  this_year_surveys <- c("nbs", "ebs", "goa")  
+  
+}
+
 
 # CHECK! - define here pages that you don't want to use the template for!
 # non-template pages MUST be named with the web_page name listed in the 'comb' object
@@ -38,7 +44,6 @@ googledrive::drive_deauth()
 googledrive::drive_auth() 
 1
 source("./functions.R")
-3
 source("./data.R")
 
 # Check that links work --------------------------------------------------------
@@ -67,7 +72,9 @@ comb <- comb %>%
       TRUE ~ TRUE))
 
 
-clear_htmls() #removes all existing htmls in docs folder
+clear_htmls() #removes all existing htmls in docs folder (except species ID files)
+
+
 
 for (jj in 1:nrow(comb)){
   

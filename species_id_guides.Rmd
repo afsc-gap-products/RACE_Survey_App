@@ -42,7 +42,7 @@ for(i in 1:length(sec)){
   tmp <- tabl %>%
     filter(section == sec[[i]]) %>%
     select(Taxa = taxa, Reference = reference) %>%
-    arrange(Taxa)
+    arrange(!is.na(Taxa), Taxa)
   
   if(sec[i] == "Fishes"){
       cat(paste0("## ", sec[[i]], " — ", fish_id, ""), '\n \n \n')

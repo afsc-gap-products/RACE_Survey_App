@@ -135,7 +135,14 @@ html_to_link <- function(x){
 # clean out old htmls so we aren't collecting files we never use
 clear_htmls <- function(){
   l <- list.files("./docs/", full.names = TRUE, pattern = ".html")
-  invisible(file.remove(l))
+  
+  if(remake_species_pages){
+    invisible(file.remove(l))
+  } else {
+    z <- list.files("./docs/", full.names = TRUE, pattern = "zz_")
+    invisible(file.remove(l[!l %in% z]))
+  }
+  
   cat('all HTML files deleted from \'docs\' folder')
 }
 
