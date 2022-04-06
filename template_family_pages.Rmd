@@ -44,7 +44,7 @@ if (fam_page & length(subgrps) > 1) {
       img = paste0("![](", url_loc, ")"),
       descrip = ifelse(subgroup == "",
         paste0(
-          "<br>[*", species, "*](", group_title, "_", gsub(" ", "_", species), ".html)<br>",
+          "<br>[*", species, "*](zz_", group_title, "_", gsub(" ", "_", species), ".html)<br>",
           str_to_title(common_name), "<br>"),
         paste0("<br>[**", str_to_title(subgroup), "**](", species_page, ")")
       )
@@ -99,7 +99,7 @@ tabl %>%
   ) %>%
   kable_styling(full_width = T)
 
-back <- paste0("[Back to ID Home](../species_id_id_by_taxa.html)")
+back <- paste0("[Back to ID Home](./species_id_id_by_taxa.html)")
 ```
 
 `r back`

@@ -20,16 +20,16 @@ for (i in 1:length(url)) {
 knitr::include_graphics(c(url), dpi = 150, error = FALSE)
 
 if (species_page$family[1] != "Scorpaenidae") {
-  vouch <- ifelse(species_page$collect_voucher[1] == "",
-                  paste0("**COLLECT VOUCHER: ", toupper(species_page$collect_voucher[1]), "**"), 
-                  "")
-  content <- paste(
-    vouch, "\n \n",
+  vouch <- ifelse(species_page$collect_voucher[1] == "", "",
+                  paste0("**COLLECT VOUCHER: ", toupper(species_page$collect_voucher[1]), "** \n \n"))
+  names <- ifelse(species_page$other_names[1] == "", "",
+                  paste("**Other names:** ", species_page$other_names[1], "\n \n"))
+  content <- paste0(
+    vouch, names,
     species_page$species_descrip[1], "\n \n",
-    "**Other names:** ", species_page$other_names[1], "\n \n",
     "**Occurence:** ", species_page$range[1], "\n \n",
-    "**Depth:** ", species_page$depth_m[1], "meters  &nbsp; &nbsp;",
-    "**Size:** ", species_page$size_cm[1], "cm \n \n",
+    "**Depth:** ", species_page$depth_m[1], " meters  &nbsp; &nbsp;",
+    "**Size:** ", species_page$size_cm[1], " cm \n \n",
     "**Species code:** ", species_page$species_code[1], "\n \n \n"
   )
 } else {
@@ -58,7 +58,7 @@ if (species_page$family[1] != "Scorpaenidae") {
   )
 }
 
-back <- paste0("[Back to Group](../zz_", group_title, ".html)")
+back <- paste0("[Back to Group](./zz_", group_title, ".html)")
 ```
 
 `r content`
