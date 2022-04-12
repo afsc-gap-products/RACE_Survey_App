@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE, results = "a
 ```{r}
 guides_data <- readr::read_csv("./data/id_guides_data.csv") %>%
   filter(page == "id_by_taxon") %>%
+  filter(in_survey_app) %>%
   mutate(size_cm = as.character(size_cm),
          species_code = as.character(species_code)) %>%
   replace(is.na(.), "")
@@ -18,7 +19,7 @@ grps <- guides_data %>%
   select(group) %>%
   unique() %>%
   mutate(
-    group_page = paste0("./species_pages/", make_clean_names(group), ".html"),
+    group_page = paste0("./zz_", make_clean_names(group), ".html"),
     link = paste0("[", group, "](", group_page, ")")
   ) %>%
   arrange(group)
@@ -30,7 +31,7 @@ links <- paste0(grps$link, collapse = "<br>")
 `r links`
 
 
-```{r, eval = regenerate_species_pages}
+```{r, eval = remake_species_pages}
 ## this chunk generates all individual species and family pages; takes a long time to run
 
 for (k in 1:nrow(grps)) {
@@ -41,8 +42,7 @@ for (k in 1:nrow(grps)) {
 
   fam <- group_data$group[1]
   spp <- unique(group_data$species)
-
-
+  spp <- spp[spp != "subgroup"]
 
 
   ## making subgroup pages
@@ -69,13 +69,13 @@ for (k in 1:nrow(grps)) {
         mutate(n = 1:n()) %>%
         filter(n == 1)
       
-      page <- paste0(group_title, "_", str_remove(cols[ii], "/"), ".html")
+      page <- paste0("zz_", group_title, "_", str_remove(cols[ii], "/"), ".html")
       fp <- FALSE
      
       subgrps <- unique(tolower(page_data$subgroup))
       
       rmarkdown::render(paste0("template_family_pages.Rmd"),
-        output_dir = "./docs/species_pages/",
+        output_dir = "./docs/",
         output_file = page)
       rm(ncols, colnms, page)
       
@@ -87,10 +87,10 @@ for (k in 1:nrow(grps)) {
           filter(tolower(color_cat) == cols[ii]) %>%
           filter(tolower(subgroup) == subgrps[[jj]])
           
-      page <- paste0(group_title, "_", str_remove(cols[ii], "/"), "_subpage_", jj, ".html")
+      page <- paste0("zz_", group_title, "_", str_remove(cols[ii], "/"), "_subpage_", jj, ".html")
       
       rmarkdown::render(paste0("template_family_pages.Rmd"),
-        output_dir = "./docs/species_pages/",
+        output_dir = "./docs/",
         output_file = page)
       rm(ncols, colnms, page)
       }
@@ -99,20 +99,20 @@ for (k in 1:nrow(grps)) {
     
     fp <- FALSE
     fam_page <- FALSE
-    for (i in 1:length(subgrps)) {
-      subtitle <- str_to_title(subgrps[i])
+    for (kk in 1:length(subgrps)) {
+      subtitle <- str_to_title(subgrps[kk])
 
       page_data <- group_data %>%
         mutate(subgroup = ifelse(is.na(subgroup), "", subgroup)) %>%
-        filter(subgroup == subgrps[i]) %>%
+        filter(subgroup == subgrps[kk]) %>%
         group_by(species) %>%
         mutate(n = 1:n()) %>%
         filter(n == 1)
 
-      page <- paste0(group_title, "_subpage", i, ".html")
+    page <- paste0("zz_", group_title, "_subpage", kk, ".html")
       
      rmarkdown::render(paste0("template_family_pages.Rmd"),
-        output_dir = "./docs/species_pages/",
+        output_dir = "./docs/",
         output_file = page)
     
      rm(ncols, colnms, page)
@@ -146,11 +146,11 @@ for (k in 1:nrow(grps)) {
   
   }
   
-  page <- paste0(group_title, ".html")
+  page <- paste0("zz_",group_title, ".html")
   
   
   rmarkdown::render(paste0("template_family_pages.Rmd"),
-    output_dir = "./docs/species_pages/",
+    output_dir = "./docs/",
     output_file = page)
 
 
@@ -161,18 +161,18 @@ for (k in 1:nrow(grps)) {
   
 
   # making species pages
-  for (i in 1:length(spp)) {
+  for (ll in 1:length(spp)) {
     species_page <- group_data %>%
       filter(species != "subgroup") %>%
-      filter(species == spp[i])
+      filter(species == spp[ll])
 
     title <- str_to_title(species_page$common_name[1])
     subtitle <- paste0("*", species_page$species[1], "*")
 
-    page <- paste0(group_title, "_", gsub(" ", "_", species_page$species[1]), ".html")
+    page <- paste0("zz_", group_title, "_", gsub(" ", "_", species_page$species[1]), ".html")
 
     rmarkdown::render(paste0("template_species_pages.Rmd"),
-      output_dir = "./docs/species_pages/",
+      output_dir = "./docs/",
       output_file = page
     )
   }

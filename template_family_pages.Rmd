@@ -37,14 +37,14 @@ if (fam_page & length(subgrps) > 1) {
     ungroup() %>%
     mutate(
       species_page = case_when(
-        group == "Rockfishes" & fp == TRUE ~ paste0(group_title, "_",  str_remove(tolower(color_cat), "/"), ".html"),
-        group == "Rockfishes" & fp == FALSE ~ paste0(group_title, "_", str_remove(tolower(color_cat), "/"), "_subpage_", spg_id, ".html"),
-        TRUE ~ paste0("./", group_title, "_subpage", rowid, ".html")
+        group == "Rockfishes" & fp == TRUE ~ paste0("zz_", group_title, "_",  str_remove(tolower(color_cat), "/"), ".html"),
+        group == "Rockfishes" & fp == FALSE ~ paste0("zz_", group_title, "_", str_remove(tolower(color_cat), "/"), "_subpage_", spg_id, ".html"),
+        TRUE ~ paste0("./zz_", group_title, "_subpage", rowid, ".html")
       ),                                 
       img = paste0("![](", url_loc, ")"),
       descrip = ifelse(subgroup == "",
         paste0(
-          "<br>[*", species, "*](", group_title, "_", gsub(" ", "_", species), ".html)<br>",
+          "<br>[*", species, "*](zz_", group_title, "_", gsub(" ", "_", species), ".html)<br>",
           str_to_title(common_name), "<br>"),
         paste0("<br>[**", str_to_title(subgroup), "**](", species_page, ")")
       )
@@ -58,7 +58,7 @@ if (fam_page & length(subgrps) > 1) {
     filter(n == 1) %>%
     ungroup() %>%
     mutate(
-      species_page = paste0("./", group_title, "_", gsub(" ", "_", species), ".html"),
+      species_page = paste0("./zz_", group_title, "_", gsub(" ", "_", species), ".html"),
       img = paste0("![](", url_loc, ")"),
       descrip = paste0(
         "<br>[*", species, "*](", species_page, ")<br>",
@@ -66,7 +66,7 @@ if (fam_page & length(subgrps) > 1) {
         species_code
       )
     ) %>%
-    arrange(desc(subgroup, subtitle)) %>%
+    arrange(subgroup) %>%
     select(img, descrip)
 }
 
@@ -99,60 +99,8 @@ tabl %>%
   ) %>%
   kable_styling(full_width = T)
 
-back <- paste0("[Back to ID Home](../species_id_id_by_taxa.html)")
+back <- paste0("[Back to ID Home](./species_id_id_by_taxa.html)")
 ```
 
 `r back`
 
-
-
-```{r, eval = FALSE}
-# print_in_cols <- function(img1, txt1, img2, txt2,
-#                              headerL = "&nbsp;", headerR = "&nbsp;", # empty string confuses pandoc if only right header is set
-#                              col_width = 20, img_px = 350) {
-#   w <- paste0("{width=", img_px, "px}")
-#   template <- "%s|%s\n%s|%s
-#   ![](%s)%s%s|![](%s)%s%s\r\n\r\n"
-#   og <- sprintf(
-#     template,
-#     headerL, headerR,
-#     paste0(rep("-", col_width), collapse = ""), paste0(rep("-", col_width), collapse = ""),
-#     img1, w, txt1, img2, w, txt2
-#     )
-#   return(og)
-# }
-#
-# img1 <- img2 <- sub_page$url_loc[[1]]
-# txt1 <- txt2 <- tabl$descrip[[1]]
-
-
-# print_in_cols <- function(imgs, txts,
-#                           headerL = "&nbsp;", headerR = "&nbsp;",
-#                           ncols = 2) {
-#   img_px <- 700/ncols
-#   col_width = 60/ncols
-#   w <- paste0("{width=", img_px, "px}")
-#   n <- 4
-#   template <- paste0("%s|%s\n%s|%s\n %s \r\n\r\n", collapse = "")
-#
-#   cont <- paste0(imgs[1], w, txts[1])
-#   for(i in 2:n){
-#      tmp <- paste0(imgs[i], w, txts[i])
-#      cont <- paste0(cont, "|", tmp)
-#   }
-#
-#   output <- sprintf(
-#     template,
-#     headerL, headerR,
-#     paste0(rep("-", col_width), collapse = ""), paste0(rep("-", col_width), collapse = ""),
-#     cont
-#     )
-#   return(output)
-# }
-```
-
-```{r}
-
-# imgs <- tabl$img
-# txts <- tabl$descrip
-```
