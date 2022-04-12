@@ -32,7 +32,7 @@ tmp_table <- tibble(full_file = travel_plans,
 
 tabl <- tmp_table %>%
   select(Name:Link) %>%
-  arrange(desc(`Leg 1`, `Leg 2`, `Leg 3`,`Leg 4`)) %>%
+  arrange(desc(`Leg 1`), desc(`Leg 2`), desc(`Leg 3`),desc(`Leg 4`)) %>%
   filter(!duplicated(.[,1:4]))
 
 options(knitr.kable.NA = '')

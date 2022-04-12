@@ -11,10 +11,10 @@ navbar:
   right:
     - text: "Collections"
       menu:
+        - text: "AI Specific Collections"
+          href: collections_ai_specific_collections.html
         - text: "EBS Specific Collections"
           href: collections_ebs_specific_collections.html
-        - text: "GOA Specific Collections"
-          href: collections_goa_specific_collections.html
         - text: "NBS Specific Collections"
           href: collections_nbs_specific_collections.html
         - text: "Resources"
