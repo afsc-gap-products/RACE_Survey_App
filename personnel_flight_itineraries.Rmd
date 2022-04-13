@@ -4,6 +4,9 @@ output: html_document
 ---
 
 ```{r, results = 'asis', echo = F}
+
+options(knitr.kable.NA = '')
+
 # this code parses the names of the flight itineraries in this year's folder and generates a table with the person's name, what legs they are one, and the confirmation code. Files must be named with the following information in this order: NAME_Leg1_2_CONFIRMATIONCODE
 
 this_year <- format(Sys.Date(), "%Y")
@@ -16,29 +19,44 @@ if(this_year %in% list.files(dir)){
   year <- as.numeric(this_year) - 1
 }
 
-path <- paste0(dir, year, "/")
-travel_plans <- dir(path)
+path0 <- paste0(dir, year, "/")
+travel_plans <- str_remove(dir(path, recursive = TRUE, full.names = TRUE), path0)
 
 
-tmp_table <- tibble(full_file = travel_plans, 
-       file = tools::file_path_sans_ext(gsub(" ", "_", travel_plans))) %>%
+tmp_table <- tibble(full_file = travel_plans) %>%
+  separate(full_file, c("survey", "file"), sep = "/", remove = FALSE) %>%
+  mutate(file = tools::file_path_sans_ext(gsub(" ", "_", file))) %>%
   mutate(Name = str_extract(file, "^[A-Za-z]+"),
          `Leg 1` = ifelse(grepl("l1|_l.+1", tolower(file)), "x", ""), 
          `Leg 2` = ifelse(grepl("l2|_l.+2", tolower(file)), "x", ""), 
          `Leg 3` = ifelse(grepl("l3|_l.+3", tolower(file)), "x", ""), 
          `Leg 4` = ifelse(grepl("l4|_l.+4", tolower(file)), "x", ""), 
          Conf_No = str_extract(file, "[A-Za-z]+$"),
-         Link = paste0("[travel info](../", path, gsub(" ","%20",full_file), ")")) 
+         Link = paste0("[travel info](../", path0, gsub(" ","%20", full_file), ")")) 
 
 tabl <- tmp_table %>%
-  select(Name:Link) %>%
-  arrange(desc(`Leg 1`), desc(`Leg 2`), desc(`Leg 3`),desc(`Leg 4`)) %>%
-  filter(!duplicated(.[,1:4]))
+  select(Name, Survey = survey, `Leg 1`:Link) %>%
+  arrange(Survey, desc(`Leg 1`), desc(`Leg 2`), desc(`Leg 3`),desc(`Leg 4`)) %>%
+  filter(!duplicated(.[,1:4])) %>%
+  split(.$Survey)
 
-options(knitr.kable.NA = '')
+surveys <- names(tabl)
+surveys[toupper(surveys) == "EBS"] <- "Bering Sea"
+surveys[toupper(surveys) == "GOA"] <- "Gulf of Alaska"
+surveys[toupper(surveys) == "AI"] <- "Aleutian Islands"
 
-cat(paste("####", year, "Survey Year"), '\n\n')
 
-kableExtra::kable(tabl, format = "html", linesep = "",
-                  align = c("l", rep("c",4),"l")) 
+cat(paste("##", year, "Survey Year"), '\n\n')
+
+for( i in 1:length(surveys)){
+  
+  cat(paste("###", surveys[i]), '\n\n')
+  g <- tabl[[i]] %>% 
+    dplyr::select(-Survey)
+  print(kableExtra::kable(g, format = "html", linesep = "",
+                  align = c("l", rep("c",4),"l")))
+  cat("\n")
+
+}
+
 ```
