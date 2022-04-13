@@ -18,7 +18,7 @@ dir_min_id <- "18MNidntx-qAHJPbeBX7-M7g3dQpZee_3Osr0rbAdQnU"
 access_to_internet <- TRUE
 
 # toggle to remake htmls for the fish ID by taxa pages; takes a long time!
-regenerate_species_pages <- FALSE 
+remake_species_pages <- FALSE 
 
 
 this_year <- "2021" # just doing this for proof of concept
@@ -38,7 +38,6 @@ googledrive::drive_deauth()
 googledrive::drive_auth() 
 1
 source("./functions.R")
-3
 source("./data.R")
 
 # Check that links work --------------------------------------------------------

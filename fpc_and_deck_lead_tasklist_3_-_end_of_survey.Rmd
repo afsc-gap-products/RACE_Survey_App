@@ -32,7 +32,7 @@ for (isection in main_sections) {
                                             "EBS", "NBS", "AI", "GOA")))
     
     if (nrow(subdf2) == 1) {
-      type <- ifelse(test = is.na(subdf$url_loc[irow]),
+      type <- ifelse(test = is.na(subdf2$url_loc),
                      yes = "text",
                      no = "link")
       
@@ -41,7 +41,7 @@ for (isection in main_sections) {
                                        ifelse(type == "link", yes = "[", no = ""),
                                        subdf2$title,
                                        ifelse(type == "link",
-                                              yes = paste0("](",
+                                              yes = paste0("](.",
                                                            subdf2$url_loc,
                                                            ")"),
                                               no = ""))
@@ -52,7 +52,14 @@ for (isection in main_sections) {
         temp_matrix[duty_idx, duty] <- "X"
       } 
       
-      temp_matrix[, c("EBS", "NBS", "AI", "GOA")] <- "X"
+            which_region <- sapply(X = c("EBS", "NBS", "AI", "GOA", "all"),
+                             FUN = function(xx) 
+                               grepl(x = subdf2$Survey[1], pattern = xx) )
+      if (which_region["all"] == TRUE)
+        temp_matrix[, c("EBS", "NBS", "AI", "GOA")] <- "X"
+      
+      if (which_region["all"] == FALSE) 
+        temp_matrix[, names(which_region)[which_region]] <- "X"
       
       
       duty_matrix <- rbind(duty_matrix, temp_matrix)
@@ -71,7 +78,7 @@ for (isection in main_sections) {
                        ifelse(type == "link", yes = "[", no = ""),
                        subdf2$subtitle[jrow],
                        ifelse(type == "link",
-                              yes = paste0("](",
+                              yes = paste0("](.",
                                            subdf2$url_loc[jrow],
                                            ")"),
                               no = ""),
@@ -86,7 +93,15 @@ for (isection in main_sections) {
         if(duty_idx) temp_matrix[1, duty] <- "X"
       } 
       
-      temp_matrix[, c("EBS", "NBS", "AI", "GOA")] <- "X"
+            which_region <- sapply(X = c("EBS", "NBS", "AI", "GOA", "all"),
+                             FUN = function(xx) 
+                               grepl(x = subdf2$Survey[1], pattern = xx) )
+      if (which_region["all"] == TRUE)
+        temp_matrix[, c("EBS", "NBS", "AI", "GOA")] <- "X"
+      
+      if (which_region["all"] == FALSE) 
+        temp_matrix[, names(which_region)[which_region]] <- "X"
+            
       duty_matrix <- rbind(duty_matrix, temp_matrix)
     }
     
