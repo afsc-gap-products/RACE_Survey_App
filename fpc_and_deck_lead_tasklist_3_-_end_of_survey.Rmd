@@ -41,7 +41,7 @@ for (isection in main_sections) {
                                        ifelse(type == "link", yes = "[", no = ""),
                                        subdf2$title,
                                        ifelse(type == "link",
-                                              yes = paste0("](",
+                                              yes = paste0("](.",
                                                            subdf2$url_loc,
                                                            ")"),
                                               no = ""))
@@ -78,7 +78,7 @@ for (isection in main_sections) {
                        ifelse(type == "link", yes = "[", no = ""),
                        subdf2$subtitle[jrow],
                        ifelse(type == "link",
-                              yes = paste0("](",
+                              yes = paste0("](.",
                                            subdf2$url_loc[jrow],
                                            ")"),
                               no = ""),
