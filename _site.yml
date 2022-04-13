@@ -42,7 +42,7 @@ navbar:
     - text: "Safety"
       menu:
         - text: "Emergency Flowchart"
-          href: .././forms_files/Safety/Accidents/Accidents.pdf
+          href: .././forms_files/Safety/Accidents/Accidents.htm
         - text: "Hazmat"
           href: safety_hazmat.html
         - text: "Illness and Injury Reporting"
