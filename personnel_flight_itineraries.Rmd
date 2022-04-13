@@ -41,9 +41,9 @@ tabl <- tmp_table %>%
   split(.$Survey)
 
 surveys <- names(tabl)
-surveys[surveys == "EBS"] <- "Bering Sea"
-surveys[surveys == "GOA"] <- "Gulf of Alaska"
-surveys[surveys == "AI"] <- "Aleutian Islands"
+surveys[toupper(surveys) == "EBS"] <- "Bering Sea"
+surveys[toupper(surveys) == "GOA"] <- "Gulf of Alaska"
+surveys[toupper(surveys) == "AI"] <- "Aleutian Islands"
 
 
 cat(paste("##", year, "Survey Year"), '\n\n')
