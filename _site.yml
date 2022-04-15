@@ -86,7 +86,6 @@ favicon: img/Fish Icon PacCod_alpha background3.png
 base_url: https://github.com/zoyafuso-NOAA/RACE_Survey_App
 output:
   distill::distill_article:
-    css: "theme.css"
     toc: true
     toc_float: true
     includes:
