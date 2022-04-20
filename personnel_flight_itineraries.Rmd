@@ -20,7 +20,7 @@ if(this_year %in% list.files(dir)){
 }
 
 path0 <- paste0(dir, year, "/")
-travel_plans <- str_remove(dir(path0, recursive = TRUE, full.names = TRUE), path0)
+travel_plans <- str_remove(dir(path0, recursive = TRUE, full.names = TRUE), paste0(path0, "/"))
 
 
 tmp_table <- tibble(full_file = travel_plans) %>%
