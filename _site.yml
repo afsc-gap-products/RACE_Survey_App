@@ -42,7 +42,7 @@ navbar:
     - text: "Safety"
       menu:
         - text: "Emergency Flowchart"
-          href: .././forms_files/Safety/Accidents/Accidents.htm
+          href: .././forms_files/Safety/Accidents/accident.htm
         - text: "Hazmat"
           href: safety_hazmat.html
         - text: "Illness and Injury Reporting"
@@ -86,7 +86,6 @@ favicon: img/Fish Icon PacCod_alpha background3.png
 base_url: https://github.com/zoyafuso-NOAA/RACE_Survey_App
 output:
   distill::distill_article:
-    css: "theme.css"
     toc: true
     toc_float: true
     includes:

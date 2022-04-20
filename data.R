@@ -250,7 +250,7 @@ for (jj in 1:length(unique(full_site$page0))) {
       dplyr::mutate(
         page = page_dat$page[1],
         page0 = page_dat$page0[1],
-        order = as.numeric(order),
+        order = as.character(order),
         update_annually = as.logical(update_annually),
         across(dplyr::starts_with("srvy_"), as.logical),
         in_survey_app = TRUE
@@ -281,7 +281,7 @@ full_site <- full_site %>%
 
 
 ## Make key words all caps -----------------------------------------------------
-phrases <- c("FPC", "BVRD", " ID", "ES60 ", "CTD", "MSDS", "COVID", 
+phrases <- c("FPC", "BVRD", " ID", "ES60 ", "CTD", "MSDS", "COVID", "Survey Ops", 
              "GPS", "SIRF", " R ", " and ", "A B C's", "GapSurvey")
 
 for (i in 1:length(phrases)){
