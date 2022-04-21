@@ -19,7 +19,7 @@ if(this_year %in% list.files(dir)){
   year <- as.numeric(this_year) - 1
 }
 
-path0 <- paste0(dir, year)
+path0 <- paste0(dir, year, "/")
 travel_plans <- str_remove(dir(path0, recursive = TRUE, full.names = TRUE), paste0(path0, "/"))
 
 
