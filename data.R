@@ -155,11 +155,11 @@ full_site <- full_site %>%
     ),
     Links = ifelse(test = url_web == "",
                    yes = title_link,
-                   no = paste0(title, " \n\n ([Web link](../", url_web, "))")
+                   no = paste0(title_link, " \n\n ([Web link](../", url_web, "))")
     ), 
     title_link_inline = ifelse(test = url_web == "",
                                yes = title_link,
-                               no = paste0(title, " ([Web link](../", url_web, "))")
+                               no = paste0(title_link, " ([Web link](../", url_web, "))")
     )
   ) %>%
   dplyr::select(
