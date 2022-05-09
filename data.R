@@ -230,6 +230,7 @@ full_site <- dplyr::bind_rows(
     dplyr::filter(!(page0 == "collections" &
                       sub_page0 == "specific_collections")), 
   data_to_insert1) 
+full_site$order <- as.character(full_site$order)
 # need to think about how to remove srvy content we are not using (e.g., 2022 goa)
 
 
@@ -254,8 +255,8 @@ for (jj in 1:length(unique(full_site$page0))) {
         lite_t_f = as.logical(lite_t_f),
         update_annually = as.logical(update_annually),
         across(dplyr::starts_with("srvy_"), as.logical),
-        in_survey_app = TRUE
-      )
+        in_survey_app = TRUE)
+    temp$lite_t_f <- as.logical(temp$lite_t_f)
     full_site <- dplyr::bind_rows(full_site, temp)
   }
 }
@@ -330,14 +331,12 @@ a <- paste0(
 "), ""),
   ifelse(comb0$sub_page0 == "", "      menu:
 ", ""),
-  collapse = ""
-)
+  collapse = "")
 
 site_yml <- gsub(
   pattern = "INSERT_NAVIGATION",
   replacement = a,
-  x = site_yml, fixed = TRUE
-)
+  x = site_yml, fixed = TRUE)
 
 # write new yml file
 utils::write.table(
