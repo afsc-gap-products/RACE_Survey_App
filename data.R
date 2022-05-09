@@ -250,7 +250,8 @@ for (jj in 1:length(unique(full_site$page0))) {
       dplyr::mutate(
         page = page_dat$page[1],
         page0 = page_dat$page0[1],
-        order = as.character(order),
+        order = as.numeric(order),
+        lite_t_f = as.logical(lite_t_f),
         update_annually = as.logical(update_annually),
         across(dplyr::starts_with("srvy_"), as.logical),
         in_survey_app = TRUE
