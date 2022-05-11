@@ -1,6 +1,6 @@
 ---
-title: "`r page_title`"
-description: "`r page_desc`"
+title: "`r page_desc`"
+description: "`r page_title`"
 site: distill::distill_website
 ---
 
