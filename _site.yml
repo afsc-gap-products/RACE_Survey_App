@@ -9,16 +9,10 @@ navbar:
   repository_url: https://github.com/zoyafuso-NOAA/RACE_Survey_App
   source_url: true
   right:
-    - text: "Collections"
+    - text: "Core and Special Collections"
       menu:
-        - text: "AI Specific Collections"
-          href: collections_ai_specific_collections.html
-        - text: "EBS Specific Collections"
-          href: collections_ebs_specific_collections.html
-        - text: "NBS Specific Collections"
-          href: collections_nbs_specific_collections.html
         - text: "Resources"
-          href: collections_resources.html
+          href: core_and_special_collections_resources.html
     - text: "FPC and Deck Lead"
       menu:
         - text: "Deck Lead Resources"
@@ -33,12 +27,14 @@ navbar:
           href: fpc_and_deck_lead_tasklist_3_-_end_of_survey.html
     - text: "Personnel"
       menu:
-        - text: "Contacts"
-          href: personnel_contacts.html
         - text: "Flight Itineraries"
           href: personnel_flight_itineraries.html
+        - text: "Schedules and Contacts"
+          href: personnel_schedules_and_contacts.html
         - text: "Timekeeping T&A"
           href: personnel_timekeeping_t&a.html
+    - text: "Protected Species"
+      menu:
     - text: "Safety"
       menu:
         - text: "Emergency Flow Chart"
@@ -69,8 +65,6 @@ navbar:
           href: species_id_guides.html
         - text: "Minimum ID"
           href: species_id_minimum_id.html
-        - text: "Protected Species"
-          href: species_id_protected_species.html
     - text: "Survey Ops"
       menu:
         - text: "Operation Manuals"
