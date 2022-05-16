@@ -41,8 +41,8 @@ navbar:
           href: personnel_timekeeping_t&a.html
     - text: "Safety"
       menu:
-        - text: "Emergency Flowchart"
-          href: .././forms_files/Safety/Accidents/accident.htm
+        - text: "Emergency Flow Chart"
+          href: safety_emergency_flow_chart.html
         - text: "Hazmat"
           href: safety_hazmat.html
         - text: "Illness and Injury Reporting"
