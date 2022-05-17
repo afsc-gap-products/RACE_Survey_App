@@ -11,8 +11,12 @@ navbar:
   right:
     - text: "Core and Special Collections"
       menu:
-        - text: "Resources"
-          href: core_and_special_collections_resources.html
+        - text: "AI Collections"
+          href: core_and_special_collections_ai_collections.html
+        - text: "EBS Collections"
+          href: core_and_special_collections_ebs_collections.html
+        - text: "NBS Collections"
+          href: core_and_special_collections_nbs_collections.html
     - text: "FPC and Deck Lead"
       menu:
         - text: "Deck Lead Resources"
@@ -35,6 +39,8 @@ navbar:
           href: personnel_timekeeping_t&a.html
     - text: "Protected Species"
       menu:
+        - text: "Resources"
+          href: protected_species_resources.html
     - text: "Safety"
       menu:
         - text: "Emergency Flow Chart"

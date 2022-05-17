@@ -179,8 +179,8 @@ full_site <- full_site %>%
 
 # create survey-specific collection pages --------------------------------------
 temp <- full_site %>% 
-  dplyr::filter((page0 == "collections" &
-                   sub_page0 == "specific_collections"))
+  dplyr::filter((page0 == "core_and_special_collections" &
+                   sub_page0 == "collections"))
 # TOLEDO - will there be a time when there are no surveys id'ed for this
 
 data_to_insert <- data.frame()
@@ -227,8 +227,8 @@ for (i in 1:nrow(data_to_insert)){
 
 full_site <- dplyr::bind_rows(
   full_site %>% 
-    dplyr::filter(!(page0 == "collections" &
-                      sub_page0 == "specific_collections")), 
+    dplyr::filter(!(page0 == "core_and_special_collections" &
+                      sub_page0 == "collections")), 
   data_to_insert1) 
 full_site$order <- as.character(full_site$order)
 # need to think about how to remove srvy content we are not using (e.g., 2022 goa)
