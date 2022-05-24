@@ -35,9 +35,19 @@ tmp_table <- tibble(full_file = travel_plans) %>%
          Link = paste0("[travel info](../", path0, gsub(" ","%20", full_file), ")")) 
 
 tabl <- tmp_table %>%
-  select(Name, Survey = survey, `Leg 1`:Link) %>%
-  arrange(Survey, desc(`Leg 1`), desc(`Leg 2`), desc(`Leg 3`),desc(`Leg 4`)) %>%
+  select(Name, Survey = survey, `Leg 1`:Link) %>% 
+  mutate(ord = case_when(
+    `Leg 1`== "x" & `Leg 2`!= "x" ~ 1,
+    `Leg 1`== "x" & `Leg 2`== "x" ~ 2,
+    `Leg 2`== "x" & `Leg 3`!= "x" ~ 3,
+    `Leg 2`== "x" & `Leg 3`== "x" ~ 4,
+    `Leg 3`== "x" & `Leg 4`!= "x" ~ 5,
+    `Leg 3`== "x" & `Leg 4`== "x" ~ 6,
+    `Leg 4` == "x" ~ 7
+  )) %>%
+  arrange(ord, Name) %>%
   filter(!duplicated(.[,1:4])) %>%
+  select(-ord) %>%
   split(.$Survey)
 
 surveys <- names(tabl)
