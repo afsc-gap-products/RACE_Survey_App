@@ -6,7 +6,7 @@ navbar:
     image: img/Fish Icon PacCod_alpha background3.png
     href: index.html
   search: true
-  repository_url: https://github.com/zoyafuso-NOAA/RACE_Survey_App
+  repository_url: https://github.com/afsc-gap-products/RACE_Survey_App
   source_url: true
   right:
     - text: "Core and Special Collections"
@@ -81,11 +81,12 @@ navbar:
           href: survey_ops_training_resources_and_tech_memos.html
 
     - icon: fab fa-github
-      href: https://github.com/zoyafuso-NOAA/RACE_Survey_App
+      href: https://github.com/afsc-gap-products/RACE_Survey_App
 favicon: img/Fish Icon PacCod_alpha background3.png
-base_url: https://github.com/zoyafuso-NOAA/RACE_Survey_App
+base_url: https://github.com/afsc-gap-products/RACE_Survey_App
 output:
   distill::distill_article:
+    css: styles.css
     toc: true
     toc_float: true
     includes:
