@@ -2,7 +2,7 @@
 
 This repo uses a google spreadsheet listing content to build a consistent, reproducible, and reliable local resource website for our boats while boats are out to sea. 
 
-See the website [here](https://zoyafuso-noaa.github.io/RACE_Survey_App/index.html). 
+See the website [here](https://afsc-gap-products.github.io/RACE_Survey_App/index.html). 
 
 > Code is always in development
 
