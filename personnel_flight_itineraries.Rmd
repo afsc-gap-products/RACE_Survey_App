@@ -11,7 +11,7 @@ options(knitr.kable.NA = '')
 
 this_year <- format(Sys.Date(), "%Y")
 
-dir <- "./forms_files/Travel/flight itineraries/"
+dir <- "./files/Travel/flight itineraries/"
 
 if(this_year %in% list.files(dir)){
   year <- this_year

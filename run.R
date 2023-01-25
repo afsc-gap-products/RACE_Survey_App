@@ -21,8 +21,12 @@ access_to_internet <- TRUE
 remake_species_pages <- FALSE 
 
 
-this_year <- "2021" # just doing this for proof of concept
-this_year_surveys <- c("nbs", "ebs", "ai") #"goa", "bss"
+this_year <- format(Sys.Date(), "%Y") # just doing this for proof of concept
+if(as.numeric(this_year)%%2 == 0){ # determine surveys based on even year or not
+  this_year_surveys <- c("nbs", "ebs", "ai") 
+} else {
+  this_year_surveys <- c("nbs", "ebs", "goa") 
+}
 
 # CHECK! - define here pages that you don't want to use the template for!
 # non-template pages MUST be named with the web_page name listed in the 'comb' object

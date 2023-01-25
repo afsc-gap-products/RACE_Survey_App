@@ -66,7 +66,7 @@ navbar:
     - text: "Species ID"
       menu:
         - text: "Codebook"
-          href: .././forms_files/Species%20identification/2021_Species_Codebook.pdf
+          href: .././files/Species%20identification/2021_Species_Codebook.pdf
         - text: "Guides"
           href: species_id_guides.html
         - text: "Minimum ID"
