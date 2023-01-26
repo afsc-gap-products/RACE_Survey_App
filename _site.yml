@@ -11,10 +11,10 @@ navbar:
   right:
     - text: "Core and Special Collections"
       menu:
-        - text: "AI Collections"
-          href: core_and_special_collections_ai_collections.html
         - text: "EBS Collections"
           href: core_and_special_collections_ebs_collections.html
+        - text: "GOA Collections"
+          href: core_and_special_collections_goa_collections.html
         - text: "NBS Collections"
           href: core_and_special_collections_nbs_collections.html
     - text: "FPC and Deck Lead"
@@ -75,6 +75,8 @@ navbar:
       menu:
         - text: "Operation Manuals"
           href: survey_ops_operation_manuals.html
+        - text: "Port Information"
+          href: survey_ops_port_information.html
         - text: "Survey Inventories"
           href: survey_ops_survey_inventories.html
         - text: "Training Resources and Tech Memos"
