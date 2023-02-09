@@ -283,7 +283,7 @@ full_site <- full_site %>%
 
 
 ## Make key words all caps -----------------------------------------------------
-phrases <- c("FPC", "BVRD", " ID", "ES60 ", "CTD", "MSDS", "COVID", "Survey Ops", 
+phrases <- c("FPC", "BVDR", " ID", "ES60 ", "CTD", "MSDS", "COVID", "Survey Ops", 
              "GPS", "SIRF", " R ", " and ", "A B C's", "GapSurvey")
 
 for (i in 1:length(phrases)){
