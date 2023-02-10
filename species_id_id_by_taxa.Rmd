@@ -16,13 +16,13 @@ guides_data <- readr::read_csv("./data/id_guides_data.csv") %>%
   replace(is.na(.), "")
 
 grps <- guides_data %>%
-  select(group) %>%
+  select(group_short, group_long) %>%
   unique() %>%
   mutate(
-    group_page = paste0("./zz_", make_clean_names(group), ".html"),
-    link = paste0("[", group, "](", group_page, ")")
+    group_page = paste0("./zz_", make_clean_names(group_short), ".html"),
+    link = paste0("[", group_long, "](", group_page, ")")
   ) %>%
-  arrange(group)
+  arrange(group_short)
 
 links <- paste0(grps$link, collapse = "<br>")
 
@@ -36,11 +36,11 @@ links <- paste0(grps$link, collapse = "<br>")
 
 for (k in 1:nrow(grps)) {
   group_data <- guides_data %>%
-    filter(group == grps$group[k])
+    filter(group_short == grps$group_short[k])
 
-  group_title <- make_clean_names(group_data$group[1])
+  group_title <- make_clean_names(group_data$group_short[1])
 
-  fam <- group_data$group[1]
+  fam <- group_data$group_long[1]
   spp <- unique(group_data$species)
   spp <- spp[spp != "subgroup"]
 
@@ -48,6 +48,7 @@ for (k in 1:nrow(grps)) {
   ## making subgroup pages
   subgrps <- unique(group_data$subgroup)
   subgrps[is.na(subgrps)] <- ""
+  subgrps <- sort(subgrps, decreasing = TRUE) #blank subgrps last
   
   
   
@@ -87,7 +88,7 @@ for (k in 1:nrow(grps)) {
           filter(tolower(color_cat) == cols[ii]) %>%
           filter(tolower(subgroup) == subgrps[[jj]])
           
-      page <- paste0("zz_", group_title, "_", str_remove(cols[ii], "/"), "_subpage_", jj, ".html")
+      page <- paste0("zz_", group_title, "_", str_remove(cols[ii], "/"), "_subpg_", jj, ".html")
       
       rmarkdown::render(paste0("template_family_pages.Rmd"),
         output_dir = "./docs/",
@@ -109,7 +110,7 @@ for (k in 1:nrow(grps)) {
         mutate(n = 1:n()) %>%
         filter(n == 1)
 
-    page <- paste0("zz_", group_title, "_subpage", kk, ".html")
+    page <- paste0("zz_", group_title, "_subpg", kk, ".html")
       
      rmarkdown::render(paste0("template_family_pages.Rmd"),
         output_dir = "./docs/",
@@ -146,7 +147,7 @@ for (k in 1:nrow(grps)) {
   
   }
   
-  page <- paste0("zz_",group_title, ".html")
+  page <- paste0("zz_", group_title, ".html")
   
   
   rmarkdown::render(paste0("template_family_pages.Rmd"),
@@ -168,8 +169,11 @@ for (k in 1:nrow(grps)) {
 
     title <- str_to_title(species_page$common_name[1])
     subtitle <- paste0("*", species_page$species[1], "*")
-
-    page <- paste0("zz_", group_title, "_", gsub(" ", "_", species_page$species[1]), ".html")
+    
+    #trying to shorten file name
+    sp_pg <- str_replace(str_remove(species_page$species[1], "[a-z]+"), "\\s", "")
+    
+    page <- paste0("zz_", group_title, "_", sp_pg, ".html")
 
     rmarkdown::render(paste0("template_species_pages.Rmd"),
       output_dir = "./docs/",
@@ -177,3 +181,4 @@ for (k in 1:nrow(grps)) {
     )
   }
 }
+```

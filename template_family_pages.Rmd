@@ -4,7 +4,7 @@ description: "`r subtitle`"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE, results = "asis")
 ```
 
@@ -22,43 +22,52 @@ page_data$url_loc <- url
 
 
 if (fam_page & length(subgrps) > 1) {
-  subgrps <- subgrps[subgrps != ""]
-  if(fam != "Rockfishes") page_data$color_cat <- NA
+  #subgrps <- subgrps[subgrps != ""]
+  if (fam != "Rockfishes") page_data$color_cat <- NA
   # makes page with links to groups of species based on the subgroup column
   tabl <- page_data %>%
     group_by(subgroup) %>%
     mutate(n = 1:n()) %>%
-    filter(n == 1 | subgroup == "") %>%
-    ungroup() %>%
-    mutate(rowid = 1:n(), 
-           has_group = ifelse(subgroup == "", 0, 1)) %>% #hacky thing to make sure subpages are numbered correctly
+    filter(n == 1 | subgroup == "" | species == "subgroup") %>%
+    mutate(rowid = purrr::map_dbl(subgroup, ~which(.x == subgrps))) %>% # make subpg num properly, maybe just as.factor?
+    ungroup() %>% 
+    mutate(
+      has_group = ifelse(subgroup == "", 0, 1)
+    ) %>% # hacky thing to make sure subpages are numbered correctly
     group_by(has_group) %>%
     mutate(spg_id = 1:n()) %>%
     ungroup() %>%
     mutate(
       species_page = case_when(
-        group == "Rockfishes" & fp == TRUE ~ paste0("zz_", group_title, "_",  str_remove(tolower(color_cat), "/"), ".html"),
-        group == "Rockfishes" & fp == FALSE ~ paste0("zz_", group_title, "_", str_remove(tolower(color_cat), "/"), "_subpage_", spg_id, ".html"),
-        TRUE ~ paste0("./zz_", group_title, "_subpage", rowid, ".html")
-      ),                                 
+        group_long == "Rockfishes" & fp == TRUE ~ paste0("zz_", group_title, "_", str_remove(tolower(color_cat), "/"), ".html"),
+        group_long == "Rockfishes" & fp == FALSE ~ paste0("zz_", group_title, "_", str_remove(tolower(color_cat), "/"), "_subpg_", spg_id, ".html"),
+        TRUE ~ paste0("./zz_", group_title, "_subpg", rowid, ".html")
+      ),
       img = paste0("![](", url_loc, ")"),
       descrip = ifelse(subgroup == "",
         paste0(
-          "<br>[*", species, "*](zz_", group_title, "_", gsub(" ", "_", species), ".html)<br>",
-          str_to_title(common_name), "<br>"),
+          "<br>[*", species, "*](zz_", group_title, "_", 
+          str_replace(str_remove(species, "[a-z]+"), "\\s", ""), ".html)<br>",
+          str_to_title(common_name), "<br>"
+        ),
         paste0("<br>[**", str_to_title(subgroup), "**](", species_page, ")")
       )
     ) %>%
     arrange(desc(subgroup)) %>%
     select(img, descrip)
-} else {  #makes page with links to species pages
+  if(fp) {
+    tabl <- tabl %>%
+      filter(grepl("category", img))
+  }
+} else { # makes page with links to species pages
   tabl <- page_data %>%
     group_by(species) %>%
     mutate(n = 1:n()) %>%
     filter(n == 1) %>%
     ungroup() %>%
     mutate(
-      species_page = paste0("./zz_", group_title, "_", gsub(" ", "_", species), ".html"),
+      sp_pg <- str_replace(str_remove(species, "[a-z]+"), "\\s", ""),
+      species_page = paste0("./zz_", group_title, "_", sp_pg, ".html"),
       img = paste0("![](", url_loc, ")"),
       descrip = paste0(
         "<br>[*", species, "*](", species_page, ")<br>",
@@ -75,11 +84,11 @@ nr <- nrow(tabl)
 if (nr > 8 | nr %% 2 != 0 & nr > 4) ncols <- 3 else ncols <- 2
 
 
-  if (nr == 1) {
-    colnms <- ""
-  } else {
-    colnms <- rep("", ncols)
-  }
+if (nr == 1) {
+  colnms <- ""
+} else {
+  colnms <- rep("", ncols)
+}
 
 img_px <- 700 / ncols
 
@@ -103,4 +112,3 @@ back <- paste0("[Back to ID Home](./species_id_id_by_taxa.html)")
 ```
 
 `r back`
-

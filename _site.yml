@@ -11,10 +11,10 @@ navbar:
   right:
     - text: "Core and Special Collections"
       menu:
-        - text: "AI Collections"
-          href: core_and_special_collections_ai_collections.html
         - text: "EBS Collections"
           href: core_and_special_collections_ebs_collections.html
+        - text: "GOA Collections"
+          href: core_and_special_collections_goa_collections.html
         - text: "NBS Collections"
           href: core_and_special_collections_nbs_collections.html
     - text: "FPC and Deck Lead"
@@ -23,6 +23,8 @@ navbar:
           href: fpc_and_deck_lead_deck_lead_resources.html
         - text: "FPC Resources"
           href: fpc_and_deck_lead_fpc_resources.html
+        - text: "Protected Species"
+          href: fpc_and_deck_lead_protected_species.html
         - text: "Tasklist 1 - Beginning Of Survey Or Leg"
           href: fpc_and_deck_lead_tasklist_1_-_beginning_of_survey_or_leg.html
         - text: "Tasklist 2 - End Of Leg"
@@ -37,10 +39,6 @@ navbar:
           href: personnel_schedules_and_contacts.html
         - text: "Timekeeping T&A"
           href: personnel_timekeeping_t&a.html
-    - text: "Protected Species"
-      menu:
-        - text: "Resources"
-          href: protected_species_resources.html
     - text: "Safety"
       menu:
         - text: "Emergency Flow Chart"
