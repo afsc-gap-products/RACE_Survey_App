@@ -86,10 +86,10 @@ for (isection in main_sections) {
       
       temp_matrix[1, "Task"] <- temp
       
-      for (duty in c("FPC", "Deck Lead", "Safety Lead")){
+      for (duty in c("FPC", "Deck Lead", "Safety Lead")) {
         duty_idx <- grepl(x = unique(subdf2$description_3), 
                           pattern = paste0("everyone|", duty))
-        if(duty_idx) temp_matrix[1, duty] <- "X"
+        if (sum(duty_idx)>0) temp_matrix[1, duty] <- "X"
       } 
       
       which_region <- sapply(X = c("EBS", "NBS", "AI", "GOA", "all"),
