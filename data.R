@@ -283,7 +283,8 @@ full_site <- full_site %>%
 
 ## Make key words all caps -----------------------------------------------------
 phrases <- c("FPC", "BVDR", " ID", "ES60 ", "CTD", "MSDS", "COVID", "Survey Ops", 
-             "GPS", "SIRF", " R ", " and ", "A B C's", "GapSurvey")
+             "GPS", "SIRF", " R ", " and ", "A B C's", "GapSurvey", 
+             "GOA", "AI", "EBS", "NBS", "BS", "BSS")
 
 for (i in 1:length(phrases)){
   full_site$page <- gsub(pattern = phrases[i], replacement = phrases[i], x = full_site$page, ignore.case = TRUE)

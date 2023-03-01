@@ -71,7 +71,7 @@ navbar:
           href: survey_ops_port_information.html
         - text: "Survey Inventories"
           href: survey_ops_survey_inventories.html
-        - text: "Training Resources and Tech Memos"
+        - text: "TrAIning Resources and Tech Memos"
           href: survey_ops_training_resources_and_tech_memos.html
 
     - icon: fab fa-github
