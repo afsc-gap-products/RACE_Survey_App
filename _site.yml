@@ -65,13 +65,13 @@ navbar:
           href: species_id_minimum_id.html
     - text: "Survey Ops"
       menu:
+        - text: "Manuals and References"
+          href: survey_ops_manuals_and_references.html
         - text: "Operation Manuals"
           href: survey_ops_operation_manuals.html
-        - text: "Port Information"
-          href: survey_ops_port_information.html
         - text: "Survey Inventories"
           href: survey_ops_survey_inventories.html
-        - text: "TrAIning Resources and Tech Memos"
+        - text: "Training Resources and Tech Memos"
           href: survey_ops_training_resources_and_tech_memos.html
 
     - icon: fab fa-github
