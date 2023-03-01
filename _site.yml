@@ -9,16 +9,10 @@ navbar:
   repository_url: https://github.com/afsc-gap-products/RACE_Survey_App
   source_url: true
   right:
-    - text: "Core and Special Collections"
-      menu:
-        - text: "EBS Collections"
-          href: core_and_special_collections_ebs_collections.html
-        - text: "GOA Collections"
-          href: core_and_special_collections_goa_collections.html
-        - text: "NBS Collections"
-          href: core_and_special_collections_nbs_collections.html
     - text: "FPC and Deck Lead"
       menu:
+        - text: "Collections"
+          href: fpc_and_deck_lead_collections.html
         - text: "Deck Lead Resources"
           href: fpc_and_deck_lead_deck_lead_resources.html
         - text: "FPC Resources"

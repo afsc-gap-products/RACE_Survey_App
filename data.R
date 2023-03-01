@@ -177,59 +177,59 @@ full_site <- full_site %>%
   )
 
 
-# create survey-specific collection pages --------------------------------------
-temp <- full_site %>% 
-  dplyr::filter((page0 == "core_and_special_collections" &
-                   sub_page0 == "collections"))
-# TOLEDO - will there be a time when there are no surveys id'ed for this
-
-data_to_insert <- data.frame()
-for (i in 1:nrow(temp)) {
-  dat <- temp[i,] 
-  temp1 <- dat %>% 
-    dplyr::select(dplyr::starts_with("srvy_")) %>% 
-    unlist()
-  srvys <- gsub(pattern = "srvy_", x = names(temp1[which(temp1 == TRUE)]), replacement = "")
-  # print(srvys) # check the line above is working
-  if (length(srvys)==1) {
-    data_to_insert <- dplyr::bind_rows(
-      data_to_insert, 
-      dat %>% 
-        dplyr::mutate(sub_page0 = paste0(srvys, "_", sub_page0), 
-                      sub_page = paste0(toupper(srvys), " ", sub_page)))
-  } else {
-    for (ii in 1:length(srvys)) {
-      dat0 <- dat %>% 
-        dplyr::mutate(sub_page0 = paste0(srvys[ii], "_", sub_page0), 
-                      sub_page = paste0(toupper(srvys[ii]), " ", sub_page))
-      dat0[, grepl(pattern = "srvy_", x = names(dat0))] <- FALSE
-      dat0[, paste0("srvy_", srvys[ii])] <- TRUE      
-      
-      data_to_insert <- dplyr::bind_rows(
-        data_to_insert, 
-        dat0)
-    }
-  }
-}
-
-# only use srvy pages that are used this year
-# not the most efficient, but wanna be done!
-data_to_insert1 <- data.frame()
-for (i in 1:nrow(data_to_insert)){
-  for (ii in 1:length(this_year_surveys)) {
-    if (grepl(pattern = this_year_surveys[ii], 
-              x = data_to_insert$sub_page[i], 
-              ignore.case = TRUE)) {
-      data_to_insert1 <- dplyr::bind_rows(data_to_insert1, data_to_insert[i,])
-    }
-  }
-}
-
-full_site <- dplyr::bind_rows(
-  full_site %>% 
-    dplyr::filter(!(page0 == "core_and_special_collections" &
-                      sub_page0 == "collections")), 
-  data_to_insert1) 
+# create survey-specific combion pages --------------------------------------
+# temp <- full_site %>% 
+#   dplyr::filter((page0 == "core_and_special_collections" &
+#                    sub_page0 == "collections"))
+# # TOLEDO - will there be a time when there are no surveys id'ed for this
+# 
+# data_to_insert <- data.frame()
+# for (i in 1:nrow(temp)) {
+#   dat <- temp[i,] 
+#   temp1 <- dat %>% 
+#     dplyr::select(dplyr::starts_with("srvy_")) %>% 
+#     unlist()
+#   srvys <- gsub(pattern = "srvy_", x = names(temp1[which(temp1 == TRUE)]), replacement = "")
+#   # print(srvys) # check the line above is working
+#   if (length(srvys)==1) {
+#     data_to_insert <- dplyr::bind_rows(
+#       data_to_insert, 
+#       dat %>% 
+#         dplyr::mutate(sub_page0 = paste0(srvys, "_", sub_page0), 
+#                       sub_page = paste0(toupper(srvys), " ", sub_page)))
+#   } else {
+#     for (ii in 1:length(srvys)) {
+#       dat0 <- dat %>% 
+#         dplyr::mutate(sub_page0 = paste0(srvys[ii], "_", sub_page0), 
+#                       sub_page = paste0(toupper(srvys[ii]), " ", sub_page))
+#       dat0[, grepl(pattern = "srvy_", x = names(dat0))] <- FALSE
+#       dat0[, paste0("srvy_", srvys[ii])] <- TRUE      
+#       
+#       data_to_insert <- dplyr::bind_rows(
+#         data_to_insert, 
+#         dat0)
+#     }
+#   }
+# }
+# 
+# # only use srvy pages that are used this year
+# # not the most efficient, but wanna be done!
+# data_to_insert1 <- data.frame()
+# for (i in 1:nrow(data_to_insert)){
+#   for (ii in 1:length(this_year_surveys)) {
+#     if (grepl(pattern = this_year_surveys[ii], 
+#               x = data_to_insert$sub_page[i], 
+#               ignore.case = TRUE)) {
+#       data_to_insert1 <- dplyr::bind_rows(data_to_insert1, data_to_insert[i,])
+#     }
+#   }
+# }
+# 
+# full_site <- dplyr::bind_rows(
+#   full_site %>% 
+#     dplyr::filter(!(page0 == "core_and_special_collections" &
+#                       sub_page0 == "collections")), 
+#   data_to_insert1) 
 full_site$order <- as.character(full_site$order)
 # need to think about how to remove srvy content we are not using (e.g., 2022 goa)
 
@@ -265,7 +265,6 @@ for (jj in 1:length(unique(full_site$page0))) {
 
 ## Remove rows not included in survey app (yet)
 full_site <- subset(x = full_site, subset = in_survey_app == TRUE)
-
 
 dir_pdfs <- make_clean_names(c("codebook", "emergency_flowchart",
                                "survey_protocol")) # link directly to a non-html file in drop down menu
