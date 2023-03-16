@@ -8,9 +8,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE, results = "a
 ```
 
 ```{r}
-guides_data <- readr::read_csv("./data/id_guides_data.csv") %>%
-  filter(page == "id_by_taxon") %>%
-  filter(in_survey_app) %>%
+guides_data <- readr::read_csv("./data/species_id_data.csv") %>%
   mutate(size_cm = as.character(size_cm),
          species_code = as.character(species_code)) %>%
   replace(is.na(.), "")
@@ -27,6 +25,7 @@ grps <- guides_data %>%
 links <- paste0(grps$link, collapse = "<br>")
 
 ```
+
 
 `r links`
 

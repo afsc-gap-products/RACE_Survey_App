@@ -162,11 +162,11 @@ full_site <- full_site %>%
                         grepl(pattern = ",goa,", x = survey, ignore.case = TRUE), 
                       TRUE, FALSE), 
     in_survey_app = ifelse(in_survey_app == TRUE| in_survey_app == "T", TRUE, FALSE),
-    # Images
-    images = ifelse(test = is.na(img),
-                    yes = "",
-                    no = paste0("![*", img_txt, "*](", img, "){width='400px'}")
-    ),
+    # # Images
+    # images = ifelse(test = is.na(img),
+    #                 yes = "",
+    #                 no = paste0("![*", img_txt, "*](", img, "){width='400px'}")
+    # ),
     
     # # Hyperlinked titles URL links
     title_link = ifelse(test = url_loc == "",
@@ -192,7 +192,7 @@ full_site <- full_site %>%
   dplyr::relocate(
     # survey, 
     page, page0, sub_page, sub_page0, section,
-    subsection, title, title_link_inline, subtitle, descrip, images, #Links_inline, 
+    subsection, title, title_link_inline, subtitle, descrip, #images, #Links_inline, 
     dplyr::starts_with("svy_")
   )
 
