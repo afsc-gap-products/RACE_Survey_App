@@ -19,41 +19,15 @@
 # If your file is already open in a browser, you can obtain File ID from its link:
 # https://docs.google.com/spreadsheets/d/***ThisIsFileID***/edit#gid=123456789
 
-## Google Drive File ID pointing to the RACE survey app data spreadsheet
-dir_data <- "1AIQ0JEUA20D-g32uRQfRMZb0wW4SXl2n8Lwb_62uW-o"
-dir_species_guides <- "172nNe_qrK0CWGNC4kR9gh27B-nyTgEj03uf4opGv5iU"
-
-## Import input data and save locally to the data/ folder
-
 if (access_to_internet) {
   
-  ## Download Main entries data
-  survey_app_data <- 
-    googlesheets4::read_sheet(ss = googledrive::as_id(dir_data), 
-                              sheet = "entries", 
-                              skip = 1)
-  write.csv(x = survey_app_data, 
-            file = "data/survey_app_data.csv", 
-            row.names = F)
-
-  ## Download task list data
-  task_list_data <- 
-    googlesheets4::read_sheet(ss = googledrive::as_id(dir_data), 
-                              sheet = "task_list_data", 
-                              skip = 1)
-  write.csv(x = task_list_data, 
-            file = "data/task_list_data.csv", 
-            row.names = F)
+  googledrive::drive_download(
+    file = as_id(dir_pagecontent),
+    type = "csv",
+    overwrite = TRUE,
+    path = paste0("./data/survey_app_data.csv")
+  )
   
-  ## Download minimum ID list
-  min_ID_list <- 
-    googlesheets4::read_sheet(ss = googledrive::as_id(dir_data), 
-                              sheet = "min_ID_list")
-  write.csv(x = min_ID_list, 
-            file = "data/min_id.csv", 
-            row.names = F)
-  
-  ## Download Species Guides data
   googledrive::drive_download(
     file = as_id(dir_species_guides),
     type = "csv",
@@ -61,9 +35,15 @@ if (access_to_internet) {
     path = paste0("./data/id_guides_data.csv")
   )
   
+  googledrive::drive_download(
+    file = as_id(dir_min_id),
+    type = "csv",
+    overwrite = TRUE,
+    path = paste0("./data/min_id.csv")
+  )
 }
 
-full_site0 <- full_site <- read_csv("./data/survey_app_data.csv")
+full_site0 <- full_site <- readr::read_csv("./data/survey_app_data.csv", skip = 1)
 
 full_site$url_web[is.na(full_site$url_web)] <- ""
 full_site$url_loc[is.na(full_site$url_loc)] <- ""
@@ -328,7 +308,7 @@ comb <- site %>%
   dplyr::select(page0, page, sub_page0, sub_page, web_page) %>%
   dplyr::distinct() %>%
   dplyr::arrange(page0, sub_page0) #%>% 
-# dplyr::filter(sub_page0 != "" | (sub_page0 == "" & page0 == "index"))
+  # dplyr::filter(sub_page0 != "" | (sub_page0 == "" & page0 == "index"))
 
 # Write yml --------------------------------------------------------------------
 
@@ -347,7 +327,7 @@ a <- paste0(
   ifelse(comb0$sub_page0 == "", "",#"      ", 
          "          "),
   ifelse((comb0$sub_page0 != ""), 
-         paste0("href: ", comb0$web_page, "
+  paste0("href: ", comb0$web_page, "
 "), ""),
   ifelse(comb0$sub_page0 == "", "      menu:
 ", ""),

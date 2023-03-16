@@ -3,9 +3,51 @@
 #' Developed by: Zach Oyafuso, Sarah Friedman, Emily Markowitz, Liz Dawson
 #' Date: Feb 2022
 #' 
-#' Notes: checkLinks() checks whether a URL is valid or not
+#' Notes: 1) Load Required Packages
+#'        2) checkLinks() checks whether a URL is valid or not
 #' --------------------------------------
 
+## Load packages -----------------------------------------------------------
+
+pkg <- c(#"tidyverse",
+         "stringr",
+         "tidyr", 
+         "dplyr",
+         "magrittr",
+         "googledrive", 
+         "janitor", 
+         "rmarkdown", 
+         "distill", 
+         
+         # read url
+         "XML",
+         "fansi", 
+         
+         # read csv
+         "readr",
+         
+         # print web pages
+         "pagedown",
+         
+         # make tables
+         "kableExtra", # devtools::install_github(repo="haozhu233/kableExtra", ref="a6af5c0")
+         "flextable")
+
+for (p in pkg) {
+  if (!require(p, character.only = TRUE)) {
+    install.packages(p)
+    1
+    require(p, character.only = TRUE)
+  }
+}
+
+if (packageVersion("kableExtra") != "1.3.4.9000") {
+  detach("package:kableExtra", unload = TRUE)
+  devtools::install_github(repo="haozhu233/kableExtra", ref="a6af5c0")
+  library(kableExtra)
+}
+
+rm(p, pkg)
 
 #' Check that your links work
 #'
@@ -91,7 +133,7 @@ html_to_link <- function(x){
 
 
 # clean out old htmls so we aren't collecting files we never use
-clear_htmls <- function() {
+clear_htmls <- function(){
   l <- list.files("./docs/", full.names = TRUE, pattern = ".html")
   
   if(remake_species_pages){
