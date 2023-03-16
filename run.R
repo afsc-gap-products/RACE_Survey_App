@@ -1,25 +1,13 @@
 #' --------------------------------------
 #' Project: RACE SURVEY APP
 #' Developed by: Zack Oyafuso, Sarah Friedman, Emily Markowitz, Liz Dawson
-#' Started date: Feb 2022
-#' Current date: March 2022
 #' --------------------------------------
 
-
-# source("run.R")
-# 1
-
-# Knowns ----------------------------------------------------------------------
-
-dir_pagecontent <- "1AIQ0JEUA20D-g32uRQfRMZb0wW4SXl2n8Lwb_62uW-o"
-dir_species_guides <- "172nNe_qrK0CWGNC4kR9gh27B-nyTgEj03uf4opGv5iU"
-dir_min_id <- "18MNidntx-qAHJPbeBX7-M7g3dQpZee_3Osr0rbAdQnU"
-
-access_to_internet <- TRUE
+## Google Drive File ID pointing to the RACE survey app data spreadsheet
+dir_data <- "1AIQ0JEUA20D-g32uRQfRMZb0wW4SXl2n8Lwb_62uW-o"
 
 # toggle to remake htmls for the fish ID by taxa pages; takes a long time!
-remake_species_pages <- FALSE 
-
+remake_species_pages <- FALSE
 
 this_year <- format(Sys.Date(), "%Y") # just doing this for proof of concept
 if(as.numeric(this_year)%%2 == 0){ # determine surveys based on even year or not
@@ -32,15 +20,15 @@ if(as.numeric(this_year)%%2 == 0){ # determine surveys based on even year or not
 # non-template pages MUST be named with the web_page name listed in the 'comb' object
 
 no_templ <- c("guides", "id_by_taxa", "minimum_ID",
-              "tasklist_1_-_beginning_of_survey_or_leg", 
-              "tasklist_2_-_end_of_leg", 
-              "tasklist_3_-_end_of_survey")
+              "tasklist")
 
 
 # Helper files ----------------------------------------------------------------
 googledrive::drive_deauth()
 googledrive::drive_auth() 
 1
+
+source("./import_R_packages.R")
 source("./functions.R")
 source("./data.R")
 
