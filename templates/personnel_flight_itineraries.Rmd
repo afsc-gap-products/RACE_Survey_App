@@ -72,4 +72,5 @@ for( i in 1:length(surveys)){
   
 }
 
+rm(g, page_dat, tabl, tmp_table,i, page_desc, page_title, path0, surveys, this_year, year, travel_plans, dir)
 ```

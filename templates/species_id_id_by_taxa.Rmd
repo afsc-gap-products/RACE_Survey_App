@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE, results = "a
 ```
 
 ```{r}
-guides_data <- readr::read_csv("./data/species_id_data.csv") %>%
+guides_data <- readr::read_csv("../data/id_guides_data.csv") %>%
   mutate(size_cm = as.character(size_cm),
          species_code = as.character(species_code)) %>%
   replace(is.na(.), "")
@@ -33,7 +33,8 @@ links <- paste0(grps$link, collapse = "<br>")
 ```{r, eval = remake_species_pages}
 ## this chunk generates all individual species and family pages; takes a long time to run
 
-for (k in 1:nrow(grps)) {
+if (remake_species_pages){
+  for (k in 1:nrow(grps)) {
   group_data <- guides_data %>%
     filter(group_short == grps$group_short[k])
 
@@ -180,4 +181,7 @@ for (k in 1:nrow(grps)) {
     )
   }
 }
+}
+
+rm(guides_data, grps, links)
 ```

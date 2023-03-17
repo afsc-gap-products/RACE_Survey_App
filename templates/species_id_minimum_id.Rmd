@@ -51,5 +51,7 @@ k <- kableExtra::kable(tabl, format = "html", linesep = "",
   collapse_rows(1, latex_hline = "custom", valign = "top") 
   
 cat(k)
+
+rm(page_dat, tabl, x, k, page_dsc, page_title, check_codes)
 ```
 

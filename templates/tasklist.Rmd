@@ -82,5 +82,7 @@ for (isection in main_sections) {
                    table.attr = "style='width:125%;'"))
   cat("\n")
 }
+
+rm(checklist_items, duty_matrix, page_dat, subdf, subdf2, temp_matrix, irow, isection, jrow, page_desc, page_title, main_bullets, main_sections, temp, type)
 ```
 

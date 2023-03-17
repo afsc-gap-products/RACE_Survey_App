@@ -103,3 +103,5 @@ tr[i].style.display = "none";
 
 
 -----------------------------------
+
+`r rm(temp, temp0, i, ii, page_desc, page_title, str0, str00, str000, page_dat)`
