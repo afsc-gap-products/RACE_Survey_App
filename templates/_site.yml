@@ -1,0 +1,89 @@
+name: "RACE Survey App"
+output_dir: "docs"
+navbar:
+  title: "RACE Survey App"
+  logo:
+    image: img/Fish Icon PacCod_alpha background3.png
+    href: index.html
+  search: true
+  repository_url: https://github.com/afsc-gap-products/RACE_Survey_App
+  source_url: true
+  right:
+    - text: "FPC and Deck Lead"
+      menu: 
+       - text: "Collections"
+         href: FPC_and_Deck_Lead_Collections.html
+       - text: "Deck Lead Resources"
+         href: FPC_and_Deck_Lead_Deck_Lead_Resources.html
+       - text: "FPC Resources"
+         href: FPC_and_Deck_Lead_FPC_Resources.html
+       - text: "Protected Species"
+         href: FPC_and_Deck_Lead_Protected_Species.html
+       - text: "Tasklist 1 - Beginning of Survey or Leg"
+         href: FPC_and_Deck_Lead_Tasklist_1_-_Beginning_of_Survey_or_Leg.html
+       - text: "Tasklist 2 - End of Leg"
+         href: FPC_and_Deck_Lead_Tasklist_2_-_End_of_Leg.html
+       - text: "Tasklist 3 - End of Survey"
+         href: FPC_and_Deck_Lead_Tasklist_3_-_End_of_Survey.html
+    - text: "Personnel"
+      menu: 
+       - text: "Flight Itineraries"
+         href: Personnel_Flight_Itineraries.html
+       - text: "Schedules and Contacts"
+         href: Personnel_Schedules_and_Contacts.html
+       - text: "Timekeeping T&A"
+         href: Personnel_Timekeeping_T&A.html
+    - text: "Safety"
+      menu: 
+       - text: "Emergency Flow Chart"
+         href: ./files/Safety/Accidents/Accidents.pdf
+       - text: "hazmat"
+         href: Safety_hazmat.html
+       - text: "Illness and injury reporting"
+         href: Safety_Illness_and_injury_reporting.html
+       - text: "Manuals and references"
+         href: Safety_Manuals_and_references.html
+       - text: "Manuals and References"
+         href: Safety_Manuals_and_References.html
+    - text: "Software"
+      menu: 
+       - text: "Other R Survey Scripts"
+         href: Software_Other_R_Survey_Scripts.html
+       - text: "R"
+         href: Software_R.html
+       - text: "R packages"
+         href: Software_R_packages.html
+       - text: "Software & drivers"
+         href: Software_Software_&_drivers.html
+    - text: "Species ID"
+      menu: 
+       - text: "Codebook"
+         href: ./files/SpeciesID/2021_Species_Codebook.pdf
+       - text: "Guides"
+         href: Species_ID_Guides.html
+       - text: "minimum_ID"
+         href: Species_ID_minimum_ID.html
+    - text: "Survey Ops"
+      menu: 
+       - text: "Operation Manuals"
+         href: Survey_Ops_Operation_Manuals.html
+       - text: "Survey inventories"
+         href: Survey_Ops_Survey_inventories.html
+       - text: "Training Resources and Tech Memos"
+         href: Survey_Ops_Training_Resources_and_Tech_Memos.html
+
+    - icon: fab fa-github
+      href: https://github.com/afsc-gap-products/RACE_Survey_App
+favicon: img/Fish Icon PacCod_alpha background3.png
+base_url: https://github.com/afsc-gap-products/RACE_Survey_App
+output:
+  distill::distill_article:
+    css: styles.css
+    toc: true
+    toc_float: true
+    includes:
+      after_body:
+      - footer.html
+editor_options:
+  chunk_output_type: console
+
