@@ -16,57 +16,47 @@ if (nrow(page_dat) != 0) {
   page_dat <- page_dat %>% 
     dplyr::arrange(section, subsection, title) %>%
     mutate(subsection = (subsection))
-  
-  # str0 <- ""
-  
+
   # For each section, subset data
   for (i in 1:length(unique(page_dat$section))) {
     
     temp0 <- page_dat %>% 
       dplyr::filter(section == unique(page_dat$section)[i])
     
-    # for each subsection, further subset data from section
+    ## for each subsection, further subset data from section
     str0 <- ""
-    # str000 <- ""
-    for (ii in 1:length(unique(temp0$subsection))) {
+    for (ii in 1:length(unique(x = temp0$subsection))) {
       
       temp <- temp0 %>% 
-        dplyr::filter(subsection == unique(temp0$subsection)[ii])
+        dplyr::filter(subsection == unique(x = temp0$subsection)[ii])
       
       # compile text that will go on the page
       str000 <- paste( paste0("|      ", temp$title_link, # title
-                              ifelse(is.na(temp$subtitle), "", paste0(": *", temp$subtitle, "*")), # subtitle
+                              ifelse(test = is.na(x = temp$subtitle), 
+                                     yes = "", 
+                                     no = paste0(": *", temp$subtitle, "*")), # subtitle
                               # " ",temp$Links_inline,
                               "
 ", temp$descrip, "
 
 "), collapse = "")
-      #     str000 <- paste( paste0("|      ", temp$title_link_inline, # title
-      #             ifelse(is.na(temp$subtitle), "", paste0(": *", temp$subtitle, "*")), # subtitle
-      #             # " ",temp$Links_inline,
-      #             "
-      # ", temp$descrip, "
-      # 
-      # "), collapse = "")
-      
-      if (unique(temp$subsection)[1] != "") {
+
+      if (unique(x = temp$subsection)[1] != "") {
         
         str000 <- paste0("
 
-### ", (unique(temp$subsection)[1]), "
+### ", (unique(x = temp$subsection)[1]), "
 
 ", str000)
-        # } else {
-        #   str0 <- str000
       }
       str0 <- paste0(str0, str000)
       
     }
     
-    if (unique(temp$section)[1] != "") {
+    if (unique(x = temp$section)[1] != "") {
       str0 <- paste0("
 
-## ", (unique(temp0$section)[1]), "
+## ", (unique(x = temp0$section)[1]), "
 
 ", str0)
     }
