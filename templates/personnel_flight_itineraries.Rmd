@@ -19,8 +19,11 @@ if(this_year %in% list.files(dir)){
   year <- as.numeric(this_year) - 1
 }
 
-path0 <- paste0(dir, year, "/")
-travel_plans <- str_remove(dir(path0, recursive = TRUE, full.names = TRUE), paste0(path0, "/"))
+path0 <- paste0(dir, year)
+travel_plans <- stringr::str_remove(string = dir(paste0(".", path0), 
+                                                 recursive = TRUE, 
+                                                 full.names = TRUE), 
+                                    pattern = paste0(paste0(".", path0, "/")))
 
 
 tmp_table <- tibble(full_file = travel_plans) %>%
@@ -64,9 +67,9 @@ for( i in 1:length(surveys)){
   g <- tabl[[i]] %>% 
     dplyr::select(-Survey)
   print(kableExtra::kable(g, format = "html", linesep = "",
-                  align = c("l", rep("c",4),"l")))
+                          align = c("l", rep("c",4),"l")))
   cat("\n")
-
+  
 }
 
 ```
