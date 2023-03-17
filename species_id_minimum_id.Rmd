@@ -12,12 +12,12 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE, results = "a
 x <- readr::read_csv("./data/min_id.csv") %>%
   arrange(Phylum, Taxon)
 
-check_codes <- T
+check_codes <- FALSE
 
 # check species codes against racebase codes
 if(check_codes){
   # hard coding this because I don't have a better solution at the moment, will improve later
-  codes <- read_csv("C:/Users/sarah.friedman/Work/survey_species_outliers/data/oracle/racebase-catch.csv") %>%
+  codes <- read_csv("C:/Users/sarah.friedman/Work/survey_species_outliers/data/oracle/race_data-race_species_codes.csv") %>%
     janitor::clean_names() %>%
     select(species_name, common_name, species_code) %>%
     mutate(species_name = ifelse(grepl("crinoid", common_name, ignore.case = T), "Crinoidea", species_name))
@@ -25,12 +25,12 @@ if(check_codes){
   tabl <- x %>%
     clean_names() %>%
     filter(!is.na(species_code)) %>%
-    mutate(taxon = case_when(
+    mutate(tmp_tax = case_when(
       grepl("basket", common_name, ignore.case = TRUE) ~ "Gorgonocephalus eucnemis",
       taxon == "Mysidaecea" ~ "Mysidae",
       TRUE ~ taxon
       )) %>%
-    left_join(codes, by = c("taxon" = "species_name")) %>%
+    left_join(codes, by = c("tmp_tax" = "species_name")) %>%
     mutate(species_code.y = ifelse(is.na(species_code.y), species_code.x, species_code.y)) %>%
     filter(taxon == "Crinoidea" & grepl("unid", common_name.y) | taxon != "Crinoidea") %>%
     select(phylum:taxon, common_name = common_name.x, id_guide_available, minimum_id_level, species_code = species_code.y) %>%
