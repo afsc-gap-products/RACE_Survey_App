@@ -27,12 +27,12 @@ navbar:
          href: FPC_and_Deck_Lead_Tasklist_3_-_End_of_Survey.html
     - text: "Personnel"
       menu: 
-       - text: "Flight Itineraries"
-         href: Personnel_Flight_Itineraries.html
        - text: "Schedules and Contacts"
          href: Personnel_Schedules_and_Contacts.html
        - text: "Timekeeping T&A"
          href: Personnel_Timekeeping_T&A.html
+       - text: "Flight Itineraries"
+         href: Personnel_Flight_Itineraries.html
     - text: "Safety"
       menu: 
        - text: "Emergency Flow Chart"
@@ -58,11 +58,13 @@ navbar:
     - text: "Species ID"
       menu: 
        - text: "Codebook"
-         href: ./files/SpeciesID/2021_Species_Codebook.pdf
+         href: ../files/SpeciesID/2021_Species_Codebook.pdf
+       - text: "Minimum ID"
+         href: Species_ID_Minimum_ID.html
        - text: "Guides"
          href: Species_ID_Guides.html
-       - text: "minimum_ID"
-         href: Species_ID_minimum_ID.html
+       - text: "ID by Taxa"
+         href: Species_ID_ID_by_Taxa.html
     - text: "Survey Ops"
       menu: 
        - text: "Operation Manuals"
