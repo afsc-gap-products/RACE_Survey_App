@@ -41,8 +41,6 @@ navbar:
          href: Safety_hazmat.html
        - text: "Illness and injury reporting"
          href: Safety_Illness_and_injury_reporting.html
-       - text: "Manuals and references"
-         href: Safety_Manuals_and_references.html
        - text: "Manuals and References"
          href: Safety_Manuals_and_References.html
     - text: "Software"

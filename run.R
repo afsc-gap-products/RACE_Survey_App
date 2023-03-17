@@ -3,14 +3,6 @@
 #' Developed by: Zack Oyafuso, Sarah Friedman, Emily Markowitz, Liz Dawson
 #' --------------------------------------
 
-
-# this_year <- format(Sys.Date(), "%Y") # just doing this for proof of concept
-# if(as.numeric(this_year)%%2 == 0){ # determine surveys based on even year or not
-#   this_year_surveys <- c("nbs", "ebs", "ai") 
-# } else {
-#   this_year_surveys <- c("nbs", "ebs", "goa") 
-# }
-
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ##   Import packages, authenticate google drive
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
