@@ -5,8 +5,8 @@ site: distill::distill_website
 
 ```{r Subset Checklist documents for BS, echo = F, results="asis"}
 checklist_items <- subset(x = task_list_data, 
-                          sub_page == page_desc)
-main_sections <- unique(checklist_items$section)
+                          subset = sub_page == page_desc)
+main_sections <- unique(x = checklist_items$section)
 
 for (isection in main_sections) {
   subdf <- subset(x = checklist_items, subset = section == isection)
@@ -17,11 +17,11 @@ for (isection in main_sections) {
                                         c("Task", "FPC", 
                                           "Deck Lead", "Safety Lead")))
   
-  main_bullets <- unique(subdf$title)
+  main_bullets <- unique(x = subdf$title)
   
-  for(irow in 1:length(main_bullets)) {
+  for (irow in 1:length(x = main_bullets)) {
     
-    subdf2 <- subset(subdf, title == main_bullets[irow])
+    subdf2 <- subset(x = subdf, subset = title == main_bullets[irow])
     temp_matrix <- matrix(data = "", 
                           nrow = 1, 
                           ncol = 4, 
@@ -29,16 +29,18 @@ for (isection in main_sections) {
                                           c("Task", "FPC", 
                                             "Deck Lead", "Safety Lead")))
     
-    if (nrow(subdf2) == 1) {
-      type <- ifelse(test = is.na(subdf2$url_loc),
+    if (nrow(x = subdf2) == 1) {
+      type <- ifelse(test = is.na(x = subdf2$url_loc),
                      yes = "text",
                      no = "link")
       
       
       temp_matrix[1, "Task"] <- paste0(irow, ") ", 
-                                       ifelse(type == "link", yes = "[", no = ""),
+                                       ifelse(test = type == "link", 
+                                              yes = "[", 
+                                              no = ""),
                                        subdf2$title,
-                                       ifelse(type == "link",
+                                       ifelse(test = type == "link",
                                               yes = paste0("](.",
                                                            subdf2$url_loc,
                                                            ")"),
@@ -48,7 +50,7 @@ for (isection in main_sections) {
                "X", "")
     }
     
-    if (nrow(subdf2) > 1) { ## Requires one level of sub-bullets
+    if (nrow(x = subdf2) > 1) { ## Requires one level of sub-bullets
       temp <- paste0(irow, ") ", main_bullets[irow], "\n")
       
       for (jrow in 1:nrow(subdf2)) {
@@ -58,9 +60,9 @@ for (isection in main_sections) {
                        no = "link")
         
         temp <- paste0(temp, "    - ", 
-                       ifelse(type == "link", yes = "[", no = ""),
+                       ifelse(test = type == "link", yes = "[", no = ""),
                        subdf2$subtitle[jrow],
-                       ifelse(type == "link",
+                       ifelse(test = type == "link",
                               yes = paste0("](.",
                                            subdf2$url_loc[jrow],
                                            ")"),
@@ -70,8 +72,10 @@ for (isection in main_sections) {
       
       temp_matrix[1, "Task"] <- temp
       temp_matrix[1, c("FPC", "Deck Lead", "Safety Lead")] <-
-        ifelse(unlist(subdf2[1, c("fcp_task", "dl_task", "sl_task")]) == "T",
-               "X", "")
+        ifelse(test = unlist(subdf2[1, c("fcp_task", 
+                                         "dl_task", 
+                                         "sl_task")]) == "T",
+               yes = "X", no = "")
     }
     duty_matrix <- rbind(duty_matrix, temp_matrix)
   }
