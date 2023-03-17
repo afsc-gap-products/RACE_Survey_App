@@ -3,107 +3,116 @@
 #' Developed by: Zack Oyafuso, Sarah Friedman, Emily Markowitz, Liz Dawson
 #' --------------------------------------
 
-## Google Drive File ID pointing to the RACE survey app data spreadsheet
-dir_data <- "1AIQ0JEUA20D-g32uRQfRMZb0wW4SXl2n8Lwb_62uW-o"
 
-# toggle to remake htmls for the fish ID by taxa pages; takes a long time!
-remake_species_pages <- FALSE
+# this_year <- format(Sys.Date(), "%Y") # just doing this for proof of concept
+# if(as.numeric(this_year)%%2 == 0){ # determine surveys based on even year or not
+#   this_year_surveys <- c("nbs", "ebs", "ai") 
+# } else {
+#   this_year_surveys <- c("nbs", "ebs", "goa") 
+# }
 
-this_year <- format(Sys.Date(), "%Y") # just doing this for proof of concept
-if(as.numeric(this_year)%%2 == 0){ # determine surveys based on even year or not
-  this_year_surveys <- c("nbs", "ebs", "ai") 
-} else {
-  this_year_surveys <- c("nbs", "ebs", "goa") 
-}
-
-# CHECK! - define here pages that you don't want to use the template for!
-# non-template pages MUST be named with the web_page name listed in the 'comb' object
-
-no_templ <- c("guides", "id_by_taxa", "minimum_ID",
-              "tasklist")
-
-
-# Helper files ----------------------------------------------------------------
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+##   Import packages, authenticate google drive
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+source("sub_tasks/01_import_R_packages.R")
 googledrive::drive_deauth()
 googledrive::drive_auth() 
 1
 
-source("./import_R_packages.R")
-source("./functions.R")
-source("./data.R")
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+##   Import helper functions
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+source("sub_tasks/02_functions.R")
 
-# Check that links work --------------------------------------------------------
-
-# listed below are links that do not work
-
-# checkLinks(URLs = full_site0$url_loc)
-# 
-# checkLinks(URLs = full_site0$url_web)
-# 
-# checkLinks(URLs = full_site0$img)
-
-
-# Create all pages -------------------------------------------------------------
-
-comb <- comb %>% 
-  dplyr::add_row(page0 = "species_id", #don't want this in the yaml but need to render html
-                 sub_page0 = "id_by_taxa",
-                 web_page = "species_id_id_by_taxa.html") %>%
-  dplyr::mutate(
-    template = dplyr::case_when(
-      page0 == "index" ~ FALSE, 
-      sub_page0 %in% no_templ ~ FALSE, 
-      make_clean_names(sub_page0) %in% no_templ ~ FALSE,
-      web_page == "personnel_flight_itineraries.html" ~ FALSE,
-      TRUE ~ TRUE))
-
-
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+##   Clear the html files in docs/ folder. Since it takes a while to create
+##   all of the fish ID pages, remake_species_pages can be set to F to skip
+##   remaking those pages. In clear_htmls() the species id pages (those that
+##   start with "zz") are not cleared from the docs/ folder. 
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+remake_species_pages <- FALSE
 clear_htmls() #removes all existing htmls in docs folder
 
-for (jj in 1:nrow(comb)){
-  
-  if (janitor::make_clean_names(comb$sub_page[jj]) %in% dir_pdfs) next
-  
-  print(comb[jj,])
-  
-  page_title <- #stringr::str_to_title
-  (comb$page[jj])
-  page_desc <- ifelse(
-      is.na(comb$sub_page[jj]),
-      "Parent directory",
-      #stringr::str_to_title
-      (comb$sub_page[jj]))
-  
-  # if the the page requires a non-template page structure
-  # to use, simply name the rmd with the name in the comb$web_page column, so it knows what to grab
-  if (comb$template[jj] == FALSE) {
-    rmarkdown::render(gsub(pattern = ".html", 
-                           replacement = ".rmd", 
-                           x = comb$web_page[jj]),
-                      output_dir = "./docs/",
-                      output_file =  comb$web_page[jj])
-  } else { 
-  
-  # page content
-      page_dat <- site %>% 
-        dplyr::filter(page0 == comb$page0[jj] &
-                        sub_page0 == comb$sub_page0[jj] &
-                        (title != "" | Links != "")) 
-      
-    # # list of subpages (if the main page and not a subpage)
-    # if (sum(site$sub_page[site$page0==comb$page0[jj]]=="")>0) {
-    #   subpages <- site %>% 
-    #     dplyr::filter(page0 == comb$page0[jj])  %>%
-    #     dplyr::filter(sub_page!="") %>% 
-    #     dplyr::select(page, page0, sub_page, sub_page0, web_page, 
-    #                   dplyr::starts_with("srvy_")) %>% 
-    #     dplyr::distinct() %>% 
-    #     dplyr::arrange(sub_page0)
-    # }
-    
-    rmarkdown::render(paste0("template.Rmd"),
-                      output_dir = "./docs/",
-                      output_file =  comb$web_page[jj])
-  }
-}
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+##   Import and clean up data. If access_to_internet == TRUE, a local copy
+##   of the various data input are saved in the data/ folder.
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+access_to_internet <- TRUE
+source("sub_tasks/03_data.R")
+1
 
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+##   Check that links work: listed below are links that do not work
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+checkLinks(URLs = website_content$url_loc)
+checkLinks(URLs = website_content$url_web)
+
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+## Find combination of webpages using the generic template. dir_pdfs is a 
+## vector of subpages that link to pdfs and not htmls so we note that here. 
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dir_pdfs <- c("Codebook", "Emergency Flow Chart")
+
+comb <- website_content %>%
+  dplyr::select(page, sub_page) %>%
+  dplyr::distinct() %>%
+  dplyr::mutate(template_rmd = "template.rmd") %>%
+  dplyr::mutate(web_page = gsub(x = paste0(page, "_", sub_page, ".html"),
+                                pattern = " ", 
+                                replacement = "_"))
+comb$template_rmd <- ifelse(comb$sub_page %in% dir_pdfs, 
+                            yes = "", 
+                            no = comb$template_rmd)
+comb$web_page[match(x = dir_pdfs, table = comb$sub_page)] <-
+  website_content$url_loc[match(x = dir_pdfs, table = website_content$sub_page)]
+
+## Add comb information for webpages that use a custom template
+custom_comb <-
+  data.frame(page = c("FPC and Deck Lead", "FPC and Deck Lead", 
+                      "FPC and Deck Lead", "Personnel", "Species ID", 
+                      "Species ID"),
+             sub_page = c("Tasklist 1 - Beginning of Survey or Leg",
+                          "Tasklist 2 - End of Leg",
+                          "Tasklist 3 - End of Survey", "Flight Itineraries",
+                          "Minimum ID", "Guides"),
+             template_rmd = c("tasklist.rmd", "tasklist.rmd", "tasklist.rmd",
+                              "personnel_flight_itineraries.Rmd",
+                              "species_id_minimum_id.Rmd", 
+                              "species_id_guides.Rmd"))
+custom_comb$web_page <- 
+  gsub(x = paste0(custom_comb$page, "_", custom_comb$sub_page, ".html"),
+       pattern = " ", 
+       replacement = "_")
+
+comb <- rbind(comb, custom_comb)
+source("sub_tasks/04_render_main_page.R")
+
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+##   Look over comb df and render each page
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+for (jj in 1:nrow(comb)) { ## Loop over pages -- start
+# for (jj in 23) {
+  if (comb$template_rmd[jj] == "") next #direct pdfs
+  
+  ## Page specific information
+  page_title <- comb$page[jj]
+  page_desc <- ifelse(test = is.na(x = comb$sub_page[jj]),
+                      yes = "Parent directory",
+                      no = comb$sub_page[jj])
+  page_dat <- website_content %>%
+    dplyr::filter(page == page_title &
+                    sub_page == page_desc &
+                    (title != "" | Links != ""))
+  
+  ## Render document
+  rmarkdown::render(input = paste0("templates/", comb$template_rmd[jj]),
+                    output_dir = "docs/",
+                    output_file =  comb$web_page[jj])
+  
+} ## Loop over pages -- end
+
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+##   Render ID by Taxa page. 
+##   If remake_species_pages == TRUE, remake species pages
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+source("sub_tasks/05_render_species_pages.R")

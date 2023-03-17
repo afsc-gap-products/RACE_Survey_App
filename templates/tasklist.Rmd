@@ -1,0 +1,92 @@
+---
+title: "`r page_desc`"
+site: distill::distill_website
+---
+
+```{r Subset Checklist documents for BS, echo = F, results="asis"}
+checklist_items <- subset(x = task_list_data, 
+                          subset = sub_page == page_desc)
+main_sections <- unique(x = checklist_items$section)
+
+for (isection in main_sections) {
+  subdf <- subset(x = checklist_items, subset = section == isection)
+  duty_matrix <- matrix(data = "", 
+                        nrow = 0, 
+                        ncol = 4, 
+                        dimnames = list(NULL, 
+                                        c("Task", "FPC", 
+                                          "Deck Lead", "Safety Lead")))
+  
+  main_bullets <- unique(x = subdf$title)
+  
+  for (irow in 1:length(x = main_bullets)) {
+    
+    subdf2 <- subset(x = subdf, subset = title == main_bullets[irow])
+    temp_matrix <- matrix(data = "", 
+                          nrow = 1, 
+                          ncol = 4, 
+                          dimnames = list(NULL, 
+                                          c("Task", "FPC", 
+                                            "Deck Lead", "Safety Lead")))
+    
+    if (nrow(x = subdf2) == 1) {
+      type <- ifelse(test = is.na(x = subdf2$url_loc),
+                     yes = "text",
+                     no = "link")
+      
+      
+      temp_matrix[1, "Task"] <- paste0(irow, ") ", 
+                                       ifelse(test = type == "link", 
+                                              yes = "[", 
+                                              no = ""),
+                                       subdf2$title,
+                                       ifelse(test = type == "link",
+                                              yes = paste0("](.",
+                                                           subdf2$url_loc,
+                                                           ")"),
+                                              no = ""))
+      temp_matrix[1, c("FPC", "Deck Lead", "Safety Lead")] <-
+        ifelse(unlist(subdf2[, c("fcp_task", "dl_task", "sl_task")]) == "T",
+               "X", "")
+    }
+    
+    if (nrow(x = subdf2) > 1) { ## Requires one level of sub-bullets
+      temp <- paste0(irow, ") ", main_bullets[irow], "\n")
+      
+      for (jrow in 1:nrow(subdf2)) {
+        
+        type <- ifelse(test = is.na(subdf2$url_loc[jrow]),
+                       yes = "text",
+                       no = "link")
+        
+        temp <- paste0(temp, "    - ", 
+                       ifelse(test = type == "link", yes = "[", no = ""),
+                       subdf2$subtitle[jrow],
+                       ifelse(test = type == "link",
+                              yes = paste0("](.",
+                                           subdf2$url_loc[jrow],
+                                           ")"),
+                              no = ""),
+                       " \n ")
+      }
+      
+      temp_matrix[1, "Task"] <- temp
+      temp_matrix[1, c("FPC", "Deck Lead", "Safety Lead")] <-
+        ifelse(test = unlist(subdf2[1, c("fcp_task", 
+                                         "dl_task", 
+                                         "sl_task")]) == "T",
+               yes = "X", no = "")
+    }
+    duty_matrix <- rbind(duty_matrix, temp_matrix)
+  }
+  
+  cat(paste0("\n# ", isection, " \n"))
+  cat(knitr::kable(duty_matrix, 
+                   format = "html",
+                   table.attr = "style='width:125%;'"))
+  cat("\n")
+}
+
+rm(checklist_items, duty_matrix, page_dat, subdf, subdf2, temp_matrix, irow, isection, jrow, page_desc, page_title, main_bullets, main_sections, temp, type)
+```
+

@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE, results = "a
 ```
 
 ```{r}
-x <- readr::read_csv("./data/min_id.csv") %>%
+x <- readr::read_csv("../data/min_id.csv") %>%
   arrange(Phylum, Taxon)
 
 check_codes <- FALSE
@@ -51,5 +51,7 @@ k <- kableExtra::kable(tabl, format = "html", linesep = "",
   collapse_rows(1, latex_hline = "custom", valign = "top") 
   
 cat(k)
+
+rm(page_dat, tabl, x, k, page_dsc, page_title, check_codes)
 ```
 
