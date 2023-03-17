@@ -83,7 +83,6 @@ source("sub_tasks/04_render_main_page.R")
 ##   Look over comb df and render each page
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 for (jj in 1:nrow(comb)) { ## Loop over pages -- start
-# for (jj in 23) {
   if (comb$template_rmd[jj] == "") next #direct pdfs
   
   ## Page specific information
