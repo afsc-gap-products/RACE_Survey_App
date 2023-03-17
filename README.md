@@ -1,8 +1,20 @@
 # AFSC RACE GAP Survey App
 
-This repo uses a google spreadsheet listing content to build a consistent, reproducible, and reliable local resource website for our boats while boats are out to sea. 
+The RACE Survey App is a consistent, reproducible, and reliable local resource website for our boats while boats are out to sea. This repository houses the functions used to create the RACE Survey App (sub_tasks/, run.R), the html files that make up the website (docs/), as well as the many files that are embedded in those websites (files/). The files in total are too large to be housed within Github and are instead stored locally in the files/ folder. The G: drive version of the RACE Survey App (G:\RACE_Survey_App, must be connected to the VPN and have access to RACE_GF network) contains the most up to date version of this files/ folder. When first cloning/forking this repository, make sure to copy the files/ folder from the G drive version of the app to your copy of the repository. If you are working on this app, you should periodically copy the files/ folder from the G drive version of the app to your copy of the repository so that you are up to date with the files/ content. 
 
-See the website [here](https://afsc-gap-products.github.io/RACE_Survey_App/index.html). 
+This [googlesheet](https://docs.google.com/spreadsheets/d/1AIQ0JEUA20D-g32uRQfRMZb0wW4SXl2n8Lwb_62uW-o/edit#gid=0) currently houses most of the input data used to populate the RACE Survey App. 
+
+The run.R script is the main engine that produces the application. It sources a sequence of scripts that are stored in the sub_tasks/ folder. These scripts are numbered in the order they are called. The general flow of run.R consists of :
+
+* sub_tasks/01_import_R_packages.R: imports/installs R packages
+* sub_tasks/02_functions.R: imports helper functions
+* sub_tasks/03_data.R: imports and cleans data
+* In between these steps, we create the df that defines the website page structure
+* sub_tasks/04_render_main_page.R: renders our main page called index.html
+* In between these steps, each page is rendered
+* sub_tasks/05_render_species_pages.R: renders the species ID pages
+
+See the [wiki page](https://github.com/afsc-gap-products/RACE_Survey_App/wiki) on how to modify the data inputs. 
 
 > Code is always in development
 
