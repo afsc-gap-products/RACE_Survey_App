@@ -28,7 +28,7 @@ dir_species_guides <- "172nNe_qrK0CWGNC4kR9gh27B-nyTgEj03uf4opGv5iU"
 
 if (access_to_internet) {
   
-  ## Download Main entries data
+  ## Download main entries data
   survey_app_data <- 
     googlesheets4::read_sheet(ss = googledrive::as_id(dir_data), 
                               sheet = "entries", 
@@ -91,9 +91,11 @@ website_content <- website_content %>%
     descrip = ifelse(test = descrip != "",
                      yes = paste0("\n- ", descrip),
                      no = ""),
-    section = ifelse(test = is.na(section), yes = "",
+    section = ifelse(test = is.na(section), 
+                     yes = "",
                      no = stringr::str_to_title(section)),
-    subsection = ifelse(test = is.na(subsection), yes = "",
+    subsection = ifelse(test = is.na(subsection), 
+                        yes = "",
                         no = stringr::str_to_sentence(subsection)),
     
     # Hyperlinked titles URL links
@@ -112,10 +114,6 @@ website_content <- website_content %>%
     )
   ) %>%
   dplyr::arrange(page, sub_page) %>%
-  dplyr::relocate(
-    page,
-    sub_page,
-    section,
-    subsection, title, title_link_inline, subtitle, descrip,
-    dplyr::starts_with("svy_")
+  dplyr::relocate(page, sub_page, section, subsection, 
+                  title, title_link_inline, subtitle, descrip
   )
