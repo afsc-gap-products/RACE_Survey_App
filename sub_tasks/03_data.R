@@ -58,12 +58,23 @@ min_ID_list <-
     path = "data/survey_app_data.xlsx", 
     sheet = "min_ID_list")
 
-## Download minimum ID list
+## Download taxa guides
 taxa_guides <- 
   readxl::read_excel(
     path = "data/survey_app_data.xlsx", 
     sheet = "taxa_guides", 
     skip = 1)
+
+
+## Download Species Guides data
+dir_species_id <- "172nNe_qrK0CWGNC4kR9gh27B-nyTgEj03uf4opGv5iU"
+species_id <- googledrive::drive_download(
+  file = as_id(dir_species_id),
+  type = "csv",
+  overwrite = TRUE,
+  path = paste0("./data/species_id_data.csv")
+)
+
 
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ##   Clean up website content

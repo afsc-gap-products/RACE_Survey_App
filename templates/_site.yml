@@ -37,12 +37,12 @@ navbar:
       menu: 
        - text: "Emergency Flow Chart"
          href: ./files/Safety/Accidents/Accidents.pdf
+       - text: "hazmat"
+         href: Safety_hazmat.html
        - text: "Illness and injury reporting"
          href: Safety_Illness_and_injury_reporting.html
        - text: "Manuals and References"
          href: Safety_Manuals_and_References.html
-       - text: "hazmat"
-         href: Safety_hazmat.html
     - text: "Software"
       menu: 
        - text: "FPC Resources"

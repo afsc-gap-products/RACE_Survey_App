@@ -1,6 +1,6 @@
 ---
 title: "Minimum Identification List"
-description: "EBS and AI regions"
+description: "EBS and AI/GOA regions"
 output: html_document
 ---
 
@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE, results = "a
 ```
 
 ```{r}
-x <- min_ID_list %>% #readr::read_csv("../data/min_id.csv") %>%
+x <- min_ID_list %>% 
   dplyr::arrange(Phylum, Taxon)
 
 check_codes <- FALSE

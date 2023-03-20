@@ -9,9 +9,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE)
 
 
 ```{r}
-guides_data <- taxa_guides # read.csv("../data/taxa_guides.csv")
-
-all_files <- guides_data %>%
+all_files <- taxa_guides %>%
   select(title, section, subsection, url_loc) %>%
   dplyr::mutate(filename = basename(url_loc),
                 taxa = case_when(
@@ -57,7 +55,7 @@ for(i in 1:length(sec)){
   cat(k)
 }
 
-rm(all_files, guides_data, page_dat, tabl, tmp, fish_id, i, k, page_desc,
+rm(all_files, page_dat, tabl, tmp, fish_id, i, k, page_desc,
    page_title, sec)
 ```
 

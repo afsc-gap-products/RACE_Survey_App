@@ -14,10 +14,12 @@ googledrive::drive_auth()
 # googlesheets4::gs4_auth()
 # 1
 
+
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ##   Import helper functions
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 source("sub_tasks/02_functions.R")
+
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ##   Clear the html files in docs/ folder. Since it takes a while to create
@@ -28,6 +30,7 @@ source("sub_tasks/02_functions.R")
 remake_species_pages <- FALSE
 clear_htmls() # removes all existing htmls in docs folder
 
+
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ##   Import and clean up data. If access_to_internet == TRUE, a local copy
 ##   of the various data input are saved in the data/ folder.
@@ -35,11 +38,13 @@ clear_htmls() # removes all existing htmls in docs folder
 access_to_internet <- TRUE
 source("sub_tasks/03_data.R")
 
+
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ##   Check that links work: listed below are links that do not work
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # checkLinks(URLs = website_content$url_loc)
 # checkLinks(URLs = website_content$url_web)
+
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## Find combination of webpages using the generic template. dir_pdfs is a
@@ -85,6 +90,7 @@ custom_comb$web_page <-
 
 comb <- rbind(comb, custom_comb)
 source("sub_tasks/04_render_main_page.R")
+
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ##   Look over comb df and render each page

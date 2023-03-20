@@ -8,18 +8,18 @@
 ##   Import data, fix url locations
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-guides_data <- readr::read_csv(file = "data/id_guides_data.csv") %>%
+species_data <- readr::read_csv(file = "data/species_id_data.csv") %>%
   dplyr::mutate(size_cm = as.character(x = size_cm),
                 species_code = as.character(x = species_code)) %>%
   replace(is.na(.), "") 
-guides_data$url_loc <- gsub(x = guides_data$url_loc, 
+species_data$url_loc <- gsub(x = species_data$url_loc, 
                             pattern = "./files/", 
                             replacement = "../files/")
 
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ##   Clean up data
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-grps <- guides_data %>%
+grps <- species_data %>%
   dplyr::select(group_short, group_long) %>%
   unique() %>%
   dplyr::mutate(
@@ -197,4 +197,4 @@ if (remake_species_pages) {
   } ## Loop over groupings -- end
 }  
 
-rm(guides_data, grps, links)
+rm(species_data, grps, links)
