@@ -37,20 +37,18 @@ navbar:
       menu: 
        - text: "Emergency Flow Chart"
          href: ./files/Safety/Accidents/Accidents.pdf
-       - text: "hazmat"
-         href: Safety_hazmat.html
        - text: "Illness and injury reporting"
          href: Safety_Illness_and_injury_reporting.html
        - text: "Manuals and References"
          href: Safety_Manuals_and_References.html
+       - text: "hazmat"
+         href: Safety_hazmat.html
     - text: "Software"
       menu: 
-       - text: "Other R Survey Scripts"
-         href: Software_Other_R_Survey_Scripts.html
+       - text: "FPC Resources"
+         href: Software_FPC_Resources.html
        - text: "R"
          href: Software_R.html
-       - text: "R packages"
-         href: Software_R_packages.html
        - text: "Software & drivers"
          href: Software_Software_&_drivers.html
     - text: "Species ID"

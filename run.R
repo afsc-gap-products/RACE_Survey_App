@@ -10,6 +10,9 @@ source("sub_tasks/01_import_R_packages.R")
 googledrive::drive_deauth()
 googledrive::drive_auth()
 1
+# googlesheets4::gs4_deauth()
+# googlesheets4::gs4_auth()
+# 1
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ##   Import helper functions
@@ -31,13 +34,12 @@ clear_htmls() # removes all existing htmls in docs folder
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 access_to_internet <- TRUE
 source("sub_tasks/03_data.R")
-1
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ##   Check that links work: listed below are links that do not work
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-checkLinks(URLs = website_content$url_loc)
-checkLinks(URLs = website_content$url_web)
+# checkLinks(URLs = website_content$url_loc)
+# checkLinks(URLs = website_content$url_web)
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## Find combination of webpages using the generic template. dir_pdfs is a
@@ -73,7 +75,6 @@ custom_comb <- tribble(
   "Species ID", "Minimum ID", "species_id_minimum_id.Rmd",
   "Species ID", "Guides", "species_id_guides.Rmd"
 )
-
 
 custom_comb$web_page <-
   gsub(
