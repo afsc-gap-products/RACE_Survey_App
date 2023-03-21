@@ -44,7 +44,7 @@ tmp_table <- tibble(full_file = travel_plans) %>%
     `Leg 4` = ifelse(grepl("l4|_l.+4", file, ignore.case = T), "x", ""),
     Conf_No = str_extract(file, "[A-Za-z]+$"),
     Link = paste0(
-      "[travel info](../", path0,
+      "[travel info](", path0, "/",
       gsub(
         pattern = " ",
         replacement = "%20",
