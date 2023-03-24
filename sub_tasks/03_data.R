@@ -4,8 +4,6 @@
 #' Date: Feb 2022
 #' --------------------------------------
 
-# Load Data from Google Drive --------------------------------------------------
-
 # How to find the google drive ID of a document:
 # Google Drive File ID is a unique identifier of the file on Google Drive.
 # File IDs are stable throughout the lifespan of the file, even if the file
@@ -19,9 +17,7 @@
 # its link:
 # https://docs.google.com/spreadsheets/d/***ThisIsFileID***/edit#gid=123456789
 
-##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-##   Download data
-##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Download data ----------------------------------------------------------------
 
 ## Google Drive File ID pointing to the RACE survey app data spreadsheet
 dir_data <- "1AIQ0JEUA20D-g32uRQfRMZb0wW4SXl2n8Lwb_62uW-o"
@@ -34,16 +30,23 @@ if (access_to_internet) {
     overwrite = TRUE)
 }
 
-##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-##   Load spreadsheets
-##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Load spreadsheets ------------------------------------------------------------
 
 ## main entries data
-website_content <- # survey_app_data <- 
+website_content <-  
   readxl::read_excel(
     path = "data/survey_app_data.xlsx", 
     sheet = "entries", 
-    skip = 1)
+    skip = 1) 
+
+srvys <- unique(tolower(c(srvys, "all")))
+website_content$in_survey_app_srvy1 <- FALSE
+website_content$survey[is.na(website_content$survey)] <- "all"
+for (i in 1:length(srvys)) {
+  temp <- grepl(pattern = srvys[i], x = tolower(website_content$survey)) 
+  website_content$in_survey_app_srvy1[temp] <- TRUE
+}
+website_content <- website_content[website_content$in_survey_app_srvy1 == TRUE,]
 
 ## Download task list data
 task_list_data <- 
@@ -75,10 +78,8 @@ species_id <- googledrive::drive_download(
   path = paste0("./data/species_id_data.csv")
 )
 
+# Clean up website content -----------------------------------------------------
 
-##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-##   Clean up website content
-##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Clean up entries dataframe to format we need it for printing
 
 website_content <- website_content %>%
@@ -99,7 +100,8 @@ website_content <- website_content %>%
                      no = stringr::str_to_title(section)),
     subsection = ifelse(test = is.na(subsection), 
                         yes = "",
-                        no = stringr::str_to_sentence(subsection)),
+                        no = #stringr::str_to_sentence
+                        (subsection)),
     
     # Hyperlinked titles URL links
     title_link = ifelse(test = url_loc == "",

@@ -3,53 +3,41 @@
 #' Developed by: Zack Oyafuso, Sarah Friedman, Emily Markowitz, Liz Dawson
 #' --------------------------------------
 
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-##   Import packages, authenticate google drive
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+## Import packages, authenticate google drive ----------------------------------
+
 source("sub_tasks/01_import_R_packages.R")
 googledrive::drive_deauth()
 googledrive::drive_auth()
 1
-# googlesheets4::gs4_deauth()
-# googlesheets4::gs4_auth()
-# 1
 
-
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-##   Import helper functions
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+## Import helper functions -----------------------------------------------------
+srvys <- c("NBS", "EBS", "BS", "GOA")
 source("sub_tasks/02_functions.R")
 
-
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ##   Clear the html files in docs/ folder. Since it takes a while to create
 ##   all of the fish ID pages, remake_species_pages can be set to F to skip
 ##   remaking those pages. In clear_htmls() the species id pages (those that
 ##   start with "zz") are not cleared from the docs/ folder.
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 remake_species_pages <- FALSE
 clear_htmls() # removes all existing htmls in docs folder
 
-
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ##   Import and clean up data. If access_to_internet == TRUE, a local copy
 ##   of the various data input are saved in the data/ folder.
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 access_to_internet <- TRUE
 source("sub_tasks/03_data.R")
 
+# Check that links work: listed below are links that do not work ---------------
 
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-##   Check that links work: listed below are links that do not work
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # checkLinks(URLs = website_content$url_loc)
 # checkLinks(URLs = website_content$url_web)
 
+# Identify what combination of pages will be created ---------------------------
 
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## Find combination of webpages using the generic template. dir_pdfs is a
 ## vector of subpages that link to pdfs and not htmls so we note that here.
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 dir_pdfs <- c("Codebook", "Emergency Flow Chart")
 
 comb <- website_content %>%
@@ -91,10 +79,8 @@ custom_comb$web_page <-
 comb <- rbind(comb, custom_comb)
 source("sub_tasks/04_render_main_page.R")
 
+##   Loop over comb df and render each page ------------------------------------
 
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-##   Look over comb df and render each page
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 for (jj in 1:nrow(comb)) { ## Loop over pages -- start
   if (comb$template_rmd[jj] == "") next # direct pdfs
 
@@ -118,8 +104,7 @@ for (jj in 1:nrow(comb)) { ## Loop over pages -- start
 } ## Loop over pages -- end
 
 
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-##   Render ID by Taxa page.
+# Render ID by Taxa page. ------------------------------------------------------
+
 ##   If remake_species_pages == TRUE, remake species pages
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 source("sub_tasks/05_render_species_pages.R")
