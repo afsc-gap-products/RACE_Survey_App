@@ -66,7 +66,8 @@ custom_comb <- tribble(
   "FPC and Deck Lead", "Tasklist 3 - End of Survey", "tasklist.rmd",
   "Personnel", "Flight Itineraries", "personnel_flight_itineraries.Rmd",
   "Species ID", "Minimum ID", "species_id_minimum_id.Rmd",
-  "Species ID", "Guides", "species_id_guides.Rmd"
+  "Species ID", "Guides", "species_id_guides.Rmd",
+  "Species ID", "Fish ID by Taxa", "species_id_id_by_taxa.Rmd"
 )
 
 custom_comb$web_page <-
@@ -78,6 +79,15 @@ custom_comb$web_page <-
 
 comb <- rbind(comb, custom_comb)
 source("sub_tasks/04_render_main_page.R")
+
+
+
+# Render ID by Taxa page. ------------------------------------------------------
+
+##   If remake_species_pages == TRUE, remake species pages
+source("sub_tasks/05_render_species_pages.R")
+
+
 
 ##   Loop over comb df and render each page ------------------------------------
 
@@ -102,9 +112,3 @@ for (jj in 1:nrow(comb)) { ## Loop over pages -- start
     output_file = comb$web_page[jj]
   )
 } ## Loop over pages -- end
-
-
-# Render ID by Taxa page. ------------------------------------------------------
-
-##   If remake_species_pages == TRUE, remake species pages
-source("sub_tasks/05_render_species_pages.R")
