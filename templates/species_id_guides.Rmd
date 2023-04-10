@@ -24,7 +24,7 @@ all_files <- taxa_guides %>%
 
 
 ```{r, results = "asis"}
-fish_id <- paste0("[ID by Taxa](./Species_ID_ID_by_Taxa.html)")
+fish_id <- paste0("[ID by Taxa](./Species_ID_Fish_ID_by_Taxa.html)")
 
 tabl <- all_files %>%
   mutate(Taxa = ifelse(!is.na(subsection), subsection, section)) %>%
