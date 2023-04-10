@@ -81,7 +81,6 @@ comb <- rbind(comb, custom_comb)
 source("sub_tasks/04_render_main_page.R")
 
 
-
 # Render ID by Taxa page. ------------------------------------------------------
 
 ##   If remake_species_pages == TRUE, remake species pages

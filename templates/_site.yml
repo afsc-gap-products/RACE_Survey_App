@@ -17,6 +17,8 @@ navbar:
          href: FPC_and_Deck_Lead_Deck_Lead_Resources.html
        - text: "FPC Resources"
          href: FPC_and_Deck_Lead_FPC_Resources.html
+       - text: "Operations"
+         href: FPC_and_Deck_Lead_Operations.html
        - text: "Protected Species"
          href: FPC_and_Deck_Lead_Protected_Species.html
        - text: "Tasklist 1 - Beginning of Survey or Leg"
@@ -61,10 +63,8 @@ navbar:
          href: Species_ID_Fish_ID_by_Taxa.html
     - text: "Survey Ops"
       menu: 
-       - text: "Operation Manuals"
-         href: Survey_Ops_Operation_Manuals.html
-       - text: "Survey inventories"
-         href: Survey_Ops_Survey_inventories.html
+       - text: "Operations"
+         href: Survey_Ops_Operations.html
        - text: "Training Resources and Tech Memos"
          href: Survey_Ops_Training_Resources_and_Tech_Memos.html
 
