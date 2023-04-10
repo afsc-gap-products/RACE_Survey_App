@@ -197,4 +197,4 @@ if (remake_species_pages) {
   } ## Loop over groupings -- end
 }  
 
-rm(species_data, grps, links)
+rm(species_data, links)
