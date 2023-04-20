@@ -29,8 +29,6 @@ This [googlesheet](https://docs.google.com/spreadsheets/d/1AIQ0JEUA20D-g32uRQfRM
 
 The run.R script is the main engine that produces the application. It sources a sequence of scripts that are stored in the sub_tasks/ folder. These scripts are numbered in the order they are called. The general flow of run.R consists of :
 
-![https://afsc-gap-products.github.io/RACE_Survey_App/index.html](templates/img/app_index_page.png)
-
 * sub_tasks/01_import_R_packages.R: imports/installs R packages
 * sub_tasks/02_functions.R: imports helper functions
 * sub_tasks/03_data.R: imports and cleans data
@@ -40,6 +38,8 @@ The run.R script is the main engine that produces the application. It sources a 
 * sub_tasks/05_render_species_pages.R: renders the species ID pages
 
 See the [wiki page](https://github.com/afsc-gap-products/RACE_Survey_App/wiki) on how to modify the data inputs. 
+
+![https://afsc-gap-products.github.io/RACE_Survey_App/index.html](templates/img/app_index_page.png)
 
 ## NOAA README
 
