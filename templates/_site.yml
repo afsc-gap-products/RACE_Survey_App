@@ -39,6 +39,8 @@ navbar:
          href: ./files/Safety/Accidents/Accidents.pdf
        - text: "Ergonomic Resource Library"
          href: Safety_Ergonomic_Resource_Library.html
+       - text: "Harassment Resources"
+         href: Safety_Harassment_Resources.html
        - text: "Hazmat"
          href: Safety_Hazmat.html
        - text: "Illness and injury reporting"
@@ -54,7 +56,7 @@ navbar:
     - text: "Species ID"
       menu: 
        - text: "Codebook"
-         href: ../files/SpeciesID/2021_Species_Codebook.pdf
+         href: ./files/SpeciesID/2023 SpeciesCodeManual-FINAL.pdf
        - text: "Minimum ID"
          href: Species_ID_Minimum_ID.html
        - text: "Guides"
