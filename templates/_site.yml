@@ -19,12 +19,18 @@ navbar:
          href: FPC_and_Deck_Lead_FPC_Resources.html
        - text: "Protected Species"
          href: FPC_and_Deck_Lead_Protected_Species.html
+       - text: "Software & drivers"
+         href: FPC_and_Deck_Lead_Software_&_drivers.html
        - text: "Tasklist 1 - Beginning of Survey or Leg"
          href: FPC_and_Deck_Lead_Tasklist_1_-_Beginning_of_Survey_or_Leg.html
        - text: "Tasklist 2 - End of Leg"
          href: FPC_and_Deck_Lead_Tasklist_2_-_End_of_Leg.html
        - text: "Tasklist 3 - End of Survey"
          href: FPC_and_Deck_Lead_Tasklist_3_-_End_of_Survey.html
+    - text: "Harassment"
+      menu: 
+       - text: "Harassment Resources"
+         href: Harassment_Harassment_Resources.html
     - text: "Personnel"
       menu: 
        - text: "Schedules and Contacts"
@@ -36,11 +42,9 @@ navbar:
     - text: "Safety"
       menu: 
        - text: "Emergency Flow Chart"
-         href: ./files/Safety/Accidents/Accidents.pdf
+         href: ../files/Safety/Accidents/Accidents.pdf
        - text: "Ergonomic Resource Library"
          href: Safety_Ergonomic_Resource_Library.html
-       - text: "Harassment Resources"
-         href: Safety_Harassment_Resources.html
        - text: "Hazmat"
          href: Safety_Hazmat.html
        - text: "Illness and injury reporting"
@@ -56,7 +60,7 @@ navbar:
     - text: "Species ID"
       menu: 
        - text: "Codebook"
-         href: ./files/SpeciesID/2023 SpeciesCodeManual-FINAL.pdf
+         href: ../files/SpeciesID/2023 SpeciesCodeManual-FINAL.pdf
        - text: "Minimum ID"
          href: Species_ID_Minimum_ID.html
        - text: "Guides"
