@@ -19,8 +19,6 @@ navbar:
          href: FPC_and_Deck_Lead_FPC_Resources.html
        - text: "Protected Species"
          href: FPC_and_Deck_Lead_Protected_Species.html
-       - text: "Software & drivers"
-         href: FPC_and_Deck_Lead_Software_&_drivers.html
        - text: "Tasklist 1 - Beginning of Survey or Leg"
          href: FPC_and_Deck_Lead_Tasklist_1_-_Beginning_of_Survey_or_Leg.html
        - text: "Tasklist 2 - End of Leg"
