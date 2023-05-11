@@ -40,6 +40,7 @@ source("sub_tasks/03_data.R")
 
 dir_pdfs <- c("Codebook", "Emergency Flow Chart")
 
+
 comb <- website_content %>%
   dplyr::select(page, sub_page) %>%
   dplyr::distinct() %>%
@@ -50,13 +51,19 @@ comb <- website_content %>%
     replacement = "_"
   ))
 
+
 comb$template_rmd <- ifelse(comb$sub_page %in% dir_pdfs,
   yes = "",
   no = comb$template_rmd
 )
 
+
 comb$web_page[match(x = dir_pdfs, table = comb$sub_page)] <-
   website_content$url_loc[match(x = dir_pdfs, table = website_content$sub_page)]
+
+# fixing links for dir_pdfs
+str_replace(comb$web_page, "^\\.+", "..")
+
 
 ## Add comb information for webpages that use a custom template
 custom_comb <- tribble(
