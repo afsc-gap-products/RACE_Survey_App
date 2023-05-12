@@ -62,7 +62,7 @@ comb$web_page[match(x = dir_pdfs, table = comb$sub_page)] <-
   website_content$url_loc[match(x = dir_pdfs, table = website_content$sub_page)]
 
 # fixing links for dir_pdfs
-str_replace(comb$web_page, "^\\.+", "..")
+comb$web_page <- str_replace(comb$web_page, "^\\.+", "..")
 
 
 ## Add comb information for webpages that use a custom template
