@@ -1,6 +1,6 @@
 #' --------------------------------------
 #' Project: RACE SURVEY APP
-#' Developed by: Zack Oyafuso, Sarah Friedman, Emily Markowitz, Liz Dawson
+#' Developed by: Zack Oyafuso, Sarah Friedman, Emily Markowitz
 #' --------------------------------------
 
 ## Import packages, authenticate google drive ----------------------------------
@@ -11,7 +11,7 @@ googledrive::drive_auth()
 1
 
 ## Import helper functions -----------------------------------------------------
-srvys <- c("NBS", "EBS", "BS", "GOA")
+srvys <- c("NBS", "EBS", "BS", "AI")
 source("sub_tasks/02_functions.R")
 
 ##   Clear the html files in docs/ folder. Since it takes a while to create
@@ -40,7 +40,6 @@ source("sub_tasks/03_data.R")
 
 dir_pdfs <- c("Codebook", "Emergency Flow Chart")
 
-
 comb <- website_content %>%
   dplyr::select(page, sub_page) %>%
   dplyr::distinct() %>%
@@ -51,19 +50,13 @@ comb <- website_content %>%
     replacement = "_"
   ))
 
-
 comb$template_rmd <- ifelse(comb$sub_page %in% dir_pdfs,
   yes = "",
   no = comb$template_rmd
 )
 
-
 comb$web_page[match(x = dir_pdfs, table = comb$sub_page)] <-
   website_content$url_loc[match(x = dir_pdfs, table = website_content$sub_page)]
-
-# fixing links for dir_pdfs
-comb$web_page <- str_replace(comb$web_page, "^\\.+", "..")
-
 
 ## Add comb information for webpages that use a custom template
 custom_comb <- tribble(

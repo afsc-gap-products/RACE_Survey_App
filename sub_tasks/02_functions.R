@@ -1,7 +1,7 @@
 #' --------------------------------------
 #' Project: RACE SURVEY APP
-#' Developed by: Zach Oyafuso, Sarah Friedman, Emily Markowitz, Liz Dawson
-#' Date: Feb 2022
+#' Developed by: Zack Oyafuso, Sarah Friedman, Emily Markowitz
+#' Date: Feb 2024
 #' 
 #' Notes: checkLinks() checks whether a URL is valid or not
 #' --------------------------------------

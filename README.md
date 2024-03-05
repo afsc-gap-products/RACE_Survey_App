@@ -13,8 +13,6 @@
 
 **Emily Markowitz** (Emily.Markowitz AT noaa.gov; @EmilyMarkowitz-NOAA)
 
-**Liz Dawson** (Liz.Dawson AT noaa.gov; @liz-dawson-NOAA)
-
 Alaska Fisheries Science Center, 
 
 National Marine Fisheries Service, 

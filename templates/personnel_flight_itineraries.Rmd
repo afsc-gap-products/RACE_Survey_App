@@ -14,14 +14,14 @@ flights_dir <- "../files/Travel/flight itineraries/"
 ```{r, results = 'asis', echo = F}
 # ensures code doesn't break if this year's folder hasn't been created yet
 year <- as.numeric(format(x = Sys.Date(), format = "%Y"))
-# year <- ifelse(test = this_year %in% list.dirs(
-#   path = flights_dir,
-#   full.names = F,
-#   recursive = F
-# ),
-# yes = as.numeric(x = this_year),
-# no = as.numeric(x = this_year) - 1
-# )
+year <- ifelse(test = year %in% list.dirs(
+  path = flights_dir,
+  full.names = F,
+  recursive = F
+),
+yes = as.numeric(x = year),
+no = as.numeric(x = year) - 1
+)
 
 
 path0 <- paste0(flights_dir, year)
