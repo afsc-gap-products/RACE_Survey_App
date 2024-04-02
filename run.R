@@ -30,9 +30,9 @@ source("sub_tasks/03_data.R")
 
 # Check that links work: listed below are links that do not work ---------------
 
-# checkLinks(URLs = website_content$url_loc)
-# checkLinks(URLs = task_list_data$url_loc)
-# checkLinks(URLs = taxa_guides$url_loc)
+checkLinks(URLs = website_content$url_loc)
+checkLinks(URLs = task_list_data$url_loc)
+checkLinks(URLs = taxa_guides$url_loc)
 
 # checkLinks(URLs = website_content$url_web)
 
