@@ -1,6 +1,6 @@
 #' --------------------------------------
 #' Project: RACE SURVEY APP
-#' Developed by: Zack Oyafuso, Sarah Friedman, Emily Markowitz, Liz Dawson
+#' Developed by: Zack Oyafuso, Sarah Friedman, Emily Markowitz
 #' --------------------------------------
 
 ## Import packages, authenticate google drive ----------------------------------
@@ -11,7 +11,7 @@ googledrive::drive_auth()
 1
 
 ## Import helper functions -----------------------------------------------------
-srvys <- c("NBS", "EBS", "BS", "GOA")
+srvys <- c("NBS", "EBS", "BS", "AI")
 source("sub_tasks/02_functions.R")
 
 ##   Clear the html files in docs/ folder. Since it takes a while to create
@@ -31,6 +31,9 @@ source("sub_tasks/03_data.R")
 # Check that links work: listed below are links that do not work ---------------
 
 # checkLinks(URLs = website_content$url_loc)
+# checkLinks(URLs = task_list_data$url_loc)
+# checkLinks(URLs = taxa_guides$url_loc)
+
 # checkLinks(URLs = website_content$url_web)
 
 # Identify what combination of pages will be created ---------------------------

@@ -21,8 +21,8 @@ The RACE Survey App is a comprehensive resource for all scientific personnel to 
 :::
 
 ::: {}
-```{r, layout="l-body-outset"}
-knitr::include_graphics("img/IMG_9489.jpg")
+```{r, layout="l-body-outset", out.width="100%"}
+knitr::include_graphics("img/AK photo.jpg")
 ```
 :::
 

@@ -17,25 +17,25 @@ check_codes <- FALSE
 # check species codes against racebase codes
 if(check_codes){
   # hard coding this because I don't have a better solution at the moment, will improve later
-  codes <- read_csv("C:/Users/sarah.friedman/Work/survey_species_outliers/data/oracle/race_data-race_species_codes.csv") %>%
+  codes <- readr::read_csv("C:/Users/sarah.friedman/Work/survey_species_outliers/data/oracle/race_data-race_species_codes.csv") %>%
     janitor::clean_names() %>%
-    select(species_name, common_name, species_code) %>%
-    mutate(species_name = ifelse(grepl("crinoid", common_name, ignore.case = T), "Crinoidea", species_name))
+    dplyr::select(species_name, common_name, species_code) %>%
+    dplyr::mutate(species_name = ifelse(grepl("crinoid", common_name, ignore.case = T), "Crinoidea", species_name))
 
   tabl <- x %>%
-    clean_names() %>%
-    filter(!is.na(species_code)) %>%
+    janitor::clean_names() %>%
+    dplyr::filter(!is.na(species_code)) %>%
     mutate(tmp_tax = case_when(
       grepl("basket", common_name, ignore.case = TRUE) ~ "Gorgonocephalus eucnemis",
       taxon == "Mysidaecea" ~ "Mysidae",
       TRUE ~ taxon
       )) %>%
-    left_join(codes, by = c("tmp_tax" = "species_name")) %>%
-    mutate(species_code.y = ifelse(is.na(species_code.y), species_code.x, species_code.y)) %>%
-    filter(taxon == "Crinoidea" & grepl("unid", common_name.y) | taxon != "Crinoidea") %>%
-    select(phylum:taxon, common_name = common_name.x, id_guide_available, minimum_id_level, species_code = species_code.y) %>%
-    bind_rows(., x %>% clean_names %>% filter(is.na(species_code))) %>%
-    arrange(phylum, taxon)
+    dplyr::left_join(codes, by = c("tmp_tax" = "species_name")) %>%
+    dplyr::mutate(species_code.y = ifelse(is.na(species_code.y), species_code.x, species_code.y)) %>%
+    dplyr::filter(taxon == "Crinoidea" & grepl("unid", common_name.y) | taxon != "Crinoidea") %>%
+    dplyr::select(phylum:taxon, common_name = common_name.x, id_guide_available, minimum_id_level, species_code = species_code.y) %>%
+    dplyr::bind_rows(., x %>% clean_names %>% filter(is.na(species_code))) %>%
+    dplyr::arrange(phylum, taxon)
   colnames(tabl) <- colnames(x)
 
   } else {
@@ -47,8 +47,8 @@ options(knitr.kable.NA = '')
 
 k <- kableExtra::kable(tabl, format = "html", linesep = "",
                   align = rep("l", 6)) %>%
-  column_spec(1, bold = TRUE) %>%
-  collapse_rows(1, latex_hline = "custom", valign = "top") 
+  kableExtra::column_spec(1, bold = TRUE) %>%
+  kableExtra::collapse_rows(1, latex_hline = "custom", valign = "top") 
   
 cat(k)
 
