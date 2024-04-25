@@ -92,7 +92,7 @@ source("sub_tasks/05_render_species_pages.R")
 
 
 ##   Loop over comb df and render each page ------------------------------------
-
+ 
 for (jj in 1:nrow(comb)) { ## Loop over pages -- start
   if (comb$template_rmd[jj] == "") next # direct pdfs
 
