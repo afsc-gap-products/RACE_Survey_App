@@ -6,7 +6,7 @@
 ## Import packages, authenticate google drive ----------------------------------
 
 source("sub_tasks/01_import_R_packages.R")
-googledrive::drive_deauth()
+# googledrive::drive_deauth()
 googledrive::drive_auth()
 1
 
@@ -30,7 +30,7 @@ source("sub_tasks/03_data.R")
 
 # Check that links work: listed below are links that do not work ---------------
 
-checkLinks(URLs = website_content$url_loc)
+checkLinks(URLs = website_content$url_loc[website_content$in_survey_app])
 checkLinks(URLs = task_list_data$url_loc)
 checkLinks(URLs = taxa_guides$url_loc)
 
@@ -44,6 +44,7 @@ checkLinks(URLs = taxa_guides$url_loc)
 dir_pdfs <- c("Codebook", "Emergency Flow Chart")
 
 comb <- website_content %>%
+  dplyr::filter(in_survey_app) %>%
   dplyr::select(page, sub_page) %>%
   dplyr::distinct() %>%
   dplyr::mutate(template_rmd = "template.rmd") %>%
@@ -104,7 +105,7 @@ for (jj in 1:nrow(comb)) { ## Loop over pages -- start
   )
   page_dat <- website_content %>%
     dplyr::filter(page == page_title &
-      sub_page == page_desc &
+      sub_page == page_desc & in_survey_app &
       (title != "" | Links != ""))
 
   ## Render document
