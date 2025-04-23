@@ -11,7 +11,7 @@ googledrive::drive_auth()
 1
 
 ## Import helper functions -----------------------------------------------------
-srvys <- c("NBS", "EBS", "BS", "AI")
+srvys <- c("NBS", "EBS", "BS", "GOA")
 source("sub_tasks/02_functions.R")
 
 ##   Clear the html files in docs/ folder. Since it takes a while to create

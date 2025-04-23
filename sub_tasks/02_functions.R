@@ -62,6 +62,7 @@ checkLinks <- function(URLs,
         isFALSE(file.exists(URL))) {
       
       notworking <- c(notworking, URL)
+      notworking <- notworking[!grepl("^\\.\\.|\\.html$", notworking)]
     }
   }
   
