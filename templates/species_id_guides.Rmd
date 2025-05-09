@@ -17,7 +17,7 @@ all_files <- taxa_guides %>%
       section == "algae" ~ "Algae",
       TRUE ~ "Inverts"
     ),
-    url_loc = stringr::str_replace(url_loc, "\\.", "\\.."),
+    url_loc = stringr::str_replace(url_loc, "\\./files", "\\../files"),
     reference = paste0("[", title, "](", gsub(" ", "%20", url_loc), ")")
   )
 ```
