@@ -31,7 +31,7 @@ if (nrow(page_dat) != 0) {
         dplyr::filter(subsection == unique(x = temp0$subsection)[ii])
       
       # compile text that will go on the page
-      str000 <- paste( paste0("|      ", temp$title_link, # title
+      str000 <- paste( paste0("|      ", temp$title_link_inline, # title
                               ifelse(test = is.na(x = temp$subtitle), 
                                      yes = "", 
                                      no = paste0(": *", temp$subtitle, "*")), # subtitle

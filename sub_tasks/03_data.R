@@ -104,20 +104,12 @@ website_content <- website_content %>%
                         (subsection)),
     
     # Hyperlinked titles URL links
-    title_link = ifelse(test = url_loc == "",
-                        yes = title,
-                        no = paste0("[", title, "](../", url_loc, ")")
-    ),
-    Links = ifelse(test = url_web == "",
-                   yes = title_link,
-                   no = paste0(title_link, " \n\n ([Web link](", url_web, "))")
-    ),
-    title_link_inline = ifelse(test = url_web == "",
-                               yes = title_link,
-                               no = paste0(title_link, " ([Web link](", 
-                                           url_web, "))")
-    )
-  ) %>%
+    title_link_inline = case_when(
+      !is.na(url_loc) & !is.na(url_web) ~ paste0("[", title, "](../", url_loc, ")", " ([Web link](", url_web, "))"),
+      !is.na(url_loc) & is.na(url_web) ~ paste0("[", title, "](../", url_loc, ")"),
+      is.na(url_loc) & !is.na(url_web) ~ paste0("[", title, "](", url_web, ")"),
+      is.na(url_loc) & is.na(url_web) ~ title
+    )) %>%
   dplyr::arrange(page, sub_page) %>%
   dplyr::relocate(page, sub_page, section, subsection, 
                   title, title_link_inline, subtitle, descrip

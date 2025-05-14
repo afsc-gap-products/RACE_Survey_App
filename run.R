@@ -106,7 +106,7 @@ for (jj in 1:nrow(comb)) { ## Loop over pages -- start
   page_dat <- website_content %>%
     dplyr::filter(page == page_title &
       sub_page == page_desc & in_survey_app &
-      (title != "" | Links != ""))
+      (title != "" | !grepl("\\[", title_link_inline )))
 
   ## Render document
   rmarkdown::render(
