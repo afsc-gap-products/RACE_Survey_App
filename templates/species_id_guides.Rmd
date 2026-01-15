@@ -1,9 +1,5 @@
 ---
 title: "Species Identification Guides"
-output: 
-  distill::distill_article:
-    toc: true
-    md_extensions: -native_divs
 ---
   
 ```{r guides, echo = F}

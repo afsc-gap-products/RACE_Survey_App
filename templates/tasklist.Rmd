@@ -1,8 +1,5 @@
 ---
 title: "`r page_desc`"
-output: 
-  distill::distill_article:
-    toc: true
 ---
 
 ```{r Subset Checklist documents for BS, echo = F, results="asis"}

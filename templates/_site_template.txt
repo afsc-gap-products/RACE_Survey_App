@@ -20,8 +20,12 @@ output:
     toc: true
     toc_float: true
     includes:
+      in_header: search_setup.html  
       after_body:
       - footer.html
+resources:
+  - "site_libs/js/fuse.js"
+  - "search_index.json"
 editor_options:
   chunk_output_type: console
 

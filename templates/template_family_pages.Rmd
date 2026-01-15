@@ -1,7 +1,6 @@
 ---
 title: "`r fam`"
 description: "`r subtitle`"
-output: html_document
 ---
 
 ```{r, include=FALSE}

@@ -1,6 +1,5 @@
 ---
 title: "Alaska Fish ID by Family"
-output: html_document
 ---
 
 ```{r setup, include=FALSE}

@@ -1,7 +1,6 @@
 ---
 title: "Minimum Identification List"
 description: "EBS and AI/GOA regions"
-output: html_document
 ---
 
 ```{r setup, include=FALSE}

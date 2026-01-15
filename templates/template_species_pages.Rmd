@@ -1,7 +1,6 @@
 ---
 title: "`r title`"
 description: "`r subtitle`"
-output: html_document
 ---
 
 ```{r setup, include=FALSE}

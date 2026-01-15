@@ -9,6 +9,7 @@ pkg <- c( "stringr",
           "janitor", 
           "rmarkdown", 
           "distill", 
+          "writexl",
           
           # read url
           "XML",

@@ -1,0 +1,1255 @@
+[
+  {
+    "title": "Calibrate ES80",
+    "section": "Calibrate ES80",
+    "url_loc": "../files/Collections/ES60_80/ES80_protocols_2025.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Check FPC filebox or print copies of blank ES80 log forms for skipper",
+    "section": "Calibrate ES80",
+    "url_loc": "../files/Collections/ES60_80/es60 forms/ES60 log.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Fill-out ES80 Parameter change form",
+    "section": "Calibrate ES80",
+    "url_loc": "../files/Collections/ES60_80/es60 forms/ES60_Parameter change form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Fill-out ES80 Pre-cruise settings sheet",
+    "section": "Calibrate ES80",
+    "url_loc": "../files/Collections/ES60_80/es60 forms/ES60 Pre-cruise settings sheet.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Following the calibration of a vessel's ES80 Simrad sounder, the down riggers and appropriate associated gear should be rinsed with freshwater dried and stowed in a dry location. The clamps provided should be greased or at the very least, oiled to prevent corrosion and seizing of the screw mechanism.",
+    "section": "Calibrate ES80",
+    "source": "entries"
+  },
+  {
+    "title": "Add polycorder mount and length strip to length boards",
+    "section": "Deck",
+    "source": "entries"
+  },
+  {
+    "title": "Check content's of your vessel's bottom contact sensor (BCS) tool box. Turning the BCS tool box over to the vessel's deck crew does not release you from responsibility for the condition of its contents",
+    "section": "Deck",
+    "source": "entries"
+  },
+  {
+    "title": "Check glycerol/thymol solution to make sure it is not floculent and has proper dilution and viscosity",
+    "section": "Deck",
+    "source": "entries"
+  },
+  {
+    "title": "Check that you have bleach in your inventory for cleaning otolith trays",
+    "section": "Deck",
+    "source": "entries"
+  },
+  {
+    "title": "Check to see if there is a meter stick for measuring trawl alley catches",
+    "section": "Deck",
+    "source": "entries"
+  },
+  {
+    "title": "Provide gloves & hard hats required by scientific crew",
+    "section": "Deck",
+    "source": "entries"
+  },
+  {
+    "title": "Set up catch, length, stomach, and specimen tablets (back up Paper Forms available)",
+    "section": "Deck",
+    "source": "entries"
+  },
+  {
+    "title": "Set up otolith and specimen supplies (ethanol, glycerol, otolith trays and vials/caps, tweezers, knives, formalin, buckets, specimen labels, plastic bags)",
+    "section": "Deck",
+    "source": "entries"
+  },
+  {
+    "title": "Stuff otolith vials with labels (otolithlabels.xls)",
+    "section": "Deck",
+    "url_loc": "../files/Collections/Otoliths/Otolith Label Maker.xls",
+    "source": "entries"
+  },
+  {
+    "title": "Get a record of the starting amount of fuel on the boat before the survey begins",
+    "section": "General",
+    "source": "entries"
+  },
+  {
+    "title": "Conduct pre-cruise Safety check",
+    "section": "General",
+    "url_loc": "../files/Safety/Safety Leader duties and checklist.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Conduct pre-cruise Safety meeting with skipper, scientific staff, and crew in wheelhouse",
+    "section": "General",
+    "subtitle": "Safety Briefing Form",
+    "url_loc": "../files/Safety/Safety Briefing form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Conduct pre-cruise Safety meeting with skipper, scientific staff, and crew in wheelhouse",
+    "section": "General",
+    "subtitle": "FPC Orientation checklist",
+    "url_loc": "../files/Manuals/Checklist for FPC talk 2024.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Conduct pre-cruise Safety meeting with skipper, scientific staff, and crew in wheelhouse",
+    "section": "General",
+    "subtitle": "Watch Sexual Harassment Video",
+    "url_loc": "../files/safety/Sexual Harassment/Fostering a Respectful Work Environment.mp4",
+    "source": "entries"
+  },
+  {
+    "title": "Conduct pre-cruise Safety meeting with skipper, scientific staff, and crew in wheelhouse",
+    "section": "General",
+    "subtitle": "Discuss SASH prevention standards with scientific and vessel crew",
+    "source": "entries"
+  },
+  {
+    "title": "Conduct survival suit inspection",
+    "section": "General",
+    "subtitle": "Check survival suit inventory and assign a suitably-sized survival suit to each scientific staff",
+    "source": "entries"
+  },
+  {
+    "title": "Conduct survival suit inspection",
+    "section": "General",
+    "subtitle": "Check serial numbers for survival suits and 406MHz EPIRBS",
+    "source": "entries"
+  },
+  {
+    "title": "Conduct survival suit inspection",
+    "section": "General",
+    "subtitle": "Record personal survival suit and EPIRB identification numbers on the Safety Briefing form",
+    "url_loc": "../files/Safety/Safety Briefing form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Conduct survival suit inspection",
+    "section": "General",
+    "subtitle": "Email RACE Deputy Director that Safety Briefing was completed with list of serial numbers for survival suits and 406MHz EPIRBs",
+    "source": "entries"
+  },
+  {
+    "title": "Provide clean bedding for all new scientists",
+    "section": "General",
+    "source": "entries"
+  },
+  {
+    "title": "Provide Fuel PO# (purchase order number) and sign and obtain copy of fuel receipt if fuel taken.  Keep hard copy of receipts for Lyle.",
+    "section": "General",
+    "url_loc": "../files/purchase/Fuel Purchase Form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Review at-sea Safety action plan",
+    "section": "General",
+    "url_loc": "../files/Safety/at-sea Safety action plan.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Review inter-leg communication log prepared by FPC from previous leg (if applicable)",
+    "section": "General",
+    "source": "entries"
+  },
+  {
+    "title": "Review inventory list",
+    "section": "General",
+    "subtitle": "EBS/NBS",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/../files/Survey inventory lists/RSST Inventory/EBS Gear Requests - Google Sheets.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Review inventory list",
+    "section": "General",
+    "subtitle": "AI/GOA",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/Gear Requests - Google Sheets.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Survey map (indicating completed tows & those yet to be completed by vessel)",
+    "section": "General",
+    "url_loc": "../files/Station Info/",
+    "source": "entries"
+  },
+  {
+    "title": "Confirm that all scales, tablets, and computers are working before leaving the dock",
+    "section": "Software and Hardware",
+    "source": "entries"
+  },
+  {
+    "title": "If using Olex, provide skipper with these files",
+    "section": "Software and Hardware",
+    "url_loc": "../files/Manuals/Olex and OpenCPN/",
+    "source": "entries"
+  },
+  {
+    "title": "If using TimeZero, provide skipper with these files",
+    "section": "Software and Hardware",
+    "url_loc": "../files/Manuals/TimeZero/",
+    "source": "entries"
+  },
+  {
+    "title": "Install WHEELHOUSE updates (if necessary)",
+    "section": "Software and Hardware",
+    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Wheelhouse update/",
+    "source": "entries"
+  },
+  {
+    "title": "Make sure new ES80 hard drive was installed for each new leg",
+    "section": "Software and Hardware",
+    "url_loc": "../files/Collections/ES60_80/ES60 Hard drive instructions.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Make sure there are back up media, e.g., thumb drives, for daily backup of bridge and catch computer",
+    "section": "Software and Hardware",
+    "source": "entries"
+  },
+  {
+    "title": "Provide skipper with most current version of Globe LINES & MARKS files and put in their C:/Globe/lines/ directory",
+    "section": "Software and Hardware",
+    "subtitle": "EBS lines",
+    "url_loc": "../files/Manuals/Globe/lines/EBS",
+    "source": "entries"
+  },
+  {
+    "title": "Provide skipper with most current version of Globe LINES & MARKS files and put in their C:/Globe/lines/ directory",
+    "section": "Software and Hardware",
+    "subtitle": "NBS lines",
+    "url_loc": "../files/Manuals/Globe/lines/NBS",
+    "source": "entries"
+  },
+  {
+    "title": "Provide skipper with most current version of Globe LINES & MARKS files and put in their C:/Globe/lines/ directory",
+    "section": "Software and Hardware",
+    "subtitle": "EBS marks",
+    "url_loc": "../files/Manuals/Globe/marks/EBS",
+    "source": "entries"
+  },
+  {
+    "title": "Provide skipper with most current version of Globe LINES & MARKS files and put in their C:/Globe/lines/ directory",
+    "section": "Software and Hardware",
+    "subtitle": "NBS marks",
+    "url_loc": "../files/Manuals/Globe/marks/NBS/",
+    "source": "entries"
+  },
+  {
+    "title": "Set Globe program on bridge TO RECORD LOG AND TRACK data",
+    "section": "Software and Hardware",
+    "url_loc": "../files/Manuals/Globe/EBS Globe instructions 2009.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Set up bridge computers according to Marport and Wheelhouse cookbooks",
+    "section": "Software and Hardware",
+    "url_loc": "../files/Manuals/Bridge_computers_setup/Bridge computer setup.jpg",
+    "source": "entries"
+  },
+  {
+    "title": "Begin new Fishing Gear Field Report, which should be passed to subsequent FPCs to continue filling in, and then emailed to Shawn Russell (Shawn.Russel@noaa.gov) at the end of the survey",
+    "section": "Trawl net",
+    "subtitle": "EBS/NBS",
+    "url_loc": "../files/Net and wire maintenance/Net repair tracking forms/83-112 Fishing gear Field report FY2022.xlsx",
+    "source": "entries"
+  },
+  {
+    "title": "Begin new Fishing Gear Field Report, which should be passed to subsequent FPCs to continue filling in, and then emailed to Shawn Russell (Shawn.Russel@noaa.gov) at the end of the survey",
+    "section": "Trawl net",
+    "subtitle": "GOA/AI",
+    "url_loc": "../files/Net and wire maintenance/Net repair tracking forms/Nor Eastern Trawl Field Report FY2022.xlsx",
+    "source": "entries"
+  },
+  {
+    "title": "Conduct practice trawl and fill out Standard Trawing Procedures form",
+    "section": "Trawl net",
+    "url_loc": "../files/Net and wire maintenance/Standard Trawling Procedures Form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Configure attachment of net jewelry (see attached picture)",
+    "section": "Trawl net",
+    "url_loc": "../files/Net and wire maintenance/EBS Height Sensor Attachment.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Initialize MK9 light meter and secure for use on trawl headrope",
+    "section": "Trawl net",
+    "url_loc": "../files/Manuals/Light meters/Wildlife Computers MK9 Stan/Light meter instuctions 2018.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Mark trawl wires",
+    "section": "Trawl net",
+    "subtitle": "Check that you have sufficient wire marking paint in your inventory",
+    "source": "entries"
+  },
+  {
+    "title": "Mark trawl wires",
+    "section": "Trawl net",
+    "subtitle": "Mark trawl wires - step-by-step wire marking protocol",
+    "url_loc": "../files/Net and wire maintenance/wiremarking/",
+    "source": "entries"
+  },
+  {
+    "title": "Mark trawl wires",
+    "section": "Trawl net",
+    "subtitle": "Wire marking photos (AI/GOA)",
+    "url_loc": "../files/Net and wire maintenance/Wiremarking/OEX 2022 photos",
+    "source": "entries"
+  },
+  {
+    "title": "Refer to net swapping procedure to randomly determine the sequential order of net usage and record on the Net Swapping Log Form.",
+    "section": "Trawl net",
+    "url_loc": "../files/Net and wire maintenance/Net_repair/netswappingform.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "All tools cleaned and replaced in their proper case and location",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Check survival suit inventory, to ensure all incoming scientific Personnel have a suitable size",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Checklist for bundling and stacking a net",
+    "section": "Cleaning & Packing",
+    "url_loc": "../files/Net and wire maintenance/Checklist_trawlnet.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Chemical storage cleaned and rinsed thoroughly and chemicals returned",
+    "section": "Cleaning & Packing",
+    "url_loc": "../files/Collections/haul_catch_specimen_forms/catchforms/Preservation Procedures for Voucher Collection.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Clean and dry on-deck ID guides",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Clean and vacuum state rooms and remove trash (each leg!)",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Collect all boots and rain gear loaned to interns and others as they depart the vessel",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Full ethanol and formalin buckets capped with uncut lids and buckets properly labeled",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "For completed otolith trays:",
+    "section": "Cleaning & Packing",
+    "subtitle": "Make sure caps are tightened and trays are scrubbed with dilute bleach solution and subsequently dried",
+    "source": "entries"
+  },
+  {
+    "title": "For completed otolith trays:",
+    "section": "Cleaning & Packing",
+    "subtitle": "Pollock otoliths packaged and shipped after each leg (EBS SHELF only)",
+    "url_loc": "../files/Shipping-Hazmat/Shipping of Pollock otoliths in Glycerin.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Freshwater rinse all metal tools and parts (bolts, washers, nuts etc.) that have been on deck and exposed to saltwater",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Put frozen specimens in freezer boxes, properly labeled and seal with tape and ship",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Remaining ethanol and formalin properly stored and labeled",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Scrub and pressure-wash deck tables, baskets, and white totes",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Stuff all used bedding and pillows in trash bags labeled USED",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Take properly sealed and labeled stomach buckets to Coastal Transportation for shipment",
+    "section": "Cleaning & Packing",
+    "url_loc": "../files/Shipping-Hazmat/End_of_leg_StomachBuckets.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Completed forms from FPC filebox",
+    "section": "Data Administration",
+    "source": "entries"
+  },
+  {
+    "title": "Copy of fuel receipt and fuel purchase form to RACE Directorate",
+    "section": "Data Administration",
+    "url_loc": "../files/purchase/Fuel Purchase Form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "Leg data sheets (HAULFORM, Wheelhouse Haul Rept, METIS Catch and Length Reports (mandatory), ES80 LOG SHEETS) and hand carry to Seattle",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "WHEELHOUSE/CALYPSO computer - Make copies of all BTD, BTH, BC2, and MARP files",
+    "url_loc": "../../wheelhouse",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "WHEELHOUSE/CALYPSO computer - Use DB_Utilities to back-up WHEELHOUSE DB",
+    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Instr_reblding_WH_OracleDB.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "WHEELHOUSE/CALYPSO computer - Make copy of DDMMYYYY*.DMP and exp_python.log files from C:/oracle_data_pump_files directory",
+    "url_loc": "../../oracle_data_pump_files",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "MARPORT computer - Make copy of C/:Program Files/Marport Server/Logs directory (BVDR files)",
+    "url_loc": "../../Program Files/Marport Server/Logs",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "CATCH computer - Make copy of METIS data in C:/data directory",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "CATCH computer - Make copies of photos from leg directory (C:/Data/Photos)",
+    "url_loc": "../files/Manuals/Portfolio/Portfolio Photo Management Software Instructions.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "CATCH computer - copy Catch, Length and Specimen App CSV files from bluetooth directory (C:/Users/NOAADATA/Documents/Bluetooth/inbox) **please note: The RAW Catch and Specimen CSV files off of tablets should also be hand carried to Seattle following each leg**",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "GLOBE computer - Make copy of Globe track data files (C:/Globe/Tracks/)",
+    "url_loc": "../files/Manuals/globe/tracks/",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "GLOBE computer - Make copy of Globe log data files (C:/Globe/Log/2025/*.glg)",
+    "url_loc": "../../Program Files/globe/log/2025/*.glg",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "ES80 computer - swap portable hard-drive and hand carry back to Seattle; ensure replacement is in working order. LEAVE POWER SUPPLIES and USB connectors for ES80 backup hard drives onboard the survey vessel until the end of the survey",
+    "url_loc": "../files/Collections/ES60_80/ES60 Hard drive instructions.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "CTD computer - make copies of CTD files from the leg",
+    "source": "entries"
+  },
+  {
+    "title": "Prepare report inventoring progress of each Special Project assigned to the vessel for the next leg's deck lead",
+    "section": "Data Administration",
+    "source": "entries"
+  },
+  {
+    "title": "Record the quantity of packages associated with each project and email or deliver that information to the Special Projects Coordinator",
+    "section": "Data Administration",
+    "source": "entries"
+  },
+  {
+    "title": "WHEELHOUSE/CALYPSO computer",
+    "section": "Data Administration",
+    "subtitle": "Use DB_Utilities to make 7zip file (remaining or fixed hauls) and SFTP to Seattle DB (Note: check with people in Seattle before SFTP'ing new hauls, as any uploads you make will overwrite previous uploads)",
+    "url_loc": "../files/Manuals/Calypso_wheelhouse/SFTP instructions.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "All injuries (ergonomic or other) and near misses should be submitted to the AFSC Incident Report Form",
+    "section": "General",
+    "source": "entries"
+  },
+  {
+    "title": "Fill out Inter-leg Communication Log",
+    "section": "General",
+    "url_loc": "../files/Manuals/miscellaneous/Inter-Leg Communication Log.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Fuel",
+    "section": "General",
+    "subtitle": "Provide Fuel PO# (purchase order number) and sign and obtain copy of fuel receipt if fuel taken",
+    "url_loc": "../files/purchase/Fuel Purchase Form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Pass Fishing Gear Field Report spreadsheet to incoming FPC (make sure they know where it is located on the computer)",
+    "section": "General",
+    "subtitle": "EBS/NBS",
+    "url_loc": "../files/Net and wire maintenance/Net repair tracking forms/83-112 Fishing gear Field report FY2022.xlsx",
+    "source": "entries"
+  },
+  {
+    "title": "Pass Fishing Gear Field Report spreadsheet to incoming FPC (make sure they know where it is located on the computer)",
+    "section": "General",
+    "subtitle": "GOA/AI",
+    "url_loc": "../files/Net and wire maintenance/Net repair tracking forms/Nor Eastern Trawl Field Report FY2022.xlsx",
+    "source": "entries"
+  },
+  {
+    "title": "**Pack only RSST items in RSST tote**",
+    "section": "Cleaning & Packing",
+    "url_loc": "../files/Survey inventory lists/RSST inventory/",
+    "source": "entries"
+  },
+  {
+    "title": "All items removed from the bridge/house including antennas, signs, wiring, etc. (leave MR350 GPS pucks mounted on vessel)",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "All tools cleaned and replaced in their proper case and location",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Any equipment being kept in Dutch Harbor for another cruise should be inventoried and the inventory list brought back to Seattle",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Checklist for bundling and stacking a net",
+    "section": "Cleaning & Packing",
+    "url_loc": "../files/Net and wire maintenance/Checklist_trawlnet.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Chemical storage cleaned and rinsed thoroughly and chemicals returned to containers in chemical tote.",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Clean and dry on-deck ID guides",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Clean and vacuum state rooms and remove trash",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Collect all boots and rain gear loaned to interns and others as they depart the vessel",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Collect, turn off, download data from, and pack light meter from net",
+    "section": "Cleaning & Packing",
+    "subtitle": "Print instructions for data download are also in the light meter bag. Backup light meter data with other effort data.",
+    "url_loc": "../files/Manuals/Light meters/Wildlife Computers MK9 Stan/Light meter instuctions 2018.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Contact shipping company to pick up loaded container(s) for southbound voyage. GBL(s) will be with RSST. Vessel should also have digital PDF copy of GBL.",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Electronic scales: clean and scrub, rinse with fresh water, dry, and pack",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Empty the eyewash bottles as one of your last items; ship them home empty.",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "ES80 Calibration (end of last leg)",
+    "section": "Cleaning & Packing",
+    "url_loc": "../files/Collections/ES60_80/ES80_protocols_2025.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Ethanol and formalin buckets capped with uncut lids and buckets properly labeled",
+    "section": "Cleaning & Packing",
+    "url_loc": "../files/Collections/haul_catch_specimen_forms/catchforms/Preservation Procedures for Voucher Collection.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "For completed otolith trays:",
+    "section": "Cleaning & Packing",
+    "subtitle": "Make sure caps are tightened and trays are scrubbed with dilute bleach solution and subsequently dried",
+    "source": "entries"
+  },
+  {
+    "title": "For completed otolith trays:",
+    "section": "Cleaning & Packing",
+    "subtitle": "Pollock otoliths packaged and shipped after each leg (EBS SHELF only)",
+    "url_loc": "../files/Shipping-Hazmat/Shipping of Pollock otoliths in Glycerin.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Freshwater rinse all metal tools and parts (bolts, washers, nuts etc.) that have been on deck and exposed to saltwater.",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Frozen specimens put in freezer boxes, properly labeled and sealed with tape and shipped",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Net mensuration gear cleaned, disassembled and packed in cases",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Office supplies packed in gray boxes",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Open up and ensure contents of ES80 calibration kits are dry prior to transport down to Seattle",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Preserved specimens in buckets: Take properly sealed and labeled stomach buckets to Coastal Transportation for shipment.",
+    "section": "Cleaning & Packing",
+    "url_loc": "../files/Shipping-Hazmat/End_of_leg_StomachBuckets.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "RACE survival suits, PFD's and hard hats removed from vessel and OSI storage room and placed in the 40' container",
+    "section": "Cleaning & Packing",
+    "url_loc": "../files/Contracts/AFSC OSI job service requests.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Record the quantity of packages associated with each project and email or deliver that information to the Special Projects Coordinator",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Remaining ethanol and formalin properly stored and labeled",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Review and follow RSST Checklist to End-of-Survey Cleaning",
+    "section": "Cleaning & Packing",
+    "url_loc": "../files/Manuals/Survey operation manuals/End-of-Survey Cleaning Checklist.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Review and follow RSST Checklist to End-of-Survey Packing",
+    "section": "Cleaning & Packing",
+    "url_loc": "../files/Manuals/Survey operation manuals/End-of-Survey Packing Checklist.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Scrub and pressure-wash deck tables, baskets, and white totes",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Stuff all used bedding and pillows in trash bags labeled USED. Pack all used bedding and pillows from previous legs into van",
+    "section": "Cleaning & Packing",
+    "source": "entries"
+  },
+  {
+    "title": "Completed forms from FPC filebox",
+    "section": "Data Administration",
+    "source": "entries"
+  },
+  {
+    "title": "Get light sensors from trawl net and download data from it",
+    "section": "Data Administration",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "Leg data sheets (HAULFORM, Wheelhouse Haul Rept, METIS Catch and Length Reports (mandatory), ES80 LOG SHEETS) and hand carry to Seattle",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "Full list of filetypes to backup and bring home",
+    "url_loc": "../files/Manuals/Calypso_Wheelhouse/End of survey file types to backup and carry.docx",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "WHEELHOUSE/CALYPSO computer - Make copies of all BTD, BTH, BC2, and MARP files",
+    "url_loc": "../../wheelhouse",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "WHEELHOUSE/CALYPSO computer - Use DB_Utilities to back-up WHEELHOUSE DB",
+    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Instr_reblding_WH_OracleDB.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "WHEELHOUSE/CALYPSO computer - Make copy of DDMMYYYY*.DMP and exp_python.log files from C:/oracle_data_pump_files directory",
+    "url_loc": "../../oracle_data_pump_files",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "WHEELHOUSE computer - copy electronic station log; if possible scan physical paper station log pages on vessel",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "WHEELHOUSE computer - hand carry paper haul forms to Seattle (scan on vessel if possible)",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "MARPORT computer - Make copy of C/:Program Files/Marport Server/Logs directory (BVDR files)",
+    "url_loc": "../../Program Files/Marport Server/Logs",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "CATCH computer - Make copy of METIS data program in C:/data directory",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "CATCH computer - copy Length and Specimen App CSV files from bluetooth directory",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "GLOBE computer - Make copy of Globe track data files (C:/Globe/Tracks/)",
+    "url_loc": "../files/Manuals/globe/tracks/",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "GLOBE computer - Make copy of Globe log data files (C:/Globe/Log/2025/*.glg)",
+    "url_loc": "../../Program Files/globe/log/2025/*.glg",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "CTD Computer - Make copy of CTD data files",
+    "source": "entries"
+  },
+  {
+    "title": "HAND CARRY thumbdrive and/or hard copies back to Seattle",
+    "section": "Data Administration",
+    "subtitle": "ES80 computer - redirect ES80 software to C:/ directory instead of hard drive, and take back-up and regular hard drives back to Seattle (also take POWER SUPPLIES and USB connectors for hard drives at end of survey). The ES80 drive goes in a small black pelican case labeled with \"ES80 HD\", the  vessel, the region, and the year.",
+    "url_loc": "../files/Collections/ES60_80/ES60 Hard drive instructions.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "WHEELHOUSE/CALYPSO computer - Use DB_Utilities to make 7zip file (remaining or fixed hauls) and SFTP to Seattle DB",
+    "section": "Data Administration",
+    "url_loc": "../files/Manuals/Calypso_wheelhouse/SFTP instructions.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "All injuries (ergonomic or other) and near misses should be submitted to the AFSC Incident Report Form",
+    "section": "General",
+    "url_loc": "../files/Safety/Ergonomic Issue Report Form and Instructions.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Fuel",
+    "section": "General",
+    "subtitle": "Fuel receipt and fuel purchase form to RACE Directorate",
+    "url_loc": "../files/purchase/Fuel Purchase Form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Email completed Fishing Gear Field Report to Shawn Russell (Shawn.Russel@noaa.gov)",
+    "section": "General",
+    "subtitle": "GOA/AI",
+    "url_loc": "../files/Net and wire maintenance/Net repair tracking forms/Nor Eastern Trawl Field Report FY2022.xlsx",
+    "source": "entries"
+  },
+  {
+    "title": "Email completed Fishing Gear Field Report to Shawn Russell (Shawn.Russel@noaa.gov)",
+    "section": "General",
+    "subtitle": "EBS/NBS",
+    "url_loc": "../files/Net and wire maintenance/Net repair tracking forms/83-112 Fishing gear Field report FY2022.xlsx",
+    "source": "entries"
+  },
+  {
+    "title": "Fuel",
+    "section": "General",
+    "subtitle": "Ask engineer for remaining fuel report (tank soundings)",
+    "source": "entries"
+  },
+  {
+    "title": "Fuel",
+    "section": "General",
+    "subtitle": "**At least 5 days before the end of the charter**: Get fuel estimate from engineer and email to directorate, and confirm end-of-charter plan with supervisors and directorate",
+    "source": "entries"
+  },
+  {
+    "title": "Provide Fuel PO # and sign and obtain copy of fuel receipt if fuel taken. Keep hard copy of receipts for Lyle.",
+    "section": "General",
+    "url_loc": "../files/purchase/Fuel Purchase Form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Send timesheets to supervisors and RACE director (note: days working on the boat but at the dock do not count as sea days on timesheets)",
+    "section": "General",
+    "source": "entries"
+  },
+  {
+    "title": "algae",
+    "url_loc": "./files/SpeciesID/guides/algae/NOAA TM AFSC 389.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "arthropod",
+    "url_loc": "./files/SpeciesID/guides/inverts/Chionoecetes Crabs.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "arthropod",
+    "url_loc": "./files/SpeciesID/guides/inverts/crustacea/crabs.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "arthropod",
+    "url_loc": "./files/SpeciesID/guides/inverts/Crustacean Key notes.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "arthropod",
+    "url_loc": "./files/SpeciesID/guides/inverts/Acuna hermitcrabs.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "arthropod",
+    "url_loc": "./files/SpeciesID/guides/inverts/Lithodid Crabs.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "bird",
+    "url_loc": "./files/SpeciesID/guides/birdmammal/AK Seabird Guide.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "bird",
+    "url_loc": "./files/SpeciesID/guides/birdmammal/Albatross ID Guide.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "bird",
+    "url_loc": "./files/SpeciesID/Protected_Species/ID guides/ESA AK Bird ID.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "bird",
+    "url_loc": "./files/SpeciesID/guides/birdmammal/eider factsv2.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "bird",
+    "url_loc": "./files/SpeciesID/guides/birdmammal/Eider facts.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "cnidaria",
+    "url_loc": "./files/SpeciesID/guides/inverts/AlaskaCoralguide.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "cnidaria",
+    "url_loc": "./files/SpeciesID/guides/inverts/Coral field guide2021.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "cnidaria",
+    "url_loc": "./files/SpeciesID/guides/inverts/Jellyfish placard.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "cnidaria",
+    "url_loc": "./files/SpeciesID/guides/inverts/cnidaria/coral_guide_Stone2023.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "echinoderm",
+    "url_loc": "./files/SpeciesID/guides/inverts/echinoderm/Brittle stars.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "echinoderm",
+    "url_loc": "./files/SpeciesID/guides/inverts/echinoderm/Echinoidea.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "echinoderm",
+    "url_loc": "./files/SpeciesID/guides/inverts/AK seastars1.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "echinoderm",
+    "url_loc": "./files/SpeciesID/guides/inverts/AK seastars2.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "echinoderm",
+    "url_loc": "./files/SpeciesID/guides/inverts/AK seastars3.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "echinoderm",
+    "url_loc": "./files/SpeciesID/guides/inverts/echinoderm/Sand dollars.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "echinoderm",
+    "url_loc": "./files/SpeciesID/guides/inverts/echinoderm/Holothuroidea.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "echinoderm",
+    "url_loc": "./files/SpeciesID/guides/inverts/echinoderm/sea urchins.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "subtitle": "Gadidae",
+    "url_loc": "./files/SpeciesID/guides/fish/Gadids.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "subtitle": "Liparidae",
+    "url_loc": "./files/SpeciesID/guides/fish/snailfishes_2022.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "subtitle": "Myctophidae",
+    "url_loc": "./files/SpeciesID/guides/fish/AKMyctophidae.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "subtitle": "Pleuronectidae",
+    "url_loc": "./files/SpeciesID/guides/fish/Flatfish key.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "subtitle": "Rajiidae",
+    "url_loc": "./files/SpeciesID/guides/fish/Bpanthera orr2011.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "subtitle": "Rajiidae",
+    "url_loc": "./files/SpeciesID/guides/fish/Skate egg case graph.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "subtitle": "Rajiidae",
+    "url_loc": "./files/SpeciesID/guides/fish/AK skates.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "subtitle": "Rajiidae",
+    "url_loc": "./files/SpeciesID/guides/fish/Skate eggcase key.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "subtitle": "Salmonidae",
+    "url_loc": "./files/SpeciesID/guides/fish/Salmon Guide 2010.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "subtitle": "Sebastidae",
+    "url_loc": "./files/SpeciesID/guides/fish/FMA Rockfish Guide 2016.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "subtitle": "Sebastidae",
+    "url_loc": "./files/SpeciesID/guides/fish/AKrockfishes orr02.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "subtitle": "Sebastidae",
+    "url_loc": "./files/SpeciesID/guides/fish/Rockfishes TM.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "subtitle": "Sebastidae",
+    "url_loc": "./files/SpeciesID/guides/fish/RougheyeBspotDeck.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "subtitle": "Squalidae",
+    "url_loc": "./files/SpeciesID/guides/fish/Squalus suckleyi2010.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "subtitle": "Zoarcidae",
+    "url_loc": "./files/SpeciesID/guides/fish/AKeelpouts.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "url_loc": "./files/SpeciesID/guides/fish/AK Fishes 2024.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "url_loc": "./files/SpeciesID/guides/fish/Mecklenburg2011.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "url_loc": "./files/SpeciesID/guides/fish/Chukchi 2012 FishID.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "url_loc": "./files/SpeciesID/guides/fish/EBS 2012 FishID.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "url_loc": "./files/SpeciesID/guides/fish/FMA SpeciesID 2019.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "url_loc": "./files/SpeciesID/guides/fish/Mecklenburg2015.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "url_loc": "./files/SpeciesID/guides/fish/Atlas 2016.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "url_loc": "./files/SpeciesID/guides/fish/Skates AK field guide.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "url_loc": "./files/SpeciesID/guides/fish/Species ID Confidence AIGOA.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "url_loc": "./files/SpeciesID/guides/fish/Species ID Confidence EBS.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "url_loc": "./files/SpeciesID/guides/fish/Species ID Confidence EBSslope.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "url_loc": "./files/SpeciesID/guides/fish/AK fish distributions Love et al. 2021.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "mammal",
+    "url_loc": "./files/SpeciesID/guides/birdmammal/MM of Alaska Arctic.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "mammal",
+    "url_loc": "./files/SpeciesID/guides/birdmammal/NPRight Whale Guide.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "mollusc",
+    "url_loc": "./files/SpeciesID/guides/inverts/Cephalopod Guide 2013.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "mollusc",
+    "url_loc": "./files/SpeciesID/guides/inverts/Neptunea.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "mollusc",
+    "url_loc": "./files/SpeciesID/guides/inverts/Mollusca training 2012.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "mollusc",
+    "url_loc": "./files/SpeciesID/guides/inverts/OctopusSex.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "mollusc",
+    "url_loc": "./files/SpeciesID/guides/inverts/poster chitons of AK.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "sponge",
+    "url_loc": "./files/SpeciesID/guides/inverts/Deepwater sponges AI.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "sponge",
+    "url_loc": "./files/SpeciesID/guides/inverts/Sponge Morphotypes.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "sponge",
+    "url_loc": "./files/SpeciesID/guides/inverts/sponges.ppt",
+    "source": "guides"
+  },
+  {
+    "title": "worm",
+    "url_loc": "./files/SpeciesID/guides/inverts/Errantiate Polychaetes.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "worm",
+    "url_loc": "./files/SpeciesID/guides/inverts/Errantiate Polychaeta.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "worm",
+    "url_loc": "./files/SpeciesID/guides/inverts/Sedentariate Polychaeta.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "worm",
+    "url_loc": "./files/SpeciesID/guides/inverts/Polychaetes of BC.pdf",
+    "source": "guides"
+  },
+  {
+    "url_loc": "./files/SpeciesID/guides/inverts/AKinverts.pdf",
+    "source": "guides"
+  },
+  {
+    "url_loc": "./files/SpeciesID/guides/inverts/Drumm AKinvertChecklist.pdf",
+    "source": "guides"
+  },
+  {
+    "url_loc": "./files/SpeciesID/guides/inverts/Keys to Free Vol1.pdf",
+    "source": "guides"
+  },
+  {
+    "url_loc": "./files/SpeciesID/guides/inverts/Keys to Free Vol2.pdf",
+    "source": "guides"
+  },
+  {
+    "url_loc": "./files/SpeciesID/guides/inverts/Urochordata.pdf",
+    "source": "guides"
+  },
+  {
+    "url_loc": "./files/SpeciesID/guides/inverts/invert_guide_vol1.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "fish",
+    "url_loc": "https://apps-afsc.fisheries.noaa.gov/ichthyo/specframe.php",
+    "source": "guides"
+  },
+  {
+    "title": "inverts",
+    "url_loc": "./files/SpeciesID/guides/inverts/tunicates-of-alaska.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "mollusc",
+    "url_loc": "./files/SpeciesID/guides/inverts/Mollusca_Arctic_photoguide_Jan2021.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "worm",
+    "url_loc": "./files/SpeciesID/guides/inverts/Annelidae_Arctic_photoguide_Jan2021.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "arthropod",
+    "url_loc": "./files/SpeciesID/guides/inverts/Crustacea_Arctic_photoguide_Jan2021.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "echinoderm",
+    "url_loc": "./files/SpeciesID/guides/inverts/Echinodermata_Arctic_photoguide_Jan2021.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "inverts",
+    "url_loc": "./files/SpeciesID/guides/inverts/Misc_taxa_Arctic_photoguide_Jan2021.pdf",
+    "source": "guides"
+  }
+]

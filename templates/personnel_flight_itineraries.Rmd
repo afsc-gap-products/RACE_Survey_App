@@ -1,6 +1,5 @@
 ---
 title: "Travel Itineraries"
-output: html_document
 ---
 
 ```{r, results = 'asis', echo = F}
