@@ -42,3 +42,4 @@ rm(a, ipage, isubpage, site_yml, temp_subpages)
 rmarkdown::render(input = "templates/index.Rmd",
                   output_dir = "docs/",
                   output_file =  "index.html")
+

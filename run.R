@@ -28,6 +28,10 @@ clear_htmls() # removes all existing htmls in docs folder
 access_to_internet <- TRUE
 source("sub_tasks/03_data.R")
 
+## Create search bar data ------------------------------------------------------
+source("sub_tasks/04_search_bar_data.R")
+
+
 # Check that links work: listed below are links that do not work ---------------
 
 # checkLinks(URLs = website_content$url_loc[website_content$in_survey_app])
@@ -82,13 +86,13 @@ custom_comb$web_page <-
   )
 
 comb <- rbind(comb, custom_comb)
-source("sub_tasks/04_render_main_page.R")
+source("sub_tasks/05_render_main_page.R")
 
 
 # Render ID by Taxa page. ------------------------------------------------------
 
 ##   If remake_species_pages == TRUE, remake species pages
-source("sub_tasks/05_render_species_pages.R")
+source("sub_tasks/06_render_species_pages.R")
 
 
 

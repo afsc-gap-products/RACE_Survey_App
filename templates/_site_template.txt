@@ -25,7 +25,7 @@ output:
       - footer.html
 resources:
   - "site_libs/js/fuse.js"
-  - "search_index.json"
+  - "search_data.js"
 editor_options:
   chunk_output_type: console
 
