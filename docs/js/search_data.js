@@ -404,6 +404,12 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "**NEW** Volumetric worksheet",
+    "section": "Large catch resources",
+    "url_loc": "../files/Collections/volumetric_worksheet.xlsm",
+    "source": "entries"
+  },
+  {
     "title": "Steps for a volumetric catch",
     "section": "Large catch resources",
     "url_loc": "../files/Collections/Large catches/Steps for a Volumetric Catch.pdf",
@@ -752,6 +758,12 @@ var searchData = [
     "title": "Dockside wiremarking diagram (option 2)",
     "section": "",
     "url_loc": "../files/net and wire maintenance/wiremarking/Wire Marking Dock Side option 2.png",
+    "source": "entries"
+  },
+  {
+    "title": "Backup data sources when primary widgets fail",
+    "section": "",
+    "url_loc": ".../files/Manuals/data backup sources.pdf",
     "source": "entries"
   },
   {
@@ -1208,6 +1220,12 @@ var searchData = [
     "title": "Net Repair",
     "section": "",
     "url_loc": "../files/Net and wire maintenance/net_repair/",
+    "source": "entries"
+  },
+  {
+    "title": "Sink times",
+    "section": "",
+    "url_loc": "../files/Net and wire maintenance/sink times.pdf",
     "source": "entries"
   },
   {

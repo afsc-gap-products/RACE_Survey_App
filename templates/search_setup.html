@@ -133,9 +133,15 @@ document.addEventListener("DOMContentLoaded", function() {
     if (typeof searchData !== 'undefined') {
       console.log("Search data loaded locally:", searchData);
       fuse = new Fuse(searchData, {
-        keys: ['title', 'section', 'subtitle'],
-        threshold: 0.35,
-        ignoreLocation: true
+        includeScore: true,
+        shouldSort: true,
+        threshold: 0.2, // Adjust for sensitivity
+        ignoreLocation: true,
+        keys: [
+          { name: "title", weight: 0.5 },
+          { name: "section", weight: 0.3 },
+          { name: "subtitle", weight: 0.15 }  
+          ]
       });
     } else {
       console.error("searchData variable not found. Check if js/search_data.js is loaded.");
