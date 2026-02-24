@@ -7,9 +7,9 @@
 
 ## This code is primarally maintained by: 
 
-**Zack Oyafuso** (Zack.Oyafuso AT noaa.gov; @ZOyafuso-NOAA)
-
 **Sarah Friedman** (Sarah.Friedman AT noaa.gov; @SarahFriedman-NOAA)
+
+**Zack Oyafuso** (Zack.Oyafuso AT noaa.gov; @ZOyafuso-NOAA)
 
 **Emily Markowitz** (Emily.Markowitz AT noaa.gov; @EmilyMarkowitz-NOAA)
 
@@ -38,6 +38,10 @@ The run.R script is the main engine that produces the application. It sources a 
 See the [wiki page](https://github.com/afsc-gap-products/RACE_Survey_App/wiki) on how to modify the data inputs. 
 
 ![https://afsc-gap-products.github.io/RACE_Survey_App/index.html](templates/img/app_index_page.png)
+
+
+**Archived information** from previous years can be found on the G drive in the RACE_Survey_App Archive folder
+
 
 ## NOAA README
 
