@@ -3034,7 +3034,7 @@ background-color: #f9f9f9;
         fuse = new Fuse(searchData, {
           includeScore: true,
           shouldSort: true,
-          threshold: 0.15,
+          threshold: 0.2, // Adjust for sensitivity
           ignoreLocation: true,
           keys: [
             { name: "title", weight: 0.5 },
@@ -3170,11 +3170,12 @@ Safety
 <span class="down-arrow">▾</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="../files/Safety/Accidents/Accidents.pdf">Emergency Flow Chart</a>
+<a href="../files/Safety/Accidents/At Sea Incident Reporting.pdf">Emergency Flow Chart</a>
 <a href="Safety_Ergonomic_Resource_Library.html">Ergonomic Resource Library</a>
 <a href="Safety_Hazmat.html">Hazmat</a>
 <a href="Safety_Illness_and_injury_reporting.html">Illness and injury reporting</a>
 <a href="Safety_Manuals_and_References.html">Manuals and References</a>
+<a href="Safety_NA.html">NA</a>
 </div>
 </div>
 <div class="nav-dropdown">
@@ -3240,6 +3241,7 @@ Survey Ops
 <li><a href="#biological" id="toc-biological">Biological</a>
 <ul>
 <li><a href="#food-habitat-stomachs" id="toc-food-habitat-stomachs">Food Habitat (Stomachs)</a></li>
+<li><a href="#maturity" id="toc-maturity">Maturity</a></li>
 <li><a href="#on-deck-species-polycoder-codes" id="toc-on-deck-species-polycoder-codes">On-deck Species (Polycoder) Codes</a></li>
 <li><a href="#otoliths" id="toc-otoliths">Otoliths</a></li>
 <li><a href="#vouchers" id="toc-vouchers">Vouchers</a></li>
@@ -3264,10 +3266,15 @@ Survey Ops
 </div>
 <h2 id="biological">Biological</h2>
 <h3 id="food-habitat-stomachs">Food Habitat (Stomachs)</h3>
-<div class="line-block">     <a href=".././files/Collections/Stomachs/2025%20GOA%20Stomach%20Sampling.docx">AI/GOA Stomach Scans</a></div>
-<div class="line-block">     <a href=".././files/Collections/Stomachs/2025%20EBS%20Shelf%20Stomach%20Sampling.docx">BS Stomach Collections</a></div>
+<div class="line-block">     <a href=".././files/Collections/Stomachs/2026%20AI%20Stomach%20Collection.pdf">AI/GOA Stomach Collections</a></div>
+<div class="line-block">     <a href=".././files/Collections/Stomachs/2026%20AI%20Stomach%20Scan.pdf">AI/GOA Stomach Scans</a></div>
+<div class="line-block">     <a href=".././files/Collections/Stomachs/2026%20EBS%20Stomach%20Collection.pdf">BS Stomach Collections</a></div>
 <div class="line-block">     <a href=".././files/Collections/Stomachs/Stomach_App_Resources/">Stomach App Resources</a></div>
-<div class="line-block">     <a href=".././files/Collections/Stomachs/2025%20Stomach%20Collection.pdf">Stomach collection training powerpoint</a></div>
+<div class="line-block">     <a href=".././files/Collections/Stomachs/Stomach%20Collection%20Methods.pdf">Stomach Collection Methods</a></div>
+<h3 id="maturity">Maturity</h3>
+<div class="line-block">     <a href=".././files/Collections/Maturity/Halibut%20Maturity%20Key.pdf">Halibut Maturity Key</a></div>
+<div class="line-block">     <a href=".././files/Collections/Maturity/Visual%20Maturity%20Key%20AI.pdf">Visual Maturity Keys AI</a></div>
+<div class="line-block">     <a href=".././files/Collections/Maturity/Visual%20Maturity%20Key%20EBS.pdf">Visual Maturity Keys EBS</a></div>
 <h3 id="on-deck-species-polycoder-codes">On-deck Species (Polycoder) Codes</h3>
 <div class="line-block">     <a href=".././files/Collections/Polycorder%20Poster%202020.pdf">BS Polycoder Codes Poster</a></div>
 <div class="line-block">     <a href=".././files/Collections/Length%20Placard%20GOA_AI.pdf">GOA/AI Polycoder Codes Poster</a></div>
@@ -3275,8 +3282,8 @@ Survey Ops
 <div class="line-block">     <a href=".././files/Collections/GOA_BS%20poly%20complete%20both_2017.pdf">Polycorder Code List (Complete – Alphabetical and Numerical)</a></div>
 <div class="line-block">     <a href=".././files/Collections/GOA_BS%20poly%20complete%20num_2017.pdf">Polycorder Code List (Numerical)</a></div>
 <h3 id="otoliths">Otoliths</h3>
-<div class="line-block">     <a href=".././files/Collections/Special%20Projects/AI_GOA/2025/2025_AI_otoliths.pdf">AI Age Structure Collections Deck Poster</a></div>
-<div class="line-block">     <a href=".././files/collections/special%20projects/BS/2025/EBS.pdf">EBS Age Structure Collections Deck Poster</a></div>
+<div class="line-block">     <a href=".././files/Collections/Special%20Projects/AI_GOA/2026/2026%20AI%20Otoliths.pdf">AI Age Structure Collections Deck Poster</a></div>
+<div class="line-block">     <a href=".././files/collections/special%20projects/BS/2026/2026%20EBS%20Otoliths.pdf">EBS Age Structure Collections Deck Poster</a></div>
 <div class="line-block">     <a href=".././files/Collections/Otoliths/GlycerolThymol.pdf">Glycerol/Thymol recipe</a></div>
 <div class="line-block">     <a href=".././files/Collections/Otoliths/Otolith%20Label%20Maker.xls">Otolith Label Maker</a></div>
 <div class="line-block">     <a href=".././files/Shipping-Hazmat/Shipping%20of%20Pollock%20otoliths%20in%20Glycerin.pdf">Shipping pollock otoliths</a></div>
@@ -3296,36 +3303,37 @@ Survey Ops
 <div class="line-block">     <a href=".././files/Collections/ES60_80/ES60EBS_protocols.pdf">ES60 resources</a>: <em>EBS/NBS ES60 Protocols</em></div>
 <div class="line-block">     <a href=".././files/Collections/ES60_80/ES60%20forms/">ES60 resources</a>: <em>ES60 Forms</em></div>
 <div class="line-block">     <a href=".././files/Collections/ES60_80/ES60%20Hard%20drive%20instructions.pdf">ES60 resources</a>: <em>ES60 Replacing hard drive</em></div>
-<div class="line-block">     <a href=".././files/Collections/ES60_80/GPTlockup-issue.pdf">ES60 resources</a>: <em>ES60 ES70 lockup issue</em></div>
 <div class="line-block">     <a href=".././files/Collections/ES60_80/ES60_skippercheatsheet.pdf">ES60 resources</a>: <em>ES60 Skipper cheat sheet</em></div>
 <div class="line-block">     <a href=".././files/Collections/ES60_80/ES60photos">ES60 resources</a>: <em>Vessel photos &amp; pictures to assist with calibration</em></div>
-<div class="line-block">     <a href=".././files/Collections/ES60_80/ES80_protocols_2025.pdf">ES80 resources</a>: <em>ES80 Protocols - all surveys</em></div>
+<div class="line-block">     <a href=".././files/Collections/ES60_80/ES80_protocols_2026.pdf">ES80 resources</a>: <em>ES80 Protocols - all surveys</em></div>
 <div class="line-block">     <a href=".././files/Collections/ES60_80/2025%20ES80%20data%20collection.pdf">ES80 resources</a>: <em>ES80 Training Slides</em></div>
 <h3 id="light-meter">Light meter</h3>
 <div class="line-block">     <a href=".././files/Manuals/Light%20meters/Wildlife%20Computers%20MK9%20Stan/Light%20meter%20instuctions%202018.pdf">Light meter instructions</a></div>
 <h2 id="special-projects">Special Projects</h2>
 <h3 id="all-surveys">All Surveys</h3>
-<div class="line-block">     <a href=".././files/Collections/Cod%20tagging/PCod%20Tagging%20Protocol%20groundfish%20survey%202024_final.pdf">McDermott’s Cod Tagging Protocol</a></div>
 <div class="line-block">     <a href=".././files/Collections/DEAD%20Sleeper%20Shark%20sampling%20form%20with%20diagram.pdf">Tribuzio Sleeper Shark Sampling Data Sheet</a></div>
 <div class="line-block">     <a href=".././files/collections/special%20projects/BS/2025/Tribuzio%20protocol.pdf">Tribuzio Sleeper Shark Sampling Procedure</a></div>
 <h3 id="bs">BS</h3>
 <div class="line-block">     <a href=".././files/collections/special%20projects/BS/2025/">All Special Project Info</a></div>
 <div class="line-block">     <a href=".././files/collections/special%20projects/BS/2023/EBS/DeFilippo">DeFilippo’s Slope Tows Resources</a></div>
 <div class="line-block">     <a href=".././files/Collections/cod%20data%20collection%20sheet.pdf">Hoff’s Cod and Pollock Condition Data</a></div>
-<div class="line-block">     <a href=".././files/collections/special%20projects/BS/2025/IPHC%20Sampling%20Manual.pdf">IPHC Sampling Manual</a></div>
+<div class="line-block">     <a href=".././files/collections/special%20projects/BS/2026/IPHC%20Sampling%20Manual.pdf">IPHC Sampling Manual</a></div>
 <ul>
 <li>Notes from Kayla Ualesi: On the vessel where there is no IPHC staff present, only lengths should be collected. On leg 2 of IPHC vessel, randomly collect length, sex and otoliths from 10 halibut, remaining halibut should be lengthed
 and returned to sea alive. IPHC staff will be sampling ALL halibut unless there is a very large number and, in that case, will then collect a subsample.</li>
 </ul>
 <div class="line-block">     <a href=".././files/Manuals/CTD%20Manuals/SBE19plus/CTD%20pH%20calibration%20protocol.pdf">Rohan’s CTD pH/DO sensor calibration protocol</a></div>
 <div class="line-block">     <a href=".././files/collections/special%20projects/BS/2025/2025%20SAP%20EBS%20Special%20Projects%20Matrix%20deck%20poster.pdf">SAP Bering Sea Special Project Matrix Deck Poster</a></div>
-<div class="line-block">     <a href=".././files/collections/special%20projects/BS/2025/srvy_EBS-akk-gap.pdf">Special Projects Alaska Knight Deck Poster</a></div>
-<div class="line-block">     <a href=".././files/collections/special%20projects/BS/2025/srvy_EBS-nwe-gap.pdf">Special Projects Northwest Explorer Deck Poster</a></div>
+<div class="line-block">     <a href=".././files/collections/special%20projects/BS/2026/Deck%20Poster%20AKK.pdf">Special Projects Alaska Knight Deck Poster</a></div>
+<div class="line-block">     <a href=".././files/collections/special%20projects/BS/2026/Deck%20Poster%20NWE.pdf">Special Projects Northwest Explorer Deck Poster</a></div>
 <h3 id="goaai">GOA/AI</h3>
-<div class="line-block">     <a href=".././files/collections/special%20projects/AI_GOA/2025/2025_AI_Projects.pdf">Special Projects (Summary Table) Descriptions and Protocols</a></div>
+<div class="line-block">     <a href=".././files/collections/special%20projects/AI_GOA/2026/Project%20List%20AKP.pdf">Special Project List AKP</a></div>
+<div class="line-block">     <a href=".././files/collections/special%20projects/AI_GOA/2026/Project%20List%20OEX.pdf">Special Project List OEX</a></div>
+<div class="line-block">     <a href=".././files/collections/special%20projects/AI_GOA/2026/Project%20Summaries%20AKP.pdf">Special Projects (Summary Table) Descriptions and Protocols AKP</a></div>
+<div class="line-block">     <a href=".././files/collections/special%20projects/AI_GOA/2026/Project%20Summaries%20OEX.pdf">Special Projects (Summary Table) Descriptions and Protocols OEX</a></div>
 <div class="line-block">     <a href=".././files/collections/special%20projects/AI_GOA/2025/">Special Projects Descriptions and Protocols</a></div>
-<div class="line-block">     <a href=".././files/collections/special%20projects/AI_GOA/2025/srvy_AI-akp-gap.pdf">Special Projects [AKP] Deck Poster</a></div>
-<div class="line-block">     <a href=".././files/collections/special%20projects/AI_GOA/2025/srvy_AI-oex-gap.pdf">Special Projects [OEX] Deck Poster</a></div>
+<div class="line-block">     <a href=".././files/collections/special%20projects/AI_GOA/2026/Deck%20Poster%20AKP.pdf">Special Projects [AKP] Deck Poster</a></div>
+<div class="line-block">     <a href=".././files/collections/special%20projects/AI_GOA/2026/Deck%20Poster%20OEX.pdf">Special Projects [OEX] Deck Poster</a></div>
 <script>
 function myFunction() {
 var input, filter, table, tr, td, i, txtValue;

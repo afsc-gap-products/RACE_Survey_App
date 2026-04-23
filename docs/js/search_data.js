@@ -147,7 +147,7 @@ var searchData = [
     "title": "ES80 resources",
     "section": "ES60/ES80 data collection",
     "subtitle": "ES80 Protocols - all surveys",
-    "url_loc": "../files/Collections/ES60_80/ES80_protocols_2025.pdf",
+    "url_loc": "../files/Collections/ES60_80/ES80_protocols_2026.pdf",
     "source": "entries"
   },
   {
@@ -158,27 +158,51 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Stomach collection training powerpoint",
+    "title": "Stomach Collection Methods",
     "section": "Food Habitat (Stomachs)",
-    "url_loc": "../files/Collections/Stomachs/2025 Stomach Collection.pdf",
+    "url_loc": "../files/Collections/Stomachs/Stomach Collection Methods.pdf",
     "source": "entries"
   },
   {
     "title": "AI/GOA Stomach Scans",
     "section": "Food Habitat (Stomachs)",
-    "url_loc": "../files/Collections/Stomachs/2025 GOA Stomach Sampling.docx",
+    "url_loc": "../files/Collections/Stomachs/2026 AI Stomach Scan.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "AI/GOA Stomach Collections",
+    "section": "Food Habitat (Stomachs)",
+    "url_loc": "../files/Collections/Stomachs/2026 AI Stomach Collection.pdf",
     "source": "entries"
   },
   {
     "title": "BS Stomach Collections",
     "section": "Food Habitat (Stomachs)",
-    "url_loc": "../files/Collections/Stomachs/2025 EBS Shelf Stomach Sampling.docx",
+    "url_loc": "../files/Collections/Stomachs/2026 EBS Stomach Collection.pdf",
     "source": "entries"
   },
   {
     "title": "Stomach App Resources",
     "section": "Food Habitat (Stomachs)",
     "url_loc": "../files/Collections/Stomachs/Stomach_App_Resources/",
+    "source": "entries"
+  },
+  {
+    "title": "Visual Maturity Keys AI",
+    "section": "Maturity",
+    "url_loc": "../files/Collections/Maturity/Visual Maturity Key AI.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Visual Maturity Keys EBS",
+    "section": "Maturity",
+    "url_loc": "../files/Collections/Maturity/Visual Maturity Key EBS.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Halibut Maturity Key",
+    "section": "Maturity",
+    "url_loc": "../files/Collections/Maturity/Halibut Maturity Key.pdf",
     "source": "entries"
   },
   {
@@ -190,13 +214,13 @@ var searchData = [
   {
     "title": "AI Age Structure Collections Deck Poster",
     "section": "Otoliths",
-    "url_loc": "../files/Collections/Special Projects/AI_GOA/2025/2025_AI_otoliths.pdf",
+    "url_loc": "../files/Collections/Special Projects/AI_GOA/2026/2026 AI Otoliths.pdf",
     "source": "entries"
   },
   {
     "title": "EBS Age Structure Collections Deck Poster",
     "section": "Otoliths",
-    "url_loc": "../files/collections/special projects/BS/2025/EBS.pdf",
+    "url_loc": "../files/collections/special projects/BS/2026/2026 EBS Otoliths.pdf",
     "source": "entries"
   },
   {
@@ -220,19 +244,37 @@ var searchData = [
   {
     "title": "Special Projects [OEX] Deck Poster",
     "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2025/srvy_AI-oex-gap.pdf",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Deck Poster OEX.pdf",
     "source": "entries"
   },
   {
     "title": "Special Projects [AKP] Deck Poster",
     "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2025/srvy_AI-akp-gap.pdf",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Deck Poster AKP.pdf",
     "source": "entries"
   },
   {
-    "title": "Special Projects (Summary Table) Descriptions and Protocols",
+    "title": "Special Projects (Summary Table) Descriptions and Protocols OEX",
     "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2025/2025_AI_Projects.pdf",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project Summaries OEX.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects (Summary Table) Descriptions and Protocols AKP",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project Summaries AKP.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Project List OEX",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project List OEX.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Project List AKP",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project List AKP.pdf",
     "source": "entries"
   },
   {
@@ -262,13 +304,13 @@ var searchData = [
   {
     "title": "Special Projects Alaska Knight Deck Poster",
     "section": "BS",
-    "url_loc": "../files/collections/special projects/BS/2025/srvy_EBS-akk-gap.pdf",
+    "url_loc": "../files/collections/special projects/BS/2026/Deck Poster AKK.pdf",
     "source": "entries"
   },
   {
     "title": "Special Projects Northwest Explorer Deck Poster",
     "section": "BS",
-    "url_loc": "../files/collections/special projects/BS/2025/srvy_EBS-nwe-gap.pdf",
+    "url_loc": "../files/collections/special projects/BS/2026/Deck Poster NWE.pdf",
     "source": "entries"
   },
   {
@@ -280,25 +322,13 @@ var searchData = [
   {
     "title": "IPHC Sampling Manual",
     "section": "BS",
-    "url_loc": "../files/collections/special projects/BS/2025/IPHC Sampling Manual.pdf",
+    "url_loc": "../files/collections/special projects/BS/2026/IPHC Sampling Manual.pdf",
     "source": "entries"
   },
   {
     "title": "All Special Projects PDF",
     "section": "BS",
     "url_loc": "../files/collections/special projects/BS/2025/NBS/",
-    "source": "entries"
-  },
-  {
-    "title": "McDermott's Cod Tagging Protocol",
-    "section": "All Surveys",
-    "url_loc": "../files/Collections/Cod tagging/PCod Tagging Protocol groundfish survey 2024_final.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "McDermott's Cod Tagging Training Video",
-    "section": "All Surveys",
-    "url_loc": "../files/Collections/Cod tagging/PCOD Sat tagging video.MP4",
     "source": "entries"
   },
   {
@@ -358,7 +388,7 @@ var searchData = [
   {
     "title": "Gear Codebook",
     "section": "",
-    "url_loc": "../files/SpeciesID/Data Codes & Forms.pdf",
+    "url_loc": "../files/SpeciesID/DataCodes&Forms.pdf",
     "source": "entries"
   },
   {
@@ -406,7 +436,7 @@ var searchData = [
   {
     "title": "**NEW** Volumetric worksheet",
     "section": "Large catch resources",
-    "url_loc": "../files/Collections/volumetric_worksheet.xlsm",
+    "url_loc": "../files/Collections/Large catches/volumetric_worksheet.xlsm",
     "source": "entries"
   },
   {
@@ -448,7 +478,7 @@ var searchData = [
   {
     "title": "Marel scale calibration",
     "section": "",
-    "url_loc": "../files/manuals/MAREL_scales/",
+    "url_loc": "../files/manuals/MAREL_scales/Basket_Scale_Calibration.pdf",
     "source": "entries"
   },
   {
@@ -683,6 +713,12 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "CTD Laptop Login",
+    "section": "",
+    "url_loc": "../files/Manuals/CTD Manuals/",
+    "source": "entries"
+  },
+  {
     "title": "Portfolio Photo Management Software Instructions",
     "section": "",
     "url_loc": "../files/manuals/Portfolio/Portfolio Photo Management Software Instructions.pdf",
@@ -758,6 +794,18 @@ var searchData = [
     "title": "Dockside wiremarking diagram (option 2)",
     "section": "",
     "url_loc": "../files/net and wire maintenance/wiremarking/Wire Marking Dock Side option 2.png",
+    "source": "entries"
+  },
+  {
+    "title": "GOA AI Wire Marking and other procedures",
+    "section": "",
+    "url_loc": "../files/Net and wire maintenance/wiremarking/GOA AI Wire Marking and other procedures",
+    "source": "entries"
+  },
+  {
+    "title": "Trawl Warp Measuring Procedure",
+    "section": "",
+    "url_loc": "../files/Net and wire maintenance/wiremarking/Trawl Warp Measuring Procedure form",
     "source": "entries"
   },
   {
@@ -929,9 +977,33 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "SCALA2_UserGuide_en_V6",
+    "section": "Marport",
+    "url_loc": "../files/Manuals/MARPORT/",
+    "source": "entries"
+  },
+  {
+    "title": "Trident_UserManual_en_V2",
+    "section": "Marport",
+    "url_loc": "../files/Manuals/MARPORT/",
+    "source": "entries"
+  },
+  {
     "title": "GLOBE",
     "section": "Globe",
     "url_loc": "../files/Manuals/globe/",
+    "source": "entries"
+  },
+  {
+    "title": "DoorExplorereProNX_UserManual_en_V1",
+    "section": "Marport",
+    "url_loc": "../files/Manuals/MARPORT/",
+    "source": "entries"
+  },
+  {
+    "title": "FlowSpeedNavigatorProNX_UserManual_en_V1",
+    "section": "Marport",
+    "url_loc": "../files/Manuals/MARPORT/",
     "source": "entries"
   },
   {
@@ -1008,8 +1080,8 @@ var searchData = [
   },
   {
     "title": "SFTP Instructions",
-    "section": "",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/SFTP instructions.pdf",
+    "section": "Wheelhouse",
+    "url_loc": "../files/Manuals/Calypso_Wheelhouse/SFTP Instructions.pdf",
     "source": "entries"
   },
   {
@@ -1426,9 +1498,9 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "SASH - Sexual Assault & Harassment Policy (DAO 202-1106)",
+    "title": "SASH_NAO_202-1106A",
     "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/Sexual_Assault_Harassment_AdminOrder.pdf",
+    "url_loc": "../files/Safety/Sexual Harassment/SASH_NAO_202-1106A.pdf",
     "source": "entries"
   },
   {
@@ -1498,15 +1570,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Who's on the beach?",
-    "section": "Bering Sea",
-    "url_loc": "../files/contact lists/Personnel availability calendar 2025.pdf",
+    "title": "Personnel Availability",
+    "section": "All surveys",
+    "url_loc": "../files/contact lists/Personnel Availability/",
     "source": "entries"
   },
   {
     "title": "RACE Vessel Contact Info",
     "section": "All surveys",
-    "url_loc": "../files/Contact lists/GAP BT Survey Vessel Contacts 2025.pdf",
+    "url_loc": "../files/Contact lists/GAP BT Survey Vessel Contacts 2026.pdf",
     "source": "entries"
   },
   {
@@ -1536,7 +1608,7 @@ var searchData = [
   {
     "title": "Vessel Crew Lists",
     "section": "All surveys",
-    "url_loc": "../files/Staffing/GAP Survey Vessel Crew 2025.pdf",
+    "url_loc": "../files/Staffing/Vessel Crew/",
     "source": "entries"
   },
   {
@@ -1590,7 +1662,7 @@ var searchData = [
   {
     "title": "Incident, Illness, Accident & EMERGENCY Flow Chart",
     "section": "",
-    "url_loc": ".../files/Safety/Accidents/Accidents.pdf",
+    "url_loc": ".../files/Safety/Accidents/At Sea Incident Reporting.pdf",
     "source": "entries"
   },
   {
@@ -2170,6 +2242,18 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "Mental Health and Trauma Resources",
+    "section": "",
+    "url_loc": "../files/Safety/Mental Health and Trauma Resources.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Medevac Info",
+    "section": "",
+    "url_loc": "../files/Safety/Accidents/MedEvac Info.pdf",
+    "source": "entries"
+  },
+  {
     "title": "Example Script",
     "section": "",
     "url_loc": "../files/Manuals/R/GAPsurvey/example_script.R",
@@ -2323,7 +2407,7 @@ var searchData = [
   {
     "title": "Gear Codebook",
     "section": "",
-    "url_loc": "../files/SpeciesID/Data Codes & Forms.pdf",
+    "url_loc": "../files/SpeciesID/DataCodes&Forms.pdf",
     "source": "entries"
   },
   {
@@ -2384,6 +2468,12 @@ var searchData = [
     "title": "AFSC Photo Consent Release",
     "section": "",
     "url_loc": "../files/Social Media Policies/NMFS_Individual Release_Fillable.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "GAP Surveys Photo Sharing and Social Media",
+    "section": "",
+    "url_loc": "../files/Social Media Policies/GAP Surveys Photo Sharing and Social Media",
     "source": "entries"
   },
   {
@@ -2864,6 +2954,13 @@ var searchData = [
     "source": "guides"
   },
   {
+    "title": "Blackspotted/Rougheye one pager",
+    "section": "fish",
+    "subtitle": "Sebastidae",
+    "url_loc": "../files/SpeciesID/guides/blackspot_rougheye_printout.pdf",
+    "source": "guides"
+  },
+  {
     "title": "Marine mammals of Alaska Arctic",
     "section": "mammal",
     "url_loc": "../files/SpeciesID/guides/birdmammal/MM of Alaska Arctic.pdf",
@@ -2918,12 +3015,6 @@ var searchData = [
     "source": "guides"
   },
   {
-    "title": "Sponge powerpoint",
-    "section": "sponge",
-    "url_loc": "../files/SpeciesID/guides/inverts/sponges.ppt",
-    "source": "guides"
-  },
-  {
     "title": "Hobson Benthic Errantiate Polychaetes",
     "section": "worm",
     "url_loc": "../files/SpeciesID/guides/inverts/Errantiate Polychaetes.pdf",
@@ -2975,6 +3066,11 @@ var searchData = [
   {
     "title": "**NEW AK inverts vol 1: shelled inverts**",
     "url_loc": "../files/SpeciesID/guides/inverts/invert_guide_vol1.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "**NEW AK inverts vol 2: gelatinous inverts & echinoderms**",
+    "url_loc": "../files/SpeciesID/guides/inverts/invert_guide_vol2.pdf",
     "source": "guides"
   },
   {

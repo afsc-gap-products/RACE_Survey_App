@@ -3034,7 +3034,7 @@ background-color: #f9f9f9;
         fuse = new Fuse(searchData, {
           includeScore: true,
           shouldSort: true,
-          threshold: 0.15,
+          threshold: 0.2, // Adjust for sensitivity
           ignoreLocation: true,
           keys: [
             { name: "title", weight: 0.5 },
@@ -3170,11 +3170,12 @@ Safety
 <span class="down-arrow">▾</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="../files/Safety/Accidents/Accidents.pdf">Emergency Flow Chart</a>
+<a href="../files/Safety/Accidents/At Sea Incident Reporting.pdf">Emergency Flow Chart</a>
 <a href="Safety_Ergonomic_Resource_Library.html">Ergonomic Resource Library</a>
 <a href="Safety_Hazmat.html">Hazmat</a>
 <a href="Safety_Illness_and_injury_reporting.html">Illness and injury reporting</a>
 <a href="Safety_Manuals_and_References.html">Manuals and References</a>
+<a href="Safety_NA.html">NA</a>
 </div>
 </div>
 <div class="nav-dropdown">
@@ -3241,6 +3242,7 @@ Survey Ops
 <li><a href="#forms" id="toc-forms">Forms</a></li>
 <li><a href="#scope-tables" id="toc-scope-tables">Scope tables</a></li>
 <li><a href="#station-progression-aigoa" id="toc-station-progression-aigoa">Station Progression (AI/GOA)</a></li>
+<li><a href="#wheelhouse" id="toc-wheelhouse">Wheelhouse</a></li>
 <li><a href="#beaufort-scale" id="toc-beaufort-scale">Beaufort Scale</a></li>
 <li><a href="#between-legs" id="toc-between-legs">Between Legs</a></li>
 <li><a href="#bridge-set-up" id="toc-bridge-set-up">Bridge Set-Up</a>
@@ -3253,7 +3255,7 @@ Survey Ops
 <li><a href="#poseiden" id="toc-poseiden">Poseiden</a></li>
 <li><a href="#scanmar" id="toc-scanmar">Scanmar</a></li>
 <li><a href="#time-sync" id="toc-time-sync">Time-Sync</a></li>
-<li><a href="#wheelhouse" id="toc-wheelhouse">Wheelhouse</a></li>
+<li><a href="#wheelhouse-1" id="toc-wheelhouse-1">Wheelhouse</a></li>
 <li><a href="#wheelhouse---sirf-demo-gps-fix" id="toc-wheelhouse---sirf-demo-gps-fix">Wheelhouse - SiRF Demo GPS Fix</a></li>
 <li><a href="#wheelhouse-and-calypso" id="toc-wheelhouse-and-calypso">Wheelhouse and Calypso</a></li>
 </ul></li>
@@ -3276,13 +3278,11 @@ Survey Ops
 
 </div>
 <div class="line-block">     <a href="../../files/Manuals/data%20backup%20sources.pdf">Backup data sources when primary widgets fail</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Survey%20operation%20manuals/Chief%20Scientist%20Manual07.pdf">Chief Scientist &amp; Deck Lead Manual v. 2007</a></div>
 <div class="line-block">     <a href=".././files/Manuals/Daily%20Temperature%20Entry.pdf">Daily Temperature Entry Instructions</a></div>
 <div class="line-block">     <a href=".././files/Manuals/Checklist%20for%20FPC%20talk%202024.pdf">FPC talking points</a></div>
 <div class="line-block">     <a href=".././files/Manuals/Calypso_Wheelhouse/WheelhouseStepByStep&amp;QuickRef.pdf">Guide to Running Wheelhouse and Calypso for EBS survey</a></div>
 <div class="line-block">     <a href=".././files/Contracts/OSI%20dockside%20services%20approved%20vessels%20F25.pdf">OSI (Purchase Order) PO &amp; Job Services</a></div>
 <div class="line-block">     <a href=".././files/Contracts/Dockside%20services%20FY25%20task%20log%20v2.xlsx">OSI Services task log</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Calypso_Wheelhouse/SFTP%20instructions.pdf">SFTP Instructions</a></div>
 <h3 id="artifact-guidance">Artifact guidance</h3>
 <div class="line-block">     <a href=".././files/Manuals/Survey%20operation%20manuals/Artifact%20guidance.pdf">Handling artifacts found at sea</a></div>
 <h3 id="forms">Forms</h3>
@@ -3297,8 +3297,8 @@ Survey Ops
 <div class="line-block">     <a href=".././files/Station%20info/AI_GOA/Station%20Progression/Station%20Log%20and%20Progression%20202501%20AKP.xlsm">New Station Progression Worksheet (AKP)</a></div>
 <div class="line-block">     <a href=".././files/Station%20info/AI_GOA/Station%20Progression/Station%20Log%20and%20Progression%20202501%20OEX.xlsm">New Station Progression Worksheet (OEX)</a></div>
 <div class="line-block">     <a href=".././files/Station%20info/AI_GOA/Station%20Progression/New%20Station%20Log%20and%20Progression%20Sheet%20Guide.pptx">New Station Progression Worksheet Guide</a></div>
-<div class="line-block">     <a href=".././files/Station%20info/AI_GOA/Station%20Progression/AKP_Station_Progression.xlsx">OLD Station Progression Worksheet (AKP)</a></div>
-<div class="line-block">     <a href=".././files/Station%20info/AI_GOA/Station%20Progression/OEX_Station_Progression.xlsx">OLD Station Progression Worksheet (OEX)</a></div>
+<h3 id="wheelhouse">Wheelhouse</h3>
+<div class="line-block">     <a href=".././files/Manuals/Calypso_Wheelhouse/SFTP%20Instructions.pdf">SFTP Instructions</a></div>
 <h2 id="beaufort-scale">Beaufort Scale</h2>
 <div class="line-block">     <a href=".././files/Manuals/Beaufort_Scale/Beaufort-scale-values-and-descriptions.png">Beaufort Scale Description Table</a></div>
 <h2 id="between-legs">Between Legs</h2>
@@ -3326,12 +3326,16 @@ Survey Ops
 <div class="line-block">     <a href=".././files/Manuals/Olex%20and%20OpenCPN/">Olex and OpenCPN</a></div>
 <div class="line-block">     <a href=".././files/Manuals/TimeZero/">TimeZero</a></div>
 <h3 id="marport">Marport</h3>
+<div class="line-block">     <a href=".././files/Manuals/MARPORT/">DoorExplorereProNX_UserManual_en_V1</a></div>
+<div class="line-block">     <a href=".././files/Manuals/MARPORT/">FlowSpeedNavigatorProNX_UserManual_en_V1</a></div>
 <div class="line-block">     <a href=".././files/Manuals/MARPORT/">MARPORT Directory</a></div>
 <div class="line-block">     <a href=".././files/Manuals/MARPORT/Quick_reference_marport.pdf">MARPORT Quick Reference Guide</a></div>
 <div class="line-block">     <a href=".././files/Manuals/MARPORT/Mosa2/">Mosa2 software</a></div>
+<div class="line-block">     <a href=".././files/Manuals/MARPORT/">SCALA2_UserGuide_en_V6</a></div>
 <div class="line-block">     <a href=".././files/Manuals/SCREENSHOTS/AK_Knight_screenshot_mbar_controls_2015.png">Screenshot of Marport settings: Command View - MBAR Control Panel</a></div>
 <div class="line-block">     <a href=".././files/Manuals/SCREENSHOTS/AK_Knight_screenshot_MARPORT_COMM_viewafsc_2015.png">Screenshot of Marport settings: Command View - Net Mensuration</a></div>
 <div class="line-block">     <a href=".././files/Manuals/SCREENSHOTS/AK_Knight_screenshot_MARPORT_COMM_gps_nmea_2015.png">Screenshot of Marport settings: Marport Commander - NMEA output</a></div>
+<div class="line-block">     <a href=".././files/Manuals/MARPORT/">Trident_UserManual_en_V2</a></div>
 <h3 id="poseiden">Poseiden</h3>
 <div class="line-block">     <a href=".././files/Manuals/Poseidon/Poseidon_SCS%20User%20Guide.pdf">Poseiden manual</a></div>
 <div class="line-block">     <a href=".././files/Manuals/Poseidon/Haul%20troubleshooting%20with%20Poseidon.pdf">Poseiden troubleshooting</a></div>
@@ -3339,7 +3343,7 @@ Survey Ops
 <div class="line-block">     <a href=".././files/Manuals/Scanmar/OEx/">Scanmar hydrophone photos OEX</a></div>
 <h3 id="time-sync">Time-Sync</h3>
 <div class="line-block">     <a href=".././files/Software/NetWork%20Time%20sync/SOFTROS%20Time%20Sync.pdf">Time Sync Software</a></div>
-<h3 id="wheelhouse">Wheelhouse</h3>
+<h3 id="wheelhouse-1">Wheelhouse</h3>
 <div class="line-block">     <a href=".././files/Manuals/GPSs/GPS_kickstart.pdf">GPS “KickStart” (if GPS stream suddenly stops)</a></div>
 <div class="line-block">     <a href=".././files/Manuals/Calypso_Wheelhouse/Wheelhouse%20update/Wheelhouse_installing_updates.pdf">How to Install Wheelhouse Updates</a></div>
 <div class="line-block">     <a href=".././files/Manuals/Calypso_Wheelhouse/InstructionsforExtractingGIDESdatatoInsertintoWHEELHOUSE.docx">Instructions for extracting GIDES data to insert into wheelhouse</a></div>
@@ -3388,7 +3392,9 @@ Survey Ops
 <div class="line-block">     <a href=".././files/net%20and%20wire%20maintenance/wiremarking/Wire%20Marking%20Dock%20Side%20option%202.png">Dockside wiremarking diagram (option 2)</a></div>
 <div class="line-block">     <a href=".././files/net%20and%20wire%20maintenance/wiremarking/wire_marking_dock_2018.pdf">Dockside wiremarking protocols (EBS)</a></div>
 <div class="line-block">     <a href=".././files/net%20and%20wire%20maintenance/wiremarking/Notes%20-%20Talk%20through%20Walk%20through%20dockside%20wiremarking.docx">Dockside wiremarking protocols (GOA/AI)</a></div>
+<div class="line-block">     <a href=".././files/Net%20and%20wire%20maintenance/wiremarking/GOA%20AI%20Wire%20Marking%20and%20other%20procedures">GOA AI Wire Marking and other procedures</a></div>
 <div class="line-block">     <a href=".././files/net%20and%20wire%20maintenance/wiremarking/OEX%202022%20photos/">OEX 2022 dock wiremarking photos</a></div>
+<div class="line-block">     <a href=".././files/Net%20and%20wire%20maintenance/wiremarking/Trawl%20Warp%20Measuring%20Procedure%20form">Trawl Warp Measuring Procedure</a></div>
 <script>
 function myFunction() {
 var input, filter, table, tr, td, i, txtValue;

@@ -3034,7 +3034,7 @@ background-color: #f9f9f9;
         fuse = new Fuse(searchData, {
           includeScore: true,
           shouldSort: true,
-          threshold: 0.15,
+          threshold: 0.2, // Adjust for sensitivity
           ignoreLocation: true,
           keys: [
             { name: "title", weight: 0.5 },
@@ -3170,11 +3170,12 @@ Safety
 <span class="down-arrow">▾</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="../files/Safety/Accidents/Accidents.pdf">Emergency Flow Chart</a>
+<a href="../files/Safety/Accidents/At Sea Incident Reporting.pdf">Emergency Flow Chart</a>
 <a href="Safety_Ergonomic_Resource_Library.html">Ergonomic Resource Library</a>
 <a href="Safety_Hazmat.html">Hazmat</a>
 <a href="Safety_Illness_and_injury_reporting.html">Illness and injury reporting</a>
 <a href="Safety_Manuals_and_References.html">Manuals and References</a>
+<a href="Safety_NA.html">NA</a>
 </div>
 </div>
 <div class="nav-dropdown">
@@ -3272,10 +3273,11 @@ Survey Ops
 <h2 id="chemical-handling-guidance">Chemical Handling Guidance</h2>
 <div class="line-block">     <a href=".././files/Collections/haul_catch_specimen_forms/catchforms/Preservation%20Procedures%20for%20Voucher%20Collection.pdf">Chemical Handling Guidance v. 2019</a></div>
 <h2 id="code-books">Code Books</h2>
-<div class="line-block">     <a href=".././files/SpeciesID/Data%20Codes%20&amp;%20Forms.pdf">Gear Codebook</a></div>
+<div class="line-block">     <a href=".././files/SpeciesID/DataCodes&amp;Forms.pdf">Gear Codebook</a></div>
 <div class="line-block">     <a href=".././files/SpeciesID/SpeciesCodeManual.pdf">Species Codebook</a></div>
 <h2 id="ctd">Ctd</h2>
 <div class="line-block">     <a href=".././files/Manuals/CTD%20Manuals">All CTD resources</a></div>
+<div class="line-block">     <a href=".././files/Manuals/CTD%20Manuals/">CTD Laptop Login</a></div>
 <div class="line-block">     <a href=".././files/Manuals/CTD%20Manuals/SBE19plus/">SBE19plus</a></div>
 <div class="line-block">     <a href=".././files/Manuals/CTD%20Manuals/Seabird%20Programs/">Seabird Programs</a></div>
 <h2 id="gapsurvey-r-package">Gapsurvey R Package</h2>
@@ -3297,7 +3299,7 @@ Survey Ops
 <div class="line-block">     <a href=".././files/Manuals/Survey%20operation%20manuals/Min%20length%20and%20sex%20per%20haul%20clc.pdf">Minimum Length/Sex subsampling (AI only)</a></div>
 <div class="line-block">     <a href=".././files/Collections/haul_catch_specimen_forms/RandomNumbers.pdf">Random Numbers sheet</a></div>
 <h3 id="large-catch-resources">Large catch resources</h3>
-<div class="line-block">     <a href=".././files/Collections/volumetric_worksheet.xlsm"><strong>NEW</strong> Volumetric worksheet</a></div>
+<div class="line-block">     <a href=".././files/Collections/Large%20catches/volumetric_worksheet.xlsm"><strong>NEW</strong> Volumetric worksheet</a></div>
 <div class="line-block">     <a href=".././files/Collections/Large%20catches/Split%20Haul%20Subsampling%20Protocol%20using%20METIS.pdf">Split haul crab subsampling protocol (EBS)</a></div>
 <div class="line-block">     <a href=".././files/Collections/Large%20catches/Steps%20for%20a%20Volumetric%20Catch.pdf">Steps for a volumetric catch</a></div>
 <div class="line-block">     <a href=".././files/Collections/Large%20catches/Steps%20for%20Splitting%20a%20Catch.pdf">Steps for splitting catch (GOA/AI)</a></div>
@@ -3305,7 +3307,7 @@ Survey Ops
 <div class="line-block">     <a href=".././files/Collections/Basket%20weight%20calcs/">Volumetric basket weight calculations</a></div>
 <h2 id="scales">Scales</h2>
 <div class="line-block">     <a href=".././files/Manuals/MSI_loadcells_cranescales/">MSI load cell/crane scale</a></div>
-<div class="line-block">     <a href=".././files/manuals/MAREL_scales/">Marel scale calibration</a></div>
+<div class="line-block">     <a href=".././files/manuals/MAREL_scales/Basket_Scale_Calibration.pdf">Marel scale calibration</a></div>
 <ul>
 <li>Basket scale</li>
 </ul>
@@ -3313,11 +3315,12 @@ Survey Ops
 <li>Press “Zero” &amp; “Menu” at same time.</li>
 <li>“CAL” will display in small window and “- - -“ will display in large window.</li>
 <li>Wait for prompt to place 20 kg weight on scale (make sure it’s not a 50 lb weight!)</li>
-<li>Wait for “Fit #” on display screen:
+<li>Press “Print” to display “Fit #” on display screen:
 Fit # &lt; 25 = ok
 Fit # &gt; 25 = Recalibrate</li>
 <li>If “E-92” displays = Error: Do Over.</li>
 <li>Remember to tare an empty basket!
+(Other type of basket scale: Press and hold Page key, select #6, then same as above)
 Specimen scale</li>
 <li>Press “CAL” while holding down “MENU” at same time.</li>
 <li>“Wait with empty platform” will be displayed in large window and “CAL” in small window.</li>

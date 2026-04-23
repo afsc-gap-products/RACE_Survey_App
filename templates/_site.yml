@@ -40,7 +40,7 @@ navbar:
     - text: "Safety"
       menu: 
        - text: "Emergency Flow Chart"
-         href: ../files/Safety/Accidents/Accidents.pdf
+         href: ../files/Safety/Accidents/At Sea Incident Reporting.pdf
        - text: "Ergonomic Resource Library"
          href: Safety_Ergonomic_Resource_Library.html
        - text: "Hazmat"
@@ -49,6 +49,8 @@ navbar:
          href: Safety_Illness_and_injury_reporting.html
        - text: "Manuals and References"
          href: Safety_Manuals_and_References.html
+       - text: "NA"
+         href: Safety_NA.html
     - text: "Software"
       menu: 
        - text: "R Software & Scripts"

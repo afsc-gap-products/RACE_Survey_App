@@ -32,13 +32,10 @@ source("sub_tasks/03_data.R")
 source("sub_tasks/04_search_bar_data.R")
 
 
-# Check that links work: listed below are links that do not work ---------------
+# Checks to make sure files work and are updated -------------------------------
 
-# checkLinks(URLs = website_content$url_loc[website_content$in_survey_app])
-# checkLinks(URLs = task_list_data$url_loc)
-# checkLinks(URLs = taxa_guides$url_loc)
+# source("sub_tasks/00_housekeeping.R")
 
-# checkLinks(URLs = website_content$url_web)
 
 # Identify what combination of pages will be created ---------------------------
 
