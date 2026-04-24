@@ -6,9 +6,8 @@
 ## Import packages, authenticate google drive ----------------------------------
 
 source("sub_tasks/01_import_R_packages.R")
-# googledrive::drive_deauth()
 googledrive::drive_auth()
-1
+
 
 ## Import helper functions -----------------------------------------------------
 srvys <- c("NBS", "EBS", "BS", "AI")
@@ -28,6 +27,7 @@ clear_htmls() # removes all existing htmls in docs folder
 access_to_internet <- TRUE
 source("sub_tasks/03_data.R")
 
+
 ## Create search bar data ------------------------------------------------------
 source("sub_tasks/04_search_bar_data.R")
 
@@ -35,6 +35,7 @@ source("sub_tasks/04_search_bar_data.R")
 # Checks to make sure files work and are updated -------------------------------
 
 # source("sub_tasks/00_housekeeping.R")
+
 
 
 # Identify what combination of pages will be created ---------------------------

@@ -50,7 +50,7 @@ var searchData = [
   {
     "title": "Voucher Collection and Preservation Procedures",
     "section": "Vouchers",
-    "url_loc": "../files/Collections/haul_catch_specimen_forms/catchforms/Preservation Procedures for Voucher Collection.pdf",
+    "url_loc": "../files/Collections/Preservation Procedures for Voucher Collection.pdf",
     "source": "entries"
   },
   {
@@ -208,7 +208,7 @@ var searchData = [
   {
     "title": "Light meter instructions",
     "section": "Light meter",
-    "url_loc": "../files/Manuals/Light meters/Wildlife Computers MK9 Stan/Light meter instuctions 2018.pdf",
+    "url_loc": "../files/Manuals/Light meters/Light meter instuctions 2018.pdf",
     "source": "entries"
   },
   {
@@ -370,13 +370,7 @@ var searchData = [
   {
     "title": "Chemical Handling Guidance v. 2019",
     "section": "",
-    "url_loc": "../files/Collections/haul_catch_specimen_forms/catchforms/Preservation Procedures for Voucher Collection.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Chief Scientist & Deck Lead Manual v. 2007",
-    "section": "",
-    "url_loc": "../files/Manuals/Survey operation manuals/Chief Scientist Manual07.pdf",
+    "url_loc": "../files/Collections/Preservation Procedures for Voucher Collection.pdf",
     "source": "entries"
   },
   {
@@ -392,39 +386,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Catch & Length Data Entry (METIS)",
-    "section": "",
-    "url_loc": "../files/Manuals/Catch Data Entry/METIS Training Manuals and Documentation",
-    "source": "entries"
-  },
-  {
     "title": "METIS system - Oracle Apex End User's Guide",
     "section": "",
     "url_loc": "../files/Manuals/Catch Data Entry/oracle-apex-end-users-guide.pdf",
     "source": "entries"
   },
   {
-    "title": "METIS Manuals and Documentation",
-    "section": "",
-    "url_loc": "../files/Manuals/Catch Data Entry/METIS Training Manuals and Documentation/",
-    "source": "entries"
-  },
-  {
     "title": "METIS PC Required Directories and Control Files",
     "section": "",
     "url_loc": "../files/Manuals/Catch Data Entry/METIS PC Required Directories and Control Files/",
-    "source": "entries"
-  },
-  {
-    "title": "Specimen Form",
-    "section": "Specimen",
-    "url_loc": "../files/Collections/haul_catch_specimen_forms/specimenforms/SPECIMEN_FORM.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Specimen Label",
-    "section": "Specimen",
-    "url_loc": "../files/Collections/haul_catch_specimen_forms/specimenforms/SPECIMEN_LABEL.pdf",
     "source": "entries"
   },
   {
@@ -458,12 +428,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Volumetric Sampling Example (from AI 2022 OEX)",
-    "section": "Large catch resources",
-    "url_loc": "../files/Collections/Large catches/Volumetric Haul 201 Example.xlsx",
-    "source": "entries"
-  },
-  {
     "title": "Steps for splitting catch (GOA/AI)",
     "section": "Large catch resources",
     "url_loc": "../files/Collections/Large catches/Steps for Splitting a Catch.pdf",
@@ -479,6 +443,12 @@ var searchData = [
     "title": "Marel scale calibration",
     "section": "",
     "url_loc": "../files/manuals/MAREL_scales/Basket_Scale_Calibration.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Marel scale manuals",
+    "section": "",
+    "url_loc": "../files/manuals/MAREL_scales",
     "source": "entries"
   },
   {
@@ -544,25 +514,19 @@ var searchData = [
   {
     "title": "Nexus",
     "section": "BlueSoleil Pairing (Tablet to Computer)",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/20191230_Nexus (specimen) tablet pair to CATCH COMPUTER.pdf",
+    "url_loc": "../files/Manuals/Apps Software/Nexus (specimen) tablet pair to CATCH COMPUTER.pdf",
     "source": "entries"
   },
   {
     "title": "Samsung",
     "section": "BlueSoleil Pairing (Tablet to Computer)",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/20191230_Samsung (length) tablet pair to CATCH COMPUTER.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Transferring Tablet Files using Blusoleil",
-    "section": "Tablet file transfer",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Transferring Tablet Files Using BlueSoleil.pdf",
+    "url_loc": "../files/Manuals/Apps Software/Samsung (length) tablet pair to CATCH COMPUTER.pdf",
     "source": "entries"
   },
   {
     "title": "Transferring Tablet Files using default bluetooth",
     "section": "Tablet file transfer",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Transferring Tablet Files Using Default Bluetooth Functionality.pdf",
+    "url_loc": "../files/Manuals/Apps Software/Transferring Tablet Files Using Default Bluetooth Functionality.pdf",
     "source": "entries"
   },
   {
@@ -580,13 +544,13 @@ var searchData = [
   {
     "title": "Nexus (specimen) file transfer",
     "section": "Initial Tablet Set Up",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Nexus (specimen) file transfer.pdf",
+    "url_loc": "../files/Manuals/Apps Software/Nexus (specimen) file transfer.pdf",
     "source": "entries"
   },
   {
     "title": "Samsung (length) file transfer",
     "section": "Initial Tablet Set Up",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Samsung (length) file transfer.pdf",
+    "url_loc": "../files/Manuals/Apps Software/Samsung (length) file transfer.pdf",
     "source": "entries"
   },
   {
@@ -635,7 +599,7 @@ var searchData = [
     "title": "Catch Form",
     "section": "Catch",
     "subtitle": "Backup; made by Jerry",
-    "url_loc": "../files/Collections/haul_catch_specimen_forms/catchforms/new_CATCH_FORM.pdf",
+    "url_loc": "../files/Collections/haul_catch_specimen_forms/catchforms/catch_form.pdf",
     "source": "entries"
   },
   {
@@ -719,15 +683,9 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Portfolio Photo Management Software Instructions",
-    "section": "",
-    "url_loc": "../files/manuals/Portfolio/Portfolio Photo Management Software Instructions.pdf",
-    "source": "entries"
-  },
-  {
     "title": "Voucher Collection and Preservation Procedures",
     "section": "",
-    "url_loc": "../files/Collections/haul_catch_specimen_forms/catchforms/Preservation Procedures for Voucher Collection.pdf",
+    "url_loc": "../files/Collections/Preservation Procedures for Voucher Collection.pdf",
     "source": "entries"
   },
   {
@@ -739,7 +697,7 @@ var searchData = [
   {
     "title": "Minimum Length/Sex subsampling (AI only)",
     "section": "",
-    "url_loc": "../files/Manuals/Survey operation manuals/Min length and sex per haul clc.pdf",
+    "url_loc": "../files/Manuals/Survey operation manuals/Min length and sex per haul.pdf",
     "source": "entries"
   },
   {
@@ -811,7 +769,7 @@ var searchData = [
   {
     "title": "Backup data sources when primary widgets fail",
     "section": "",
-    "url_loc": ".../files/Manuals/data backup sources.pdf",
+    "url_loc": "../files/Manuals/data backup sources.pdf",
     "source": "entries"
   },
   {
@@ -955,19 +913,19 @@ var searchData = [
   {
     "title": "Screenshot of Marport settings: Command View - Net Mensuration",
     "section": "Marport",
-    "url_loc": "../files/Manuals/SCREENSHOTS/AK_Knight_screenshot_MARPORT_COMM_viewafsc_2015.png",
+    "url_loc": "../files/Manuals/marport/SCREENSHOTS/AK_Knight_screenshot_MARPORT_COMM_viewafsc_2015.png",
     "source": "entries"
   },
   {
     "title": "Screenshot of Marport settings: Command View - MBAR Control Panel",
     "section": "Marport",
-    "url_loc": "../files/Manuals/SCREENSHOTS/AK_Knight_screenshot_mbar_controls_2015.png",
+    "url_loc": "../files/Manuals/marport/SCREENSHOTS/AK_Knight_screenshot_mbar_controls_2015.png",
     "source": "entries"
   },
   {
     "title": "Screenshot of Marport settings: Marport Commander - NMEA output",
     "section": "Marport",
-    "url_loc": "../files/Manuals/SCREENSHOTS/AK_Knight_screenshot_MARPORT_COMM_gps_nmea_2015.png",
+    "url_loc": "../files/Manuals/marport/SCREENSHOTS/AK_Knight_screenshot_MARPORT_COMM_gps_nmea_2015.png",
     "source": "entries"
   },
   {
@@ -1319,6 +1277,12 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "GIS Training",
+    "section": "",
+    "url_loc": "../files/Station info/GIS_Training_2019.pdf",
+    "source": "entries"
+  },
+  {
     "title": "GAPsurvey R Package",
     "section": "",
     "url_loc": "./docs/software_r_software_&_scripts.html",
@@ -1345,13 +1309,13 @@ var searchData = [
   {
     "title": "Sea Otter factsheet",
     "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/critical habitat/factsheet_seaotter.pdf",
+    "url_loc": "../files/SpeciesID/protected_species/Helpful brochures/factsheet_seaotter.pdf",
     "source": "entries"
   },
   {
     "title": "North Pacific Right Whale critical habitat",
     "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/critical habitat/NPRW Critical Habitat.jpg",
+    "url_loc": "../files/SpeciesID/protected_species/critical habitat/North Pacific Right Whale Critical Habitat.jpg",
     "source": "entries"
   },
   {
@@ -1512,7 +1476,7 @@ var searchData = [
   {
     "title": "SASH Video",
     "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/Sexual Harrassment.mp4",
+    "url_loc": "../files/Safety/Sexual Harassment/Fostering a Respectful Work Environment.mp4",
     "source": "entries"
   },
   {
@@ -1710,7 +1674,7 @@ var searchData = [
   {
     "title": "Warm Up Hand Out",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Approved IPS Exercise Programs/NOAA warm up program handout.pdf",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/NOAA warm up program handout.pdf",
     "source": "entries"
   },
   {
@@ -1920,7 +1884,7 @@ var searchData = [
   {
     "title": "Chemical Handling Guidance",
     "section": "",
-    "url_loc": "../files/Collections/haul_catch_specimen_forms/catchforms/Preservation Procedures for Voucher Collection.pdf",
+    "url_loc": "../files/Collections/Preservation Procedures for Voucher Collection.pdf",
     "source": "entries"
   },
   {
@@ -2110,12 +2074,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "What Ifs Documentation",
-    "section": "",
-    "url_loc": "../files/Safety/What Ifs/Medical Plan for GAP BT survey charters FY24.pdf",
-    "source": "entries"
-  },
-  {
     "title": "Ashfall prepardness infographic",
     "section": "",
     "url_loc": "../files/Safety/Ashfall preparedness readiness.pdf",
@@ -2206,12 +2164,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Confined Space Form",
-    "section": "",
-    "url_loc": "../files/Safety/confined space form 2022.xlsx",
-    "source": "entries"
-  },
-  {
     "title": "PLB Manual",
     "section": "",
     "url_loc": "../files/Safety/EPIRBs/aquafix_aquafixman.pdf",
@@ -2220,7 +2172,7 @@ var searchData = [
   {
     "title": "AED Manual",
     "section": "",
-    "url_loc": "../files/Safety/UserManual_AED_Hart_350P_Aug2021.pdf",
+    "url_loc": "../files/Safety/UserManual_AED_Hart_350P.pdf",
     "source": "entries"
   },
   {
@@ -2239,12 +2191,6 @@ var searchData = [
     "title": "Estimating Distance Off",
     "section": "",
     "url_loc": "../files/Safety/Estimating Distance Off_BoatUS.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Mental Health and Trauma Resources",
-    "section": "",
-    "url_loc": "../files/Safety/Mental Health and Trauma Resources.pdf",
     "source": "entries"
   },
   {
@@ -2309,12 +2255,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "BlueSoleil",
-    "section": "",
-    "url_loc": "../files/Manuals/TRENDnet_Bluetooth (BlueSoleil)/",
-    "source": "entries"
-  },
-  {
     "title": "BVDR Converter",
     "section": "",
     "url_loc": "../files/Manuals/BVDR_converter/",
@@ -2354,12 +2294,6 @@ var searchData = [
     "title": "Hyperterm",
     "section": "",
     "url_loc": "../files/Software/Hyperterm",
-    "source": "entries"
-  },
-  {
-    "title": "Light Meters",
-    "section": "",
-    "url_loc": "../files/Manuals/Light meters",
     "source": "entries"
   },
   {
@@ -2411,12 +2345,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "GIS Training",
-    "section": "",
-    "url_loc": "../files/Station info/GIS_Training_2019.pdf",
-    "source": "entries"
-  },
-  {
     "title": "GOA Port Guide",
     "section": "",
     "url_loc": "../files/Port info/2025 GOA Port Guide.pdf",
@@ -2432,6 +2360,12 @@ var searchData = [
     "title": "EBS Port Guide",
     "section": "",
     "url_loc": "../files/Port info/EBS Port Guide.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Other port info",
+    "section": "",
+    "url_loc": "../files/Port info/",
     "source": "entries"
   },
   {
@@ -2467,13 +2401,13 @@ var searchData = [
   {
     "title": "AFSC Photo Consent Release",
     "section": "",
-    "url_loc": "../files/Social Media Policies/NMFS_Individual Release_Fillable.pdf",
+    "url_loc": "../files/Social media policies/NMFS_Individual Release_Fillable.pdf",
     "source": "entries"
   },
   {
     "title": "GAP Surveys Photo Sharing and Social Media",
     "section": "",
-    "url_loc": "../files/Social Media Policies/GAP Surveys Photo Sharing and Social Media",
+    "url_loc": "../files/Social media policies/GAP Surveys Photo Sharing and Social Media.pdf",
     "source": "entries"
   },
   {
@@ -2491,7 +2425,7 @@ var searchData = [
   {
     "title": "Station Logs",
     "section": "GOA/AI",
-    "url_loc": "../files/Station info/AI_GOA/Station Logs",
+    "url_loc": "../files/Station info/AI_GOA/Station Logs/",
     "source": "entries"
   },
   {
@@ -2519,7 +2453,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "NOAA Protocols for Groundfish Bottom Trawl Surveys of the Nation’s Fishery Resources",
+    "title": "NOAA Protocols for Bottom Trawl Surveys",
     "section": "",
     "url_loc": "../files/Manuals/Survey operation manuals/NOAA trawl protocols.pdf",
     "source": "entries"
@@ -2689,19 +2623,19 @@ var searchData = [
   {
     "title": "ESA-listed AK Bird ID",
     "section": "bird",
-    "url_loc": "../files/SpeciesID/Protected_Species/ID guides/ESA AK Bird ID.pdf",
+    "url_loc": "../files/SpeciesID/Protected_Species/ID guides/ESA-listed AK Bird ID.pdf",
     "source": "guides"
   },
   {
     "title": "Spectacled Eider Factsheet",
     "section": "bird",
-    "url_loc": "../files/SpeciesID/guides/birdmammal/eider factsv2.pdf",
+    "url_loc": "../files/SpeciesID/guides/birdmammal/spectacled_eider_factsheet.pdf",
     "source": "guides"
   },
   {
     "title": "Stellers Eider Factsheet",
     "section": "bird",
-    "url_loc": "../files/SpeciesID/guides/birdmammal/Eider facts.pdf",
+    "url_loc": "../files/SpeciesID/guides/birdmammal/Stellers Eider factsheet.pdf",
     "source": "guides"
   },
   {
@@ -2957,7 +2891,7 @@ var searchData = [
     "title": "Blackspotted/Rougheye one pager",
     "section": "fish",
     "subtitle": "Sebastidae",
-    "url_loc": "../files/SpeciesID/guides/blackspot_rougheye_printout.pdf",
+    "url_loc": "../files/SpeciesID/guides/fish/blackspot_rougheye_printout.pdf",
     "source": "guides"
   },
   {
@@ -3094,7 +3028,7 @@ var searchData = [
   {
     "title": "Annelidae photo guide Katrin Iken",
     "section": "worm",
-    "url_loc": "../files/SpeciesID/guides/inverts/Annelidae_Arctic_photoguide_Jan2021.pdf",
+    "url_loc": "../files/SpeciesID/guides/inverts/Annelida_Arctic_photoguide_Jan2021.pdf",
     "source": "guides"
   },
   {

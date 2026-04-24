@@ -87,135 +87,135 @@ annual_audit |>
 
 
 
-# ----------------------------------------------------------------
-# STEP 3: Identify files in /files not referenced in the app
-# ----------------------------------------------------------------
-
-# All files on disk
-all_files <- clean_paths(
-  list.files("./files/", recursive = TRUE, full.names = TRUE)
-)
-
-# All app-referenced files (combined)
-files_in_app <- clean_paths(c(
-  website_content$url_loc[website_content$in_survey_app],
-  task_list_data$url_loc,
-  taxa_guides$url_loc
-))
-
-
-# Split app references into:
-# - direct file references
-# - folder references (indirect links)
-app_files <- files_in_app[grepl("\\.[^./]+$", files_in_app)]
-app_folders <- sub("/$", "", files_in_app[!grepl("\\.[^./]+$", files_in_app)])
-
-# Files not referenced anywhere in the app
-files_not_in_app <- all_files[
-  grepl("\\.[^./]+$", all_files) &          # keep real files only
-    !grepl("(^|/)\\.", all_files) &         # remove hidden files/folders
-    !grepl("~$", all_files) &               # remove temp files
-    !all_files %in% app_files &             # exclude direct references
-    !vapply(all_files, function(f) {        # exclude folder-based references
-      any(startsWith(f, paste0(app_folders, "/")))
-    }, logical(1))
-]
-
-# Optional: additional manual exclusions
-orphan_files <- files_not_in_app[
-  !grepl(
-    "Collections/Special projects/|SpeciesID/|Travel/flight itineraries/|Thumbs.db|Manuals/R/GAPsurvey/|archive|Safety/Accidents/slide|Metis PC Required Directories and Control Files",
-    files_not_in_app
-  )
-]
-
-orphan_files
-
-
-# ----------------------------------------------------------------
-# STEP 4: Detect duplicate files by filename (case-insensitive)
-# ----------------------------------------------------------------
-
-trim_files <- tolower(all_files)[
-  !grepl(
-    "Manuals/Globe/|Manuals/R/GAPsurvey/|
-     Trainings/Prior Years Training Powerpoints and Resources/|
-     Thumbs.db|archive|Manuals/MARPORT/|
-     Collections/Special projects/|Manuals/TimeZero/|Critical habitat/shapefiles/|
-     Manuals/Olex and OpenCPN/|Thumbs.db|Collections/Special projects/|Prior Years Training Powerpoints and Resources",
-    all_files
-  )
-]
-
-# Group by filename
-dup_list <- split(trim_files, basename(trim_files))
-
-# Keep only duplicates
-dup_list <- dup_list[sapply(dup_list, length) > 1]
-
-# Sort each group by directory for easier cleanup
-dup_list <- lapply(dup_list, function(paths) {
-  paths[order(dirname(paths))]
-})
-
-# Sort list alphabetically by filename
-dup_filenames <- dup_list[order(names(dup_list))]
-
-dup_filenames
-
-
-# ----------------------------------------------------------------
-# STEP 4b: Detect duplicate files by hashes
-# ----------------------------------------------------------------
-
-file_paths <- paste0("./files/", trim_files)
-
-file_hashes <- vapply(file_paths, function(f) {
-  if (!file.exists(f)) return(NA_character_)
-  
-  size <- file.info(f)$size
-  
-  con <- file(f, "rb")
-  raw <- readBin(con, what = "raw", n = size)
-  close(con)
-  
-  digest::digest(raw, algo = "md5")
-}, character(1))
-
-
-dup_df <- data.frame(
-  path = file_paths,
-  hash = file_hashes,
-  size = file.info(file_paths)$size,
-  stringsAsFactors = FALSE
-) %>%
-  filter(!is.na(hash))   # remove missing files
-
-
-dup_files <- dup_df %>%
-  group_by(hash) %>%
-  filter(n() > 1) %>%
-  ungroup() %>%
-  mutate(
-    file = basename(path),
-    folder = dirname(path)
-  ) %>%
-  group_by(hash) %>%
-  mutate(
-    group_id = cur_group_id(),
-    n_duplicates = n()
-  ) %>%
-  ungroup() %>%
-  arrange(file, group_id, folder) %>%
-  group_by(group_id) %>%
-  mutate(
-    keep = ifelse(folder == min(folder), "KEEP", "REVIEW")
-  ) %>%
-  ungroup() %>%
-  select(group_id, file, path, size, keep) %>%
-  arrange(group_id)
-
-View(dup_files)
+# # ----------------------------------------------------------------
+# # STEP 3: Identify files in /files not referenced in the app
+# # ----------------------------------------------------------------
+# 
+# # All files on disk
+# all_files <- clean_paths(
+#   list.files("./files/", recursive = TRUE, full.names = TRUE)
+# )
+# 
+# # All app-referenced files (combined)
+# files_in_app <- clean_paths(c(
+#   website_content$url_loc[website_content$in_survey_app],
+#   task_list_data$url_loc,
+#   taxa_guides$url_loc
+# ))
+# 
+# 
+# # Split app references into:
+# # - direct file references
+# # - folder references (indirect links)
+# app_files <- files_in_app[grepl("\\.[^./]+$", files_in_app)]
+# app_folders <- sub("/$", "", files_in_app[!grepl("\\.[^./]+$", files_in_app)])
+# 
+# # Files not referenced anywhere in the app
+# files_not_in_app <- all_files[
+#   grepl("\\.[^./]+$", all_files) &          # keep real files only
+#     !grepl("(^|/)\\.", all_files) &         # remove hidden files/folders
+#     !grepl("~$", all_files) &               # remove temp files
+#     !all_files %in% app_files &             # exclude direct references
+#     !vapply(all_files, function(f) {        # exclude folder-based references
+#       any(startsWith(f, paste0(app_folders, "/")))
+#     }, logical(1))
+# ]
+# 
+# # Optional: additional manual exclusions
+# orphan_files <- files_not_in_app[
+#   !grepl(
+#     "Collections/Special projects/|SpeciesID/|Travel/flight itineraries/|Thumbs.db|Manuals/R/GAPsurvey/|archive|Safety/Accidents/slide|Metis PC Required Directories and Control Files",
+#     files_not_in_app
+#   )
+# ]
+# 
+# orphan_files
+# 
+# 
+# # ----------------------------------------------------------------
+# # STEP 4: Detect duplicate files by filename (case-insensitive)
+# # ----------------------------------------------------------------
+# 
+# trim_files <- tolower(all_files)[
+#   !grepl(
+#     "Manuals/Globe/|Manuals/R/GAPsurvey/|
+#      Trainings/Prior Years Training Powerpoints and Resources/|
+#      Thumbs.db|archive|Manuals/MARPORT/|
+#      Collections/Special projects/|Manuals/TimeZero/|Critical habitat/shapefiles/|
+#      Manuals/Olex and OpenCPN/|Thumbs.db|Collections/Special projects/|Prior Years Training Powerpoints and Resources",
+#     all_files
+#   )
+# ]
+# 
+# # Group by filename
+# dup_list <- split(trim_files, basename(trim_files))
+# 
+# # Keep only duplicates
+# dup_list <- dup_list[sapply(dup_list, length) > 1]
+# 
+# # Sort each group by directory for easier cleanup
+# dup_list <- lapply(dup_list, function(paths) {
+#   paths[order(dirname(paths))]
+# })
+# 
+# # Sort list alphabetically by filename
+# dup_filenames <- dup_list[order(names(dup_list))]
+# 
+# dup_filenames
+# 
+# 
+# # ----------------------------------------------------------------
+# # STEP 4b: Detect duplicate files by hashes
+# # ----------------------------------------------------------------
+# 
+# file_paths <- paste0("./files/", trim_files)
+# 
+# file_hashes <- vapply(file_paths, function(f) {
+#   if (!file.exists(f)) return(NA_character_)
+#   
+#   size <- file.info(f)$size
+#   
+#   con <- file(f, "rb")
+#   raw <- readBin(con, what = "raw", n = size)
+#   close(con)
+#   
+#   digest::digest(raw, algo = "md5")
+# }, character(1))
+# 
+# 
+# dup_df <- data.frame(
+#   path = file_paths,
+#   hash = file_hashes,
+#   size = file.info(file_paths)$size,
+#   stringsAsFactors = FALSE
+# ) %>%
+#   filter(!is.na(hash))   # remove missing files
+# 
+# 
+# dup_files <- dup_df %>%
+#   group_by(hash) %>%
+#   filter(n() > 1) %>%
+#   ungroup() %>%
+#   mutate(
+#     file = basename(path),
+#     folder = dirname(path)
+#   ) %>%
+#   group_by(hash) %>%
+#   mutate(
+#     group_id = cur_group_id(),
+#     n_duplicates = n()
+#   ) %>%
+#   ungroup() %>%
+#   arrange(file, group_id, folder) %>%
+#   group_by(group_id) %>%
+#   mutate(
+#     keep = ifelse(folder == min(folder), "KEEP", "REVIEW")
+#   ) %>%
+#   ungroup() %>%
+#   select(group_id, file, path, size, keep) %>%
+#   arrange(group_id)
+# 
+# View(dup_files)
 
 
 

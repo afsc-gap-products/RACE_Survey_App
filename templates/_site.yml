@@ -49,8 +49,6 @@ navbar:
          href: Safety_Illness_and_injury_reporting.html
        - text: "Manuals and References"
          href: Safety_Manuals_and_References.html
-       - text: "NA"
-         href: Safety_NA.html
     - text: "Software"
       menu: 
        - text: "R Software & Scripts"
