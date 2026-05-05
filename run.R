@@ -13,6 +13,24 @@ googledrive::drive_auth()
 srvys <- c("NBS", "EBS", "BS", "AI")
 source("sub_tasks/02_functions.R")
 
+##   Import and clean up data. If access_to_internet == TRUE, a local copy
+##   of the various data input are saved in the data/ folder.
+
+access_to_internet <- TRUE
+source("sub_tasks/03_data.R")
+
+
+# Checks to make sure files work and are updated -------------------------------
+
+# source("sub_tasks/00_housekeeping.R")
+
+
+## Create search bar data ------------------------------------------------------
+source("sub_tasks/04_search_bar_data.R")
+
+
+# Identify what combination of pages will be created ---------------------------
+
 ##   Clear the html files in docs/ folder. Since it takes a while to create
 ##   all of the fish ID pages, remake_species_pages can be set to F to skip
 ##   remaking those pages. In clear_htmls() the species id pages (those that
@@ -21,24 +39,7 @@ source("sub_tasks/02_functions.R")
 remake_species_pages <- FALSE
 clear_htmls() # removes all existing htmls in docs folder
 
-##   Import and clean up data. If access_to_internet == TRUE, a local copy
-##   of the various data input are saved in the data/ folder.
 
-access_to_internet <- TRUE
-source("sub_tasks/03_data.R")
-
-
-## Create search bar data ------------------------------------------------------
-source("sub_tasks/04_search_bar_data.R")
-
-
-# Checks to make sure files work and are updated -------------------------------
-
-# source("sub_tasks/00_housekeeping.R")
-
-
-
-# Identify what combination of pages will be created ---------------------------
 
 ## Find combination of webpages using the generic template. dir_pdfs is a
 ## vector of subpages that link to pdfs and not htmls so we note that here.
@@ -71,9 +72,9 @@ custom_comb <- tibble::tribble(
   "FPC and Deck Lead", "Tasklist 2 - End of Leg", "tasklist.rmd",
   "FPC and Deck Lead", "Tasklist 3 - End of Survey", "tasklist.rmd",
   "Personnel", "Flight Itineraries", "personnel_flight_itineraries.Rmd",
-  "Species ID", "Minimum ID", "species_id_minimum_id.Rmd",
-  "Species ID", "Guides", "species_id_guides.Rmd",
-  "Species ID", "Fish ID by Taxa", "species_id_id_by_taxa.Rmd"
+  "Species Info", "Minimum ID", "species_id_minimum_id.Rmd",
+  "Species Info", "Guides", "species_id_guides.Rmd",
+  "Species Info", "Fish ID by Taxa", "species_id_id_by_taxa.Rmd"
 )
 
 custom_comb$web_page <-

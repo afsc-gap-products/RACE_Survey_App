@@ -55,7 +55,7 @@ annual_updates <- readxl::read_excel(
   trim_ws = TRUE
 ) |>
   janitor::clean_names() |>
-  dplyr::filter(!status %in% c("Not needed", "Not started")) |>
+  dplyr::filter(status == "Updated") |>
   dplyr::select(file, path, importance, status) |>
   dplyr::filter(!is.na(path))
 
@@ -129,6 +129,7 @@ annual_audit |>
 #   )
 # ]
 # 
+# # list of files in app but not linked anywhere
 # orphan_files
 # 
 # 
@@ -161,6 +162,7 @@ annual_audit |>
 # # Sort list alphabetically by filename
 # dup_filenames <- dup_list[order(names(dup_list))]
 # 
+# # list of duplicate files by name
 # dup_filenames
 # 
 # 
@@ -172,13 +174,13 @@ annual_audit |>
 # 
 # file_hashes <- vapply(file_paths, function(f) {
 #   if (!file.exists(f)) return(NA_character_)
-#   
+# 
 #   size <- file.info(f)$size
-#   
+# 
 #   con <- file(f, "rb")
 #   raw <- readBin(con, what = "raw", n = size)
 #   close(con)
-#   
+# 
 #   digest::digest(raw, algo = "md5")
 # }, character(1))
 # 
@@ -215,6 +217,7 @@ annual_audit |>
 #   select(group_id, file, path, size, keep) %>%
 #   arrange(group_id)
 # 
+# # list of duplicate files based on hashes
 # View(dup_files)
 
 

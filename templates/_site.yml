@@ -51,8 +51,6 @@ navbar:
          href: Safety_Manuals_and_References.html
     - text: "Software"
       menu: 
-       - text: "R Software & Scripts"
-         href: Software_R_Software_&_Scripts.html
        - text: "Software & drivers"
          href: Software_Software_&_drivers.html
     - text: "Species ID"
@@ -71,6 +69,8 @@ navbar:
          href: Survey_Ops_Operations.html
        - text: "Training Resources and Tech Memos"
          href: Survey_Ops_Training_Resources_and_Tech_Memos.html
+       - text: "Travel Resources"
+         href: Survey_Ops_Travel_Resources.html
 
     - icon: fab fa-github
       href: https://github.com/afsc-gap-products/RACE_Survey_App
