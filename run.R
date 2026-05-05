@@ -73,7 +73,7 @@ custom_comb <- tibble::tribble(
   "FPC and Deck Lead", "Tasklist 3 - End of Survey", "tasklist.rmd",
   "Personnel", "Flight Itineraries", "personnel_flight_itineraries.Rmd",
   "Species Info", "Minimum ID", "species_id_minimum_id.Rmd",
-  "Species Info", "Guides", "species_id_guides.Rmd",
+  "Species Info", "Species ID Guides", "species_id_guides.Rmd",
   "Species Info", "Fish ID by Taxa", "species_id_id_by_taxa.Rmd"
 )
 

@@ -60,12 +60,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Glycerol/Thymol recipe",
-    "section": "Otoliths",
-    "url_loc": "../files/Collections/Otoliths/GlycerolThymol.pdf",
-    "source": "entries"
-  },
-  {
     "title": "NBS Age Structure Collections Deck Poster",
     "section": "Otoliths",
     "url_loc": "../files/collections/special projects/BS/2025/NBS.pdf",
@@ -138,59 +132,52 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "ES60 resources",
-    "section": "ES60/ES80 data collection",
-    "subtitle": "EBS/NBS ES60 Protocols",
-    "url_loc": "../files/Collections/ES60_80/ES60EBS_protocols.pdf",
+    "title": "ES80 resources",
+    "section": "ES80 data collection",
+    "subtitle": "Forms",
+    "url_loc": "../files/Collections/ES80/forms/",
     "source": "entries"
   },
   {
-    "title": "ES60 resources",
-    "section": "ES60/ES80 data collection",
-    "subtitle": "ES60 Forms",
-    "url_loc": "../files/Collections/ES60_80/ES60 forms/",
+    "title": "ES80 resources",
+    "section": "ES80 data collection",
+    "subtitle": "Replacing hard drive",
+    "url_loc": "../files/Collections/ES80/ES60 Hard drive instructions.pdf",
     "source": "entries"
   },
   {
-    "title": "ES60 resources",
-    "section": "ES60/ES80 data collection",
-    "subtitle": "ES60 Replacing hard drive",
-    "url_loc": "../files/Collections/ES60_80/ES60 Hard drive instructions.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "ES60 resources",
-    "section": "ES60/ES80 data collection",
+    "title": "ES80 resources",
+    "section": "ES80 data collection",
     "subtitle": "ES60 ES70 lockup issue",
-    "url_loc": "../files/Collections/ES60_80/GPTlockup-issue.pdf",
+    "url_loc": "../files/Collections/ES80/GPTlockup-issue.pdf",
     "source": "entries"
   },
   {
-    "title": "ES60 resources",
-    "section": "ES60/ES80 data collection",
-    "subtitle": "ES60 Skipper cheat sheet",
-    "url_loc": "../files/Collections/ES60_80/ES60_skippercheatsheet.pdf",
+    "title": "ES80 resources",
+    "section": "ES80 data collection",
+    "subtitle": "Skipper cheat sheet",
+    "url_loc": "../files/Collections/ES80/ES60_skippercheatsheet.pdf",
     "source": "entries"
   },
   {
-    "title": "ES60 resources",
-    "section": "ES60/ES80 data collection",
+    "title": "ES80 resources",
+    "section": "ES80 data collection",
     "subtitle": "Vessel photos & pictures to assist with calibration",
-    "url_loc": "../files/Collections/ES60_80/ES60photos",
+    "url_loc": "../files/Collections/ES80/ES60photos",
     "source": "entries"
   },
   {
     "title": "ES80 resources",
-    "section": "ES60/ES80 data collection",
+    "section": "ES80 data collection",
     "subtitle": "ES80 Protocols - all surveys",
-    "url_loc": "../files/Collections/ES60_80/ES80_protocols_2026.pdf",
+    "url_loc": "../files/Collections/ES80/ES80_protocols_2026.pdf",
     "source": "entries"
   },
   {
     "title": "ES80 resources",
-    "section": "ES60/ES80 data collection",
+    "section": "ES80 data collection",
     "subtitle": "ES80 Training Slides",
-    "url_loc": "../files/Collections/ES60_80/2025 ES80 data collection.pdf",
+    "url_loc": "../files/Collections/ES80/2025 ES80 data collection.pdf",
     "source": "entries"
   },
   {
@@ -338,30 +325,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "All CTD resources",
-    "section": "",
-    "url_loc": "../files/Manuals/CTD Manuals",
-    "source": "entries"
-  },
-  {
-    "title": "CTD Laptop Login",
-    "section": "",
-    "url_loc": "../files/Manuals/CTD Manuals/",
-    "source": "entries"
-  },
-  {
-    "title": "SBE19plus",
-    "section": "",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/",
-    "source": "entries"
-  },
-  {
-    "title": "Seabird Programs",
-    "section": "",
-    "url_loc": "../files/Manuals/CTD Manuals/Seabird Programs/",
-    "source": "entries"
-  },
-  {
     "title": "GAPsurvey R Package",
     "section": "GAPsurvey R Package",
     "url_loc": "./docs/software_r_software_&_scripts.html",
@@ -380,16 +343,33 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Catch Form",
-    "section": "Paper Forms",
-    "subtitle": "Backup; made by Jerry",
-    "url_loc": "../files/Collections/haul_catch_specimen_forms/catchforms/catch_form.pdf",
+    "title": "CTD Laptop Login",
+    "section": "CTD",
+    "url_loc": "../files/Manuals/CTD Manuals/",
     "source": "entries"
   },
   {
-    "title": "Standard Catch Form",
-    "section": "Paper Forms",
-    "url_loc": "../files/Collections/haul_catch_specimen_forms/catchforms/CATCH_FORM.pdf",
+    "title": "Seabird Programs",
+    "section": "CTD",
+    "url_loc": "../files/Manuals/CTD Manuals/Seabird Programs/",
+    "source": "entries"
+  },
+  {
+    "title": "All CTD resources",
+    "section": "CTD",
+    "url_loc": "../files/Manuals/CTD Manuals",
+    "source": "entries"
+  },
+  {
+    "title": "SBE19plus",
+    "section": "CTD",
+    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/",
+    "source": "entries"
+  },
+  {
+    "title": "SBE39",
+    "section": "CTD",
+    "url_loc": "../files/Manuals/CTD Manuals/SBE39/",
     "source": "entries"
   },
   {
@@ -405,21 +385,9 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Polycorder Code List (Alphabetical)",
+    "title": "Polycorder Code List",
     "section": "On-deck Species (Polycoder) Codes",
-    "url_loc": "../files/Collections/GOA_BS poly complete alpha_2017.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Polycorder Code List (Complete -- Alphabetical and Numerical)",
-    "section": "On-deck Species (Polycoder) Codes",
-    "url_loc": "../files/Collections/GOA_BS poly complete both_2017.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Polycorder Code List (Numerical)",
-    "section": "On-deck Species (Polycoder) Codes",
-    "url_loc": "../files/Collections/GOA_BS poly complete num_2017.pdf",
+    "url_loc": "../files/Collections/GOA_BS poly complete.pdf",
     "source": "entries"
   },
   {
@@ -455,19 +423,37 @@ var searchData = [
   {
     "title": "Volumetric Sampling Form",
     "section": "Large catch resources",
-    "url_loc": "../files/Collections/haul_catch_specimen_forms/catchforms/Volumetric_Sampling_Form.pdf",
+    "url_loc": "../files/Collections/forms/catchforms/Volumetric_Sampling_Form.pdf",
     "source": "entries"
   },
   {
-    "title": "Marel scale calibration",
+    "title": "Catch Form",
+    "section": "",
+    "url_loc": "../files/Collections/forms/catchforms/catch_form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Marel (deck scales) User Manuals",
     "section": "Scales",
     "url_loc": "../files/manuals/MAREL_scales/Basket_Scale_Calibration.pdf",
     "source": "entries"
   },
   {
-    "title": "Marel scale manuals",
+    "title": "Marel (deck scales) User Manuals",
     "section": "Scales",
     "url_loc": "../files/manuals/MAREL_scales",
+    "source": "entries"
+  },
+  {
+    "title": "MSI (load cell/crane scale) User Manual",
+    "section": "Scales",
+    "url_loc": "../files/Manuals/MSI_loadcells_cranescales/",
+    "source": "entries"
+  },
+  {
+    "title": "Voucher Collection and Preservation Procedures",
+    "section": "Vouchers",
+    "url_loc": "../files/Collections/Preservation Procedures for Voucher Collection.pdf",
     "source": "entries"
   },
   {
@@ -480,18 +466,6 @@ var searchData = [
     "title": "Minimum Length/Sex subsampling (AI only)",
     "section": "",
     "url_loc": "../files/Manuals/Survey operation manuals/Min length and sex per haul.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Random Numbers sheet",
-    "section": "",
-    "url_loc": "../files/Collections/haul_catch_specimen_forms/RandomNumbers.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "MSI load cell/crane scale",
-    "section": "Scales",
-    "url_loc": "../files/Manuals/MSI_loadcells_cranescales/",
     "source": "entries"
   },
   {
@@ -544,13 +518,13 @@ var searchData = [
   },
   {
     "title": "Wand Pairing Barcodes",
-    "section": "Barcodes",
+    "section": "Wands, Headphones, and Speakers Pairing (Peripherals to Tablet)",
     "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/wand pairing barcodes.pub",
     "source": "entries"
   },
   {
     "title": "Wand Pairing Concatenation Barcodes",
-    "section": "Barcodes",
+    "section": "Wands, Headphones, and Speakers Pairing (Peripherals to Tablet)",
     "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/Wand pairing_concatenantion_barcodes.pdf",
     "source": "entries"
   },
@@ -683,24 +657,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Voucher Collection and Preservation Procedures",
-    "section": "Vouchers",
-    "url_loc": "../files/Collections/Preservation Procedures for Voucher Collection.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Chemical Handling Guidance v. 2019",
-    "section": "",
-    "url_loc": "../files/Collections/Preservation Procedures for Voucher Collection.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Deck Lead Training Checklist",
-    "section": "",
-    "url_loc": "../files/Manuals/Survey operation manuals/back deck training sheet.pdf",
-    "source": "entries"
-  },
-  {
     "title": "Gear Codebook",
     "section": "",
     "url_loc": "../files/SpeciesID/DataCodes&Forms.pdf",
@@ -710,60 +666,6 @@ var searchData = [
     "title": "Species Codebook",
     "section": "",
     "url_loc": "../files/SpeciesID/SpeciesCodeManual.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "All CTD resources",
-    "section": "CTD",
-    "url_loc": "../files/Manuals/CTD Manuals",
-    "source": "entries"
-  },
-  {
-    "title": "SBE19plus",
-    "section": "CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/",
-    "source": "entries"
-  },
-  {
-    "title": "SBE39",
-    "section": "CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE39/",
-    "source": "entries"
-  },
-  {
-    "title": "Seabird Programs",
-    "section": "CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/Seabird Programs/",
-    "source": "entries"
-  },
-  {
-    "title": "Beaufort Scale Description Table",
-    "section": "",
-    "url_loc": "../files/Manuals/Beaufort_Scale/Beaufort-scale-values-and-descriptions.png",
-    "source": "entries"
-  },
-  {
-    "title": "Fuel Purchase Form",
-    "section": "",
-    "url_loc": "../files/Purchase/Fuel Purchase Form.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "GOA Fuel details (Seacard Vendors in Alaska)",
-    "section": "",
-    "url_loc": "../files/Purchase/Fuel for GOA boats.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Inter-leg Communication Log",
-    "section": "",
-    "url_loc": "../files/Manuals/miscellaneous/Inter-Leg Communication Log.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Other Purchase Forms",
-    "section": "",
-    "url_loc": "../files/purchase/",
     "source": "entries"
   },
   {
@@ -815,9 +717,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "ES60/ES80 - all things",
-    "section": "ES60",
-    "url_loc": "../files/Collections/ES60_80/",
+    "title": "ES80 - all things",
+    "section": "ES80",
+    "url_loc": "../files/Collections/ES80/",
+    "source": "entries"
+  },
+  {
+    "title": "GAPsurvey R Package",
+    "section": "GAPsurvey R Package",
+    "url_loc": "./docs/software_r_software_&_scripts.html",
     "source": "entries"
   },
   {
@@ -834,7 +742,7 @@ var searchData = [
   },
   {
     "title": "TimeZero",
-    "section": "Globe",
+    "section": "TimeZero",
     "url_loc": "../files/Manuals/TimeZero/",
     "source": "entries"
   },
@@ -1037,9 +945,33 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "Calypso_2017.1.aliases",
+    "section": "Wheelhouse and Calypso",
+    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Calypso Software/Calypso_2017.1.aliases",
+    "source": "entries"
+  },
+  {
+    "title": "Calypso_2017.1.exe",
+    "section": "Wheelhouse and Calypso",
+    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Calypso Software/Calypso_2017.1.exe",
+    "source": "entries"
+  },
+  {
+    "title": "Calypso_2017.1.ini",
+    "section": "Wheelhouse and Calypso",
+    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Calypso Software/Calypso_2017.1.ini",
+    "source": "entries"
+  },
+  {
     "title": "How to log a haul with Wheelhouse and Calypso",
     "section": "Wheelhouse and Calypso",
     "url_loc": "../files/Manuals/Calypso_Wheelhouse/Log hauls during survey.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "lvanlys.dll",
+    "section": "Wheelhouse and Calypso",
+    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Calypso Software/lvanlys.dll",
     "source": "entries"
   },
   {
@@ -1061,45 +993,135 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "GIS Training",
+    "section": "",
+    "url_loc": "../files/Station info/GIS_Training_2019.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Guide to Running Wheelhouse and Calypso for EBS survey",
+    "section": "",
+    "url_loc": "../files/Manuals/Calypso_Wheelhouse/WheelhouseStepByStep&QuickRef.pdf",
+    "source": "entries"
+  },
+  {
     "title": "Bottom contact sensor (BCS)",
     "section": "Bottom contact sensor",
     "url_loc": "../files/Manuals/Bottom contact sensor/",
     "source": "entries"
   },
   {
-    "title": "GAPsurvey R Package",
-    "section": "GAPsurvey R Package",
-    "url_loc": "./docs/software_r_software_&_scripts.html",
+    "title": "New Station Progression Worksheet (AKP)",
+    "section": "Station Progression (AI/GOA)",
+    "url_loc": "../files/Station info/AI_GOA/Station Progression/Station Log and Progression 202601 AKP.xlsm",
     "source": "entries"
   },
   {
-    "title": "Calypso_2017.1.aliases",
-    "section": "Wheelhouse and Calypso",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Calypso Software/Calypso_2017.1.aliases",
+    "title": "New Station Progression Worksheet (OEX)",
+    "section": "Station Progression (AI/GOA)",
+    "url_loc": "../files/Station info/AI_GOA/Station Progression/Station Log and Progression 202601 OEX.xlsm",
     "source": "entries"
   },
   {
-    "title": "Calypso_2017.1.exe",
-    "section": "Wheelhouse and Calypso",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Calypso Software/Calypso_2017.1.exe",
+    "title": "New Station Progression Worksheet Guide",
+    "section": "Station Progression (AI/GOA)",
+    "url_loc": "../files/Station info/AI_GOA/Station Progression/New Station Log and Progression Sheet Guide.pptx",
     "source": "entries"
   },
   {
-    "title": "Calypso_2017.1.ini",
-    "section": "Wheelhouse and Calypso",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Calypso Software/Calypso_2017.1.ini",
+    "title": "OLD Station Progression Worksheet (AKP)",
+    "section": "Station Progression (AI/GOA)",
+    "url_loc": "../files/Station info/AI_GOA/Station Progression/AKP_Station_Progression.xlsx",
     "source": "entries"
   },
   {
-    "title": "lvanlys.dll",
-    "section": "Wheelhouse and Calypso",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Calypso Software/lvanlys.dll",
+    "title": "OLD Station Progression Worksheet (OEX)",
+    "section": "Station Progression (AI/GOA)",
+    "url_loc": "../files/Station info/AI_GOA/Station Progression/OEX_Station_Progression.xlsx",
     "source": "entries"
   },
   {
-    "title": "NM Directory",
+    "title": "Daily Temperature Entry Instructions",
     "section": "",
-    "url_loc": "../files/Manuals/NM/",
+    "url_loc": "../files/Manuals/Daily Temperature Entry.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "FPC talking points",
+    "section": "",
+    "url_loc": "../files/Manuals/Checklist for FPC talk.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Fuel Purchase Form",
+    "section": "",
+    "url_loc": "../files/Purchase/Fuel Purchase Form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "GOA Fuel details (Seacard Vendors in Alaska)",
+    "section": "",
+    "url_loc": "../files/Purchase/Fuel for GOA boats.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Haul Forms",
+    "section": "",
+    "url_loc": "../files/Collections/forms/haulforms",
+    "source": "entries"
+  },
+  {
+    "title": "Inter-leg Communication Log",
+    "section": "",
+    "url_loc": "../files/Manuals/miscellaneous/Inter-Leg Communication Log.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "OSI (Purchase Order) PO & Job Services",
+    "section": "",
+    "url_loc": "../files/Contracts/OSI dockside services approved vessels F25.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "OSI Services task log",
+    "section": "",
+    "url_loc": "../files/Contracts/Dockside services FY25 task log v2.xlsx",
+    "source": "entries"
+  },
+  {
+    "title": "Other Purchase Forms",
+    "section": "",
+    "url_loc": "../files/purchase/",
+    "source": "entries"
+  },
+  {
+    "title": "Standard Trawling Procedures Form",
+    "section": "",
+    "url_loc": "../files/Net and wire maintenance/Standard Trawling Procedures Form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "EBS scope table",
+    "section": "Scope tables",
+    "url_loc": "../files/Manuals/Survey operation manuals/EBS Scope Table.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "GOA/AI scope table",
+    "section": "Scope tables",
+    "url_loc": "../files/Manuals/Survey operation manuals/AI GOA Scope table.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "NBS scope table",
+    "section": "Scope tables",
+    "url_loc": "../files/Manuals/Survey operation manuals/NBS Scope Table.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Scope vs. RAPP counts",
+    "section": "Scope tables",
+    "url_loc": "../files/Manuals/Survey operation manuals/Scope_vs_RAPP_counts.xls",
     "source": "entries"
   },
   {
@@ -1127,9 +1149,27 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "NM Directory",
+    "section": "",
+    "url_loc": "../files/Manuals/NM/",
+    "source": "entries"
+  },
+  {
     "title": "Sink times",
     "section": "",
     "url_loc": "../files/Net and wire maintenance/sink times.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "EBS and GOA FPC file box items",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/FY25 EBS GOA Serialized Gear Requests.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "EBS FPC file box items",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/EBS FPC File Box Gear.pdf",
     "source": "entries"
   },
   {
@@ -1175,81 +1215,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Handling artifacts found at sea",
-    "section": "",
-    "url_loc": "../files/Manuals/Survey operation manuals/Artifact guidance.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Haul Forms",
-    "section": "",
-    "url_loc": "../files/Collections/haul_catch_specimen_forms/haulforms",
-    "source": "entries"
-  },
-  {
-    "title": "Standard Trawling Procedures Form",
-    "section": "",
-    "url_loc": "../files/Net and wire maintenance/Standard Trawling Procedures Form.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "EBS scope table",
-    "section": "Scope tables",
-    "url_loc": "../files/Manuals/Survey operation manuals/EBS Scope Table.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "GOA/AI scope table",
-    "section": "Scope tables",
-    "url_loc": "../files/Manuals/Survey operation manuals/AI GOA Scope table.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "NBS scope table",
-    "section": "Scope tables",
-    "url_loc": "../files/Manuals/Survey operation manuals/NBS Scope Table.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Scope vs. RAPP counts",
-    "section": "Scope tables",
-    "url_loc": "../files/Manuals/Survey operation manuals/Scope_vs_RAPP_counts.xls",
-    "source": "entries"
-  },
-  {
-    "title": "New Station Progression Worksheet (AKP)",
-    "section": "Station Progression (AI/GOA)",
-    "url_loc": "../files/Station info/AI_GOA/Station Progression/Station Log and Progression 202601 AKP.xlsm",
-    "source": "entries"
-  },
-  {
-    "title": "New Station Progression Worksheet (OEX)",
-    "section": "Station Progression (AI/GOA)",
-    "url_loc": "../files/Station info/AI_GOA/Station Progression/Station Log and Progression 202601 OEX.xlsm",
-    "source": "entries"
-  },
-  {
-    "title": "New Station Progression Worksheet Guide",
-    "section": "Station Progression (AI/GOA)",
-    "url_loc": "../files/Station info/AI_GOA/Station Progression/New Station Log and Progression Sheet Guide.pptx",
-    "source": "entries"
-  },
-  {
-    "title": "OLD Station Progression Worksheet (AKP)",
-    "section": "Station Progression (AI/GOA)",
-    "url_loc": "../files/Station info/AI_GOA/Station Progression/AKP_Station_Progression.xlsx",
-    "source": "entries"
-  },
-  {
-    "title": "OLD Station Progression Worksheet (OEX)",
-    "section": "Station Progression (AI/GOA)",
-    "url_loc": "../files/Station info/AI_GOA/Station Progression/OEX_Station_Progression.xlsx",
-    "source": "entries"
-  },
-  {
     "title": "Backup data sources when primary sensors fail",
     "section": "",
     "url_loc": "../files/Manuals/data backup sources.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Beaufort Scale Description Table",
+    "section": "",
+    "url_loc": "../files/Manuals/Beaufort_Scale/Beaufort-scale-values-and-descriptions.png",
     "source": "entries"
   },
   {
@@ -1259,39 +1233,9 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Daily Temperature Entry Instructions",
+    "title": "Handling artifacts found at sea",
     "section": "",
-    "url_loc": "../files/Manuals/Daily Temperature Entry.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "FPC talking points",
-    "section": "",
-    "url_loc": "../files/Manuals/Checklist for FPC talk.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "GIS Training",
-    "section": "",
-    "url_loc": "../files/Station info/GIS_Training_2019.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Guide to Running Wheelhouse and Calypso for EBS survey",
-    "section": "",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/WheelhouseStepByStep&QuickRef.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "OSI (Purchase Order) PO & Job Services",
-    "section": "",
-    "url_loc": "../files/Contracts/OSI dockside services approved vessels F25.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "OSI Services task log",
-    "section": "",
-    "url_loc": "../files/Contracts/Dockside services FY25 task log v2.xlsx",
+    "url_loc": "../files/Manuals/Survey operation manuals/Artifact guidance.pdf",
     "source": "entries"
   },
   {
@@ -1301,15 +1245,808 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "EBS and GOA FPC file box items",
-    "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/FY25 EBS GOA Serialized Gear Requests.pdf",
+    "title": "All Survey Personnel phonelist",
+    "section": "All surveys",
+    "url_loc": "../files/Contact lists/Emergency Phone List RACE Groundfish.pdf",
     "source": "entries"
   },
   {
-    "title": "EBS FPC file box items",
+    "title": "Personnel Availability",
+    "section": "All surveys",
+    "url_loc": "../files/contact lists/Personnel Availability.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "RACE Vessel Contact Info",
+    "section": "All surveys",
+    "url_loc": "../files/Contact lists/GAP BT Survey Vessel Contacts 2026.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Vessel Crew Lists",
+    "section": "All surveys",
+    "url_loc": "../files/Staffing/Vessel Crew/",
+    "source": "entries"
+  },
+  {
+    "title": "EBS & NBS Survey staffing",
+    "section": "Bering Sea",
+    "url_loc": "../files/Staffing/2026 EBS Survey Staffing.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "GOA/AI Survey staffing",
+    "section": "GOA/AI",
+    "url_loc": "../files/Staffing/2026 AI Survey Staffing.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "**EMERGENCY NOTIFICATION PLAN**",
     "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/EBS FPC File Box Gear.pdf",
+    "url_loc": "../files/Safety/Accidents/EMERGENCY NOTIFICATION PLAN 2026.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "AFSC Phone & Email lists",
+    "section": "",
+    "url_loc": "../files/Contact lists/AFSC_phone_email.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "CD-81 OT Authorization",
+    "section": "",
+    "url_loc": "../files/Timekeeping/CD-81 OT Authorization.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Comp Time for Travel & Credit Hours",
+    "section": "",
+    "url_loc": "../files/Timekeeping/Comp Time for Travel & Credit Hours.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Comp Time Off for Air Travel",
+    "section": "",
+    "url_loc": "../files/Travel/COMP TIME OFF FOR TRAVEL-Air-final.doc",
+    "source": "entries"
+  },
+  {
+    "title": "Comp Time Travel Guide",
+    "section": "",
+    "url_loc": "../files/Timekeeping/comptime_travel_guide.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Form OPM 71",
+    "section": "",
+    "url_loc": "../files/Timekeeping/opm71.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Pay periods",
+    "section": "",
+    "url_loc": "../files/Timekeeping/pay periods.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "RACE At Sea T&A readme",
+    "section": "",
+    "url_loc": "../files/Timekeeping/RACE AT SEA T&A READ ME.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "RACE At Sea-Timesheet",
+    "section": "",
+    "url_loc": "../files/Timekeeping/RACE AT SEA T&A Spreadsheet.xlsx",
+    "source": "entries"
+  },
+  {
+    "title": "Incident, Illness, Accident & EMERGENCY Flow Chart",
+    "section": "",
+    "url_loc": ".../files/Safety/Accidents/At Sea Incident Reporting.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Back",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Back.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "CHOICES",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/CHOICES.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Core",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Core Concepts.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Elbow",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Elbow.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Foot & Ankle",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Foot and Ankle.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Hand, Wrist & Forearm",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Hand Wrist and Forearm.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Heat or Ice",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Heat or Ice.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Hip",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Hip.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Kinesiotape",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/NOAA Injury Prevention Kinesiotape.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Neck",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Neck.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Self Massage Handout",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Self Massage Handout.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Shoulder",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Shoulder.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "IP Program Orientation Slides",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/IP Program Orientation Slides 2026.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "IP Program Promo NOAA v1",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/IPS Program Promo NOAA v1 2026.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "IP Program Promo NOAA v2",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/IPS Program Promo v2 NOAA 2026.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "NOAA IP Program Videos",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/NOAA IP Program Videos.docx",
+    "source": "entries"
+  },
+  {
+    "title": "Warm Up Hand and Wrist",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/Warm Up Programs NOAA 2026/NOAA Hand and Wrist Program handout 2025.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Warm Up Poster",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/Warm Up Programs NOAA 2026/NOAA Warm Up Poster 2025.pptx",
+    "source": "entries"
+  },
+  {
+    "title": "Warm Up Routine",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/Warm Up Programs NOAA 2026/NOAA Warm-Up Routine Handout 2025.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Educational Resources",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/Educational Resource Library NOAA 2026/",
+    "source": "entries"
+  },
+  {
+    "title": "AFSC SASH Packet",
+    "section": "",
+    "url_loc": "../files/Safety/Sexual Harassment/2025_SASH_Packet.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Fieldwork Initiative: FISST Training",
+    "section": "",
+    "url_loc": "../files/Safety/Sexual Harassment/noaa FISST.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Harassment Vessel Briefing",
+    "section": "",
+    "url_loc": "../files/Safety/Sexual Harassment/Harassment_vessel_briefing_2023.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "OMAO Harassment Video: Fostering a Respectful Work Environment",
+    "section": "",
+    "url_loc": "../files/Safety/Sexual Harassment/Fostering a Respectful Work Environment.mp4",
+    "source": "entries"
+  },
+  {
+    "title": "Reporting Harassment at NOAA Email",
+    "section": "",
+    "url_loc": "../files/Safety/Sexual Harassment/Reporting Harassment at NOAA.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Reporting Harassment Overview",
+    "section": "",
+    "url_loc": "../files/Safety/Sexual Harassment/Harassment Reporting _JR-PI_3.29.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SASH Hotline",
+    "section": "",
+    "url_loc": "../files/Safety/Sexual Harassment/Sexual (SASH) Helpline.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SASH Video",
+    "section": "",
+    "url_loc": "../files/Safety/Sexual Harassment/Fostering a Respectful Work Environment.mp4",
+    "source": "entries"
+  },
+  {
+    "title": "SASH_NAO_202-1106A",
+    "section": "",
+    "url_loc": "../files/Safety/Sexual Harassment/SASH_NAO_202-1106A.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Taking action on incidents or allegations (DAO 202-955)",
+    "section": "",
+    "url_loc": "../files/Safety/Sexual Harassment/Allegations_of_Harassment.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SDS Bouin's Fixative",
+    "section": "",
+    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS_Bouins_Solution.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SDS Ethanol 100%",
+    "section": "",
+    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS 200 Proof Ethanol- Anhydrous.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SDS Ethanol 70%",
+    "section": "",
+    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Ethanol 140 proof.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SDS Ethanol 95%",
+    "section": "",
+    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Ethanol 190 proof.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SDS Formaldehyde",
+    "section": "",
+    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Formaldehyde Solution.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SDS Formalin 10%",
+    "section": "",
+    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Formalin Solution_neutral buffered_10%.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SDS Glycerin",
+    "section": "",
+    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Glycerin.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SDS Neutralex",
+    "section": "",
+    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Neutralex.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SDS Permalite Epoxy Parts A and B",
+    "section": "",
+    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/DevCon 2-part epoxy MSDS.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SDS Qiagen Allprotect Tissue Reagent",
+    "section": "",
+    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/3028-AllprotectTissueReagent-en-US-US--1.00000.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SDS Reagent Alcohol, 70% v/v",
+    "section": "",
+    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS_70_Reagent_Acohol.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SDS Thymol",
+    "section": "",
+    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Thymol.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Alkakine batteries",
+    "section": "",
+    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/alkalinecylindrical_psds.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Dangerous Goods Declaration Form CFR49",
+    "section": "",
+    "url_loc": "../files/Shipping-Hazmat/Dangerous Goods Declaration - CFR49.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "HAZMAT items not to pack",
+    "section": "",
+    "url_loc": "../files/Shipping-Hazmat/Do not pack these Dangerous Goods.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "HAZMAT Shipping Guidelines",
+    "section": "",
+    "url_loc": "../files/Shipping-Hazmat/hazmat_shipping_guide.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "At-Sea Incident Report Form (fillable)",
+    "section": "Forms",
+    "subtitle": "e.g., injury or near miss",
+    "url_loc": "../files/Safety/Accidents/At-Sea Incident Report Form_fillable.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "CA-1 and CA-2 Instructions",
+    "section": "Forms",
+    "url_loc": "../files/Safety/Accidents/Filing CA-1 and CA-2 Employee Instructions.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "CA-1 Reporting an accident, injury, or illness",
+    "section": "Forms",
+    "subtitle": "i.e., acute illness or injury. This form can be dealt with post survey because since users will not have access to internet while at sea.",
+    "url_loc": "../files/Safety/Accidents/Pay Compensation Form ca-1.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "CA-16 Authorization for treatment",
+    "section": "Forms",
+    "url_loc": "../files/Safety/Accidents/CA_16_expires_2018_mar_2021.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "CA-2 Report an occupational disease",
+    "section": "Forms",
+    "subtitle": "i.e., occupational/repetative motion illness/injury. This form can be dealt with post survey because since users will not have access to internet while at sea.",
+    "url_loc": "../files/Safety/Accidents/CA-2 Dept. of Labor Claim for Compensation.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "CD-137 Report of Incident, Injury, Illness",
+    "section": "Forms",
+    "url_loc": "../files/Safety/Accidents/cd-137.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "CD-351 Report of Safety hazard",
+    "section": "Forms",
+    "url_loc": "../files/Safety/Accidents/CD-351 report of Safety Hazard.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "UW contractor injury report form",
+    "section": "Forms",
+    "url_loc": "../files/Safety/Accidents/UW_accident-incident_report.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Workers Comp Supervisor Completion CA-1",
+    "section": "Forms",
+    "url_loc": "../files/Safety/Accidents/Workers Comp Supr Completion CA1.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "AFSC General Fieldwork SOPs",
+    "section": "",
+    "subtitle": "version 3.2023",
+    "url_loc": "../files/COVID SOP/AFSC general fieldwork SOPs FY23.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "AFSC SOPs Summary",
+    "section": "",
+    "subtitle": "version 3.2023",
+    "url_loc": "../files/COVID SOP/AFSC_SOPs_summary_FY23.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Appendix I: Common COVID-19 Prevention Procedures",
+    "section": "",
+    "subtitle": "version 3.2023",
+    "url_loc": "../files/COVID SOP/Appendix I_Common COVID-19 Prevention Procedures FY23.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "BinaxNow COVID-19 Antigen Test Expiration Date Extension Table",
+    "section": "",
+    "url_loc": "../files/COVID SOP/BinaxNOW-COVID-19-AgCard-Home-test-expirations 2023.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Dutch Harbor SIP Logistics",
+    "section": "",
+    "url_loc": "../files/Port info/Dutch Harbor SIP Logistics.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Dutch Harbor SIP Logistics Resources",
+    "section": "",
+    "url_loc": "../files/Port info/Dutch Logistics 5-16-21.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "EBS Port Guide",
+    "section": "",
+    "url_loc": "../files/Port info/EBS Port Guide.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "GOA and EBS SIP Guide",
+    "section": "",
+    "url_loc": "../files/Port info/Shelter in Place Guide.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "GOA Port Guide",
+    "section": "",
+    "url_loc": "../files/Port info/2025 GOA Port Guide.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SF-91 Vehicle accident report",
+    "section": "Forms",
+    "url_loc": "../files/Safety/Accidents/SF-91.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SF-94 Witness statement",
+    "section": "Forms",
+    "url_loc": "../files/Safety/Accidents/SF-94.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SF-95 Tort claim form",
+    "section": "Forms",
+    "url_loc": "../files/Safety/Accidents/sf95.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "**EMERGENCY NOTIFICATION PLAN**",
+    "section": "If you have an acute or chronic injury from working aboard the vessel, document and report it to the Safety Lead and FPC. \n\nAll forms should be shared with the Safetly Lead and FPC.",
+    "url_loc": "../files/Safety/Accidents/EMERGENCY NOTIFICATION PLAN 2026.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Medevac Info",
+    "section": "",
+    "url_loc": "../files/Safety/Accidents/MedEvac Info.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Care for Cold (Hypothermic) Patient",
+    "section": "",
+    "url_loc": "../files//Safety/CareForColdPatient.jpg",
+    "source": "entries"
+  },
+  {
+    "title": "Cold (Hypothermic) Patient Assessment",
+    "section": "",
+    "url_loc": "../files//Safety/AssessColdPatient.jpg",
+    "source": "entries"
+  },
+  {
+    "title": "Cold (Hypothermic) Patient Flow Chart",
+    "section": "",
+    "url_loc": "../files//Safety/ColdPatientFlowChart.jpg",
+    "source": "entries"
+  },
+  {
+    "title": "AED Manual",
+    "section": "",
+    "url_loc": "../files/Safety/UserManual_AED_Hart_350P.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Estimating Distance Off",
+    "section": "",
+    "url_loc": "../files/Safety/Estimating Distance Off_BoatUS.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "PLB Manual",
+    "section": "",
+    "url_loc": "../files/Safety/EPIRBs/aquafix_aquafixman.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "NOAA Psychological Safety",
+    "section": "",
+    "url_loc": "../files/Safety/Psychological safety/NOAA Psychological Safety.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Resources",
+    "section": "",
+    "url_loc": "../files/Safety/Psychological safety/WVPR Resource Webinar Handout.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Charter Vessel Safety Briefing Form",
+    "section": "Forms",
+    "url_loc": "../files/Safety/Charter Vessel Safety Briefing Form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Emergency Contact Form",
+    "section": "Forms",
+    "url_loc": "../files/Safety/Emergency contact form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Safety Briefing Form",
+    "section": "Forms",
+    "url_loc": "../files/Safety/Safety Briefing form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Safety Drill Form",
+    "section": "Forms",
+    "url_loc": "../files/Safety/Safetydrillform.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Safety evaluation Form",
+    "section": "Forms",
+    "url_loc": "../files/Safety/Safety Evaluation Form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Safety Leader recording form",
+    "section": "Forms",
+    "url_loc": "../files/Safety/Safety Leader Personnel Recording Form Fillable.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "AFSC Code of Conduct",
+    "section": "",
+    "url_loc": "../files/Safety/AFSC Code of Conduct.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Bedbugs",
+    "section": "",
+    "url_loc": "../files/Safety/BedBugPrimer_final.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Safety Leader checklists",
+    "section": "",
+    "url_loc": "../files/Safety/Safety lead checklists/",
+    "source": "entries"
+  },
+  {
+    "title": "Safety Leader instructions, checklists, and forms",
+    "section": "",
+    "url_loc": "../files/Safety/Safety Lead Duties.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Safety Manual",
+    "section": "",
+    "url_loc": "../files/Safety/At-Sea Safety Manual 2026.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Vessel Safety Checklist",
+    "section": "",
+    "url_loc": "../files/Safety/FV_Safety_checklist.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Ashfall prepardness guidelines",
+    "section": "",
+    "url_loc": "../files/Safety/Ashfall preparedness guidelines.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Ashfall prepardness infographic",
+    "section": "",
+    "url_loc": "../files/Safety/Ashfall preparedness readiness.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Volunteer service agreement",
+    "section": "Volunteers and contractors",
+    "url_loc": "../files/Safety/Accidents/Volunteer Agreement - non-student.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "At-Sea Safety Action Plan",
+    "section": "",
+    "url_loc": "../files/Safety/RACE Safety Action Plan.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Two day medical course manual",
+    "section": "",
+    "url_loc": "../files/Safety/Two day med full manual.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Acrobat Reader and CutePDF Writer",
+    "section": "",
+    "url_loc": "../files/Software/PDFs/",
+    "source": "entries"
+  },
+  {
+    "title": "File format converter (docx xlsx)",
+    "section": "",
+    "url_loc": "../files/Software/docx_xlsx_file_converter",
+    "source": "entries"
+  },
+  {
+    "title": "HP1006 Printer drivers",
+    "section": "",
+    "url_loc": "../files/Software/HP1006_drivers",
+    "source": "entries"
+  },
+  {
+    "title": "Network Time Sync",
+    "section": "",
+    "url_loc": "../files/Software/NetWork Time sync",
+    "source": "entries"
+  },
+  {
+    "title": "GLOBE",
+    "section": "",
+    "url_loc": "../files/Manuals/globe/Software",
+    "source": "entries"
+  },
+  {
+    "title": "SiRFDemo",
+    "section": "",
+    "url_loc": "../files/Manuals/GPSs",
+    "source": "entries"
+  },
+  {
+    "title": "Tides and Currents",
+    "section": "",
+    "url_loc": "../files/Manuals/Tides and Currents",
+    "source": "entries"
+  },
+  {
+    "title": "SiRFDemo",
+    "section": "",
+    "url_loc": "../files/Manuals/GPSs",
+    "source": "entries"
+  },
+  {
+    "title": "Example Script",
+    "section": "GAPsurvey R Package",
+    "url_loc": "../files/Manuals/R/GAPsurvey/example_script.R",
+    "source": "entries"
+  },
+  {
+    "title": "GAPsurvey Instructions",
+    "section": "GAPsurvey R Package",
+    "url_loc": "../files/Manuals/R/GAPsurvey/docs/index.html",
+    "source": "entries"
+  },
+  {
+    "title": "GAPsurvey.tar.gz",
+    "section": "GAPsurvey R Package",
+    "subtitle": "includes CTD to BTD (SBE39 fail Opt#1), (BVDR) TEDtoBTD (SBE39 fail Opt#2), and Globe LOG to GPS conversion function, amoung others",
+    "url_loc": "../files/Manuals/R/GAPsurvey/GAPsurvey-main/GAPsurvey.tar.gz",
+    "source": "entries"
+  },
+  {
+    "title": "Historical Data (GAPsurvey R Package)",
+    "section": "GAPsurvey R Package",
+    "url_loc": "../files/Manuals/R/GAPsurvey/docs/reference/get_catch_haul_history.html",
+    "source": "entries"
+  },
+  {
+    "title": "R, R Studio, and RTools",
+    "section": "",
+    "url_loc": "../files/Manuals/R/R Program",
+    "source": "entries"
+  },
+  {
+    "title": "BVDR Converter",
+    "section": "",
+    "url_loc": "../files/Manuals/BVDR_converter/",
+    "source": "entries"
+  },
+  {
+    "title": "Calypso_2017.1.exe",
+    "section": "",
+    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Calypso Software/Calypso_2017.1.exe",
+    "source": "entries"
+  },
+  {
+    "title": "CTDs (SeaBird, Teledyne)",
+    "section": "",
+    "url_loc": "../files/Manuals/CTD Manuals/",
+    "source": "entries"
+  },
+  {
+    "title": "HOBO Lite 3.7.8",
+    "section": "",
+    "url_loc": "../files/Manuals/Bottom contact sensor",
+    "source": "entries"
+  },
+  {
+    "title": "Hyperterm",
+    "section": "",
+    "url_loc": "../files/Software/Hyperterm",
+    "source": "entries"
+  },
+  {
+    "title": "Light Meters",
+    "section": "",
+    "url_loc": "../files/Manuals/Light meters",
+    "source": "entries"
+  },
+  {
+    "title": "GOA racebace access database",
+    "section": "",
+    "url_loc": "../files/manuals/racebase/GOA RACEBASE.mdb",
+    "source": "entries"
+  },
+  {
+    "title": "Tablet Apps (.apk)",
+    "section": "",
+    "url_loc": "../files/Manuals/Apps Software/Tablet apks",
+    "source": "entries"
+  },
+  {
+    "title": "Species Codebook",
+    "section": "",
+    "url_loc": ".../files/SpeciesID/SpeciesCodeManual.pdf",
     "source": "entries"
   },
   {
@@ -1486,841 +2223,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "AFSC SASH Packet",
-    "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/2025_SASH_Packet.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Fieldwork Initiative: FISST Training",
-    "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/noaa FISST.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Harassment Vessel Briefing",
-    "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/Harassment_vessel_briefing_2023.pptx",
-    "source": "entries"
-  },
-  {
-    "title": "OMAO Harassment Video: Fostering a Respectful Work Environment",
-    "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/Fostering a Respectful Work Environment.mp4",
-    "source": "entries"
-  },
-  {
-    "title": "Reporting Harassment at NOAA Email",
-    "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/Reporting Harassment at NOAA.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Reporting Harassment Overview",
-    "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/Harassment Reporting _JR-PI_3.29.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SASH Hotline",
-    "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/Sexual (SASH) Helpline.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SASH Video",
-    "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/Fostering a Respectful Work Environment.mp4",
-    "source": "entries"
-  },
-  {
-    "title": "SASH_NAO_202-1106A",
-    "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/SASH_NAO_202-1106A.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Taking action on incidents or allegations (DAO 202-955)",
-    "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/Allegations_of_Harassment.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "AFSC Phone & Email lists",
-    "section": "",
-    "url_loc": "../files/Contact lists/AFSC_phone_email.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "All Survey Personnel phonelist",
-    "section": "All surveys",
-    "url_loc": "../files/Contact lists/Emergency Phone List RACE Groundfish.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Personnel Availability",
-    "section": "All surveys",
-    "url_loc": "../files/contact lists/Personnel Availability.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "RACE Vessel Contact Info",
-    "section": "All surveys",
-    "url_loc": "../files/Contact lists/GAP BT Survey Vessel Contacts 2026.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Vessel Crew Lists",
-    "section": "All surveys",
-    "url_loc": "../files/Staffing/Vessel Crew/",
-    "source": "entries"
-  },
-  {
-    "title": "EBS & NBS Survey staffing",
-    "section": "Bering Sea",
-    "url_loc": "../files/Staffing/2026 EBS Survey Staffing.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "GOA/AI Survey staffing",
-    "section": "GOA/AI",
-    "url_loc": "../files/Staffing/2026 AI Survey Staffing.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "**EMERGENCY NOTIFICATION PLAN**",
-    "section": "",
-    "url_loc": "../files/Safety/Accidents/EMERGENCY NOTIFICATION PLAN 2026.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "CD-81 OT Authorization",
-    "section": "",
-    "url_loc": "../files/Timekeeping/CD-81 OT Authorization.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Comp Time for Travel & Credit Hours",
-    "section": "",
-    "url_loc": "../files/Timekeeping/Comp Time for Travel & Credit Hours.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Comp Time Off for Air Travel",
-    "section": "",
-    "url_loc": "../files/Travel/COMP TIME OFF FOR TRAVEL-Air-final.doc",
-    "source": "entries"
-  },
-  {
-    "title": "Comp Time Travel Guide",
-    "section": "",
-    "url_loc": "../files/Timekeeping/comptime_travel_guide.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Form OPM 71",
-    "section": "",
-    "url_loc": "../files/Timekeeping/opm71.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Pay periods",
-    "section": "",
-    "url_loc": "../files/Timekeeping/pay periods.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "RACE At Sea T&A readme",
-    "section": "",
-    "url_loc": "../files/Timekeeping/RACE AT SEA T&A READ ME.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "RACE At Sea-Timesheet",
-    "section": "",
-    "url_loc": "../files/Timekeeping/RACE AT SEA T&A Spreadsheet.xlsx",
-    "source": "entries"
-  },
-  {
-    "title": "Incident, Illness, Accident & EMERGENCY Flow Chart",
-    "section": "",
-    "url_loc": ".../files/Safety/Accidents/At Sea Incident Reporting.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Educational Resources",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Educational Resource Library NOAA 2026/",
-    "source": "entries"
-  },
-  {
-    "title": "Back",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Back.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "CHOICES",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/CHOICES.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Core",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Core Concepts.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Elbow",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Elbow.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Foot & Ankle",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Foot and Ankle.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Hand, Wrist & Forearm",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Hand Wrist and Forearm.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Heat or Ice",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Heat or Ice.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Hip",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Hip.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Kinesiotape",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/NOAA Injury Prevention Kinesiotape.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Neck",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Neck.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Self Massage Handout",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Self Massage Handout.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Shoulder",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Shoulder.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "IP Program Orientation Slides",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/IP Program Orientation Slides 2026.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "IP Program Promo NOAA v1",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/IPS Program Promo NOAA v1 2026.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "IP Program Promo NOAA v2",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/IPS Program Promo v2 NOAA 2026.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "NOAA IP Program Videos",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/NOAA IP Program Videos.docx",
-    "source": "entries"
-  },
-  {
-    "title": "Warm Up Hand and Wrist",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Warm Up Programs NOAA 2026/NOAA Hand and Wrist Program handout 2025.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Warm Up Poster",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Warm Up Programs NOAA 2026/NOAA Warm Up Poster 2025.pptx",
-    "source": "entries"
-  },
-  {
-    "title": "Warm Up Routine",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Warm Up Programs NOAA 2026/NOAA Warm-Up Routine Handout 2025.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SDS Bouin's Fixative",
-    "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS_Bouins_Solution.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SDS Ethanol 100%",
-    "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS 200 Proof Ethanol- Anhydrous.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SDS Ethanol 70%",
-    "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Ethanol 140 proof.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SDS Ethanol 95%",
-    "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Ethanol 190 proof.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SDS Formaldehyde",
-    "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Formaldehyde Solution.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SDS Formalin 10%",
-    "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Formalin Solution_neutral buffered_10%.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SDS Glycerin",
-    "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Glycerin.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SDS Neutralex",
-    "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Neutralex.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SDS Permalite Epoxy Parts A and B",
-    "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/DevCon 2-part epoxy MSDS.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SDS Qiagen Allprotect Tissue Reagent",
-    "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/3028-AllprotectTissueReagent-en-US-US--1.00000.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SDS Reagent Alcohol, 70% v/v",
-    "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS_70_Reagent_Acohol.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SDS Thymol",
-    "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Thymol.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Alkakine batteries",
-    "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/alkalinecylindrical_psds.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Dangerous Goods Declaration Form CFR49",
-    "section": "",
-    "url_loc": "../files/Shipping-Hazmat/Dangerous Goods Declaration - CFR49.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "HAZMAT items not to pack",
-    "section": "",
-    "url_loc": "../files/Shipping-Hazmat/Do not pack these Dangerous Goods.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "HAZMAT Shipping Guidelines",
-    "section": "",
-    "url_loc": "../files/Shipping-Hazmat/hazmat_shipping_guide.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Chemical Handling Guidance",
-    "section": "",
-    "url_loc": "../files/Collections/Preservation Procedures for Voucher Collection.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "At-Sea Incident Report Form (fillable)",
-    "section": "Forms",
-    "subtitle": "e.g., injury or near miss",
-    "url_loc": "../files/Safety/Accidents/At-Sea Incident Report Form_fillable.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "CA-1 and CA-2 Instructions",
-    "section": "Forms",
-    "url_loc": "../files/Safety/Accidents/Filing CA-1 and CA-2 Employee Instructions.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "CA-1 Reporting an accident, injury, or illness",
-    "section": "Forms",
-    "subtitle": "i.e., acute illness or injury. This form can be dealt with post survey because since users will not have access to internet while at sea.",
-    "url_loc": "../files/Safety/Accidents/Pay Compensation Form ca-1.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "CA-16 Authorization for treatment",
-    "section": "Forms",
-    "url_loc": "../files/Safety/Accidents/CA_16_expires_2018_mar_2021.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "CA-2 Report an occupational disease",
-    "section": "Forms",
-    "subtitle": "i.e., occupational/repetative motion illness/injury. This form can be dealt with post survey because since users will not have access to internet while at sea.",
-    "url_loc": "../files/Safety/Accidents/CA-2 Dept. of Labor Claim for Compensation.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "CD-137 Report of Incident, Injury, Illness",
-    "section": "Forms",
-    "url_loc": "../files/Safety/Accidents/cd-137.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "CD-351 Report of Safety hazard",
-    "section": "Forms",
-    "url_loc": "../files/Safety/Accidents/CD-351 report of Safety Hazard.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Workers Comp Supervisor Completion CA-1",
-    "section": "Forms",
-    "url_loc": "../files/Safety/Accidents/Workers Comp Supr Completion CA1.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "UW contractor injury report form",
-    "section": "Forms",
-    "url_loc": "../files/Safety/Accidents/UW_accident-incident_report.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "AFSC General Fieldwork SOPs",
-    "section": "",
-    "subtitle": "version 3.2023",
-    "url_loc": "../files/COVID SOP/AFSC general fieldwork SOPs FY23.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "AFSC SOPs Summary",
-    "section": "",
-    "subtitle": "version 3.2023",
-    "url_loc": "../files/COVID SOP/AFSC_SOPs_summary_FY23.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Appendix I: Common COVID-19 Prevention Procedures",
-    "section": "",
-    "subtitle": "version 3.2023",
-    "url_loc": "../files/COVID SOP/Appendix I_Common COVID-19 Prevention Procedures FY23.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "BinaxNow COVID-19 Antigen Test Expiration Date Extension Table",
-    "section": "",
-    "url_loc": "../files/COVID SOP/BinaxNOW-COVID-19-AgCard-Home-test-expirations 2023.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Dutch Harbor SIP Logistics",
-    "section": "",
-    "url_loc": "../files/Port info/Dutch Harbor SIP Logistics.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Dutch Harbor SIP Logistics Resources",
-    "section": "",
-    "url_loc": "../files/Port info/Dutch Logistics 5-16-21.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "EBS Port Guide",
-    "section": "",
-    "url_loc": "../files/Port info/EBS Port Guide.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "GOA and EBS SIP Guide",
-    "section": "",
-    "url_loc": "../files/Port info/Shelter in Place Guide.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "GOA Port Guide",
-    "section": "",
-    "url_loc": "../files/Port info/2025 GOA Port Guide.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SF-91 Vehicle accident report",
-    "section": "Forms",
-    "url_loc": "../files/Safety/Accidents/SF-91.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SF-94 Witness statement",
-    "section": "Forms",
-    "url_loc": "../files/Safety/Accidents/SF-94.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SF-95 Tort claim form",
-    "section": "Forms",
-    "url_loc": "../files/Safety/Accidents/sf95.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "**EMERGENCY NOTIFICATION PLAN**",
-    "section": "If you have an acute or chronic injury from working aboard the vessel, document and report it to the Safety Lead and FPC. \n\nAll forms should be shared with the Safetly Lead and FPC.",
-    "url_loc": "../files/Safety/Accidents/EMERGENCY NOTIFICATION PLAN 2026.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Care for Cold (Hypothermic) Patient",
-    "section": "",
-    "url_loc": "../files//Safety/CareForColdPatient.jpg",
-    "source": "entries"
-  },
-  {
-    "title": "Cold (Hypothermic) Patient Assessment",
-    "section": "",
-    "url_loc": "../files//Safety/AssessColdPatient.jpg",
-    "source": "entries"
-  },
-  {
-    "title": "Cold (Hypothermic) Patient Flow Chart",
-    "section": "",
-    "url_loc": "../files//Safety/ColdPatientFlowChart.jpg",
-    "source": "entries"
-  },
-  {
-    "title": "Medevac Info",
-    "section": "",
-    "url_loc": "../files/Safety/Accidents/MedEvac Info.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Bedbugs",
-    "section": "",
-    "url_loc": "../files/Safety/BedBugPrimer_final.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "NOAA Psychological Safety",
-    "section": "",
-    "url_loc": "../files/Safety/Psychological safety/NOAA Psychological Safety.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Resources",
-    "section": "",
-    "url_loc": "../files/Safety/Psychological safety/WVPR Resource Webinar Handout.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "AFSC Code of Conduct",
-    "section": "",
-    "url_loc": "../files/Safety/AFSC Code of Conduct.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Safety Leader checklists",
-    "section": "",
-    "url_loc": "../files/Safety/Safety lead checklists/",
-    "source": "entries"
-  },
-  {
-    "title": "Safety Leader instructions, checklists, and forms",
-    "section": "",
-    "url_loc": "../files/Safety/Safety Lead Duties.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Safety Leader recording form",
-    "section": "Forms",
-    "url_loc": "../files/Safety/Safety Leader Personnel Recording Form Fillable.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Safety Manual",
-    "section": "",
-    "url_loc": "../files/Safety/At-Sea Safety Manual 2026.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Emergency Contact Form",
-    "section": "Forms",
-    "url_loc": "../files/Safety/Emergency contact form.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Safety Briefing Form",
-    "section": "Forms",
-    "url_loc": "../files/Safety/Safety Briefing form.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Safety Drill Form",
-    "section": "Forms",
-    "url_loc": "../files/Safety/Safetydrillform.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Safety evaluation Form",
-    "section": "Forms",
-    "url_loc": "../files/Safety/Safety Evaluation Form.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "AED Manual",
-    "section": "",
-    "url_loc": "../files/Safety/UserManual_AED_Hart_350P.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Estimating Distance Off",
-    "section": "",
-    "url_loc": "../files/Safety/Estimating Distance Off_BoatUS.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "PLB Manual",
-    "section": "",
-    "url_loc": "../files/Safety/EPIRBs/aquafix_aquafixman.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Ashfall prepardness guidelines",
-    "section": "",
-    "url_loc": "../files/Safety/Ashfall preparedness guidelines.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Ashfall prepardness infographic",
-    "section": "",
-    "url_loc": "../files/Safety/Ashfall preparedness readiness.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Volunteer service agreement",
-    "section": "Volunteers and contractors",
-    "url_loc": "../files/Safety/Accidents/Volunteer Agreement - non-student.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "At-Sea Safety Action Plan",
-    "section": "",
-    "url_loc": "../files/Safety/RACE Safety Action Plan.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Charter Vessel Safety Briefing Form",
-    "section": "Forms",
-    "url_loc": "../files/Safety/Charter Vessel Safety Briefing Form.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Two day medical course manual",
-    "section": "",
-    "url_loc": "../files/Safety/Two day med full manual.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Vessel Safety Checklist",
-    "section": "",
-    "url_loc": "../files/Safety/FV_Safety_checklist.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Example Script",
-    "section": "GAPsurvey R Package",
-    "url_loc": "../files/Manuals/R/GAPsurvey/example_script.R",
-    "source": "entries"
-  },
-  {
-    "title": "GAPsurvey Instructions",
-    "section": "GAPsurvey R Package",
-    "url_loc": "../files/Manuals/R/GAPsurvey/docs/index.html",
-    "source": "entries"
-  },
-  {
-    "title": "GAPsurvey.tar.gz",
-    "section": "GAPsurvey R Package",
-    "subtitle": "includes CTD to BTD (SBE39 fail Opt#1), (BVDR) TEDtoBTD (SBE39 fail Opt#2), and Globe LOG to GPS conversion function, amoung others",
-    "url_loc": "../files/Manuals/R/GAPsurvey/GAPsurvey-main/GAPsurvey.tar.gz",
-    "source": "entries"
-  },
-  {
-    "title": "Historical Data (GAPsurvey R Package)",
-    "section": "GAPsurvey R Package",
-    "url_loc": "../files/Manuals/R/GAPsurvey/docs/reference/get_catch_haul_history.html",
-    "source": "entries"
-  },
-  {
-    "title": "R, R Studio, and RTools",
-    "section": "",
-    "url_loc": "../files/Manuals/R/R Program",
-    "source": "entries"
-  },
-  {
-    "title": "GLOBE",
-    "section": "",
-    "url_loc": "../files/Manuals/globe/Software",
-    "source": "entries"
-  },
-  {
-    "title": "SiRFDemo",
-    "section": "",
-    "url_loc": "../files/Manuals/GPSs",
-    "source": "entries"
-  },
-  {
-    "title": "Tides and Currents",
-    "section": "",
-    "url_loc": "../files/Manuals/Tides and Currents",
-    "source": "entries"
-  },
-  {
-    "title": "SiRFDemo",
-    "section": "",
-    "url_loc": "../files/Manuals/GPSs",
-    "source": "entries"
-  },
-  {
-    "title": "GOA racebace access database",
-    "section": "",
-    "url_loc": "../files/manuals/racebase/GOA RACEBASE.mdb",
-    "source": "entries"
-  },
-  {
-    "title": "Calypso_2017.1.exe",
-    "section": "",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Calypso Software/Calypso_2017.1.exe",
-    "source": "entries"
-  },
-  {
-    "title": "BVDR Converter",
-    "section": "",
-    "url_loc": "../files/Manuals/BVDR_converter/",
-    "source": "entries"
-  },
-  {
-    "title": "CTDs (SeaBird, Teledyne)",
-    "section": "",
-    "url_loc": "../files/Manuals/CTD Manuals/",
-    "source": "entries"
-  },
-  {
-    "title": "HOBO Lite 3.7.8",
-    "section": "",
-    "url_loc": "../files/Manuals/Bottom contact sensor",
-    "source": "entries"
-  },
-  {
-    "title": "Hyperterm",
-    "section": "",
-    "url_loc": "../files/Software/Hyperterm",
-    "source": "entries"
-  },
-  {
-    "title": "Light Meters",
-    "section": "",
-    "url_loc": "../files/Manuals/Light meters",
-    "source": "entries"
-  },
-  {
-    "title": "Acrobat Reader and CutePDF Writer",
-    "section": "",
-    "url_loc": "../files/Software/PDFs/",
-    "source": "entries"
-  },
-  {
-    "title": "File format converter (docx xlsx)",
-    "section": "",
-    "url_loc": "../files/Software/docx_xlsx_file_converter",
-    "source": "entries"
-  },
-  {
-    "title": "HP1006 Printer drivers",
-    "section": "",
-    "url_loc": "../files/Software/HP1006_drivers",
-    "source": "entries"
-  },
-  {
-    "title": "Network Time Sync",
-    "section": "",
-    "url_loc": "../files/Software/NetWork Time sync",
-    "source": "entries"
-  },
-  {
-    "title": "Tablet Apps (.apk)",
-    "section": "",
-    "url_loc": "../files/Manuals/Apps Software/Tablet apks",
-    "source": "entries"
-  },
-  {
-    "title": "Species Codebook",
-    "section": "",
-    "url_loc": ".../files/SpeciesID/SpeciesCodeManual.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Contracts",
-    "section": "",
-    "url_loc": "../files/Contracts",
-    "source": "entries"
-  },
-  {
-    "title": "Permits",
-    "section": "",
-    "url_loc": "../files/Permits",
-    "source": "entries"
-  },
-  {
-    "title": "Purchase & Rental Info",
-    "section": "",
-    "url_loc": "../files/Purchase/",
-    "source": "entries"
-  },
-  {
-    "title": "Shipping",
-    "section": "",
-    "url_loc": "../files/Shipping-Hazmat/",
-    "source": "entries"
-  },
-  {
     "title": "Gear Codebook",
     "section": "Codebooks",
     "url_loc": "../files/SpeciesID/DataCodes&Forms.pdf",
@@ -2330,30 +2232,6 @@ var searchData = [
     "title": "Species Codebook",
     "section": "Codebooks",
     "url_loc": "../files/SpeciesID/SpeciesCodeManual.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Amchitka nuclear video",
-    "section": "",
-    "url_loc": "../files/Port info/Cannikin-Nuclear-Series-Video.mp4",
-    "source": "entries"
-  },
-  {
-    "title": "EBS Port Guide",
-    "section": "",
-    "url_loc": "../files/Port info/EBS Port Guide.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "GOA Port Guide",
-    "section": "",
-    "url_loc": "../files/Port info/2025 GOA Port Guide.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Other port info",
-    "section": "",
-    "url_loc": "../files/Port info/",
     "source": "entries"
   },
   {
@@ -2399,51 +2277,27 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "AKK Inventory",
+    "title": "Contracts",
     "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_EBS_AKK.pdf",
+    "url_loc": "../files/Contracts",
     "source": "entries"
   },
   {
-    "title": "AKP Inventory",
+    "title": "Permits",
     "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_GOA-AKP.pdf",
+    "url_loc": "../files/Permits",
     "source": "entries"
   },
   {
-    "title": "EBS Inventory lists",
+    "title": "Purchase & Rental Info",
     "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory2025_EBS_at-sea_inventory.xlsx",
+    "url_loc": "../files/Purchase/",
     "source": "entries"
   },
   {
-    "title": "GOA/AI Inventory lists",
+    "title": "Shipping",
     "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_GOA.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "GOA/AI Inventory lists by vessel",
-    "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_At-Sea_Inventory_GOA.xlsx",
-    "source": "entries"
-  },
-  {
-    "title": "NWX Inventory",
-    "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_EBS_NWX.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "OEX Inventory",
-    "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_GOA-OEX.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Other packing inventory lists",
-    "section": "",
-    "url_loc": "../files/Survey inventory lists",
+    "url_loc": "../files/Shipping-Hazmat/",
     "source": "entries"
   },
   {
@@ -2492,6 +2346,78 @@ var searchData = [
     "title": "Survey primers",
     "section": "",
     "url_loc": "../files/Manuals/Survey operation manuals/",
+    "source": "entries"
+  },
+  {
+    "title": "Amchitka nuclear video",
+    "section": "",
+    "url_loc": "../files/Port info/Cannikin-Nuclear-Series-Video.mp4",
+    "source": "entries"
+  },
+  {
+    "title": "EBS Port Guide",
+    "section": "",
+    "url_loc": "../files/Port info/EBS Port Guide.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "GOA Port Guide",
+    "section": "",
+    "url_loc": "../files/Port info/2025 GOA Port Guide.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Other port info",
+    "section": "",
+    "url_loc": "../files/Port info/",
+    "source": "entries"
+  },
+  {
+    "title": "AKK Inventory",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_EBS_AKK.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "AKP Inventory",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_GOA-AKP.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "EBS Inventory lists",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory2025_EBS_at-sea_inventory.xlsx",
+    "source": "entries"
+  },
+  {
+    "title": "GOA/AI Inventory lists",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_GOA.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "GOA/AI Inventory lists by vessel",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_At-Sea_Inventory_GOA.xlsx",
+    "source": "entries"
+  },
+  {
+    "title": "NWX Inventory",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_EBS_NWX.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "OEX Inventory",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_GOA-OEX.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Other packing inventory lists",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists",
     "source": "entries"
   },
   {

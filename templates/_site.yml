@@ -17,18 +17,12 @@ navbar:
          href: FPC_and_Deck_Lead_Deck_Lead_Resources.html
        - text: "FPC Resources"
          href: FPC_and_Deck_Lead_FPC_Resources.html
-       - text: "Protected Species"
-         href: FPC_and_Deck_Lead_Protected_Species.html
        - text: "Tasklist 1 - Beginning of Survey or Leg"
          href: FPC_and_Deck_Lead_Tasklist_1_-_Beginning_of_Survey_or_Leg.html
        - text: "Tasklist 2 - End of Leg"
          href: FPC_and_Deck_Lead_Tasklist_2_-_End_of_Leg.html
        - text: "Tasklist 3 - End of Survey"
          href: FPC_and_Deck_Lead_Tasklist_3_-_End_of_Survey.html
-    - text: "Harassment"
-      menu: 
-       - text: "Harassment Resources"
-         href: Harassment_Harassment_Resources.html
     - text: "Personnel"
       menu: 
        - text: "Schedules and Contacts"
@@ -43,6 +37,8 @@ navbar:
          href: ../files/Safety/Accidents/At Sea Incident Reporting.pdf
        - text: "Ergonomic Resource Library"
          href: Safety_Ergonomic_Resource_Library.html
+       - text: "Harassment Resources"
+         href: Safety_Harassment_Resources.html
        - text: "Hazmat"
          href: Safety_Hazmat.html
        - text: "Illness and injury reporting"
@@ -53,16 +49,18 @@ navbar:
       menu: 
        - text: "Software & drivers"
          href: Software_Software_&_drivers.html
-    - text: "Species ID"
+    - text: "Species Info"
       menu: 
        - text: "Codebook"
          href: ../files/SpeciesID/SpeciesCodeManual.pdf
+       - text: "Protected Species"
+         href: Species_Info_Protected_Species.html
        - text: "Minimum ID"
-         href: Species_ID_Minimum_ID.html
+         href: Species_Info_Minimum_ID.html
        - text: "Guides"
-         href: Species_ID_Guides.html
+         href: Species_Info_Guides.html
        - text: "Fish ID by Taxa"
-         href: Species_ID_Fish_ID_by_Taxa.html
+         href: Species_Info_Fish_ID_by_Taxa.html
     - text: "Survey Ops"
       menu: 
        - text: "Operations"
