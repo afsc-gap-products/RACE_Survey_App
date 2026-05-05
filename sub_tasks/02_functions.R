@@ -24,64 +24,58 @@
 #'     "./ex.txt",
 #'     "./aa/")
 #'  checkLinks(URLs)
-checkLinks <- function(URLs,
-                       quiet = FALSE) {
-  
-  # https://stackoverflow.com/questions/31214361/what-is-the-r-equivalent-for-excel-iferror
-  
-  URLs <- URLs[!is.na(URLs)] # remove empty rows
-  
-  notworking <- c()
-  
-  for (i in 1:length(URLs)){
-    
-    # Fix URLs if local directories
-    URL <- URLs[i]
-    
-    if (substr(x = URL, start = 1, stop = 2) == "./") {
-  # if (substr(x = URL, start = 1, stop = 2) == "./") {
-      if (URL == "./") {
-        URL <- gsub(replacement = getwd(), pattern = "./",
-                    x = URL, fixed = TRUE, useBytes = TRUE)
-      } else {
-        URL <- gsub(replacement = paste0(getwd(), "/"), pattern = "./",
-                    x = URL, fixed = TRUE, useBytes = TRUE)
-      }
-      
-    }
-    
-    # fix for for a directory
-    if (substr(x = URL, start = nchar(URL), stop = nchar(URL)) == "/") {
-      URL <- substr(x = URL, start = 1, stop = (nchar(URL)-1))
-    }
-    
-    # download page and access URLs. If does not exist, collect it in "badurl"
-    myPage <- try(expr = xml2::read_html(URL), silent = T)
-    if (grepl(pattern = "Error", x = myPage[1],
-              fixed = TRUE, useBytes = TRUE) &
-        isFALSE(file.exists(URL))) {
-      
-      notworking <- c(notworking, URL)
-      notworking <- notworking[!grepl("^\\.\\.|\\.html$", notworking)]
-    }
-  }
-  
-  if (quiet == FALSE){
-    if (length(notworking) == 0) {
-      print("All links are good!")
-    } else {
-      print(paste0("There ",
-                   ifelse(length(notworking)>1, "are ", "is "),
-                   length(notworking),
-                   " bad link",
-                   ifelse(length(notworking)>1, "s", ""),
-                   "."))
-    }
-  }
-  
-  return(sort(unique(notworking)))
-}
+#'  
 
+checkLinks <- function(URLs, quiet = FALSE) {
+  
+  URLs <- URLs[!is.na(URLs) & URLs != ""]
+  notworking <- character()
+  
+  for (URL in URLs) {
+    
+    original_URL <- URL
+    
+    # Handle relative paths
+    if (startsWith(URL, "./")) {
+      URL <- file.path(getwd(), sub("^\\./", "", URL))
+    }
+    
+    if (startsWith(URL, "../")) {
+      URL <- file.path(getwd(), sub("^\\.\\./", "", URL))
+    }
+    
+    URL <- sub("/$", "", URL)  # remove trailing slash
+    
+    # Web URL
+    if (grepl("^https?://", URL)) {
+      ok <- tryCatch({
+        resp <- httr2::request(URL) |> httr2::req_perform()
+        status <- httr2::resp_status(resp)
+        status < 400
+      }, error = function(e) FALSE)
+      
+    } else {
+      # Local file
+      ok <- file.exists(URL)
+    }
+    
+    if (!ok) {
+      notworking <- c(notworking, original_URL)
+    }
+  }
+  
+  notworking <- sort(unique(notworking))
+  
+  if (!quiet) {
+    if (length(notworking) == 0) {
+      message("All links are good!")
+    } else {
+      message(length(notworking), " bad link(s) found.")
+    }
+  }
+  
+  return(notworking)
+}
 
 # function to extract link from formatted html link
 html_to_link <- function(x){
