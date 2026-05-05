@@ -22,6 +22,7 @@ source("sub_tasks/03_data.R")
 
 # Checks to make sure files work and are updated -------------------------------
 
+# !!!! Run the first two tasks in this script before finalizing the survey app!!!!
 # source("sub_tasks/00_housekeeping.R")
 
 
@@ -72,7 +73,7 @@ custom_comb <- tibble::tribble(
   "Tasklists", "End of Leg", "tasklist.rmd",
   "Tasklists", "End of Survey", "tasklist.rmd",
   "Personnel", "Flight Itineraries", "personnel_flight_itineraries.Rmd",
-  "Species Info", "Minimum ID", "species_id_minimum_id.Rmd",
+  "Species Info", "Minimum ID Table", "species_id_minimum_id.Rmd",
   "Species Info", "Species ID Guides", "species_id_guides.Rmd",
   "Species Info", "Fish ID by Taxa", "species_id_id_by_taxa.Rmd"
 )
