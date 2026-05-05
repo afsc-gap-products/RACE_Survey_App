@@ -68,9 +68,9 @@ comb$web_page[match(x = dir_pdfs, table = comb$sub_page)] <-
 ## Add comb information for webpages that use a custom template
 custom_comb <- tibble::tribble(
   ~page, ~sub_page, ~template_rmd,
-  "FPC and Deck Lead", "Tasklist 1 - Beginning of Survey or Leg", "tasklist.rmd",
-  "FPC and Deck Lead", "Tasklist 2 - End of Leg", "tasklist.rmd",
-  "FPC and Deck Lead", "Tasklist 3 - End of Survey", "tasklist.rmd",
+  "Tasklists", "Beginning of Survey or Leg", "tasklist.rmd",
+  "Tasklists", "End of Leg", "tasklist.rmd",
+  "Tasklists", "End of Survey", "tasklist.rmd",
   "Personnel", "Flight Itineraries", "personnel_flight_itineraries.Rmd",
   "Species Info", "Minimum ID", "species_id_minimum_id.Rmd",
   "Species Info", "Species ID Guides", "species_id_guides.Rmd",

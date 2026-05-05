@@ -132,51 +132,44 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "ES80 resources",
+    "title": "Forms",
     "section": "ES80 data collection",
-    "subtitle": "Forms",
     "url_loc": "../files/Collections/ES80/forms/",
     "source": "entries"
   },
   {
-    "title": "ES80 resources",
+    "title": "Replacing hard drive",
     "section": "ES80 data collection",
-    "subtitle": "Replacing hard drive",
     "url_loc": "../files/Collections/ES80/ES60 Hard drive instructions.pdf",
     "source": "entries"
   },
   {
-    "title": "ES80 resources",
+    "title": "ES60 ES70 lockup issue",
     "section": "ES80 data collection",
-    "subtitle": "ES60 ES70 lockup issue",
     "url_loc": "../files/Collections/ES80/GPTlockup-issue.pdf",
     "source": "entries"
   },
   {
-    "title": "ES80 resources",
+    "title": "Skipper cheat sheet",
     "section": "ES80 data collection",
-    "subtitle": "Skipper cheat sheet",
     "url_loc": "../files/Collections/ES80/ES60_skippercheatsheet.pdf",
     "source": "entries"
   },
   {
-    "title": "ES80 resources",
+    "title": "Vessel photos & pictures to assist with calibration",
     "section": "ES80 data collection",
-    "subtitle": "Vessel photos & pictures to assist with calibration",
     "url_loc": "../files/Collections/ES80/ES60photos",
     "source": "entries"
   },
   {
-    "title": "ES80 resources",
+    "title": "ES80 Protocols - all surveys",
     "section": "ES80 data collection",
-    "subtitle": "ES80 Protocols - all surveys",
     "url_loc": "../files/Collections/ES80/ES80_protocols_2026.pdf",
     "source": "entries"
   },
   {
-    "title": "ES80 resources",
+    "title": "ES80 Training Slides",
     "section": "ES80 data collection",
-    "subtitle": "ES80 Training Slides",
     "url_loc": "../files/Collections/ES80/2025 ES80 data collection.pdf",
     "source": "entries"
   },
@@ -220,12 +213,6 @@ var searchData = [
     "title": "All Special Projects PDF",
     "section": "BS",
     "url_loc": "../files/collections/special projects/BS/2025/NBS/",
-    "source": "entries"
-  },
-  {
-    "title": "DeFilippo's Slope Tows Resources",
-    "section": "BS",
-    "url_loc": "../files/collections/special projects/BS/2023/EBS/DeFilippo",
     "source": "entries"
   },
   {
@@ -1338,6 +1325,42 @@ var searchData = [
     "title": "RACE At Sea-Timesheet",
     "section": "",
     "url_loc": "../files/Timekeeping/RACE AT SEA T&A Spreadsheet.xlsx",
+    "source": "entries"
+  },
+  {
+    "title": "Comp time for air travel form",
+    "section": "",
+    "url_loc": "../files/Travel/COMP TIME OFF FOR TRAVEL-Air-final.doc",
+    "source": "entries"
+  },
+  {
+    "title": "Travel voucher request",
+    "section": "",
+    "url_loc": "../files/Travel/Travel Voucher Request.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "A Stranded NOAA Scientists Guide to Flight Cancellations",
+    "section": "",
+    "url_loc": "../files/Travel/A Stranded NOAA Scientists Guide to Flight Cancellations.png",
+    "source": "entries"
+  },
+  {
+    "title": "AK tax exempt info",
+    "section": "",
+    "url_loc": "../files/Travel/ALASKA-TAX EXEMPT INFO.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Rental car procedures in AK",
+    "section": "",
+    "url_loc": "../files/Travel/Travel Advisory 08-6 - Rental Car Procedures in Alaska.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Vehicle rental tax exemption form",
+    "section": "",
+    "url_loc": "../files/Travel/AS 43.52 Vehicle Form.pdf",
     "source": "entries"
   },
   {
@@ -2454,42 +2477,6 @@ var searchData = [
     "title": "Training Powerpoints and Resources",
     "section": "",
     "url_loc": "../files/Trainings/2026 Training Powerpoints and Resources/",
-    "source": "entries"
-  },
-  {
-    "title": "Comp time for air travel form",
-    "section": "",
-    "url_loc": "../files/Travel/COMP TIME OFF FOR TRAVEL-Air-final.doc",
-    "source": "entries"
-  },
-  {
-    "title": "Travel voucher request",
-    "section": "",
-    "url_loc": "../files/Travel/Travel Voucher Request.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "A Stranded NOAA Scientists Guide to Flight Cancellations",
-    "section": "",
-    "url_loc": "../files/Travel/A Stranded NOAA Scientists Guide to Flight Cancellations.png",
-    "source": "entries"
-  },
-  {
-    "title": "AK tax exempt info",
-    "section": "",
-    "url_loc": "../files/Travel/ALASKA-TAX EXEMPT INFO.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Rental car procedures in AK",
-    "section": "",
-    "url_loc": "../files/Travel/Travel Advisory 08-6 - Rental Car Procedures in Alaska.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Vehicle rental tax exemption form",
-    "section": "",
-    "url_loc": "../files/Travel/AS 43.52 Vehicle Form.pdf",
     "source": "entries"
   },
   {
