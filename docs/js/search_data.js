@@ -138,6 +138,12 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "ES80 EBS data collection quick review",
+    "section": "ES80 data collection",
+    "url_loc": "../files/Collections/ES80/2026 Quick review EBS AVO ES80 data collection.pdf",
+    "source": "entries"
+  },
+  {
     "title": "ES80 Training Slides",
     "section": "ES80 data collection",
     "url_loc": "../files/Collections/ES80/2025 ES80 data collection.pdf",
@@ -207,12 +213,6 @@ var searchData = [
     "title": "All Special Projects PDF",
     "section": "BS",
     "url_loc": "../files/collections/special projects/BS/2025/NBS/",
-    "source": "entries"
-  },
-  {
-    "title": "Hoff's Cod and Pollock Condition Data",
-    "section": "BS",
-    "url_loc": "../files/Collections/cod data collection sheet.pdf",
     "source": "entries"
   },
   {
@@ -462,7 +462,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "120-199 barcodes 2024",
+    "title": "120-199 barcodes",
     "section": "Barcodes",
     "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/Big length barcodes 2024.pdf",
     "source": "entries"
@@ -480,137 +480,45 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Length App Barcodes v.2017",
-    "section": "Barcodes",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/LENGTH App barcodes v2017.pdf",
+    "title": "Wand pairing barcodes (old)",
+    "section": "Wands",
+    "url_loc": "../files/Manuals/Bluetooth_Devices/wand pairing instructions 2021.pdf",
     "source": "entries"
   },
   {
-    "title": "Polycorder Barcodes v. 2009",
-    "section": "Barcodes",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/polycorder_barcodes_v2009.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Specimen App Barcodes v. 2017",
-    "section": "Barcodes",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/SPECIMEN App barcodes v2017.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Nexus",
-    "section": "BlueSoleil Pairing (Tablet to Computer)",
-    "url_loc": "../files/Manuals/Apps Software/Nexus (specimen) tablet pair to CATCH COMPUTER.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Samsung",
-    "section": "BlueSoleil Pairing (Tablet to Computer)",
-    "url_loc": "../files/Manuals/Apps Software/Samsung (length) tablet pair to CATCH COMPUTER.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "How to Install and Uninstall Apps",
-    "section": "Initial Tablet Set Up",
-    "url_loc": "../files/Manuals/Apps Software/IntroToCatchApp MS Powerpoints/InstallUninstallApps.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Mesa 3 Tablet Tutorial",
-    "section": "Initial Tablet Set Up",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Mesa 3 tutorial.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Nexus",
-    "section": "Initial Tablet Set Up",
-    "url_loc": "../files/Manuals/Apps Software/2018.05.22 Nexus settings and pairing.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Nexus (specimen) file transfer",
-    "section": "Initial Tablet Set Up",
-    "url_loc": "../files/Manuals/Apps Software/Nexus (specimen) file transfer.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Samsung",
-    "section": "Initial Tablet Set Up",
-    "url_loc": "../files/Manuals/Apps Software/2018.05.22 Samsung Tab A settings and pairing.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Samsung (length) file transfer",
-    "section": "Initial Tablet Set Up",
-    "url_loc": "../files/Manuals/Apps Software/Samsung (length) file transfer.pdf",
+    "title": "Wand manual",
+    "section": "Wands",
+    "url_loc": "../files/Manuals/Bluetooth_Devices/WWR2900 WandManual.pdf",
     "source": "entries"
   },
   {
     "title": "Samsung Galaxy Tab A7 Lite Tablet User Manual",
-    "section": "Initial Tablet Set Up",
-    "url_loc": "../files/Manuals/Apps Software/SAM_T220_T227_EN_UM_OS13_042123_FINAL.pdf",
+    "section": "Tablet Set Up",
+    "url_loc": "../files/Manuals/Apps Software/Samsung_Galaxy_A7_manual.pdf",
     "source": "entries"
   },
   {
     "title": "Sending tablet files via WiFi",
-    "section": "Initial Tablet Set Up",
+    "section": "Tablet Set Up",
     "url_loc": "../files/Manuals/Apps Software/Sending Tablet Files Via WiFi.pdf",
     "source": "entries"
   },
   {
     "title": "Setting up maturity collection",
-    "section": "Initial Tablet Set Up",
+    "section": "Tablet Set Up",
     "url_loc": "../files/Manuals/Apps Software/BT Survey Maturity Instructions.pdf",
     "source": "entries"
   },
   {
     "title": "Tablet remote access documentation",
-    "section": "Initial Tablet Set Up",
+    "section": "Tablet Set Up",
     "url_loc": "../files/Manuals/Apps Software/Tablet Remote Access Documentation.pdf",
     "source": "entries"
   },
   {
     "title": "Caliper Digimatic Bluetooth Adapter Instructions",
-    "section": "Wands, Headphones, and Speakers Pairing (Peripherals to Tablet)",
+    "section": "",
     "url_loc": "../files/Manuals/Bluetooth_devices/Caliper_Digimatic Bluetooth Adapter instructions.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Headphone Manuals",
-    "section": "Wands, Headphones, and Speakers Pairing (Peripherals to Tablet)",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Headphones/",
-    "source": "entries"
-  },
-  {
-    "title": "Manual",
-    "section": "Wands, Headphones, and Speakers Pairing (Peripherals to Tablet)",
-    "subtitle": "See pg. 8",
-    "url_loc": "../files/Manuals/Apps Software/Length_SpecimenAppHandbook_v20200115.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Quick Help! Manual",
-    "section": "Wands, Headphones, and Speakers Pairing (Peripherals to Tablet)",
-    "subtitle": "Bluetooth and Length App focused--Adding new species to Length Tablet, wand/speaker bluetooth connection issues, wrong sex scanned, wand not discoverable to pair, wand beeping but not recording numbers, wand shutting off and causing app to crash",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Help!_Combined.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Wand Pairing Barcodes",
-    "section": "Wands, Headphones, and Speakers Pairing (Peripherals to Tablet)",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/wand pairing barcodes.pub",
-    "source": "entries"
-  },
-  {
-    "title": "Wand Pairing Concatenation Barcodes",
-    "section": "Wands, Headphones, and Speakers Pairing (Peripherals to Tablet)",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/Wand pairing_concatenantion_barcodes.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Wand Pairing Instructions",
-    "section": "Wands, Headphones, and Speakers Pairing (Peripherals to Tablet)",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/wand pairing instructions 2021 new.pdf",
     "source": "entries"
   },
   {
@@ -623,18 +531,6 @@ var searchData = [
     "title": "Crab App Powerpoints",
     "section": "",
     "url_loc": "../files/Manuals/Apps Software/Crab Application Training Powerpoints/",
-    "source": "entries"
-  },
-  {
-    "title": "Data Collection Output Locations by Application",
-    "section": "",
-    "url_loc": "../files/Manuals/Apps Software/ApplicationOutput.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Length and Specimen App Handbook",
-    "section": "",
-    "url_loc": "../files/Manuals/Apps Software/20200401_Length and Specimen App Handbook.pdf",
     "source": "entries"
   },
   {
@@ -717,7 +613,7 @@ var searchData = [
   },
   {
     "title": "Olex and OpenCPN",
-    "section": "Globe",
+    "section": "Olex",
     "url_loc": "../files/Manuals/Olex and OpenCPN/",
     "source": "entries"
   },
@@ -1202,18 +1098,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Beaufort Scale Description Table",
-    "section": "",
-    "url_loc": "../files/Manuals/Beaufort_Scale/Beaufort-scale-values-and-descriptions.png",
-    "source": "entries"
-  },
-  {
-    "title": "Chief Scientist & Deck Lead Manual v. 2007",
-    "section": "",
-    "url_loc": "../files/Manuals/Survey operation manuals/Chief Scientist Manual07.pdf",
-    "source": "entries"
-  },
-  {
     "title": "Handling artifacts found at sea",
     "section": "",
     "url_loc": "../files/Manuals/Survey operation manuals/Artifact guidance.pdf",
@@ -1223,12 +1107,6 @@ var searchData = [
     "title": "SFTP Instructions",
     "section": "",
     "url_loc": "../files/Manuals/Calypso_Wheelhouse/SFTP Instructions.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "All Survey Personnel phonelist",
-    "section": "All surveys",
-    "url_loc": "../files/Contact lists/Emergency Phone List RACE Groundfish.pdf",
     "source": "entries"
   },
   {
@@ -1780,31 +1658,25 @@ var searchData = [
   {
     "title": "Care for Cold (Hypothermic) Patient",
     "section": "",
-    "url_loc": "../files//Safety/CareForColdPatient.jpg",
+    "url_loc": "../files/Safety/CareForColdPatient.jpg",
     "source": "entries"
   },
   {
     "title": "Cold (Hypothermic) Patient Assessment",
     "section": "",
-    "url_loc": "../files//Safety/AssessColdPatient.jpg",
+    "url_loc": "../files/Safety/AssessColdPatient.jpg",
     "source": "entries"
   },
   {
     "title": "Cold (Hypothermic) Patient Flow Chart",
     "section": "",
-    "url_loc": "../files//Safety/ColdPatientFlowChart.jpg",
+    "url_loc": "../files/Safety/ColdPatientFlowChart.jpg",
     "source": "entries"
   },
   {
     "title": "AED Manual",
     "section": "",
     "url_loc": "../files/Safety/UserManual_AED_Hart_350P.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Estimating Distance Off",
-    "section": "",
-    "url_loc": "../files/Safety/Estimating Distance Off_BoatUS.pdf",
     "source": "entries"
   },
   {
@@ -1982,12 +1854,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Example Script",
-    "section": "GAPsurvey R Package",
-    "url_loc": "../files/Manuals/R/GAPsurvey/example_script.R",
-    "source": "entries"
-  },
-  {
     "title": "GAPsurvey Instructions",
     "section": "GAPsurvey R Package",
     "url_loc": "../files/Manuals/R/GAPsurvey/docs/index.html",
@@ -2049,12 +1915,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "GOA racebace access database",
-    "section": "",
-    "url_loc": "../files/manuals/racebase/GOA RACEBASE.mdb",
-    "source": "entries"
-  },
-  {
     "title": "Tablet Apps (.apk)",
     "section": "",
     "url_loc": "../files/Manuals/Apps Software/Tablet apks",
@@ -2076,18 +1936,6 @@ var searchData = [
     "title": "North Pacific Right Whale critical habitat",
     "section": "",
     "url_loc": "../files/SpeciesID/protected_species/critical habitat/North Pacific Right Whale Critical Habitat.jpg",
-    "source": "entries"
-  },
-  {
-    "title": "Sea Lion rookeries",
-    "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/critical habitat/2020AI_sealion_rookeries.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Sea Otter factsheet",
-    "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/Helpful brochures/factsheet_seaotter.pdf",
     "source": "entries"
   },
   {
@@ -2115,128 +1963,56 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Marine mammal sighting form (page 1)",
-    "section": "Forms",
-    "url_loc": "../files/SpeciesID/protected_species/Forms/MM POP form_Page_1.jpg",
+    "title": "Protected species training FY26",
+    "section": "",
+    "url_loc": "../files/SpeciesID/protected_species/FY26 Protected species training Presentation.pdf",
     "source": "entries"
   },
   {
-    "title": "Marine mammal sighting form (page 2)",
-    "section": "Forms",
-    "url_loc": "../files/SpeciesID/protected_species/Forms/MM POP form_Page_2.jpg",
+    "title": "Marine mammal sampling flow chart",
+    "section": "",
+    "url_loc": "../files/SpeciesID/protected_species/MM Sampling Matrix_Flow Chart.pdf",
     "source": "entries"
   },
   {
-    "title": "Monitoring log",
-    "section": "Forms",
-    "url_loc": "../files/SpeciesID/protected_species/Forms/Monitoring Log_all surveys.xlsx",
-    "source": "entries"
-  },
-  {
-    "title": "Protected species encounter form",
-    "section": "Forms",
-    "url_loc": "../files/SpeciesID/protected_species/Forms/AFSC Research Protected Species Encounter Form_final_2020.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Protected species handling form",
-    "section": "Forms",
-    "url_loc": "../files/SpeciesID/protected_species/Forms/AFSC Research Protected Species Handling Form_final_2020.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Protected species incident form",
-    "section": "Forms",
-    "url_loc": "../files/SpeciesID/protected_species/Forms/Form_AFSC_protected species incident form.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "USFWS ESA Bird Encounter Form",
-    "section": "Forms",
-    "url_loc": "../files/SpeciesID/protected_species/ID guides/USFWS. ESA Bird Encounter Form.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Watch log",
-    "section": "Forms",
-    "url_loc": "../files/SpeciesID/protected_species/Forms/Watch Log_all surveys.xlsx",
-    "source": "entries"
-  },
-  {
-    "title": "Compliance cheat sheet",
-    "section": "Training",
-    "url_loc": "../files/SpeciesID/protected_species/Training/2019_Compliance_Cheat_Sheet.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Marine Mammal Data Collection",
-    "section": "Training",
-    "url_loc": "../files/SpeciesID/protected_species/Training/MARINE MAMMALS_Survey.pptx",
-    "source": "entries"
-  },
-  {
-    "title": "Marine Mammal Parts Sampling",
-    "section": "Training",
-    "url_loc": "../files/SpeciesID/protected_species/Training/marine mammal parts sampling.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Marine Mammal Tissue Sampling",
-    "section": "Training",
-    "url_loc": "../files/SpeciesID/protected_species/Training/Marine Mammal Tissue Sampling.docx",
+    "title": "AFSC Protected Species Sampling Safety Procedures",
+    "section": "",
+    "url_loc": "../files/SpeciesID/protected_species/AFSC Protected Species Sampling Safety Procedures.pdf",
     "source": "entries"
   },
   {
     "title": "Mitigation Measures Manual",
-    "section": "Training",
+    "section": "",
     "url_loc": "../files/SpeciesID/protected_species/Manual Mitigation Measures.pdf",
     "source": "entries"
   },
   {
-    "title": "Mitigation measures quick view",
-    "section": "Training",
-    "url_loc": "../files/SpeciesID/protected_species/Training/Quick View aka what you need to know in the field.pptx",
-    "source": "entries"
-  },
-  {
-    "title": "Mitigation measures training",
-    "section": "Training",
-    "url_loc": "../files/SpeciesID/protected_species/Training/Mit Mitigation Training.pptx",
-    "source": "entries"
-  },
-  {
-    "title": "SSL NTZ Conflict Instructions",
-    "section": "Training",
-    "url_loc": "../files/SpeciesID/protected_species/Training/SSL NTZ Conflict Instructions.docx",
-    "source": "entries"
-  },
-  {
-    "title": "Wheelhouse and Calypso videos",
-    "section": "Training",
-    "url_loc": "../files/SpeciesID/protected_species/Training/AFSC Compliance training V8.pptx",
-    "source": "entries"
-  },
-  {
-    "title": "Protected Species Mitigation Kit",
+    "title": "Species to collect samples",
     "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/Mitigation Kit",
+    "url_loc": "../files/SpeciesID/protected_species/Collect_Do NOT Collect MML.pdf",
     "source": "entries"
   },
   {
-    "title": "Beach Found or Trawl Caught Mammal Parts",
+    "title": "**Protected species reporting log**",
     "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/beachfound_or_trawlcaught_mammal_parts.pdf",
     "source": "entries"
   },
   {
-    "title": "Protected Species Permits",
+    "title": "Whale entanglement",
     "section": "",
-    "url_loc": "../files/Permits/Protected Species/",
+    "url_loc": "../files/SpeciesID/protected_species/whale_entanglement factsheet.pdf",
     "source": "entries"
   },
   {
-    "title": "Protected species reporting log",
+    "title": "Details to report",
     "section": "",
+    "url_loc": "../files/SpeciesID/protected_species/Interaction placard- encounters.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Reporting contacts",
+    "section": "",
+    "url_loc": "../files/SpeciesID/protected_species/Interaction placard - contact sheet.pdf",
     "source": "entries"
   },
   {
@@ -2320,7 +2096,7 @@ var searchData = [
   {
     "title": "AI/GOA Survey Ops Manual",
     "section": "Survey Ops Manuals",
-    "url_loc": "../files/Manuals/Survey operation manuals/2025 GOA Scientific Operations.pdf",
+    "url_loc": "../files/Manuals/Survey operation manuals/AI Scientific Operations.pdf",
     "source": "entries"
   },
   {
@@ -2404,7 +2180,7 @@ var searchData = [
   {
     "title": "EBS Inventory lists",
     "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory2025_EBS_at-sea_inventory.xlsx",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_EBS_at-sea_inventory.xlsx",
     "source": "entries"
   },
   {
@@ -2435,30 +2211,6 @@ var searchData = [
     "title": "Other packing inventory lists",
     "section": "",
     "url_loc": "../files/Survey inventory lists",
-    "source": "entries"
-  },
-  {
-    "title": "AI Shelf Tech Memos",
-    "section": "",
-    "url_loc": "../files/Manuals/past_tech_memos/AI Tech Memos/",
-    "source": "entries"
-  },
-  {
-    "title": "EBS & NBS Shelf Tech Memos",
-    "section": "",
-    "url_loc": "../files/Manuals/past_tech_memos/EBS shelf survey Tech Memos/",
-    "source": "entries"
-  },
-  {
-    "title": "EBS Slope Tech Memos",
-    "section": "",
-    "url_loc": "../files/manuals/past_tech_memos/EBS slope survey Tech Memos/",
-    "source": "entries"
-  },
-  {
-    "title": "GOA Shelf Tech Memos",
-    "section": "",
-    "url_loc": "../files/Manuals/past_tech_memos/GOA Tech Memos/",
     "source": "entries"
   },
   {
@@ -2799,6 +2551,12 @@ var searchData = [
     "title": "North Pacific Right Whale Guide",
     "section": "mammal",
     "url_loc": "../files/SpeciesID/guides/birdmammal/NPRight Whale Guide.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "Key to Pinnipeds",
+    "section": "mammal",
+    "url_loc": "../files/SpeciesID/guides/birdmammal/Key to pinnipeds.pdf",
     "source": "guides"
   },
   {
