@@ -4,10 +4,11 @@
 # This script:
 # 1. Verifies that all files referenced in the survey app,
 #    task list, and taxa guides exist in the /files directory.
-# 2. Identifies files in /files that are NOT referenced anywhere
+# 2. Checks "Annual Updates" file maintenance status.
+# 3. Identifies files in /files that are NOT referenced anywhere
 #    in the app (including indirectly via folders).
-# 3. Detects duplicate filenames and files (by hashes) across different directories.
-# 4. Checks "Annual Updates" file maintenance status.
+# 4. Detects duplicate filenames and files (by hashes) across different directories.
+# 5. Detects files that have not been updated in the last 10 years
 # ================================================================
 
 
@@ -21,7 +22,8 @@ clean_paths <- function(x, base = "./files") {
     gsub("//+", "/", x = _) |>                          # collapse repeated slashes
     (\(p) normalizePath(p, winslash = "/", mustWork = FALSE))() |>
     gsub(paste0("^", normalizePath(base, winslash = "/")), "", x = _) |>
-    gsub("^/", "", x = _)                               # ensure relative paths
+    gsub("^/", "", x = _) |>                              # ensure relative paths
+    tolower()
 }
 
 
@@ -92,9 +94,16 @@ annual_audit |>
 # # ----------------------------------------------------------------
 # 
 # # All files on disk
-# all_files <- clean_paths(
-#   list.files("./files/", recursive = TRUE, full.names = TRUE)
-# )
+# all_files <- list.files("./files/", recursive = TRUE, full.names = TRUE)
+# 
+# # remove hidden/temp/system files
+# all_files_clean <- clean_paths(all_files)
+# all_files_clean <- all_files_clean[
+#   !grepl("(^|/)\\.", all_files_clean) &
+#     !grepl("~$", all_files_clean) &
+#     !grepl("thumbs\\.db$|desktop\\.ini$", all_files_clean)
+# ]
+# 
 # 
 # # All app-referenced files (combined)
 # files_in_app <- clean_paths(c(
@@ -109,22 +118,21 @@ annual_audit |>
 # # - folder references (indirect links)
 # app_files <- files_in_app[grepl("\\.[^./]+$", files_in_app)]
 # app_folders <- sub("/$", "", files_in_app[!grepl("\\.[^./]+$", files_in_app)])
+# app_folders <- app_folders[!is.na(app_folders)]
 # 
 # # Files not referenced anywhere in the app
-# files_not_in_app <- all_files[
-#   grepl("\\.[^./]+$", all_files) &          # keep real files only
-#     !grepl("(^|/)\\.", all_files) &         # remove hidden files/folders
-#     !grepl("~$", all_files) &               # remove temp files
-#     !all_files %in% app_files &             # exclude direct references
-#     !vapply(all_files, function(f) {        # exclude folder-based references
+# files_not_in_app <- all_files_clean[
+#   grepl("\\.[^./]+$", all_files_clean) &          # keep real files only
+#     !all_files_clean %in% app_files &             # exclude direct references
+#     !vapply(all_files_clean, function(f) {        # exclude folder-based references
 #       any(startsWith(f, paste0(app_folders, "/")))
 #     }, logical(1))
 # ]
 # 
 # # Optional: additional manual exclusions
 # orphan_files <- files_not_in_app[
-#   !grepl(
-#     "Collections/Special projects/|SpeciesID/|Travel/flight itineraries/|Thumbs.db|Manuals/R/GAPsurvey/|archive|Safety/Accidents/slide|Metis PC Required Directories and Control Files",
+#   !grepl(tolower(
+#     "Collections/Special projects/|SpeciesID/|Travel/flight itineraries/|Manuals/R/GAPsurvey/|Safety/Accidents/slide|Metis PC Required Directories and Control Files"),
 #     files_not_in_app
 #   )
 # ]
@@ -137,14 +145,13 @@ annual_audit |>
 # # STEP 4: Detect duplicate files by filename (case-insensitive)
 # # ----------------------------------------------------------------
 # 
-# trim_files <- tolower(all_files)[
-#   !grepl(
-#     "Manuals/Globe/|Manuals/R/GAPsurvey/|
-#      Trainings/Prior Years Training Powerpoints and Resources/|
-#      Thumbs.db|archive|Manuals/MARPORT/|
+# trim_files <- all_files_clean[
+#   !grepl(tolower(
+#     "Manuals/Globe/|Manuals/R/GAPsurvey/|Manuals/MARPORT/|
 #      Collections/Special projects/|Manuals/TimeZero/|Critical habitat/shapefiles/|
-#      Manuals/Olex and OpenCPN/|Thumbs.db|Collections/Special projects/|Prior Years Training Powerpoints and Resources",
-#     all_files
+#      Manuals/Olex and OpenCPN/|Collections/Special projects/|Prior Years Training Powerpoints and Resources"
+#     ),
+#     all_files_clean
 #   )
 # ]
 # 
@@ -219,10 +226,26 @@ annual_audit |>
 # 
 # # list of duplicate files based on hashes
 # View(dup_files)
-
-
-
-
-
-
-
+# 
+# 
+# 
+# # ----------------------------------------------------------------
+# # STEP 5: Files not updated in the past 10 years
+# # ----------------------------------------------------------------
+# 
+# # File system metadata
+# all_file_info <- file.info(all_files, ignore.case = TRUE)
+# 
+# old_files <- data.frame(all_file_info) |>
+#   tibble::rownames_to_column("path") |>
+#   tibble() |>
+#   dplyr::mutate(year = as.numeric(format(mtime, "%Y"))) |>
+#   filter(as.numeric(current_year) - year > 10) |>
+#   select(path, year) |>
+#   arrange(year) |>
+#     "Manuals/Globe/|Manuals/MARPORT/|Safety/Accidents/|
+#      Collections/Special projects/|Manuals/GPSs|Manuals/Light meters/"
+#   , path))
+# 
+# 
+# View(old_files)

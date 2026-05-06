@@ -78,15 +78,9 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Portfolio Photo Management Software Instructions",
-    "section": "Vouchers",
-    "url_loc": "../files/manuals/Portfolio/Portfolio Photo Management Software Instructions.pdf",
-    "source": "entries"
-  },
-  {
     "title": "Voucher Collection and Preservation Procedures",
     "section": "Vouchers",
-    "url_loc": "../files/Collections/Preservation Procedures for Voucher Collection.pdf",
+    "url_loc": "../files/Collections/Voucher Procedures.pdf",
     "source": "entries"
   },
   {
@@ -132,33 +126,9 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Forms",
-    "section": "ES80 data collection",
-    "url_loc": "../files/Collections/ES80/forms/",
-    "source": "entries"
-  },
-  {
-    "title": "Replacing hard drive",
-    "section": "ES80 data collection",
-    "url_loc": "../files/Collections/ES80/ES60 Hard drive instructions.pdf",
-    "source": "entries"
-  },
-  {
     "title": "ES60 ES70 lockup issue",
     "section": "ES80 data collection",
     "url_loc": "../files/Collections/ES80/GPTlockup-issue.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Skipper cheat sheet",
-    "section": "ES80 data collection",
-    "url_loc": "../files/Collections/ES80/ES60_skippercheatsheet.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Vessel photos & pictures to assist with calibration",
-    "section": "ES80 data collection",
-    "url_loc": "../files/Collections/ES80/ES60photos",
     "source": "entries"
   },
   {
@@ -171,6 +141,30 @@ var searchData = [
     "title": "ES80 Training Slides",
     "section": "ES80 data collection",
     "url_loc": "../files/Collections/ES80/2025 ES80 data collection.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Forms",
+    "section": "ES80 data collection",
+    "url_loc": "../files/Collections/ES80/forms/",
+    "source": "entries"
+  },
+  {
+    "title": "Replacing hard drive",
+    "section": "ES80 data collection",
+    "url_loc": "../files/Collections/ES80/ES60 Hard drive instructions.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Skipper cheat sheet",
+    "section": "ES80 data collection",
+    "url_loc": "../files/Collections/ES80/ES60_skippercheatsheet.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Vessel photos & pictures to assist with calibration",
+    "section": "ES80 data collection",
+    "url_loc": "../files/Collections/ES80/ES60photos",
     "source": "entries"
   },
   {
@@ -314,7 +308,7 @@ var searchData = [
   {
     "title": "GAPsurvey R Package",
     "section": "GAPsurvey R Package",
-    "url_loc": "./docs/software_r_software_&_scripts.html",
+    "url_loc": "./docs/Software_Software_&_drivers.html",
     "source": "entries"
   },
   {
@@ -330,21 +324,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "CTD Laptop Login",
-    "section": "CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/",
-    "source": "entries"
-  },
-  {
-    "title": "Seabird Programs",
-    "section": "CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/Seabird Programs/",
-    "source": "entries"
-  },
-  {
     "title": "All CTD resources",
     "section": "CTD",
     "url_loc": "../files/Manuals/CTD Manuals",
+    "source": "entries"
+  },
+  {
+    "title": "CTD Laptop Login",
+    "section": "CTD",
+    "url_loc": "../files/Manuals/CTD Manuals/",
     "source": "entries"
   },
   {
@@ -357,6 +345,12 @@ var searchData = [
     "title": "SBE39",
     "section": "CTD",
     "url_loc": "../files/Manuals/CTD Manuals/SBE39/",
+    "source": "entries"
+  },
+  {
+    "title": "Seabird Programs",
+    "section": "CTD",
+    "url_loc": "../files/Manuals/CTD Manuals/Seabird Programs/",
     "source": "entries"
   },
   {
@@ -414,12 +408,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Catch Form",
-    "section": "",
-    "url_loc": "../files/Collections/forms/catchforms/catch_form.pdf",
-    "source": "entries"
-  },
-  {
     "title": "Marel (deck scales) User Manuals",
     "section": "Scales",
     "url_loc": "../files/manuals/MAREL_scales/Basket_Scale_Calibration.pdf",
@@ -440,13 +428,19 @@ var searchData = [
   {
     "title": "Voucher Collection and Preservation Procedures",
     "section": "Vouchers",
-    "url_loc": "../files/Collections/Preservation Procedures for Voucher Collection.pdf",
+    "url_loc": "../files/Collections/Voucher Procedures.pdf",
     "source": "entries"
   },
   {
     "title": "AI/GOA Halibut LW Relationships",
     "section": "",
     "url_loc": "../files/Collections/Updated Halibut LW Relationships/",
+    "source": "entries"
+  },
+  {
+    "title": "Catch Form",
+    "section": "",
+    "url_loc": "../files/Collections/forms/catchforms/catch_form.pdf",
     "source": "entries"
   },
   {
@@ -501,18 +495,6 @@ var searchData = [
     "title": "Specimen App Barcodes v. 2017",
     "section": "Barcodes",
     "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/SPECIMEN App barcodes v2017.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Wand Pairing Barcodes",
-    "section": "Wands, Headphones, and Speakers Pairing (Peripherals to Tablet)",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/wand pairing barcodes.pub",
-    "source": "entries"
-  },
-  {
-    "title": "Wand Pairing Concatenation Barcodes",
-    "section": "Wands, Headphones, and Speakers Pairing (Peripherals to Tablet)",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/Wand pairing_concatenantion_barcodes.pdf",
     "source": "entries"
   },
   {
@@ -614,6 +596,18 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "Wand Pairing Barcodes",
+    "section": "Wands, Headphones, and Speakers Pairing (Peripherals to Tablet)",
+    "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/wand pairing barcodes.pub",
+    "source": "entries"
+  },
+  {
+    "title": "Wand Pairing Concatenation Barcodes",
+    "section": "Wands, Headphones, and Speakers Pairing (Peripherals to Tablet)",
+    "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/Wand pairing_concatenantion_barcodes.pdf",
+    "source": "entries"
+  },
+  {
     "title": "Wand Pairing Instructions",
     "section": "Wands, Headphones, and Speakers Pairing (Peripherals to Tablet)",
     "url_loc": "../files/Manuals/Bluetooth_Devices/wand pairing instructions 2021 new.pdf",
@@ -712,7 +706,7 @@ var searchData = [
   {
     "title": "GAPsurvey R Package",
     "section": "GAPsurvey R Package",
-    "url_loc": "./docs/software_r_software_&_scripts.html",
+    "url_loc": "./docs/Software_Software_&_drivers.html",
     "source": "entries"
   },
   {
@@ -725,12 +719,6 @@ var searchData = [
     "title": "Olex and OpenCPN",
     "section": "Globe",
     "url_loc": "../files/Manuals/Olex and OpenCPN/",
-    "source": "entries"
-  },
-  {
-    "title": "TimeZero",
-    "section": "TimeZero",
-    "url_loc": "../files/Manuals/TimeZero/",
     "source": "entries"
   },
   {
@@ -839,6 +827,24 @@ var searchData = [
     "title": "Time Sync Software",
     "section": "Time-Sync",
     "url_loc": "../files/Software/NetWork Time sync/SOFTROS Time Sync.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "TimeZero files",
+    "section": "TimeZero",
+    "url_loc": "../files/Manuals/TimeZero/",
+    "source": "entries"
+  },
+  {
+    "title": "TimeZero Manual",
+    "section": "TimeZero",
+    "url_loc": "../files/Manuals/TimeZero/Time Zero Manual.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "TimeZero Quick Starts Guide",
+    "section": "TimeZero",
+    "url_loc": "../files/Manuals/TimeZero/TimeZero_Quick_Start_Guide.pdf",
     "source": "entries"
   },
   {
@@ -1016,18 +1022,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "OLD Station Progression Worksheet (AKP)",
-    "section": "Station Progression (AI/GOA)",
-    "url_loc": "../files/Station info/AI_GOA/Station Progression/AKP_Station_Progression.xlsx",
-    "source": "entries"
-  },
-  {
-    "title": "OLD Station Progression Worksheet (OEX)",
-    "section": "Station Progression (AI/GOA)",
-    "url_loc": "../files/Station info/AI_GOA/Station Progression/OEX_Station_Progression.xlsx",
-    "source": "entries"
-  },
-  {
     "title": "Daily Temperature Entry Instructions",
     "section": "",
     "url_loc": "../files/Manuals/Daily Temperature Entry.pdf",
@@ -1108,7 +1102,7 @@ var searchData = [
   {
     "title": "Scope vs. RAPP counts",
     "section": "Scope tables",
-    "url_loc": "../files/Manuals/Survey operation manuals/Scope_vs_RAPP_counts.xls",
+    "url_loc": "../files/Manuals/Survey operation manuals/Scope_vs_RAPP_counts.pdf",
     "source": "entries"
   },
   {
@@ -1280,6 +1274,12 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "RACE At Sea-Timesheet",
+    "section": "",
+    "url_loc": "../files/Timekeeping/Name_PP##_RACE at-sea timesheet_2026.xlsx",
+    "source": "entries"
+  },
+  {
     "title": "CD-81 OT Authorization",
     "section": "",
     "url_loc": "../files/Timekeeping/CD-81 OT Authorization.pdf",
@@ -1294,7 +1294,7 @@ var searchData = [
   {
     "title": "Comp Time Off for Air Travel",
     "section": "",
-    "url_loc": "../files/Travel/COMP TIME OFF FOR TRAVEL-Air-final.doc",
+    "url_loc": "../files/Travel/COMP TIME OFF FOR TRAVEL-Air-final.pdf",
     "source": "entries"
   },
   {
@@ -1322,15 +1322,9 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "RACE At Sea-Timesheet",
-    "section": "",
-    "url_loc": "../files/Timekeeping/RACE AT SEA T&A Spreadsheet.xlsx",
-    "source": "entries"
-  },
-  {
     "title": "Comp time for air travel form",
     "section": "",
-    "url_loc": "../files/Travel/COMP TIME OFF FOR TRAVEL-Air-final.doc",
+    "url_loc": "../files/Travel/COMP TIME OFF FOR TRAVEL-Air-final.pdf",
     "source": "entries"
   },
   {
@@ -1366,7 +1360,7 @@ var searchData = [
   {
     "title": "Incident, Illness, Accident & EMERGENCY Flow Chart",
     "section": "",
-    "url_loc": ".../files/Safety/Accidents/At Sea Incident Reporting.pdf",
+    "url_loc": ".../files/Safety/Accidents/accident.htm",
     "source": "entries"
   },
   {
@@ -1462,7 +1456,7 @@ var searchData = [
   {
     "title": "NOAA IP Program Videos",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/NOAA IP Program Videos.docx",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/NOAA IP Program Videos.pdf",
     "source": "entries"
   },
   {
@@ -1666,12 +1660,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "CA-16 Authorization for treatment",
-    "section": "Forms",
-    "url_loc": "../files/Safety/Accidents/CA_16_expires_2018_mar_2021.pdf",
-    "source": "entries"
-  },
-  {
     "title": "CA-2 Report an occupational disease",
     "section": "Forms",
     "subtitle": "i.e., occupational/repetative motion illness/injury. This form can be dealt with post survey because since users will not have access to internet while at sea.",
@@ -1835,6 +1823,12 @@ var searchData = [
     "title": "Resources",
     "section": "",
     "url_loc": "../files/Safety/Psychological safety/WVPR Resource Webinar Handout.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Mental health and trauma resources",
+    "section": "",
+    "url_loc": "../files/Safety/Mental health and trauma resources.pdf",
     "source": "entries"
   },
   {
@@ -2524,7 +2518,7 @@ var searchData = [
   {
     "title": "ESA-listed AK Bird ID",
     "section": "bird",
-    "url_loc": "../files/SpeciesID/Protected_Species/ID guides/ESA-listed AK Bird ID.pdf",
+    "url_loc": "../files/SpeciesID/guides/birdmammal/ESA-listed AK Bird ID.pdf",
     "source": "guides"
   },
   {

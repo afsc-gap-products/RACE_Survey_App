@@ -17,20 +17,20 @@ navbar:
          href: FPC_and_Deck_Lead_Deck_Lead_Resources.html
        - text: "FPC Resources"
          href: FPC_and_Deck_Lead_FPC_Resources.html
-    - text: "Personnel"
+    - text: "Personnel & Travel"
       menu: 
        - text: "Schedules and Contacts"
-         href: Personnel_Schedules_and_Contacts.html
+         href: Personnel_&_Travel_Schedules_and_Contacts.html
        - text: "Timekeeping T&A"
-         href: Personnel_Timekeeping_T&A.html
+         href: Personnel_&_Travel_Timekeeping_T&A.html
        - text: "Travel Resources"
-         href: Personnel_Travel_Resources.html
+         href: Personnel_&_Travel_Travel_Resources.html
        - text: "Flight Itineraries"
-         href: Personnel_Flight_Itineraries.html
+         href: Personnel_&_Travel_Flight_Itineraries.html
     - text: "Safety"
       menu: 
        - text: "Emergency Flow Chart"
-         href: ../files/Safety/Accidents/At Sea Incident Reporting.pdf
+         href: ../files/Safety/Accidents/accident.htm
        - text: "Ergonomic Resource Library"
          href: Safety_Ergonomic_Resource_Library.html
        - text: "Harassment Resources"
@@ -51,8 +51,8 @@ navbar:
          href: ../files/SpeciesID/SpeciesCodeManual.pdf
        - text: "Protected Species"
          href: Species_Info_Protected_Species.html
-       - text: "Minimum ID"
-         href: Species_Info_Minimum_ID.html
+       - text: "Minimum ID Table"
+         href: Species_Info_Minimum_ID_Table.html
        - text: "Species ID Guides"
          href: Species_Info_Species_ID_Guides.html
        - text: "Fish ID by Taxa"
@@ -61,8 +61,8 @@ navbar:
       menu: 
        - text: "Operations"
          href: Survey_Ops_Operations.html
-       - text: "Training Resources and Tech Memos"
-         href: Survey_Ops_Training_Resources_and_Tech_Memos.html
+       - text: "Training Resources"
+         href: Survey_Ops_Training_Resources.html
     - text: "Tasklists"
       menu: 
        - text: "Beginning of Survey or Leg"
