@@ -270,6 +270,18 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "Special Projects (Summary Table) Descriptions and Protocols NWX",
+    "section": "BS",
+    "url_loc": "../files/collections/special projects/BS/2026/2026_EBS_NWX_summary.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects (Summary Table) Descriptions and Protocols AKK",
+    "section": "BS",
+    "url_loc": "../files/collections/special projects/BS/2026/2026_EBS_AKK_summary.pdf",
+    "source": "entries"
+  },
+  {
     "title": "Special Projects [AKP] Deck Poster",
     "section": "GOA/AI",
     "url_loc": "../files/collections/special projects/AI_GOA/2026/Deck Poster AKP.pdf",
@@ -624,51 +636,63 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "DoorExplorereProNX_UserManual_en_V1",
-    "section": "Marport",
-    "url_loc": "../files/Manuals/MARPORT/",
-    "source": "entries"
-  },
-  {
-    "title": "FlowSpeedNavigatorProNX_UserManual_en_V1",
-    "section": "Marport",
-    "url_loc": "../files/Manuals/MARPORT/",
-    "source": "entries"
-  },
-  {
     "title": "MARPORT Directory",
     "section": "Marport",
     "url_loc": "../files/Manuals/MARPORT/",
     "source": "entries"
   },
   {
-    "title": "MARPORT Quick Reference Guide",
+    "title": "DoorExplorereProNX UserManual",
+    "section": "Marport",
+    "url_loc": "../files/Manuals/MARPORT/DoorExplorerProNX_UserManual_en_V1.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "FlowSpeedNavigatorProNX UserManual",
+    "section": "Marport",
+    "url_loc": "../files/Manuals/MARPORT/FlowSpeedNavigatorProNX_UserManual_en_V1.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "MARPORT quick reference guide",
     "section": "Marport",
     "url_loc": "../files/Manuals/MARPORT/Quick_reference_marport.pdf",
     "source": "entries"
   },
   {
-    "title": "Mosa2 software",
+    "title": "Mosa2 quick reference guide",
     "section": "Marport",
-    "url_loc": "../files/Manuals/MARPORT/Mosa2/",
+    "url_loc": "../files/Manuals/MARPORT/Mosa2/Mosa2_mac_qrg_en_V7.pdf",
     "source": "entries"
   },
   {
-    "title": "Quick Reference Downloading_A2S_files_Mosa2.pdf",
+    "title": "Mosa 2 Downloading A2S files",
     "section": "Marport",
-    "url_loc": "../files/Manuals/MARPORT/Quick Reference Guides/Quick Reference Downloading_A2S_files_Mosa2.pdf",
+    "url_loc": "../files/Manuals/MARPORT/Mosa2/Quick Reference Downloading_A2S_files_Mosa2.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Marport/Scala quick reference guide",
+    "section": "Marport",
+    "url_loc": "../files/Manuals/MARPORT/Marport_Scala_Quick_Start_Guide.pdf",
     "source": "entries"
   },
   {
     "title": "Scala NMEA strings",
     "section": "Marport",
-    "url_loc": "../files/Manuals/MARPORT/",
+    "url_loc": "../files/Manuals/MARPORT/Scala NMEA strings.pdf",
     "source": "entries"
   },
   {
-    "title": "SCALA2_UserGuide_en_V6",
+    "title": "SCALA2 UserGuide",
     "section": "Marport",
-    "url_loc": "../files/Manuals/MARPORT/",
+    "url_loc": "../files/Manuals/MARPORT/SCALA2_UserGuide_en_V6.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Scala configuration files",
+    "section": "Marport",
+    "url_loc": "/files/Manuals/MARPORT/scala_pages/",
     "source": "entries"
   },
   {
@@ -690,13 +714,13 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Trident_UserManual_en_V2",
+    "title": "Trident User Manual",
     "section": "Marport",
-    "url_loc": "../files/Manuals/MARPORT/",
+    "url_loc": "../files/Manuals/MARPORT/Trident_UserManual_en_V2.pdf",
     "source": "entries"
   },
   {
-    "title": "Backup_Haul Data Extractor_Utility",
+    "title": "Backup Haul Data Extractor Utility",
     "section": "Poseidon",
     "url_loc": "../files/Manuals/Poseidon/Backup_Haul_Data_Extractor_Utility.pdf",
     "source": "entries"
@@ -708,7 +732,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Poseidon_SCS User Guide Version 2.0",
+    "title": "Poseidon/SCS User Guide",
     "section": "Poseidon",
     "url_loc": "../files/Manuals/Poseidon/Poseidon_SCS User Guide Version 2.0.pdf",
     "source": "entries"
@@ -914,7 +938,7 @@ var searchData = [
   {
     "title": "New Station Progression Worksheet Guide",
     "section": "Station Progression (AI/GOA)",
-    "url_loc": "../files/Station info/AI_GOA/Station Progression/New Station Log and Progression Sheet Guide.pptx",
+    "url_loc": "../files/Station info/AI_GOA/Station Progression/New Station Log and Progression Sheet Guide.pdf",
     "source": "entries"
   },
   {
@@ -2178,15 +2202,21 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "EBS Inventory lists",
+    "title": "EBS inventory lists",
     "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_EBS_at-sea_inventory.xlsx",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2026_GearList_Packing_EBS.xlsx",
     "source": "entries"
   },
   {
-    "title": "GOA/AI Inventory lists",
+    "title": "GOA/AI inventory lists",
     "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_GOA.pdf",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2026_GearList_Packing_AI.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Serialized gear tracking",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2026_Serialized_GearList.pdf",
     "source": "entries"
   },
   {
@@ -2211,6 +2241,12 @@ var searchData = [
     "title": "Other packing inventory lists",
     "section": "",
     "url_loc": "../files/Survey inventory lists",
+    "source": "entries"
+  },
+  {
+    "title": "First Aid Kits",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/First Aid kits/",
     "source": "entries"
   },
   {

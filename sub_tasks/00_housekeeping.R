@@ -108,7 +108,7 @@ annual_audit |>
 # # All app-referenced files (combined)
 # files_in_app <- clean_paths(c(
 #   website_content$url_loc[website_content$in_survey_app],
-#   task_list_data$url_loc,
+#   sub("^\\.\\./", "\\./", task_list_data$url_loc),
 #   taxa_guides$url_loc
 # ))
 # 
@@ -132,7 +132,7 @@ annual_audit |>
 # # Optional: additional manual exclusions
 # orphan_files <- files_not_in_app[
 #   !grepl(tolower(
-#     "Collections/Special projects/|SpeciesID/|Travel/flight itineraries/|Manuals/R/GAPsurvey/|Safety/Accidents/slide|Metis PC Required Directories and Control Files"),
+#     "Manuals/Globe|Collections/Special projects/|SpeciesID/|Travel/flight itineraries/|Manuals/R/GAPsurvey/|Safety/Accidents/slide|Metis PC Required Directories and Control Files"),
 #     files_not_in_app
 #   )
 # ]
@@ -147,8 +147,8 @@ annual_audit |>
 # 
 # trim_files <- all_files_clean[
 #   !grepl(tolower(
-#     "Manuals/Globe/|Manuals/R/GAPsurvey/|Manuals/MARPORT/|
-#      Collections/Special projects/|Manuals/TimeZero/|Critical habitat/shapefiles/|
+#     "Manuals/Globe/|Manuals/R/GAPsurvey/|
+#      Collections/Special projects/|Manuals/TimeZero/|
 #      Manuals/Olex and OpenCPN/|Collections/Special projects/|Prior Years Training Powerpoints and Resources"
 #     ),
 #     all_files_clean
@@ -243,7 +243,8 @@ annual_audit |>
 #   filter(as.numeric(current_year) - year > 10) |>
 #   select(path, year) |>
 #   arrange(year) |>
-#     "Manuals/Globe/|Manuals/MARPORT/|Safety/Accidents/|
+#   filter(!grepl(
+#     "Manuals/Globe/|Safety/Accidents/|
 #      Collections/Special projects/|Manuals/GPSs|Manuals/Light meters/"
 #   , path))
 # 
