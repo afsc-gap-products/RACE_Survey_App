@@ -692,7 +692,7 @@ var searchData = [
   {
     "title": "Scala configuration files",
     "section": "Marport",
-    "url_loc": "/files/Manuals/MARPORT/scala_pages/",
+    "url_loc": "../files/Manuals/MARPORT/scala_pages/",
     "source": "entries"
   },
   {
@@ -1448,79 +1448,79 @@ var searchData = [
   {
     "title": "SDS Bouin's Fixative",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS_Bouins_Solution.pdf",
+    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS_Bouins_Solution.pdf",
     "source": "entries"
   },
   {
     "title": "SDS Ethanol 100%",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS 200 Proof Ethanol- Anhydrous.pdf",
+    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS 200 Proof Ethanol- Anhydrous.pdf",
     "source": "entries"
   },
   {
     "title": "SDS Ethanol 70%",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Ethanol 140 proof.pdf",
+    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS Ethanol 140 proof.pdf",
     "source": "entries"
   },
   {
     "title": "SDS Ethanol 95%",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Ethanol 190 proof.pdf",
+    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS Ethanol 190 proof.pdf",
     "source": "entries"
   },
   {
     "title": "SDS Formaldehyde",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Formaldehyde Solution.pdf",
+    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS Formaldehyde Solution.pdf",
     "source": "entries"
   },
   {
     "title": "SDS Formalin 10%",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Formalin Solution_neutral buffered_10%.pdf",
+    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS Formalin Solution_neutral buffered_10%.pdf",
     "source": "entries"
   },
   {
     "title": "SDS Glycerin",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Glycerin.pdf",
+    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS Glycerin.pdf",
     "source": "entries"
   },
   {
     "title": "SDS Neutralex",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Neutralex.pdf",
+    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS Neutralex.pdf",
     "source": "entries"
   },
   {
     "title": "SDS Permalite Epoxy Parts A and B",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/DevCon 2-part epoxy MSDS.pdf",
+    "url_loc": "../files/Shipping-Hazmat/SDS pages/DevCon 2-part epoxy MSDS.pdf",
     "source": "entries"
   },
   {
     "title": "SDS Qiagen Allprotect Tissue Reagent",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/3028-AllprotectTissueReagent-en-US-US--1.00000.pdf",
+    "url_loc": "../files/Shipping-Hazmat/SDS pages/3028-AllprotectTissueReagent-en-US-US--1.00000.pdf",
     "source": "entries"
   },
   {
     "title": "SDS Reagent Alcohol, 70% v/v",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS_70_Reagent_Acohol.pdf",
+    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS_70_Reagent_Acohol.pdf",
     "source": "entries"
   },
   {
     "title": "SDS Thymol",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/SDS Thymol.pdf",
+    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS Thymol.pdf",
     "source": "entries"
   },
   {
     "title": "Alkakine batteries",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDSpage_files/alkalinecylindrical_psds.pdf",
+    "url_loc": "../files/Shipping-Hazmat/SDS pages/alkalinecylindrical_psds.pdf",
     "source": "entries"
   },
   {
@@ -2204,7 +2204,7 @@ var searchData = [
   {
     "title": "EBS inventory lists",
     "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2026_GearList_Packing_EBS.xlsx",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2026_GearList_Packing_EBS.pdf",
     "source": "entries"
   },
   {

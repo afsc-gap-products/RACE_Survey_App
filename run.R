@@ -22,7 +22,7 @@ source("sub_tasks/03_data.R")
 
 # Checks to make sure files work and are updated -------------------------------
 
-# !!!! IMPORTANT: Run the first two tasks in this script before finalizing the survey app!!!!
+# !!!! IMPORTANT: Run this script before finalizing the survey app!!!!
 # source("sub_tasks/00_housekeeping.R")
 
 

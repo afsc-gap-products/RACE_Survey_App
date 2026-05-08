@@ -12,6 +12,9 @@
 # ================================================================
 
 
+# Recommendation to run Steps 1 & 2 annually. Other steps can be run as needed/desired.
+
+
 # ----------------------------------------------------------------
 # FUNCTION: standardize file paths for consistent comparison
 # ----------------------------------------------------------------
@@ -30,9 +33,20 @@ clean_paths <- function(x, base = "./files") {
 # ----------------------------------------------------------------
 # STEP 1: Validate that all app links point to real files
 # ----------------------------------------------------------------
-checkLinks(URLs = website_content$url_loc[website_content$in_survey_app])
-checkLinks(URLs = task_list_data$url_loc)
-checkLinks(URLs = taxa_guides$url_loc)
+app_links <- list(
+  website_content = website_content$url_loc[website_content$in_survey_app],
+  task_list_data  = task_list_data$url_loc,
+  taxa_guides     = taxa_guides$url_loc
+)
+
+results <- lapply(names(app_links), function(source_name) {
+  checkLinks(URLs = app_links[[source_name]], quiet = TRUE)
+})
+
+names(results) <- names(app_links)
+
+message("\nBroken links in survey_app_data spreasheet:\n")
+print(results)
 
 
 # ----------------------------------------------------------------
@@ -41,10 +55,13 @@ checkLinks(URLs = taxa_guides$url_loc)
 
 # Download latest tracking sheet if needed
 if (access_to_internet) {
-  googledrive::drive_download(
-    file = googledrive::as_id("1V-jY808DWnWPu_90WDWBxW8Ih91XwlcGRWwzmopv9os"),
-    path = "data/annual_updates.xlsx",
-    overwrite = TRUE
+  with_drive_quiet(
+    googledrive::drive_download(
+      file = googledrive::as_id("1V-jY808DWnWPu_90WDWBxW8Ih91XwlcGRWwzmopv9os"),
+      path = "data/annual_updates.xlsx",
+      overwrite = TRUE
+      
+    )
   )
 }
 
@@ -81,14 +98,59 @@ annual_audit <- annual_updates |>
     )
   )
 
+
+message("\nBroken links in the annual audit spreadsheet:")
+
 # Show only files needing attention
 annual_audit |>
   dplyr::filter(status_flag != "current") |>
   dplyr::select(file, path, importance, status, status_flag, modified) |>
-  View()
+  print()
 
 
 
+# # ----------------------------------------------------------------
+# # Helpers to run the subsequent steps 
+# # ----------------------------------------------------------------
+# 
+# # Function to exclude paths matching any of the specified patterns (case-insensitive)
+# exclude_paths <- function(paths, patterns) {
+#   regex <- paste0(tolower(patterns), collapse = "|")
+#   paths[!grepl(regex, tolower(paths))]
+# }
+# 
+# 
+# # List of manual exclusions for each check (case-insensitive patterns to exclude from each analysis)
+# EXCLUSIONS <- list(
+#   orphan = c(
+#     "Manuals/Globe/",
+#     "Collections/Special projects/",
+#     "SpeciesID/",
+#     "Travel/flight itineraries/",
+#     "Manuals/R/GAPsurvey/",
+#     "Safety/Accidents/slide",
+#     "Metis PC Required Directories and Control Files"
+#   ),
+#   
+#   duplicates = c(
+#     "Manuals/Globe/",
+#     "Manuals/R/GAPsurvey/",
+#     "Collections/Special projects/",
+#     "Manuals/TimeZero/",
+#     "Manuals/Olex and OpenCPN/",
+#     "Prior Years Training Powerpoints and Resources"
+#   ),
+#   
+#   old_files = c(
+#     "Manuals/Globe/",
+#     "Safety/Accidents/",
+#     "Collections/Special projects/",
+#     "Manuals/GPSs",
+#     "Manuals/Light meters/"
+#   )
+# )
+# 
+# 
 # # ----------------------------------------------------------------
 # # STEP 3: Identify files in /files not referenced in the app
 # # ----------------------------------------------------------------
@@ -106,11 +168,7 @@ annual_audit |>
 # 
 # 
 # # All app-referenced files (combined)
-# files_in_app <- clean_paths(c(
-#   website_content$url_loc[website_content$in_survey_app],
-#   sub("^\\.\\./", "\\./", task_list_data$url_loc),
-#   taxa_guides$url_loc
-# ))
+# files_in_app <- clean_paths(unlist(app_links))
 # 
 # 
 # # Split app references into:
@@ -130,12 +188,8 @@ annual_audit |>
 # ]
 # 
 # # Optional: additional manual exclusions
-# orphan_files <- files_not_in_app[
-#   !grepl(tolower(
-#     "Manuals/Globe|Collections/Special projects/|SpeciesID/|Travel/flight itineraries/|Manuals/R/GAPsurvey/|Safety/Accidents/slide|Metis PC Required Directories and Control Files"),
-#     files_not_in_app
-#   )
-# ]
+# orphan_files <- exclude_paths(files_not_in_app, EXCLUSIONS$orphan)
+# 
 # 
 # # list of files in app but not linked anywhere
 # orphan_files
@@ -145,15 +199,8 @@ annual_audit |>
 # # STEP 4: Detect duplicate files by filename (case-insensitive)
 # # ----------------------------------------------------------------
 # 
-# trim_files <- all_files_clean[
-#   !grepl(tolower(
-#     "Manuals/Globe/|Manuals/R/GAPsurvey/|
-#      Collections/Special projects/|Manuals/TimeZero/|
-#      Manuals/Olex and OpenCPN/|Collections/Special projects/|Prior Years Training Powerpoints and Resources"
-#     ),
-#     all_files_clean
-#   )
-# ]
+# # files without manual exclusions for duplicates check
+# trim_files   <- exclude_paths(all_files_clean, EXCLUSIONS$duplicates)
 # 
 # # Group by filename
 # dup_list <- split(trim_files, basename(trim_files))
@@ -235,10 +282,11 @@ annual_audit |>
 # 
 # # File system metadata
 # all_file_info <- file.info(all_files, ignore.case = TRUE)
-# 
-# old_files <- data.frame(all_file_info) |>
+# all_file_info <- data.frame(all_file_info) |>
 #   tibble::rownames_to_column("path") |>
-#   tibble() |>
+#   tibble()
+# 
+# old_files <- all_file_info |>
 #   dplyr::mutate(year = as.numeric(format(mtime, "%Y"))) |>
 #   filter(as.numeric(current_year) - year > 10) |>
 #   select(path, year) |>
@@ -250,3 +298,20 @@ annual_audit |>
 # 
 # 
 # View(old_files)
+# 
+# 
+# # ----------------------------------------------------------------
+# # AUDIT SUMMARY
+# # ----------------------------------------------------------------
+#
+# cat("
+# ============================
+# FILE AUDIT SUMMARY
+# ============================
+# 
+# Orphan files: ", length(orphan_files), "
+# Duplicate names: ", length(dup_filenames), "
+# Duplicate hashes: ", nrow(dup_files), "
+# Old files: ", nrow(old_files), "
+# 
+# ")
