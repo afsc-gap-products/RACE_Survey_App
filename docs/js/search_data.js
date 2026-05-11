@@ -72,15 +72,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Split Haul Crab Subsampling Protocol (EBS)",
+    "title": "Basket Weight Calculation Sheets",
     "section": "Large catch resources",
-    "url_loc": "../files/Collections/Large catches/Split Haul Subsampling Protocol using METIS.pdf",
+    "url_loc": "../files/Collections/Basket weight calcs/",
     "source": "entries"
   },
   {
-    "title": "Volumetric Steps",
+    "title": "Split Haul Crab Subsampling Protocol (EBS)",
     "section": "Large catch resources",
-    "url_loc": "../files/Collections/Large catches/Steps for a Volumetric Catch.pdf",
+    "url_loc": "../files/Collections/Large catches/Split Haul Subsampling Protocol using METIS.pdf",
     "source": "entries"
   },
   {
@@ -90,15 +90,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Basket Weight Calculation Sheets",
-    "section": "Large catch resources",
-    "url_loc": "../files/Collections/Basket weight calcs/",
-    "source": "entries"
-  },
-  {
     "title": "Volumetric Sampling Form",
     "section": "Large catch resources",
     "url_loc": "../files/Collections/forms/catchforms/Volumetric_Sampling_Form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Volumetric Steps",
+    "section": "Large catch resources",
+    "url_loc": "../files/Collections/Large catches/Steps for a Volumetric Catch.pdf",
     "source": "entries"
   },
   {
@@ -126,15 +126,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Halibut LW Relationships (AI/GOA)",
-    "section": "",
-    "url_loc": "../files/Collections/Updated Halibut LW Relationships/",
-    "source": "entries"
-  },
-  {
     "title": "Catch Form",
     "section": "",
     "url_loc": "../files/Collections/forms/catchforms/catch_form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Halibut LW Relationships (AI/GOA)",
+    "section": "",
+    "url_loc": "../files/Collections/Updated Halibut LW Relationships/",
     "source": "entries"
   },
   {
@@ -174,18 +174,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Wand Pairing Barcodes (old)",
-    "section": "Wands",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/wand pairing instructions 2021.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Wand Manual",
-    "section": "Wands",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/WWR2900 WandManual.pdf",
-    "source": "entries"
-  },
-  {
     "title": "Samsung Galaxy A7 Lite Tablet User Manual",
     "section": "Tablet Set Up",
     "url_loc": "../files/Manuals/Apps Software/Samsung_Galaxy_A7_manual.pdf",
@@ -207,6 +195,18 @@ var searchData = [
     "title": "Tablet Remote Access Documentation",
     "section": "Tablet Set Up",
     "url_loc": "../files/Manuals/Apps Software/Tablet Remote Access Documentation.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Wand Manual",
+    "section": "Wands",
+    "url_loc": "../files/Manuals/Bluetooth_Devices/WWR2900 WandManual.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Wand Pairing Barcodes (old)",
+    "section": "Wands",
+    "url_loc": "../files/Manuals/Bluetooth_Devices/wand pairing instructions 2021.pdf",
     "source": "entries"
   },
   {
@@ -258,21 +258,9 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Olex and OpenCPN",
-    "section": "Olex",
-    "url_loc": "../files/Manuals/Olex and OpenCPN/",
-    "source": "entries"
-  },
-  {
     "title": "GPS MR-350 and Related Resources",
     "section": "GPS",
     "url_loc": "../files/Manuals/GPSs/",
-    "source": "entries"
-  },
-  {
-    "title": "Marport Resources",
-    "section": "Marport",
-    "url_loc": "../files/Manuals/MARPORT/",
     "source": "entries"
   },
   {
@@ -288,15 +276,27 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Mosa2 Quick Reference Guide",
+    "title": "Marport Resources",
     "section": "Marport",
-    "url_loc": "../files/Manuals/MARPORT/Mosa2/Mosa2_mac_qrg_en_V7.pdf",
+    "url_loc": "../files/Manuals/MARPORT/",
     "source": "entries"
   },
   {
     "title": "Marport/Scala Quick Reference Guide",
     "section": "Marport",
     "url_loc": "../files/Manuals/MARPORT/Marport_Scala_Quick_Start_Guide.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Mosa2 Quick Reference Guide",
+    "section": "Marport",
+    "url_loc": "../files/Manuals/MARPORT/Mosa2/Mosa2_mac_qrg_en_V7.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Scala Configuration Files",
+    "section": "Marport",
+    "url_loc": "../files/Manuals/MARPORT/scala_pages/",
     "source": "entries"
   },
   {
@@ -312,15 +312,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Scala Configuration Files",
-    "section": "Marport",
-    "url_loc": "../files/Manuals/MARPORT/scala_pages/",
-    "source": "entries"
-  },
-  {
     "title": "Trident User Manual",
     "section": "Marport",
     "url_loc": "../files/Manuals/MARPORT/Trident_UserManual_en_V2.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Olex and OpenCPN",
+    "section": "Olex",
+    "url_loc": "../files/Manuals/Olex and OpenCPN/",
     "source": "entries"
   },
   {
@@ -528,6 +528,12 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "Light Meters",
+    "section": "",
+    "url_loc": "../files/Manuals/Light meters",
+    "source": "entries"
+  },
+  {
     "title": "Station Progression Worksheet (AKP)",
     "section": "Station Progression (AI/GOA)",
     "url_loc": "../files/Station info/AI_GOA/Station Progression/Station Log and Progression 202601 AKP.xlsm",
@@ -546,6 +552,12 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "AK Seacard Vendors (GOA)",
+    "section": "",
+    "url_loc": "../files/Purchase/Fuel for GOA boats.pdf",
+    "source": "entries"
+  },
+  {
     "title": "Daily Temperature Entry Instructions",
     "section": "",
     "url_loc": "../files/Manuals/Daily Temperature Entry.pdf",
@@ -561,12 +573,6 @@ var searchData = [
     "title": "Fuel Purchase Form",
     "section": "",
     "url_loc": "../files/Purchase/Fuel Purchase Form.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "AK Seacard Vendors (GOA)",
-    "section": "",
-    "url_loc": "../files/Purchase/Fuel for GOA boats.pdf",
     "source": "entries"
   },
   {
@@ -684,6 +690,12 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "Dockside Wiremarking Photos (OEX)",
+    "section": "",
+    "url_loc": "../files/net and wire maintenance/wiremarking/OEX 2022 photos/",
+    "source": "entries"
+  },
+  {
     "title": "Dockside Wiremarking Protocols (EBS)",
     "section": "",
     "url_loc": "../files/net and wire maintenance/wiremarking/wire_marking_dock_2018.pdf",
@@ -696,27 +708,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Wiremarking Procedures (GOA/AI)",
-    "section": "",
-    "url_loc": "../files/Net and wire maintenance/wiremarking/GOA AI Wire Marking and other procedures.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Dockside Wiremarking Photos (OEX)",
-    "section": "",
-    "url_loc": "../files/net and wire maintenance/wiremarking/OEX 2022 photos/",
-    "source": "entries"
-  },
-  {
     "title": "Trawl Warp Measuring Procedure Form",
     "section": "",
     "url_loc": "../files/Net and wire maintenance/wiremarking/Trawl Warp Measuring Procedure form.pdf",
     "source": "entries"
   },
   {
-    "title": "FPC Backup Data Sources Table",
+    "title": "Wiremarking Procedures (GOA/AI)",
     "section": "",
-    "url_loc": "../files/Manuals/data backup sources.pdf",
+    "url_loc": "../files/Net and wire maintenance/wiremarking/GOA AI Wire Marking and other procedures.pdf",
     "source": "entries"
   },
   {
@@ -726,15 +726,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "SFTP Instructions",
+    "title": "FPC Backup Data Sources Table",
     "section": "",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/SFTP Instructions.pdf",
+    "url_loc": "../files/Manuals/data backup sources.pdf",
     "source": "entries"
   },
   {
-    "title": "Light Meters",
+    "title": "SFTP Instructions",
     "section": "",
-    "url_loc": "../files/Manuals/Light meters",
+    "url_loc": "../files/Manuals/Calypso_Wheelhouse/SFTP Instructions.pdf",
     "source": "entries"
   },
   {
@@ -882,15 +882,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "AKK Inventory",
+    "title": "Previous Training Resources",
     "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_EBS_AKK.pdf",
+    "url_loc": "../files/Trainings/Prior Years Training/",
     "source": "entries"
   },
   {
-    "title": "AKP Inventory",
+    "title": "Training Resources",
     "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_GOA-AKP.pdf",
+    "url_loc": "../files/Trainings/2026 Training/",
     "source": "entries"
   },
   {
@@ -909,6 +909,24 @@ var searchData = [
     "title": "Serialized Gear Tracking",
     "section": "RSST Inventory",
     "url_loc": "../files/Survey inventory lists/RSST Inventory/2026_Serialized_GearList.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "AKK Inventory",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_EBS_AKK.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "AKP Inventory",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_GOA-AKP.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "First Aid Kits",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/First Aid kits/",
     "source": "entries"
   },
   {
@@ -933,24 +951,6 @@ var searchData = [
     "title": "Other Inventory Lists",
     "section": "",
     "url_loc": "../files/Survey inventory lists",
-    "source": "entries"
-  },
-  {
-    "title": "First Aid Kits",
-    "section": "",
-    "url_loc": "../files/Survey inventory lists/First Aid kits/",
-    "source": "entries"
-  },
-  {
-    "title": "Previous Training Resources",
-    "section": "",
-    "url_loc": "../files/Trainings/Prior Years Training/",
-    "source": "entries"
-  },
-  {
-    "title": "Training Resources",
-    "section": "",
-    "url_loc": "../files/Trainings/2026 Training/",
     "source": "entries"
   },
   {
@@ -1038,6 +1038,144 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "CTD pH/DO sensor calibration protocol",
+    "section": "Bering",
+    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD pH calibration protocol.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "IPHC Sampling Manual",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/IPHC Sampling Manual.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SAP Special Project Matrix Deck Poster",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/SAP EBS Special Projects Matrix deck poster.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Deck Poster (AKK)",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/Deck Poster AKK.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Deck Poster (NWX)",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/Deck Poster NWE.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Folder",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Full Packet (AKK)",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/2026_AKK_summary.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Full Packet (NWX)",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/2026_NWX_summary.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Summary Table (AKK)",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/2026_EBS_AKK_Table_detailed.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Summary Table (NWX)",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/2026_EBS_NWX_Table_detailed.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Project List (AKP)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project List AKP.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Project List (OEX)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project List OEX.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Deck Poster (AKP)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Deck Poster AKP.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Deck Poster (OEX)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Deck Poster OEX.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Folder",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Full Packet (AKP)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/AKP Project Packet.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Full Packet (OEX)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/OEX Project Packet.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Summary Table (AKP)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project Summaries AKP.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Summary Table (OEX)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project Summaries OEX.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Tally Sheet (AKP)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Tally AK Provider.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Tally Sheet (OEX)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Tally OEX.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Tribuzio Sleeper Shark Sampling Data Sheet",
+    "section": "",
+    "url_loc": "../files/Collections/DEAD Sleeper Shark sampling form with diagram.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Tribuzio Sleeper Shark Sampling Procedure",
+    "section": "",
+    "url_loc": "../files/collections/special projects/BS/2026/Tribuzio protocol.pdf",
+    "source": "entries"
+  },
+  {
     "title": "CTD Settings and Troubleshooting",
     "section": "CTD SBE19plus",
     "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD Settings and Troubleshooting.pdf",
@@ -1086,15 +1224,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "ES80 Protocols",
-    "section": "ES80 data collection",
-    "url_loc": "../files/Collections/ES80/ES80_protocols_2026.pdf",
-    "source": "entries"
-  },
-  {
     "title": "ES80 EBS data collection quick review",
     "section": "ES80 data collection",
     "url_loc": "../files/Collections/ES80/2026 Quick review EBS AVO ES80 data collection.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "ES80 Protocols",
+    "section": "ES80 data collection",
+    "url_loc": "../files/Collections/ES80/ES80_protocols_2026.pdf",
     "source": "entries"
   },
   {
@@ -1131,144 +1269,6 @@ var searchData = [
     "title": "Light meter instructions",
     "section": "Light meter",
     "url_loc": "../files/Manuals/Light meters/Light meter instuctions 2018.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Tribuzio Sleeper Shark Sampling Data Sheet",
-    "section": "",
-    "url_loc": "../files/Collections/DEAD Sleeper Shark sampling form with diagram.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Tribuzio Sleeper Shark Sampling Procedure",
-    "section": "",
-    "url_loc": "../files/collections/special projects/BS/2026/Tribuzio protocol.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Folder",
-    "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Full Packet (AKK)",
-    "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/2026_AKK_summary.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Full Packet (NWX)",
-    "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/2026_NWX_summary.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "IPHC Sampling Manual",
-    "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/IPHC Sampling Manual.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "CTD pH/DO sensor calibration protocol",
-    "section": "Bering",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD pH calibration protocol.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SAP Special Project Matrix Deck Poster",
-    "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/2025 SAP EBS Special Projects Matrix deck poster.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Deck Poster (AKK)",
-    "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/Deck Poster AKK.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Deck Poster (NWX)",
-    "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/Deck Poster NWE.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Deck Poster (AKP)",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Deck Poster AKP.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Deck Poster (OEX)",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Deck Poster OEX.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Project List (AKP)",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project List AKP.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Project List (OEX)",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project List OEX.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Full Packet (OEX)",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/OEX Project Packet.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Full Packet (AKP)",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/AKP Project Packet.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Summary Table (AKP)",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project Summaries AKP.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Summary Table (OEX)",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project Summaries OEX.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Summary Table (NWX)",
-    "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/2026_EBS_NWX_Table_detailed.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Summary Table (AKK)",
-    "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/2026_EBS_AKK_Table_detailed.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Folder",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/",
-    "source": "entries"
-  },
-  {
-    "title": "Tally Sheet (AKP)",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Tally AK Provider.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Tally Sheet (OEX)",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Tally OEX.pdf",
     "source": "entries"
   },
   {
@@ -1314,27 +1314,21 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "RACE At Sea-Timesheet",
-    "section": "",
-    "url_loc": "../files/Timekeeping/Name_PP##_RACE at-sea timesheet_2026.xlsx",
-    "source": "entries"
-  },
-  {
     "title": "CD-81 OT Authorization",
     "section": "",
     "url_loc": "../files/Timekeeping/CD-81 OT Authorization.pdf",
     "source": "entries"
   },
   {
-    "title": "Comp Time for Travel & Credit Hours",
-    "section": "",
-    "url_loc": "../files/Timekeeping/Comp Time for Travel & Credit Hours.pdf",
-    "source": "entries"
-  },
-  {
     "title": "Comp Time for Air Travel",
     "section": "",
     "url_loc": "../files/Travel/COMP TIME OFF FOR TRAVEL-Air-final.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Comp Time for Travel & Credit Hours",
+    "section": "",
+    "url_loc": "../files/Timekeeping/Comp Time for Travel & Credit Hours.pdf",
     "source": "entries"
   },
   {
@@ -1362,6 +1356,12 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "RACE At Sea-Timesheet",
+    "section": "",
+    "url_loc": "../files/Timekeeping/Name_PP##_RACE at-sea timesheet_2026.xlsx",
+    "source": "entries"
+  },
+  {
     "title": "Comp Time for Air Travel",
     "section": "Post-survey Forms",
     "url_loc": "../files/Travel/COMP TIME OFF FOR TRAVEL-Air-final.pdf",
@@ -1374,15 +1374,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Guide to Flight Cancellations",
-    "section": "Rental Cars",
-    "url_loc": "../files/Travel/A Stranded NOAA Scientists Guide to Flight Cancellations.png",
-    "source": "entries"
-  },
-  {
     "title": "AK Tax Exempt Info",
     "section": "Rental Cars",
     "url_loc": "../files/Travel/ALASKA-TAX EXEMPT INFO.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Guide to Flight Cancellations",
+    "section": "Rental Cars",
+    "url_loc": "../files/Travel/A Stranded NOAA Scientists Guide to Flight Cancellations.png",
     "source": "entries"
   },
   {
@@ -1548,6 +1548,12 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "NOAA Offical Ordinance (DAO 202-955)",
+    "section": "",
+    "url_loc": "../files/Safety/Sexual Harassment/Allegations_of_Harassment.pdf",
+    "source": "entries"
+  },
+  {
     "title": "Reporting Harassment at NOAA Email",
     "section": "",
     "url_loc": "../files/Safety/Sexual Harassment/Reporting Harassment at NOAA.pdf",
@@ -1578,9 +1584,9 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "NOAA Offical Ordinance (DAO 202-955)",
+    "title": "WVPR Resource Webinar Handout",
     "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/Allegations_of_Harassment.pdf",
+    "url_loc": "../files/Safety/Psychological safety/WVPR Resource Webinar Handout.pdf",
     "source": "entries"
   },
   {
@@ -1677,6 +1683,12 @@ var searchData = [
     "title": "HAZMAT Shipping Guidelines",
     "section": "",
     "url_loc": "../files/Shipping-Hazmat/hazmat_shipping_guide.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Medevac Info",
+    "section": "",
+    "url_loc": "../files/Safety/Accidents/MedEvac Info.pdf",
     "source": "entries"
   },
   {
@@ -1780,14 +1792,9 @@ var searchData = [
   },
   {
     "title": "**EMERGENCY NOTIFICATION PLAN**",
-    "section": "If you have an acute or chronic injury from working aboard the vessel, document and report it to the Safety Lead and FPC. \n\nAll forms should be shared with the Safetly Lead and FPC.",
-    "url_loc": "../files/Safety/Accidents/EMERGENCY NOTIFICATION PLAN 2026.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Medevac Info",
     "section": "",
-    "url_loc": "../files/Safety/Accidents/MedEvac Info.pdf",
+    "subtitle": "If you have an acute or chronic injury from working aboard the vessel, document and report it to the Safety Lead and FPC. \n\nAll forms should be shared with the Safetly Lead and FPC.",
+    "url_loc": "../files/Safety/Accidents/EMERGENCY NOTIFICATION PLAN 2026.pdf",
     "source": "entries"
   },
   {
@@ -1824,12 +1831,6 @@ var searchData = [
     "title": "NOAA Psychological Safety",
     "section": "",
     "url_loc": "../files/Safety/Psychological safety/NOAA Psychological Safety.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Resources",
-    "section": "",
-    "url_loc": "../files/Safety/Psychological safety/WVPR Resource Webinar Handout.pdf",
     "source": "entries"
   },
   {
@@ -1923,12 +1924,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Volunteer Service Agreement",
-    "section": "",
-    "url_loc": "../files/Safety/Accidents/Volunteer Agreement - non-student.pdf",
-    "source": "entries"
-  },
-  {
     "title": "At-Sea Safety Action Plan",
     "section": "",
     "url_loc": "../files/Safety/RACE Safety Action Plan.pdf",
@@ -1938,6 +1933,12 @@ var searchData = [
     "title": "Medical Course Manual",
     "section": "",
     "url_loc": "../files/Safety/Two day med full manual.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Volunteer Service Agreement",
+    "section": "",
+    "url_loc": "../files/Safety/Accidents/Volunteer Agreement - non-student.pdf",
     "source": "entries"
   },
   {
@@ -1965,15 +1966,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "GLOBE",
-    "section": "",
-    "url_loc": "../files/Manuals/globe/Software",
-    "source": "entries"
-  },
-  {
     "title": "Tides and Currents",
     "section": "",
     "url_loc": "../files/Manuals/Tides and Currents",
+    "source": "entries"
+  },
+  {
+    "title": "GLOBE",
+    "section": "",
+    "url_loc": "../files/Manuals/globe/Software",
     "source": "entries"
   },
   {
@@ -2079,44 +2080,8 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Proctected Species Training FY26",
-    "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/FY26 Protected species training Presentation.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Marine Mammal Sampling Flow Chart",
-    "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/MM Sampling Matrix_Flow Chart.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Protected Species Sampling Safety Procedures",
-    "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/AFSC Protected Species Sampling Safety Procedures.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Mitigation Measures Manual",
-    "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/Manual Mitigation Measures.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Species to Collect Samples",
-    "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/Collect_Do NOT Collect MML.pdf",
-    "source": "entries"
-  },
-  {
     "title": "**Protected Species Reporting Log**",
     "section": "",
-    "source": "entries"
-  },
-  {
-    "title": "Whale Entanglement",
-    "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/whale_entanglement factsheet.pdf",
     "source": "entries"
   },
   {
@@ -2126,9 +2091,45 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "Marine Mammal Sampling Flow Chart",
+    "section": "",
+    "url_loc": "../files/SpeciesID/protected_species/MM Sampling Matrix_Flow Chart.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Mitigation Measures Manual",
+    "section": "",
+    "url_loc": "../files/SpeciesID/protected_species/Manual Mitigation Measures.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Proctected Species Training FY26",
+    "section": "",
+    "url_loc": "../files/SpeciesID/protected_species/FY26 Protected species training Presentation.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Protected Species Sampling Safety Procedures",
+    "section": "",
+    "url_loc": "../files/SpeciesID/protected_species/AFSC Protected Species Sampling Safety Procedures.pdf",
+    "source": "entries"
+  },
+  {
     "title": "Reporting Contacts",
     "section": "",
     "url_loc": "../files/SpeciesID/protected_species/Interaction placard - contact sheet.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Species to Collect Samples",
+    "section": "",
+    "url_loc": "../files/SpeciesID/protected_species/Collect_Do NOT Collect MML.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Whale Entanglement",
+    "section": "",
+    "url_loc": "../files/SpeciesID/protected_species/whale_entanglement factsheet.pdf",
     "source": "entries"
   },
   {
