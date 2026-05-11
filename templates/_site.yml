@@ -9,38 +9,38 @@ navbar:
   repository_url: https://github.com/afsc-gap-products/RACE_Survey_App
   source_url: true
   right:
-    - text: "FPC and Deck Lead"
+    - text: "Field Operations"
       menu: 
-       - text: "Collections"
-         href: FPC_and_Deck_Lead_Collections.html
        - text: "Deck Lead Resources"
-         href: FPC_and_Deck_Lead_Deck_Lead_Resources.html
+         href: Field_Operations_Deck_Lead_Resources.html
        - text: "FPC Resources"
-         href: FPC_and_Deck_Lead_FPC_Resources.html
+         href: Field_Operations_FPC_Resources.html
+       - text: "General"
+         href: Field_Operations_General.html
+       - text: "Sampling & Collections"
+         href: Field_Operations_Sampling_&_Collections.html
     - text: "Personnel & Travel"
       menu: 
-       - text: "Schedules and Contacts"
-         href: Personnel_&_Travel_Schedules_and_Contacts.html
-       - text: "Timekeeping T&A"
-         href: Personnel_&_Travel_Timekeeping_T&A.html
-       - text: "Travel Resources"
-         href: Personnel_&_Travel_Travel_Resources.html
+       - text: "Schedules & Contacts"
+         href: Personnel_&_Travel_Schedules_&_Contacts.html
+       - text: "Travel & Timekeeping"
+         href: Personnel_&_Travel_Travel_&_Timekeeping.html
        - text: "Flight Itineraries"
          href: Personnel_&_Travel_Flight_Itineraries.html
-    - text: "Safety"
+    - text: "Safety & Health"
       menu: 
        - text: "Emergency Flow Chart"
          href: ../files/Safety/Accidents/accident.htm
-       - text: "Ergonomic Resource Library"
-         href: Safety_Ergonomic_Resource_Library.html
+       - text: "Ergonomic Resources"
+         href: Safety_&_Health_Ergonomic_Resources.html
        - text: "Harassment Resources"
-         href: Safety_Harassment_Resources.html
+         href: Safety_&_Health_Harassment_Resources.html
        - text: "Hazmat"
-         href: Safety_Hazmat.html
-       - text: "Illness and injury reporting"
-         href: Safety_Illness_and_injury_reporting.html
-       - text: "Manuals and References"
-         href: Safety_Manuals_and_References.html
+         href: Safety_&_Health_Hazmat.html
+       - text: "Illness & Injury Reporting"
+         href: Safety_&_Health_Illness_&_Injury_Reporting.html
+       - text: "Manuals & References"
+         href: Safety_&_Health_Manuals_&_References.html
     - text: "Software"
       menu: 
        - text: "Software & drivers"
@@ -57,12 +57,6 @@ navbar:
          href: Species_Info_Species_ID_Guides.html
        - text: "Fish ID by Taxa"
          href: Species_Info_Fish_ID_by_Taxa.html
-    - text: "Survey Ops"
-      menu: 
-       - text: "Operations"
-         href: Survey_Ops_Operations.html
-       - text: "Training Resources"
-         href: Survey_Ops_Training_Resources.html
     - text: "Tasklists"
       menu: 
        - text: "Beginning of Survey or Leg"

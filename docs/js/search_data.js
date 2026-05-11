@@ -1,342 +1,24 @@
 var searchData = [
   {
-    "title": "AI/GOA Stomach Collections",
-    "section": "Food Habitat (Stomachs)",
-    "url_loc": "../files/Collections/Stomachs/2026 AI Stomach Collection.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "AI/GOA Stomach Scans",
-    "section": "Food Habitat (Stomachs)",
-    "url_loc": "../files/Collections/Stomachs/2026 AI Stomach Scan.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "BS Stomach Collections",
-    "section": "Food Habitat (Stomachs)",
-    "url_loc": "../files/Collections/Stomachs/2026 EBS Stomach Collection.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Stomach App Resources",
-    "section": "Food Habitat (Stomachs)",
-    "url_loc": "../files/Collections/Stomachs/Stomach_App_Resources/",
-    "source": "entries"
-  },
-  {
-    "title": "Stomach Collection Methods",
-    "section": "Food Habitat (Stomachs)",
-    "url_loc": "../files/Collections/Stomachs/Stomach Collection Methods.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Halibut Maturity Key",
-    "section": "Maturity",
-    "url_loc": "../files/Collections/Maturity/Halibut Maturity Key.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Visual Maturity Keys AI",
-    "section": "Maturity",
-    "url_loc": "../files/Collections/Maturity/Visual Maturity Key AI.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Visual Maturity Keys EBS",
-    "section": "Maturity",
-    "url_loc": "../files/Collections/Maturity/Visual Maturity Key EBS.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "AI Age Structure Collections Deck Poster",
-    "section": "Otoliths",
-    "url_loc": "../files/Collections/Special Projects/AI_GOA/2026/2026 AI Otoliths.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "EBS Age Structure Collections Deck Poster",
-    "section": "Otoliths",
-    "url_loc": "../files/collections/special projects/BS/2026/2026 EBS Otoliths.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "NBS Age Structure Collections Deck Poster",
-    "section": "Otoliths",
-    "url_loc": "../files/collections/special projects/BS/2025/NBS.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Otolith Label Maker",
-    "section": "Otoliths",
-    "url_loc": "../files/Collections/Otoliths/Otolith Label Maker.xls",
-    "source": "entries"
-  },
-  {
-    "title": "Shipping pollock otoliths",
-    "section": "Otoliths",
-    "url_loc": "../files/Shipping-Hazmat/Shipping of Pollock otoliths in Glycerin.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Voucher Collection and Preservation Procedures",
-    "section": "Vouchers",
-    "url_loc": "../files/Collections/Voucher Procedures.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "CTD Settings and Troubleshooting",
-    "section": "CTD SBE19plus",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD Settings and Troubleshooting.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Resources",
-    "section": "CTD SBE19plus",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus",
-    "source": "entries"
-  },
-  {
-    "title": "SBE Downloader How-to-Guide",
-    "section": "CTD SBE19plus",
-    "url_loc": "../files/Manuals/CTD Manuals/SBEDownloader How-to Guide.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SBE Downloader software",
-    "section": "CTD SBE19plus",
-    "url_loc": "../files/software/SBEDownloader/SBEDownloader.exe",
-    "source": "entries"
-  },
-  {
-    "title": "Setting SOP",
-    "section": "CTD SBE19plus",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD Setting SOPs.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Storage and Post-Processing",
-    "section": "CTD SBE19plus",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD Storage and Post-Processing.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "User Manual",
-    "section": "CTD SBE19plus",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/SBE 19Plus At-Sea User Manual.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "ES60 ES70 lockup issue",
-    "section": "ES80 data collection",
-    "url_loc": "../files/Collections/ES80/GPTlockup-issue.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "ES80 Protocols - all surveys",
-    "section": "ES80 data collection",
-    "url_loc": "../files/Collections/ES80/ES80_protocols_2026.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "ES80 EBS data collection quick review",
-    "section": "ES80 data collection",
-    "url_loc": "../files/Collections/ES80/2026 Quick review EBS AVO ES80 data collection.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "ES80 Training Slides",
-    "section": "ES80 data collection",
-    "url_loc": "../files/Collections/ES80/2025 ES80 data collection.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Forms",
-    "section": "ES80 data collection",
-    "url_loc": "../files/Collections/ES80/forms/",
-    "source": "entries"
-  },
-  {
-    "title": "Replacing hard drive",
-    "section": "ES80 data collection",
-    "url_loc": "../files/Collections/ES80/ES60 Hard drive instructions.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Skipper cheat sheet",
-    "section": "ES80 data collection",
-    "url_loc": "../files/Collections/ES80/ES60_skippercheatsheet.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Vessel photos & pictures to assist with calibration",
-    "section": "ES80 data collection",
-    "url_loc": "../files/Collections/ES80/ES60photos",
-    "source": "entries"
-  },
-  {
-    "title": "Light meter instructions",
-    "section": "Light meter",
-    "url_loc": "../files/Manuals/Light meters/Light meter instuctions 2018.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SBEDownloader How-to Guide",
-    "section": "",
-    "url_loc": "../files/Manuals/CTD Manuals/SBEDownloader How-to Guide.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Tribuzio Sleeper Shark Sampling Data Sheet",
-    "section": "All Surveys",
-    "url_loc": "../files/Collections/DEAD Sleeper Shark sampling form with diagram.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Tribuzio Sleeper Shark Sampling Procedure",
-    "section": "All Surveys",
-    "url_loc": "../files/collections/special projects/BS/2025/Tribuzio protocol.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "All Special Project Info",
-    "section": "BS",
-    "url_loc": "../files/collections/special projects/BS/2025/",
-    "source": "entries"
-  },
-  {
-    "title": "All Special Projects PDF",
-    "section": "BS",
-    "url_loc": "../files/collections/special projects/BS/2025/2025_EBS_Projects.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "All Special Projects PDF",
-    "section": "BS",
-    "url_loc": "../files/collections/special projects/BS/2025/NBS/",
-    "source": "entries"
-  },
-  {
-    "title": "IPHC Sampling Manual",
-    "section": "BS",
-    "url_loc": "../files/collections/special projects/BS/2026/IPHC Sampling Manual.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Rohan's CTD pH/DO sensor calibration protocol",
-    "section": "BS",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD pH calibration protocol.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SAP Bering Sea Special Project Matrix Deck Poster",
-    "section": "BS",
-    "url_loc": "../files/collections/special projects/BS/2025/2025 SAP EBS Special Projects Matrix deck poster.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Alaska Knight Deck Poster",
-    "section": "BS",
-    "url_loc": "../files/collections/special projects/BS/2026/Deck Poster AKK.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Northwest Explorer Deck Poster",
-    "section": "BS",
-    "url_loc": "../files/collections/special projects/BS/2026/Deck Poster NWE.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Project List AKP",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project List AKP.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Project List OEX",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project List OEX.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects (Summary Table) Descriptions and Protocols AKP",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project Summaries AKP.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects (Summary Table) Descriptions and Protocols OEX",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project Summaries OEX.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects (Summary Table) Descriptions and Protocols NWX",
-    "section": "BS",
-    "url_loc": "../files/collections/special projects/BS/2026/2026_EBS_NWX_summary.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects (Summary Table) Descriptions and Protocols AKK",
-    "section": "BS",
-    "url_loc": "../files/collections/special projects/BS/2026/2026_EBS_AKK_summary.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects [AKP] Deck Poster",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Deck Poster AKP.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects [OEX] Deck Poster",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Deck Poster OEX.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Descriptions and Protocols",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2025/",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Descriptions and Protocols",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2025/2025_AI_Projects.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Tally Sheet AKP",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2025/Tally AK Provider.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Tally Sheet OEX",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2025/Tally OEX.pdf",
-    "source": "entries"
-  },
-  {
     "title": "GAPsurvey R Package",
     "section": "GAPsurvey R Package",
     "url_loc": "./docs/Software_Software_&_drivers.html",
     "source": "entries"
   },
   {
-    "title": "METIS PC Required Directories and Control Files",
+    "title": "METIS PC Required Directories and Files",
     "section": "METIS",
     "url_loc": "../files/Manuals/Catch Data Entry/METIS PC Required Directories and Control Files/",
     "source": "entries"
   },
   {
-    "title": "METIS system - Oracle Apex End User's Guide",
+    "title": "METIS System - Oracle Apex End User's Guide",
     "section": "METIS",
     "url_loc": "../files/Manuals/Catch Data Entry/oracle-apex-end-users-guide.pdf",
     "source": "entries"
   },
   {
-    "title": "All CTD resources",
+    "title": "All CTD Resources",
     "section": "CTD",
     "url_loc": "../files/Manuals/CTD Manuals",
     "source": "entries"
@@ -344,35 +26,35 @@ var searchData = [
   {
     "title": "CTD Laptop Login",
     "section": "CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/",
+    "url_loc": "../files/Manuals/CTD Manuals/CTD Laptop Login.pdf",
     "source": "entries"
   },
   {
-    "title": "SBE19plus",
+    "title": "SBE19plus Resources",
     "section": "CTD",
     "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/",
     "source": "entries"
   },
   {
-    "title": "SBE39",
+    "title": "SBE39 Resources",
     "section": "CTD",
     "url_loc": "../files/Manuals/CTD Manuals/SBE39/",
     "source": "entries"
   },
   {
-    "title": "Seabird Programs",
+    "title": "Seabird Program Resources",
     "section": "CTD",
     "url_loc": "../files/Manuals/CTD Manuals/Seabird Programs/",
     "source": "entries"
   },
   {
-    "title": "BS Polycoder Codes Poster",
+    "title": "Polycoder Codes Poster (BS)",
     "section": "On-deck Species (Polycoder) Codes",
     "url_loc": "../files/Collections/Polycorder Placard EBS.pdf",
     "source": "entries"
   },
   {
-    "title": "GOA/AI Polycoder Codes Poster",
+    "title": "Polycoder Codes Poster (GOA/AI)",
     "section": "On-deck Species (Polycoder) Codes",
     "url_loc": "../files/Collections/Polycorder Placard GOA_AI.pdf",
     "source": "entries"
@@ -384,31 +66,31 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "**NEW** Volumetric worksheet",
+    "title": "**NEW** Volumetric Worksheet",
     "section": "Large catch resources",
     "url_loc": "../files/Collections/Large catches/volumetric_worksheet.xlsm",
     "source": "entries"
   },
   {
-    "title": "Split haul crab subsampling protocol (EBS)",
+    "title": "Split Haul Crab Subsampling Protocol (EBS)",
     "section": "Large catch resources",
     "url_loc": "../files/Collections/Large catches/Split Haul Subsampling Protocol using METIS.pdf",
     "source": "entries"
   },
   {
-    "title": "Steps for a volumetric catch",
+    "title": "Volumetric Steps",
     "section": "Large catch resources",
     "url_loc": "../files/Collections/Large catches/Steps for a Volumetric Catch.pdf",
     "source": "entries"
   },
   {
-    "title": "Steps for splitting catch (GOA/AI)",
+    "title": "Splitting Catch Steps (GOA/AI)",
     "section": "Large catch resources",
     "url_loc": "../files/Collections/Large catches/Steps for Splitting a Catch.pdf",
     "source": "entries"
   },
   {
-    "title": "Volumetric basket weight calculations",
+    "title": "Basket Weight Calculation Sheets",
     "section": "Large catch resources",
     "url_loc": "../files/Collections/Basket weight calcs/",
     "source": "entries"
@@ -420,31 +102,31 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Marel (deck scales) User Manuals",
+    "title": "Marel (Deck Scales) Calibration",
     "section": "Scales",
     "url_loc": "../files/manuals/MAREL_scales/Basket_Scale_Calibration.pdf",
     "source": "entries"
   },
   {
-    "title": "Marel (deck scales) User Manuals",
+    "title": "Marel (Deck Scales) Resources",
     "section": "Scales",
     "url_loc": "../files/manuals/MAREL_scales",
     "source": "entries"
   },
   {
-    "title": "MSI (load cell/crane scale) User Manual",
+    "title": "MSI (Load Cell/Crane Scale) Resources",
     "section": "Scales",
     "url_loc": "../files/Manuals/MSI_loadcells_cranescales/",
     "source": "entries"
   },
   {
-    "title": "Voucher Collection and Preservation Procedures",
+    "title": "Voucher Collection Procedures",
     "section": "Vouchers",
     "url_loc": "../files/Collections/Voucher Procedures.pdf",
     "source": "entries"
   },
   {
-    "title": "AI/GOA Halibut LW Relationships",
+    "title": "Halibut LW Relationships (AI/GOA)",
     "section": "",
     "url_loc": "../files/Collections/Updated Halibut LW Relationships/",
     "source": "entries"
@@ -456,25 +138,25 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Minimum Length/Sex subsampling (AI only)",
+    "title": "Minimum Length/Sex subsampling (AI)",
     "section": "",
     "url_loc": "../files/Manuals/Survey operation manuals/Min length and sex per haul.pdf",
     "source": "entries"
   },
   {
-    "title": "1-20 barcode numbers (xlsx)",
+    "title": "1-20 Barcode Numbers (xlsx)",
     "section": "Barcodes",
     "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/1-120 bar code numbers.xlsx",
     "source": "entries"
   },
   {
-    "title": "1-20 barcodes (pdf)",
+    "title": "1-20 Barcodes (pdf)",
     "section": "Barcodes",
     "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/1-120 barcode codes.pdf",
     "source": "entries"
   },
   {
-    "title": "120-199 barcodes",
+    "title": "100-199 Barcodes (pdf)",
     "section": "Barcodes",
     "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/Big length barcodes 2024.pdf",
     "source": "entries"
@@ -492,37 +174,37 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Wand pairing barcodes (old)",
+    "title": "Wand Pairing Barcodes (old)",
     "section": "Wands",
     "url_loc": "../files/Manuals/Bluetooth_Devices/wand pairing instructions 2021.pdf",
     "source": "entries"
   },
   {
-    "title": "Wand manual",
+    "title": "Wand Manual",
     "section": "Wands",
     "url_loc": "../files/Manuals/Bluetooth_Devices/WWR2900 WandManual.pdf",
     "source": "entries"
   },
   {
-    "title": "Samsung Galaxy Tab A7 Lite Tablet User Manual",
+    "title": "Samsung Galaxy A7 Lite Tablet User Manual",
     "section": "Tablet Set Up",
     "url_loc": "../files/Manuals/Apps Software/Samsung_Galaxy_A7_manual.pdf",
     "source": "entries"
   },
   {
-    "title": "Sending tablet files via WiFi",
+    "title": "Sending Tablet Files via WiFi",
     "section": "Tablet Set Up",
     "url_loc": "../files/Manuals/Apps Software/Sending Tablet Files Via WiFi.pdf",
     "source": "entries"
   },
   {
-    "title": "Setting up maturity collection",
+    "title": "Setting Up Maturity Collection",
     "section": "Tablet Set Up",
     "url_loc": "../files/Manuals/Apps Software/BT Survey Maturity Instructions.pdf",
     "source": "entries"
   },
   {
-    "title": "Tablet remote access documentation",
+    "title": "Tablet Remote Access Documentation",
     "section": "Tablet Set Up",
     "url_loc": "../files/Manuals/Apps Software/Tablet Remote Access Documentation.pdf",
     "source": "entries"
@@ -558,55 +240,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "BVDR convert set up.pdf",
-    "section": "BVDR Converter",
-    "url_loc": "../files/Manuals/BVDR_converter/BVDR convert set up.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "BVDR convert sup upNEW091415.doc",
-    "section": "BVDR Converter",
-    "url_loc": "../files/Manuals/BVDR_converter/BVDR convert set upNEW091415.doc",
-    "source": "entries"
-  },
-  {
-    "title": "BVDR_convert_read_me.txt",
-    "section": "BVDR Converter",
-    "url_loc": "../files/Manuals/BVDR_converter/BVDR_convert_read_me.txt",
-    "source": "entries"
-  },
-  {
-    "title": "bvdr_path.cfg",
-    "section": "BVDR Converter",
-    "url_loc": "../files/Manuals/BVDR_converter/bvdr_path.cfg",
-    "source": "entries"
-  },
-  {
-    "title": "BVDRReader.exe",
-    "section": "BVDR Converter",
-    "url_loc": "../files/Manuals/BVDR_converter/BVDRReader.exe",
-    "source": "entries"
-  },
-  {
-    "title": "BVDRReader.zip",
-    "section": "BVDR Converter",
-    "url_loc": "../files/Manuals/BVDR_converter/BVDRReader.zip",
-    "source": "entries"
-  },
-  {
-    "title": "convert_bvdr.exe",
-    "section": "BVDR Converter",
-    "url_loc": "../files/Manuals/BVDR_converter/convert_bvdr.exe",
-    "source": "entries"
-  },
-  {
-    "title": "READ ME - BVDR convert set upNEW20190718.txt",
-    "section": "BVDR Converter",
-    "url_loc": "../files/Manuals/BVDR_converter/READ ME - BVDR convert set upNEW20190718.txt",
-    "source": "entries"
-  },
-  {
-    "title": "ES80 - all things",
+    "title": "ES80 Resources",
     "section": "ES80",
     "url_loc": "../files/Collections/ES80/",
     "source": "entries"
@@ -630,49 +264,37 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "GPS MR-350 and other GPS related resources",
+    "title": "GPS MR-350 and Related Resources",
     "section": "GPS",
     "url_loc": "../files/Manuals/GPSs/",
     "source": "entries"
   },
   {
-    "title": "MARPORT Directory",
+    "title": "Marport Resources",
     "section": "Marport",
     "url_loc": "../files/Manuals/MARPORT/",
     "source": "entries"
   },
   {
-    "title": "DoorExplorereProNX UserManual",
+    "title": "DoorExplorereProNX User Manual",
     "section": "Marport",
     "url_loc": "../files/Manuals/MARPORT/DoorExplorerProNX_UserManual_en_V1.pdf",
     "source": "entries"
   },
   {
-    "title": "FlowSpeedNavigatorProNX UserManual",
+    "title": "FlowSpeedNavigatorProNX User Manual",
     "section": "Marport",
     "url_loc": "../files/Manuals/MARPORT/FlowSpeedNavigatorProNX_UserManual_en_V1.pdf",
     "source": "entries"
   },
   {
-    "title": "MARPORT quick reference guide",
-    "section": "Marport",
-    "url_loc": "../files/Manuals/MARPORT/Quick_reference_marport.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Mosa2 quick reference guide",
+    "title": "Mosa2 Quick Reference Guide",
     "section": "Marport",
     "url_loc": "../files/Manuals/MARPORT/Mosa2/Mosa2_mac_qrg_en_V7.pdf",
     "source": "entries"
   },
   {
-    "title": "Mosa 2 Downloading A2S files",
-    "section": "Marport",
-    "url_loc": "../files/Manuals/MARPORT/Mosa2/Quick Reference Downloading_A2S_files_Mosa2.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Marport/Scala quick reference guide",
+    "title": "Marport/Scala Quick Reference Guide",
     "section": "Marport",
     "url_loc": "../files/Manuals/MARPORT/Marport_Scala_Quick_Start_Guide.pdf",
     "source": "entries"
@@ -684,33 +306,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "SCALA2 UserGuide",
+    "title": "SCALA2 User Manual",
     "section": "Marport",
     "url_loc": "../files/Manuals/MARPORT/SCALA2_UserGuide_en_V6.pdf",
     "source": "entries"
   },
   {
-    "title": "Scala configuration files",
+    "title": "Scala Configuration Files",
     "section": "Marport",
     "url_loc": "../files/Manuals/MARPORT/scala_pages/",
-    "source": "entries"
-  },
-  {
-    "title": "Screenshot of Marport settings: Command View - MBAR Control Panel",
-    "section": "Marport",
-    "url_loc": "../files/Manuals/marport/SCREENSHOTS/AK_Knight_screenshot_mbar_controls_2015.png",
-    "source": "entries"
-  },
-  {
-    "title": "Screenshot of Marport settings: Command View - Net Mensuration",
-    "section": "Marport",
-    "url_loc": "../files/Manuals/marport/SCREENSHOTS/AK_Knight_screenshot_MARPORT_COMM_viewafsc_2015.png",
-    "source": "entries"
-  },
-  {
-    "title": "Screenshot of Marport settings: Marport Commander - NMEA output",
-    "section": "Marport",
-    "url_loc": "../files/Manuals/marport/SCREENSHOTS/AK_Knight_screenshot_MARPORT_COMM_gps_nmea_2015.png",
     "source": "entries"
   },
   {
@@ -738,7 +342,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Scanmar hydrophone photos OEX",
+    "title": "Scanmar Photos (OEX)",
     "section": "Scanmar",
     "url_loc": "../files/Manuals/Scanmar/OEx/",
     "source": "entries"
@@ -762,7 +366,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "TimeZero Quick Starts Guide",
+    "title": "TimeZero Quick Start Guide",
     "section": "TimeZero",
     "url_loc": "../files/Manuals/TimeZero/TimeZero_Quick_Start_Guide.pdf",
     "source": "entries"
@@ -918,25 +522,25 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Bottom contact sensor (BCS)",
+    "title": "BCS Resources",
     "section": "Bottom contact sensor",
     "url_loc": "../files/Manuals/Bottom contact sensor/",
     "source": "entries"
   },
   {
-    "title": "New Station Progression Worksheet (AKP)",
+    "title": "Station Progression Worksheet (AKP)",
     "section": "Station Progression (AI/GOA)",
     "url_loc": "../files/Station info/AI_GOA/Station Progression/Station Log and Progression 202601 AKP.xlsm",
     "source": "entries"
   },
   {
-    "title": "New Station Progression Worksheet (OEX)",
+    "title": "Station Progression Worksheet (OEX)",
     "section": "Station Progression (AI/GOA)",
     "url_loc": "../files/Station info/AI_GOA/Station Progression/Station Log and Progression 202601 OEX.xlsm",
     "source": "entries"
   },
   {
-    "title": "New Station Progression Worksheet Guide",
+    "title": "Station Progression Worksheet Guide",
     "section": "Station Progression (AI/GOA)",
     "url_loc": "../files/Station info/AI_GOA/Station Progression/New Station Log and Progression Sheet Guide.pdf",
     "source": "entries"
@@ -948,7 +552,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "FPC talking points",
+    "title": "FPC Talking Points",
     "section": "",
     "url_loc": "../files/Manuals/Checklist for FPC talk.pdf",
     "source": "entries"
@@ -960,7 +564,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "GOA Fuel details (Seacard Vendors in Alaska)",
+    "title": "AK Seacard Vendors (GOA)",
     "section": "",
     "url_loc": "../files/Purchase/Fuel for GOA boats.pdf",
     "source": "entries"
@@ -1032,21 +636,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Net repair and maintenance",
+    "title": "Net Repair and Maintenance Resources",
     "section": "",
     "url_loc": "../files/Net and wire maintenance/",
     "source": "entries"
   },
   {
-    "title": "Net repair tracking forms",
+    "title": "Net Repair Tracking Forms",
     "section": "",
     "url_loc": "../files/Net and wire maintenance/Net repair tracking forms/",
-    "source": "entries"
-  },
-  {
-    "title": "Net Swapping Form",
-    "section": "",
-    "url_loc": "../files/Net and wire maintenance/Net_repair/netswappingform.pdf",
     "source": "entries"
   },
   {
@@ -1056,73 +654,73 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Sink times",
+    "title": "Sink Times",
     "section": "",
     "url_loc": "../files/Net and wire maintenance/sink times.pdf",
     "source": "entries"
   },
   {
-    "title": "EBS and GOA FPC file box items",
+    "title": "FPC File Box Items",
     "section": "",
     "url_loc": "../files/Survey inventory lists/RSST Inventory/FY25 EBS GOA Serialized Gear Requests.pdf",
     "source": "entries"
   },
   {
-    "title": "EBS FPC file box items",
+    "title": "FPC File Box Items (EBS)",
     "section": "",
     "url_loc": "../files/Survey inventory lists/RSST Inventory/EBS FPC File Box Gear.pdf",
     "source": "entries"
   },
   {
-    "title": "Dockside wiremarking diagram (option 1)",
+    "title": "Dockside Wiremarking Diagram (option 1)",
     "section": "",
     "url_loc": "../files/net and wire maintenance/wiremarking/Wire Marking Dock Side.png",
     "source": "entries"
   },
   {
-    "title": "Dockside wiremarking diagram (option 2)",
+    "title": "Dockside Wiremarking Diagram (option 2)",
     "section": "",
     "url_loc": "../files/net and wire maintenance/wiremarking/Wire Marking Dock Side option 2.png",
     "source": "entries"
   },
   {
-    "title": "Dockside wiremarking protocols (EBS)",
+    "title": "Dockside Wiremarking Protocols (EBS)",
     "section": "",
     "url_loc": "../files/net and wire maintenance/wiremarking/wire_marking_dock_2018.pdf",
     "source": "entries"
   },
   {
-    "title": "Dockside wiremarking protocols (GOA/AI)",
+    "title": "Dockside Wiremarking Walk Through (GOA/AI)",
     "section": "",
-    "url_loc": "../files/net and wire maintenance/wiremarking/Notes - Talk through Walk through dockside wiremarking.docx",
+    "url_loc": "../files/net and wire maintenance/wiremarking/Walk through dockside wiremarking.pdf",
     "source": "entries"
   },
   {
-    "title": "GOA AI Wire Marking and other procedures",
+    "title": "Wiremarking Procedures (GOA/AI)",
     "section": "",
     "url_loc": "../files/Net and wire maintenance/wiremarking/GOA AI Wire Marking and other procedures.pdf",
     "source": "entries"
   },
   {
-    "title": "OEX 2022 dock wiremarking photos",
+    "title": "Dockside Wiremarking Photos (OEX)",
     "section": "",
     "url_loc": "../files/net and wire maintenance/wiremarking/OEX 2022 photos/",
     "source": "entries"
   },
   {
-    "title": "Trawl Warp Measuring Procedure",
+    "title": "Trawl Warp Measuring Procedure Form",
     "section": "",
     "url_loc": "../files/Net and wire maintenance/wiremarking/Trawl Warp Measuring Procedure form.pdf",
     "source": "entries"
   },
   {
-    "title": "Backup data sources when primary sensors fail",
+    "title": "FPC Backup Data Sources Table",
     "section": "",
     "url_loc": "../files/Manuals/data backup sources.pdf",
     "source": "entries"
   },
   {
-    "title": "Handling artifacts found at sea",
+    "title": "Artifacts Handling",
     "section": "",
     "url_loc": "../files/Manuals/Survey operation manuals/Artifact guidance.pdf",
     "source": "entries"
@@ -1131,6 +729,546 @@ var searchData = [
     "title": "SFTP Instructions",
     "section": "",
     "url_loc": "../files/Manuals/Calypso_Wheelhouse/SFTP Instructions.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Light Meters",
+    "section": "",
+    "url_loc": "../files/Manuals/Light meters",
+    "source": "entries"
+  },
+  {
+    "title": "Gear Codebook",
+    "section": "Codebooks",
+    "url_loc": "../files/SpeciesID/DataCodes&Forms.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Species Codebook",
+    "section": "Codebooks",
+    "url_loc": "../files/SpeciesID/SpeciesCodeManual.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Sport Fishing Regs by location",
+    "section": "Recreation",
+    "url_loc": "../files/Port Info/Sport fishing regs",
+    "source": "entries"
+  },
+  {
+    "title": "AFSC Photo Consent Release",
+    "section": "Social Media",
+    "url_loc": "../files/Social media policies/NMFS_Individual Release_Fillable.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Photo Sharing and Social Media Guidance",
+    "section": "Social Media",
+    "url_loc": "../files/Social media policies/GAP Surveys Photo Sharing and Social Media.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "EBS Stations & Maps",
+    "section": "Stations and Maps",
+    "url_loc": "../files/Station info/EBS shelf",
+    "source": "entries"
+  },
+  {
+    "title": "GOA/AI Station Logs",
+    "section": "Stations and Maps",
+    "url_loc": "../files/Station info/AI_GOA/Station Logs/",
+    "source": "entries"
+  },
+  {
+    "title": "GOA/AI Stations & Maps",
+    "section": "Stations and Maps",
+    "url_loc": "../files/Station info/AI_GOA",
+    "source": "entries"
+  },
+  {
+    "title": "Contracts",
+    "section": "",
+    "url_loc": "../files/Contracts",
+    "source": "entries"
+  },
+  {
+    "title": "Permits",
+    "section": "",
+    "url_loc": "../files/Permits",
+    "source": "entries"
+  },
+  {
+    "title": "Purchase & Rental Info",
+    "section": "",
+    "url_loc": "../files/Purchase/",
+    "source": "entries"
+  },
+  {
+    "title": "Shipping",
+    "section": "",
+    "url_loc": "../files/Shipping-Hazmat/",
+    "source": "entries"
+  },
+  {
+    "title": "AI/GOA Survey Ops Manual",
+    "section": "Survey Ops Manuals",
+    "url_loc": "../files/Manuals/Survey operation manuals/AI Scientific Operations.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Bering Sea Survey Ops Manual",
+    "section": "Survey Ops Manuals",
+    "url_loc": "../files/Manuals/Survey operation manuals/Bering Sea Survey Ops Manual.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "BS Shelf Sampling Protocols",
+    "section": "Survey Ops Manuals",
+    "url_loc": "../files/Manuals/Survey operation manuals/2024_shelf_slope_sampling_protocols.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "EBS/NBS Survey Contingency Plan",
+    "section": "Survey Ops Manuals",
+    "url_loc": "../files/Manuals/Survey operation manuals/EBS_NBS Survey Contingency Plan.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "2026 Gear Testing Project",
+    "section": "",
+    "url_loc": "../files/Manuals/Survey operation manuals/2026_Gear_Test_Project_Plan.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "AI Cruise Announcement",
+    "section": "",
+    "url_loc": "../files/Manuals/Survey operation manuals/Cruise Announcement AI.docx",
+    "source": "entries"
+  },
+  {
+    "title": "NOAA Protocols for Bottom Trawl Surveys",
+    "section": "",
+    "url_loc": "../files/Manuals/Survey operation manuals/NOAA trawl protocols.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Survey Primers",
+    "section": "",
+    "url_loc": "../files/Manuals/Survey operation manuals/",
+    "source": "entries"
+  },
+  {
+    "title": "Amchitka Nuclear Video",
+    "section": "",
+    "url_loc": "../files/Port info/Cannikin-Nuclear-Series-Video.mp4",
+    "source": "entries"
+  },
+  {
+    "title": "EBS Port Guide",
+    "section": "",
+    "url_loc": "../files/Port info/EBS Port Guide.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "GOA Port Guide",
+    "section": "",
+    "url_loc": "../files/Port info/2025 GOA Port Guide.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Other Port Resources",
+    "section": "",
+    "url_loc": "../files/Port info/",
+    "source": "entries"
+  },
+  {
+    "title": "AKK Inventory",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_EBS_AKK.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "AKP Inventory",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_GOA-AKP.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "EBS Inventory Lists",
+    "section": "RSST Inventory",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2026_GearList_Packing_EBS.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "GOA/AI Inventory Lists",
+    "section": "RSST Inventory",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2026_GearList_Packing_AI.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Serialized Gear Tracking",
+    "section": "RSST Inventory",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2026_Serialized_GearList.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "GOA/AI Inventory Lists by vessel",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_At-Sea_Inventory_GOA.xlsx",
+    "source": "entries"
+  },
+  {
+    "title": "NWX Inventory",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_EBS_NWX.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "OEX Inventory",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_GOA-OEX.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Other Inventory Lists",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists",
+    "source": "entries"
+  },
+  {
+    "title": "First Aid Kits",
+    "section": "",
+    "url_loc": "../files/Survey inventory lists/First Aid kits/",
+    "source": "entries"
+  },
+  {
+    "title": "Previous Training Resources",
+    "section": "",
+    "url_loc": "../files/Trainings/Prior Years Training/",
+    "source": "entries"
+  },
+  {
+    "title": "Training Resources",
+    "section": "",
+    "url_loc": "../files/Trainings/2026 Training/",
+    "source": "entries"
+  },
+  {
+    "title": "AI/GOA Stomach Collections",
+    "section": "Food Habits (Stomachs)",
+    "url_loc": "../files/Collections/Stomachs/2026 AI Stomach Collection.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "AI/GOA Stomach Scans",
+    "section": "Food Habits (Stomachs)",
+    "url_loc": "../files/Collections/Stomachs/2026 AI Stomach Scan.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "BS Stomach Collections",
+    "section": "Food Habits (Stomachs)",
+    "url_loc": "../files/Collections/Stomachs/2026 EBS Stomach Collection.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Stomach App Resources",
+    "section": "Food Habits (Stomachs)",
+    "url_loc": "../files/Collections/Stomachs/Stomach_App_Resources/",
+    "source": "entries"
+  },
+  {
+    "title": "Stomach Collection Methods",
+    "section": "Food Habits (Stomachs)",
+    "url_loc": "../files/Collections/Stomachs/Stomach Collection Methods.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Halibut Maturity Key",
+    "section": "Maturity",
+    "url_loc": "../files/Collections/Maturity/Halibut Maturity Key.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Visual Maturity Keys (AI)",
+    "section": "Maturity",
+    "url_loc": "../files/Collections/Maturity/Visual Maturity Key AI.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Visual Maturity Keys (EBS)",
+    "section": "Maturity",
+    "url_loc": "../files/Collections/Maturity/Visual Maturity Key EBS.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Age Structure Collections Deck Poster (AI)",
+    "section": "Otoliths",
+    "url_loc": "../files/Collections/Special Projects/AI_GOA/2026/2026 AI Otoliths.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Age Structure Collections Deck Poster (EBS)",
+    "section": "Otoliths",
+    "url_loc": "../files/collections/special projects/BS/2026/2026 EBS Otoliths.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Age Structure Collections Deck Poster (NBS)",
+    "section": "Otoliths",
+    "url_loc": "../files/collections/special projects/BS/2026/NBS.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Otolith Label Maker",
+    "section": "Otoliths",
+    "url_loc": "../files/Collections/Otoliths/Otolith Label Maker.xls",
+    "source": "entries"
+  },
+  {
+    "title": "Shipping Pollock Otoliths",
+    "section": "Otoliths",
+    "url_loc": "../files/Shipping-Hazmat/Shipping of Pollock otoliths in Glycerin.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Voucher Collection Procedures",
+    "section": "Vouchers",
+    "url_loc": "../files/Collections/Voucher Procedures.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "CTD Settings and Troubleshooting",
+    "section": "CTD SBE19plus",
+    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD Settings and Troubleshooting.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Resources",
+    "section": "CTD SBE19plus",
+    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus",
+    "source": "entries"
+  },
+  {
+    "title": "SBE Downloader How-to-Guide",
+    "section": "CTD SBE19plus",
+    "url_loc": "../files/Manuals/CTD Manuals/SBEDownloader How-to Guide.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SBE Downloader software",
+    "section": "CTD SBE19plus",
+    "url_loc": "../files/software/SBEDownloader/SBEDownloader.exe",
+    "source": "entries"
+  },
+  {
+    "title": "Setting SOP",
+    "section": "CTD SBE19plus",
+    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD Setting SOPs.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Storage and Post-Processing",
+    "section": "CTD SBE19plus",
+    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD Storage and Post-Processing.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "User Manual",
+    "section": "CTD SBE19plus",
+    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/SBE 19Plus At-Sea User Manual.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "ES60 ES70 lockup issue",
+    "section": "ES80 data collection",
+    "url_loc": "../files/Collections/ES80/GPTlockup-issue.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "ES80 Protocols",
+    "section": "ES80 data collection",
+    "url_loc": "../files/Collections/ES80/ES80_protocols_2026.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "ES80 EBS data collection quick review",
+    "section": "ES80 data collection",
+    "url_loc": "../files/Collections/ES80/2026 Quick review EBS AVO ES80 data collection.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "ES80 Training Slides",
+    "section": "ES80 data collection",
+    "url_loc": "../files/Collections/ES80/2025 ES80 data collection.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Forms",
+    "section": "ES80 data collection",
+    "url_loc": "../files/Collections/ES80/forms/",
+    "source": "entries"
+  },
+  {
+    "title": "Replacing Hard Drive",
+    "section": "ES80 data collection",
+    "url_loc": "../files/Collections/ES80/ES60 Hard drive instructions.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Skipper Cheat Sheet",
+    "section": "ES80 data collection",
+    "url_loc": "../files/Collections/ES80/ES60_skippercheatsheet.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Vessel Calibration Photos",
+    "section": "ES80 data collection",
+    "url_loc": "../files/Collections/ES80/ES60photos",
+    "source": "entries"
+  },
+  {
+    "title": "Light meter instructions",
+    "section": "Light meter",
+    "url_loc": "../files/Manuals/Light meters/Light meter instuctions 2018.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Tribuzio Sleeper Shark Sampling Data Sheet",
+    "section": "",
+    "url_loc": "../files/Collections/DEAD Sleeper Shark sampling form with diagram.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Tribuzio Sleeper Shark Sampling Procedure",
+    "section": "",
+    "url_loc": "../files/collections/special projects/BS/2026/Tribuzio protocol.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Folder",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Full Packet (AKK)",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/2026_AKK_summary.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Full Packet (NWX)",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/2026_NWX_summary.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "IPHC Sampling Manual",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/IPHC Sampling Manual.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "CTD pH/DO sensor calibration protocol",
+    "section": "Bering",
+    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD pH calibration protocol.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SAP Special Project Matrix Deck Poster",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/2025 SAP EBS Special Projects Matrix deck poster.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Deck Poster (AKK)",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/Deck Poster AKK.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Deck Poster (NWX)",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/Deck Poster NWE.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Deck Poster (AKP)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Deck Poster AKP.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Deck Poster (OEX)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Deck Poster OEX.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Project List (AKP)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project List AKP.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Project List (OEX)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project List OEX.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Full Packet (OEX)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/OEX Project Packet.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Full Packet (AKP)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/AKP Project Packet.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Summary Table (AKP)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project Summaries AKP.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Summary Table (OEX)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project Summaries OEX.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Summary Table (NWX)",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/2026_EBS_NWX_Table_detailed.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Summary Table (AKK)",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/2026_EBS_AKK_Table_detailed.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Special Projects Folder",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/",
+    "source": "entries"
+  },
+  {
+    "title": "Tally Sheet (AKP)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Tally AK Provider.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Tally Sheet (OEX)",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Tally OEX.pdf",
     "source": "entries"
   },
   {
@@ -1152,13 +1290,13 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "EBS & NBS Survey staffing",
+    "title": "EBS & NBS Survey Staffing",
     "section": "Bering Sea",
     "url_loc": "../files/Staffing/2026 EBS Survey Staffing.pdf",
     "source": "entries"
   },
   {
-    "title": "GOA/AI Survey staffing",
+    "title": "GOA/AI Survey Staffing",
     "section": "GOA/AI",
     "url_loc": "../files/Staffing/2026 AI Survey Staffing.pdf",
     "source": "entries"
@@ -1194,7 +1332,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Comp Time Off for Air Travel",
+    "title": "Comp Time for Air Travel",
     "section": "",
     "url_loc": "../files/Travel/COMP TIME OFF FOR TRAVEL-Air-final.pdf",
     "source": "entries"
@@ -1206,55 +1344,55 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Form OPM 71",
+    "title": "Form OPM-71",
     "section": "",
     "url_loc": "../files/Timekeeping/opm71.pdf",
     "source": "entries"
   },
   {
-    "title": "Pay periods",
+    "title": "Pay Periods",
     "section": "",
     "url_loc": "../files/Timekeeping/pay periods.pdf",
     "source": "entries"
   },
   {
-    "title": "RACE At Sea T&A readme",
+    "title": "RACE At Sea T&A Readme",
     "section": "",
     "url_loc": "../files/Timekeeping/RACE AT SEA T&A READ ME.pdf",
     "source": "entries"
   },
   {
-    "title": "Comp time for air travel form",
-    "section": "",
+    "title": "Comp Time for Air Travel",
+    "section": "Post-survey Forms",
     "url_loc": "../files/Travel/COMP TIME OFF FOR TRAVEL-Air-final.pdf",
     "source": "entries"
   },
   {
-    "title": "Travel voucher request",
-    "section": "",
+    "title": "Travel Voucher Request",
+    "section": "Post-survey Forms",
     "url_loc": "../files/Travel/Travel Voucher Request.pdf",
     "source": "entries"
   },
   {
-    "title": "A Stranded NOAA Scientists Guide to Flight Cancellations",
-    "section": "",
+    "title": "Guide to Flight Cancellations",
+    "section": "Rental Cars",
     "url_loc": "../files/Travel/A Stranded NOAA Scientists Guide to Flight Cancellations.png",
     "source": "entries"
   },
   {
-    "title": "AK tax exempt info",
-    "section": "",
+    "title": "AK Tax Exempt Info",
+    "section": "Rental Cars",
     "url_loc": "../files/Travel/ALASKA-TAX EXEMPT INFO.pdf",
     "source": "entries"
   },
   {
-    "title": "Rental car procedures in AK",
+    "title": "Rental Car Procedures AK",
     "section": "",
     "url_loc": "../files/Travel/Travel Advisory 08-6 - Rental Car Procedures in Alaska.pdf",
     "source": "entries"
   },
   {
-    "title": "Vehicle rental tax exemption form",
+    "title": "Vehicle Rental Tax Exempt Form",
     "section": "",
     "url_loc": "../files/Travel/AS 43.52 Vehicle Form.pdf",
     "source": "entries"
@@ -1404,7 +1542,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "OMAO Harassment Video: Fostering a Respectful Work Environment",
+    "title": "Harassment Video: Fostering a Respectful Work Environment",
     "section": "",
     "url_loc": "../files/Safety/Sexual Harassment/Fostering a Respectful Work Environment.mp4",
     "source": "entries"
@@ -1440,7 +1578,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Taking action on incidents or allegations (DAO 202-955)",
+    "title": "NOAA Offical Ordinance (DAO 202-955)",
     "section": "",
     "url_loc": "../files/Safety/Sexual Harassment/Allegations_of_Harassment.pdf",
     "source": "entries"
@@ -1555,16 +1693,16 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "CA-1 Reporting an accident, injury, or illness",
+    "title": "CA-1 Reporting an Accident, Injury, or Illness",
     "section": "Forms",
-    "subtitle": "i.e., acute illness or injury. This form can be dealt with post survey because since users will not have access to internet while at sea.",
+    "subtitle": "i.e., acute illness or injury",
     "url_loc": "../files/Safety/Accidents/Pay Compensation Form ca-1.pdf",
     "source": "entries"
   },
   {
     "title": "CA-2 Report an occupational disease",
     "section": "Forms",
-    "subtitle": "i.e., occupational/repetative motion illness/injury. This form can be dealt with post survey because since users will not have access to internet while at sea.",
+    "subtitle": "i.e., occupational/repetative motion illness/injury",
     "url_loc": "../files/Safety/Accidents/CA-2 Dept. of Labor Claim for Compensation.pdf",
     "source": "entries"
   },
@@ -1575,13 +1713,13 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "CD-351 Report of Safety hazard",
+    "title": "CD-351 Report of Safety Hazard",
     "section": "Forms",
     "url_loc": "../files/Safety/Accidents/CD-351 report of Safety Hazard.pdf",
     "source": "entries"
   },
   {
-    "title": "UW contractor injury report form",
+    "title": "UW Contractor Injury Report Form",
     "section": "Forms",
     "url_loc": "../files/Safety/Accidents/UW_accident-incident_report.pdf",
     "source": "entries"
@@ -1590,33 +1728,6 @@ var searchData = [
     "title": "Workers Comp Supervisor Completion CA-1",
     "section": "Forms",
     "url_loc": "../files/Safety/Accidents/Workers Comp Supr Completion CA1.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "AFSC General Fieldwork SOPs",
-    "section": "",
-    "subtitle": "version 3.2023",
-    "url_loc": "../files/COVID SOP/AFSC general fieldwork SOPs FY23.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "AFSC SOPs Summary",
-    "section": "",
-    "subtitle": "version 3.2023",
-    "url_loc": "../files/COVID SOP/AFSC_SOPs_summary_FY23.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Appendix I: Common COVID-19 Prevention Procedures",
-    "section": "",
-    "subtitle": "version 3.2023",
-    "url_loc": "../files/COVID SOP/Appendix I_Common COVID-19 Prevention Procedures FY23.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "BinaxNow COVID-19 Antigen Test Expiration Date Extension Table",
-    "section": "",
-    "url_loc": "../files/COVID SOP/BinaxNOW-COVID-19-AgCard-Home-test-expirations 2023.pdf",
     "source": "entries"
   },
   {
@@ -1650,19 +1761,19 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "SF-91 Vehicle accident report",
+    "title": "SF-91 Vehicle Accident Report",
     "section": "Forms",
     "url_loc": "../files/Safety/Accidents/SF-91.pdf",
     "source": "entries"
   },
   {
-    "title": "SF-94 Witness statement",
+    "title": "SF-94 Witness Statement",
     "section": "Forms",
     "url_loc": "../files/Safety/Accidents/SF-94.pdf",
     "source": "entries"
   },
   {
-    "title": "SF-95 Tort claim form",
+    "title": "SF-95 Tort Claim Form",
     "section": "Forms",
     "url_loc": "../files/Safety/Accidents/sf95.pdf",
     "source": "entries"
@@ -1680,19 +1791,19 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Care for Cold (Hypothermic) Patient",
+    "title": "Care for Hypothermic Patient",
     "section": "",
     "url_loc": "../files/Safety/CareForColdPatient.jpg",
     "source": "entries"
   },
   {
-    "title": "Cold (Hypothermic) Patient Assessment",
+    "title": "Hypothermic Patient Assessment",
     "section": "",
     "url_loc": "../files/Safety/AssessColdPatient.jpg",
     "source": "entries"
   },
   {
-    "title": "Cold (Hypothermic) Patient Flow Chart",
+    "title": "Hypothermic Patient Flow Chart",
     "section": "",
     "url_loc": "../files/Safety/ColdPatientFlowChart.jpg",
     "source": "entries"
@@ -1722,7 +1833,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Mental health and trauma resources",
+    "title": "Mental Health and Trauma Resources",
     "section": "",
     "url_loc": "../files/Safety/Mental health and trauma resources.pdf",
     "source": "entries"
@@ -1752,13 +1863,13 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Safety evaluation Form",
+    "title": "Safety Evaluation Form",
     "section": "Forms",
     "url_loc": "../files/Safety/Safety Evaluation Form.pdf",
     "source": "entries"
   },
   {
-    "title": "Safety Leader recording form",
+    "title": "Safety Leader Recording Form",
     "section": "Forms",
     "url_loc": "../files/Safety/Safety Leader Personnel Recording Form Fillable.pdf",
     "source": "entries"
@@ -1776,13 +1887,13 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Safety Leader checklists",
+    "title": "Safety Leader Checklists",
     "section": "",
-    "url_loc": "../files/Safety/Safety lead checklists/",
+    "url_loc": "../files/Safety/Safety lead checklists.pdf",
     "source": "entries"
   },
   {
-    "title": "Safety Leader instructions, checklists, and forms",
+    "title": "Safety Leader Duties",
     "section": "",
     "url_loc": "../files/Safety/Safety Lead Duties.pdf",
     "source": "entries"
@@ -1800,20 +1911,20 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Ashfall prepardness guidelines",
+    "title": "Ashfall Prepardness Guidelines",
     "section": "",
     "url_loc": "../files/Safety/Ashfall preparedness guidelines.pdf",
     "source": "entries"
   },
   {
-    "title": "Ashfall prepardness infographic",
+    "title": "Ashfall Prepardness Infographic",
     "section": "",
     "url_loc": "../files/Safety/Ashfall preparedness readiness.pdf",
     "source": "entries"
   },
   {
-    "title": "Volunteer service agreement",
-    "section": "Volunteers and contractors",
+    "title": "Volunteer Service Agreement",
+    "section": "",
     "url_loc": "../files/Safety/Accidents/Volunteer Agreement - non-student.pdf",
     "source": "entries"
   },
@@ -1824,7 +1935,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Two day medical course manual",
+    "title": "Medical Course Manual",
     "section": "",
     "url_loc": "../files/Safety/Two day med full manual.pdf",
     "source": "entries"
@@ -1836,13 +1947,13 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "File format converter (docx xlsx)",
+    "title": "File Format Converter (docx-xlsx)",
     "section": "",
     "url_loc": "../files/Software/docx_xlsx_file_converter",
     "source": "entries"
   },
   {
-    "title": "HP1006 Printer drivers",
+    "title": "HP1006 Printer Drivers",
     "section": "",
     "url_loc": "../files/Software/HP1006_drivers",
     "source": "entries"
@@ -1857,12 +1968,6 @@ var searchData = [
     "title": "GLOBE",
     "section": "",
     "url_loc": "../files/Manuals/globe/Software",
-    "source": "entries"
-  },
-  {
-    "title": "SiRFDemo",
-    "section": "",
-    "url_loc": "../files/Manuals/GPSs",
     "source": "entries"
   },
   {
@@ -1884,16 +1989,9 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "GAPsurvey.tar.gz",
+    "title": "GAPsurvey Resources",
     "section": "GAPsurvey R Package",
-    "subtitle": "includes CTD to BTD (SBE39 fail Opt#1), (BVDR) TEDtoBTD (SBE39 fail Opt#2), and Globe LOG to GPS conversion function, amoung others",
-    "url_loc": "../files/Manuals/R/GAPsurvey/GAPsurvey-main/GAPsurvey.tar.gz",
-    "source": "entries"
-  },
-  {
-    "title": "Historical Data (GAPsurvey R Package)",
-    "section": "GAPsurvey R Package",
-    "url_loc": "../files/Manuals/R/GAPsurvey/docs/reference/get_catch_haul_history.html",
+    "url_loc": "../files/Manuals/R/GAPsurvey/",
     "source": "entries"
   },
   {
@@ -1933,12 +2031,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Light Meters",
-    "section": "",
-    "url_loc": "../files/Manuals/Light meters",
-    "source": "entries"
-  },
-  {
     "title": "Tablet Apps (.apk)",
     "section": "",
     "url_loc": "../files/Manuals/Apps Software/Tablet apks",
@@ -1951,55 +2043,55 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Beluga critical habitat",
+    "title": "Beluga",
     "section": "",
     "url_loc": "../files/SpeciesID/protected_species/critical habitat/Cook Inlet Beluga Critical Habitat.jpg",
     "source": "entries"
   },
   {
-    "title": "North Pacific Right Whale critical habitat",
+    "title": "North Pacific Right Whale",
     "section": "",
     "url_loc": "../files/SpeciesID/protected_species/critical habitat/North Pacific Right Whale Critical Habitat.jpg",
     "source": "entries"
   },
   {
-    "title": "Sea Otter range",
+    "title": "Sea Otter",
     "section": "",
     "url_loc": "../files/SpeciesID/protected_species/critical habitat/otter_range.jpg",
     "source": "entries"
   },
   {
-    "title": "Spectacled Eider critical habitat",
+    "title": "Spectacled Eider",
     "section": "",
     "url_loc": "../files/SpeciesID/protected_species/critical habitat/Spectacled Eider Critical Habitat.jpg",
     "source": "entries"
   },
   {
-    "title": "Stellers Eider critical habitat",
+    "title": "Stellers Eider",
     "section": "",
     "url_loc": "../files/SpeciesID/protected_species/critical habitat/Stellers Eider critical habitat.jpg",
     "source": "entries"
   },
   {
-    "title": "Stellers Sean Lion critical habitat",
+    "title": "Stellers Sean Lion",
     "section": "",
     "url_loc": "../files/SpeciesID/protected_species/critical habitat/Western_Steller Sea Lion_critical habitat.jpg",
     "source": "entries"
   },
   {
-    "title": "Protected species training FY26",
+    "title": "Proctected Species Training FY26",
     "section": "",
     "url_loc": "../files/SpeciesID/protected_species/FY26 Protected species training Presentation.pdf",
     "source": "entries"
   },
   {
-    "title": "Marine mammal sampling flow chart",
+    "title": "Marine Mammal Sampling Flow Chart",
     "section": "",
     "url_loc": "../files/SpeciesID/protected_species/MM Sampling Matrix_Flow Chart.pdf",
     "source": "entries"
   },
   {
-    "title": "AFSC Protected Species Sampling Safety Procedures",
+    "title": "Protected Species Sampling Safety Procedures",
     "section": "",
     "url_loc": "../files/SpeciesID/protected_species/AFSC Protected Species Sampling Safety Procedures.pdf",
     "source": "entries"
@@ -2011,254 +2103,32 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Species to collect samples",
+    "title": "Species to Collect Samples",
     "section": "",
     "url_loc": "../files/SpeciesID/protected_species/Collect_Do NOT Collect MML.pdf",
     "source": "entries"
   },
   {
-    "title": "**Protected species reporting log**",
+    "title": "**Protected Species Reporting Log**",
     "section": "",
     "source": "entries"
   },
   {
-    "title": "Whale entanglement",
+    "title": "Whale Entanglement",
     "section": "",
     "url_loc": "../files/SpeciesID/protected_species/whale_entanglement factsheet.pdf",
     "source": "entries"
   },
   {
-    "title": "Details to report",
+    "title": "Information to Report",
     "section": "",
     "url_loc": "../files/SpeciesID/protected_species/Interaction placard- encounters.pdf",
     "source": "entries"
   },
   {
-    "title": "Reporting contacts",
+    "title": "Reporting Contacts",
     "section": "",
     "url_loc": "../files/SpeciesID/protected_species/Interaction placard - contact sheet.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Gear Codebook",
-    "section": "Codebooks",
-    "url_loc": "../files/SpeciesID/DataCodes&Forms.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Species Codebook",
-    "section": "Codebooks",
-    "url_loc": "../files/SpeciesID/SpeciesCodeManual.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Sport Fishing Regs by location",
-    "section": "Recreation",
-    "url_loc": "../files/Port Info/Sport fishing regs",
-    "source": "entries"
-  },
-  {
-    "title": "AFSC Photo Consent Release",
-    "section": "Social Media",
-    "url_loc": "../files/Social media policies/NMFS_Individual Release_Fillable.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "GAP Surveys Photo Sharing and Social Media",
-    "section": "Social Media",
-    "url_loc": "../files/Social media policies/GAP Surveys Photo Sharing and Social Media.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Social Media Policies",
-    "section": "Social Media",
-    "url_loc": "../files/Social Media Policies/",
-    "source": "entries"
-  },
-  {
-    "title": "EBS Stations & Maps",
-    "section": "Stations and Maps",
-    "url_loc": "../files/Station info/EBS shelf",
-    "source": "entries"
-  },
-  {
-    "title": "GOA/AI Station Logs",
-    "section": "Stations and Maps",
-    "url_loc": "../files/Station info/AI_GOA/Station Logs/",
-    "source": "entries"
-  },
-  {
-    "title": "GOA/AI Stations & Maps",
-    "section": "Stations and Maps",
-    "url_loc": "../files/Station info/AI_GOA",
-    "source": "entries"
-  },
-  {
-    "title": "Contracts",
-    "section": "",
-    "url_loc": "../files/Contracts",
-    "source": "entries"
-  },
-  {
-    "title": "Permits",
-    "section": "",
-    "url_loc": "../files/Permits",
-    "source": "entries"
-  },
-  {
-    "title": "Purchase & Rental Info",
-    "section": "",
-    "url_loc": "../files/Purchase/",
-    "source": "entries"
-  },
-  {
-    "title": "Shipping",
-    "section": "",
-    "url_loc": "../files/Shipping-Hazmat/",
-    "source": "entries"
-  },
-  {
-    "title": "AI/GOA Survey Ops Manual",
-    "section": "Survey Ops Manuals",
-    "url_loc": "../files/Manuals/Survey operation manuals/AI Scientific Operations.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Bering Sea Survey Ops Manual",
-    "section": "Survey Ops Manuals",
-    "url_loc": "../files/Manuals/Survey operation manuals/Bering Sea Survey Ops Manual.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Bs Shelf sampling protocols",
-    "section": "Survey Ops Manuals",
-    "url_loc": "../files/Manuals/Survey operation manuals/2024_shelf_slope_sampling_protocols.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "EBS/NBS Survey Contingency Plan",
-    "section": "Survey Ops Manuals",
-    "url_loc": "../files/Manuals/Survey operation manuals/EBS_NBS Survey Contingency Plan.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "2026 Gear Testing Project",
-    "section": "",
-    "url_loc": "../files/Manuals/Survey operation manuals/2026_Gear_Test_Project_Plan.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "AI Cruise Announcement",
-    "section": "",
-    "url_loc": "../files/Manuals/Survey operation manuals/Cruise Announcement AI.docx",
-    "source": "entries"
-  },
-  {
-    "title": "NOAA Protocols for Bottom Trawl Surveys",
-    "section": "",
-    "url_loc": "../files/Manuals/Survey operation manuals/NOAA trawl protocols.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Survey primers",
-    "section": "",
-    "url_loc": "../files/Manuals/Survey operation manuals/",
-    "source": "entries"
-  },
-  {
-    "title": "Amchitka nuclear video",
-    "section": "",
-    "url_loc": "../files/Port info/Cannikin-Nuclear-Series-Video.mp4",
-    "source": "entries"
-  },
-  {
-    "title": "EBS Port Guide",
-    "section": "",
-    "url_loc": "../files/Port info/EBS Port Guide.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "GOA Port Guide",
-    "section": "",
-    "url_loc": "../files/Port info/2025 GOA Port Guide.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Other port info",
-    "section": "",
-    "url_loc": "../files/Port info/",
-    "source": "entries"
-  },
-  {
-    "title": "AKK Inventory",
-    "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_EBS_AKK.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "AKP Inventory",
-    "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_GOA-AKP.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "EBS inventory lists",
-    "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2026_GearList_Packing_EBS.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "GOA/AI inventory lists",
-    "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2026_GearList_Packing_AI.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Serialized gear tracking",
-    "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2026_Serialized_GearList.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "GOA/AI Inventory lists by vessel",
-    "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_At-Sea_Inventory_GOA.xlsx",
-    "source": "entries"
-  },
-  {
-    "title": "NWX Inventory",
-    "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_EBS_NWX.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "OEX Inventory",
-    "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_GOA-OEX.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Other packing inventory lists",
-    "section": "",
-    "url_loc": "../files/Survey inventory lists",
-    "source": "entries"
-  },
-  {
-    "title": "First Aid Kits",
-    "section": "",
-    "url_loc": "../files/Survey inventory lists/First Aid kits/",
-    "source": "entries"
-  },
-  {
-    "title": "Prior years Training Powerpoints and Resources",
-    "section": "",
-    "url_loc": "../files/Trainings/",
-    "source": "entries"
-  },
-  {
-    "title": "Training Powerpoints and Resources",
-    "section": "",
-    "url_loc": "../files/Trainings/2026 Training Powerpoints and Resources/",
     "source": "entries"
   },
   {
