@@ -49,19 +49,19 @@ var searchData = [
   },
   {
     "title": "Polycoder Codes Poster (BS)",
-    "section": "On-deck Species (Polycoder) Codes",
+    "section": "",
     "url_loc": "../files/Collections/Polycorder Placard EBS.pdf",
     "source": "entries"
   },
   {
     "title": "Polycoder Codes Poster (GOA/AI)",
-    "section": "On-deck Species (Polycoder) Codes",
+    "section": "",
     "url_loc": "../files/Collections/Polycorder Placard GOA_AI.pdf",
     "source": "entries"
   },
   {
     "title": "Polycorder Code List",
-    "section": "On-deck Species (Polycoder) Codes",
+    "section": "",
     "url_loc": "../files/Collections/GOA_BS poly complete.pdf",
     "source": "entries"
   },

@@ -3098,10 +3098,18 @@ background-color: #f9f9f9;
 
 .distill-site-header{ font-size: 12px;
 }
+.distill-site-nav {
+z-index: 1000;
+}
+
+.dt-toc nav h3 {
+display: block !important;
+visibility: visible !important;
+}
 </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <style type="text/css">.distill-site-header{ font-size: 12px;}</style>
+  <style type="text/css">.distill-site-header{ font-size: 12px;}.distill-site-nav {z-index: 1000;}.dt-toc nav h3 {display: block !important;visibility: visible !important;}</style>
 
 </head>
 
@@ -3235,10 +3243,7 @@ Tasklists
 <ul>
 <li><a href="#ctd" id="toc-ctd">CTD</a></li>
 </ul></li>
-<li><a href="#polycorder-codes" id="toc-polycorder-codes">Polycorder Codes</a>
-<ul>
-<li><a href="#on-deck-species-polycoder-codes" id="toc-on-deck-species-polycoder-codes">On-deck Species (Polycoder) Codes</a></li>
-</ul></li>
+<li><a href="#polycorder-codes" id="toc-polycorder-codes">Polycorder Codes</a></li>
 <li><a href="#sampling-resources" id="toc-sampling-resources">Sampling Resources</a>
 <ul>
 <li><a href="#large-catch-resources" id="toc-large-catch-resources">Large catch resources</a></li>
@@ -3254,103 +3259,593 @@ Tasklists
 </ul>
 </nav>
 </div>
+<style>
+
+h2 {
+margin: 2rem 0 0 0 !important;
+padding: 1rem 1.5rem;
+font-size: 1.7rem !important;
+font-weight: 700;
+color: #111827;
+background: #f3f4f6;
+border: 1px solid #e5e7eb;
+border-radius: 12px 12px 0 0;
+}
+
+.section-content-body{
+background: #ffffff;
+border-left: 1px solid #e5e7eb;
+border-right: 1px solid #e5e7eb;
+padding: 0.8rem 2rem;
+margin: 0 !important;
+}
+.section-content-continuation,
+.subsection-block {
+background: #ffffff;
+border-left: 1px solid #e5e7eb;
+border-right: 1px solid #e5e7eb;
+padding: 0rem 2rem;
+margin: 0 !important;
+}
+
+h3 {
+margin: 0 !important;
+padding: 0.5rem 2rem 0.5rem 1.5rem;
+font-size: 1.3rem !important;
+font-weight: 600 !important;
+color: #374151;
+background: #ffffff;
+border-left: 1px solid #e5e7eb;
+border-right: 1px solid #e5e7eb;
+border-bottom: none;
+position: relative;
+}
+
+.section-box-footer {
+height: 12px; 
+background: #ffffff;
+border: 1px solid #e5e7eb;
+border-top: none;
+border-radius: 0 0 12px 12px;
+margin-bottom: 1rem;
+}
+
+.subsection-content {
+padding-left: 0.7rem;
+margin: 0 0 1.5rem 0.8rem;
+border-left: 2px solid #f0f0f0;
+}
+
+.resource-item {
+margin: 0;
+padding: 0.15rem 0;
+}
+.resource-item p {
+margin: 0;
+}
+.resource-item + .resource-item {
+margin-top: 0.15rem;
+padding-top: 0.15rem;
+}
+
+.resource-title {
+font-weight: 400;
+font-size: 1.05rem;
+margin-bottom: 0.1rem;
+}
+.resource-title a {
+text-decoration: none;
+color: #1f2937;
+}
+.resource-title a:hover {
+color: #111827;
+}
+
+.resource-subtitle {
+font-style: italic;
+color: #6b7280;
+}
+
+.resource-description {
+margin-top: 0.1rem;
+font-size: 0.93rem;
+color: #4b5563;
+}
+
+.dt-toc nav ul li ul {
+display: block !important;
+}
+.d-article h3 {
+margin-bottom: 0 !important;
+}
+
+h2 + .section-content-body,
+h3 + .section-content-continuation {
+margin-top: 0 !important;
+}
+
+
+.d-toc h3, .dt-toc h3, nav.d-toc h3, .d-article-footer nav h3 {
+background: transparent !important;
+border: none !important;
+padding: 0 !important;
+margin: 0 0 1rem 0 !important;
+font-size: 0.9rem !important; 
+font-weight: 600 !important;
+color: #999 !important; 
+text-transform: uppercase; 
+text-align: left !important; 
+box-shadow: none !important;
+}
+
+.d-toc h3::after, .dt-toc h3::after {
+display: none !important;
+content: none !important;
+}
+
+.d-toc, .dt-toc {
+border: none !important;
+background: none !important;
+}
+</style>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
-<div class="line-block">     <a href=".././files/SpeciesID/DataCodes&amp;Forms.pdf">Gear Codebook</a></div>
-<div class="line-block">     <a href=".././files/SpeciesID/SpeciesCodeManual.pdf">Species Codebook</a></div>
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/SpeciesID/DataCodes&amp;Forms.pdf">Gear Codebook</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/SpeciesID/SpeciesCodeManual.pdf">Species Codebook</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
 <h2 id="computer-programs">Computer Programs</h2>
+<div class="section-content-body">
+
+</div>
 <h3 id="gapsurvey-r-package">GAPsurvey R Package</h3>
-<div class="line-block">     <a href=".././docs/Software_Software_&amp;_drivers.html">GAPsurvey R Package</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././docs/Software_Software_&amp;_drivers.html">GAPsurvey R Package</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="metis">METIS</h3>
-<div class="line-block">     <a href=".././files/Manuals/Catch%20Data%20Entry/METIS%20PC%20Required%20Directories%20and%20Control%20Files/">METIS PC Required Directories and Files</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Catch%20Data%20Entry/oracle-apex-end-users-guide.pdf">METIS System - Oracle Apex End User’s Guide</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Catch%20Data%20Entry/METIS%20PC%20Required%20Directories%20and%20Control%20Files/">METIS PC Required Directories and Files</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Catch%20Data%20Entry/oracle-apex-end-users-guide.pdf">METIS System - Oracle Apex End User’s Guide</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <h2 id="deck-sensors">Deck Sensors</h2>
+<div class="section-content-body">
+
+</div>
 <h3 id="ctd">CTD</h3>
-<div class="line-block">     <a href=".././files/Manuals/CTD%20Manuals">All CTD Resources</a></div>
-<div class="line-block">     <a href=".././files/Manuals/CTD%20Manuals/CTD%20Laptop%20Login.pdf">CTD Laptop Login</a></div>
-<div class="line-block">     <a href=".././files/Manuals/CTD%20Manuals/SBE19plus/">SBE19plus Resources</a></div>
-<div class="line-block">     <a href=".././files/Manuals/CTD%20Manuals/SBE39/">SBE39 Resources</a></div>
-<div class="line-block">     <a href=".././files/Manuals/CTD%20Manuals/Seabird%20Programs/">Seabird Program Resources</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/CTD%20Manuals">All CTD Resources</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/CTD%20Manuals/CTD%20Laptop%20Login.pdf">CTD Laptop Login</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/CTD%20Manuals/SBE19plus/">SBE19plus Resources</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/CTD%20Manuals/SBE39/">SBE39 Resources</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/CTD%20Manuals/Seabird%20Programs/">Seabird Program Resources</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <h2 id="polycorder-codes">Polycorder Codes</h2>
-<h3 id="on-deck-species-polycoder-codes">On-deck Species (Polycoder) Codes</h3>
-<div class="line-block">     <a href=".././files/Collections/Polycorder%20Placard%20EBS.pdf">Polycoder Codes Poster (BS)</a></div>
-<div class="line-block">     <a href=".././files/Collections/Polycorder%20Placard%20GOA_AI.pdf">Polycoder Codes Poster (GOA/AI)</a></div>
-<div class="line-block">     <a href=".././files/Collections/GOA_BS%20poly%20complete.pdf">Polycorder Code List</a></div>
+<div class="section-content-body">
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Collections/Polycorder%20Placard%20EBS.pdf">Polycoder Codes Poster (BS)</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Collections/Polycorder%20Placard%20GOA_AI.pdf">Polycoder Codes Poster (GOA/AI)</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Collections/GOA_BS%20poly%20complete.pdf">Polycorder Code List</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <h2 id="sampling-resources">Sampling Resources</h2>
-<div class="line-block">     <a href=".././files/Collections/forms/catchforms/catch_form.pdf">Catch Form</a></div>
-<div class="line-block">     <a href=".././files/Collections/Updated%20Halibut%20LW%20Relationships/">Halibut LW Relationships (AI/GOA)</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Survey%20operation%20manuals/Min%20length%20and%20sex%20per%20haul.pdf">Minimum Length/Sex subsampling (AI)</a></div>
+<div class="section-content-body">
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Collections/forms/catchforms/catch_form.pdf">Catch Form</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Collections/Updated%20Halibut%20LW%20Relationships/">Halibut LW Relationships (AI/GOA)</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Survey%20operation%20manuals/Min%20length%20and%20sex%20per%20haul.pdf">Minimum Length/Sex subsampling (AI)</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="large-catch-resources">Large catch resources</h3>
-<div class="line-block">     <a href=".././files/Collections/Large%20catches/volumetric_worksheet.xlsm"><strong>NEW</strong> Volumetric Worksheet</a></div>
-<div class="line-block">     <a href=".././files/Collections/Basket%20weight%20calcs/">Basket Weight Calculation Sheets</a></div>
-<div class="line-block">     <a href=".././files/Collections/Large%20catches/Split%20Haul%20Subsampling%20Protocol%20using%20METIS.pdf">Split Haul Crab Subsampling Protocol (EBS)</a></div>
-<div class="line-block">     <a href=".././files/Collections/forms/catchforms/Volumetric_Sampling_Form.pdf">Volumetric Sampling Form</a></div>
-<div class="line-block">     <a href=".././files/Collections/Large%20catches/Steps%20for%20a%20Volumetric%20Catch.pdf">Volumetric Steps</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Collections/Large%20catches/volumetric_worksheet.xlsm"><strong>NEW</strong> Volumetric Worksheet</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Collections/Basket%20weight%20calcs/">Basket Weight Calculation Sheets</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Collections/Large%20catches/Split%20Haul%20Subsampling%20Protocol%20using%20METIS.pdf">Split Haul Crab Subsampling Protocol (EBS)</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Collections/forms/catchforms/Volumetric_Sampling_Form.pdf">Volumetric Sampling Form</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Collections/Large%20catches/Steps%20for%20a%20Volumetric%20Catch.pdf">Volumetric Steps</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="scales">Scales</h3>
-<div class="line-block">     <a href=".././files/Manuals/MSI_loadcells_cranescales/">MSI (Load Cell/Crane Scale) Resources</a></div>
-<div class="line-block">     <a href=".././files/manuals/MAREL_scales/Basket_Scale_Calibration.pdf">Marel (Deck Scales) Calibration</a></div>
-<ul>
-<li>Basket scale</li>
-</ul>
-<ol type="1">
-<li>Press “Zero” &amp; “Menu” at same time.</li>
-<li>“CAL” will display in small window and “- - -“ will display in large window.</li>
-<li>Wait for prompt to place 20 kg weight on scale (make sure it’s not a 50 lb weight!)</li>
-<li>Press “Print” to display “Fit #” on display screen:
-Fit # &lt; 25 = ok
-Fit # &gt; 25 = Recalibrate</li>
-<li>If “E-92” displays = Error: Do Over.</li>
-<li>Remember to tare an empty basket!
-(Other type of basket scale: Press and hold Page key, select #6, then same as above)
-Specimen scale</li>
-<li>Press “CAL” while holding down “MENU” at same time.</li>
-<li>“Wait with empty platform” will be displayed in large window and “CAL” in small window.</li>
-<li>Wait for prompt “Place reference weight on platform” to place 2 kg weight on scale. 4. &gt;Wait for “Calibration complete” and “Fit #” on display screen:
-Fit # &lt; 25 = ok
-Fit # &gt; 25 = Recalibrate 5. If “E-92” displays = Error: Do Over.</li>
-<li>Remember to tare an empty tray!</li>
-</ol>
-<div class="line-block">     <a href=".././files/manuals/MAREL_scales">Marel (Deck Scales) Resources</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/MSI_loadcells_cranescales/">MSI (Load Cell/Crane Scale) Resources</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/manuals/MAREL_scales/Basket_Scale_Calibration.pdf">Marel (Deck Scales) Calibration</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/manuals/MAREL_scales">Marel (Deck Scales) Resources</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="vouchers">Vouchers</h3>
-<div class="line-block">     <a href=".././files/Collections/Voucher%20Procedures.pdf">Voucher Collection Procedures</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Collections/Voucher%20Procedures.pdf">Voucher Collection Procedures</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <h2 id="tablets">Tablets</h2>
-<div class="line-block">     <a href=".././files/Manuals/Bluetooth_devices/Caliper_Digimatic%20Bluetooth%20Adapter%20instructions.pdf">Caliper Digimatic Bluetooth Adapter Instructions</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Apps%20Software/IntroToCatchApp%20MS%20Powerpoints/">Catch App Powerpoints</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Apps%20Software/Crab%20Application%20Training%20Powerpoints/">Crab App Powerpoints</a></div>
+<div class="section-content-body">
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Bluetooth_devices/Caliper_Digimatic%20Bluetooth%20Adapter%20instructions.pdf">Caliper Digimatic Bluetooth Adapter Instructions</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Apps%20Software/IntroToCatchApp%20MS%20Powerpoints/">Catch App Powerpoints</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Apps%20Software/Crab%20Application%20Training%20Powerpoints/">Crab App Powerpoints</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="barcodes">Barcodes</h3>
-<div class="line-block">     <a href=".././files/Manuals/Bluetooth_Devices/Barcodes/1-120%20bar%20code%20numbers.xlsx">1-20 Barcode Numbers (xlsx)</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Bluetooth_Devices/Barcodes/1-120%20barcode%20codes.pdf">1-20 Barcodes (pdf)</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Bluetooth_Devices/Barcodes/Big%20length%20barcodes%202024.pdf">100-199 Barcodes (pdf)</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Bluetooth_Devices/Barcodes/1-120%20bar%20code%20numbers.xlsx">1-20 Barcode Numbers (xlsx)</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Bluetooth_Devices/Barcodes/1-120%20barcode%20codes.pdf">1-20 Barcodes (pdf)</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Bluetooth_Devices/Barcodes/Big%20length%20barcodes%202024.pdf">100-199 Barcodes (pdf)</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="tablet-set-up">Tablet Set Up</h3>
-<div class="line-block">     <a href=".././files/Manuals/Apps%20Software/Samsung_Galaxy_A7_manual.pdf">Samsung Galaxy A7 Lite Tablet User Manual</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Apps%20Software/Sending%20Tablet%20Files%20Via%20WiFi.pdf">Sending Tablet Files via WiFi</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Apps%20Software/BT%20Survey%20Maturity%20Instructions.pdf">Setting Up Maturity Collection</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Apps%20Software/Tablet%20Remote%20Access%20Documentation.pdf">Tablet Remote Access Documentation</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Apps%20Software/Samsung_Galaxy_A7_manual.pdf">Samsung Galaxy A7 Lite Tablet User Manual</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Apps%20Software/Sending%20Tablet%20Files%20Via%20WiFi.pdf">Sending Tablet Files via WiFi</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Apps%20Software/BT%20Survey%20Maturity%20Instructions.pdf">Setting Up Maturity Collection</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Apps%20Software/Tablet%20Remote%20Access%20Documentation.pdf">Tablet Remote Access Documentation</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="wands">Wands</h3>
-<div class="line-block">     <a href=".././files/Manuals/Bluetooth_Devices/WWR2900%20WandManual.pdf">Wand Manual</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Bluetooth_Devices/wand%20pairing%20instructions%202021.pdf">Wand Pairing Barcodes (old)</a></div>
-<script>
-function myFunction() {
-var input, filter, table, tr, td, i, txtValue;
-input = document.getElementById("myInput");
-filter = input.value.toUpperCase();
-table = document.getElementById("myTable");
-tr = table.getElementsByTagName("tr");
-for (i = 0; i < tr.length; i++) {
-td = tr[i].getElementsByTagName("td")[1];
-if (td) {
-txtValue = td.textContent || td.innerText;
-if (txtValue.toUpperCase().indexOf(filter) > -1) {
-tr[i].style.display = "";
-} else {
-tr[i].style.display = "none";
-}
-}       
-}
-}
-</script>
-<hr />
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Bluetooth_Devices/WWR2900%20WandManual.pdf">Wand Manual</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Bluetooth_Devices/wand%20pairing%20instructions%202021.pdf">Wand Pairing Barcodes (old)</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

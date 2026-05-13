@@ -1,5 +1,16 @@
 /* --------------Navbar-------------------- */
 
 .distill-site-header{ 
-  font-size: 12px;
+  font-size: 14px;
+}
+
+
+.distill-site-nav {
+  z-index: 1000;
+}
+
+/* Force display of level 3 TOC items */
+.dt-toc nav h3 {
+  display: block !important;
+  visibility: visible !important;
 }

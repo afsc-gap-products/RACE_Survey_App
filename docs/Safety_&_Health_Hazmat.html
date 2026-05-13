@@ -3098,10 +3098,18 @@ background-color: #f9f9f9;
 
 .distill-site-header{ font-size: 12px;
 }
+.distill-site-nav {
+z-index: 1000;
+}
+
+.dt-toc nav h3 {
+display: block !important;
+visibility: visible !important;
+}
 </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <style type="text/css">.distill-site-header{ font-size: 12px;}</style>
+  <style type="text/css">.distill-site-header{ font-size: 12px;}.distill-site-nav {z-index: 1000;}.dt-toc nav h3 {display: block !important;visibility: visible !important;}</style>
 
 </head>
 
@@ -3231,48 +3239,290 @@ Tasklists
 </ul>
 </nav>
 </div>
+<style>
+
+h2 {
+margin: 2rem 0 0 0 !important;
+padding: 1rem 1.5rem;
+font-size: 1.7rem !important;
+font-weight: 700;
+color: #111827;
+background: #f3f4f6;
+border: 1px solid #e5e7eb;
+border-radius: 12px 12px 0 0;
+}
+
+.section-content-body{
+background: #ffffff;
+border-left: 1px solid #e5e7eb;
+border-right: 1px solid #e5e7eb;
+padding: 0.8rem 2rem;
+margin: 0 !important;
+}
+.section-content-continuation,
+.subsection-block {
+background: #ffffff;
+border-left: 1px solid #e5e7eb;
+border-right: 1px solid #e5e7eb;
+padding: 0rem 2rem;
+margin: 0 !important;
+}
+
+h3 {
+margin: 0 !important;
+padding: 0.5rem 2rem 0.5rem 1.5rem;
+font-size: 1.3rem !important;
+font-weight: 600 !important;
+color: #374151;
+background: #ffffff;
+border-left: 1px solid #e5e7eb;
+border-right: 1px solid #e5e7eb;
+border-bottom: none;
+position: relative;
+}
+
+.section-box-footer {
+height: 12px; 
+background: #ffffff;
+border: 1px solid #e5e7eb;
+border-top: none;
+border-radius: 0 0 12px 12px;
+margin-bottom: 1rem;
+}
+
+.subsection-content {
+padding-left: 0.7rem;
+margin: 0 0 1.5rem 0.8rem;
+border-left: 2px solid #f0f0f0;
+}
+
+.resource-item {
+margin: 0;
+padding: 0.15rem 0;
+}
+.resource-item p {
+margin: 0;
+}
+.resource-item + .resource-item {
+margin-top: 0.15rem;
+padding-top: 0.15rem;
+}
+
+.resource-title {
+font-weight: 400;
+font-size: 1.05rem;
+margin-bottom: 0.1rem;
+}
+.resource-title a {
+text-decoration: none;
+color: #1f2937;
+}
+.resource-title a:hover {
+color: #111827;
+}
+
+.resource-subtitle {
+font-style: italic;
+color: #6b7280;
+}
+
+.resource-description {
+margin-top: 0.1rem;
+font-size: 0.93rem;
+color: #4b5563;
+}
+
+.dt-toc nav ul li ul {
+display: block !important;
+}
+.d-article h3 {
+margin-bottom: 0 !important;
+}
+
+h2 + .section-content-body,
+h3 + .section-content-continuation {
+margin-top: 0 !important;
+}
+</style>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
 <h2 id="sds">Sds</h2>
-<div class="line-block">     <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS_Bouins_Solution.pdf">SDS Bouin’s Fixative</a></div>
-<div class="line-block">     <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20200%20Proof%20Ethanol-%20Anhydrous.pdf">SDS Ethanol 100%</a></div>
-<div class="line-block">     <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Ethanol%20140%20proof.pdf">SDS Ethanol 70%</a></div>
-<div class="line-block">     <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Ethanol%20190%20proof.pdf">SDS Ethanol 95%</a></div>
-<div class="line-block">     <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Formaldehyde%20Solution.pdf">SDS Formaldehyde</a></div>
-<div class="line-block">     <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Formalin%20Solution_neutral%20buffered_10%.pdf">SDS Formalin 10%</a></div>
-<div class="line-block">     <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Glycerin.pdf">SDS Glycerin</a></div>
-<div class="line-block">     <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Neutralex.pdf">SDS Neutralex</a></div>
-<div class="line-block">     <a href=".././files/Shipping-Hazmat/SDS%20pages/DevCon%202-part%20epoxy%20MSDS.pdf">SDS Permalite Epoxy Parts A and B</a></div>
-<div class="line-block">     <a href=".././files/Shipping-Hazmat/SDS%20pages/3028-AllprotectTissueReagent-en-US-US--1.00000.pdf">SDS Qiagen Allprotect Tissue Reagent</a></div>
-<div class="line-block">     <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS_70_Reagent_Acohol.pdf">SDS Reagent Alcohol, 70% v/v</a></div>
-<div class="line-block">     <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Thymol.pdf">SDS Thymol</a></div>
+<div class="section-content-body">
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Shipping-Hazmat/SDS%20pages/SDS_Bouins_Solution.pdf">SDS Bouin’s Fixative</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20200%20Proof%20Ethanol-%20Anhydrous.pdf">SDS Ethanol 100%</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Ethanol%20140%20proof.pdf">SDS Ethanol 70%</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Ethanol%20190%20proof.pdf">SDS Ethanol 95%</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Formaldehyde%20Solution.pdf">SDS Formaldehyde</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Formalin%20Solution_neutral%20buffered_10%.pdf">SDS Formalin 10%</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Glycerin.pdf">SDS Glycerin</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Neutralex.pdf">SDS Neutralex</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Shipping-Hazmat/SDS%20pages/DevCon%202-part%20epoxy%20MSDS.pdf">SDS Permalite Epoxy Parts A and B</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Shipping-Hazmat/SDS%20pages/3028-AllprotectTissueReagent-en-US-US–1.00000.pdf">SDS Qiagen Allprotect Tissue Reagent</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Shipping-Hazmat/SDS%20pages/SDS_70_Reagent_Acohol.pdf">SDS Reagent Alcohol, 70% v/v</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Thymol.pdf">SDS Thymol</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <h2 id="shipping">Shipping</h2>
-<div class="line-block">     <a href=".././files/Shipping-Hazmat/SDS%20pages/alkalinecylindrical_psds.pdf">Alkakine batteries</a></div>
-<div class="line-block">     <a href=".././files/Shipping-Hazmat/Dangerous%20Goods%20Declaration%20-%20CFR49.pdf">Dangerous Goods Declaration Form CFR49</a></div>
-<div class="line-block">     <a href=".././files/Shipping-Hazmat/hazmat_shipping_guide.pdf">HAZMAT Shipping Guidelines</a></div>
-<div class="line-block">     <a href=".././files/Shipping-Hazmat/Do%20not%20pack%20these%20Dangerous%20Goods.pdf">HAZMAT items not to pack</a></div>
-<script>
-function myFunction() {
-var input, filter, table, tr, td, i, txtValue;
-input = document.getElementById("myInput");
-filter = input.value.toUpperCase();
-table = document.getElementById("myTable");
-tr = table.getElementsByTagName("tr");
-for (i = 0; i < tr.length; i++) {
-td = tr[i].getElementsByTagName("td")[1];
-if (td) {
-txtValue = td.textContent || td.innerText;
-if (txtValue.toUpperCase().indexOf(filter) > -1) {
-tr[i].style.display = "";
-} else {
-tr[i].style.display = "none";
-}
-}       
-}
-}
-</script>
-<hr />
+<div class="section-content-body">
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Shipping-Hazmat/SDS%20pages/alkalinecylindrical_psds.pdf">Alkakine batteries</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Shipping-Hazmat/Dangerous%20Goods%20Declaration%20-%20CFR49.pdf">Dangerous Goods Declaration Form CFR49</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Shipping-Hazmat/hazmat_shipping_guide.pdf">HAZMAT Shipping Guidelines</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Shipping-Hazmat/Do%20not%20pack%20these%20Dangerous%20Goods.pdf">HAZMAT items not to pack</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

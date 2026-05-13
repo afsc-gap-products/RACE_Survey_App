@@ -3098,10 +3098,18 @@ background-color: #f9f9f9;
 
 .distill-site-header{ font-size: 12px;
 }
+.distill-site-nav {
+z-index: 1000;
+}
+
+.dt-toc nav h3 {
+display: block !important;
+visibility: visible !important;
+}
 </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <style type="text/css">.distill-site-header{ font-size: 12px;}</style>
+  <style type="text/css">.distill-site-header{ font-size: 12px;}.distill-site-nav {z-index: 1000;}.dt-toc nav h3 {display: block !important;visibility: visible !important;}</style>
 
 </head>
 
@@ -3235,47 +3243,270 @@ Tasklists
 </ul>
 </nav>
 </div>
+<style>
+
+h2 {
+margin: 2rem 0 0 0 !important;
+padding: 1rem 1.5rem;
+font-size: 1.7rem !important;
+font-weight: 700;
+color: #111827;
+background: #f3f4f6;
+border: 1px solid #e5e7eb;
+border-radius: 12px 12px 0 0;
+}
+
+.section-content-body{
+background: #ffffff;
+border-left: 1px solid #e5e7eb;
+border-right: 1px solid #e5e7eb;
+padding: 0.8rem 2rem;
+margin: 0 !important;
+}
+.section-content-continuation,
+.subsection-block {
+background: #ffffff;
+border-left: 1px solid #e5e7eb;
+border-right: 1px solid #e5e7eb;
+padding: 0rem 2rem;
+margin: 0 !important;
+}
+
+h3 {
+margin: 0 !important;
+padding: 0.5rem 2rem 0.5rem 1.5rem;
+font-size: 1.3rem !important;
+font-weight: 600 !important;
+color: #374151;
+background: #ffffff;
+border-left: 1px solid #e5e7eb;
+border-right: 1px solid #e5e7eb;
+border-bottom: none;
+position: relative;
+}
+
+.section-box-footer {
+height: 12px; 
+background: #ffffff;
+border: 1px solid #e5e7eb;
+border-top: none;
+border-radius: 0 0 12px 12px;
+margin-bottom: 1rem;
+}
+
+.subsection-content {
+padding-left: 0.7rem;
+margin: 0 0 1.5rem 0.8rem;
+border-left: 2px solid #f0f0f0;
+}
+
+.resource-item {
+margin: 0;
+padding: 0.15rem 0;
+}
+.resource-item p {
+margin: 0;
+}
+.resource-item + .resource-item {
+margin-top: 0.15rem;
+padding-top: 0.15rem;
+}
+
+.resource-title {
+font-weight: 400;
+font-size: 1.05rem;
+margin-bottom: 0.1rem;
+}
+.resource-title a {
+text-decoration: none;
+color: #1f2937;
+}
+.resource-title a:hover {
+color: #111827;
+}
+
+.resource-subtitle {
+font-style: italic;
+color: #6b7280;
+}
+
+.resource-description {
+margin-top: 0.1rem;
+font-size: 0.93rem;
+color: #4b5563;
+}
+
+.dt-toc nav ul li ul {
+display: block !important;
+}
+.d-article h3 {
+margin-bottom: 0 !important;
+}
+
+h2 + .section-content-body,
+h3 + .section-content-continuation {
+margin-top: 0 !important;
+}
+</style>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
 <h2 id="timekeeping-ta">Timekeeping T&amp;A</h2>
-<div class="line-block">     <a href=".././files/Timekeeping/CD-81%20OT%20Authorization.pdf">CD-81 OT Authorization</a></div>
-<div class="line-block">     <a href=".././files/Timekeeping/comptime_travel_guide.pdf">Comp Time Travel Guide</a></div>
-<div class="line-block">     <a href=".././files/Travel/COMP%20TIME%20OFF%20FOR%20TRAVEL-Air-final.pdf">Comp Time for Air Travel</a></div>
-<div class="line-block">     <a href=".././files/Timekeeping/Comp%20Time%20for%20Travel%20&amp;%20Credit%20Hours.pdf">Comp Time for Travel &amp; Credit Hours</a></div>
-<div class="line-block">     <a href=".././files/Timekeeping/opm71.pdf">Form OPM-71</a></div>
-<div class="line-block">     <a href=".././files/Timekeeping/pay%20periods.pdf">Pay Periods</a></div>
-<div class="line-block">     <a href=".././files/Timekeeping/Name_PP##_RACE%20at-sea%20timesheet_2026.xlsx">RACE At Sea-Timesheet</a></div>
+<div class="section-content-body">
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Timekeeping/CD-81%20OT%20Authorization.pdf">CD-81 OT Authorization</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Timekeeping/comptime_travel_guide.pdf">Comp Time Travel Guide</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Travel/COMP%20TIME%20OFF%20FOR%20TRAVEL-Air-final.pdf">Comp Time for Air Travel</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Timekeeping/Comp%20Time%20for%20Travel%20&amp;%20Credit%20Hours.pdf">Comp Time for Travel &amp; Credit Hours</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Timekeeping/opm71.pdf">Form OPM-71</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Timekeeping/pay%20periods.pdf">Pay Periods</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Timekeeping/Name_PP##_RACE%20at-sea%20timesheet_2026.xlsx">RACE At Sea-Timesheet</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <h2 id="travel-resources">Travel Resources</h2>
-<div class="line-block">     <a href=".././files/Travel/Travel%20Advisory%2008-6%20-%20Rental%20Car%20Procedures%20in%20Alaska.pdf">Rental Car Procedures AK</a></div>
-<div class="line-block">     <a href=".././files/Travel/AS%2043.52%20Vehicle%20Form.pdf">Vehicle Rental Tax Exempt Form</a></div>
+<div class="section-content-body">
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Travel/Travel%20Advisory%2008-6%20-%20Rental%20Car%20Procedures%20in%20Alaska.pdf">Rental Car Procedures AK</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Travel/AS%2043.52%20Vehicle%20Form.pdf">Vehicle Rental Tax Exempt Form</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="post-survey-forms">Post-survey Forms</h3>
-<div class="line-block">     <a href=".././files/Travel/COMP%20TIME%20OFF%20FOR%20TRAVEL-Air-final.pdf">Comp Time for Air Travel</a></div>
-<div class="line-block">     <a href=".././files/Travel/Travel%20Voucher%20Request.pdf">Travel Voucher Request</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Travel/COMP%20TIME%20OFF%20FOR%20TRAVEL-Air-final.pdf">Comp Time for Air Travel</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Travel/Travel%20Voucher%20Request.pdf">Travel Voucher Request</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="rental-cars">Rental Cars</h3>
-<div class="line-block">     <a href=".././files/Travel/ALASKA-TAX%20EXEMPT%20INFO.pdf">AK Tax Exempt Info</a></div>
-<div class="line-block">     <a href=".././files/Travel/A%20Stranded%20NOAA%20Scientists%20Guide%20to%20Flight%20Cancellations.png">Guide to Flight Cancellations</a></div>
-<script>
-function myFunction() {
-var input, filter, table, tr, td, i, txtValue;
-input = document.getElementById("myInput");
-filter = input.value.toUpperCase();
-table = document.getElementById("myTable");
-tr = table.getElementsByTagName("tr");
-for (i = 0; i < tr.length; i++) {
-td = tr[i].getElementsByTagName("td")[1];
-if (td) {
-txtValue = td.textContent || td.innerText;
-if (txtValue.toUpperCase().indexOf(filter) > -1) {
-tr[i].style.display = "";
-} else {
-tr[i].style.display = "none";
-}
-}       
-}
-}
-</script>
-<hr />
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Travel/ALASKA-TAX%20EXEMPT%20INFO.pdf">AK Tax Exempt Info</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Travel/A%20Stranded%20NOAA%20Scientists%20Guide%20to%20Flight%20Cancellations.png">Guide to Flight Cancellations</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

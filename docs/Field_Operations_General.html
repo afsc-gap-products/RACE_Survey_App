@@ -3098,10 +3098,18 @@ background-color: #f9f9f9;
 
 .distill-site-header{ font-size: 12px;
 }
+.distill-site-nav {
+z-index: 1000;
+}
+
+.dt-toc nav h3 {
+display: block !important;
+visibility: visible !important;
+}
 </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <style type="text/css">.distill-site-header{ font-size: 12px;}</style>
+  <style type="text/css">.distill-site-header{ font-size: 12px;}.distill-site-nav {z-index: 1000;}.dt-toc nav h3 {display: block !important;visibility: visible !important;}</style>
 
 </head>
 
@@ -3246,69 +3254,464 @@ Tasklists
 </ul>
 </nav>
 </div>
+<style>
+
+h2 {
+margin: 2rem 0 0 0 !important;
+padding: 1rem 1.5rem;
+font-size: 1.7rem !important;
+font-weight: 700;
+color: #111827;
+background: #f3f4f6;
+border: 1px solid #e5e7eb;
+border-radius: 12px 12px 0 0;
+}
+
+.section-content-body{
+background: #ffffff;
+border-left: 1px solid #e5e7eb;
+border-right: 1px solid #e5e7eb;
+padding: 0.8rem 2rem;
+margin: 0 !important;
+}
+.section-content-continuation,
+.subsection-block {
+background: #ffffff;
+border-left: 1px solid #e5e7eb;
+border-right: 1px solid #e5e7eb;
+padding: 0rem 2rem;
+margin: 0 !important;
+}
+
+h3 {
+margin: 0 !important;
+padding: 0.5rem 2rem 0.5rem 1.5rem;
+font-size: 1.3rem !important;
+font-weight: 600 !important;
+color: #374151;
+background: #ffffff;
+border-left: 1px solid #e5e7eb;
+border-right: 1px solid #e5e7eb;
+border-bottom: none;
+position: relative;
+}
+
+.section-box-footer {
+height: 12px; 
+background: #ffffff;
+border: 1px solid #e5e7eb;
+border-top: none;
+border-radius: 0 0 12px 12px;
+margin-bottom: 1rem;
+}
+
+.subsection-content {
+padding-left: 0.7rem;
+margin: 0 0 1.5rem 0.8rem;
+border-left: 2px solid #f0f0f0;
+}
+
+.resource-item {
+margin: 0;
+padding: 0.15rem 0;
+}
+.resource-item p {
+margin: 0;
+}
+.resource-item + .resource-item {
+margin-top: 0.15rem;
+padding-top: 0.15rem;
+}
+
+.resource-title {
+font-weight: 400;
+font-size: 1.05rem;
+margin-bottom: 0.1rem;
+}
+.resource-title a {
+text-decoration: none;
+color: #1f2937;
+}
+.resource-title a:hover {
+color: #111827;
+}
+
+.resource-subtitle {
+font-style: italic;
+color: #6b7280;
+}
+
+.resource-description {
+margin-top: 0.1rem;
+font-size: 0.93rem;
+color: #4b5563;
+}
+
+.dt-toc nav ul li ul {
+display: block !important;
+}
+.d-article h3 {
+margin-bottom: 0 !important;
+}
+
+h2 + .section-content-body,
+h3 + .section-content-continuation {
+margin-top: 0 !important;
+}
+</style>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
 <h2 id="administrative">Administrative</h2>
-<div class="line-block">     <a href=".././files/Contracts">Contracts</a></div>
-<div class="line-block">     <a href=".././files/Permits">Permits</a></div>
-<div class="line-block">     <a href=".././files/Purchase/">Purchase &amp; Rental Info</a></div>
-<div class="line-block">     <a href=".././files/Shipping-Hazmat/">Shipping</a></div>
+<div class="section-content-body">
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Contracts">Contracts</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Permits">Permits</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Purchase/">Purchase &amp; Rental Info</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Shipping-Hazmat/">Shipping</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="codebooks">Codebooks</h3>
-<div class="line-block">     <a href=".././files/SpeciesID/DataCodes&amp;Forms.pdf">Gear Codebook</a></div>
-<div class="line-block">     <a href=".././files/SpeciesID/SpeciesCodeManual.pdf">Species Codebook</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/SpeciesID/DataCodes&amp;Forms.pdf">Gear Codebook</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/SpeciesID/SpeciesCodeManual.pdf">Species Codebook</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="recreation">Recreation</h3>
-<div class="line-block">     <a href=".././files/Port%20Info/Sport%20fishing%20regs">Sport Fishing Regs by location</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Port%20Info/Sport%20fishing%20regs">Sport Fishing Regs by location</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="social-media">Social Media</h3>
-<div class="line-block">     <a href=".././files/Social%20media%20policies/NMFS_Individual%20Release_Fillable.pdf">AFSC Photo Consent Release</a></div>
-<div class="line-block">     <a href=".././files/Social%20media%20policies/GAP%20Surveys%20Photo%20Sharing%20and%20Social%20Media.pdf">Photo Sharing and Social Media Guidance</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Social%20media%20policies/NMFS_Individual%20Release_Fillable.pdf">AFSC Photo Consent Release</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Social%20media%20policies/GAP%20Surveys%20Photo%20Sharing%20and%20Social%20Media.pdf">Photo Sharing and Social Media Guidance</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="stations-and-maps">Stations and Maps</h3>
-<div class="line-block">     <a href=".././files/Station%20info/EBS%20shelf">EBS Stations &amp; Maps</a></div>
-<div class="line-block">     <a href=".././files/Station%20info/AI_GOA/Station%20Logs/">GOA/AI Station Logs</a></div>
-<div class="line-block">     <a href=".././files/Station%20info/AI_GOA">GOA/AI Stations &amp; Maps</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Station%20info/EBS%20shelf">EBS Stations &amp; Maps</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Station%20info/AI_GOA/Station%20Logs/">GOA/AI Station Logs</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Station%20info/AI_GOA">GOA/AI Stations &amp; Maps</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <h2 id="manuals">Manuals</h2>
-<div class="line-block">     <a href=".././files/Manuals/Survey%20operation%20manuals/2026_Gear_Test_Project_Plan.pdf">2026 Gear Testing Project</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Survey%20operation%20manuals/NOAA%20trawl%20protocols.pdf">NOAA Protocols for Bottom Trawl Surveys</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Survey%20operation%20manuals/">Survey Primers</a></div>
+<div class="section-content-body">
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Survey%20operation%20manuals/2026_Gear_Test_Project_Plan.pdf">2026 Gear Testing Project</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Survey%20operation%20manuals/NOAA%20trawl%20protocols.pdf">NOAA Protocols for Bottom Trawl Surveys</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Survey%20operation%20manuals/">Survey Primers</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="survey-ops-manuals">Survey Ops Manuals</h3>
-<div class="line-block">     <a href=".././files/Manuals/Survey%20operation%20manuals/AI%20Scientific%20Operations.pdf">AI/GOA Survey Ops Manual</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Survey%20operation%20manuals/Bering%20Sea%20Survey%20Ops%20Manual.pdf">Bering Sea Survey Ops Manual</a> (<a href="https://docs.google.com/document/d/1GkO_-hAaB7zKB1Xuu09furfiXnc-LuMJvSb1ONVzFng/edit?usp=sharing">Web link</a>)</div>
-<div class="line-block">     <a href=".././files/Manuals/Survey%20operation%20manuals/EBS_NBS%20Survey%20Contingency%20Plan.pdf">EBS/NBS Survey Contingency Plan</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Survey%20operation%20manuals/AI%20Scientific%20Operations.pdf">AI/GOA Survey Ops Manual</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Survey%20operation%20manuals/Bering%20Sea%20Survey%20Ops%20Manual.pdf">Bering Sea Survey Ops Manual</a> (<a href="https://docs.google.com/document/d/1GkO_-hAaB7zKB1Xuu09furfiXnc-LuMJvSb1ONVzFng/edit?usp=sharing">Web link</a>)
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Survey%20operation%20manuals/EBS_NBS%20Survey%20Contingency%20Plan.pdf">EBS/NBS Survey Contingency Plan</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <h2 id="port-information">Port Information</h2>
-<div class="line-block">     <a href=".././files/Port%20info/Cannikin-Nuclear-Series-Video.mp4">Amchitka Nuclear Video</a></div>
-<div class="line-block">     <a href=".././files/Port%20info/EBS%20Port%20Guide.pdf">EBS Port Guide</a></div>
-<div class="line-block">     <a href=".././files/Port%20info/2025%20GOA%20Port%20Guide.pdf">GOA Port Guide</a></div>
-<div class="line-block">     <a href=".././files/Port%20info/">Other Port Resources</a></div>
+<div class="section-content-body">
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Port%20info/Cannikin-Nuclear-Series-Video.mp4">Amchitka Nuclear Video</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Port%20info/EBS%20Port%20Guide.pdf">EBS Port Guide</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Port%20info/2025%20GOA%20Port%20Guide.pdf">GOA Port Guide</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Port%20info/">Other Port Resources</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <h2 id="training-resources">Training Resources</h2>
-<div class="line-block">     <a href=".././files/Trainings/Prior%20Years%20Training/">Previous Training Resources</a></div>
-<div class="line-block">     <a href=".././files/Trainings/2026%20Training/">Training Resources</a></div>
+<div class="section-content-body">
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Trainings/Prior%20Years%20Training/">Previous Training Resources</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Trainings/2026%20Training/">Training Resources</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <h2 id="vessel-inventory">Vessel Inventory</h2>
-<div class="line-block">     <a href=".././files/Survey%20inventory%20lists/First%20Aid%20kits/">First Aid Kits</a></div>
+<div class="section-content-body">
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Survey%20inventory%20lists/First%20Aid%20kits/">First Aid Kits</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="rsst-inventory">RSST Inventory</h3>
-<div class="line-block">     <a href=".././files/Survey%20inventory%20lists/RSST%20Inventory/2026_GearList_Packing_EBS.pdf">EBS Inventory Lists</a></div>
-<div class="line-block">     <a href=".././files/Survey%20inventory%20lists/RSST%20Inventory/2026_GearList_Packing_AI.pdf">GOA/AI Inventory Lists</a></div>
-<div class="line-block">     <a href=".././files/Survey%20inventory%20lists/RSST%20Inventory/2026_Serialized_GearList.pdf">Serialized Gear Tracking</a></div>
-<script>
-function myFunction() {
-var input, filter, table, tr, td, i, txtValue;
-input = document.getElementById("myInput");
-filter = input.value.toUpperCase();
-table = document.getElementById("myTable");
-tr = table.getElementsByTagName("tr");
-for (i = 0; i < tr.length; i++) {
-td = tr[i].getElementsByTagName("td")[1];
-if (td) {
-txtValue = td.textContent || td.innerText;
-if (txtValue.toUpperCase().indexOf(filter) > -1) {
-tr[i].style.display = "";
-} else {
-tr[i].style.display = "none";
-}
-}       
-}
-}
-</script>
-<hr />
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Survey%20inventory%20lists/RSST%20Inventory/2026_GearList_Packing_EBS.pdf">EBS Inventory Lists</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Survey%20inventory%20lists/RSST%20Inventory/2026_GearList_Packing_AI.pdf">GOA/AI Inventory Lists</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Survey%20inventory%20lists/RSST%20Inventory/2026_Serialized_GearList.pdf">Serialized Gear Tracking</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

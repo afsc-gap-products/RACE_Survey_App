@@ -74,6 +74,7 @@ output:
   distill::distill_article:
     css: styles.css
     toc: true
+    toc_depth: 3
     toc_float: true
     includes:
       in_header: search_setup.html  

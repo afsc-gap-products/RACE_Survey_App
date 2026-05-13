@@ -3098,10 +3098,18 @@ background-color: #f9f9f9;
 
 .distill-site-header{ font-size: 12px;
 }
+.distill-site-nav {
+z-index: 1000;
+}
+
+.dt-toc nav h3 {
+display: block !important;
+visibility: visible !important;
+}
 </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <style type="text/css">.distill-site-header{ font-size: 12px;}</style>
+  <style type="text/css">.distill-site-header{ font-size: 12px;}.distill-site-nav {z-index: 1000;}.dt-toc nav h3 {display: block !important;visibility: visible !important;}</style>
 
 </head>
 
@@ -3254,97 +3262,716 @@ Tasklists
 </ul>
 </nav>
 </div>
+<style>
+
+h2 {
+margin: 2rem 0 0 0 !important;
+padding: 1rem 1.5rem;
+font-size: 1.7rem !important;
+font-weight: 700;
+color: #111827;
+background: #f3f4f6;
+border: 1px solid #e5e7eb;
+border-radius: 12px 12px 0 0;
+}
+
+.section-content-body{
+background: #ffffff;
+border-left: 1px solid #e5e7eb;
+border-right: 1px solid #e5e7eb;
+padding: 0.8rem 2rem;
+margin: 0 !important;
+}
+.section-content-continuation,
+.subsection-block {
+background: #ffffff;
+border-left: 1px solid #e5e7eb;
+border-right: 1px solid #e5e7eb;
+padding: 0rem 2rem;
+margin: 0 !important;
+}
+
+h3 {
+margin: 0 !important;
+padding: 0.5rem 2rem 0.5rem 1.5rem;
+font-size: 1.3rem !important;
+font-weight: 600 !important;
+color: #374151;
+background: #ffffff;
+border-left: 1px solid #e5e7eb;
+border-right: 1px solid #e5e7eb;
+border-bottom: none;
+position: relative;
+}
+
+.section-box-footer {
+height: 12px; 
+background: #ffffff;
+border: 1px solid #e5e7eb;
+border-top: none;
+border-radius: 0 0 12px 12px;
+margin-bottom: 1rem;
+}
+
+.subsection-content {
+padding-left: 0.7rem;
+margin: 0 0 1.5rem 0.8rem;
+border-left: 2px solid #f0f0f0;
+}
+
+.resource-item {
+margin: 0;
+padding: 0.15rem 0;
+}
+.resource-item p {
+margin: 0;
+}
+.resource-item + .resource-item {
+margin-top: 0.15rem;
+padding-top: 0.15rem;
+}
+
+.resource-title {
+font-weight: 400;
+font-size: 1.05rem;
+margin-bottom: 0.1rem;
+}
+.resource-title a {
+text-decoration: none;
+color: #1f2937;
+}
+.resource-title a:hover {
+color: #111827;
+}
+
+.resource-subtitle {
+font-style: italic;
+color: #6b7280;
+}
+
+.resource-description {
+margin-top: 0.1rem;
+font-size: 0.93rem;
+color: #4b5563;
+}
+
+.dt-toc nav ul li ul {
+display: block !important;
+}
+.d-article h3 {
+margin-bottom: 0 !important;
+}
+
+h2 + .section-content-body,
+h3 + .section-content-continuation {
+margin-top: 0 !important;
+}
+</style>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
-<div class="line-block">     <a href=".././files/Manuals/Survey%20operation%20manuals/Artifact%20guidance.pdf">Artifacts Handling</a></div>
-<div class="line-block">     <a href=".././files/Manuals/data%20backup%20sources.pdf">FPC Backup Data Sources Table</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Calypso_Wheelhouse/SFTP%20Instructions.pdf">SFTP Instructions</a></div>
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Survey%20operation%20manuals/Artifact%20guidance.pdf">Artifacts Handling</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/data%20backup%20sources.pdf">FPC Backup Data Sources Table</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Calypso_Wheelhouse/SFTP%20Instructions.pdf">SFTP Instructions</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
 <h2 id="bridge-computers">Bridge Computers</h2>
-<div class="line-block">     <a href=".././files/Station%20info/GIS_Training_2019.pdf">GIS Training</a></div>
+<div class="section-content-body">
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Station%20info/GIS_Training_2019.pdf">GIS Training</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="es80">ES80</h3>
-<div class="line-block">     <a href=".././files/Collections/ES80/">ES80 Resources</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Collections/ES80/">ES80 Resources</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="gapsurvey-r-package">GAPsurvey R Package</h3>
-<div class="line-block">     <a href=".././docs/Software_Software_&amp;_drivers.html">GAPsurvey R Package</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././docs/Software_Software_&amp;_drivers.html">GAPsurvey R Package</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="gps">GPS</h3>
-<div class="line-block">     <a href=".././files/Manuals/GPSs/">GPS MR-350 and Related Resources</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/GPSs/">GPS MR-350 and Related Resources</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="marport">Marport</h3>
-<div class="line-block">     <a href=".././files/Manuals/MARPORT/DoorExplorerProNX_UserManual_en_V1.pdf">DoorExplorereProNX User Manual</a></div>
-<div class="line-block">     <a href=".././files/Manuals/MARPORT/FlowSpeedNavigatorProNX_UserManual_en_V1.pdf">FlowSpeedNavigatorProNX User Manual</a></div>
-<div class="line-block">     <a href=".././files/Manuals/MARPORT/">Marport Resources</a></div>
-<div class="line-block">     <a href=".././files/Manuals/MARPORT/Marport_Scala_Quick_Start_Guide.pdf">Marport/Scala Quick Reference Guide</a></div>
-<div class="line-block">     <a href=".././files/Manuals/MARPORT/Mosa2/Mosa2_mac_qrg_en_V7.pdf">Mosa2 Quick Reference Guide</a></div>
-<div class="line-block">     <a href=".././files/Manuals/MARPORT/SCALA2_UserGuide_en_V6.pdf">SCALA2 User Manual</a></div>
-<div class="line-block">     <a href=".././files/Manuals/MARPORT/scala_pages/">Scala Configuration Files</a></div>
-<div class="line-block">     <a href=".././files/Manuals/MARPORT/Scala%20NMEA%20strings.pdf">Scala NMEA strings</a></div>
-<div class="line-block">     <a href=".././files/Manuals/MARPORT/Trident_UserManual_en_V2.pdf">Trident User Manual</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/MARPORT/DoorExplorerProNX_UserManual_en_V1.pdf">DoorExplorereProNX User Manual</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/MARPORT/FlowSpeedNavigatorProNX_UserManual_en_V1.pdf">FlowSpeedNavigatorProNX User Manual</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/MARPORT/">Marport Resources</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/MARPORT/Marport_Scala_Quick_Start_Guide.pdf">Marport/Scala Quick Reference Guide</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/MARPORT/Mosa2/Mosa2_mac_qrg_en_V7.pdf">Mosa2 Quick Reference Guide</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/MARPORT/SCALA2_UserGuide_en_V6.pdf">SCALA2 User Manual</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/MARPORT/scala_pages/">Scala Configuration Files</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/MARPORT/Scala%20NMEA%20strings.pdf">Scala NMEA strings</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/MARPORT/Trident_UserManual_en_V2.pdf">Trident User Manual</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="olex">Olex</h3>
-<div class="line-block">     <a href=".././files/Manuals/Olex%20and%20OpenCPN/">Olex and OpenCPN</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Olex%20and%20OpenCPN/">Olex and OpenCPN</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="poseidon">Poseidon</h3>
-<div class="line-block">     <a href=".././files/Manuals/Poseidon/Backup_Haul_Data_Extractor_Utility.pdf">Backup Haul Data Extractor Utility</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Poseidon/Poseidon%20Quick%20Reference%20User%20Guide.pdf">Poseidon Quick Reference User Guide</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Poseidon/Poseidon_SCS%20User%20Guide%20Version%202.0.pdf">Poseidon/SCS User Guide</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Poseidon/Backup_Haul_Data_Extractor_Utility.pdf">Backup Haul Data Extractor Utility</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Poseidon/Poseidon%20Quick%20Reference%20User%20Guide.pdf">Poseidon Quick Reference User Guide</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Poseidon/Poseidon_SCS%20User%20Guide%20Version%202.0.pdf">Poseidon/SCS User Guide</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="scanmar">Scanmar</h3>
-<div class="line-block">     <a href=".././files/Manuals/Scanmar/OEx/">Scanmar Photos (OEX)</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Scanmar/OEx/">Scanmar Photos (OEX)</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="time-sync">Time-Sync</h3>
-<div class="line-block">     <a href=".././files/Software/NetWork%20Time%20sync/SOFTROS%20Time%20Sync.pdf">Time Sync Software</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Software/NetWork%20Time%20sync/SOFTROS%20Time%20Sync.pdf">Time Sync Software</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="timezero">TimeZero</h3>
-<div class="line-block">     <a href=".././files/Manuals/TimeZero/Time%20Zero%20Manual.pdf">TimeZero Manual</a></div>
-<div class="line-block">     <a href=".././files/Manuals/TimeZero/TimeZero_Quick_Start_Guide.pdf">TimeZero Quick Start Guide</a></div>
-<div class="line-block">     <a href=".././files/Manuals/TimeZero/">TimeZero files</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/TimeZero/Time%20Zero%20Manual.pdf">TimeZero Manual</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/TimeZero/TimeZero_Quick_Start_Guide.pdf">TimeZero Quick Start Guide</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/TimeZero/">TimeZero files</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <h2 id="deck-sensors">Deck Sensors</h2>
-<div class="line-block">     <a href=".././files/Manuals/Light%20meters">Light Meters</a></div>
+<div class="section-content-body">
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Light%20meters">Light Meters</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="bottom-contact-sensor">Bottom contact sensor</h3>
-<div class="line-block">     <a href=".././files/Manuals/Bottom%20contact%20sensor/">BCS Resources</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Bottom%20contact%20sensor/">BCS Resources</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <h2 id="formsmanuals">Forms/Manuals</h2>
-<div class="line-block">     <a href=".././files/Purchase/Fuel%20for%20GOA%20boats.pdf">AK Seacard Vendors (GOA)</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Daily%20Temperature%20Entry.pdf">Daily Temperature Entry Instructions</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Checklist%20for%20FPC%20talk.pdf">FPC Talking Points</a></div>
-<div class="line-block">     <a href=".././files/Purchase/Fuel%20Purchase%20Form.pdf">Fuel Purchase Form</a></div>
-<div class="line-block">     <a href=".././files/Collections/forms/haulforms">Haul Forms</a></div>
-<div class="line-block">     <a href=".././files/Manuals/miscellaneous/Inter-Leg%20Communication%20Log.pdf">Inter-leg Communication Log</a></div>
-<div class="line-block">     <a href=".././files/purchase/">Other Purchase Forms</a></div>
-<div class="line-block">     <a href=".././files/Net%20and%20wire%20maintenance/Standard%20Trawling%20Procedures%20Form.pdf">Standard Trawling Procedures Form</a></div>
+<div class="section-content-body">
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Purchase/Fuel%20for%20GOA%20boats.pdf">AK Seacard Vendors (GOA)</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Daily%20Temperature%20Entry.pdf">Daily Temperature Entry Instructions</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Checklist%20for%20FPC%20talk.pdf">FPC Talking Points</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Purchase/Fuel%20Purchase%20Form.pdf">Fuel Purchase Form</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Collections/forms/haulforms">Haul Forms</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/miscellaneous/Inter-Leg%20Communication%20Log.pdf">Inter-leg Communication Log</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/purchase/">Other Purchase Forms</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Net%20and%20wire%20maintenance/Standard%20Trawling%20Procedures%20Form.pdf">Standard Trawling Procedures Form</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="station-progression-aigoa">Station Progression (AI/GOA)</h3>
-<div class="line-block">     <a href=".././files/Station%20info/AI_GOA/Station%20Progression/Station%20Log%20and%20Progression%20202601%20AKP.xlsm">Station Progression Worksheet (AKP)</a></div>
-<div class="line-block">     <a href=".././files/Station%20info/AI_GOA/Station%20Progression/Station%20Log%20and%20Progression%20202601%20OEX.xlsm">Station Progression Worksheet (OEX)</a></div>
-<div class="line-block">     <a href=".././files/Station%20info/AI_GOA/Station%20Progression/New%20Station%20Log%20and%20Progression%20Sheet%20Guide.pdf">Station Progression Worksheet Guide</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Station%20info/AI_GOA/Station%20Progression/Station%20Log%20and%20Progression%20202601%20AKP.xlsm">Station Progression Worksheet (AKP)</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Station%20info/AI_GOA/Station%20Progression/Station%20Log%20and%20Progression%20202601%20OEX.xlsm">Station Progression Worksheet (OEX)</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Station%20info/AI_GOA/Station%20Progression/New%20Station%20Log%20and%20Progression%20Sheet%20Guide.pdf">Station Progression Worksheet Guide</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <h2 id="net-resources">Net Resources</h2>
-<div class="line-block">     <a href=".././files/Net%20and%20wire%20maintenance/Net%20repair%20tracking%20forms/">Net Repair Tracking Forms</a></div>
-<div class="line-block">     <a href=".././files/Net%20and%20wire%20maintenance/">Net Repair and Maintenance Resources</a></div>
-<div class="line-block">     <a href=".././files/Net%20and%20wire%20maintenance/sink%20times.pdf">Sink Times</a></div>
+<div class="section-content-body">
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Net%20and%20wire%20maintenance/Net%20repair%20tracking%20forms/">Net Repair Tracking Forms</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Net%20and%20wire%20maintenance/">Net Repair and Maintenance Resources</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Net%20and%20wire%20maintenance/sink%20times.pdf">Sink Times</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
 <h3 id="scope-tables">Scope tables</h3>
-<div class="line-block">     <a href=".././files/Manuals/Survey%20operation%20manuals/EBS%20Scope%20Table.pdf">EBS scope table</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Survey%20operation%20manuals/AI%20GOA%20Scope%20table.pdf">GOA/AI scope table</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Survey%20operation%20manuals/NBS%20Scope%20Table.pdf">NBS scope table</a></div>
-<div class="line-block">     <a href=".././files/Manuals/Survey%20operation%20manuals/Scope_vs_RAPP_counts.pdf">Scope vs. RAPP counts</a></div>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Survey%20operation%20manuals/EBS%20Scope%20Table.pdf">EBS scope table</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Survey%20operation%20manuals/AI%20GOA%20Scope%20table.pdf">GOA/AI scope table</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Survey%20operation%20manuals/NBS%20Scope%20Table.pdf">NBS scope table</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Survey%20operation%20manuals/Scope_vs_RAPP_counts.pdf">Scope vs. RAPP counts</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <h2 id="wiremarking">Wiremarking</h2>
-<div class="line-block">     <a href=".././files/net%20and%20wire%20maintenance/wiremarking/OEX%202022%20photos/">Dockside Wiremarking Photos (OEX)</a></div>
-<div class="line-block">     <a href=".././files/net%20and%20wire%20maintenance/wiremarking/wire_marking_dock_2018.pdf">Dockside Wiremarking Protocols (EBS)</a></div>
-<div class="line-block">     <a href=".././files/net%20and%20wire%20maintenance/wiremarking/Walk%20through%20dockside%20wiremarking.pdf">Dockside Wiremarking Walk Through (GOA/AI)</a></div>
-<div class="line-block">     <a href=".././files/Net%20and%20wire%20maintenance/wiremarking/Trawl%20Warp%20Measuring%20Procedure%20form.pdf">Trawl Warp Measuring Procedure Form</a></div>
-<div class="line-block">     <a href=".././files/Net%20and%20wire%20maintenance/wiremarking/GOA%20AI%20Wire%20Marking%20and%20other%20procedures.pdf">Wiremarking Procedures (GOA/AI)</a></div>
-<script>
-function myFunction() {
-var input, filter, table, tr, td, i, txtValue;
-input = document.getElementById("myInput");
-filter = input.value.toUpperCase();
-table = document.getElementById("myTable");
-tr = table.getElementsByTagName("tr");
-for (i = 0; i < tr.length; i++) {
-td = tr[i].getElementsByTagName("td")[1];
-if (td) {
-txtValue = td.textContent || td.innerText;
-if (txtValue.toUpperCase().indexOf(filter) > -1) {
-tr[i].style.display = "";
-} else {
-tr[i].style.display = "none";
-}
-}       
-}
-}
-</script>
-<hr />
+<div class="section-content-body">
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/net%20and%20wire%20maintenance/wiremarking/OEX%202022%20photos/">Dockside Wiremarking Photos (OEX)</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/net%20and%20wire%20maintenance/wiremarking/wire_marking_dock_2018.pdf">Dockside Wiremarking Protocols (EBS)</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/net%20and%20wire%20maintenance/wiremarking/Walk%20through%20dockside%20wiremarking.pdf">Dockside Wiremarking Walk Through (GOA/AI)</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Net%20and%20wire%20maintenance/wiremarking/Trawl%20Warp%20Measuring%20Procedure%20form.pdf">Trawl Warp Measuring Procedure Form</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Net%20and%20wire%20maintenance/wiremarking/GOA%20AI%20Wire%20Marking%20and%20other%20procedures.pdf">Wiremarking Procedures (GOA/AI)</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
