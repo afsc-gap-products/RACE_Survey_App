@@ -3095,21 +3095,46 @@ background-color: #f9f9f9;
   });
   </script>
   <style type="text/css">
-
-.distill-site-header{ font-size: 12px;
+.distill-site-header {
+font-size: 14px;
 }
+
 .distill-site-nav {
-z-index: 1000;
+position: sticky;
+top: 0;
+z-index: 9999;
 }
 
-.dt-toc nav h3 {
+.distill-site-nav .nav-right {
+margin-left: auto;
+display: flex;
+align-items: center;
+}
+
+.distill-site-nav a {
+white-space: nowrap;
+}
+
+
+@media screen and (max-width: 768px) {
+.distill-site-nav {
 display: block !important;
-visibility: visible !important;
+height: auto !important;
+}
+.distill-site-nav .nav-right {
+margin-left: 0 !important;
+display: block !important;
+}
+.distill-site-nav a {
+display: block;
+padding: 0.5rem 0;
+white-space: normal;
+}
 }
 </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <style type="text/css">.distill-site-header{ font-size: 12px;}.distill-site-nav {z-index: 1000;}.dt-toc nav h3 {display: block !important;visibility: visible !important;}</style>
+  <style type="text/css">.distill-site-header {font-size: 14px;}.distill-site-nav {position: sticky;top: 0;z-index: 9999;}.distill-site-nav .nav-right {margin-left: auto;display: flex;align-items: center;}.distill-site-nav a {white-space: nowrap;}@media screen and (max-width: 768px) {.distill-site-nav {display: block !important;height: auto !important;}.distill-site-nav .nav-right {margin-left: 0 !important;display: block !important;}.distill-site-nav a {display: block;padding: 0.5rem 0;white-space: normal;}}</style>
 
 </head>
 
@@ -3248,7 +3273,8 @@ Tasklists
 </ul></li>
 <li><a href="#deck-sensors" id="toc-deck-sensors">Deck Sensors</a>
 <ul>
-<li><a href="#bottom-contact-sensor" id="toc-bottom-contact-sensor">Bottom contact sensor</a></li>
+<li><a href="#bottom-contact-sensor" id="toc-bottom-contact-sensor">Bottom Contact Sensor</a></li>
+<li><a href="#light-meter" id="toc-light-meter">Light Meter</a></li>
 </ul></li>
 <li><a href="#formsmanuals" id="toc-formsmanuals">Forms/Manuals</a>
 <ul>
@@ -3677,11 +3703,15 @@ margin-top: 0 !important;
 </div>
 <h2 id="deck-sensors">Deck Sensors</h2>
 <div class="section-content-body">
-<div class="orphan-content">
+
+</div>
+<h3 id="bottom-contact-sensor">Bottom Contact Sensor</h3>
+<div class="section-content-continuation">
+<div class="subsection-content">
 <div class="resource-item">
 <div class="resource-title">
 <p>
-<a href=".././files/Manuals/Light%20meters">Light Meters</a>
+<a href=".././files/Manuals/Bottom%20contact%20sensor/">BCS Resources</a>
 </p>
 </div>
 <div class="resource-description">
@@ -3690,13 +3720,13 @@ margin-top: 0 !important;
 </div>
 </div>
 </div>
-<h3 id="bottom-contact-sensor">Bottom contact sensor</h3>
+<h3 id="light-meter">Light Meter</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
 <div class="resource-item">
 <div class="resource-title">
 <p>
-<a href=".././files/Manuals/Bottom%20contact%20sensor/">BCS Resources</a>
+<a href=".././files/Manuals/Light%20meters">Light Meters</a>
 </p>
 </div>
 <div class="resource-description">
@@ -3982,17 +4012,29 @@ margin-top: 0 !important;
 
 
 <!--radix_placeholder_site_after_body-->
+<div style="
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid #e5e7eb;
+  line-height: 1.5;
+">
 
-<p style="text-align: center; color:grey;"> <i><b>Corrections:</b> If you see mistakes or want to suggest changes, please create an <a href="https://github.com/afsc-gap-products/RACE_Survey_App/issues"> issue</a> on the source repository or </i></p>
-<p style="text-align: center; color:grey;"> <i>reach out to Sarah Friedman (Sarah.Friedman AT noaa.gov).</i></p>
+  If you see mistakes or have suggestions, please open an
+  <a href="https://github.com/afsc-gap-products/RACE_Survey_App/issues" style="color:#003b5c; text-decoration: none; font-weight: 500;">
+    issue on GitHub
+  </a>
+  or contact the maintainer below:
 
-<!-- 
-<p style="text-align: center; color:grey;"> 
-  <i> This page was last compiled on 
-    <script> document.write(new Date().toLocaleDateString()); </script>. 
+  <br>
+
+  <i>
+    Sarah Friedman (Sarah.Friedman AT noaa.gov)
   </i>
-</p> 
--->
+
+</div>
 
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->

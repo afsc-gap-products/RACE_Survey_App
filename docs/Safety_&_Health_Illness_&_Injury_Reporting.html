@@ -3095,21 +3095,46 @@ background-color: #f9f9f9;
   });
   </script>
   <style type="text/css">
-
-.distill-site-header{ font-size: 12px;
+.distill-site-header {
+font-size: 14px;
 }
+
 .distill-site-nav {
-z-index: 1000;
+position: sticky;
+top: 0;
+z-index: 9999;
 }
 
-.dt-toc nav h3 {
+.distill-site-nav .nav-right {
+margin-left: auto;
+display: flex;
+align-items: center;
+}
+
+.distill-site-nav a {
+white-space: nowrap;
+}
+
+
+@media screen and (max-width: 768px) {
+.distill-site-nav {
 display: block !important;
-visibility: visible !important;
+height: auto !important;
+}
+.distill-site-nav .nav-right {
+margin-left: 0 !important;
+display: block !important;
+}
+.distill-site-nav a {
+display: block;
+padding: 0.5rem 0;
+white-space: normal;
+}
 }
 </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <style type="text/css">.distill-site-header{ font-size: 12px;}.distill-site-nav {z-index: 1000;}.dt-toc nav h3 {display: block !important;visibility: visible !important;}</style>
+  <style type="text/css">.distill-site-header {font-size: 14px;}.distill-site-nav {position: sticky;top: 0;z-index: 9999;}.distill-site-nav .nav-right {margin-left: auto;display: flex;align-items: center;}.distill-site-nav a {white-space: nowrap;}@media screen and (max-width: 768px) {.distill-site-nav {display: block !important;height: auto !important;}.distill-site-nav .nav-right {margin-left: 0 !important;display: block !important;}.distill-site-nav a {display: block;padding: 0.5rem 0;white-space: normal;}}</style>
 
 </head>
 
@@ -3234,14 +3259,8 @@ Tasklists
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#at-sea-injury" id="toc-at-sea-injury">At-Sea Injury</a>
-<ul>
-<li><a href="#forms" id="toc-forms">Forms</a></li>
-</ul></li>
-<li><a href="#vehicular-accidents" id="toc-vehicular-accidents">Vehicular Accidents</a>
-<ul>
-<li><a href="#forms-1" id="toc-forms-1">Forms</a></li>
-</ul></li>
+<li><a href="#at-sea-injury-forms" id="toc-at-sea-injury-forms">At-Sea Injury Forms</a></li>
+<li><a href="#vehicular-accidents" id="toc-vehicular-accidents">Vehicular Accidents</a></li>
 </ul>
 </nav>
 </div>
@@ -3359,8 +3378,17 @@ margin-top: 0 !important;
 <p>
 <a href=".././files/Safety/Accidents/EMERGENCY%20NOTIFICATION%20PLAN%202026.pdf"><strong>EMERGENCY NOTIFICATION PLAN</strong></a>
 </p>
-<p><span class="resource-subtitle">: If you have an acute or chronic injury from working aboard the vessel, document and report it to the Safety Lead and FPC.</p>
-All forms should be shared with the Safetly Lead and FPC.</span>
+<span class="resource-subtitle">If you have an acute or chronic injury from working aboard the vessel, document and report it to the Safety Lead and FPC.</span>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Safety/Accidents/AFSC_Injury_Reporting_Guide.pdf">Injury Reporting Guide</a>
+</p>
 </div>
 <div class="resource-description">
 
@@ -3377,19 +3405,15 @@ All forms should be shared with the Safetly Lead and FPC.</span>
 </div>
 </div>
 </div>
-<h2 id="at-sea-injury">At-Sea Injury</h2>
+<h2 id="at-sea-injury-forms">At-Sea Injury Forms</h2>
 <div class="section-content-body">
-
-</div>
-<h3 id="forms">Forms</h3>
-<div class="section-content-continuation">
-<div class="subsection-content">
+<div class="orphan-content">
 <div class="resource-item">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Accidents/At-Sea%20Incident%20Report%20Form_fillable.pdf">At-Sea Incident Report Form (fillable)</a>
 </p>
-<span class="resource-subtitle">: e.g., injury or near miss</span>
+<span class="resource-subtitle">e.g., injury or near miss</span>
 </div>
 <div class="resource-description">
 
@@ -3400,7 +3424,7 @@ All forms should be shared with the Safetly Lead and FPC.</span>
 <p>
 <a href=".././files/Safety/Accidents/Pay%20Compensation%20Form%20ca-1.pdf">CA-1 Reporting an Accident, Injury, or Illness</a>
 </p>
-<span class="resource-subtitle">: i.e., acute illness or injury</span>
+<span class="resource-subtitle">i.e., acute illness or injury</span>
 </div>
 <div class="resource-description">
 
@@ -3421,7 +3445,7 @@ All forms should be shared with the Safetly Lead and FPC.</span>
 <p>
 <a href=".././files/Safety/Accidents/CA-2%20Dept.%20of%20Labor%20Claim%20for%20Compensation.pdf">CA-2 Report an occupational disease</a>
 </p>
-<span class="resource-subtitle">: i.e., occupational/repetative motion illness/injury</span>
+<span class="resource-subtitle">i.e., occupational/repetative motion illness/injury</span>
 </div>
 <div class="resource-description">
 
@@ -3474,11 +3498,7 @@ All forms should be shared with the Safetly Lead and FPC.</span>
 </div>
 <h2 id="vehicular-accidents">Vehicular Accidents</h2>
 <div class="section-content-body">
-
-</div>
-<h3 id="forms-1">Forms</h3>
-<div class="section-content-continuation">
-<div class="subsection-content">
+<div class="orphan-content">
 <div class="resource-item">
 <div class="resource-title">
 <p>
@@ -3524,17 +3544,29 @@ All forms should be shared with the Safetly Lead and FPC.</span>
 
 
 <!--radix_placeholder_site_after_body-->
+<div style="
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid #e5e7eb;
+  line-height: 1.5;
+">
 
-<p style="text-align: center; color:grey;"> <i><b>Corrections:</b> If you see mistakes or want to suggest changes, please create an <a href="https://github.com/afsc-gap-products/RACE_Survey_App/issues"> issue</a> on the source repository or </i></p>
-<p style="text-align: center; color:grey;"> <i>reach out to Sarah Friedman (Sarah.Friedman AT noaa.gov).</i></p>
+  If you see mistakes or have suggestions, please open an
+  <a href="https://github.com/afsc-gap-products/RACE_Survey_App/issues" style="color:#003b5c; text-decoration: none; font-weight: 500;">
+    issue on GitHub
+  </a>
+  or contact the maintainer below:
 
-<!-- 
-<p style="text-align: center; color:grey;"> 
-  <i> This page was last compiled on 
-    <script> document.write(new Date().toLocaleDateString()); </script>. 
+  <br>
+
+  <i>
+    Sarah Friedman (Sarah.Friedman AT noaa.gov)
   </i>
-</p> 
--->
+
+</div>
 
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->

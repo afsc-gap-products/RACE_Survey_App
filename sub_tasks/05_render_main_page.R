@@ -1,45 +1,45 @@
-##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-##   Render the main page (index.html)
-##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+site_yml <- readLines("templates/_site_template.txt")
 
-##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-##   Write yaml script using a template and then going by the structure
-##   of the comb dataframe
-##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-site_yml <- base::readLines(con = "templates/_site_template.txt")
-
-a <- ""
-for (ipage in unique(x = comb$page)) {
-  a <- paste(a, (paste0('   - text: "', ipage, '"
-    ', '  menu: 
-')))
-  
-  temp_subpages <- 
-    subset(x = comb, subset = page == ipage)
-  
-  for (isubpage in 1:nrow(temp_subpages)) {
-    a <- 
-      paste(a, (paste0('      - text: "', temp_subpages$sub_page[isubpage], '"
-    ', '     href: ', temp_subpages$web_page[isubpage], "
-")))
-  }
+yaml_escape <- function(x) {
+  x <- gsub('"', '\\"', x, fixed = TRUE)
+  paste0('"', x, '"')
 }
 
-site_yml <- gsub(pattern = "INSERT_NAVIGATION",
-                 replacement = a,
-                 x = site_yml, 
-                 fixed = TRUE)
+# Build navigation as character vector (one line per element)
+nav_lines <- comb %>%
+  dplyr::filter(!is.na(sub_page), sub_page != "") %>%
+  dplyr::group_by(page) %>%
+  dplyr::group_split() %>%
+  purrr::map(function(df) {
+    c(
+      paste0("    - text: ", yaml_escape(df$page[1])),
+      "      menu:",
+      purrr::map2_chr(
+        df$sub_page,
+        df$web_page,
+        ~ paste0(
+          "        - text: ", yaml_escape(.x), "\n",
+          "          href: ", yaml_escape(.y)
+        )
+      )
+    )
+  }) %>%
+  unlist()
 
-# write new yml file
-utils::write.table(x = site_yml,
-                   file = "templates/_site.yml",
-                   row.names = FALSE,
-                   col.names = FALSE,
-                   quote = FALSE)
+# Find placeholder line and replace it cleanly
+insert_line <- which(site_yml == "INSERT_NAVIGATION")
 
-rm(a, ipage, isubpage, site_yml, temp_subpages)
+site_yml <- append(
+  site_yml[-insert_line],
+  values = nav_lines,
+  after = insert_line - 1
+)
 
-rmarkdown::render(input = "templates/index.Rmd",
-                  output_dir = "docs/",
-                  output_file =  "index.html")
+writeLines(site_yml, "templates/_site.yml")
 
+rmarkdown::render(
+  input = "templates/index.Rmd",
+  output_dir = "docs",
+  output_file = "index.html",
+  quiet = TRUE
+)

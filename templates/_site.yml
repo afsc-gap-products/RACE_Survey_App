@@ -10,62 +10,61 @@ navbar:
   source_url: true
   right:
     - text: "Field Operations"
-      menu: 
-       - text: "Deck Lead Resources"
-         href: Field_Operations_Deck_Lead_Resources.html
-       - text: "FPC Resources"
-         href: Field_Operations_FPC_Resources.html
-       - text: "General"
-         href: Field_Operations_General.html
-       - text: "Sampling & Collections"
-         href: Field_Operations_Sampling_&_Collections.html
+      menu:
+        - text: "Deck Lead Resources"
+          href: "Field_Operations_Deck_Lead_Resources.html"
+        - text: "FPC Resources"
+          href: "Field_Operations_FPC_Resources.html"
+        - text: "General"
+          href: "Field_Operations_General.html"
+        - text: "Sampling & Collections"
+          href: "Field_Operations_Sampling_&_Collections.html"
     - text: "Personnel & Travel"
-      menu: 
-       - text: "Schedules & Contacts"
-         href: Personnel_&_Travel_Schedules_&_Contacts.html
-       - text: "Travel & Timekeeping"
-         href: Personnel_&_Travel_Travel_&_Timekeeping.html
-       - text: "Flight Itineraries"
-         href: Personnel_&_Travel_Flight_Itineraries.html
+      menu:
+        - text: "Schedules & Contacts"
+          href: "Personnel_&_Travel_Schedules_&_Contacts.html"
+        - text: "Travel & Timekeeping"
+          href: "Personnel_&_Travel_Travel_&_Timekeeping.html"
+        - text: "Flight Itineraries"
+          href: "Personnel_&_Travel_Flight_Itineraries.html"
     - text: "Safety & Health"
-      menu: 
-       - text: "Emergency Flow Chart"
-         href: ../files/Safety/Accidents/accident.htm
-       - text: "Ergonomic Resources"
-         href: Safety_&_Health_Ergonomic_Resources.html
-       - text: "Harassment Resources"
-         href: Safety_&_Health_Harassment_Resources.html
-       - text: "Hazmat"
-         href: Safety_&_Health_Hazmat.html
-       - text: "Illness & Injury Reporting"
-         href: Safety_&_Health_Illness_&_Injury_Reporting.html
-       - text: "Manuals & References"
-         href: Safety_&_Health_Manuals_&_References.html
+      menu:
+        - text: "Emergency Flow Chart"
+          href: "../files/Safety/Accidents/accident.htm"
+        - text: "Ergonomic Resources"
+          href: "Safety_&_Health_Ergonomic_Resources.html"
+        - text: "Harassment Resources"
+          href: "Safety_&_Health_Harassment_Resources.html"
+        - text: "Hazmat"
+          href: "Safety_&_Health_Hazmat.html"
+        - text: "Illness & Injury Reporting"
+          href: "Safety_&_Health_Illness_&_Injury_Reporting.html"
+        - text: "Manuals & References"
+          href: "Safety_&_Health_Manuals_&_References.html"
     - text: "Software"
-      menu: 
-       - text: "Software & drivers"
-         href: Software_Software_&_drivers.html
+      menu:
+        - text: "Software & drivers"
+          href: "Software_Software_&_drivers.html"
     - text: "Species Info"
-      menu: 
-       - text: "Codebook"
-         href: ../files/SpeciesID/SpeciesCodeManual.pdf
-       - text: "Protected Species"
-         href: Species_Info_Protected_Species.html
-       - text: "Minimum ID Table"
-         href: Species_Info_Minimum_ID_Table.html
-       - text: "Species ID Guides"
-         href: Species_Info_Species_ID_Guides.html
-       - text: "Fish ID by Taxa"
-         href: Species_Info_Fish_ID_by_Taxa.html
+      menu:
+        - text: "Codebook"
+          href: "../files/SpeciesID/SpeciesCodeManual.pdf"
+        - text: "Protected Species"
+          href: "Species_Info_Protected_Species.html"
+        - text: "Minimum ID Table"
+          href: "Species_Info_Minimum_ID_Table.html"
+        - text: "Species ID Guides"
+          href: "Species_Info_Species_ID_Guides.html"
+        - text: "Fish ID by Taxa"
+          href: "Species_Info_Fish_ID_by_Taxa.html"
     - text: "Tasklists"
-      menu: 
-       - text: "Beginning of Survey or Leg"
-         href: Tasklists_Beginning_of_Survey_or_Leg.html
-       - text: "End of Leg"
-         href: Tasklists_End_of_Leg.html
-       - text: "End of Survey"
-         href: Tasklists_End_of_Survey.html
-
+      menu:
+        - text: "Beginning of Survey or Leg"
+          href: "Tasklists_Beginning_of_Survey_or_Leg.html"
+        - text: "End of Leg"
+          href: "Tasklists_End_of_Leg.html"
+        - text: "End of Survey"
+          href: "Tasklists_End_of_Survey.html"
     - icon: fab fa-github
       href: https://github.com/afsc-gap-products/RACE_Survey_App
 favicon: img/Fish Icon PacCod.png

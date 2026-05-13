@@ -1,16 +1,49 @@
-/* --------------Navbar-------------------- */
-
-.distill-site-header{ 
+.distill-site-header {
   font-size: 14px;
 }
 
+/* ================================
+   BASE NAVBAR (DESKTOP)
+   ================================ */
 
 .distill-site-nav {
-  z-index: 1000;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
-/* Force display of level 3 TOC items */
-.dt-toc nav h3 {
-  display: block !important;
-  visibility: visible !important;
+/* left/right structure (ONLY desktop layout behavior) */
+.distill-site-nav .nav-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* keep items clean */
+.distill-site-nav a {
+  white-space: nowrap;
+}
+
+/* ================================
+   MOBILE / EXPANDED MENU SAFETY
+   ================================ */
+
+/* DO NOT let flex rules leak into mobile dropdown */
+@media screen and (max-width: 768px) {
+
+  .distill-site-nav {
+    display: block !important;
+    height: auto !important;
+  }
+
+  .distill-site-nav .nav-right {
+    margin-left: 0 !important;
+    display: block !important;
+  }
+
+  .distill-site-nav a {
+    display: block;
+    padding: 0.5rem 0;
+    white-space: normal;
+  }
 }

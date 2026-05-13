@@ -3095,21 +3095,46 @@ background-color: #f9f9f9;
   });
   </script>
   <style type="text/css">
-
-.distill-site-header{ font-size: 12px;
+.distill-site-header {
+font-size: 14px;
 }
+
 .distill-site-nav {
-z-index: 1000;
+position: sticky;
+top: 0;
+z-index: 9999;
 }
 
-.dt-toc nav h3 {
+.distill-site-nav .nav-right {
+margin-left: auto;
+display: flex;
+align-items: center;
+}
+
+.distill-site-nav a {
+white-space: nowrap;
+}
+
+
+@media screen and (max-width: 768px) {
+.distill-site-nav {
 display: block !important;
-visibility: visible !important;
+height: auto !important;
+}
+.distill-site-nav .nav-right {
+margin-left: 0 !important;
+display: block !important;
+}
+.distill-site-nav a {
+display: block;
+padding: 0.5rem 0;
+white-space: normal;
+}
 }
 </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <style type="text/css">.distill-site-header{ font-size: 12px;}.distill-site-nav {z-index: 1000;}.dt-toc nav h3 {display: block !important;visibility: visible !important;}</style>
+  <style type="text/css">.distill-site-header {font-size: 14px;}.distill-site-nav {position: sticky;top: 0;z-index: 9999;}.distill-site-nav .nav-right {margin-left: auto;display: flex;align-items: center;}.distill-site-nav a {white-space: nowrap;}@media screen and (max-width: 768px) {.distill-site-nav {display: block !important;height: auto !important;}.distill-site-nav .nav-right {margin-left: 0 !important;display: block !important;}.distill-site-nav a {display: block;padding: 0.5rem 0;white-space: normal;}}</style>
 
 </head>
 
@@ -3435,7 +3460,7 @@ margin-top: 0 !important;
 <div class="resource-item">
 <div class="resource-title">
 <p>
-<a href=".././files/Travel/Travel%20Advisory%2008-6%20-%20Rental%20Car%20Procedures%20in%20Alaska.pdf">Rental Car Procedures AK</a>
+<a href=".././files/Travel/ALASKA-TAX%20EXEMPT%20INFO.pdf">AK Tax Exempt Info</a>
 </p>
 </div>
 <div class="resource-description">
@@ -3445,7 +3470,7 @@ margin-top: 0 !important;
 <div class="resource-item">
 <div class="resource-title">
 <p>
-<a href=".././files/Travel/AS%2043.52%20Vehicle%20Form.pdf">Vehicle Rental Tax Exempt Form</a>
+<a href=".././files/Travel/A%20Stranded%20NOAA%20Scientists%20Guide%20to%20Flight%20Cancellations.png">Guide to Flight Cancellations</a>
 </p>
 </div>
 <div class="resource-description">
@@ -3485,7 +3510,7 @@ margin-top: 0 !important;
 <div class="resource-item">
 <div class="resource-title">
 <p>
-<a href=".././files/Travel/ALASKA-TAX%20EXEMPT%20INFO.pdf">AK Tax Exempt Info</a>
+<a href=".././files/Travel/Travel%20Advisory%2008-6%20-%20Rental%20Car%20Procedures%20in%20Alaska.pdf">Rental Car Procedures AK</a>
 </p>
 </div>
 <div class="resource-description">
@@ -3495,7 +3520,7 @@ margin-top: 0 !important;
 <div class="resource-item">
 <div class="resource-title">
 <p>
-<a href=".././files/Travel/A%20Stranded%20NOAA%20Scientists%20Guide%20to%20Flight%20Cancellations.png">Guide to Flight Cancellations</a>
+<a href=".././files/Travel/AS%2043.52%20Vehicle%20Form.pdf">Vehicle Rental Tax Exempt Form</a>
 </p>
 </div>
 <div class="resource-description">
@@ -3517,17 +3542,29 @@ margin-top: 0 !important;
 
 
 <!--radix_placeholder_site_after_body-->
+<div style="
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid #e5e7eb;
+  line-height: 1.5;
+">
 
-<p style="text-align: center; color:grey;"> <i><b>Corrections:</b> If you see mistakes or want to suggest changes, please create an <a href="https://github.com/afsc-gap-products/RACE_Survey_App/issues"> issue</a> on the source repository or </i></p>
-<p style="text-align: center; color:grey;"> <i>reach out to Sarah Friedman (Sarah.Friedman AT noaa.gov).</i></p>
+  If you see mistakes or have suggestions, please open an
+  <a href="https://github.com/afsc-gap-products/RACE_Survey_App/issues" style="color:#003b5c; text-decoration: none; font-weight: 500;">
+    issue on GitHub
+  </a>
+  or contact the maintainer below:
 
-<!-- 
-<p style="text-align: center; color:grey;"> 
-  <i> This page was last compiled on 
-    <script> document.write(new Date().toLocaleDateString()); </script>. 
+  <br>
+
+  <i>
+    Sarah Friedman (Sarah.Friedman AT noaa.gov)
   </i>
-</p> 
--->
+
+</div>
 
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->

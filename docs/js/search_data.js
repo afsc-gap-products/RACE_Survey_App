@@ -523,13 +523,13 @@ var searchData = [
   },
   {
     "title": "BCS Resources",
-    "section": "Bottom contact sensor",
+    "section": "Bottom Contact Sensor",
     "url_loc": "../files/Manuals/Bottom contact sensor/",
     "source": "entries"
   },
   {
     "title": "Light Meters",
-    "section": "",
+    "section": "Light Meter",
     "url_loc": "../files/Manuals/Light meters",
     "source": "entries"
   },
@@ -1200,7 +1200,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Setting SOP",
+    "title": "Settings SOP",
     "section": "CTD SBE19plus",
     "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD Setting SOPs.pdf",
     "source": "entries"
@@ -1375,25 +1375,25 @@ var searchData = [
   },
   {
     "title": "AK Tax Exempt Info",
-    "section": "Rental Cars",
+    "section": "",
     "url_loc": "../files/Travel/ALASKA-TAX EXEMPT INFO.pdf",
     "source": "entries"
   },
   {
     "title": "Guide to Flight Cancellations",
-    "section": "Rental Cars",
+    "section": "",
     "url_loc": "../files/Travel/A Stranded NOAA Scientists Guide to Flight Cancellations.png",
     "source": "entries"
   },
   {
     "title": "Rental Car Procedures AK",
-    "section": "",
+    "section": "Rental Cars",
     "url_loc": "../files/Travel/Travel Advisory 08-6 - Rental Car Procedures in Alaska.pdf",
     "source": "entries"
   },
   {
     "title": "Vehicle Rental Tax Exempt Form",
-    "section": "",
+    "section": "Rental Cars",
     "url_loc": "../files/Travel/AS 43.52 Vehicle Form.pdf",
     "source": "entries"
   },
@@ -1686,6 +1686,12 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "Injury Reporting Guide",
+    "section": "",
+    "url_loc": "../files/Safety/Accidents/AFSC_Injury_Reporting_Guide.pdf",
+    "source": "entries"
+  },
+  {
     "title": "Medevac Info",
     "section": "",
     "url_loc": "../files/Safety/Accidents/MedEvac Info.pdf",
@@ -1693,52 +1699,52 @@ var searchData = [
   },
   {
     "title": "At-Sea Incident Report Form (fillable)",
-    "section": "Forms",
+    "section": "",
     "subtitle": "e.g., injury or near miss",
     "url_loc": "../files/Safety/Accidents/At-Sea Incident Report Form_fillable.pdf",
     "source": "entries"
   },
   {
     "title": "CA-1 and CA-2 Instructions",
-    "section": "Forms",
+    "section": "",
     "url_loc": "../files/Safety/Accidents/Filing CA-1 and CA-2 Employee Instructions.pdf",
     "source": "entries"
   },
   {
     "title": "CA-1 Reporting an Accident, Injury, or Illness",
-    "section": "Forms",
+    "section": "",
     "subtitle": "i.e., acute illness or injury",
     "url_loc": "../files/Safety/Accidents/Pay Compensation Form ca-1.pdf",
     "source": "entries"
   },
   {
     "title": "CA-2 Report an occupational disease",
-    "section": "Forms",
+    "section": "",
     "subtitle": "i.e., occupational/repetative motion illness/injury",
     "url_loc": "../files/Safety/Accidents/CA-2 Dept. of Labor Claim for Compensation.pdf",
     "source": "entries"
   },
   {
     "title": "CD-137 Report of Incident, Injury, Illness",
-    "section": "Forms",
+    "section": "",
     "url_loc": "../files/Safety/Accidents/cd-137.pdf",
     "source": "entries"
   },
   {
     "title": "CD-351 Report of Safety Hazard",
-    "section": "Forms",
+    "section": "",
     "url_loc": "../files/Safety/Accidents/CD-351 report of Safety Hazard.pdf",
     "source": "entries"
   },
   {
     "title": "UW Contractor Injury Report Form",
-    "section": "Forms",
+    "section": "",
     "url_loc": "../files/Safety/Accidents/UW_accident-incident_report.pdf",
     "source": "entries"
   },
   {
     "title": "Workers Comp Supervisor Completion CA-1",
-    "section": "Forms",
+    "section": "",
     "url_loc": "../files/Safety/Accidents/Workers Comp Supr Completion CA1.pdf",
     "source": "entries"
   },
@@ -1774,26 +1780,26 @@ var searchData = [
   },
   {
     "title": "SF-91 Vehicle Accident Report",
-    "section": "Forms",
+    "section": "",
     "url_loc": "../files/Safety/Accidents/SF-91.pdf",
     "source": "entries"
   },
   {
     "title": "SF-94 Witness Statement",
-    "section": "Forms",
+    "section": "",
     "url_loc": "../files/Safety/Accidents/SF-94.pdf",
     "source": "entries"
   },
   {
     "title": "SF-95 Tort Claim Form",
-    "section": "Forms",
+    "section": "",
     "url_loc": "../files/Safety/Accidents/sf95.pdf",
     "source": "entries"
   },
   {
     "title": "**EMERGENCY NOTIFICATION PLAN**",
     "section": "",
-    "subtitle": "If you have an acute or chronic injury from working aboard the vessel, document and report it to the Safety Lead and FPC. \n\nAll forms should be shared with the Safetly Lead and FPC.",
+    "subtitle": "If you have an acute or chronic injury from working aboard the vessel, document and report it to the Safety Lead and FPC.",
     "url_loc": "../files/Safety/Accidents/EMERGENCY NOTIFICATION PLAN 2026.pdf",
     "source": "entries"
   },
