@@ -2256,24 +2256,6 @@ var searchData = [
     "source": "guides"
   },
   {
-    "title": "Poster: Seastars of AK 1",
-    "section": "echinoderm",
-    "url_loc": "../files/SpeciesID/guides/inverts/AK seastars1.pdf",
-    "source": "guides"
-  },
-  {
-    "title": "Poster: Seastars of AK 2",
-    "section": "echinoderm",
-    "url_loc": "../files/SpeciesID/guides/inverts/AK seastars2.pdf",
-    "source": "guides"
-  },
-  {
-    "title": "Poster: Seastars of AK 3",
-    "section": "echinoderm",
-    "url_loc": "../files/SpeciesID/guides/inverts/AK seastars3.pdf",
-    "source": "guides"
-  },
-  {
     "title": "Sand Dollars",
     "section": "echinoderm",
     "url_loc": "../files/SpeciesID/guides/inverts/echinoderm/Sand dollars.pdf",
@@ -2597,37 +2579,36 @@ var searchData = [
   },
   {
     "title": "Tunicates of Alaska",
-    "section": "inverts",
+    "section": "ascidacea",
     "url_loc": "../files/SpeciesID/guides/inverts/tunicates-of-alaska.pdf",
     "source": "guides"
   },
   {
-    "title": "Mollusca photo guide Katrin Iken",
+    "title": "Mollusca Photo Guide",
     "section": "mollusc",
     "url_loc": "../files/SpeciesID/guides/inverts/Mollusca_Arctic_photoguide_Jan2021.pdf",
     "source": "guides"
   },
   {
-    "title": "Annelidae photo guide Katrin Iken",
+    "title": "Annelidae Photo Guide",
     "section": "worm",
     "url_loc": "../files/SpeciesID/guides/inverts/Annelida_Arctic_photoguide_Jan2021.pdf",
     "source": "guides"
   },
   {
-    "title": "Crustacea photo guide Katrin Iken",
+    "title": "Crustacea Photo Guide",
     "section": "arthropod",
     "url_loc": "../files/SpeciesID/guides/inverts/Crustacea_Arctic_photoguide_Jan2021.pdf",
     "source": "guides"
   },
   {
-    "title": "Echinodermata photo guide Katrin Iken",
+    "title": "Echinodermata Photo Guide",
     "section": "echinoderm",
     "url_loc": "../files/SpeciesID/guides/inverts/Echinodermata_Arctic_photoguide_Jan2021.pdf",
     "source": "guides"
   },
   {
-    "title": "Misc taxa photo guide Katrin Iken",
-    "section": "inverts",
+    "title": "Misc. Taxa Photo Guide",
     "url_loc": "../files/SpeciesID/guides/inverts/Misc_taxa_Arctic_photoguide_Jan2021.pdf",
     "source": "guides"
   }

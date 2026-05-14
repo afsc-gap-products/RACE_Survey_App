@@ -2,6 +2,107 @@
 title: "Travel Itineraries"
 ---
 
+<style>
+
+/* Page container feel */
+body {
+  background: #fafafa;
+}
+
+/* Section headers */
+h2 {
+  margin-top: 2rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  color: #374151;
+}
+
+/* Card wrapper for each survey table */
+.itinerary-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+/* Clean table styling */
+table {
+  width: 100% !important;
+  font-size: 0.95rem;
+  border-collapse: collapse;
+}
+
+th {
+  background: #f3f4f6 !important;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-weight: 600;
+}
+
+td, th {
+  padding: 0.6rem 0.9rem !important;
+  vertical-align: middle !important;
+}
+
+/* Center checkmarks */
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5),
+td:nth-child(6) {
+  text-align: center;
+  font-weight: 400;
+}
+
+/* Link styling */
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* “button-like” link for travel info */
+a[href*="travel"] {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  background: #eef2ff;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+/* spacing */
+p {
+  margin-bottom: 0.5rem;
+}
+
+.table-scroll-vert {
+  max-height: 450px;   /* adjust as needed */
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+/* keep header visible while scrolling */
+.table-scroll-vert thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #f3f4f6 !important;
+}
+
+</style>
+
+
 ```{r, results = 'asis', echo = F}
 # this code parses the names of the flight itineraries in this year's folder and generates a table with the person's name, what legs they are one, and the confirmation code. Files must be named with the following information in this order: NAME_Leg1_2_CONFIRMATIONCODE
 
@@ -37,10 +138,10 @@ tmp_table <- tibble(full_file = travel_plans) %>%
   ))) %>%
   dplyr::mutate(
     Name = str_extract(file, "^[A-Za-z]+"),
-    `Leg 1` = ifelse(grepl("l1|_l.+1", file, ignore.case = T), "x", ""),
-    `Leg 2` = ifelse(grepl("l2|_l.+2", file, ignore.case = T), "x", ""),
-    `Leg 3` = ifelse(grepl("l3|_l.+3", file, ignore.case = T), "x", ""),
-    `Leg 4` = ifelse(grepl("l4|_l.+4", file, ignore.case = T), "x", ""),
+    `Leg 1` = ifelse(grepl("l1|_l.+1", file, ignore.case = T), "✓", ""),
+    `Leg 2` = ifelse(grepl("l2|_l.+2", file, ignore.case = T), "✓", ""),
+    `Leg 3` = ifelse(grepl("l3|_l.+3", file, ignore.case = T), "✓", ""),
+    `Leg 4` = ifelse(grepl("l4|_l.+4", file, ignore.case = T), "✓", ""),
     Conf_No = str_extract(file, "[A-Za-z]+$"),
     Link = paste0(
       "[travel info](", path0, "/",
@@ -56,39 +157,59 @@ tmp_table <- tibble(full_file = travel_plans) %>%
 tabl <- tmp_table %>%
   dplyr::select(Name, Survey = survey, `Leg 1`:Link) %>%
   dplyr::mutate(ord = case_when(
-    `Leg 1` == "x" & `Leg 2` != "x" ~ 1,
-    `Leg 1` == "x" & `Leg 2` == "x" ~ 2,
-    `Leg 2` == "x" & `Leg 3` != "x" ~ 3,
-    `Leg 2` == "x" & `Leg 3` == "x" ~ 4,
-    `Leg 3` == "x" & `Leg 4` != "x" ~ 5,
-    `Leg 3` == "x" & `Leg 4` == "x" ~ 6,
-    `Leg 4` == "x" ~ 7
+    `Leg 1` == "✓" & `Leg 2` != "✓" ~ 1,
+    `Leg 1` == "✓" & `Leg 2` == "✓" ~ 2,
+    `Leg 2` == "✓" & `Leg 3` != "✓" ~ 3,
+    `Leg 2` == "✓" & `Leg 3` == "✓" ~ 4,
+    `Leg 3` == "✓" & `Leg 4` != "✓" ~ 5,
+    `Leg 3` == "✓" & `Leg 4` == "✓" ~ 6,
+    `Leg 4` == "✓" ~ 7
   ),
-  Name = tools::toTitleCase(
+  Name = str_to_title(
     Name
-  )) %>%
+  )
+  ) %>%
   dplyr::arrange(ord, Name) %>%
   dplyr::filter(!duplicated(.[, 1:4])) %>%
   dplyr::select(-ord) %>%
   split(.$Survey)
 
-surveys <- names(x = tabl)
-surveys[toupper(x = surveys) == "EBS"] <- "Bering Sea"
-surveys[toupper(x = surveys) == "GOA"] <- "Gulf of Alaska"
-surveys[toupper(x = surveys) == "AI"] <- "Aleutian Islands"
 
+survey_keys <- names(tabl)
+
+survey_labels <- dplyr::recode(
+  survey_keys,
+  EBS = "Bering Sea",
+  GOA = "Gulf of Alaska",
+  AI  = "Aleutian Islands"
+)
 
 cat(paste("##", year, "Survey Year"), "\n\n")
 
-for (i in 1:length(x = surveys)) {
-  cat(paste("###", surveys[i]), "\n\n")
-  g <- tabl[[i]] %>%
-    dplyr::select(-Survey)
-  print(kableExtra::kable(g,
-    format = "html", linesep = "",
-    align = c("l", rep("c", 4), "l")
-  ))
-  cat("\n")
+for (i in seq_along(survey_keys)) {
+
+  cat(paste0("\n\n### ", survey_labels[i], "\n"))
+
+  g <- tabl[[survey_keys[i]]] %>% dplyr::select(-Survey)
+
+ cat("<div class='itinerary-card'>")
+cat("<div class='table-scroll-vert'>")
+
+table_html <- kableExtra::kable(
+  g,
+  format = "html",
+  escape = FALSE,
+  align = c("l", rep("c", 4), "l")
+) %>%
+  kableExtra::kable_styling(
+    bootstrap_options = c("striped", "hover"),
+    full_width = TRUE
+  )
+
+cat(as.character(table_html))
+
+cat("</div>")
+cat("</div>\n")
 }
 
 rm(g, page_dat, tabl, tmp_table, i, page_desc, page_title, 

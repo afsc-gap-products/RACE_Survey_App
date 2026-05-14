@@ -3252,12 +3252,123 @@ Tasklists
 
 
 <div class="d-article">
+<style>
+
+body {
+background: #fafafa;
+}
+
+h1 {
+margin-top: 2rem;
+padding-bottom: 0.3rem;
+border-bottom: 2px solid #e5e7eb;
+}
+h2 {
+margin-top: 2rem;
+margin-bottom: 0.75rem;
+color: #111827;
+}
+
+.taxa-card {
+background: white;
+border: 1px solid #e5e7eb;
+border-radius: 14px;
+padding: 1rem 1.25rem;
+margin-bottom: 2rem;
+box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+table {
+width: 100% !important;
+font-size: 0.95rem;
+border-collapse: separate !important;
+border-spacing: 0;
+}
+
+th {
+background: #f3f4f6 !important;
+font-weight: 600;
+padding: 0.7rem 0.9rem !important;
+border-bottom: 2px solid #e5e7eb !important;
+}
+
+td {
+padding: 0.6rem 0.9rem !important;
+vertical-align: top !important;
+border-bottom: 1px solid #eef2f7;
+}
+
+tbody tr:last-child td {
+border-bottom: none;
+}
+
+tbody tr:nth-child(even) {
+background: #fcfcfd;
+}
+
+a {
+color: #2563eb;
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+
+td a {
+padding: 0.15rem 0.4rem;
+font-size: 1rem;
+}
+
+td:first-child {
+font-weight: 500;
+color: #111827;
+}
+
+.kable-table {
+margin-bottom: 0;
+}
+.resource-chip {
+display: inline-block;
+padding: 0.2rem 0.6rem;
+background: #eef2ff;
+border: 1px solid #dbe3ff;
+border-radius: 999px;
+font-size: 1.5rem;
+<!-- color: #1d4ed8; -->
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.resource-chip:hover {
+  background: #e0e7ff;
+  text-decoration: none;
+}
+
+.table-scroll-vert {
+  max-height: 450px;   /* adjust as needed */
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+/* keep header visible while scrolling */
+.table-scroll-vert thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #f3f4f6 !important;
+}
+
+</style>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<h1 id="algae">Algae</h1>
-<table>
+<h2 id="algae">Algae</h2>
+<div class="taxa-card">
+<div class="table-scroll-vert">
+<table class="kable-table">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3279,8 +3390,12 @@ Algae
 </tr>
 </tbody>
 </table>
-<h1 id="birds-and-mammals">Birds and Mammals</h1>
-<table>
+</div>
+</div>
+<h2 id="birds-and-mammals">Birds and Mammals</h2>
+<div class="taxa-card">
+<div class="table-scroll-vert">
+<table class="kable-table">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3293,7 +3408,7 @@ Reference
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="5">
+<td style="text-align:left;font-weight: bold;">
 Bird
 </td>
 <td style="text-align:left;">
@@ -3301,47 +3416,63 @@ Bird
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/birdmammal/Albatross%20ID%20Guide.pdf">Albatross ID Guide</a>
+<a href="../files/SpeciesID/guides/birdmammal/Albatross%20ID%20Guide.pdf">Albatross Id Guide</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/birdmammal/ESA-listed%20AK%20Bird%20ID.pdf">ESA-listed AK Bird ID</a>
+<a href="../files/SpeciesID/guides/birdmammal/ESA-listed%20AK%20Bird%20ID.pdf">Esa-Listed Ak Bird Id</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
 <a href="../files/SpeciesID/guides/birdmammal/spectacled_eider_factsheet.pdf">Spectacled Eider Factsheet</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
 <a href="../files/SpeciesID/guides/birdmammal/Stellers%20Eider%20factsheet.pdf">Stellers Eider Factsheet</a>
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="3">
+<td style="text-align:left;font-weight: bold;">
 Mammal
 </td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/birdmammal/Key%20to%20pinnipeds.pdf">Key to Pinnipeds</a>
+<a href="../files/SpeciesID/guides/birdmammal/Key%20to%20pinnipeds.pdf">Key To Pinnipeds</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/birdmammal/MM%20of%20Alaska%20Arctic.pdf">Marine mammals of Alaska Arctic</a>
+<a href="../files/SpeciesID/guides/birdmammal/MM%20of%20Alaska%20Arctic.pdf">Marine Mammals Of Alaska Arctic</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
 <a href="../files/SpeciesID/guides/birdmammal/NPRight%20Whale%20Guide.pdf">North Pacific Right Whale Guide</a>
 </td>
 </tr>
 </tbody>
 </table>
-<h1 id="fishes-id-by-taxa">Fishes — <a href="./Species_ID_Fish_ID_by_Taxa.html">ID by Taxa</a></h1>
-<table>
+</div>
+</div>
+<h2 id="fishes-id-by-taxa">Fishes <a class="resource-chip" href="./Species_ID_Fish_ID_by_Taxa.html">ID by Taxa</a></h2>
+<div class="taxa-card">
+<div class="table-scroll-vert">
+<table class="kable-table">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3354,70 +3485,94 @@ Reference
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="13">
+<td style="text-align:left;font-weight: bold;">
 </td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/AK%20Fishes%202024.pdf"><strong>AK Fishes Deck Guide</strong></a>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/FMA%20SpeciesID%202019.pdf"><strong>FMA Species ID guide</strong></a>
+<a href="../files/SpeciesID/guides/fish/AK%20Fishes%202024.pdf"><strong>Ak Fishes Deck Guide</strong></a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/AK%20fish%20distributions%20Love%20et%20al.%202021.pdf">AK fish distributions (Love et al. 2021)</a>
+<a href="../files/SpeciesID/guides/fish/FMA%20SpeciesID%202019.pdf"><strong>Fma Species Id Guide</strong></a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/Mecklenburg2011.pdf">Biodiversity of Arctic Marine Fishes (Mecklenburg et al. 2011)</a>
+<a href="../files/SpeciesID/guides/fish/AK%20fish%20distributions%20Love%20et%20al.%202021.pdf">Ak Fish Distributions (Love Et Al. 2021)</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/Chukchi%202012%20FishID.pdf">Chukchi 2012 Fish ID</a>
+<a href="../files/SpeciesID/guides/fish/Mecklenburg2011.pdf">Biodiversity Of Arctic Marine Fishes (Mecklenburg Et Al. 2011)</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/EBS%202012%20FishID.pdf">EBS 2012 Fish ID</a>
+<a href="../files/SpeciesID/guides/fish/Chukchi%202012%20FishID.pdf">Chukchi 2012 Fish Id</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/Mecklenburg2015.pdf">Ichthyofaul Baselines in Pacific Arctic Region (Mecklenburg 2015)</a>
+<a href="../files/SpeciesID/guides/fish/EBS%202012%20FishID.pdf">Ebs 2012 Fish Id</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="https://apps-afsc.fisheries.noaa.gov/ichthyo/specframe.php">Larval fish ID site</a>
+<a href="../files/SpeciesID/guides/fish/Mecklenburg2015.pdf">Ichthyofaul Baselines In Pacific Arctic Region (Mecklenburg 2015)</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/Atlas%202016.pdf">Pacific Arctic Marine Fishes (Mecklenburg et al. 2016)</a>
+<a href="https://apps-afsc.fisheries.noaa.gov/ichthyo/specframe.php">Larval Fish Id Site</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/Skates%20AK%20field%20guide.pdf">Skates, Sculpins, Smelts AK Field Guide</a>
+<a href="../files/SpeciesID/guides/fish/Atlas%202016.pdf">Pacific Arctic Marine Fishes (Mecklenburg Et Al. 2016)</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/Species%20ID%20Confidence%20AIGOA.pdf">Species ID Confidence AI/GOA</a>
+<a href="../files/SpeciesID/guides/fish/Skates%20AK%20field%20guide.pdf">Skates, Sculpins, Smelts Ak Field Guide</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/Species%20ID%20Confidence%20EBS.pdf">Species ID Confidence EBS</a>
+<a href="../files/SpeciesID/guides/fish/Species%20ID%20Confidence%20AIGOA.pdf">Species Id Confidence Ai/Goa</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/Species%20ID%20Confidence%20EBSslope.pdf">Species ID Confidence EBS slope</a>
+<a href="../files/SpeciesID/guides/fish/Species%20ID%20Confidence%20EBSslope.pdf">Species Id Confidence Ebs Slope</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
+<td style="text-align:left;">
+<a href="../files/SpeciesID/guides/fish/Species%20ID%20Confidence%20EBS.pdf">Species Id Confidence Ebs</a>
 </td>
 </tr>
 <tr>
@@ -3433,7 +3588,7 @@ Gadidae
 Liparidae
 </td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/snailfishes_2022.pdf">Snailfish guide</a>
+<a href="../files/SpeciesID/guides/fish/snailfishes_2022.pdf">Snailfish Guide</a>
 </td>
 </tr>
 <tr>
@@ -3453,26 +3608,32 @@ Pleuronectidae
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="4">
+<td style="text-align:left;font-weight: bold;">
 Rajiidae
 </td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/Bpanthera%20orr2011.pdf">Bathyraja panthera (Orr et al. 2011)</a>
+<a href="../files/SpeciesID/guides/fish/Bpanthera%20orr2011.pdf">Bathyraja Panthera (Orr Et Al. 2011)</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/AK%20skates.pdf">Poster: Skates of AK</a>
+<a href="../files/SpeciesID/guides/fish/AK%20skates.pdf">Poster: Skates Of Ak</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
+<td style="text-align:left;">
+<a href="../files/SpeciesID/guides/fish/Skate%20egg%20case%20graph.pdf">Skate Egg Case Graph</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
 <a href="../files/SpeciesID/guides/fish/Skate%20eggcase%20key.pdf">Skate Eggcase Key</a>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/Skate%20egg%20case%20graph.pdf">Skate egg case graph</a>
 </td>
 </tr>
 <tr>
@@ -3484,29 +3645,37 @@ Salmonidae
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="5">
+<td style="text-align:left;font-weight: bold;">
 Sebastidae
 </td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/FMA%20Rockfish%20Guide%202016.pdf"><strong>FMA Rockfish Guide</strong></a>
+<a href="../files/SpeciesID/guides/fish/FMA%20Rockfish%20Guide%202016.pdf"><strong>Fma Rockfish Guide</strong></a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/blackspot_rougheye_printout.pdf">Blackspotted/Rougheye one pager</a>
+<a href="../files/SpeciesID/guides/fish/blackspot_rougheye_printout.pdf">Blackspotted/Rougheye One Pager</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/AKrockfishes%20orr02.pdf">Poster: Rockfishes of AK</a>
+<a href="../files/SpeciesID/guides/fish/AKrockfishes%20orr02.pdf">Poster: Rockfishes Of Ak</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/Rockfishes%20TM.pdf">Rockfish guide</a>
+<a href="../files/SpeciesID/guides/fish/Rockfishes%20TM.pdf">Rockfish Guide</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
 <a href="../files/SpeciesID/guides/fish/RougheyeBspotDeck.pdf">Rougheye Blackspotted Deck</a>
 </td>
@@ -3516,7 +3685,7 @@ Sebastidae
 Squalidae
 </td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/Squalus%20suckleyi2010.pdf">Squalus suckleyi resurrect (Ebert et al. 2010)</a>
+<a href="../files/SpeciesID/guides/fish/Squalus%20suckleyi2010.pdf">Squalus Suckleyi Resurrect (Ebert Et Al. 2010)</a>
 </td>
 </tr>
 <tr>
@@ -3524,13 +3693,17 @@ Squalidae
 Zoarcidae
 </td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/fish/AKeelpouts.pdf">Poster: Eelpouts of AK</a>
+<a href="../files/SpeciesID/guides/fish/AKeelpouts.pdf">Poster: Eelpouts Of Ak</a>
 </td>
 </tr>
 </tbody>
 </table>
-<h1 id="inverts">Inverts</h1>
-<table>
+</div>
+</div>
+<h2 id="inverts">Inverts</h2>
+<div class="taxa-card">
+<div class="table-scroll-vert">
+<table class="kable-table">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3543,90 +3716,129 @@ Reference
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="6">
+<td style="text-align:left;font-weight: bold;">
 </td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/AKinverts.pdf"><strong>AK Marine Invertebrates Deck Guide</strong></a>
+<a href="../files/SpeciesID/guides/inverts/AKinverts.pdf"><strong>Ak Marine Invertebrates Deck Guide</strong></a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/invert_guide_vol1.pdf"><strong>NEW AK inverts vol 1: shelled inverts</strong></a>
+<a href="../files/SpeciesID/guides/inverts/invert_guide_vol1.pdf"><strong>New Ak Inverts Vol 1: Shelled Inverts</strong></a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/invert_guide_vol2.pdf"><strong>NEW AK inverts vol 2: gelatinous inverts &amp; echinoderms</strong></a>
+<a href="../files/SpeciesID/guides/inverts/invert_guide_vol2.pdf"><strong>New Ak Inverts Vol 2: Gelatinous Inverts &amp; Echinoderms</strong></a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/Drumm%20AKinvertChecklist.pdf">Alaska Invertebrate Checklist (Drumm et al 2016)</a>
+<a href="../files/SpeciesID/guides/inverts/Drumm%20AKinvertChecklist.pdf">Alaska Invertebrate Checklist (Drumm Et Al 2016)</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/Keys%20to%20Free%20Vol1.pdf">Illustrated Keys pelagic inverts vol1</a>
+<a href="../files/SpeciesID/guides/inverts/Keys%20to%20Free%20Vol1.pdf">Illustrated Keys Pelagic Inverts Vol1</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/Keys%20to%20Free%20Vol2.pdf">Illustrated Keys pelagic inverts vol2</a>
+<a href="../files/SpeciesID/guides/inverts/Keys%20to%20Free%20Vol2.pdf">Illustrated Keys Pelagic Inverts Vol2</a>
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="5">
+<td style="text-align:left;font-weight: bold;">
+</td>
+<td style="text-align:left;">
+<a href="../files/SpeciesID/guides/inverts/Misc_taxa_Arctic_photoguide_Jan2021.pdf">Misc. Taxa Photo Guide</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
 Arthropod
 </td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/Chionoecetes%20Crabs.pdf">Chionecetes crabs guide</a>
+<a href="../files/SpeciesID/guides/inverts/Chionoecetes%20Crabs.pdf">Chionecetes Crabs Guide</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/Crustacea_Arctic_photoguide_Jan2021.pdf">Crustacea photo guide Katrin Iken</a>
+<a href="../files/SpeciesID/guides/inverts/Crustacea_Arctic_photoguide_Jan2021.pdf">Crustacea Photo Guide</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/Crustacean%20Key%20notes.pdf">Crustacean genera key</a>
+<a href="../files/SpeciesID/guides/inverts/Crustacean%20Key%20notes.pdf">Crustacean Genera Key</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/Acuna%20hermitcrabs.pdf">Hermit crab ID guide</a>
+<a href="../files/SpeciesID/guides/inverts/Acuna%20hermitcrabs.pdf">Hermit Crab Id Guide</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/Lithodid%20Crabs.pdf">Lithodid crabs field techniques</a>
+<a href="../files/SpeciesID/guides/inverts/Lithodid%20Crabs.pdf">Lithodid Crabs Field Techniques</a>
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="4">
+<td style="text-align:left;font-weight: bold;">
+Ascidacea
+</td>
+<td style="text-align:left;">
+<a href="../files/SpeciesID/guides/inverts/tunicates-of-alaska.pdf">Tunicates Of Alaska</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
 Cnidaria
 </td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/Coral%20field%20guide2021.pdf"><strong>Coral field guide (Wilborn et al 2021)</strong></a>
+<a href="../files/SpeciesID/guides/inverts/Coral%20field%20guide2021.pdf"><strong>Coral Field Guide (Wilborn Et Al 2021)</strong></a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/AlaskaCoralguide.pdf">AK Coral guide</a>
+<a href="../files/SpeciesID/guides/inverts/AlaskaCoralguide.pdf">Ak Coral Guide</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/cnidaria/coral_guide_Stone2023.pdf">Coral guide Stone et al. 2023</a>
+<a href="../files/SpeciesID/guides/inverts/cnidaria/coral_guide_Stone2023.pdf">Coral Guide Stone Et Al. 2023</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
 <a href="../files/SpeciesID/guides/inverts/Jellyfish%20placard.pdf">Jellyfish Placard</a>
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="9">
+<td style="text-align:left;font-weight: bold;">
 Echinoderm
 </td>
 <td style="text-align:left;">
@@ -3634,60 +3846,42 @@ Echinoderm
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/Echinodermata_Arctic_photoguide_Jan2021.pdf">Echinodermata photo guide Katrin Iken</a>
+<a href="../files/SpeciesID/guides/inverts/Echinodermata_Arctic_photoguide_Jan2021.pdf">Echinodermata Photo Guide</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
 <a href="../files/SpeciesID/guides/inverts/echinoderm/Echinoidea.pdf">Echinoidea</a>
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/AK%20seastars1.pdf">Poster: Seastars of AK 1</a>
+<td style="text-align:left;font-weight: bold;">
 </td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/AK%20seastars2.pdf">Poster: Seastars of AK 2</a>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/AK%20seastars3.pdf">Poster: Seastars of AK 3</a>
-</td>
-</tr>
-<tr>
 <td style="text-align:left;">
 <a href="../files/SpeciesID/guides/inverts/echinoderm/Sand%20dollars.pdf">Sand Dollars</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
+<td style="text-align:left;">
+<a href="../files/SpeciesID/guides/inverts/echinoderm/Holothuroidea.pdf">Sea Cucumbers</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
 <a href="../files/SpeciesID/guides/inverts/echinoderm/sea%20urchins.pdf">Sea Urchins</a>
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/echinoderm/Holothuroidea.pdf">Sea cucumbers</a>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="2">
-Inverts
-</td>
-<td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/Misc_taxa_Arctic_photoguide_Jan2021.pdf">Misc taxa photo guide Katrin Iken</a>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/tunicates-of-alaska.pdf">Tunicates of Alaska</a>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="6">
+<td style="text-align:left;font-weight: bold;">
 Mollusc
 </td>
 <td style="text-align:left;">
@@ -3695,73 +3889,95 @@ Mollusc
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/Neptunea.pdf">Ecology of snails (Genus Neptunea)</a>
+<a href="../files/SpeciesID/guides/inverts/Neptunea.pdf">Ecology Of Snails (Genus Neptunea)</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
+<td style="text-align:left;">
+<a href="../files/SpeciesID/guides/inverts/Mollusca_Arctic_photoguide_Jan2021.pdf">Mollusca Photo Guide</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
 <a href="../files/SpeciesID/guides/inverts/Mollusca%20training%202012.pdf">Mollusca Training Presentation</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/Mollusca_Arctic_photoguide_Jan2021.pdf">Mollusca photo guide Katrin Iken</a>
+<a href="../files/SpeciesID/guides/inverts/OctopusSex.pdf">Octopus Sexing</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/OctopusSex.pdf">Octopus sexing</a>
+<a href="../files/SpeciesID/guides/inverts/poster%20chitons%20of%20AK.pdf">Poster: Chitons Of Ak</a>
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/poster%20chitons%20of%20AK.pdf">Poster: Chitons of AK</a>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="2">
+<td style="text-align:left;font-weight: bold;">
 Sponge
 </td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/Deepwater%20sponges%20AI.pdf">Deepwater Sponges of AI</a>
+<a href="../files/SpeciesID/guides/inverts/Deepwater%20sponges%20AI.pdf">Deepwater Sponges Of Ai</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
 <a href="../files/SpeciesID/guides/inverts/Sponge%20Morphotypes.pdf">Sponge Morphotypes</a>
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;vertical-align: top !important;" rowspan="5">
+<td style="text-align:left;font-weight: bold;">
 Worm
 </td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/Annelida_Arctic_photoguide_Jan2021.pdf">Annelidae photo guide Katrin Iken</a>
+<a href="../files/SpeciesID/guides/inverts/Annelida_Arctic_photoguide_Jan2021.pdf">Annelidae Photo Guide</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
 <a href="../files/SpeciesID/guides/inverts/Errantiate%20Polychaetes.pdf">Hobson Benthic Errantiate Polychaetes</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/Errantiate%20Polychaeta.pdf">Polychaeta of the Far Eastern Seas (subclass Errantiate)</a>
+<a href="../files/SpeciesID/guides/inverts/Errantiate%20Polychaeta.pdf">Polychaeta Of The Far Eastern Seas (Subclass Errantiate)</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/Sedentariate%20Polychaeta.pdf">Polychaeta of the Far Eastern Seas (subclass Sedentariate)</a>
+<a href="../files/SpeciesID/guides/inverts/Sedentariate%20Polychaeta.pdf">Polychaeta Of The Far Eastern Seas (Subclass Sedentariate)</a>
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;">
+</td>
 <td style="text-align:left;">
-<a href="../files/SpeciesID/guides/inverts/Polychaetes%20of%20BC.pdf">Polychaetes of BC (Baldwin 2009)</a>
+<a href="../files/SpeciesID/guides/inverts/Polychaetes%20of%20BC.pdf">Polychaetes Of Bc (Baldwin 2009)</a>
 </td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 </div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

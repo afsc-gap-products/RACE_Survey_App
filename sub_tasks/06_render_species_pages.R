@@ -36,7 +36,7 @@ grps <- species_data %>%
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 rmarkdown::render("templates/species_id_id_by_taxa.Rmd", 
                   output_dir = "docs/",
-                  output_file = "Species_ID_ID_by_Taxa.html")
+                  output_file = "Species_Info_Fish_ID_by_Taxa.html")
 
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ##   Render pages if remake_species_pages = TRUE

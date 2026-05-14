@@ -1,7 +1,132 @@
 ---
 title: "Species Identification Guides"
 ---
-  
+
+<style>
+
+/* ===== Page background ===== */
+body {
+  background: #fafafa;
+}
+
+/* ===== Section headers ===== */
+h1 {
+  margin-top: 2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: #111827;
+}
+
+/* ===== Taxa card ===== */
+.taxa-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+/* ===== Table styling ===== */
+table {
+  width: 100% !important;
+  font-size: 0.95rem;
+  border-collapse: separate !important;
+  border-spacing: 0;
+}
+
+/* header */
+th {
+  background: #f3f4f6 !important;
+  font-weight: 600;
+  padding: 0.7rem 0.9rem !important;
+  border-bottom: 2px solid #e5e7eb !important;
+}
+
+/* cells */
+td {
+  padding: 0.6rem 0.9rem !important;
+  vertical-align: top !important;
+  border-bottom: 1px solid #eef2f7;
+}
+
+/* last row cleanup */
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* zebra striping (subtle) */
+tbody tr:nth-child(even) {
+  background: #fcfcfd;
+}
+
+/* ===== Links ===== */
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* make reference links feel like “resource chips” */
+td a {
+  padding: 0.15rem 0.4rem;
+  font-size: 1rem;
+}
+
+/* ===== Taxa label column emphasis ===== */
+td:first-child {
+  font-weight: 500;
+  color: #111827;
+}
+
+/* spacing between groups handled by card */
+.kable-table {
+  margin-bottom: 0;
+}
+
+.resource-chip {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background: #eef2ff;
+  border: 1px solid #dbe3ff;
+  border-radius: 999px;
+  font-size: 1.5rem;
+  <!-- color: #1d4ed8; -->
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.resource-chip:hover {
+  background: #e0e7ff;
+  text-decoration: none;
+}
+
+.table-scroll-vert {
+  max-height: 450px;   /* adjust as needed */
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+/* keep header visible while scrolling */
+.table-scroll-vert thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #f3f4f6 !important;
+}
+
+</style>
+
 ```{r guides, echo = F}
 all_files <- taxa_guides %>%
   dplyr::select(title, section, subsection, url_loc) %>%
@@ -14,13 +139,15 @@ all_files <- taxa_guides %>%
       TRUE ~ "Inverts"
     ),
     url_loc = stringr::str_replace(url_loc, "\\./files", "\\../files"),
-    reference = paste0("[", title, "](", gsub(" ", "%20", url_loc), ")")
+    reference = paste0("[", str_to_title(title), "](", gsub(" ", "%20", url_loc), ")")
   )
 ```
 
 
 ```{r, echo = FALSE, results = "asis"}
-fish_id <- paste0("[ID by Taxa](./Species_ID_Fish_ID_by_Taxa.html)")
+fish_id <- paste0(
+  "<a class='resource-chip' href='./Species_ID_Fish_ID_by_Taxa.html'>ID by Taxa</a>"
+)
 
 tabl <- all_files %>%
   dplyr::mutate(Taxa = ifelse(!is.na(subsection), subsection, section)) %>%
@@ -31,30 +158,52 @@ options(knitr.kable.NA = "")
 
 sec <- unique(tabl$taxa)
 
-for (i in 1:length(sec)) {
+for (i in seq_along(sec)) {
   tmp <- tabl %>%
     dplyr::filter(taxa == sec[[i]]) %>%
     dplyr::select(Taxa, Reference = reference) %>%
-    dplyr::arrange(!is.na(Taxa), Taxa)
+    dplyr::mutate(
+      Taxa = ifelse(is.na(Taxa), "", Taxa),
+      has_taxa = Taxa != ""
+    ) %>%
+    dplyr::arrange(
+      has_taxa,
+      Taxa,
+      Reference
+    ) %>%
+    dplyr::select(-has_taxa) %>%
+    # correct deduplication
+    dplyr::group_by(Taxa) %>%
+    dplyr::mutate(
+      Taxa = ifelse(row_number() == 1, Taxa, "")
+    ) %>%
+    dplyr::ungroup()
 
+  # header
   if (sec[i] == "Fishes") {
-    cat(paste0("# ", sec[[i]], " — ", fish_id, ""), "\n \n \n")
+    cat(paste0("## ", sec[[i]], "    ", fish_id, "\n\n"))
   } else {
-    cat(paste0("# ", sec[[i]]), "\n \n \n")
+    cat(paste0("## ", sec[[i]], "\n\n"))
   }
 
-  k <- kableExtra::kable(tmp,
-    format = "html", linesep = "",
-    align = rep("l", 2)
+  # card wrapper start
+  cat("<div class='taxa-card'>\n")
+  cat("<div class='table-scroll-vert'>")
+
+  k <- kableExtra::kable(
+    tmp,
+    format = "html",
+    escape = FALSE,
+    linesep = "",
+    align = c("l", "l"),
+    table.attr = "class='kable-table'"
   ) %>%
-    kableExtra::column_spec(1, bold = TRUE) %>%
-    kableExtra::collapse_rows(1, latex_hline = "custom", valign = "top")
+    kableExtra::column_spec(1, bold = TRUE)
 
   cat(k)
-}
 
-rm(
-  all_files, page_dat, tabl, tmp, fish_id, i, k, page_desc,
-  page_title, sec
-)
+  # card wrapper end
+  cat("</div>")
+  cat("\n</div>\n\n")
+}
 ```

@@ -3,54 +3,189 @@ title: "Minimum Identification List"
 description: "EBS and AI/GOA regions"
 ---
 
+
+<style>
+
+/* ===== Page background ===== */
+body {
+  background: #fafafa;
+}
+
+/* ===== Header ===== */
+h1 {
+  margin-top: 2rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.3rem;
+}
+
+/* ===== Card container ===== */
+.id-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+
+  /* wider but responsive */
+  width: min(1400px, 98%);
+  margin: 2rem auto;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+
+  /* CRITICAL: prevents table spill */
+  overflow-x: auto;
+}
+
+/* ===== Table styling ===== */
+table {
+  width: 100% !important;
+  border-collapse: separate !important;
+  border-spacing: 0;
+  font-size: 0.95rem;
+
+  /* allows shrinking instead of overflow */
+  table-layout: auto;
+}
+
+
+/* Sticky header */
+th {
+  position: sticky;
+  top: 0;
+  background: #f3f4f6 !important;
+  z-index: 2;
+  font-weight: 600;
+  padding: 0.7rem 0.9rem !important;
+  border-bottom: 2px solid #e5e7eb !important;
+}
+
+/* Cells */
+td {
+  padding: 0.55rem 0.9rem !important;
+  vertical-align: top !important;
+  border-bottom: 1px solid #eef2f7;
+}
+
+/* Zebra striping */
+tbody tr:nth-child(even) {
+  background: #fcfcfd;
+}
+
+/* First column emphasis (Phylum) */
+td:first-child {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Second column (Taxon) slightly muted hierarchy */
+td:nth-child(2) {
+  font-weight: 500;
+  color: #374151;
+}
+
+/* Collapse spacing under table */
+.kable-table {
+  margin-bottom: 0;
+}
+
+/* Small note style (optional future use) */
+.small-note {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+
+
+</style>
+
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE, results = "asis")
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  error = FALSE,
+  results = "asis"
+)
 ```
 
-```{r}
+```{r results='asis'}
 x <- min_ID_list %>% 
   dplyr::arrange(Phylum, Taxon)
 
 check_codes <- FALSE
 
-# check species codes against racebase codes
-if(check_codes){
-  # hard coding this because I don't have a better solution at the moment, will improve later
-  codes <- readr::read_csv("C:/Users/sarah.friedman/Work/survey_species_outliers/data/oracle/race_data-race_species_codes.csv") %>%
+if (check_codes) {
+
+  codes <- readr::read_csv(
+    "C:/Users/sarah.friedman/Work/survey_species_outliers/data/oracle/race_data-race_species_codes.csv"
+  ) %>%
     janitor::clean_names() %>%
     dplyr::select(species_name, common_name, species_code) %>%
-    dplyr::mutate(species_name = ifelse(grepl("crinoid", common_name, ignore.case = T), "Crinoidea", species_name))
+    dplyr::mutate(
+      species_name = ifelse(
+        grepl("crinoid", common_name, ignore.case = TRUE),
+        "Crinoidea",
+        species_name
+      )
+    )
 
   tabl <- x %>%
     janitor::clean_names() %>%
     dplyr::filter(!is.na(species_code)) %>%
-    mutate(tmp_tax = case_when(
-      grepl("basket", common_name, ignore.case = TRUE) ~ "Gorgonocephalus eucnemis",
-      taxon == "Mysidaecea" ~ "Mysidae",
-      TRUE ~ taxon
-      )) %>%
+    dplyr::mutate(
+      tmp_tax = dplyr::case_when(
+        grepl("basket", common_name, ignore.case = TRUE) ~ "Gorgonocephalus eucnemis",
+        taxon == "Mysidaecea" ~ "Mysidae",
+        TRUE ~ taxon
+      )
+    ) %>%
     dplyr::left_join(codes, by = c("tmp_tax" = "species_name")) %>%
-    dplyr::mutate(species_code.y = ifelse(is.na(species_code.y), species_code.x, species_code.y)) %>%
-    dplyr::filter(taxon == "Crinoidea" & grepl("unid", common_name.y) | taxon != "Crinoidea") %>%
-    dplyr::select(phylum:taxon, common_name = common_name.x, id_guide_available, minimum_id_level, species_code = species_code.y) %>%
-    dplyr::bind_rows(., x %>% clean_names %>% filter(is.na(species_code))) %>%
+    dplyr::mutate(
+      species_code.y = ifelse(
+        is.na(species_code.y),
+        species_code.x,
+        species_code.y
+      )
+    ) %>%
+    dplyr::filter(
+      (taxon == "Crinoidea" & grepl("unid", common_name.y)) |
+        taxon != "Crinoidea"
+    ) %>%
+    dplyr::select(
+      phylum:taxon,
+      common_name = common_name.x,
+      id_guide_available,
+      minimum_id_level,
+      species_code = species_code.y
+    ) %>%
+    dplyr::bind_rows(
+      x %>% janitor::clean_names() %>% dplyr::filter(is.na(species_code))
+    ) %>%
     dplyr::arrange(phylum, taxon)
+
   colnames(tabl) <- colnames(x)
 
-  } else {
- 
-     tabl <- x
+} else {
+  tabl <- x
 }
 
-options(knitr.kable.NA = '')
+cat("<div class='id-card'>")
 
-k <- kableExtra::kable(tabl, format = "html", linesep = "",
-                  align = rep("l", 6)) %>%
-  kableExtra::column_spec(1, bold = TRUE) %>%
-  kableExtra::collapse_rows(1, latex_hline = "custom", valign = "top") 
-  
-cat(k)
+k <- kableExtra::kable(
+  tabl,
+  format = "html",
+  escape = FALSE,
+  align = rep("l", 6)
+) %>%
+  kableExtra::kable_styling(
+    bootstrap_options = c("striped", "hover"),
+    full_width = FALSE
+  ) %>%
+  kableExtra::collapse_rows(
+    columns = 1,
+    valign = "top"
+  )
 
-rm(page_dat, tabl, x, k, page_dsc, page_title, check_codes)
+cat(as.character(k))
+
+cat("</div>")
 ```
 

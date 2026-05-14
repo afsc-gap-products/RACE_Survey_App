@@ -2,12 +2,84 @@
 title: "Alaska Fish ID by Family"
 ---
 
+<style>
+
+/* Page background */
+body {
+  background: #fafafa;
+}
+
+/* Header */
+h1 {
+  margin-top: 2rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.3rem;
+}
+
+/* Intro text */
+p {
+  font-size: 1rem;
+  color: #374151;
+  max-width: 900px;
+}
+
+/* Navigation container */
+.family-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 240px));
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  justify-content: center;  
+}
+
+/* Link cards */
+.family-nav a {
+  display: block;
+  padding: 0.75rem 0.9rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  transition: all 0.15s ease-in-out;
+}
+
+.family-nav a:hover {
+  transform: translateY(-1px);
+  border-color: #c7d2fe;
+  background: #f8fafc;
+}
+
+.small-note {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.family-nav {
+  margin-top: 2rem;
+}
+
+</style>
+
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, error = FALSE, results = "asis")
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  error = FALSE,
+  results = "asis"
+)
 ```
 
-```{r}
-links <- paste0(grps$link, collapse = "<br>")
+
+```{r links, results='asis', echo=FALSE}
+cat("<p>Select a family to view the fish species commonly encountered on our survey.</p>")
+
+cat("<div class='family-nav'>\n")
+cat(paste(grps$link, collapse = "\n"))
+cat("\n</div>")
 ```
 
-`r links`
