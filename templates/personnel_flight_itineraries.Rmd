@@ -63,6 +63,9 @@ tabl <- tmp_table %>%
     `Leg 3` == "x" & `Leg 4` != "x" ~ 5,
     `Leg 3` == "x" & `Leg 4` == "x" ~ 6,
     `Leg 4` == "x" ~ 7
+  ),
+  Name = tools::toTitleCase(
+    Name
   )) %>%
   dplyr::arrange(ord, Name) %>%
   dplyr::filter(!duplicated(.[, 1:4])) %>%

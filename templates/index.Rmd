@@ -111,7 +111,7 @@ The goal is simple: provide one place for everything you might need during surve
 In case of emergency, access the  
 `r stringr::str_replace(
   website_content$title_link_inline[
-    grepl(website_content$title, pattern = "EMERGENCY Flow Chart")
+    grepl(website_content$title, pattern = "Emergency Flow Chart", ignore.case = TRUE)
   ],
   "../../",
   ".././"

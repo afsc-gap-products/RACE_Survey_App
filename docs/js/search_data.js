@@ -36,12 +36,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "SBE39 Resources",
-    "section": "CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE39/",
-    "source": "entries"
-  },
-  {
     "title": "Seabird Program Resources",
     "section": "CTD",
     "url_loc": "../files/Manuals/CTD Manuals/Seabird Programs/",
@@ -66,38 +60,56 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "Gear Codebook",
+    "section": "",
+    "url_loc": "../files/SpeciesID/DataCodes&Forms.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "SFTP Instructions",
+    "section": "",
+    "url_loc": "../files/Manuals/Calypso_Wheelhouse/SFTP Instructions.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Species Codebook",
+    "section": "",
+    "url_loc": "../files/SpeciesID/SpeciesCodeManual.pdf",
+    "source": "entries"
+  },
+  {
     "title": "**NEW** Volumetric Worksheet",
-    "section": "Large catch resources",
+    "section": "Large Catch Resources",
     "url_loc": "../files/Collections/Large catches/volumetric_worksheet.xlsm",
     "source": "entries"
   },
   {
     "title": "Basket Weight Calculation Sheets",
-    "section": "Large catch resources",
+    "section": "Large Catch Resources",
     "url_loc": "../files/Collections/Basket weight calcs/",
     "source": "entries"
   },
   {
     "title": "Split Haul Crab Subsampling Protocol (EBS)",
-    "section": "Large catch resources",
+    "section": "Large Catch Resources",
     "url_loc": "../files/Collections/Large catches/Split Haul Subsampling Protocol using METIS.pdf",
     "source": "entries"
   },
   {
     "title": "Splitting Catch Steps (GOA/AI)",
-    "section": "Large catch resources",
+    "section": "Large Catch Resources",
     "url_loc": "../files/Collections/Large catches/Steps for Splitting a Catch.pdf",
     "source": "entries"
   },
   {
     "title": "Volumetric Sampling Form",
-    "section": "Large catch resources",
+    "section": "Large Catch Resources",
     "url_loc": "../files/Collections/forms/catchforms/Volumetric_Sampling_Form.pdf",
     "source": "entries"
   },
   {
     "title": "Volumetric Steps",
-    "section": "Large catch resources",
+    "section": "Large Catch Resources",
     "url_loc": "../files/Collections/Large catches/Steps for a Volumetric Catch.pdf",
     "source": "entries"
   },
@@ -138,7 +150,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Minimum Length/Sex subsampling (AI)",
+    "title": "Minimum Length/Sex Subsampling (AI)",
     "section": "",
     "url_loc": "../files/Manuals/Survey operation manuals/Min length and sex per haul.pdf",
     "source": "entries"
@@ -228,15 +240,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Gear Codebook",
-    "section": "",
-    "url_loc": "../files/SpeciesID/DataCodes&Forms.pdf",
+    "title": "SBE39 (BT) Resources",
+    "section": "BT/CTD",
+    "url_loc": "../files/Manuals/CTD Manuals/SBE39/",
     "source": "entries"
   },
   {
-    "title": "Species Codebook",
-    "section": "",
-    "url_loc": "../files/SpeciesID/SpeciesCodeManual.pdf",
+    "title": "Seabird Program Resources",
+    "section": "BT/CTD",
+    "url_loc": "../files/Manuals/CTD Manuals/Seabird Programs/",
     "source": "entries"
   },
   {
@@ -345,12 +357,6 @@ var searchData = [
     "title": "Scanmar Photos (OEX)",
     "section": "Scanmar",
     "url_loc": "../files/Manuals/Scanmar/OEx/",
-    "source": "entries"
-  },
-  {
-    "title": "Time Sync Software",
-    "section": "Time-Sync",
-    "url_loc": "../files/Software/NetWork Time sync/SOFTROS Time Sync.pdf",
     "source": "entries"
   },
   {
@@ -522,13 +528,13 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "BCS Resources",
+    "title": "BC Resourcess",
     "section": "Bottom Contact Sensor",
     "url_loc": "../files/Manuals/Bottom contact sensor/",
     "source": "entries"
   },
   {
-    "title": "Light Meters",
+    "title": "Light Meter Resources",
     "section": "Light Meter",
     "url_loc": "../files/Manuals/Light meters",
     "source": "entries"
@@ -552,24 +558,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "AK Seacard Vendors (GOA)",
-    "section": "",
-    "url_loc": "../files/Purchase/Fuel for GOA boats.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Daily Temperature Entry Instructions",
-    "section": "",
-    "url_loc": "../files/Manuals/Daily Temperature Entry.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "FPC Talking Points",
-    "section": "",
-    "url_loc": "../files/Manuals/Checklist for FPC talk.pdf",
-    "source": "entries"
-  },
-  {
     "title": "Fuel Purchase Form",
     "section": "",
     "url_loc": "../files/Purchase/Fuel Purchase Form.pdf",
@@ -588,18 +576,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "OSI (Purchase Order) PO & Job Services",
-    "section": "",
-    "url_loc": "../files/Contracts/OSI dockside services approved vessels F25.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "OSI Services task log",
-    "section": "",
-    "url_loc": "../files/Contracts/Dockside services FY25 task log v2.xlsx",
-    "source": "entries"
-  },
-  {
     "title": "Other Purchase Forms",
     "section": "",
     "url_loc": "../files/purchase/",
@@ -612,57 +588,159 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "EBS scope table",
-    "section": "Scope tables",
-    "url_loc": "../files/Manuals/Survey operation manuals/EBS Scope Table.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "GOA/AI scope table",
-    "section": "Scope tables",
-    "url_loc": "../files/Manuals/Survey operation manuals/AI GOA Scope table.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "NBS scope table",
-    "section": "Scope tables",
-    "url_loc": "../files/Manuals/Survey operation manuals/NBS Scope Table.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Scope vs. RAPP counts",
-    "section": "Scope tables",
-    "url_loc": "../files/Manuals/Survey operation manuals/Scope_vs_RAPP_counts.pdf",
-    "source": "entries"
-  },
-  {
     "title": "Net Repair",
-    "section": "",
+    "section": "Net Repair",
     "url_loc": "../files/Net and wire maintenance/net_repair/",
     "source": "entries"
   },
   {
     "title": "Net Repair and Maintenance Resources",
-    "section": "",
+    "section": "Net Repair",
     "url_loc": "../files/Net and wire maintenance/",
     "source": "entries"
   },
   {
     "title": "Net Repair Tracking Forms",
-    "section": "",
+    "section": "Net Repair",
     "url_loc": "../files/Net and wire maintenance/Net repair tracking forms/",
     "source": "entries"
   },
   {
     "title": "NM Directory",
-    "section": "",
+    "section": "Net Repair",
     "url_loc": "../files/Manuals/NM/",
+    "source": "entries"
+  },
+  {
+    "title": "EBS scope table",
+    "section": "Scope Tables",
+    "url_loc": "../files/Manuals/Survey operation manuals/EBS Scope Table.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "GOA/AI scope table",
+    "section": "Scope Tables",
+    "url_loc": "../files/Manuals/Survey operation manuals/AI GOA Scope table.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "NBS scope table",
+    "section": "Scope Tables",
+    "url_loc": "../files/Manuals/Survey operation manuals/NBS Scope Table.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Scope vs. RAPP counts",
+    "section": "Scope Tables",
+    "url_loc": "../files/Manuals/Survey operation manuals/Scope_vs_RAPP_counts.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Dockside Wiremarking Diagram (option 1)",
+    "section": "Wiremarking",
+    "url_loc": "../files/net and wire maintenance/wiremarking/Wire Marking Dock Side.png",
+    "source": "entries"
+  },
+  {
+    "title": "Dockside Wiremarking Diagram (option 2)",
+    "section": "Wiremarking",
+    "url_loc": "../files/net and wire maintenance/wiremarking/Wire Marking Dock Side option 2.png",
+    "source": "entries"
+  },
+  {
+    "title": "Dockside Wiremarking Photos (OEX)",
+    "section": "Wiremarking",
+    "url_loc": "../files/net and wire maintenance/wiremarking/OEX 2022 photos/",
+    "source": "entries"
+  },
+  {
+    "title": "Dockside Wiremarking Protocols (EBS)",
+    "section": "Wiremarking",
+    "url_loc": "../files/net and wire maintenance/wiremarking/wire_marking_dock_2018.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Dockside Wiremarking Walk Through (GOA/AI)",
+    "section": "Wiremarking",
+    "url_loc": "../files/net and wire maintenance/wiremarking/Walk through dockside wiremarking.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Trawl Warp Measuring Procedure Form",
+    "section": "Wiremarking",
+    "url_loc": "../files/Net and wire maintenance/wiremarking/Trawl Warp Measuring Procedure form.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Wiremarking Procedures (GOA/AI)",
+    "section": "Wiremarking",
+    "url_loc": "../files/Net and wire maintenance/wiremarking/GOA AI Wire Marking and other procedures.pdf",
     "source": "entries"
   },
   {
     "title": "Sink Times",
     "section": "",
     "url_loc": "../files/Net and wire maintenance/sink times.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "AK Seacard Vendors (GOA)",
+    "section": "",
+    "url_loc": "../files/Purchase/Fuel for GOA boats.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Artifact Handling",
+    "section": "",
+    "url_loc": "../files/Manuals/Survey operation manuals/Artifact guidance.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Daily Temperature Entry Instructions",
+    "section": "",
+    "url_loc": "../files/Manuals/Daily Temperature Entry.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "FPC Backup Data Sources Table",
+    "section": "",
+    "url_loc": "../files/Manuals/data backup sources.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "FPC Talking Points",
+    "section": "",
+    "url_loc": "../files/Manuals/Checklist for FPC talk.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Gear Codebook",
+    "section": "",
+    "url_loc": "../files/SpeciesID/DataCodes&Forms.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "OSI (Purchase Order) PO & Job Services",
+    "section": "",
+    "url_loc": "../files/Contracts/OSI dockside services approved vessels F25.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "OSI Services task log",
+    "section": "",
+    "url_loc": "../files/Contracts/Dockside services FY25 task log v2.xlsx",
+    "source": "entries"
+  },
+  {
+    "title": "SFTP Instructions",
+    "section": "",
+    "url_loc": "../files/Manuals/Calypso_Wheelhouse/SFTP Instructions.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Species Codebook",
+    "section": "",
+    "url_loc": "../files/SpeciesID/SpeciesCodeManual.pdf",
     "source": "entries"
   },
   {
@@ -678,66 +756,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Dockside Wiremarking Diagram (option 1)",
-    "section": "",
-    "url_loc": "../files/net and wire maintenance/wiremarking/Wire Marking Dock Side.png",
-    "source": "entries"
-  },
-  {
-    "title": "Dockside Wiremarking Diagram (option 2)",
-    "section": "",
-    "url_loc": "../files/net and wire maintenance/wiremarking/Wire Marking Dock Side option 2.png",
-    "source": "entries"
-  },
-  {
-    "title": "Dockside Wiremarking Photos (OEX)",
-    "section": "",
-    "url_loc": "../files/net and wire maintenance/wiremarking/OEX 2022 photos/",
-    "source": "entries"
-  },
-  {
-    "title": "Dockside Wiremarking Protocols (EBS)",
-    "section": "",
-    "url_loc": "../files/net and wire maintenance/wiremarking/wire_marking_dock_2018.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Dockside Wiremarking Walk Through (GOA/AI)",
-    "section": "",
-    "url_loc": "../files/net and wire maintenance/wiremarking/Walk through dockside wiremarking.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Trawl Warp Measuring Procedure Form",
-    "section": "",
-    "url_loc": "../files/Net and wire maintenance/wiremarking/Trawl Warp Measuring Procedure form.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Wiremarking Procedures (GOA/AI)",
-    "section": "",
-    "url_loc": "../files/Net and wire maintenance/wiremarking/GOA AI Wire Marking and other procedures.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Artifacts Handling",
-    "section": "",
-    "url_loc": "../files/Manuals/Survey operation manuals/Artifact guidance.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "FPC Backup Data Sources Table",
-    "section": "",
-    "url_loc": "../files/Manuals/data backup sources.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SFTP Instructions",
-    "section": "",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/SFTP Instructions.pdf",
-    "source": "entries"
-  },
-  {
     "title": "Gear Codebook",
     "section": "Codebooks",
     "url_loc": "../files/SpeciesID/DataCodes&Forms.pdf",
@@ -750,13 +768,13 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Sport Fishing Regs by location",
+    "title": "Sport Fishing Regulations",
     "section": "Recreation",
     "url_loc": "../files/Port Info/Sport fishing regs",
     "source": "entries"
   },
   {
-    "title": "AFSC Photo Consent Release",
+    "title": "Photo Consent Release Form",
     "section": "Social Media",
     "url_loc": "../files/Social media policies/NMFS_Individual Release_Fillable.pdf",
     "source": "entries"
@@ -794,12 +812,14 @@ var searchData = [
   {
     "title": "Permits",
     "section": "",
+    "subtitle": "Letters of Examination, ADF&G, IPHC, Protected Species, SRPs",
     "url_loc": "../files/Permits",
     "source": "entries"
   },
   {
-    "title": "Purchase & Rental Info",
+    "title": "Purchase & Rental Car Info",
     "section": "",
+    "subtitle": "Tax exempt forms, etc.",
     "url_loc": "../files/Purchase/",
     "source": "entries"
   },
@@ -816,20 +836,21 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Bering Sea Survey Ops Manual",
-    "section": "Survey Ops Manuals",
-    "url_loc": "../files/Manuals/Survey operation manuals/Bering Sea Survey Ops Manual.pdf",
-    "source": "entries"
-  },
-  {
     "title": "BS Shelf Sampling Protocols",
     "section": "Survey Ops Manuals",
     "url_loc": "../files/Manuals/Survey operation manuals/2024_shelf_slope_sampling_protocols.pdf",
     "source": "entries"
   },
   {
+    "title": "BS Survey Ops Manual",
+    "section": "Survey Ops Manuals",
+    "url_loc": "../files/Manuals/Survey operation manuals/Bering Sea Survey Ops Manual.pdf",
+    "source": "entries"
+  },
+  {
     "title": "EBS/NBS Survey Contingency Plan",
     "section": "Survey Ops Manuals",
+    "subtitle": "e.g. station dropping prorities",
     "url_loc": "../files/Manuals/Survey operation manuals/EBS_NBS Survey Contingency Plan.pdf",
     "source": "entries"
   },
@@ -882,15 +903,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Previous Training Resources",
+    "title": "Current Training Resources",
     "section": "",
-    "url_loc": "../files/Trainings/Prior Years Training/",
+    "url_loc": "../files/Trainings/2026 Training/",
     "source": "entries"
   },
   {
-    "title": "Training Resources",
+    "title": "Previous Training Resources",
     "section": "",
-    "url_loc": "../files/Trainings/2026 Training/",
+    "url_loc": "../files/Trainings/Prior Years Training/",
     "source": "entries"
   },
   {
@@ -1182,7 +1203,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Resources",
+    "title": "All Resources",
     "section": "CTD SBE19plus",
     "url_loc": "../files/Manuals/CTD Manuals/SBE19plus",
     "source": "entries"
@@ -1194,7 +1215,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "SBE Downloader software",
+    "title": "SBE Downloader Software",
     "section": "CTD SBE19plus",
     "url_loc": "../files/software/SBEDownloader/SBEDownloader.exe",
     "source": "entries"
@@ -1218,74 +1239,74 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "ES60 ES70 lockup issue",
-    "section": "ES80 data collection",
+    "title": "ES60 ES70 Lockup Issue",
+    "section": "ES80",
     "url_loc": "../files/Collections/ES80/GPTlockup-issue.pdf",
     "source": "entries"
   },
   {
-    "title": "ES80 EBS data collection quick review",
-    "section": "ES80 data collection",
+    "title": "ES80 EBS Data Collection Quick Review",
+    "section": "ES80",
     "url_loc": "../files/Collections/ES80/2026 Quick review EBS AVO ES80 data collection.pdf",
     "source": "entries"
   },
   {
     "title": "ES80 Protocols",
-    "section": "ES80 data collection",
+    "section": "ES80",
     "url_loc": "../files/Collections/ES80/ES80_protocols_2026.pdf",
     "source": "entries"
   },
   {
     "title": "ES80 Training Slides",
-    "section": "ES80 data collection",
+    "section": "ES80",
     "url_loc": "../files/Collections/ES80/2025 ES80 data collection.pdf",
     "source": "entries"
   },
   {
     "title": "Forms",
-    "section": "ES80 data collection",
+    "section": "ES80",
     "url_loc": "../files/Collections/ES80/forms/",
     "source": "entries"
   },
   {
     "title": "Replacing Hard Drive",
-    "section": "ES80 data collection",
+    "section": "ES80",
     "url_loc": "../files/Collections/ES80/ES60 Hard drive instructions.pdf",
     "source": "entries"
   },
   {
     "title": "Skipper Cheat Sheet",
-    "section": "ES80 data collection",
+    "section": "ES80",
     "url_loc": "../files/Collections/ES80/ES60_skippercheatsheet.pdf",
     "source": "entries"
   },
   {
     "title": "Vessel Calibration Photos",
-    "section": "ES80 data collection",
+    "section": "ES80",
     "url_loc": "../files/Collections/ES80/ES60photos",
     "source": "entries"
   },
   {
-    "title": "Light meter instructions",
+    "title": "Light Meter Instructions",
     "section": "Light meter",
     "url_loc": "../files/Manuals/Light meters/Light meter instuctions 2018.pdf",
     "source": "entries"
   },
   {
     "title": "Personnel Availability",
-    "section": "All surveys",
+    "section": "All Surveys",
     "url_loc": "../files/contact lists/Personnel Availability.pdf",
     "source": "entries"
   },
   {
     "title": "RACE Vessel Contact Info",
-    "section": "All surveys",
+    "section": "All Surveys",
     "url_loc": "../files/Contact lists/GAP BT Survey Vessel Contacts 2026.pdf",
     "source": "entries"
   },
   {
     "title": "Vessel Crew Lists",
-    "section": "All surveys",
+    "section": "All Surveys",
     "url_loc": "../files/Staffing/Vessel Crew/",
     "source": "entries"
   },
@@ -1363,26 +1384,14 @@ var searchData = [
   },
   {
     "title": "Comp Time for Air Travel",
-    "section": "Post-survey Forms",
+    "section": "Post-Survey Forms",
     "url_loc": "../files/Travel/COMP TIME OFF FOR TRAVEL-Air-final.pdf",
     "source": "entries"
   },
   {
     "title": "Travel Voucher Request",
-    "section": "Post-survey Forms",
+    "section": "Post-Survey Forms",
     "url_loc": "../files/Travel/Travel Voucher Request.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "AK Tax Exempt Info",
-    "section": "",
-    "url_loc": "../files/Travel/ALASKA-TAX EXEMPT INFO.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Guide to Flight Cancellations",
-    "section": "",
-    "url_loc": "../files/Travel/A Stranded NOAA Scientists Guide to Flight Cancellations.png",
     "source": "entries"
   },
   {
@@ -1398,7 +1407,19 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Incident, Illness, Accident & EMERGENCY Flow Chart",
+    "title": "AK Tax Exempt Info",
+    "section": "",
+    "url_loc": "../files/Travel/ALASKA-TAX EXEMPT INFO.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Guide to Flight Cancellations",
+    "section": "",
+    "url_loc": "../files/Travel/A Stranded NOAA Scientists Guide to Flight Cancellations.png",
+    "source": "entries"
+  },
+  {
+    "title": "Emergency Flow Chart",
     "section": "",
     "url_loc": ".../files/Safety/Accidents/accident.htm",
     "source": "entries"
@@ -1410,7 +1431,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "CHOICES",
+    "title": "Choices",
     "section": "",
     "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/CHOICES.pdf",
     "source": "entries"
@@ -1662,7 +1683,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Alkakine batteries",
+    "title": "Alkaline batteries",
     "section": "",
     "url_loc": "../files/Shipping-Hazmat/SDS pages/alkalinecylindrical_psds.pdf",
     "source": "entries"
@@ -1674,27 +1695,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "HAZMAT items not to pack",
+    "title": "HAZMAT Items Not To Pack",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/Do not pack these Dangerous Goods.pdf",
+    "url_loc": "../files/Shipping-Hazmat/Do Not Pack List.pdf",
     "source": "entries"
   },
   {
     "title": "HAZMAT Shipping Guidelines",
     "section": "",
     "url_loc": "../files/Shipping-Hazmat/hazmat_shipping_guide.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Injury Reporting Guide",
-    "section": "",
-    "url_loc": "../files/Safety/Accidents/AFSC_Injury_Reporting_Guide.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Medevac Info",
-    "section": "",
-    "url_loc": "../files/Safety/Accidents/MedEvac Info.pdf",
     "source": "entries"
   },
   {
@@ -1718,7 +1727,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "CA-2 Report an occupational disease",
+    "title": "CA-2 Report an Occupational Disease",
     "section": "",
     "subtitle": "i.e., occupational/repetative motion illness/injury",
     "url_loc": "../files/Safety/Accidents/CA-2 Dept. of Labor Claim for Compensation.pdf",
@@ -1804,6 +1813,18 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "Injury Reporting Quick Guide",
+    "section": "",
+    "url_loc": "../files/Safety/Accidents/AFSC_Injury_Reporting_Guide.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Medevac Info",
+    "section": "",
+    "url_loc": "../files/Safety/Accidents/MedEvac Info.pdf",
+    "source": "entries"
+  },
+  {
     "title": "Care for Hypothermic Patient",
     "section": "",
     "url_loc": "../files/Safety/CareForColdPatient.jpg",
@@ -1828,21 +1849,27 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "Medical Course Manual",
+    "section": "",
+    "url_loc": "../files/Safety/Two day med full manual.pdf",
+    "source": "entries"
+  },
+  {
     "title": "PLB Manual",
     "section": "",
     "url_loc": "../files/Safety/EPIRBs/aquafix_aquafixman.pdf",
     "source": "entries"
   },
   {
-    "title": "NOAA Psychological Safety",
-    "section": "",
-    "url_loc": "../files/Safety/Psychological safety/NOAA Psychological Safety.pdf",
-    "source": "entries"
-  },
-  {
     "title": "Mental Health and Trauma Resources",
     "section": "",
     "url_loc": "../files/Safety/Mental health and trauma resources.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "NOAA Psychological Safety",
+    "section": "",
+    "url_loc": "../files/Safety/Psychological safety/NOAA Psychological Safety.pdf",
     "source": "entries"
   },
   {
@@ -1888,12 +1915,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Bedbugs",
-    "section": "",
-    "url_loc": "../files/Safety/BedBugPrimer_final.pdf",
-    "source": "entries"
-  },
-  {
     "title": "Safety Leader Checklists",
     "section": "",
     "url_loc": "../files/Safety/Safety lead checklists.pdf",
@@ -1936,9 +1957,9 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Medical Course Manual",
+    "title": "Bedbugs",
     "section": "",
-    "url_loc": "../files/Safety/Two day med full manual.pdf",
+    "url_loc": "../files/Safety/BedBugPrimer_final.pdf",
     "source": "entries"
   },
   {
@@ -2086,11 +2107,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "**Protected Species Reporting Log**",
-    "section": "",
-    "source": "entries"
-  },
-  {
     "title": "Information to Report",
     "section": "",
     "url_loc": "../files/SpeciesID/protected_species/Interaction placard- encounters.pdf",
@@ -2136,6 +2152,11 @@ var searchData = [
     "title": "Whale Entanglement",
     "section": "",
     "url_loc": "../files/SpeciesID/protected_species/whale_entanglement factsheet.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "**Protected Species Reporting Log**",
+    "section": "",
     "source": "entries"
   },
   {

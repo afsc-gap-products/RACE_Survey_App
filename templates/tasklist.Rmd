@@ -1,16 +1,107 @@
 ---
 title: "`r page_desc`"
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 2
 ---
 
-```{r Subset Checklist documents for BS, echo = F, results="asis"}
-checklist_items <- subset(
-  x = task_list_data,
-  subset = sub_page == page_desc
-)
+<style>
 
-# generating excel checklists by person
-printables <- checklist_items %>% 
-  pivot_longer(fpc_task:sl_task, names_to = "leader", values_to = "done") %>%
+/* ===== Layout containers ===== */
+
+.download-box {
+  background: #f8fafc;
+  border: 1px solid #dbe3ea;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+/* ===== Navigation ===== */
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.nav-links a {
+ padding: 0.4rem 0.8rem;
+ background: #eef2ff;
+ border-radius: 999px;
+ text-decoration: none;
+ font-size: 0.9rem;
+}
+
+/* ===== Table ===== */
+
+table {
+ width: 100% !important;
+ font-size: 0.95rem;
+}
+
+th {
+ background: #f3f4f6 !important;
+ position: sticky;
+ top: 0;
+}
+
+td, th {
+ padding: 0.6rem 1rem !important;
+ vertical-align: top !important;
+}
+
+/* ===== Task formatting ===== */
+
+.task-block {
+ line-height: 1.4;
+}
+
+.task-main {
+ font-weight: 400;
+ margin-bottom: 0.25rem;
+}
+
+.task-sub {
+ padding-left: 3rem;
+ text-indent: -1rem;
+ color: #6b7280;
+}
+
+/* ===== Minor tweak for distill spacing ===== */
+
+.d-article p {
+ margin-right: 0.5rem !important;
+}
+
+</style>
+
+```{r echo=FALSE, results='asis'}
+checklist_items <- subset(task_list_data, sub_page == page_desc)
+
+# -------------------------
+# Downloads
+# -------------------------
+cat("<div class='download-box'>")
+cat("<h2>Download Printable Task Lists</h2>")
+
+printables <- checklist_items %>%
+  pivot_longer(
+    fpc_task:sl_task,
+    names_to = "leader",
+    values_to = "done"
+  ) %>%
   filter(done == "T") %>%
   mutate(person = case_when(
     leader == "fpc_task" ~ "FPC",
@@ -18,72 +109,117 @@ printables <- checklist_items %>%
     leader == "sl_task" ~ "Safety Lead"
   )) %>%
   select(Category = section, Task = title, Items = subtitle, person) %>%
-  arrange(Category, Task, Items) %>%
   split(.$person)
 
-for(i in 1:length(printables)){
+for (i in seq_along(printables)) {
+  outfile <- paste0(
+    "../data/",
+    page_desc,
+    "_",
+    names(printables)[i],
+    ".xlsx"
+  )
   printables[[i]] %>%
     select(-person) %>%
-    writexl::write_xlsx(paste0("../data/", page_desc, "_", names(printables)[i], ".xlsx"))
-  
-  cat(paste0("[Excel tasklist for ", names(printables)[i], "](../data/", page_desc, "_", names(printables)[i], ".xlsx)"))
-  cat("\n \n")
+    writexl::write_xlsx(outfile)
+  cat(
+    paste0(
+      "<p><a href='", outfile, "'>",
+      names(printables)[i],
+      " Task List</a></p>"
+    )
+  )
 }
 
-cat("\n \n")
+cat("</div>")
 
+# -------------------------
+# Format checklist table
+# -------------------------
 tabl <- checklist_items %>%
-  dplyr::mutate(ord = case_when(
-    fpc_task == "T" ~ 1,
-    fpc_task == "T" & dl_task == "T" & sl_task == "F" ~ 2,
-    fpc_task == "T" & dl_task == "T" & sl_task == "T" ~ 3,
-    fpc_task == "T" & sl_task == "T" & dl_task == "F" ~ 4,
-    dl_task == "T" ~ 4,
-    dl_task == "T" & sl_task == "T" & fpc_task == "F" ~ 5,
-    sl_task == "T" ~ 6
-  )) %>%
-  dplyr::arrange(sub_page, section, ord) %>%
+  arrange(section, title, subtitle) %>%
   group_by(section) %>%
   mutate(n = cumsum(!duplicated(title))) %>%
-  dplyr::mutate(
-    title = ifelse(!is.na(url_loc) & is.na(subtitle),
-      paste0(n, ". [", title, "](", url_loc, ")"), paste0(n, ". ", title)
+  mutate(
+    title = ifelse(
+      !is.na(url_loc) & is.na(subtitle),
+      paste0(n, ". <a href='", url_loc, "'>", title, "</a>"),
+      paste0(n, ". ", title)
     ),
-    subtitle = ifelse(!is.na(url_loc) & !is.na(subtitle),
-      paste0("[", subtitle, "](", url_loc, ")"), subtitle
+    subtitle = ifelse(
+      !is.na(url_loc) & !is.na(subtitle),
+      paste0("<a href='", url_loc, "'>", subtitle, "</a>"),
+      subtitle
     ),
-    subtitle = ifelse(is.na(subtitle), "", paste0(" - ", subtitle))
+    subtitle = ifelse(
+      is.na(subtitle),
+      "",
+      paste0("• ", subtitle)
+    )
   ) %>%
-  dplyr::mutate(across(everything(), ~ replace(., . == "T", "X"))) %>%
-  dplyr::mutate(across(everything(), ~ replace(., . == "F", ""))) %>%
-  ungroup() %>%
-  dplyr::select(section, title, subtitle, fpc_task, dl_task, sl_task) %>%
-  split(.$section)
+  mutate(across(
+    c(fpc_task, dl_task, sl_task),
+    ~ ifelse(. == "T", "✓", "")
+  )) %>%
+  ungroup()
+
+sections <- unique(tabl$section)
 
 
-section <- names(x = tabl)
-for (i in 1:length(section)) {
-  cat(paste("# ", section[i]), "\n\n")
-
-  g <- tabl[[i]] %>% dplyr::select(-section)
-  cols <- seq((ncol(g) - 2), ncol(g))
-
-  cat(
-    knitr::kable(g,
-      col.names = c("Task", "", "FPC", "Deck Lead", "Safety Lead"),
-      format = "html", linesep = "", booktabs = T,
-      align = c("l", "l", "c", "c", "c"),
-      table.attr = "style='width:125%;'"
-    ) %>%
-      kable_styling("basic", "hold_position", wraptable_width = "10pt") %>%
-      column_spec(cols, width = "0.5in", extra_css = "vertical-align:top;") %>%
-      column_spec(2, width = "2.5in", extra_css = "vertical-align:top;") %>%
-      column_spec(1, width = "3in", extra_css = "vertical-align:top;") %>%
-      kableExtra::collapse_rows(columns = 1, latex_hline = "major", valign = "top")
-  )
-
-  cat("\n \n \n")
+# nav links
+cat("\n\n```{=html}\n<div class='nav-links'>\n") # Added raw block start
+for (sec in sections) {
+  anchor <- gsub(" ", "-", tolower(sec))
+  cat(paste0("<a href='#", anchor, "'>", sec, "</a> "))
 }
+cat("\n</div>\n```\n<br>\n") # Added raw block end
 
-rm(checklist_items, g, tabl, section)
+# render each section separately
+for (sec in sections) {
+  anchor <- gsub(" ", "-", tolower(sec))
+
+  # Start Section Card with Raw HTML block
+  cat(paste0("\n\n```{=html}\n<div class='section-card'>\n<h2 id='", anchor, "'>", sec, "</h2>\n"))
+
+  g <- tabl %>%
+    filter(section == sec) %>%
+    group_by(title) %>%
+    mutate(
+      last_row = row_number() == n(),
+      # Determine if we need to show the title and the first subtitle together
+      task_display = case_when(
+        row_number() == 1 & subtitle != "" ~ paste0(
+          "<div class='task-main'>", title, "</div>",
+          "<div class='task-sub'>", subtitle, "</div>"
+        ),
+        row_number() == 1 & subtitle == "" ~ paste0(
+          "<div class='task-main'>", title, "</div>"
+        ),
+        TRUE ~ paste0(
+          "<div class='task-sub'>", subtitle, "</div>"
+        )
+      )
+    ) %>%
+    ungroup()
+
+  table_html <- knitr::kable(
+    g %>% select(task_display, fpc_task, dl_task, sl_task),
+    format = "html",
+    escape = FALSE,
+    col.names = c("Task", "FPC", "Deck Lead", "Safety Lead"),
+    align = c("l", "c", "c", "c")
+  ) %>%
+    kableExtra::kable_styling(bootstrap_options = "condensed", full_width = TRUE) %>%
+    kableExtra::column_spec(1, width = "75%")
+
+  last_rows <- which(g$last_row)
+  for (r in last_rows) {
+    table_html <- table_html %>%
+      kableExtra::row_spec(r, extra_css = "border-bottom: 1.5px solid #e5e7eb;")
+  }
+
+  # Print the table, then close the section card div inside the raw block
+  cat(as.character(table_html))
+  cat("\n</div>\n```\n<br>\n") # Added raw block end
+}
 ```
