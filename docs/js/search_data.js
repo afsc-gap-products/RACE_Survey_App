@@ -246,21 +246,9 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Seabird Program Resources",
-    "section": "BT/CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/Seabird Programs/",
-    "source": "entries"
-  },
-  {
     "title": "ES80 Resources",
     "section": "ES80",
     "url_loc": "../files/Collections/ES80/",
-    "source": "entries"
-  },
-  {
-    "title": "GAPsurvey R Package",
-    "section": "GAPsurvey R Package",
-    "url_loc": "./docs/Software_Software_&_drivers.html",
     "source": "entries"
   },
   {
@@ -409,12 +397,6 @@ var searchData = [
   },
   {
     "title": "Wheelhouse File Formats",
-    "section": "Wheelhouse",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/WH_file_formats.txt",
-    "source": "entries"
-  },
-  {
-    "title": "Wheelhouse haul data file formats",
     "section": "Wheelhouse",
     "url_loc": "../files/Manuals/Calypso_Wheelhouse/WH_file_formats.txt",
     "source": "entries"
@@ -714,12 +696,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Gear Codebook",
-    "section": "",
-    "url_loc": "../files/SpeciesID/DataCodes&Forms.pdf",
-    "source": "entries"
-  },
-  {
     "title": "OSI (Purchase Order) PO & Job Services",
     "section": "",
     "url_loc": "../files/Contracts/OSI dockside services approved vessels F25.pdf",
@@ -732,18 +708,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "SFTP Instructions",
-    "section": "",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/SFTP Instructions.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Species Codebook",
-    "section": "",
-    "url_loc": "../files/SpeciesID/SpeciesCodeManual.pdf",
-    "source": "entries"
-  },
-  {
     "title": "FPC File Box Items",
     "section": "",
     "url_loc": "../files/Survey inventory lists/RSST Inventory/FY25 EBS GOA Serialized Gear Requests.pdf",
@@ -753,18 +717,6 @@ var searchData = [
     "title": "FPC File Box Items (EBS)",
     "section": "",
     "url_loc": "../files/Survey inventory lists/RSST Inventory/EBS FPC File Box Gear.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Gear Codebook",
-    "section": "Codebooks",
-    "url_loc": "../files/SpeciesID/DataCodes&Forms.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Species Codebook",
-    "section": "Codebooks",
-    "url_loc": "../files/SpeciesID/SpeciesCodeManual.pdf",
     "source": "entries"
   },
   {
@@ -1050,12 +1002,6 @@ var searchData = [
     "title": "Shipping Pollock Otoliths",
     "section": "Otoliths",
     "url_loc": "../files/Shipping-Hazmat/Shipping of Pollock otoliths in Glycerin.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Voucher Collection Procedures",
-    "section": "Vouchers",
-    "url_loc": "../files/Collections/Voucher Procedures.pdf",
     "source": "entries"
   },
   {
@@ -1383,12 +1329,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Comp Time for Air Travel",
-    "section": "Post-Survey Forms",
-    "url_loc": "../files/Travel/COMP TIME OFF FOR TRAVEL-Air-final.pdf",
-    "source": "entries"
-  },
-  {
     "title": "Travel Voucher Request",
     "section": "Post-Survey Forms",
     "url_loc": "../files/Travel/Travel Voucher Request.pdf",
@@ -1416,12 +1356,6 @@ var searchData = [
     "title": "Guide to Flight Cancellations",
     "section": "",
     "url_loc": "../files/Travel/A Stranded NOAA Scientists Guide to Flight Cancellations.png",
-    "source": "entries"
-  },
-  {
-    "title": "Emergency Flow Chart",
-    "section": "",
-    "url_loc": ".../files/Safety/Accidents/accident.htm",
     "source": "entries"
   },
   {
@@ -1590,12 +1524,6 @@ var searchData = [
     "title": "SASH Hotline",
     "section": "",
     "url_loc": "../files/Safety/Sexual Harassment/Sexual (SASH) Helpline.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "SASH Video",
-    "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/Fostering a Respectful Work Environment.mp4",
     "source": "entries"
   },
   {
@@ -1770,21 +1698,9 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "EBS Port Guide",
-    "section": "",
-    "url_loc": "../files/Port info/EBS Port Guide.pdf",
-    "source": "entries"
-  },
-  {
     "title": "GOA and EBS SIP Guide",
     "section": "",
     "url_loc": "../files/Port info/Shelter in Place Guide.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "GOA Port Guide",
-    "section": "",
-    "url_loc": "../files/Port info/2025 GOA Port Guide.pdf",
     "source": "entries"
   },
   {
@@ -1803,13 +1719,6 @@ var searchData = [
     "title": "SF-95 Tort Claim Form",
     "section": "",
     "url_loc": "../files/Safety/Accidents/sf95.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "**EMERGENCY NOTIFICATION PLAN**",
-    "section": "",
-    "subtitle": "If you have an acute or chronic injury from working aboard the vessel, document and report it to the Safety Lead and FPC.",
-    "url_loc": "../files/Safety/Accidents/EMERGENCY NOTIFICATION PLAN 2026.pdf",
     "source": "entries"
   },
   {
@@ -2035,12 +1944,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Calypso_2017.1.exe",
-    "section": "",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Calypso Software/Calypso_2017.1.exe",
-    "source": "entries"
-  },
-  {
     "title": "CTDs (SeaBird, Teledyne)",
     "section": "",
     "url_loc": "../files/Manuals/CTD Manuals/",
@@ -2062,12 +1965,6 @@ var searchData = [
     "title": "Tablet Apps (.apk)",
     "section": "",
     "url_loc": "../files/Manuals/Apps Software/Tablet apks",
-    "source": "entries"
-  },
-  {
-    "title": "Species Codebook",
-    "section": "",
-    "url_loc": ".../files/SpeciesID/SpeciesCodeManual.pdf",
     "source": "entries"
   },
   {

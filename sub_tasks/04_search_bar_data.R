@@ -2,16 +2,19 @@
 # We map the columns you want to search to a consistent format
 search_data_entries <- website_content %>%
   select(title, section = subsection , subtitle, url_loc) %>%
-  mutate(source = "entries")
+  mutate(source = "entries") %>%
+  distinct(url_loc, .keep_all = TRUE)
 
 search_data_taxa <- taxa_guides %>%
   select(title, section, subtitle = subsection, url_loc) %>%
-  mutate(source = "guides")
+  mutate(source = "guides") %>%
+  distinct(url_loc, .keep_all = TRUE)
 
 
 # Combine them
 full_search_index <- bind_rows(search_data_entries, search_data_taxa) %>%
-  mutate(url_loc = str_replace(url_loc, "./files/", "../files/"))
+  mutate(url_loc = str_replace(url_loc, "./files/", "../files/")) %>%
+  filter(!grepl("\\.\\.\\.", url_loc))
 
 # Convert to JSON string
 json_string <- jsonlite::toJSON(full_search_index, auto_unbox = TRUE, pretty = TRUE)
