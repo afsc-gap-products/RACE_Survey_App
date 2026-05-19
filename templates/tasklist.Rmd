@@ -107,8 +107,9 @@ printables <- checklist_items %>%
     leader == "fpc_task" ~ "FPC",
     leader == "dl_task" ~ "Deck Lead",
     leader == "sl_task" ~ "Safety Lead"
-  )) %>%
-  select(Category = section, Task = title, Items = subtitle, person) %>%
+  )) %>% 
+  mutate(Completed = "☐") %>%
+  select(Category = section, Task = title, Items = subtitle, Completed, person) %>%
   split(.$person)
 
 for (i in seq_along(printables)) {
@@ -117,11 +118,56 @@ for (i in seq_along(printables)) {
     page_desc,
     "_",
     names(printables)[i],
-    ".xlsx"
+    ".html"
   )
-  printables[[i]] %>%
+  
+  printable_table <- printables[[i]] %>%
     select(-person) %>%
-    writexl::write_xlsx(outfile)
+    kable(
+      format = "html",
+      escape = FALSE,
+      align = c("l", "l", "l", "c")
+    ) %>%
+    kable_styling(full_width = FALSE,
+                    font_size = 12
+                  ) %>%
+    column_spec(1, width = "2em") %>%
+    column_spec(2, width = "20em") %>%
+    column_spec(3, width = "15em") %>%
+    column_spec(4, width = "2em", extra_css = "text-align: center; font-size: 18px;") %>%
+    row_spec(
+      0,
+      bold = TRUE,
+      background = "#f3f4f6"
+    ) %>%
+    row_spec(
+      1:nrow(printables[[i]]),
+      extra_css = "height: 40px; vertical-align: top;"
+    ) %>%
+    collapse_rows(columns = 1:2, valign = "top")
+
+  save_kable(
+    printable_table,
+    file = outfile
+  )
+
+  html <- readLines(outfile)
+
+  title_block <- c(
+    paste0("<center><h2>", page_desc, " Task List</h2></center>"),
+    paste0("<center><h3>", names(printables)[i], "</h3></center><br>")
+  )
+
+  body_loc <- grep("<body>", html)
+
+  html <- append(
+    html,
+    values = title_block,
+    after = body_loc
+  )
+
+  writeLines(html, outfile)
+
   cat(
     paste0(
       "<p><a href='", outfile, "'>",
@@ -132,6 +178,7 @@ for (i in seq_along(printables)) {
 }
 
 cat("</div>")
+
 
 # -------------------------
 # Format checklist table

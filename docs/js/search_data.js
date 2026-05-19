@@ -1,11 +1,5 @@
 var searchData = [
   {
-    "title": "GAPsurvey R Package",
-    "section": "GAPsurvey R Package",
-    "url_loc": "./docs/Software_Software_&_drivers.html",
-    "source": "entries"
-  },
-  {
     "title": "METIS PC Required Directories and Files",
     "section": "METIS",
     "url_loc": "../files/Manuals/Catch Data Entry/METIS PC Required Directories and Control Files/",
@@ -240,15 +234,21 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "SBE39 (BT) Resources",
-    "section": "BT/CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE39/",
-    "source": "entries"
-  },
-  {
     "title": "ES80 Resources",
     "section": "ES80",
     "url_loc": "../files/Collections/ES80/",
+    "source": "entries"
+  },
+  {
+    "title": "GAPsurvey R Package",
+    "section": "GAP Toolkit",
+    "url_loc": "./docs/Software_Software_&_drivers.html",
+    "source": "entries"
+  },
+  {
+    "title": "GapTools",
+    "section": "GAP Toolkit",
+    "url_loc": "../files/Manuals/gaptools/",
     "source": "entries"
   },
   {
@@ -265,55 +265,55 @@ var searchData = [
   },
   {
     "title": "DoorExplorereProNX User Manual",
-    "section": "Marport",
+    "section": "Marport/Scala",
     "url_loc": "../files/Manuals/MARPORT/DoorExplorerProNX_UserManual_en_V1.pdf",
     "source": "entries"
   },
   {
     "title": "FlowSpeedNavigatorProNX User Manual",
-    "section": "Marport",
+    "section": "Marport/Scala",
     "url_loc": "../files/Manuals/MARPORT/FlowSpeedNavigatorProNX_UserManual_en_V1.pdf",
     "source": "entries"
   },
   {
     "title": "Marport Resources",
-    "section": "Marport",
+    "section": "Marport/Scala",
     "url_loc": "../files/Manuals/MARPORT/",
     "source": "entries"
   },
   {
     "title": "Marport/Scala Quick Reference Guide",
-    "section": "Marport",
+    "section": "Marport/Scala",
     "url_loc": "../files/Manuals/MARPORT/Marport_Scala_Quick_Start_Guide.pdf",
     "source": "entries"
   },
   {
     "title": "Mosa2 Quick Reference Guide",
-    "section": "Marport",
+    "section": "Marport/Scala",
     "url_loc": "../files/Manuals/MARPORT/Mosa2/Mosa2_mac_qrg_en_V7.pdf",
     "source": "entries"
   },
   {
     "title": "Scala Configuration Files",
-    "section": "Marport",
+    "section": "Marport/Scala",
     "url_loc": "../files/Manuals/MARPORT/scala_pages/",
     "source": "entries"
   },
   {
     "title": "Scala NMEA strings",
-    "section": "Marport",
+    "section": "Marport/Scala",
     "url_loc": "../files/Manuals/MARPORT/Scala NMEA strings.pdf",
     "source": "entries"
   },
   {
     "title": "SCALA2 User Manual",
-    "section": "Marport",
+    "section": "Marport/Scala",
     "url_loc": "../files/Manuals/MARPORT/SCALA2_UserGuide_en_V6.pdf",
     "source": "entries"
   },
   {
     "title": "Trident User Manual",
-    "section": "Marport",
+    "section": "Marport/Scala",
     "url_loc": "../files/Manuals/MARPORT/Trident_UserManual_en_V2.pdf",
     "source": "entries"
   },
@@ -498,21 +498,21 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "GIS Training",
-    "section": "",
-    "url_loc": "../files/Station info/GIS_Training_2019.pdf",
-    "source": "entries"
-  },
-  {
     "title": "Guide to Running Wheelhouse and Calypso for EBS survey",
     "section": "",
     "url_loc": "../files/Manuals/Calypso_Wheelhouse/WheelhouseStepByStep&QuickRef.pdf",
     "source": "entries"
   },
   {
-    "title": "BC Resourcess",
+    "title": "BC Resources",
     "section": "Bottom Contact Sensor",
     "url_loc": "../files/Manuals/Bottom contact sensor/",
+    "source": "entries"
+  },
+  {
+    "title": "SBE39 (BT) Resources",
+    "section": "BT/CTD",
+    "url_loc": "../files/Manuals/CTD Manuals/SBE39/",
     "source": "entries"
   },
   {
@@ -654,7 +654,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Wiremarking Procedures (GOA/AI)",
+    "title": "Wiremarking and Net-Related Procedures (GOA/AI)",
     "section": "Wiremarking",
     "url_loc": "../files/Net and wire maintenance/wiremarking/GOA AI Wire Marking and other procedures.pdf",
     "source": "entries"
@@ -696,15 +696,9 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "OSI (Purchase Order) PO & Job Services",
+    "title": "GIS Training",
     "section": "",
-    "url_loc": "../files/Contracts/OSI dockside services approved vessels F25.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "OSI Services task log",
-    "section": "",
-    "url_loc": "../files/Contracts/Dockside services FY25 task log v2.xlsx",
+    "url_loc": "../files/Station info/GIS_Training_2019.pdf",
     "source": "entries"
   },
   {
@@ -723,6 +717,12 @@ var searchData = [
     "title": "Sport Fishing Regulations",
     "section": "Recreation",
     "url_loc": "../files/Port Info/Sport fishing regs",
+    "source": "entries"
+  },
+  {
+    "title": "OSI Dockside Services",
+    "section": "",
+    "url_loc": "../files/Contracts/AFSC OSI Dockside Services Approved Vessels FY26.pdf",
     "source": "entries"
   },
   {
@@ -1143,15 +1143,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "CTD Settings and Troubleshooting",
-    "section": "CTD SBE19plus",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD Settings and Troubleshooting.pdf",
-    "source": "entries"
-  },
-  {
     "title": "All Resources",
     "section": "CTD SBE19plus",
     "url_loc": "../files/Manuals/CTD Manuals/SBE19plus",
+    "source": "entries"
+  },
+  {
+    "title": "CTD Settings and Troubleshooting",
+    "section": "CTD SBE19plus",
+    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD Settings and Troubleshooting.pdf",
     "source": "entries"
   },
   {
@@ -1878,6 +1878,18 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "GAPsurvey Instructions",
+    "section": "GAPsurvey R Package",
+    "url_loc": "../files/Manuals/R/GAPsurvey/docs/index.html",
+    "source": "entries"
+  },
+  {
+    "title": "GAPsurvey Resources",
+    "section": "GAPsurvey R Package",
+    "url_loc": "../files/Manuals/R/GAPsurvey/",
+    "source": "entries"
+  },
+  {
     "title": "Acrobat Reader and CutePDF Writer",
     "section": "",
     "url_loc": "../files/Software/PDFs/",
@@ -1887,12 +1899,6 @@ var searchData = [
     "title": "File Format Converter (docx-xlsx)",
     "section": "",
     "url_loc": "../files/Software/docx_xlsx_file_converter",
-    "source": "entries"
-  },
-  {
-    "title": "HP1006 Printer Drivers",
-    "section": "",
-    "url_loc": "../files/Software/HP1006_drivers",
     "source": "entries"
   },
   {
@@ -1917,18 +1923,6 @@ var searchData = [
     "title": "SiRFDemo",
     "section": "",
     "url_loc": "../files/Manuals/GPSs",
-    "source": "entries"
-  },
-  {
-    "title": "GAPsurvey Instructions",
-    "section": "GAPsurvey R Package",
-    "url_loc": "../files/Manuals/R/GAPsurvey/docs/index.html",
-    "source": "entries"
-  },
-  {
-    "title": "GAPsurvey Resources",
-    "section": "GAPsurvey R Package",
-    "url_loc": "../files/Manuals/R/GAPsurvey/",
     "source": "entries"
   },
   {
