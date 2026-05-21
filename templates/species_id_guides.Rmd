@@ -139,7 +139,7 @@ all_files <- taxa_guides %>%
       TRUE ~ "Inverts"
     ),
     url_loc = stringr::str_replace(url_loc, "\\./files", "\\../files"),
-    reference = paste0("[", str_to_title(title), "](", gsub(" ", "%20", url_loc), ")")
+    reference = paste0("[", title, "](", gsub(" ", "%20", url_loc), ")")
   )
 ```
 

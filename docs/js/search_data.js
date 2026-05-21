@@ -6,7 +6,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "METIS System - Oracle Apex End User's Guide",
+    "title": "Oracle Apex End User's Guide",
     "section": "METIS",
     "url_loc": "../files/Manuals/Catch Data Entry/oracle-apex-end-users-guide.pdf",
     "source": "entries"
@@ -102,7 +102,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Volumetric Steps",
+    "title": "Volumetric Steps (GOA/AI)",
     "section": "Large Catch Resources",
     "url_loc": "../files/Collections/Large catches/Steps for a Volumetric Catch.pdf",
     "source": "entries"
@@ -234,12 +234,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "ES80 Resources",
-    "section": "ES80",
-    "url_loc": "../files/Collections/ES80/",
-    "source": "entries"
-  },
-  {
     "title": "GAPsurvey R Package",
     "section": "GAP Toolkit",
     "url_loc": "./docs/Software_Software_&_drivers.html",
@@ -261,18 +255,6 @@ var searchData = [
     "title": "GPS MR-350 and Related Resources",
     "section": "GPS",
     "url_loc": "../files/Manuals/GPSs/",
-    "source": "entries"
-  },
-  {
-    "title": "DoorExplorereProNX User Manual",
-    "section": "Marport/Scala",
-    "url_loc": "../files/Manuals/MARPORT/DoorExplorerProNX_UserManual_en_V1.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "FlowSpeedNavigatorProNX User Manual",
-    "section": "Marport/Scala",
-    "url_loc": "../files/Manuals/MARPORT/FlowSpeedNavigatorProNX_UserManual_en_V1.pdf",
     "source": "entries"
   },
   {
@@ -312,7 +294,19 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Trident User Manual",
+    "title": "Sensor User Manual: Door Explorer",
+    "section": "Marport/Scala",
+    "url_loc": "../files/Manuals/MARPORT/DoorExplorerProNX_UserManual_en_V1.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Sensor User Manual: Flow Speed Navigator",
+    "section": "Marport/Scala",
+    "url_loc": "../files/Manuals/MARPORT/FlowSpeedNavigatorProNX_UserManual_en_V1.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Sensor User Manual: Trident",
     "section": "Marport/Scala",
     "url_loc": "../files/Manuals/MARPORT/Trident_UserManual_en_V2.pdf",
     "source": "entries"
@@ -342,13 +336,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Scanmar Photos (OEX)",
-    "section": "Scanmar",
-    "url_loc": "../files/Manuals/Scanmar/OEx/",
-    "source": "entries"
-  },
-  {
-    "title": "TimeZero files",
+    "title": "TimeZero Files",
     "section": "TimeZero",
     "url_loc": "../files/Manuals/TimeZero/",
     "source": "entries"
@@ -516,19 +504,25 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "ES80 Resources",
+    "section": "ES80",
+    "url_loc": "../files/Collections/ES80/",
+    "source": "entries"
+  },
+  {
     "title": "Light Meter Resources",
     "section": "Light Meter",
     "url_loc": "../files/Manuals/Light meters",
     "source": "entries"
   },
   {
-    "title": "Station Progression Worksheet (AKP)",
+    "title": "[AKP] Station Progression Worksheet",
     "section": "Station Progression (AI/GOA)",
     "url_loc": "../files/Station info/AI_GOA/Station Progression/Station Log and Progression 202601 AKP.xlsm",
     "source": "entries"
   },
   {
-    "title": "Station Progression Worksheet (OEX)",
+    "title": "[OEX] Station Progression Worksheet",
     "section": "Station Progression (AI/GOA)",
     "url_loc": "../files/Station info/AI_GOA/Station Progression/Station Log and Progression 202601 OEX.xlsm",
     "source": "entries"
@@ -594,27 +588,33 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "EBS scope table",
+    "title": "EBS Scope Table",
     "section": "Scope Tables",
     "url_loc": "../files/Manuals/Survey operation manuals/EBS Scope Table.pdf",
     "source": "entries"
   },
   {
-    "title": "GOA/AI scope table",
+    "title": "GOA/AI Scope Table",
     "section": "Scope Tables",
     "url_loc": "../files/Manuals/Survey operation manuals/AI GOA Scope table.pdf",
     "source": "entries"
   },
   {
-    "title": "NBS scope table",
+    "title": "NBS Scope Table",
     "section": "Scope Tables",
     "url_loc": "../files/Manuals/Survey operation manuals/NBS Scope Table.pdf",
     "source": "entries"
   },
   {
-    "title": "Scope vs. RAPP counts",
+    "title": "Scope vs. RAPP Counts",
     "section": "Scope Tables",
     "url_loc": "../files/Manuals/Survey operation manuals/Scope_vs_RAPP_counts.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "[OEX] Dockside Wiremarking Photos",
+    "section": "Wiremarking",
+    "url_loc": "../files/net and wire maintenance/wiremarking/OEX 2022 photos/",
     "source": "entries"
   },
   {
@@ -627,12 +627,6 @@ var searchData = [
     "title": "Dockside Wiremarking Diagram (option 2)",
     "section": "Wiremarking",
     "url_loc": "../files/net and wire maintenance/wiremarking/Wire Marking Dock Side option 2.png",
-    "source": "entries"
-  },
-  {
-    "title": "Dockside Wiremarking Photos (OEX)",
-    "section": "Wiremarking",
-    "url_loc": "../files/net and wire maintenance/wiremarking/OEX 2022 photos/",
     "source": "entries"
   },
   {
@@ -663,6 +657,12 @@ var searchData = [
     "title": "Sink Times",
     "section": "",
     "url_loc": "../files/Net and wire maintenance/sink times.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "[OEX] Scanmar Hydrophone Photos",
+    "section": "",
+    "url_loc": "../files/Manuals/Scanmar/OEx/",
     "source": "entries"
   },
   {
@@ -720,12 +720,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "OSI Dockside Services",
-    "section": "",
-    "url_loc": "../files/Contracts/AFSC OSI Dockside Services Approved Vessels FY26.pdf",
-    "source": "entries"
-  },
-  {
     "title": "Photo Consent Release Form",
     "section": "Social Media",
     "url_loc": "../files/Social media policies/NMFS_Individual Release_Fillable.pdf",
@@ -758,7 +752,14 @@ var searchData = [
   {
     "title": "Contracts",
     "section": "",
+    "subtitle": "Vessel contracts, Observer contract, etc.",
     "url_loc": "../files/Contracts",
+    "source": "entries"
+  },
+  {
+    "title": "OSI Dockside Services",
+    "section": "",
+    "url_loc": "../files/Contracts/AFSC OSI Dockside Services Approved Vessels FY26.pdf",
     "source": "entries"
   },
   {
@@ -800,7 +801,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "EBS/NBS Survey Contingency Plan",
+    "title": "BS Survey Contingency Plan",
     "section": "Survey Ops Manuals",
     "subtitle": "e.g. station dropping prorities",
     "url_loc": "../files/Manuals/Survey operation manuals/EBS_NBS Survey Contingency Plan.pdf",
@@ -827,7 +828,7 @@ var searchData = [
   {
     "title": "Survey Primers",
     "section": "",
-    "url_loc": "../files/Manuals/Survey operation manuals/",
+    "url_loc": "../files/Manuals/Survey operation manuals/primers/",
     "source": "entries"
   },
   {
@@ -951,7 +952,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Stomach Collection Methods",
+    "title": "Stomach Collection Presentation",
     "section": "Food Habits (Stomachs)",
     "url_loc": "../files/Collections/Stomachs/Stomach Collection Methods.pdf",
     "source": "entries"
@@ -1005,6 +1006,42 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "[AKK] Special Projects Deck Poster",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/Deck Poster AKK.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "[AKK] Special Projects Full Packet",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/2026_AKK_summary.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "[AKK] Special Projects Summary Table",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/2026_EBS_AKK_Table_detailed.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "[NWX] Special Projects Deck Poster",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/Deck Poster NWE.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "[NWX] Special Projects Full Packet",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/2026_NWX_summary.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "[NWX] Special Projects Summary Table",
+    "section": "Bering",
+    "url_loc": "../files/collections/special projects/BS/2026/2026_EBS_NWX_Table_detailed.pdf",
+    "source": "entries"
+  },
+  {
     "title": "CTD pH/DO sensor calibration protocol",
     "section": "Bering",
     "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD pH calibration protocol.pdf",
@@ -1023,111 +1060,75 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Special Projects Deck Poster (AKK)",
-    "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/Deck Poster AKK.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Deck Poster (NWX)",
-    "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/Deck Poster NWE.pdf",
-    "source": "entries"
-  },
-  {
     "title": "Special Projects Folder",
     "section": "Bering",
     "url_loc": "../files/collections/special projects/BS/2026/",
     "source": "entries"
   },
   {
-    "title": "Special Projects Full Packet (AKK)",
-    "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/2026_AKK_summary.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Full Packet (NWX)",
-    "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/2026_NWX_summary.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Summary Table (AKK)",
-    "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/2026_EBS_AKK_Table_detailed.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Summary Table (NWX)",
-    "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/2026_EBS_NWX_Table_detailed.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Project List (AKP)",
+    "title": "[AKP] Special Project List",
     "section": "GOA/AI",
     "url_loc": "../files/collections/special projects/AI_GOA/2026/Project List AKP.pdf",
     "source": "entries"
   },
   {
-    "title": "Special Project List (OEX)",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project List OEX.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Deck Poster (AKP)",
+    "title": "[AKP] Special Projects Deck Poster",
     "section": "GOA/AI",
     "url_loc": "../files/collections/special projects/AI_GOA/2026/Deck Poster AKP.pdf",
     "source": "entries"
   },
   {
-    "title": "Special Projects Deck Poster (OEX)",
+    "title": "[AKP] Special Projects Full Packet",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/AKP Project Packet.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "[AKP] Special Projects Summary Table",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project Summaries AKP.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "[AKP] Tally Sheet",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Tally AK Provider.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "[OEX] Special Project List",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project List OEX.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "[OEX] Special Projects Deck Poster",
     "section": "GOA/AI",
     "url_loc": "../files/collections/special projects/AI_GOA/2026/Deck Poster OEX.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "[OEX] Special Projects Full Packet",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/OEX Project Packet.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "[OEX] Special Projects Summary Table",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project Summaries OEX.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "[OEX] Tally Sheet",
+    "section": "GOA/AI",
+    "url_loc": "../files/collections/special projects/AI_GOA/2026/Tally OEX.pdf",
     "source": "entries"
   },
   {
     "title": "Special Projects Folder",
     "section": "GOA/AI",
     "url_loc": "../files/collections/special projects/AI_GOA/2026/",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Full Packet (AKP)",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/AKP Project Packet.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Full Packet (OEX)",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/OEX Project Packet.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Summary Table (AKP)",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project Summaries AKP.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Special Projects Summary Table (OEX)",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project Summaries OEX.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Tally Sheet (AKP)",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Tally AK Provider.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Tally Sheet (OEX)",
-    "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Tally OEX.pdf",
     "source": "entries"
   },
   {
@@ -1144,43 +1145,43 @@ var searchData = [
   },
   {
     "title": "All Resources",
-    "section": "CTD SBE19plus",
+    "section": "CTD",
     "url_loc": "../files/Manuals/CTD Manuals/SBE19plus",
     "source": "entries"
   },
   {
     "title": "CTD Settings and Troubleshooting",
-    "section": "CTD SBE19plus",
+    "section": "CTD",
     "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD Settings and Troubleshooting.pdf",
     "source": "entries"
   },
   {
     "title": "SBE Downloader How-to-Guide",
-    "section": "CTD SBE19plus",
+    "section": "CTD",
     "url_loc": "../files/Manuals/CTD Manuals/SBEDownloader How-to Guide.pdf",
     "source": "entries"
   },
   {
     "title": "SBE Downloader Software",
-    "section": "CTD SBE19plus",
+    "section": "CTD",
     "url_loc": "../files/software/SBEDownloader/SBEDownloader.exe",
     "source": "entries"
   },
   {
     "title": "Settings SOP",
-    "section": "CTD SBE19plus",
+    "section": "CTD",
     "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD Setting SOPs.pdf",
     "source": "entries"
   },
   {
     "title": "Storage and Post-Processing",
-    "section": "CTD SBE19plus",
+    "section": "CTD",
     "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD Storage and Post-Processing.pdf",
     "source": "entries"
   },
   {
     "title": "User Manual",
-    "section": "CTD SBE19plus",
+    "section": "CTD",
     "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/SBE 19Plus At-Sea User Manual.pdf",
     "source": "entries"
   },
@@ -1239,15 +1240,15 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Personnel Availability",
-    "section": "All Surveys",
-    "url_loc": "../files/contact lists/Personnel Availability.pdf",
-    "source": "entries"
-  },
-  {
     "title": "RACE Vessel Contact Info",
     "section": "All Surveys",
     "url_loc": "../files/Contact lists/GAP BT Survey Vessel Contacts 2026.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Survey Personnel Availability",
+    "section": "All Surveys",
+    "url_loc": "../files/contact lists/Personnel Availability.pdf",
     "source": "entries"
   },
   {
@@ -1290,12 +1291,6 @@ var searchData = [
     "title": "Comp Time for Air Travel",
     "section": "",
     "url_loc": "../files/Travel/COMP TIME OFF FOR TRAVEL-Air-final.pdf",
-    "source": "entries"
-  },
-  {
-    "title": "Comp Time for Travel & Credit Hours",
-    "section": "",
-    "url_loc": "../files/Timekeeping/Comp Time for Travel & Credit Hours.pdf",
     "source": "entries"
   },
   {
@@ -1365,12 +1360,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "Choices",
-    "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/CHOICES.pdf",
-    "source": "entries"
-  },
-  {
     "title": "Core",
     "section": "",
     "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Core Concepts.pdf",
@@ -1428,6 +1417,12 @@ var searchData = [
     "title": "Shoulder",
     "section": "",
     "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Shoulder.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Strain/Sprain",
+    "section": "",
+    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/CHOICES.pdf",
     "source": "entries"
   },
   {
@@ -1635,7 +1630,7 @@ var searchData = [
     "source": "entries"
   },
   {
-    "title": "At-Sea Incident Report Form (fillable)",
+    "title": "At-Sea Incident Report Form",
     "section": "",
     "subtitle": "e.g., injury or near miss",
     "url_loc": "../files/Safety/Accidents/At-Sea Incident Report Form_fillable.pdf",
@@ -1866,6 +1861,12 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "Tsunami Preparedness",
+    "section": "",
+    "url_loc": "../files/Safety/Tsunami Preparedness.pdf",
+    "source": "entries"
+  },
+  {
     "title": "Bedbugs",
     "section": "",
     "url_loc": "../files/Safety/BedBugPrimer_final.pdf",
@@ -1932,6 +1933,12 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "Tablet Apps (.apk)",
+    "section": "",
+    "url_loc": "../files/Manuals/Apps Software/Tablet apks",
+    "source": "entries"
+  },
+  {
     "title": "BVDR Converter",
     "section": "",
     "url_loc": "../files/Manuals/BVDR_converter/",
@@ -1953,12 +1960,6 @@ var searchData = [
     "title": "Hyperterm",
     "section": "",
     "url_loc": "../files/Software/Hyperterm",
-    "source": "entries"
-  },
-  {
-    "title": "Tablet Apps (.apk)",
-    "section": "",
-    "url_loc": "../files/Manuals/Apps Software/Tablet apks",
     "source": "entries"
   },
   {
@@ -2057,69 +2058,87 @@ var searchData = [
     "source": "guides"
   },
   {
-    "title": "Chionecetes crabs guide",
-    "section": "arthropod",
+    "title": "Arctic Crustacea Photo Guide",
+    "section": "arthropods",
+    "url_loc": "../files/SpeciesID/guides/inverts/Crustacea_Arctic_photoguide_Jan2021.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "Chionecetes Crab Field Techniques",
+    "section": "arthropods",
     "url_loc": "../files/SpeciesID/guides/inverts/Chionoecetes Crabs.pdf",
     "source": "guides"
   },
   {
-    "title": "Crustacean genera key",
-    "section": "arthropod",
+    "title": "Crustacean Genera Key",
+    "section": "arthropods",
     "url_loc": "../files/SpeciesID/guides/inverts/Crustacean Key notes.pdf",
     "source": "guides"
   },
   {
-    "title": "Hermit crab ID guide",
-    "section": "arthropod",
+    "title": "Hermit Crab ID Guide",
+    "section": "arthropods",
     "url_loc": "../files/SpeciesID/guides/inverts/Acuna hermitcrabs.pdf",
     "source": "guides"
   },
   {
-    "title": "Lithodid crabs field techniques",
-    "section": "arthropod",
+    "title": "Lithodid Crab Field Techniques",
+    "section": "arthropods",
     "url_loc": "../files/SpeciesID/guides/inverts/Lithodid Crabs.pdf",
     "source": "guides"
   },
   {
+    "title": "Tunicates of Alaska",
+    "section": "ascidacea",
+    "url_loc": "../files/SpeciesID/guides/inverts/tunicates-of-alaska.pdf",
+    "source": "guides"
+  },
+  {
     "title": "Alaska Seabird Guide",
-    "section": "bird",
+    "section": "birds",
     "url_loc": "../files/SpeciesID/guides/birdmammal/AK Seabird Guide.pdf",
     "source": "guides"
   },
   {
     "title": "Albatross ID Guide",
-    "section": "bird",
+    "section": "birds",
     "url_loc": "../files/SpeciesID/guides/birdmammal/Albatross ID Guide.pdf",
     "source": "guides"
   },
   {
     "title": "ESA-listed AK Bird ID",
-    "section": "bird",
+    "section": "birds",
     "url_loc": "../files/SpeciesID/guides/birdmammal/ESA-listed AK Bird ID.pdf",
     "source": "guides"
   },
   {
     "title": "Spectacled Eider Factsheet",
-    "section": "bird",
+    "section": "birds",
     "url_loc": "../files/SpeciesID/guides/birdmammal/spectacled_eider_factsheet.pdf",
     "source": "guides"
   },
   {
     "title": "Stellers Eider Factsheet",
-    "section": "bird",
+    "section": "birds",
     "url_loc": "../files/SpeciesID/guides/birdmammal/Stellers Eider factsheet.pdf",
     "source": "guides"
   },
   {
-    "title": "AK Coral guide",
+    "title": "**Coral Field Guide (Wilborn et al 2021)**",
+    "section": "cnidaria",
+    "url_loc": "../files/SpeciesID/guides/inverts/Coral field guide2021.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "AK Coral Guide",
     "section": "cnidaria",
     "url_loc": "../files/SpeciesID/guides/inverts/AlaskaCoralguide.pdf",
     "source": "guides"
   },
   {
-    "title": "**Coral field guide (Wilborn et al 2021)**",
+    "title": "Coral Guide (Stone et al. 2023)",
     "section": "cnidaria",
-    "url_loc": "../files/SpeciesID/guides/inverts/Coral field guide2021.pdf",
+    "url_loc": "../files/SpeciesID/guides/inverts/cnidaria/coral_guide_Stone2023.pdf",
     "source": "guides"
   },
   {
@@ -2129,39 +2148,15 @@ var searchData = [
     "source": "guides"
   },
   {
-    "title": "Coral guide Stone et al. 2023",
-    "section": "cnidaria",
-    "url_loc": "../files/SpeciesID/guides/inverts/cnidaria/coral_guide_Stone2023.pdf",
+    "title": "Arctic Echinodermata Photo Guide",
+    "section": "echinoderms",
+    "url_loc": "../files/SpeciesID/guides/inverts/Echinodermata_Arctic_photoguide_Jan2021.pdf",
     "source": "guides"
   },
   {
     "title": "Brittle Stars",
-    "section": "echinoderm",
+    "section": "echinoderms",
     "url_loc": "../files/SpeciesID/guides/inverts/echinoderm/Brittle stars.pdf",
-    "source": "guides"
-  },
-  {
-    "title": "Echinoidea",
-    "section": "echinoderm",
-    "url_loc": "../files/SpeciesID/guides/inverts/echinoderm/Echinoidea.pdf",
-    "source": "guides"
-  },
-  {
-    "title": "Sand Dollars",
-    "section": "echinoderm",
-    "url_loc": "../files/SpeciesID/guides/inverts/echinoderm/Sand dollars.pdf",
-    "source": "guides"
-  },
-  {
-    "title": "Sea cucumbers",
-    "section": "echinoderm",
-    "url_loc": "../files/SpeciesID/guides/inverts/echinoderm/Holothuroidea.pdf",
-    "source": "guides"
-  },
-  {
-    "title": "Sea Urchins",
-    "section": "echinoderm",
-    "url_loc": "../files/SpeciesID/guides/inverts/echinoderm/sea urchins.pdf",
     "source": "guides"
   },
   {
@@ -2172,7 +2167,7 @@ var searchData = [
     "source": "guides"
   },
   {
-    "title": "Snailfish guide",
+    "title": "Snailfish Guide",
     "section": "fish",
     "subtitle": "Liparidae",
     "url_loc": "../files/SpeciesID/guides/fish/snailfishes_2022.pdf",
@@ -2193,28 +2188,14 @@ var searchData = [
     "source": "guides"
   },
   {
-    "title": "Bathyraja panthera (Orr et al. 2011)",
-    "section": "fish",
-    "subtitle": "Rajiidae",
-    "url_loc": "../files/SpeciesID/guides/fish/Bpanthera orr2011.pdf",
-    "source": "guides"
-  },
-  {
-    "title": "Skate egg case graph",
+    "title": "Skate Egg Case Graph",
     "section": "fish",
     "subtitle": "Rajiidae",
     "url_loc": "../files/SpeciesID/guides/fish/Skate egg case graph.pdf",
     "source": "guides"
   },
   {
-    "title": "Poster: Skates of AK",
-    "section": "fish",
-    "subtitle": "Rajiidae",
-    "url_loc": "../files/SpeciesID/guides/fish/AK skates.pdf",
-    "source": "guides"
-  },
-  {
-    "title": "Skate Eggcase Key",
+    "title": "Skate Egg Case Key",
     "section": "fish",
     "subtitle": "Rajiidae",
     "url_loc": "../files/SpeciesID/guides/fish/Skate eggcase key.pdf",
@@ -2235,14 +2216,14 @@ var searchData = [
     "source": "guides"
   },
   {
-    "title": "Poster: Rockfishes of AK",
+    "title": "Blackspotted/Rougheye One Pager",
     "section": "fish",
     "subtitle": "Sebastidae",
-    "url_loc": "../files/SpeciesID/guides/fish/AKrockfishes orr02.pdf",
+    "url_loc": "../files/SpeciesID/guides/fish/blackspot_rougheye_printout.pdf",
     "source": "guides"
   },
   {
-    "title": "Rockfish guide",
+    "title": "Rockfish Guide",
     "section": "fish",
     "subtitle": "Sebastidae",
     "url_loc": "../files/SpeciesID/guides/fish/Rockfishes TM.pdf",
@@ -2256,23 +2237,21 @@ var searchData = [
     "source": "guides"
   },
   {
-    "title": "Squalus suckleyi resurrect (Ebert et al. 2010)",
-    "section": "fish",
-    "subtitle": "Squalidae",
-    "url_loc": "../files/SpeciesID/guides/fish/Squalus suckleyi2010.pdf",
-    "source": "guides"
-  },
-  {
-    "title": "Poster: Eelpouts of AK",
-    "section": "fish",
-    "subtitle": "Zoarcidae",
-    "url_loc": "../files/SpeciesID/guides/fish/AKeelpouts.pdf",
-    "source": "guides"
-  },
-  {
     "title": "**AK Fishes Deck Guide**",
     "section": "fish",
     "url_loc": "../files/SpeciesID/guides/fish/AK Fishes 2024.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "**FMA Species ID guide**",
+    "section": "fish",
+    "url_loc": "../files/SpeciesID/guides/fish/FMA SpeciesID 2019.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "AK Fish Distributions (Love et al. 2021)",
+    "section": "fish",
+    "url_loc": "../files/SpeciesID/guides/fish/AK fish distributions Love et al. 2021.pdf",
     "source": "guides"
   },
   {
@@ -2294,15 +2273,15 @@ var searchData = [
     "source": "guides"
   },
   {
-    "title": "**FMA Species ID guide**",
-    "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/FMA SpeciesID 2019.pdf",
-    "source": "guides"
-  },
-  {
     "title": "Ichthyofaul Baselines in Pacific Arctic Region (Mecklenburg 2015)",
     "section": "fish",
     "url_loc": "../files/SpeciesID/guides/fish/Mecklenburg2015.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "Larval Fish ID Site",
+    "section": "fish",
+    "url_loc": "https://apps-afsc.fisheries.noaa.gov/ichthyo/specframe.php",
     "source": "guides"
   },
   {
@@ -2318,123 +2297,126 @@ var searchData = [
     "source": "guides"
   },
   {
-    "title": "Species ID Confidence AI/GOA",
+    "title": "Species ID Confidence (AI/GOA)",
     "section": "fish",
     "url_loc": "../files/SpeciesID/guides/fish/Species ID Confidence AIGOA.pdf",
     "source": "guides"
   },
   {
-    "title": "Species ID Confidence EBS",
-    "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/Species ID Confidence EBS.pdf",
-    "source": "guides"
-  },
-  {
-    "title": "Species ID Confidence EBS slope",
+    "title": "Species ID Confidence (EBS Slope)",
     "section": "fish",
     "url_loc": "../files/SpeciesID/guides/fish/Species ID Confidence EBSslope.pdf",
     "source": "guides"
   },
   {
-    "title": "AK fish distributions (Love et al. 2021)",
+    "title": "Species ID Confidence (EBS)",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/AK fish distributions Love et al. 2021.pdf",
+    "url_loc": "../files/SpeciesID/guides/fish/Species ID Confidence EBS.pdf",
     "source": "guides"
   },
   {
-    "title": "Blackspotted/Rougheye one pager",
-    "section": "fish",
-    "subtitle": "Sebastidae",
-    "url_loc": "../files/SpeciesID/guides/fish/blackspot_rougheye_printout.pdf",
+    "title": "Key to Pinnipeds",
+    "section": "mammals",
+    "url_loc": "../files/SpeciesID/guides/birdmammal/Key to pinnipeds.pdf",
     "source": "guides"
   },
   {
-    "title": "Marine mammals of Alaska Arctic",
-    "section": "mammal",
+    "title": "Marine Mammals of Alaska Arctic",
+    "section": "mammals",
     "url_loc": "../files/SpeciesID/guides/birdmammal/MM of Alaska Arctic.pdf",
     "source": "guides"
   },
   {
     "title": "North Pacific Right Whale Guide",
-    "section": "mammal",
+    "section": "mammals",
     "url_loc": "../files/SpeciesID/guides/birdmammal/NPRight Whale Guide.pdf",
     "source": "guides"
   },
   {
-    "title": "Key to Pinnipeds",
-    "section": "mammal",
-    "url_loc": "../files/SpeciesID/guides/birdmammal/Key to pinnipeds.pdf",
+    "title": "Arctic Mollusca Photo Guide",
+    "section": "molluscs",
+    "url_loc": "../files/SpeciesID/guides/inverts/Mollusca_Arctic_photoguide_Jan2021.pdf",
     "source": "guides"
   },
   {
-    "title": "Cephalopod Guide (Jorgensen 2013)",
-    "section": "mollusc",
-    "url_loc": "../files/SpeciesID/guides/inverts/Cephalopod Guide 2013.pdf",
-    "source": "guides"
-  },
-  {
-    "title": "Ecology of snails (Genus Neptunea)",
-    "section": "mollusc",
+    "title": "Ecology of Neptunea Snails",
+    "section": "molluscs",
     "url_loc": "../files/SpeciesID/guides/inverts/Neptunea.pdf",
     "source": "guides"
   },
   {
     "title": "Mollusca Training Presentation",
-    "section": "mollusc",
+    "section": "molluscs",
     "url_loc": "../files/SpeciesID/guides/inverts/Mollusca training 2012.pdf",
     "source": "guides"
   },
   {
-    "title": "Octopus sexing",
-    "section": "mollusc",
+    "title": "Octopus Sexing",
+    "section": "molluscs",
     "url_loc": "../files/SpeciesID/guides/inverts/OctopusSex.pdf",
     "source": "guides"
   },
   {
     "title": "Poster: Chitons of AK",
-    "section": "mollusc",
+    "section": "molluscs",
     "url_loc": "../files/SpeciesID/guides/inverts/poster chitons of AK.pdf",
     "source": "guides"
   },
   {
     "title": "Deepwater Sponges of AI",
-    "section": "sponge",
+    "section": "sponges",
     "url_loc": "../files/SpeciesID/guides/inverts/Deepwater sponges AI.pdf",
     "source": "guides"
   },
   {
     "title": "Sponge Morphotypes",
-    "section": "sponge",
+    "section": "sponges",
     "url_loc": "../files/SpeciesID/guides/inverts/Sponge Morphotypes.pdf",
     "source": "guides"
   },
   {
-    "title": "Hobson Benthic Errantiate Polychaetes",
-    "section": "worm",
+    "title": "Arctic Annelidae Photo Guide",
+    "section": "worms",
+    "url_loc": "../files/SpeciesID/guides/inverts/Annelida_Arctic_photoguide_Jan2021.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "Benthic Errantiate Polychaetes",
+    "section": "worms",
     "url_loc": "../files/SpeciesID/guides/inverts/Errantiate Polychaetes.pdf",
     "source": "guides"
   },
   {
     "title": "Polychaeta of the Far Eastern Seas (subclass Errantiate)",
-    "section": "worm",
+    "section": "worms",
     "url_loc": "../files/SpeciesID/guides/inverts/Errantiate Polychaeta.pdf",
     "source": "guides"
   },
   {
     "title": "Polychaeta of the Far Eastern Seas (subclass Sedentariate)",
-    "section": "worm",
+    "section": "worms",
     "url_loc": "../files/SpeciesID/guides/inverts/Sedentariate Polychaeta.pdf",
     "source": "guides"
   },
   {
     "title": "Polychaetes of BC (Baldwin 2009)",
-    "section": "worm",
+    "section": "worms",
     "url_loc": "../files/SpeciesID/guides/inverts/Polychaetes of BC.pdf",
     "source": "guides"
   },
   {
-    "title": "**AK Marine Invertebrates Deck Guide**",
+    "title": "**(old) AK Marine Invertebrates Deck Guide**",
     "url_loc": "../files/SpeciesID/guides/inverts/AKinverts.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "**NEW AK Inverts Vol 1: Shelled Inverts**",
+    "url_loc": "../files/SpeciesID/guides/inverts/invert_guide_vol1.pdf",
+    "source": "guides"
+  },
+  {
+    "title": "**NEW AK Inverts Vol 2: Echinoderms & Gelatinous Inverts**",
+    "url_loc": "../files/SpeciesID/guides/inverts/invert_guide_vol2.pdf",
     "source": "guides"
   },
   {
@@ -2443,63 +2425,17 @@ var searchData = [
     "source": "guides"
   },
   {
-    "title": "Illustrated Keys pelagic inverts vol1",
+    "title": "Illustrated Keys Pelagic Inverts Vol1",
     "url_loc": "../files/SpeciesID/guides/inverts/Keys to Free Vol1.pdf",
     "source": "guides"
   },
   {
-    "title": "Illustrated Keys pelagic inverts vol2",
+    "title": "Illustrated Keys Pelagic Inverts Vol2",
     "url_loc": "../files/SpeciesID/guides/inverts/Keys to Free Vol2.pdf",
     "source": "guides"
   },
   {
-    "title": "**NEW AK inverts vol 1: shelled inverts**",
-    "url_loc": "../files/SpeciesID/guides/inverts/invert_guide_vol1.pdf",
-    "source": "guides"
-  },
-  {
-    "title": "**NEW AK inverts vol 2: gelatinous inverts & echinoderms**",
-    "url_loc": "../files/SpeciesID/guides/inverts/invert_guide_vol2.pdf",
-    "source": "guides"
-  },
-  {
-    "title": "Larval fish ID site",
-    "section": "fish",
-    "url_loc": "https://apps-afsc.fisheries.noaa.gov/ichthyo/specframe.php",
-    "source": "guides"
-  },
-  {
-    "title": "Tunicates of Alaska",
-    "section": "ascidacea",
-    "url_loc": "../files/SpeciesID/guides/inverts/tunicates-of-alaska.pdf",
-    "source": "guides"
-  },
-  {
-    "title": "Mollusca Photo Guide",
-    "section": "mollusc",
-    "url_loc": "../files/SpeciesID/guides/inverts/Mollusca_Arctic_photoguide_Jan2021.pdf",
-    "source": "guides"
-  },
-  {
-    "title": "Annelidae Photo Guide",
-    "section": "worm",
-    "url_loc": "../files/SpeciesID/guides/inverts/Annelida_Arctic_photoguide_Jan2021.pdf",
-    "source": "guides"
-  },
-  {
-    "title": "Crustacea Photo Guide",
-    "section": "arthropod",
-    "url_loc": "../files/SpeciesID/guides/inverts/Crustacea_Arctic_photoguide_Jan2021.pdf",
-    "source": "guides"
-  },
-  {
-    "title": "Echinodermata Photo Guide",
-    "section": "echinoderm",
-    "url_loc": "../files/SpeciesID/guides/inverts/Echinodermata_Arctic_photoguide_Jan2021.pdf",
-    "source": "guides"
-  },
-  {
-    "title": "Misc. Taxa Photo Guide",
+    "title": "Arctic Misc. Taxa Photo Guide",
     "url_loc": "../files/SpeciesID/guides/inverts/Misc_taxa_Arctic_photoguide_Jan2021.pdf",
     "source": "guides"
   }
