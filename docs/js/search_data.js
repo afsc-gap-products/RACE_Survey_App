@@ -72,6 +72,24 @@ var searchData = [
     "source": "entries"
   },
   {
+    "title": "Beginning of Survey or Leg",
+    "section": "Tasklist",
+    "url_loc": "./data/Beginning of Survey or Leg_Deck Lead.html",
+    "source": "entries"
+  },
+  {
+    "title": "End of Leg",
+    "section": "Tasklist",
+    "url_loc": "./data/End of Leg_Deck Lead.html",
+    "source": "entries"
+  },
+  {
+    "title": "End of Survey",
+    "section": "Tasklist",
+    "url_loc": "./data/End of Survey_Deck Lead.html",
+    "source": "entries"
+  },
+  {
     "title": "**NEW** Volumetric Worksheet",
     "section": "Large Catch Resources",
     "url_loc": "../files/Collections/Large catches/volumetric_worksheet.xlsm",
@@ -699,6 +717,24 @@ var searchData = [
     "title": "GIS Training",
     "section": "",
     "url_loc": "../files/Station info/GIS_Training_2019.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Beginning of Survey or Leg",
+    "section": "Tasklist",
+    "url_loc": "./data/Beginning of Survey or Leg_FPC.html",
+    "source": "entries"
+  },
+  {
+    "title": "End of Leg",
+    "section": "Tasklist",
+    "url_loc": "./data/End of Leg_FPC.html",
+    "source": "entries"
+  },
+  {
+    "title": "End of Survey",
+    "section": "Tasklist",
+    "url_loc": "./data/End of Survey_FPC.html",
     "source": "entries"
   },
   {
@@ -1840,6 +1876,24 @@ var searchData = [
     "title": "Vessel Safety Checklist",
     "section": "",
     "url_loc": "../files/Safety/FV_Safety_checklist.pdf",
+    "source": "entries"
+  },
+  {
+    "title": "Beginning of Survey or Leg",
+    "section": "Tasklist",
+    "url_loc": "./data/Beginning of Survey or Leg_Safety Lead.html",
+    "source": "entries"
+  },
+  {
+    "title": "End of Leg",
+    "section": "Tasklist",
+    "url_loc": "./data/End of Leg_Safety Lead.html",
+    "source": "entries"
+  },
+  {
+    "title": "End of Survey",
+    "section": "Tasklist",
+    "url_loc": "./data/End of Survey_Safety Lead.html",
     "source": "entries"
   },
   {

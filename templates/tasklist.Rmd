@@ -88,6 +88,8 @@ td, th {
 </style>
 
 ```{r echo=FALSE, results='asis'}
+options(knitr.kable.NA = '')
+
 checklist_items <- subset(task_list_data, sub_page == page_desc)
 
 # -------------------------
