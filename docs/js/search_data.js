@@ -73,19 +73,19 @@ var searchData = [
   },
   {
     "title": "Beginning of Survey or Leg",
-    "section": "Tasklist",
+    "section": "Tasklists",
     "url_loc": "./data/Beginning of Survey or Leg_Deck Lead.html",
     "source": "entries"
   },
   {
     "title": "End of Leg",
-    "section": "Tasklist",
+    "section": "Tasklists",
     "url_loc": "./data/End of Leg_Deck Lead.html",
     "source": "entries"
   },
   {
     "title": "End of Survey",
-    "section": "Tasklist",
+    "section": "Tasklists",
     "url_loc": "./data/End of Survey_Deck Lead.html",
     "source": "entries"
   },
@@ -721,19 +721,19 @@ var searchData = [
   },
   {
     "title": "Beginning of Survey or Leg",
-    "section": "Tasklist",
+    "section": "Tasklists",
     "url_loc": "./data/Beginning of Survey or Leg_FPC.html",
     "source": "entries"
   },
   {
     "title": "End of Leg",
-    "section": "Tasklist",
+    "section": "Tasklists",
     "url_loc": "./data/End of Leg_FPC.html",
     "source": "entries"
   },
   {
     "title": "End of Survey",
-    "section": "Tasklist",
+    "section": "Tasklists",
     "url_loc": "./data/End of Survey_FPC.html",
     "source": "entries"
   },
@@ -1880,19 +1880,19 @@ var searchData = [
   },
   {
     "title": "Beginning of Survey or Leg",
-    "section": "Tasklist",
+    "section": "Tasklists",
     "url_loc": "./data/Beginning of Survey or Leg_Safety Lead.html",
     "source": "entries"
   },
   {
     "title": "End of Leg",
-    "section": "Tasklist",
+    "section": "Tasklists",
     "url_loc": "./data/End of Leg_Safety Lead.html",
     "source": "entries"
   },
   {
     "title": "End of Survey",
-    "section": "Tasklist",
+    "section": "Tasklists",
     "url_loc": "./data/End of Survey_Safety Lead.html",
     "source": "entries"
   },

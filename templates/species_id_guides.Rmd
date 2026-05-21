@@ -133,7 +133,7 @@ all_files <- taxa_guides %>%
   dplyr::mutate(
     filename = basename(url_loc),
     taxa = case_when(
-      section %in% c("bird", "mammal") ~ "Birds and Mammals",
+      section %in% c("birds", "mammals") ~ "Birds and Mammals",
       section == "fish" ~ "Fishes",
       section == "algae" ~ "Algae",
       TRUE ~ "Inverts"
