@@ -2996,7 +2996,30 @@ background-color: #f9f9f9;
 }
 </style>
 
+
   <script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener('click', function(e) {
+      if (!e.target.classList.contains('survey-btn')) return;
+      
+      document.querySelectorAll('.survey-btn').forEach(b => b.classList.remove("active"));
+      e.target.classList.add("active");
+
+      const filter = e.target.dataset.filter;
+      document.querySelectorAll(".resource-item[data-survey]").forEach(item => {
+        const survey = item.dataset.survey;
+        const show =
+          filter === "all-surveys" ||
+          survey === "all" ||
+          (filter === "GOA/AI" && (survey.includes("goa") || survey.includes("ai"))) ||
+          (filter === "BS" && (survey.includes("ebs") || survey.includes("nbs") || survey.includes("bs")));
+        item.style.display = show ? "" : "none";
+      });
+    });
+  });
+
+
   document.addEventListener("DOMContentLoaded", function() {
     // 1. Target the right-hand navigation container
     const navRight = document.querySelector('.nav-right'); 
@@ -3101,41 +3124,83 @@ font-size: 14px;
 }
 
 .distill-site-nav {
-position: sticky;
+position: fixed;
 top: 0;
+left: 0;
+right: 0;
 z-index: 9999;
 }
 
-.distill-site-nav .nav-right {
-margin-left: auto;
+#survey-toggle {
 display: flex;
 align-items: center;
+gap: 12px;
+padding: 10px 20px;
+background: #ffffff;
+position: fixed;
+top: 52px; left: 0;
+right: 0;
+width: 100%;
+box-sizing: border-box;
+z-index: 998;
 }
-
-.distill-site-nav a {
+.toggle-label {
+font-size: 0.8rem;
+font-weight: 600;
+color: #6b7280;
+text-transform: uppercase;
+letter-spacing: 0.05em;
 white-space: nowrap;
 }
-
-
+.toggle-pill-group {
+display: flex;
+background: #e5e7eb;
+border-radius: 999px;
+padding: 3px;
+gap: 1px;
+}
+.survey-btn {
+padding: 5px 16px;
+border: none;
+background: transparent;
+color: #6b7280;
+border-radius: 999px;
+cursor: pointer;
+font-size: 0.82rem;
+font-weight: 500;
+transition: background 0.2s ease, color 0.2s ease;
+white-space: nowrap;
+}
+.survey-btn.active {
+background: #ffffff;
+color: #1f2937;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+font-weight: 600;
+}
+.survey-btn:hover:not(.active) {
+color: #374151;
+}
+.d-article {
+padding-top: 52px; 
+}
 @media screen and (max-width: 768px) {
-.distill-site-nav {
-display: block !important;
-height: auto !important;
+#survey-toggle {
+top: 0;
+flex-wrap: wrap;
 }
-.distill-site-nav .nav-right {
-margin-left: 0 !important;
-display: block !important;
 }
-.distill-site-nav a {
-display: block;
-padding: 0.5rem 0;
-white-space: normal;
+
+.d-article {
+padding-top: 50px; 
 }
+
+.d-title {
+margin-top: 50px; 
 }
 </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <style type="text/css">.distill-site-header {font-size: 14px;}.distill-site-nav {position: sticky;top: 0;z-index: 9999;}.distill-site-nav .nav-right {margin-left: auto;display: flex;align-items: center;}.distill-site-nav a {white-space: nowrap;}@media screen and (max-width: 768px) {.distill-site-nav {display: block !important;height: auto !important;}.distill-site-nav .nav-right {margin-left: 0 !important;display: block !important;}.distill-site-nav a {display: block;padding: 0.5rem 0;white-space: normal;}}</style>
+  <style type="text/css">.distill-site-header {font-size: 14px;}.distill-site-nav {position: fixed;top: 0;left: 0;right: 0;z-index: 9999;}#survey-toggle {display: flex;align-items: center;gap: 12px;padding: 10px 20px;background: #ffffff;position: fixed;top: 52px; left: 0;right: 0;width: 100%;box-sizing: border-box;z-index: 998;}.toggle-label {font-size: 0.8rem;font-weight: 600;color: #6b7280;text-transform: uppercase;letter-spacing: 0.05em;white-space: nowrap;}.toggle-pill-group {display: flex;background: #e5e7eb;border-radius: 999px;padding: 3px;gap: 1px;}.survey-btn {padding: 5px 16px;border: none;background: transparent;color: #6b7280;border-radius: 999px;cursor: pointer;font-size: 0.82rem;font-weight: 500;transition: background 0.2s ease, color 0.2s ease;white-space: nowrap;}.survey-btn.active {background: #ffffff;color: #1f2937;box-shadow: 0 1px 3px rgba(0,0,0,0.12);font-weight: 600;}.survey-btn:hover:not(.active) {color: #374151;}.d-article {padding-top: 52px; }@media screen and (max-width: 768px) {#survey-toggle {top: 0;flex-wrap: wrap;}}.d-article {padding-top: 50px; }.d-title {margin-top: 50px; }</style>
 
 </head>
 
@@ -3232,6 +3297,14 @@ Species Info
 </header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
+<div id="survey-toggle">
+  <span class="toggle-label">Filter by survey:</span>
+    <div class="toggle-pill-group">
+      <button class="survey-btn active" data-filter="all-surveys">All</button>
+        <button class="survey-btn" data-filter="GOA/AI">GOA / AI</button>
+          <button class="survey-btn" data-filter="BS">EBS / NBS</button>
+            </div>
+            </div>
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
@@ -3380,7 +3453,7 @@ margin-top: 0 !important;
 <h2 id="administrative">Administrative</h2>
 <div class="section-content-body">
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Contracts">Contracts</a>
@@ -3391,7 +3464,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Contracts/AFSC%20OSI%20Dockside%20Services%20Approved%20Vessels%20FY26.pdf">OSI Dockside Services</a> (<a href="https://docs.google.com/spreadsheets/d/1pt8ciaLI9k9Ws66S0p3PGaF2CPMBsDEz4acdl2TVehE/edit?gid=68267130#gid=68267130">Web link</a>)
@@ -3401,7 +3474,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Permits">Permits</a>
@@ -3412,7 +3485,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Purchase/">Purchase &amp; Rental Car Info</a>
@@ -3423,7 +3496,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Shipping-Hazmat/">Shipping</a>
@@ -3438,7 +3511,7 @@ margin-top: 0 !important;
 <h3 id="recreation">Recreation</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Port%20Info/Sport%20fishing%20regs">Sport Fishing Regulations</a>
@@ -3453,7 +3526,7 @@ margin-top: 0 !important;
 <h3 id="social-media">Social Media</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Social%20media%20policies/NMFS_Individual%20Release_Fillable.pdf">Photo Consent Release Form</a>
@@ -3463,7 +3536,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Social%20media%20policies/GAP%20Surveys%20Photo%20Sharing%20and%20Social%20Media.pdf">Photo Sharing and Social Media Guidance</a>
@@ -3481,7 +3554,7 @@ margin-top: 0 !important;
 <h2 id="manuals-references">Manuals &amp; References</h2>
 <div class="section-content-body">
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="bs">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Survey%20operation%20manuals/2026_Gear_Test_Project_Plan.pdf">2026 Gear Testing Project</a>
@@ -3491,7 +3564,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Survey%20operation%20manuals/primers/">Survey Primers</a>
@@ -3506,7 +3579,7 @@ margin-top: 0 !important;
 <h3 id="codebooks">Codebooks</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/SpeciesID/DataCodes&amp;Forms.pdf">Gear Codebook</a>
@@ -3516,7 +3589,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/SpeciesID/SpeciesCodeManual.pdf">Species Codebook</a>
@@ -3531,7 +3604,7 @@ margin-top: 0 !important;
 <h3 id="stations-and-maps">Stations and Maps</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs">
 <div class="resource-title">
 <p>
 <a href=".././files/Station%20info/EBS%20shelf">EBS Stations &amp; Maps</a>
@@ -3541,7 +3614,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ai, goa">
 <div class="resource-title">
 <p>
 <a href=".././files/Station%20info/AI_GOA/Station%20Logs/">GOA/AI Station Logs</a>
@@ -3551,7 +3624,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ai, goa">
 <div class="resource-title">
 <p>
 <a href=".././files/Station%20info/AI_GOA">GOA/AI Stations &amp; Maps</a>
@@ -3566,7 +3639,7 @@ margin-top: 0 !important;
 <h3 id="survey-ops-manuals">Survey Ops Manuals</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="ai, goa">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Survey%20operation%20manuals/AI%20Scientific%20Operations.pdf">AI/GOA Survey Ops Manual</a>
@@ -3576,7 +3649,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="bs">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Survey%20operation%20manuals/EBS_NBS%20Survey%20Contingency%20Plan.pdf">BS Survey Contingency Plan</a>
@@ -3587,7 +3660,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="bs">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Survey%20operation%20manuals/Bering%20Sea%20Survey%20Ops%20Manual.pdf">BS Survey Ops Manual</a> (<a href="https://docs.google.com/document/d/1GkO_-hAaB7zKB1Xuu09furfiXnc-LuMJvSb1ONVzFng/edit?usp=sharing">Web link</a>)
@@ -3602,7 +3675,7 @@ margin-top: 0 !important;
 <h3 id="tasklists">Tasklists</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././docs/Tasklists_Beginning_of_Survey_or_Leg.html">Beginning of Survey or Leg</a>
@@ -3612,7 +3685,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././docs/Tasklists_End_of_Leg.html">End of Leg</a>
@@ -3622,7 +3695,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././docs/Tasklists_End_of_Survey.html">End of Survey</a>
@@ -3640,7 +3713,7 @@ margin-top: 0 !important;
 <h2 id="port-information">Port Information</h2>
 <div class="section-content-body">
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs">
 <div class="resource-title">
 <p>
 <a href=".././files/Port%20info/EBS%20Port%20Guide.pdf">EBS Port Guide</a>
@@ -3650,7 +3723,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="goa, ai">
 <div class="resource-title">
 <p>
 <a href=".././files/Port%20info/2025%20GOA%20Port%20Guide.pdf">GOA Port Guide</a>
@@ -3660,7 +3733,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Port%20info/">Other Port Resources</a>
@@ -3678,7 +3751,7 @@ margin-top: 0 !important;
 <h2 id="training-resources">Training Resources</h2>
 <div class="section-content-body">
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Trainings/2026%20Training/">Current Training Resources</a>
@@ -3688,7 +3761,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Trainings/Prior%20Years%20Training/">Previous Training Resources</a>
@@ -3706,7 +3779,7 @@ margin-top: 0 !important;
 <h2 id="vessel-inventory">Vessel Inventory</h2>
 <div class="section-content-body">
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Survey%20inventory%20lists/First%20Aid%20kits/">First Aid Kits</a>
@@ -3721,7 +3794,7 @@ margin-top: 0 !important;
 <h3 id="rsst-inventory">RSST Inventory</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs">
 <div class="resource-title">
 <p>
 <a href=".././files/Survey%20inventory%20lists/RSST%20Inventory/2026_GearList_Packing_EBS.pdf">EBS Inventory Lists</a>
@@ -3731,7 +3804,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="goa, ai">
 <div class="resource-title">
 <p>
 <a href=".././files/Survey%20inventory%20lists/RSST%20Inventory/2026_GearList_Packing_AI.pdf">GOA/AI Inventory Lists</a>
@@ -3741,7 +3814,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Survey%20inventory%20lists/RSST%20Inventory/2026_Serialized_GearList.pdf">Serialized Gear Tracking</a>

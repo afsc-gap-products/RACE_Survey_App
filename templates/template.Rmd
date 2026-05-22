@@ -169,7 +169,7 @@ render_entry <- function(df) {
       )
       
       paste0(
-        '<div class="resource-item">',
+        '<div class="resource-item" data-survey="', row$survey, '">',  # CHANGED
         '<div class="resource-title">',
         title_html, subtitle,
         '</div>',
@@ -225,6 +225,7 @@ render_section <- function(df) {
   }
 }
 
+
 if (nrow(page_dat) > 0) {
   page_dat <- page_dat %>%
   mutate(
@@ -245,6 +246,8 @@ if (nrow(page_dat) > 0) {
 } else {
   cat("No content available.")
 }
+
+
 ```
 
 `r if(exists("output")) output`

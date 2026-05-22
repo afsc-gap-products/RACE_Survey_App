@@ -2996,7 +2996,30 @@ background-color: #f9f9f9;
 }
 </style>
 
+
   <script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener('click', function(e) {
+      if (!e.target.classList.contains('survey-btn')) return;
+      
+      document.querySelectorAll('.survey-btn').forEach(b => b.classList.remove("active"));
+      e.target.classList.add("active");
+
+      const filter = e.target.dataset.filter;
+      document.querySelectorAll(".resource-item[data-survey]").forEach(item => {
+        const survey = item.dataset.survey;
+        const show =
+          filter === "all-surveys" ||
+          survey === "all" ||
+          (filter === "GOA/AI" && (survey.includes("goa") || survey.includes("ai"))) ||
+          (filter === "BS" && (survey.includes("ebs") || survey.includes("nbs") || survey.includes("bs")));
+        item.style.display = show ? "" : "none";
+      });
+    });
+  });
+
+
   document.addEventListener("DOMContentLoaded", function() {
     // 1. Target the right-hand navigation container
     const navRight = document.querySelector('.nav-right'); 
@@ -3101,41 +3124,83 @@ font-size: 14px;
 }
 
 .distill-site-nav {
-position: sticky;
+position: fixed;
 top: 0;
+left: 0;
+right: 0;
 z-index: 9999;
 }
 
-.distill-site-nav .nav-right {
-margin-left: auto;
+#survey-toggle {
 display: flex;
 align-items: center;
+gap: 12px;
+padding: 10px 20px;
+background: #ffffff;
+position: fixed;
+top: 52px; left: 0;
+right: 0;
+width: 100%;
+box-sizing: border-box;
+z-index: 998;
 }
-
-.distill-site-nav a {
+.toggle-label {
+font-size: 0.8rem;
+font-weight: 600;
+color: #6b7280;
+text-transform: uppercase;
+letter-spacing: 0.05em;
 white-space: nowrap;
 }
-
-
+.toggle-pill-group {
+display: flex;
+background: #e5e7eb;
+border-radius: 999px;
+padding: 3px;
+gap: 1px;
+}
+.survey-btn {
+padding: 5px 16px;
+border: none;
+background: transparent;
+color: #6b7280;
+border-radius: 999px;
+cursor: pointer;
+font-size: 0.82rem;
+font-weight: 500;
+transition: background 0.2s ease, color 0.2s ease;
+white-space: nowrap;
+}
+.survey-btn.active {
+background: #ffffff;
+color: #1f2937;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+font-weight: 600;
+}
+.survey-btn:hover:not(.active) {
+color: #374151;
+}
+.d-article {
+padding-top: 52px; 
+}
 @media screen and (max-width: 768px) {
-.distill-site-nav {
-display: block !important;
-height: auto !important;
+#survey-toggle {
+top: 0;
+flex-wrap: wrap;
 }
-.distill-site-nav .nav-right {
-margin-left: 0 !important;
-display: block !important;
 }
-.distill-site-nav a {
-display: block;
-padding: 0.5rem 0;
-white-space: normal;
+
+.d-article {
+padding-top: 50px; 
 }
+
+.d-title {
+margin-top: 50px; 
 }
 </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <style type="text/css">.distill-site-header {font-size: 14px;}.distill-site-nav {position: sticky;top: 0;z-index: 9999;}.distill-site-nav .nav-right {margin-left: auto;display: flex;align-items: center;}.distill-site-nav a {white-space: nowrap;}@media screen and (max-width: 768px) {.distill-site-nav {display: block !important;height: auto !important;}.distill-site-nav .nav-right {margin-left: 0 !important;display: block !important;}.distill-site-nav a {display: block;padding: 0.5rem 0;white-space: normal;}}</style>
+  <style type="text/css">.distill-site-header {font-size: 14px;}.distill-site-nav {position: fixed;top: 0;left: 0;right: 0;z-index: 9999;}#survey-toggle {display: flex;align-items: center;gap: 12px;padding: 10px 20px;background: #ffffff;position: fixed;top: 52px; left: 0;right: 0;width: 100%;box-sizing: border-box;z-index: 998;}.toggle-label {font-size: 0.8rem;font-weight: 600;color: #6b7280;text-transform: uppercase;letter-spacing: 0.05em;white-space: nowrap;}.toggle-pill-group {display: flex;background: #e5e7eb;border-radius: 999px;padding: 3px;gap: 1px;}.survey-btn {padding: 5px 16px;border: none;background: transparent;color: #6b7280;border-radius: 999px;cursor: pointer;font-size: 0.82rem;font-weight: 500;transition: background 0.2s ease, color 0.2s ease;white-space: nowrap;}.survey-btn.active {background: #ffffff;color: #1f2937;box-shadow: 0 1px 3px rgba(0,0,0,0.12);font-weight: 600;}.survey-btn:hover:not(.active) {color: #374151;}.d-article {padding-top: 52px; }@media screen and (max-width: 768px) {#survey-toggle {top: 0;flex-wrap: wrap;}}.d-article {padding-top: 50px; }.d-title {margin-top: 50px; }</style>
 
 </head>
 
@@ -3232,6 +3297,14 @@ Species Info
 </header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
+<div id="survey-toggle">
+  <span class="toggle-label">Filter content by survey:</span>
+    <div class="toggle-pill-group">
+      <button class="survey-btn active" data-filter="all-surveys">All</button>
+        <button class="survey-btn" data-filter="GOA/AI">GOA / AI</button>
+          <button class="survey-btn" data-filter="BS">EBS / NBS</button>
+            </div>
+            </div>
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
@@ -3363,7 +3436,7 @@ margin-top: 0 !important;
 
 </div>
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/Educational%20Resource%20Library%20NOAA%202026/">Educational Resources</a>
@@ -3377,7 +3450,7 @@ margin-top: 0 !important;
 <h2 id="injury-prevention-guidance">Injury Prevention Guidance</h2>
 <div class="section-content-body">
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/Injury%20Prevention%20Guidance%20Documents%20NOAA%202026/Injury%20Prevention%20Back.pdf">Back</a>
@@ -3387,7 +3460,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/Injury%20Prevention%20Guidance%20Documents%20NOAA%202026/Injury%20Prevention%20Core%20Concepts.pdf">Core</a>
@@ -3397,7 +3470,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/Injury%20Prevention%20Guidance%20Documents%20NOAA%202026/Injury%20Prevention%20Elbow.pdf">Elbow</a>
@@ -3407,7 +3480,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/Injury%20Prevention%20Guidance%20Documents%20NOAA%202026/Injury%20Prevention%20Foot%20and%20Ankle.pdf">Foot &amp; Ankle</a>
@@ -3417,7 +3490,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/Injury%20Prevention%20Guidance%20Documents%20NOAA%202026/Injury%20Prevention%20Hand%20Wrist%20and%20Forearm.pdf">Hand, Wrist &amp; Forearm</a>
@@ -3427,7 +3500,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/Injury%20Prevention%20Guidance%20Documents%20NOAA%202026/Injury%20Prevention%20Heat%20or%20Ice.pdf">Heat or Ice</a>
@@ -3437,7 +3510,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/Injury%20Prevention%20Guidance%20Documents%20NOAA%202026/Injury%20Prevention%20Hip.pdf">Hip</a>
@@ -3447,7 +3520,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/Injury%20Prevention%20Guidance%20Documents%20NOAA%202026/NOAA%20Injury%20Prevention%20Kinesiotape.pdf">Kinesiotape</a>
@@ -3457,7 +3530,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/Injury%20Prevention%20Guidance%20Documents%20NOAA%202026/Injury%20Prevention%20Neck.pdf">Neck</a>
@@ -3467,7 +3540,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/Injury%20Prevention%20Guidance%20Documents%20NOAA%202026/Self%20Massage%20Handout.pdf">Self Massage Handout</a>
@@ -3477,7 +3550,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/Injury%20Prevention%20Guidance%20Documents%20NOAA%202026/Injury%20Prevention%20Shoulder.pdf">Shoulder</a>
@@ -3487,7 +3560,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/Injury%20Prevention%20Guidance%20Documents%20NOAA%202026/CHOICES.pdf">Strain/Sprain</a>
@@ -3505,7 +3578,7 @@ margin-top: 0 !important;
 <h2 id="injury-prevention-program">Injury Prevention Program</h2>
 <div class="section-content-body">
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/IP%20Program%20Orientation%20Slides%202026.pdf">IP Program Orientation Slides</a>
@@ -3515,7 +3588,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/IPS%20Program%20Promo%20NOAA%20v1%202026.pdf">IP Program Promo NOAA v1</a>
@@ -3525,7 +3598,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/IPS%20Program%20Promo%20v2%20NOAA%202026.pdf">IP Program Promo NOAA v2</a>
@@ -3535,7 +3608,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/NOAA%20IP%20Program%20Videos.pdf">NOAA IP Program Videos</a>
@@ -3553,7 +3626,7 @@ margin-top: 0 !important;
 <h2 id="warm-up-programs">Warm Up Programs</h2>
 <div class="section-content-body">
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/Warm%20Up%20Programs%20NOAA%202026/NOAA%20Hand%20and%20Wrist%20Program%20handout%202025.pdf">Warm Up Hand and Wrist</a>
@@ -3563,7 +3636,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/Warm%20Up%20Programs%20NOAA%202026/NOAA%20Warm%20Up%20Poster%202025.pptx">Warm Up Poster</a>
@@ -3573,7 +3646,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Ergonomic%20Resource%20Library/Warm%20Up%20Programs%20NOAA%202026/NOAA%20Warm-Up%20Routine%20Handout%202025.pdf">Warm Up Routine</a>

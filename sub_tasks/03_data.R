@@ -42,8 +42,9 @@ website_content <-
 srvys <- unique(tolower(c(srvys, "all")))
 website_content$in_survey_app_srvy1 <- FALSE
 website_content$survey[is.na(website_content$survey)] <- "all"
+website_content$survey <- tolower(website_content$survey)
 for (i in 1:length(srvys)) {
-  temp <- grepl(pattern = srvys[i], x = tolower(website_content$survey)) 
+  temp <- grepl(pattern = srvys[i], x = website_content$survey)
   website_content$in_survey_app_srvy1[temp] <- TRUE
 }
 website_content <- website_content[website_content$in_survey_app_srvy1 == TRUE,]
@@ -112,6 +113,6 @@ website_content <- website_content %>%
       is.na(url_loc) & is.na(url_web) ~ title
     )) %>%
   dplyr::arrange(page, sub_page) %>%
-  dplyr::relocate(page, sub_page, section, subsection, 
+  dplyr::relocate(survey, page, sub_page, section, subsection, 
                   title, title_link_inline, subtitle, descrip
   )

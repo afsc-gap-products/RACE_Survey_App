@@ -2996,7 +2996,30 @@ background-color: #f9f9f9;
 }
 </style>
 
+
   <script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener('click', function(e) {
+      if (!e.target.classList.contains('survey-btn')) return;
+      
+      document.querySelectorAll('.survey-btn').forEach(b => b.classList.remove("active"));
+      e.target.classList.add("active");
+
+      const filter = e.target.dataset.filter;
+      document.querySelectorAll(".resource-item[data-survey]").forEach(item => {
+        const survey = item.dataset.survey;
+        const show =
+          filter === "all-surveys" ||
+          survey === "all" ||
+          (filter === "GOA/AI" && (survey.includes("goa") || survey.includes("ai"))) ||
+          (filter === "BS" && (survey.includes("ebs") || survey.includes("nbs") || survey.includes("bs")));
+        item.style.display = show ? "" : "none";
+      });
+    });
+  });
+
+
   document.addEventListener("DOMContentLoaded", function() {
     // 1. Target the right-hand navigation container
     const navRight = document.querySelector('.nav-right'); 
@@ -3101,41 +3124,83 @@ font-size: 14px;
 }
 
 .distill-site-nav {
-position: sticky;
+position: fixed;
 top: 0;
+left: 0;
+right: 0;
 z-index: 9999;
 }
 
-.distill-site-nav .nav-right {
-margin-left: auto;
+#survey-toggle {
 display: flex;
 align-items: center;
+gap: 12px;
+padding: 10px 20px;
+background: #ffffff;
+position: fixed;
+top: 52px; left: 0;
+right: 0;
+width: 100%;
+box-sizing: border-box;
+z-index: 998;
 }
-
-.distill-site-nav a {
+.toggle-label {
+font-size: 0.8rem;
+font-weight: 600;
+color: #6b7280;
+text-transform: uppercase;
+letter-spacing: 0.05em;
 white-space: nowrap;
 }
-
-
+.toggle-pill-group {
+display: flex;
+background: #e5e7eb;
+border-radius: 999px;
+padding: 3px;
+gap: 1px;
+}
+.survey-btn {
+padding: 5px 16px;
+border: none;
+background: transparent;
+color: #6b7280;
+border-radius: 999px;
+cursor: pointer;
+font-size: 0.82rem;
+font-weight: 500;
+transition: background 0.2s ease, color 0.2s ease;
+white-space: nowrap;
+}
+.survey-btn.active {
+background: #ffffff;
+color: #1f2937;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+font-weight: 600;
+}
+.survey-btn:hover:not(.active) {
+color: #374151;
+}
+.d-article {
+padding-top: 52px; 
+}
 @media screen and (max-width: 768px) {
-.distill-site-nav {
-display: block !important;
-height: auto !important;
+#survey-toggle {
+top: 0;
+flex-wrap: wrap;
 }
-.distill-site-nav .nav-right {
-margin-left: 0 !important;
-display: block !important;
 }
-.distill-site-nav a {
-display: block;
-padding: 0.5rem 0;
-white-space: normal;
+
+.d-article {
+padding-top: 50px; 
 }
+
+.d-title {
+margin-top: 50px; 
 }
 </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <style type="text/css">.distill-site-header {font-size: 14px;}.distill-site-nav {position: sticky;top: 0;z-index: 9999;}.distill-site-nav .nav-right {margin-left: auto;display: flex;align-items: center;}.distill-site-nav a {white-space: nowrap;}@media screen and (max-width: 768px) {.distill-site-nav {display: block !important;height: auto !important;}.distill-site-nav .nav-right {margin-left: 0 !important;display: block !important;}.distill-site-nav a {display: block;padding: 0.5rem 0;white-space: normal;}}</style>
+  <style type="text/css">.distill-site-header {font-size: 14px;}.distill-site-nav {position: fixed;top: 0;left: 0;right: 0;z-index: 9999;}#survey-toggle {display: flex;align-items: center;gap: 12px;padding: 10px 20px;background: #ffffff;position: fixed;top: 52px; left: 0;right: 0;width: 100%;box-sizing: border-box;z-index: 998;}.toggle-label {font-size: 0.8rem;font-weight: 600;color: #6b7280;text-transform: uppercase;letter-spacing: 0.05em;white-space: nowrap;}.toggle-pill-group {display: flex;background: #e5e7eb;border-radius: 999px;padding: 3px;gap: 1px;}.survey-btn {padding: 5px 16px;border: none;background: transparent;color: #6b7280;border-radius: 999px;cursor: pointer;font-size: 0.82rem;font-weight: 500;transition: background 0.2s ease, color 0.2s ease;white-space: nowrap;}.survey-btn.active {background: #ffffff;color: #1f2937;box-shadow: 0 1px 3px rgba(0,0,0,0.12);font-weight: 600;}.survey-btn:hover:not(.active) {color: #374151;}.d-article {padding-top: 52px; }@media screen and (max-width: 768px) {#survey-toggle {top: 0;flex-wrap: wrap;}}.d-article {padding-top: 50px; }.d-title {margin-top: 50px; }</style>
 
 </head>
 
@@ -3232,6 +3297,14 @@ Species Info
 </header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
+<div id="survey-toggle">
+  <span class="toggle-label">Filter by survey:</span>
+    <div class="toggle-pill-group">
+      <button class="survey-btn active" data-filter="all-surveys">All</button>
+        <button class="survey-btn" data-filter="GOA/AI">GOA / AI</button>
+          <button class="survey-btn" data-filter="BS">EBS / NBS</button>
+            </div>
+            </div>
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
@@ -3391,7 +3464,7 @@ margin-top: 0 !important;
 <h3 id="metis">METIS</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Catch%20Data%20Entry/METIS%20PC%20Required%20Directories%20and%20Control%20Files/">METIS PC Required Directories and Files</a>
@@ -3401,7 +3474,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Catch%20Data%20Entry/oracle-apex-end-users-guide.pdf">Oracle Apex End User’s Guide</a>
@@ -3423,7 +3496,7 @@ margin-top: 0 !important;
 <h3 id="ctd">CTD</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/CTD%20Manuals">All CTD Resources</a>
@@ -3433,7 +3506,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/CTD%20Manuals/CTD%20Laptop%20Login.pdf">CTD Laptop Login</a>
@@ -3443,7 +3516,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/CTD%20Manuals/SBE19plus/">SBE19plus Resources</a>
@@ -3453,7 +3526,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/CTD%20Manuals/Seabird%20Programs/">Seabird Program Resources</a>
@@ -3471,7 +3544,7 @@ margin-top: 0 !important;
 <h2 id="polycorder-codes">Polycorder Codes</h2>
 <div class="section-content-body">
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs, nbs">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Polycorder%20Placard%20EBS.pdf">Polycoder Codes Poster (BS)</a>
@@ -3481,7 +3554,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ai, goa">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Polycorder%20Placard%20GOA_AI.pdf">Polycoder Codes Poster (GOA/AI)</a>
@@ -3491,7 +3564,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/GOA_BS%20poly%20complete.pdf">Polycorder Code List</a>
@@ -3509,7 +3582,7 @@ margin-top: 0 !important;
 <h2 id="references">References</h2>
 <div class="section-content-body">
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/SpeciesID/DataCodes&amp;Forms.pdf">Gear Codebook</a>
@@ -3519,7 +3592,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Calypso_Wheelhouse/SFTP%20Instructions.pdf">SFTP Instructions</a>
@@ -3529,7 +3602,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/SpeciesID/SpeciesCodeManual.pdf">Species Codebook</a>
@@ -3544,7 +3617,7 @@ margin-top: 0 !important;
 <h3 id="tasklists">Tasklists</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././data/Beginning%20of%20Survey%20or%20Leg_Deck%20Lead.html">Beginning of Survey or Leg</a> (<a href="./Tasklists_Beginning_of_Survey_or_Leg.html">Web link</a>)
@@ -3554,7 +3627,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././data/End%20of%20Leg_Deck%20Lead.html">End of Leg</a> (<a href="./Tasklists_End_of_Leg.html">Web link</a>)
@@ -3564,7 +3637,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././data/End%20of%20Survey_Deck%20Lead.html">End of Survey</a> (<a href="./Tasklists_End_of_Survey.html">Web link</a>)
@@ -3582,7 +3655,7 @@ margin-top: 0 !important;
 <h2 id="sampling-resources">Sampling Resources</h2>
 <div class="section-content-body">
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/forms/catchforms/catch_form.pdf">Catch Form</a>
@@ -3592,7 +3665,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ai, goa">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Updated%20Halibut%20LW%20Relationships/">Halibut LW Relationships (AI/GOA)</a>
@@ -3602,7 +3675,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ai">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Survey%20operation%20manuals/Min%20length%20and%20sex%20per%20haul.pdf">Minimum Length/Sex Subsampling (AI)</a>
@@ -3617,7 +3690,7 @@ margin-top: 0 !important;
 <h3 id="large-catch-resources">Large Catch Resources</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Large%20catches/volumetric_worksheet.xlsm"><strong>NEW</strong> Volumetric Worksheet</a>
@@ -3627,7 +3700,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Basket%20weight%20calcs/">Basket Weight Calculation Sheets</a>
@@ -3637,7 +3710,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs, nbs">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Large%20catches/Split%20Haul%20Subsampling%20Protocol%20using%20METIS.pdf">Split Haul Crab Subsampling Protocol (EBS)</a>
@@ -3647,7 +3720,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs, nbs">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/forms/catchforms/Volumetric_Sampling_Form.pdf">Volumetric Sampling Form</a>
@@ -3657,7 +3730,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ai, goa">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Large%20catches/Steps%20for%20a%20Volumetric%20Catch.pdf">Volumetric Steps (GOA/AI)</a>
@@ -3672,7 +3745,7 @@ margin-top: 0 !important;
 <h3 id="scales">Scales</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/MSI_loadcells_cranescales/">MSI (Load Cell/Crane Scale) Resources</a>
@@ -3682,7 +3755,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/manuals/MAREL_scales/Basket_Scale_Calibration.pdf">Marel (Deck Scales) Calibration</a>
@@ -3692,7 +3765,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/manuals/MAREL_scales">Marel (Deck Scales) Resources</a>
@@ -3707,7 +3780,7 @@ margin-top: 0 !important;
 <h3 id="vouchers">Vouchers</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Voucher%20Procedures.pdf">Voucher Collection Procedures</a>
@@ -3725,7 +3798,7 @@ margin-top: 0 !important;
 <h2 id="tablets">Tablets</h2>
 <div class="section-content-body">
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Apps%20Software/IntroToCatchApp%20MS%20Powerpoints/">Catch App Powerpoints</a>
@@ -3735,7 +3808,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs, nbs">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Apps%20Software/Crab%20Application%20Training%20Powerpoints/">Crab App Powerpoints</a>
@@ -3750,7 +3823,7 @@ margin-top: 0 !important;
 <h3 id="barcodes">Barcodes</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Bluetooth_Devices/Barcodes/1-120%20bar%20code%20numbers.xlsx">1-20 Barcode Numbers (xlsx)</a>
@@ -3760,7 +3833,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Bluetooth_Devices/Barcodes/1-120%20barcode%20codes.pdf">1-20 Barcodes (pdf)</a>
@@ -3770,7 +3843,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Bluetooth_Devices/Barcodes/Big%20length%20barcodes%202024.pdf">100-199 Barcodes (pdf)</a>
@@ -3785,7 +3858,7 @@ margin-top: 0 !important;
 <h3 id="tablet-set-up">Tablet Set Up</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Apps%20Software/Samsung_Galaxy_A7_manual.pdf">Samsung Galaxy A7 Lite Tablet User Manual</a>
@@ -3795,7 +3868,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Apps%20Software/Sending%20Tablet%20Files%20Via%20WiFi.pdf">Sending Tablet Files via WiFi</a>
@@ -3805,7 +3878,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Apps%20Software/BT%20Survey%20Maturity%20Instructions.pdf">Setting Up Maturity Collection</a>
@@ -3815,7 +3888,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Apps%20Software/Tablet%20Remote%20Access%20Documentation.pdf">Tablet Remote Access Documentation</a>
@@ -3830,7 +3903,7 @@ margin-top: 0 !important;
 <h3 id="wands">Wands</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Bluetooth_Devices/WWR2900%20WandManual.pdf">Wand Manual</a>
@@ -3840,7 +3913,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Bluetooth_Devices/wand%20pairing%20instructions%202021.pdf">Wand Pairing Barcodes (old)</a>

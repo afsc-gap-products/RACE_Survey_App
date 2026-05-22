@@ -97,7 +97,30 @@
   }
 </style>
 
+
 <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener('click', function(e) {
+    if (!e.target.classList.contains('survey-btn')) return;
+    
+    document.querySelectorAll('.survey-btn').forEach(b => b.classList.remove("active"));
+    e.target.classList.add("active");
+
+    const filter = e.target.dataset.filter;
+    document.querySelectorAll(".resource-item[data-survey]").forEach(item => {
+      const survey = item.dataset.survey;
+      const show =
+        filter === "all-surveys" ||
+        survey === "all" ||
+        (filter === "GOA/AI" && (survey.includes("goa") || survey.includes("ai"))) ||
+        (filter === "BS" && (survey.includes("ebs") || survey.includes("nbs") || survey.includes("bs")));
+      item.style.display = show ? "" : "none";
+    });
+  });
+});
+
+
 document.addEventListener("DOMContentLoaded", function() {
   // 1. Target the right-hand navigation container
   const navRight = document.querySelector('.nav-right'); 

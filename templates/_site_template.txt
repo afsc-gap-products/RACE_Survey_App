@@ -22,6 +22,7 @@ output:
     toc_float: true
     includes:
       in_header: search_setup.html  
+      before_body: survey_toggle.html  
       after_body:
       - footer.html
 resources:

@@ -2996,7 +2996,30 @@ background-color: #f9f9f9;
 }
 </style>
 
+
   <script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener('click', function(e) {
+      if (!e.target.classList.contains('survey-btn')) return;
+      
+      document.querySelectorAll('.survey-btn').forEach(b => b.classList.remove("active"));
+      e.target.classList.add("active");
+
+      const filter = e.target.dataset.filter;
+      document.querySelectorAll(".resource-item[data-survey]").forEach(item => {
+        const survey = item.dataset.survey;
+        const show =
+          filter === "all-surveys" ||
+          survey === "all" ||
+          (filter === "GOA/AI" && (survey.includes("goa") || survey.includes("ai"))) ||
+          (filter === "BS" && (survey.includes("ebs") || survey.includes("nbs") || survey.includes("bs")));
+        item.style.display = show ? "" : "none";
+      });
+    });
+  });
+
+
   document.addEventListener("DOMContentLoaded", function() {
     // 1. Target the right-hand navigation container
     const navRight = document.querySelector('.nav-right'); 
@@ -3101,41 +3124,83 @@ font-size: 14px;
 }
 
 .distill-site-nav {
-position: sticky;
+position: fixed;
 top: 0;
+left: 0;
+right: 0;
 z-index: 9999;
 }
 
-.distill-site-nav .nav-right {
-margin-left: auto;
+#survey-toggle {
 display: flex;
 align-items: center;
+gap: 12px;
+padding: 10px 20px;
+background: #ffffff;
+position: fixed;
+top: 52px; left: 0;
+right: 0;
+width: 100%;
+box-sizing: border-box;
+z-index: 998;
 }
-
-.distill-site-nav a {
+.toggle-label {
+font-size: 0.8rem;
+font-weight: 600;
+color: #6b7280;
+text-transform: uppercase;
+letter-spacing: 0.05em;
 white-space: nowrap;
 }
-
-
+.toggle-pill-group {
+display: flex;
+background: #e5e7eb;
+border-radius: 999px;
+padding: 3px;
+gap: 1px;
+}
+.survey-btn {
+padding: 5px 16px;
+border: none;
+background: transparent;
+color: #6b7280;
+border-radius: 999px;
+cursor: pointer;
+font-size: 0.82rem;
+font-weight: 500;
+transition: background 0.2s ease, color 0.2s ease;
+white-space: nowrap;
+}
+.survey-btn.active {
+background: #ffffff;
+color: #1f2937;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+font-weight: 600;
+}
+.survey-btn:hover:not(.active) {
+color: #374151;
+}
+.d-article {
+padding-top: 52px; 
+}
 @media screen and (max-width: 768px) {
-.distill-site-nav {
-display: block !important;
-height: auto !important;
+#survey-toggle {
+top: 0;
+flex-wrap: wrap;
 }
-.distill-site-nav .nav-right {
-margin-left: 0 !important;
-display: block !important;
 }
-.distill-site-nav a {
-display: block;
-padding: 0.5rem 0;
-white-space: normal;
+
+.d-article {
+padding-top: 50px; 
 }
+
+.d-title {
+margin-top: 50px; 
 }
 </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <style type="text/css">.distill-site-header {font-size: 14px;}.distill-site-nav {position: sticky;top: 0;z-index: 9999;}.distill-site-nav .nav-right {margin-left: auto;display: flex;align-items: center;}.distill-site-nav a {white-space: nowrap;}@media screen and (max-width: 768px) {.distill-site-nav {display: block !important;height: auto !important;}.distill-site-nav .nav-right {margin-left: 0 !important;display: block !important;}.distill-site-nav a {display: block;padding: 0.5rem 0;white-space: normal;}}</style>
+  <style type="text/css">.distill-site-header {font-size: 14px;}.distill-site-nav {position: fixed;top: 0;left: 0;right: 0;z-index: 9999;}#survey-toggle {display: flex;align-items: center;gap: 12px;padding: 10px 20px;background: #ffffff;position: fixed;top: 52px; left: 0;right: 0;width: 100%;box-sizing: border-box;z-index: 998;}.toggle-label {font-size: 0.8rem;font-weight: 600;color: #6b7280;text-transform: uppercase;letter-spacing: 0.05em;white-space: nowrap;}.toggle-pill-group {display: flex;background: #e5e7eb;border-radius: 999px;padding: 3px;gap: 1px;}.survey-btn {padding: 5px 16px;border: none;background: transparent;color: #6b7280;border-radius: 999px;cursor: pointer;font-size: 0.82rem;font-weight: 500;transition: background 0.2s ease, color 0.2s ease;white-space: nowrap;}.survey-btn.active {background: #ffffff;color: #1f2937;box-shadow: 0 1px 3px rgba(0,0,0,0.12);font-weight: 600;}.survey-btn:hover:not(.active) {color: #374151;}.d-article {padding-top: 52px; }@media screen and (max-width: 768px) {#survey-toggle {top: 0;flex-wrap: wrap;}}.d-article {padding-top: 50px; }.d-title {margin-top: 50px; }</style>
 
 </head>
 
@@ -3232,6 +3297,14 @@ Species Info
 </header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
+<div id="survey-toggle">
+  <span class="toggle-label">Filter content by survey:</span>
+    <div class="toggle-pill-group">
+      <button class="survey-btn active" data-filter="all-surveys">All</button>
+        <button class="survey-btn" data-filter="GOA/AI">GOA / AI</button>
+          <button class="survey-btn" data-filter="BS">EBS / NBS</button>
+            </div>
+            </div>
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
@@ -3364,7 +3437,7 @@ margin-top: 0 !important;
 <h2 id="sds">Sds</h2>
 <div class="section-content-body">
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS_Bouins_Solution.pdf">SDS Bouin’s Fixative</a>
@@ -3374,7 +3447,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20200%20Proof%20Ethanol-%20Anhydrous.pdf">SDS Ethanol 100%</a>
@@ -3384,7 +3457,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Ethanol%20140%20proof.pdf">SDS Ethanol 70%</a>
@@ -3394,7 +3467,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Ethanol%20190%20proof.pdf">SDS Ethanol 95%</a>
@@ -3404,7 +3477,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Formaldehyde%20Solution.pdf">SDS Formaldehyde</a>
@@ -3414,7 +3487,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Formalin%20Solution_neutral%20buffered_10%.pdf">SDS Formalin 10%</a>
@@ -3424,7 +3497,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Glycerin.pdf">SDS Glycerin</a>
@@ -3434,7 +3507,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Neutralex.pdf">SDS Neutralex</a>
@@ -3444,7 +3517,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Shipping-Hazmat/SDS%20pages/DevCon%202-part%20epoxy%20MSDS.pdf">SDS Permalite Epoxy Parts A and B</a>
@@ -3454,7 +3527,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Shipping-Hazmat/SDS%20pages/3028-AllprotectTissueReagent-en-US-US–1.00000.pdf">SDS Qiagen Allprotect Tissue Reagent</a>
@@ -3464,7 +3537,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS_70_Reagent_Acohol.pdf">SDS Reagent Alcohol, 70% v/v</a>
@@ -3474,7 +3547,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Shipping-Hazmat/SDS%20pages/SDS%20Thymol.pdf">SDS Thymol</a>
@@ -3492,7 +3565,7 @@ margin-top: 0 !important;
 <h2 id="shipping">Shipping</h2>
 <div class="section-content-body">
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Shipping-Hazmat/SDS%20pages/alkalinecylindrical_psds.pdf">Alkaline batteries</a>
@@ -3502,7 +3575,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Shipping-Hazmat/Dangerous%20Goods%20Declaration%20-%20CFR49.pdf">Dangerous Goods Declaration Form CFR49</a>
@@ -3512,7 +3585,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Shipping-Hazmat/Do%20Not%20Pack%20List.pdf">HAZMAT Items Not To Pack</a>
@@ -3522,7 +3595,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Shipping-Hazmat/hazmat_shipping_guide.pdf">HAZMAT Shipping Guidelines</a>

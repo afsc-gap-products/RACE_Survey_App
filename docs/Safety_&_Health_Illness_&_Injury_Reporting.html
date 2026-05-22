@@ -2996,7 +2996,30 @@ background-color: #f9f9f9;
 }
 </style>
 
+
   <script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener('click', function(e) {
+      if (!e.target.classList.contains('survey-btn')) return;
+      
+      document.querySelectorAll('.survey-btn').forEach(b => b.classList.remove("active"));
+      e.target.classList.add("active");
+
+      const filter = e.target.dataset.filter;
+      document.querySelectorAll(".resource-item[data-survey]").forEach(item => {
+        const survey = item.dataset.survey;
+        const show =
+          filter === "all-surveys" ||
+          survey === "all" ||
+          (filter === "GOA/AI" && (survey.includes("goa") || survey.includes("ai"))) ||
+          (filter === "BS" && (survey.includes("ebs") || survey.includes("nbs") || survey.includes("bs")));
+        item.style.display = show ? "" : "none";
+      });
+    });
+  });
+
+
   document.addEventListener("DOMContentLoaded", function() {
     // 1. Target the right-hand navigation container
     const navRight = document.querySelector('.nav-right'); 
@@ -3101,41 +3124,83 @@ font-size: 14px;
 }
 
 .distill-site-nav {
-position: sticky;
+position: fixed;
 top: 0;
+left: 0;
+right: 0;
 z-index: 9999;
 }
 
-.distill-site-nav .nav-right {
-margin-left: auto;
+#survey-toggle {
 display: flex;
 align-items: center;
+gap: 12px;
+padding: 10px 20px;
+background: #ffffff;
+position: fixed;
+top: 52px; left: 0;
+right: 0;
+width: 100%;
+box-sizing: border-box;
+z-index: 998;
 }
-
-.distill-site-nav a {
+.toggle-label {
+font-size: 0.8rem;
+font-weight: 600;
+color: #6b7280;
+text-transform: uppercase;
+letter-spacing: 0.05em;
 white-space: nowrap;
 }
-
-
+.toggle-pill-group {
+display: flex;
+background: #e5e7eb;
+border-radius: 999px;
+padding: 3px;
+gap: 1px;
+}
+.survey-btn {
+padding: 5px 16px;
+border: none;
+background: transparent;
+color: #6b7280;
+border-radius: 999px;
+cursor: pointer;
+font-size: 0.82rem;
+font-weight: 500;
+transition: background 0.2s ease, color 0.2s ease;
+white-space: nowrap;
+}
+.survey-btn.active {
+background: #ffffff;
+color: #1f2937;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+font-weight: 600;
+}
+.survey-btn:hover:not(.active) {
+color: #374151;
+}
+.d-article {
+padding-top: 52px; 
+}
 @media screen and (max-width: 768px) {
-.distill-site-nav {
-display: block !important;
-height: auto !important;
+#survey-toggle {
+top: 0;
+flex-wrap: wrap;
 }
-.distill-site-nav .nav-right {
-margin-left: 0 !important;
-display: block !important;
 }
-.distill-site-nav a {
-display: block;
-padding: 0.5rem 0;
-white-space: normal;
+
+.d-article {
+padding-top: 50px; 
 }
+
+.d-title {
+margin-top: 50px; 
 }
 </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <style type="text/css">.distill-site-header {font-size: 14px;}.distill-site-nav {position: sticky;top: 0;z-index: 9999;}.distill-site-nav .nav-right {margin-left: auto;display: flex;align-items: center;}.distill-site-nav a {white-space: nowrap;}@media screen and (max-width: 768px) {.distill-site-nav {display: block !important;height: auto !important;}.distill-site-nav .nav-right {margin-left: 0 !important;display: block !important;}.distill-site-nav a {display: block;padding: 0.5rem 0;white-space: normal;}}</style>
+  <style type="text/css">.distill-site-header {font-size: 14px;}.distill-site-nav {position: fixed;top: 0;left: 0;right: 0;z-index: 9999;}#survey-toggle {display: flex;align-items: center;gap: 12px;padding: 10px 20px;background: #ffffff;position: fixed;top: 52px; left: 0;right: 0;width: 100%;box-sizing: border-box;z-index: 998;}.toggle-label {font-size: 0.8rem;font-weight: 600;color: #6b7280;text-transform: uppercase;letter-spacing: 0.05em;white-space: nowrap;}.toggle-pill-group {display: flex;background: #e5e7eb;border-radius: 999px;padding: 3px;gap: 1px;}.survey-btn {padding: 5px 16px;border: none;background: transparent;color: #6b7280;border-radius: 999px;cursor: pointer;font-size: 0.82rem;font-weight: 500;transition: background 0.2s ease, color 0.2s ease;white-space: nowrap;}.survey-btn.active {background: #ffffff;color: #1f2937;box-shadow: 0 1px 3px rgba(0,0,0,0.12);font-weight: 600;}.survey-btn:hover:not(.active) {color: #374151;}.d-article {padding-top: 52px; }@media screen and (max-width: 768px) {#survey-toggle {top: 0;flex-wrap: wrap;}}.d-article {padding-top: 50px; }.d-title {margin-top: 50px; }</style>
 
 </head>
 
@@ -3232,6 +3297,14 @@ Species Info
 </header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
+<div id="survey-toggle">
+  <span class="toggle-label">Filter content by survey:</span>
+    <div class="toggle-pill-group">
+      <button class="survey-btn active" data-filter="all-surveys">All</button>
+        <button class="survey-btn" data-filter="GOA/AI">GOA / AI</button>
+          <button class="survey-btn" data-filter="BS">EBS / NBS</button>
+            </div>
+            </div>
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
@@ -3362,7 +3435,7 @@ margin-top: 0 !important;
 
 </div>
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Accidents/EMERGENCY%20NOTIFICATION%20PLAN%202026.pdf"><strong>EMERGENCY NOTIFICATION PLAN</strong></a>
@@ -3373,7 +3446,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Accidents/AFSC_Injury_Reporting_Guide.pdf">Injury Reporting Quick Guide</a>
@@ -3383,7 +3456,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Accidents/MedEvac%20Info.pdf">Medevac Info</a>
@@ -3397,7 +3470,7 @@ margin-top: 0 !important;
 <h2 id="at-sea-injury-forms">At-Sea Injury Forms</h2>
 <div class="section-content-body">
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Accidents/At-Sea%20Incident%20Report%20Form_fillable.pdf">At-Sea Incident Report Form</a>
@@ -3408,7 +3481,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Accidents/Pay%20Compensation%20Form%20ca-1.pdf">CA-1 Reporting an Accident, Injury, or Illness</a>
@@ -3419,7 +3492,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Accidents/Filing%20CA-1%20and%20CA-2%20Employee%20Instructions.pdf">CA-1 and CA-2 Instructions</a>
@@ -3429,7 +3502,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Accidents/CA-2%20Dept.%20of%20Labor%20Claim%20for%20Compensation.pdf">CA-2 Report an Occupational Disease</a>
@@ -3440,7 +3513,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Accidents/cd-137.pdf">CD-137 Report of Incident, Injury, Illness</a>
@@ -3450,7 +3523,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Accidents/CD-351%20report%20of%20Safety%20Hazard.pdf">CD-351 Report of Safety Hazard</a>
@@ -3460,7 +3533,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Accidents/UW_accident-incident_report.pdf">UW Contractor Injury Report Form</a>
@@ -3470,7 +3543,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Accidents/Workers%20Comp%20Supr%20Completion%20CA1.pdf">Workers Comp Supervisor Completion CA-1</a>
@@ -3488,7 +3561,7 @@ margin-top: 0 !important;
 <h2 id="vehicular-accidents">Vehicular Accidents</h2>
 <div class="section-content-body">
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Accidents/SF-91.pdf">SF-91 Vehicle Accident Report</a>
@@ -3498,7 +3571,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Accidents/SF-94.pdf">SF-94 Witness Statement</a>
@@ -3508,7 +3581,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Safety/Accidents/sf95.pdf">SF-95 Tort Claim Form</a>

@@ -2996,7 +2996,30 @@ background-color: #f9f9f9;
 }
 </style>
 
+
   <script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener('click', function(e) {
+      if (!e.target.classList.contains('survey-btn')) return;
+      
+      document.querySelectorAll('.survey-btn').forEach(b => b.classList.remove("active"));
+      e.target.classList.add("active");
+
+      const filter = e.target.dataset.filter;
+      document.querySelectorAll(".resource-item[data-survey]").forEach(item => {
+        const survey = item.dataset.survey;
+        const show =
+          filter === "all-surveys" ||
+          survey === "all" ||
+          (filter === "GOA/AI" && (survey.includes("goa") || survey.includes("ai"))) ||
+          (filter === "BS" && (survey.includes("ebs") || survey.includes("nbs") || survey.includes("bs")));
+        item.style.display = show ? "" : "none";
+      });
+    });
+  });
+
+
   document.addEventListener("DOMContentLoaded", function() {
     // 1. Target the right-hand navigation container
     const navRight = document.querySelector('.nav-right'); 
@@ -3101,41 +3124,83 @@ font-size: 14px;
 }
 
 .distill-site-nav {
-position: sticky;
+position: fixed;
 top: 0;
+left: 0;
+right: 0;
 z-index: 9999;
 }
 
-.distill-site-nav .nav-right {
-margin-left: auto;
+#survey-toggle {
 display: flex;
 align-items: center;
+gap: 12px;
+padding: 10px 20px;
+background: #ffffff;
+position: fixed;
+top: 52px; left: 0;
+right: 0;
+width: 100%;
+box-sizing: border-box;
+z-index: 998;
 }
-
-.distill-site-nav a {
+.toggle-label {
+font-size: 0.8rem;
+font-weight: 600;
+color: #6b7280;
+text-transform: uppercase;
+letter-spacing: 0.05em;
 white-space: nowrap;
 }
-
-
+.toggle-pill-group {
+display: flex;
+background: #e5e7eb;
+border-radius: 999px;
+padding: 3px;
+gap: 1px;
+}
+.survey-btn {
+padding: 5px 16px;
+border: none;
+background: transparent;
+color: #6b7280;
+border-radius: 999px;
+cursor: pointer;
+font-size: 0.82rem;
+font-weight: 500;
+transition: background 0.2s ease, color 0.2s ease;
+white-space: nowrap;
+}
+.survey-btn.active {
+background: #ffffff;
+color: #1f2937;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+font-weight: 600;
+}
+.survey-btn:hover:not(.active) {
+color: #374151;
+}
+.d-article {
+padding-top: 52px; 
+}
 @media screen and (max-width: 768px) {
-.distill-site-nav {
-display: block !important;
-height: auto !important;
+#survey-toggle {
+top: 0;
+flex-wrap: wrap;
 }
-.distill-site-nav .nav-right {
-margin-left: 0 !important;
-display: block !important;
 }
-.distill-site-nav a {
-display: block;
-padding: 0.5rem 0;
-white-space: normal;
+
+.d-article {
+padding-top: 50px; 
 }
+
+.d-title {
+margin-top: 50px; 
 }
 </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <style type="text/css">.distill-site-header {font-size: 14px;}.distill-site-nav {position: sticky;top: 0;z-index: 9999;}.distill-site-nav .nav-right {margin-left: auto;display: flex;align-items: center;}.distill-site-nav a {white-space: nowrap;}@media screen and (max-width: 768px) {.distill-site-nav {display: block !important;height: auto !important;}.distill-site-nav .nav-right {margin-left: 0 !important;display: block !important;}.distill-site-nav a {display: block;padding: 0.5rem 0;white-space: normal;}}</style>
+  <style type="text/css">.distill-site-header {font-size: 14px;}.distill-site-nav {position: fixed;top: 0;left: 0;right: 0;z-index: 9999;}#survey-toggle {display: flex;align-items: center;gap: 12px;padding: 10px 20px;background: #ffffff;position: fixed;top: 52px; left: 0;right: 0;width: 100%;box-sizing: border-box;z-index: 998;}.toggle-label {font-size: 0.8rem;font-weight: 600;color: #6b7280;text-transform: uppercase;letter-spacing: 0.05em;white-space: nowrap;}.toggle-pill-group {display: flex;background: #e5e7eb;border-radius: 999px;padding: 3px;gap: 1px;}.survey-btn {padding: 5px 16px;border: none;background: transparent;color: #6b7280;border-radius: 999px;cursor: pointer;font-size: 0.82rem;font-weight: 500;transition: background 0.2s ease, color 0.2s ease;white-space: nowrap;}.survey-btn.active {background: #ffffff;color: #1f2937;box-shadow: 0 1px 3px rgba(0,0,0,0.12);font-weight: 600;}.survey-btn:hover:not(.active) {color: #374151;}.d-article {padding-top: 52px; }@media screen and (max-width: 768px) {#survey-toggle {top: 0;flex-wrap: wrap;}}.d-article {padding-top: 50px; }.d-title {margin-top: 50px; }</style>
 
 </head>
 
@@ -3232,6 +3297,14 @@ Species Info
 </header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
+<div id="survey-toggle">
+  <span class="toggle-label">Filter by survey:</span>
+    <div class="toggle-pill-group">
+      <button class="survey-btn active" data-filter="all-surveys">All</button>
+        <button class="survey-btn" data-filter="GOA/AI">GOA / AI</button>
+          <button class="survey-btn" data-filter="BS">EBS / NBS</button>
+            </div>
+            </div>
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
@@ -3384,7 +3457,7 @@ margin-top: 0 !important;
 <h3 id="food-habits-stomachs">Food Habits (Stomachs)</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="ai, goa">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Stomachs/2026%20AI%20Stomach%20Collection.pdf">AI/GOA Stomach Collections</a>
@@ -3394,7 +3467,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ai, goa">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Stomachs/2026%20AI%20Stomach%20Scan.pdf">AI/GOA Stomach Scans</a>
@@ -3404,7 +3477,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="bs">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Stomachs/2026%20EBS%20Stomach%20Collection.pdf">BS Stomach Collections</a>
@@ -3414,7 +3487,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Stomachs/Stomach_App_Resources/">Stomach App Resources</a>
@@ -3424,7 +3497,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Stomachs/Stomach%20Collection%20Methods.pdf">Stomach Collection Presentation</a>
@@ -3439,7 +3512,7 @@ margin-top: 0 !important;
 <h3 id="maturity">Maturity</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Maturity/Halibut%20Maturity%20Key.pdf">Halibut Maturity Key</a>
@@ -3449,7 +3522,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ai">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Maturity/Visual%20Maturity%20Key%20AI.pdf">Visual Maturity Keys (AI)</a>
@@ -3459,7 +3532,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="bs">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Maturity/Visual%20Maturity%20Key%20EBS.pdf">Visual Maturity Keys (EBS)</a>
@@ -3474,7 +3547,7 @@ margin-top: 0 !important;
 <h3 id="otoliths">Otoliths</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="ai">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Special%20Projects/AI_GOA/2026/2026%20AI%20Otoliths.pdf">Age Structure Collections Deck Poster (AI)</a>
@@ -3484,7 +3557,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/BS/2026/2026%20EBS%20Otoliths.pdf">Age Structure Collections Deck Poster (EBS)</a>
@@ -3494,7 +3567,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Otoliths/Otolith%20Label%20Maker.xls">Otolith Label Maker</a>
@@ -3504,7 +3577,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Shipping-Hazmat/Shipping%20of%20Pollock%20otoliths%20in%20Glycerin.pdf">Shipping Pollock Otoliths</a>
@@ -3519,7 +3592,7 @@ margin-top: 0 !important;
 <h3 id="vouchers">Vouchers</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/Voucher%20Procedures.pdf">Voucher Collection Procedures</a>
@@ -3537,7 +3610,7 @@ margin-top: 0 !important;
 <h2 id="scientific-projects">Scientific Projects</h2>
 <div class="section-content-body">
 <div class="orphan-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/DEAD%20Sleeper%20Shark%20sampling%20form%20with%20diagram.pdf">Tribuzio Sleeper Shark Sampling Data Sheet</a>
@@ -3547,7 +3620,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/BS/2026/Tribuzio%20protocol.pdf">Tribuzio Sleeper Shark Sampling Procedure</a>
@@ -3562,7 +3635,7 @@ margin-top: 0 !important;
 <h3 id="bering">Bering</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/CTD%20Manuals/SBE19plus/CTD%20pH%20calibration%20protocol.pdf">CTD pH/DO sensor calibration protocol</a>
@@ -3572,7 +3645,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/BS/2026/IPHC%20Sampling%20Manual.pdf">IPHC Sampling Manual</a>
@@ -3582,7 +3655,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/BS/2026/SAP%20EBS%20Special%20Projects%20Matrix%20deck%20poster.pdf">SAP Special Project Matrix Deck Poster</a>
@@ -3592,7 +3665,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs, nbs">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/BS/2026/">Special Projects Folder</a>
@@ -3602,7 +3675,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/BS/2026/Deck%20Poster%20AKK.pdf">[AKK] Special Projects Deck Poster</a>
@@ -3612,7 +3685,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/BS/2026/2026_AKK_summary.pdf">[AKK] Special Projects Full Packet</a>
@@ -3622,7 +3695,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/BS/2026/2026_EBS_AKK_Table_detailed.pdf">[AKK] Special Projects Summary Table</a>
@@ -3632,7 +3705,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/BS/2026/Deck%20Poster%20NWE.pdf">[NWX] Special Projects Deck Poster</a>
@@ -3642,7 +3715,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/BS/2026/2026_NWX_summary.pdf">[NWX] Special Projects Full Packet</a>
@@ -3652,7 +3725,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/BS/2026/2026_EBS_NWX_Table_detailed.pdf">[NWX] Special Projects Summary Table</a>
@@ -3667,7 +3740,7 @@ margin-top: 0 !important;
 <h3 id="goaai">GOA/AI</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="ai, goa">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/AI_GOA/2026/">Special Projects Folder</a>
@@ -3677,7 +3750,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ai, goa">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/AI_GOA/2026/Project%20List%20AKP.pdf">[AKP] Special Project List</a>
@@ -3687,7 +3760,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ai, goa">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/AI_GOA/2026/Deck%20Poster%20AKP.pdf">[AKP] Special Projects Deck Poster</a>
@@ -3697,7 +3770,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ai, goa">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/AI_GOA/2026/AKP%20Project%20Packet.pdf">[AKP] Special Projects Full Packet</a>
@@ -3707,7 +3780,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ai, goa">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/AI_GOA/2026/Project%20Summaries%20AKP.pdf">[AKP] Special Projects Summary Table</a>
@@ -3717,7 +3790,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ai, goa">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/AI_GOA/2026/Project%20List%20OEX.pdf">[OEX] Special Project List</a>
@@ -3727,7 +3800,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ai, goa">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/AI_GOA/2026/Deck%20Poster%20OEX.pdf">[OEX] Special Projects Deck Poster</a>
@@ -3737,7 +3810,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ai, goa">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/AI_GOA/2026/OEX%20Project%20Packet.pdf">[OEX] Special Projects Full Packet</a>
@@ -3747,7 +3820,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="ai, goa">
 <div class="resource-title">
 <p>
 <a href=".././files/collections/special%20projects/AI_GOA/2026/Project%20Summaries%20OEX.pdf">[OEX] Special Projects Summary Table</a>
@@ -3769,7 +3842,7 @@ margin-top: 0 !important;
 <h3 id="ctd">CTD</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/CTD%20Manuals/SBE19plus">All Resources</a>
@@ -3779,7 +3852,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/CTD%20Manuals/SBE19plus/CTD%20Settings%20and%20Troubleshooting.pdf">CTD Settings and Troubleshooting</a>
@@ -3789,7 +3862,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/CTD%20Manuals/SBEDownloader%20How-to%20Guide.pdf">SBE Downloader How-to-Guide</a>
@@ -3799,7 +3872,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/software/SBEDownloader/SBEDownloader.exe">SBE Downloader Software</a>
@@ -3809,7 +3882,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/CTD%20Manuals/SBE19plus/CTD%20Setting%20SOPs.pdf">Settings SOP</a>
@@ -3819,7 +3892,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/CTD%20Manuals/SBE19plus/CTD%20Storage%20and%20Post-Processing.pdf">Storage and Post-Processing</a>
@@ -3829,7 +3902,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/CTD%20Manuals/SBE19plus/SBE%2019Plus%20At-Sea%20User%20Manual.pdf">User Manual</a>
@@ -3844,7 +3917,7 @@ margin-top: 0 !important;
 <h3 id="es80">ES80</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="ebs">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/ES80/2026%20Quick%20review%20EBS%20AVO%20ES80%20data%20collection.pdf">ES80 EBS Data Collection Quick Review</a>
@@ -3854,7 +3927,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/ES80/ES80_protocols_2026.pdf">ES80 Protocols</a>
@@ -3864,7 +3937,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/ES80/2025%20ES80%20data%20collection.pdf">ES80 Training Slides</a>
@@ -3874,7 +3947,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/ES80/forms/">Forms</a>
@@ -3884,7 +3957,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/ES80/ES60%20Hard%20drive%20instructions.pdf">Replacing Hard Drive</a>
@@ -3894,7 +3967,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/ES80/ES60_skippercheatsheet.pdf">Skipper Cheat Sheet</a>
@@ -3904,7 +3977,7 @@ margin-top: 0 !important;
 
 </div>
 </div>
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Collections/ES80/ES60photos">Vessel Calibration Photos</a>
@@ -3919,7 +3992,7 @@ margin-top: 0 !important;
 <h3 id="light-meter">Light meter</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
-<div class="resource-item">
+<div class="resource-item" data-survey="all">
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Light%20meters/Light%20meter%20instuctions%202018.pdf">Light Meter Instructions</a>
