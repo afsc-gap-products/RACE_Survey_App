@@ -8,6 +8,7 @@ yaml_escape <- function(x) {
 # Build navigation as character vector (one line per element)
 nav_lines <- comb %>%
   dplyr::filter(!is.na(sub_page), sub_page != "") %>%
+  dplyr::filter(page != "Tasklists") %>%
   dplyr::group_by(page) %>%
   dplyr::group_split() %>%
   purrr::map(function(df) {

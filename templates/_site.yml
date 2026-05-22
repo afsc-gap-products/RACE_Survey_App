@@ -57,14 +57,6 @@ navbar:
           href: "Species_Info_Species_ID_Guides.html"
         - text: "Fish ID by Taxa"
           href: "Species_Info_Fish_ID_by_Taxa.html"
-    - text: "Tasklists"
-      menu:
-        - text: "Beginning of Survey or Leg"
-          href: "Tasklists_Beginning_of_Survey_or_Leg.html"
-        - text: "End of Leg"
-          href: "Tasklists_End_of_Leg.html"
-        - text: "End of Survey"
-          href: "Tasklists_End_of_Survey.html"
     - icon: fab fa-github
       href: https://github.com/afsc-gap-products/RACE_Survey_App
 favicon: img/Fish Icon PacCod.png

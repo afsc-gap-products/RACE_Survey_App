@@ -171,6 +171,7 @@ document.addEventListener("DOMContentLoaded", function() {
         results.innerHTML = searchRes.map(r => `
           <div class="nav-search-item">
             <a href="${r.item.url_loc}">${r.item.title || r.item.section}</a>
+            <small>${r.item.site_loc}</small>
             <small><strong>${r.item.section}</strong> ${r.item.subtitle ? '• ' + r.item.subtitle : ''}</small>
           </div>
         `).join('');

@@ -3067,6 +3067,7 @@ background-color: #f9f9f9;
           results.innerHTML = searchRes.map(r => `
             <div class="nav-search-item">
               <a href="${r.item.url_loc}">${r.item.title || r.item.section}</a>
+              <small>${r.item.site_loc}</small>
               <small><strong>${r.item.section}</strong> ${r.item.subtitle ? '• ' + r.item.subtitle : ''}</small>
             </div>
           `).join('');
@@ -3217,18 +3218,6 @@ Species Info
 <a href="Species_Info_Minimum_ID_Table.html">Minimum ID Table</a>
 <a href="Species_Info_Species_ID_Guides.html">Species ID Guides</a>
 <a href="Species_Info_Fish_ID_by_Taxa.html">Fish ID by Taxa</a>
-</div>
-</div>
-<div class="nav-dropdown">
-<button class="nav-dropbtn">
-Tasklists
- 
-<span class="down-arrow">▾</span>
-</button>
-<div class="nav-dropdown-content">
-<a href="Tasklists_Beginning_of_Survey_or_Leg.html">Beginning of Survey or Leg</a>
-<a href="Tasklists_End_of_Leg.html">End of Leg</a>
-<a href="Tasklists_End_of_Survey.html">End of Survey</a>
 </div>
 </div>
 <a href="https://github.com/afsc-gap-products/RACE_Survey_App">

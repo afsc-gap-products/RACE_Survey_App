@@ -1,12 +1,18 @@
 # Create search index from spreadsheet -----------------------------------------
 # We map the columns you want to search to a consistent format
 search_data_entries <- website_content %>%
-  select(title, section = subsection , subtitle, url_loc) %>%
+  mutate(site_loc = paste(page, "→", sub_page, "→", section)) %>%
+  select(site_loc, title, section = subsection , subtitle, url_loc) %>%
+  mutate(site_loc = ifelse(section == "", site_loc, paste(site_loc, "→"))) %>%
   mutate(source = "entries") %>%
-  distinct(url_loc, .keep_all = TRUE)
+  distinct(url_loc, .keep_all = TRUE) %>% 
+  filter(!(grepl("Tasklists", section) & grepl("data", url_loc))) %>%
+  mutate(url_loc = ifelse(grepl("Tasklists", section), gsub("docs/", "", url_loc), url_loc))
 
 search_data_taxa <- taxa_guides %>%
-  select(title, section, subtitle = subsection, url_loc) %>%
+  mutate(site_loc = paste("Species Info → Species ID Guides →"),
+         sec = ifelse(is.na(subsection), section, paste(section, "→", subsection))) %>%
+  select(site_loc, title, section = sec, url_loc) %>%
   mutate(source = "guides") %>%
   distinct(url_loc, .keep_all = TRUE)
 

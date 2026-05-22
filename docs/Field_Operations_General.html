@@ -3070,6 +3070,7 @@ background-color: #f9f9f9;
           results.innerHTML = searchRes.map(r => `
             <div class="nav-search-item">
               <a href="${r.item.url_loc}">${r.item.title || r.item.section}</a>
+              <small>${r.item.site_loc}</small>
               <small><strong>${r.item.section}</strong> ${r.item.subtitle ? '• ' + r.item.subtitle : ''}</small>
             </div>
           `).join('');
@@ -3222,18 +3223,6 @@ Species Info
 <a href="Species_Info_Fish_ID_by_Taxa.html">Fish ID by Taxa</a>
 </div>
 </div>
-<div class="nav-dropdown">
-<button class="nav-dropbtn">
-Tasklists
- 
-<span class="down-arrow">▾</span>
-</button>
-<div class="nav-dropdown-content">
-<a href="Tasklists_Beginning_of_Survey_or_Leg.html">Beginning of Survey or Leg</a>
-<a href="Tasklists_End_of_Leg.html">End of Leg</a>
-<a href="Tasklists_End_of_Survey.html">End of Survey</a>
-</div>
-</div>
 <a href="https://github.com/afsc-gap-products/RACE_Survey_App">
 <i class="fab fa-github" aria-hidden="true"></i>
 </a>
@@ -3261,14 +3250,15 @@ Tasklists
 <ul>
 <li><a href="#administrative" id="toc-administrative">Administrative</a>
 <ul>
-<li><a href="#codebooks" id="toc-codebooks">Codebooks</a></li>
 <li><a href="#recreation" id="toc-recreation">Recreation</a></li>
 <li><a href="#social-media" id="toc-social-media">Social Media</a></li>
-<li><a href="#stations-and-maps" id="toc-stations-and-maps">Stations and Maps</a></li>
 </ul></li>
-<li><a href="#manuals" id="toc-manuals">Manuals</a>
+<li><a href="#manuals-references" id="toc-manuals-references">Manuals &amp; References</a>
 <ul>
+<li><a href="#codebooks" id="toc-codebooks">Codebooks</a></li>
+<li><a href="#stations-and-maps" id="toc-stations-and-maps">Stations and Maps</a></li>
 <li><a href="#survey-ops-manuals" id="toc-survey-ops-manuals">Survey Ops Manuals</a></li>
+<li><a href="#tasklists" id="toc-tasklists">Tasklists</a></li>
 </ul></li>
 <li><a href="#port-information" id="toc-port-information">Port Information</a></li>
 <li><a href="#training-resources" id="toc-training-resources">Training Resources</a></li>
@@ -3445,31 +3435,6 @@ margin-top: 0 !important;
 </div>
 </div>
 </div>
-<h3 id="codebooks">Codebooks</h3>
-<div class="section-content-continuation">
-<div class="subsection-content">
-<div class="resource-item">
-<div class="resource-title">
-<p>
-<a href=".././files/SpeciesID/DataCodes&amp;Forms.pdf">Gear Codebook</a>
-</p>
-</div>
-<div class="resource-description">
-
-</div>
-</div>
-<div class="resource-item">
-<div class="resource-title">
-<p>
-<a href=".././files/SpeciesID/SpeciesCodeManual.pdf">Species Codebook</a>
-</p>
-</div>
-<div class="resource-description">
-
-</div>
-</div>
-</div>
-</div>
 <h3 id="recreation">Recreation</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
@@ -3502,6 +3467,59 @@ margin-top: 0 !important;
 <div class="resource-title">
 <p>
 <a href=".././files/Social%20media%20policies/GAP%20Surveys%20Photo%20Sharing%20and%20Social%20Media.pdf">Photo Sharing and Social Media Guidance</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-box-footer">
+
+</div>
+<h2 id="manuals-references">Manuals &amp; References</h2>
+<div class="section-content-body">
+<div class="orphan-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Survey%20operation%20manuals/2026_Gear_Test_Project_Plan.pdf">2026 Gear Testing Project</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/Manuals/Survey%20operation%20manuals/primers/">Survey Primers</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<h3 id="codebooks">Codebooks</h3>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/SpeciesID/DataCodes&amp;Forms.pdf">Gear Codebook</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././files/SpeciesID/SpeciesCodeManual.pdf">Species Codebook</a>
 </p>
 </div>
 <div class="resource-description">
@@ -3545,34 +3563,6 @@ margin-top: 0 !important;
 </div>
 </div>
 </div>
-<div class="section-box-footer">
-
-</div>
-<h2 id="manuals">Manuals</h2>
-<div class="section-content-body">
-<div class="orphan-content">
-<div class="resource-item">
-<div class="resource-title">
-<p>
-<a href=".././files/Manuals/Survey%20operation%20manuals/2026_Gear_Test_Project_Plan.pdf">2026 Gear Testing Project</a>
-</p>
-</div>
-<div class="resource-description">
-
-</div>
-</div>
-<div class="resource-item">
-<div class="resource-title">
-<p>
-<a href=".././files/Manuals/Survey%20operation%20manuals/primers/">Survey Primers</a>
-</p>
-</div>
-<div class="resource-description">
-
-</div>
-</div>
-</div>
-</div>
 <h3 id="survey-ops-manuals">Survey Ops Manuals</h3>
 <div class="section-content-continuation">
 <div class="subsection-content">
@@ -3601,6 +3591,41 @@ margin-top: 0 !important;
 <div class="resource-title">
 <p>
 <a href=".././files/Manuals/Survey%20operation%20manuals/Bering%20Sea%20Survey%20Ops%20Manual.pdf">BS Survey Ops Manual</a> (<a href="https://docs.google.com/document/d/1GkO_-hAaB7zKB1Xuu09furfiXnc-LuMJvSb1ONVzFng/edit?usp=sharing">Web link</a>)
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+</div>
+</div>
+<h3 id="tasklists">Tasklists</h3>
+<div class="section-content-continuation">
+<div class="subsection-content">
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././docs/Tasklists_Beginning_of_Survey_or_Leg.html">Beginning of Survey or Leg</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././docs/Tasklists_End_of_Leg.html">End of Leg</a>
+</p>
+</div>
+<div class="resource-description">
+
+</div>
+</div>
+<div class="resource-item">
+<div class="resource-title">
+<p>
+<a href=".././docs/Tasklists_End_of_Survey.html">End of Survey</a>
 </p>
 </div>
 <div class="resource-description">
