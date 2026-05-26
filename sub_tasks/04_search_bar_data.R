@@ -1,18 +1,28 @@
 # Create search index from spreadsheet -----------------------------------------
 # We map the columns you want to search to a consistent format
 search_data_entries <- website_content %>%
-  mutate(site_loc = paste(page, "→", sub_page, "→", section)) %>%
-  select(site_loc, title, section = subsection , subtitle, url_loc) %>%
-  mutate(site_loc = ifelse(section == "", site_loc, paste(site_loc, "→"))) %>%
-  mutate(source = "entries") %>%
-  distinct(url_loc, .keep_all = TRUE) %>% 
-  filter(!(grepl("Tasklists", section) & grepl("data", url_loc))) %>%
-  mutate(url_loc = ifelse(grepl("Tasklists", section), gsub("docs/", "", url_loc), url_loc))
+  filter(!(grepl("data", url_loc) & (grepl("Tasklists", section) | grepl("Tasklists", subsection)))) %>%
+  mutate(
+    site_loc = if_else(!is.na(sub_page), paste(page, "→", sub_page), page),
+    site_loc = if_else(!is.na(section), paste(site_loc, "→", section), site_loc),
+    site_loc = if_else(subsection != "", paste(site_loc, "→", subsection), site_loc),
+    search_terms = paste(subsection, "/", section)
+  ) %>%
+  select(site_loc, title, section = subsection, subtitle, url_loc, search_terms) %>%
+  mutate(
+    source = "entries",
+    url_loc = if_else(grepl("Tasklists", site_loc), gsub("docs/", "", url_loc), url_loc)
+  ) %>%
+  distinct(url_loc, .keep_all = TRUE)
+
 
 search_data_taxa <- taxa_guides %>%
-  mutate(site_loc = paste("Species Info → Species ID Guides →"),
-         sec = ifelse(is.na(subsection), section, paste(section, "→", subsection))) %>%
-  select(site_loc, title, section = sec, url_loc) %>%
+  mutate(section = ifelse(is.na(section), "Inverts", section),
+         site_loc = paste("Species Info → Species ID Guides →", section),
+         site_loc = ifelse(is.na(subsection), site_loc, paste(site_loc, "→", subsection)),
+         search_terms = ifelse(is.na(subsection), section, paste(subsection, "/", section))
+         ) %>%
+  select(site_loc, title, section, url_loc, search_terms) %>%
   mutate(source = "guides") %>%
   distinct(url_loc, .keep_all = TRUE)
 
@@ -30,3 +40,4 @@ js_content <- paste0("var searchData = ", json_string, ";")
 
 # Save as a .js file
 writeLines(js_content, "docs/js/search_data.js")
+

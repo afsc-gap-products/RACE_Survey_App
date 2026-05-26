@@ -163,7 +163,8 @@ document.addEventListener("DOMContentLoaded", function() {
         keys: [
           { name: "title", weight: 0.5 },
           { name: "section", weight: 0.3 },
-          { name: "subtitle", weight: 0.15 }  
+          { name: "subtitle", weight: 0.15 },
+          { name: "search_terms", weight: 0.2 }  
           ]
       });
     } else {
@@ -195,7 +196,6 @@ document.addEventListener("DOMContentLoaded", function() {
           <div class="nav-search-item">
             <a href="${r.item.url_loc}">${r.item.title || r.item.section}</a>
             <small>${r.item.site_loc}</small>
-            <small><strong>${r.item.section}</strong> ${r.item.subtitle ? '• ' + r.item.subtitle : ''}</small>
           </div>
         `).join('');
       }

@@ -3059,7 +3059,8 @@ background-color: #f9f9f9;
           keys: [
             { name: "title", weight: 0.5 },
             { name: "section", weight: 0.3 },
-            { name: "subtitle", weight: 0.15 }  
+            { name: "subtitle", weight: 0.15 },
+            { name: "search_terms", weight: 0.2 }  
             ]
         });
       } else {
@@ -3091,7 +3092,6 @@ background-color: #f9f9f9;
             <div class="nav-search-item">
               <a href="${r.item.url_loc}">${r.item.title || r.item.section}</a>
               <small>${r.item.site_loc}</small>
-              <small><strong>${r.item.section}</strong> ${r.item.subtitle ? '• ' + r.item.subtitle : ''}</small>
             </div>
           `).join('');
         }
@@ -3192,12 +3192,12 @@ padding-top: 50px;
 }
 
 .d-title {
-margin-top: 50px; 
+margin-top: 40px; 
 }
 </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <style type="text/css">.distill-site-header {font-size: 14px;}.distill-site-nav {position: fixed;top: 0;left: 0;right: 0;z-index: 9999;}#survey-toggle {display: flex;align-items: center;gap: 12px;padding: 10px 20px;background: #ffffff;position: fixed;top: 52px; left: 0;right: 0;width: 100%;box-sizing: border-box;z-index: 998;}.toggle-label {font-size: 0.8rem;font-weight: 600;color: #6b7280;text-transform: uppercase;letter-spacing: 0.05em;white-space: nowrap;}.toggle-pill-group {display: flex;background: #e5e7eb;border-radius: 999px;padding: 3px;gap: 1px;}.survey-btn {padding: 5px 16px;border: none;background: transparent;color: #6b7280;border-radius: 999px;cursor: pointer;font-size: 0.82rem;font-weight: 500;transition: background 0.2s ease, color 0.2s ease;white-space: nowrap;}.survey-btn.active {background: #ffffff;color: #1f2937;box-shadow: 0 1px 3px rgba(0,0,0,0.12);font-weight: 600;}.survey-btn:hover:not(.active) {color: #374151;}.d-article {padding-top: 52px; }@media screen and (max-width: 768px) {#survey-toggle {top: 0;flex-wrap: wrap;}}.d-article {padding-top: 50px; }.d-title {margin-top: 50px; }</style>
+  <style type="text/css">.distill-site-header {font-size: 14px;}.distill-site-nav {position: fixed;top: 0;left: 0;right: 0;z-index: 9999;}#survey-toggle {display: flex;align-items: center;gap: 12px;padding: 10px 20px;background: #ffffff;position: fixed;top: 52px; left: 0;right: 0;width: 100%;box-sizing: border-box;z-index: 998;}.toggle-label {font-size: 0.8rem;font-weight: 600;color: #6b7280;text-transform: uppercase;letter-spacing: 0.05em;white-space: nowrap;}.toggle-pill-group {display: flex;background: #e5e7eb;border-radius: 999px;padding: 3px;gap: 1px;}.survey-btn {padding: 5px 16px;border: none;background: transparent;color: #6b7280;border-radius: 999px;cursor: pointer;font-size: 0.82rem;font-weight: 500;transition: background 0.2s ease, color 0.2s ease;white-space: nowrap;}.survey-btn.active {background: #ffffff;color: #1f2937;box-shadow: 0 1px 3px rgba(0,0,0,0.12);font-weight: 600;}.survey-btn:hover:not(.active) {color: #374151;}.d-article {padding-top: 52px; }@media screen and (max-width: 768px) {#survey-toggle {top: 0;flex-wrap: wrap;}}.d-article {padding-top: 50px; }.d-title {margin-top: 40px; }</style>
 
 </head>
 
