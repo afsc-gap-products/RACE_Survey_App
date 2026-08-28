@@ -30,7 +30,7 @@ navbar:
     - text: "Safety & Health"
       menu:
         - text: "Emergency Flow Chart"
-          href: "../files/Safety/Accidents/accident.htm"
+          href: "./files/safety_and_health/accidents/accident.htm"
         - text: "Ergonomic Resources"
           href: "Safety_&_Health_Ergonomic_Resources.html"
         - text: "Harassment Resources"
@@ -48,7 +48,7 @@ navbar:
     - text: "Species Info"
       menu:
         - text: "Codebook"
-          href: "../files/SpeciesID/SpeciesCodeManual.pdf"
+          href: "./files/admin/survey_manuals/SpeciesCodeManual.pdf"
         - text: "Protected Species"
           href: "Species_Info_Protected_Species.html"
         - text: "Minimum ID Table"

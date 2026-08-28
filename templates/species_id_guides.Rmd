@@ -128,7 +128,7 @@ td:first-child {
 </style>
 
 ```{r guides, echo = F}
-all_files <- taxa_guides %>%
+tabl <- taxa_guides %>%
   dplyr::select(title, section, subsection, url_loc) %>%
   dplyr::mutate(
     filename = basename(url_loc),
@@ -140,20 +140,15 @@ all_files <- taxa_guides %>%
     ),
     url_loc = stringr::str_replace(url_loc, "\\./files", "\\../files"),
     reference = paste0("[", title, "](", gsub(" ", "%20", url_loc), ")")
-  )
+  ) %>%
+  arrange(taxa, section, subsection, title)
 ```
 
 
 ```{r, echo = FALSE, results = "asis"}
 fish_id <- paste0(
-  "<a class='resource-chip' href='./Species_ID_Fish_ID_by_Taxa.html'>ID by Taxa</a>"
+  "<a class='resource-chip' href='./Species_Info_Fish_ID_by_Taxa.html'>ID by Taxa</a>"
 )
-
-tabl <- all_files %>%
-  dplyr::mutate(Taxa = ifelse(!is.na(subsection), subsection, section)) %>%
-  dplyr::mutate(Taxa = ifelse(Taxa == "fish", NA, str_to_sentence(Taxa))) %>%
-  dplyr::arrange(taxa, Taxa, title)
-
 options(knitr.kable.NA = "")
 
 sec <- unique(tabl$taxa)
@@ -161,23 +156,22 @@ sec <- unique(tabl$taxa)
 for (i in seq_along(sec)) {
   tmp <- tabl %>%
     dplyr::filter(taxa == sec[[i]]) %>%
-    dplyr::select(Taxa, Reference = reference) %>%
-    dplyr::mutate(
-      Taxa = ifelse(is.na(Taxa), "", Taxa),
-      has_taxa = Taxa != ""
-    ) %>%
+    mutate(Subsection = ifelse(is.na(subsection), "", str_to_sentence(subsection))) %>%
+    dplyr::select(Subsection, Reference = reference) %>%
+    dplyr::mutate(has_taxa = !is.na(Subsection)) %>%
     dplyr::arrange(
       has_taxa,
-      Taxa,
+      Subsection,
       Reference
     ) %>%
     dplyr::select(-has_taxa) %>%
     # correct deduplication
-    dplyr::group_by(Taxa) %>%
+    dplyr::group_by(Subsection) %>%
     dplyr::mutate(
-      Taxa = ifelse(row_number() == 1, Taxa, "")
+      Taxa = ifelse(row_number() == 1, Subsection, "")
     ) %>%
-    dplyr::ungroup()
+    dplyr::ungroup() %>%
+    select(Taxa, Reference) 
 
   # header
   if (sec[i] == "Fishes") {

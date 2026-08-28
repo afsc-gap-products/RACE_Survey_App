@@ -3,7 +3,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Computer Programs → METIS",
     "title": "METIS PC Required Directories and Files",
     "section": "METIS",
-    "url_loc": "../files/Manuals/Catch Data Entry/METIS PC Required Directories and Control Files/",
+    "url_loc": "../files/software/computer_programs/metis/required_files/",
     "search_terms": "METIS / Computer Programs",
     "source": "entries"
   },
@@ -11,7 +11,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Computer Programs → METIS",
     "title": "Oracle Apex End User's Guide",
     "section": "METIS",
-    "url_loc": "../files/Manuals/Catch Data Entry/oracle-apex-end-users-guide.pdf",
+    "url_loc": "../files/software/computer_programs/metis/oracle_apex_end_users_guide.pdf",
     "search_terms": "METIS / Computer Programs",
     "source": "entries"
   },
@@ -19,7 +19,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Deck Sensors → CTD",
     "title": "All CTD Resources",
     "section": "CTD",
-    "url_loc": "../files/Manuals/CTD Manuals",
+    "url_loc": "../files/sensors/CTD/",
     "search_terms": "CTD / Deck Sensors",
     "source": "entries"
   },
@@ -27,7 +27,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Deck Sensors → CTD",
     "title": "CTD Laptop Login",
     "section": "CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/CTD Laptop Login.pdf",
+    "url_loc": "../files/sensors/CTD/CTD_Laptop_Login.pdf",
     "search_terms": "CTD / Deck Sensors",
     "source": "entries"
   },
@@ -35,7 +35,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Deck Sensors → CTD",
     "title": "SBE19plus Resources",
     "section": "CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/",
+    "url_loc": "../files/sensors/CTD/sbe19plus/",
     "search_terms": "CTD / Deck Sensors",
     "source": "entries"
   },
@@ -43,7 +43,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Deck Sensors → CTD",
     "title": "Seabird Program Resources",
     "section": "CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/Seabird Programs/",
+    "url_loc": "../files/sensors/CTD/seabird_programs/",
     "search_terms": "CTD / Deck Sensors",
     "source": "entries"
   },
@@ -51,7 +51,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Polycorder Codes",
     "title": "Polycoder Codes Poster (BS)",
     "section": "",
-    "url_loc": "../files/Collections/Polycorder Placard EBS.pdf",
+    "url_loc": "../files/collections/Polycorder_Placard_EBS.pdf",
     "search_terms": " / Polycorder Codes",
     "source": "entries"
   },
@@ -59,7 +59,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Polycorder Codes",
     "title": "Polycoder Codes Poster (GOA / AI)",
     "section": "",
-    "url_loc": "../files/Collections/Polycorder Placard GOA_AI.pdf",
+    "url_loc": "../files/collections/Polycorder_Placard_GOA_AI.pdf",
     "search_terms": " / Polycorder Codes",
     "source": "entries"
   },
@@ -67,7 +67,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Polycorder Codes",
     "title": "Polycorder Code List",
     "section": "",
-    "url_loc": "../files/Collections/GOA_BS poly complete.pdf",
+    "url_loc": "../files/collections/GOA_EBS_poly_complete.pdf",
     "search_terms": " / Polycorder Codes",
     "source": "entries"
   },
@@ -75,7 +75,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → References",
     "title": "Gear Codebook",
     "section": "",
-    "url_loc": "../files/SpeciesID/DataCodes&Forms.pdf",
+    "url_loc": "../files/admin/survey_manuals/DataCodes&Forms.pdf",
     "search_terms": " / References",
     "source": "entries"
   },
@@ -83,7 +83,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → References",
     "title": "SFTP Instructions",
     "section": "",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/SFTP Instructions.pdf",
+    "url_loc": "../files/admin/survey_manuals/SFTP_Instructions.pdf",
     "search_terms": " / References",
     "source": "entries"
   },
@@ -91,7 +91,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → References",
     "title": "Species Codebook",
     "section": "",
-    "url_loc": "../files/SpeciesID/SpeciesCodeManual.pdf",
+    "url_loc": "../files/admin/survey_manuals/SpeciesCodeManual.pdf",
     "search_terms": " / References",
     "source": "entries"
   },
@@ -99,7 +99,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Sampling Resources → Large Catch Resources",
     "title": "**NEW** Volumetric Worksheet",
     "section": "Large Catch Resources",
-    "url_loc": "../files/Collections/Large catches/volumetric_worksheet.xlsm",
+    "url_loc": "../files/collections/large_catches/volumetric_worksheet.xlsm",
     "search_terms": "Large Catch Resources / Sampling Resources",
     "source": "entries"
   },
@@ -107,7 +107,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Sampling Resources → Large Catch Resources",
     "title": "Basket Weight Calculation Sheets",
     "section": "Large Catch Resources",
-    "url_loc": "../files/Collections/Basket weight calcs/",
+    "url_loc": "../files/collections/basket_weights/",
     "search_terms": "Large Catch Resources / Sampling Resources",
     "source": "entries"
   },
@@ -115,7 +115,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Sampling Resources → Large Catch Resources",
     "title": "Split Haul Crab Subsampling Protocol (EBS)",
     "section": "Large Catch Resources",
-    "url_loc": "../files/Collections/Large catches/Split Haul Subsampling Protocol using METIS.pdf",
+    "url_loc": "../files/collections/large_catches/Split_Haul_Subsampling_Protocol_using_METIS.pdf",
     "search_terms": "Large Catch Resources / Sampling Resources",
     "source": "entries"
   },
@@ -123,7 +123,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Sampling Resources → Large Catch Resources",
     "title": "Splitting Catch Steps (GOA / AI)",
     "section": "Large Catch Resources",
-    "url_loc": "../files/Collections/Large catches/Steps for Splitting a Catch.pdf",
+    "url_loc": "../files/collections/large_catches/Steps_for_Splitting_a_Catch.pdf",
     "search_terms": "Large Catch Resources / Sampling Resources",
     "source": "entries"
   },
@@ -131,7 +131,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Sampling Resources → Large Catch Resources",
     "title": "Volumetric Sampling Form",
     "section": "Large Catch Resources",
-    "url_loc": "../files/Collections/forms/catchforms/Volumetric_Sampling_Form.pdf",
+    "url_loc": "../files/collections/large_catches/Volumetric_Sampling_Form.pdf",
     "search_terms": "Large Catch Resources / Sampling Resources",
     "source": "entries"
   },
@@ -139,7 +139,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Sampling Resources → Large Catch Resources",
     "title": "Volumetric Steps (GOA / AI)",
     "section": "Large Catch Resources",
-    "url_loc": "../files/Collections/Large catches/Steps for a Volumetric Catch.pdf",
+    "url_loc": "../files/collections/large_catches/Steps_for_a_Volumetric_Catch.pdf",
     "search_terms": "Large Catch Resources / Sampling Resources",
     "source": "entries"
   },
@@ -147,7 +147,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Sampling Resources → Scales",
     "title": "Marel (Deck Scales) Calibration",
     "section": "Scales",
-    "url_loc": "../files/manuals/MAREL_scales/Basket_Scale_Calibration.pdf",
+    "url_loc": "../files/vessel_and_gear/marel_scales/Basket_Scale_Calibration.pdf",
     "search_terms": "Scales / Sampling Resources",
     "source": "entries"
   },
@@ -155,7 +155,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Sampling Resources → Scales",
     "title": "Marel (Deck Scales) Resources",
     "section": "Scales",
-    "url_loc": "../files/manuals/MAREL_scales",
+    "url_loc": "../files/vessel_and_gear/marel_scales/",
     "search_terms": "Scales / Sampling Resources",
     "source": "entries"
   },
@@ -163,7 +163,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Sampling Resources → Scales",
     "title": "MSI (Load Cell/Crane Scale) Resources",
     "section": "Scales",
-    "url_loc": "../files/Manuals/MSI_loadcells_cranescales/",
+    "url_loc": "../files/vessel_and_gear/msi_loadcells/",
     "search_terms": "Scales / Sampling Resources",
     "source": "entries"
   },
@@ -171,7 +171,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Sampling Resources → Vouchers",
     "title": "Voucher Collection Procedures",
     "section": "Vouchers",
-    "url_loc": "../files/Collections/Voucher Procedures.pdf",
+    "url_loc": "../files/collections/voucher_procedures.pdf",
     "search_terms": "Vouchers / Sampling Resources",
     "source": "entries"
   },
@@ -179,7 +179,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Sampling Resources",
     "title": "Catch Form",
     "section": "",
-    "url_loc": "../files/Collections/forms/catchforms/catch_form.pdf",
+    "url_loc": "../files/admin/forms/catch_form.pdf",
     "search_terms": " / Sampling Resources",
     "source": "entries"
   },
@@ -187,7 +187,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Sampling Resources",
     "title": "Halibut LW Relationships (GOA / AI)",
     "section": "",
-    "url_loc": "../files/Collections/Updated Halibut LW Relationships/",
+    "url_loc": "../files/collections/halibut_lw_relationships/",
     "search_terms": " / Sampling Resources",
     "source": "entries"
   },
@@ -195,7 +195,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Sampling Resources",
     "title": "Minimum Length/Sex Subsampling (AI)",
     "section": "",
-    "url_loc": "../files/Manuals/Survey operation manuals/Min length and sex per haul.pdf",
+    "url_loc": "../files/collections/Min_length_and_sex_per_haul.pdf",
     "search_terms": " / Sampling Resources",
     "source": "entries"
   },
@@ -203,7 +203,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Tablets → Barcodes",
     "title": "1-20 Barcode Numbers (xlsx)",
     "section": "Barcodes",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/1-120 bar code numbers.xlsx",
+    "url_loc": "../files/collections/bluetooth_devices/barcodes/1_120_bar_code_numbers.xlsx",
     "search_terms": "Barcodes / Tablets",
     "source": "entries"
   },
@@ -211,7 +211,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Tablets → Barcodes",
     "title": "1-20 Barcodes (pdf)",
     "section": "Barcodes",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/1-120 barcode codes.pdf",
+    "url_loc": "../files/collections/bluetooth_devices/barcodes/1_120_barcode_codes.pdf",
     "search_terms": "Barcodes / Tablets",
     "source": "entries"
   },
@@ -219,7 +219,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Tablets → Barcodes",
     "title": "100-199 Barcodes (pdf)",
     "section": "Barcodes",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/Big length barcodes 2024.pdf",
+    "url_loc": "../files/collections/bluetooth_devices/barcodes/Big_length_barcodes_2024.pdf",
     "search_terms": "Barcodes / Tablets",
     "source": "entries"
   },
@@ -227,7 +227,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Tablets → Barcodes",
     "title": "ID Automation HC39M Code 39 Barcode (ttf)",
     "section": "Barcodes",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/IDAutomationHC39M Code 39 Barcode.ttf",
+    "url_loc": "../files/collections/bluetooth_devices/barcodes/IDAutomationHC39M_Code_39_Barcode.ttf",
     "search_terms": "Barcodes / Tablets",
     "source": "entries"
   },
@@ -235,7 +235,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Tablets → Barcodes",
     "title": "Length and Specimen Tab Barcodes 5/2017 (xlsx)",
     "section": "Barcodes",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/Barcodes/LENG & SPEC TAB barcodes 2017 May.xlsx",
+    "url_loc": "../files/collections/bluetooth_devices/barcodes/LENG_&_SPEC_TAB_barcodes_2017.xlsx",
     "search_terms": "Barcodes / Tablets",
     "source": "entries"
   },
@@ -243,7 +243,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Tablets → Tablet Set Up",
     "title": "Samsung Galaxy A7 Lite Tablet User Manual",
     "section": "Tablet Set Up",
-    "url_loc": "../files/Manuals/Apps Software/Samsung_Galaxy_A7_manual.pdf",
+    "url_loc": "../files/software/tablets/Samsung_Galaxy_A7_manual.pdf",
     "search_terms": "Tablet Set Up / Tablets",
     "source": "entries"
   },
@@ -251,7 +251,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Tablets → Tablet Set Up",
     "title": "Sending Tablet Files via WiFi",
     "section": "Tablet Set Up",
-    "url_loc": "../files/Manuals/Apps Software/Sending Tablet Files Via WiFi.pdf",
+    "url_loc": "../files/software/tablets/Sending_Tablet_Files_Via_WiFi.pdf",
     "search_terms": "Tablet Set Up / Tablets",
     "source": "entries"
   },
@@ -259,7 +259,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Tablets → Tablet Set Up",
     "title": "Setting Up Maturity Collection",
     "section": "Tablet Set Up",
-    "url_loc": "../files/Manuals/Apps Software/BT Survey Maturity Instructions.pdf",
+    "url_loc": "../files/software/tablets/BT_Survey_Maturity_Instructions.pdf",
     "search_terms": "Tablet Set Up / Tablets",
     "source": "entries"
   },
@@ -267,7 +267,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Tablets → Tablet Set Up",
     "title": "Tablet Remote Access Documentation",
     "section": "Tablet Set Up",
-    "url_loc": "../files/Manuals/Apps Software/Tablet Remote Access Documentation.pdf",
+    "url_loc": "../files/software/tablets/Tablet_Remote_Access_Documentation.pdf",
     "search_terms": "Tablet Set Up / Tablets",
     "source": "entries"
   },
@@ -275,7 +275,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Tablets → Wands",
     "title": "Wand Manual",
     "section": "Wands",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/WWR2900 WandManual.pdf",
+    "url_loc": "../files/collections/bluetooth_devices/WWR2900_WandManual.pdf",
     "search_terms": "Wands / Tablets",
     "source": "entries"
   },
@@ -283,7 +283,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Tablets → Wands",
     "title": "Wand Pairing Barcodes (old)",
     "section": "Wands",
-    "url_loc": "../files/Manuals/Bluetooth_Devices/wand pairing instructions 2021.pdf",
+    "url_loc": "../files/collections/bluetooth_devices/wand_pairing_instructions_2021.pdf",
     "search_terms": "Wands / Tablets",
     "source": "entries"
   },
@@ -291,7 +291,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Tablets",
     "title": "Caliper Digimatic Bluetooth Adapter Instructions",
     "section": "",
-    "url_loc": "../files/Manuals/Bluetooth_devices/Caliper_Digimatic Bluetooth Adapter instructions.pdf",
+    "url_loc": "../files/collections/bluetooth_devices/Caliper_Digimatic_Bluetooth_Adapter_instructions.pdf",
     "search_terms": " / Tablets",
     "source": "entries"
   },
@@ -299,7 +299,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Tablets",
     "title": "Catch App Powerpoints",
     "section": "",
-    "url_loc": "../files/Manuals/Apps Software/IntroToCatchApp MS Powerpoints/",
+    "url_loc": "../files/software/tablets/training/introtocatchapp_ms_powerpoints/",
     "search_terms": " / Tablets",
     "source": "entries"
   },
@@ -307,15 +307,15 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Tablets",
     "title": "Crab App Powerpoints",
     "section": "",
-    "url_loc": "../files/Manuals/Apps Software/Crab Application Training Powerpoints/",
+    "url_loc": "../files/software/tablets/crab_application_training_powerpoints/",
     "search_terms": " / Tablets",
     "source": "entries"
   },
   {
     "site_loc": "Field Operations → FPC Resources → Computer Programs → GAP Toolkit",
-    "title": "GAPsurvey R Package",
+    "title": "[deprecated] GAPsurvey R Package",
     "section": "GAP Toolkit",
-    "url_loc": "./docs/Software_Software_&_drivers.html",
+    "url_loc": "../files/software/r/gapsurvey/",
     "search_terms": "GAP Toolkit / Computer Programs",
     "source": "entries"
   },
@@ -323,7 +323,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → GAP Toolkit",
     "title": "GapTools",
     "section": "GAP Toolkit",
-    "url_loc": "../files/Manuals/gaptools/",
+    "url_loc": "../files/software/computer_programs/gaptools/",
     "search_terms": "GAP Toolkit / Computer Programs",
     "source": "entries"
   },
@@ -331,7 +331,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Globe",
     "title": "GLOBE",
     "section": "Globe",
-    "url_loc": "../files/Manuals/globe/",
+    "url_loc": "../files/software/computer_programs/globe/",
     "search_terms": "Globe / Computer Programs",
     "source": "entries"
   },
@@ -339,7 +339,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → GPS",
     "title": "GPS MR-350 and Related Resources",
     "section": "GPS",
-    "url_loc": "../files/Manuals/GPSs/",
+    "url_loc": "../files/software/computer_programs/gps/",
     "search_terms": "GPS / Computer Programs",
     "source": "entries"
   },
@@ -347,7 +347,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Marport/Scala",
     "title": "Marport Resources",
     "section": "Marport/Scala",
-    "url_loc": "../files/Manuals/MARPORT/",
+    "url_loc": "../files/software/computer_programs/marport/",
     "search_terms": "Marport/Scala / Computer Programs",
     "source": "entries"
   },
@@ -355,7 +355,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Marport/Scala",
     "title": "Marport/Scala Quick Reference Guide",
     "section": "Marport/Scala",
-    "url_loc": "../files/Manuals/MARPORT/Marport_Scala_Quick_Start_Guide.pdf",
+    "url_loc": "../files/software/computer_programs/marport/Marport_Scala_Quick_Start_Guide.pdf",
     "search_terms": "Marport/Scala / Computer Programs",
     "source": "entries"
   },
@@ -363,7 +363,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Marport/Scala",
     "title": "Mosa2 Quick Reference Guide",
     "section": "Marport/Scala",
-    "url_loc": "../files/Manuals/MARPORT/Mosa2/Mosa2_mac_qrg_en_V7.pdf",
+    "url_loc": "../files/software/computer_programs/marport/mosa2/Mosa2_mac_qrg_en_V7.pdf",
     "search_terms": "Marport/Scala / Computer Programs",
     "source": "entries"
   },
@@ -371,7 +371,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Marport/Scala",
     "title": "Scala Configuration Files",
     "section": "Marport/Scala",
-    "url_loc": "../files/Manuals/MARPORT/scala_pages/",
+    "url_loc": "../files/software/computer_programs/marport/scala_pages/",
     "search_terms": "Marport/Scala / Computer Programs",
     "source": "entries"
   },
@@ -379,7 +379,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Marport/Scala",
     "title": "Scala NMEA strings",
     "section": "Marport/Scala",
-    "url_loc": "../files/Manuals/MARPORT/Scala NMEA strings.pdf",
+    "url_loc": "../files/software/computer_programs/marport/Scala_NMEA_strings.pdf",
     "search_terms": "Marport/Scala / Computer Programs",
     "source": "entries"
   },
@@ -387,7 +387,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Marport/Scala",
     "title": "Scala User Manual",
     "section": "Marport/Scala",
-    "url_loc": "../files/Manuals/MARPORT/SCALA2_UserGuide_en_V6.pdf",
+    "url_loc": "../files/software/computer_programs/marport/SCALA2_UserGuide_en_V6.pdf",
     "search_terms": "Marport/Scala / Computer Programs",
     "source": "entries"
   },
@@ -395,7 +395,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Marport/Scala",
     "title": "Sensor User Manual: Door Explorer",
     "section": "Marport/Scala",
-    "url_loc": "../files/Manuals/MARPORT/DoorExplorerProNX_UserManual_en_V1.pdf",
+    "url_loc": "../files/software/computer_programs/marport/DoorExplorerProNX_UserManual_en_V1.pdf",
     "search_terms": "Marport/Scala / Computer Programs",
     "source": "entries"
   },
@@ -403,7 +403,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Marport/Scala",
     "title": "Sensor User Manual: Flow Speed Navigator",
     "section": "Marport/Scala",
-    "url_loc": "../files/Manuals/MARPORT/FlowSpeedNavigatorProNX_UserManual_en_V1.pdf",
+    "url_loc": "../files/software/computer_programs/marport/FlowSpeedNavigatorProNX_UserManual_en_V1.pdf",
     "search_terms": "Marport/Scala / Computer Programs",
     "source": "entries"
   },
@@ -411,7 +411,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Marport/Scala",
     "title": "Sensor User Manual: Trident",
     "section": "Marport/Scala",
-    "url_loc": "../files/Manuals/MARPORT/Trident_UserManual_en_V2.pdf",
+    "url_loc": "../files/software/computer_programs/marport/Trident_UserManual_en_V2.pdf",
     "search_terms": "Marport/Scala / Computer Programs",
     "source": "entries"
   },
@@ -419,7 +419,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Olex",
     "title": "Olex and OpenCPN",
     "section": "Olex",
-    "url_loc": "../files/Manuals/Olex and OpenCPN/",
+    "url_loc": "../files/software/computer_programs/olex_and_opencpn/",
     "search_terms": "Olex / Computer Programs",
     "source": "entries"
   },
@@ -427,7 +427,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Poseidon",
     "title": "Backup Haul Data Extractor Utility",
     "section": "Poseidon",
-    "url_loc": "../files/Manuals/Poseidon/Backup_Haul_Data_Extractor_Utility.pdf",
+    "url_loc": "../files/software/computer_programs/poseidon/Backup_Haul_Data_Extractor_Utility.pdf",
     "search_terms": "Poseidon / Computer Programs",
     "source": "entries"
   },
@@ -435,7 +435,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Poseidon",
     "title": "Poseidon Quick Reference User Guide",
     "section": "Poseidon",
-    "url_loc": "../files/Manuals/Poseidon/Poseidon Quick Reference User Guide.pdf",
+    "url_loc": "../files/software/computer_programs/poseidon/Poseidon_Quick_Reference_User_Guide.pdf",
     "search_terms": "Poseidon / Computer Programs",
     "source": "entries"
   },
@@ -443,7 +443,31 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Poseidon",
     "title": "Poseidon/SCS User Guide",
     "section": "Poseidon",
-    "url_loc": "../files/Manuals/Poseidon/Poseidon_SCS User Guide Version 2.0.pdf",
+    "url_loc": "../files/software/computer_programs/poseidon/Poseidon_SCS_User_Guide_Version_2.0.pdf",
+    "search_terms": "Poseidon / Computer Programs",
+    "source": "entries"
+  },
+  {
+    "site_loc": "Field Operations → FPC Resources → Computer Programs → Poseidon",
+    "title": "Poseidon Wire Diagram",
+    "section": "Poseidon",
+    "url_loc": "../files/software/computer_programs/poseidon/GAP_Poseidon_Survey_Wire_Diagram_2026.pdf",
+    "search_terms": "Poseidon / Computer Programs",
+    "source": "entries"
+  },
+  {
+    "site_loc": "Field Operations → FPC Resources → Computer Programs → Poseidon",
+    "title": "SCS Poseidon Survey Equipment Troubleshooting Guide",
+    "section": "Poseidon",
+    "url_loc": "../files/software/computer_programs/poseidon/SCS_Poseidon_Survey_Equipment_Troubleshooting_Guide.pdf",
+    "search_terms": "Poseidon / Computer Programs",
+    "source": "entries"
+  },
+  {
+    "site_loc": "Field Operations → FPC Resources → Computer Programs → Poseidon",
+    "title": "Poseidon Survey Accounts",
+    "section": "Poseidon",
+    "url_loc": "../files/software/computer_programs/poseidon/GAP_Poseidon_Survey_Accounts.pdf",
     "search_terms": "Poseidon / Computer Programs",
     "source": "entries"
   },
@@ -451,7 +475,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → TimeZero",
     "title": "TimeZero Files",
     "section": "TimeZero",
-    "url_loc": "../files/Manuals/TimeZero/",
+    "url_loc": "../files/software/computer_programs/timezero/",
     "search_terms": "TimeZero / Computer Programs",
     "source": "entries"
   },
@@ -459,7 +483,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → TimeZero",
     "title": "TimeZero Manual",
     "section": "TimeZero",
-    "url_loc": "../files/Manuals/TimeZero/Time Zero Manual.pdf",
+    "url_loc": "../files/software/computer_programs/timezero/Time_Zero_Manual.pdf",
     "search_terms": "TimeZero / Computer Programs",
     "source": "entries"
   },
@@ -467,7 +491,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → TimeZero",
     "title": "TimeZero Quick Start Guide",
     "section": "TimeZero",
-    "url_loc": "../files/Manuals/TimeZero/TimeZero_Quick_Start_Guide.pdf",
+    "url_loc": "../files/software/computer_programs/timezero/TimeZero_Quick_Start_Guide.pdf",
     "search_terms": "TimeZero / Computer Programs",
     "source": "entries"
   },
@@ -475,7 +499,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse",
     "title": "GPS \"KickStart\" (if GPS stream suddenly stops)",
     "section": "Wheelhouse",
-    "url_loc": "../files/Manuals/GPSs/GPS_kickstart.pdf",
+    "url_loc": "../files/software/computer_programs/gps/GPS_kickstart.pdf",
     "search_terms": "Wheelhouse / Computer Programs",
     "source": "entries"
   },
@@ -483,7 +507,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse",
     "title": "How to Install Wheelhouse Updates",
     "section": "Wheelhouse",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Wheelhouse update/Wheelhouse_installing_updates.pdf",
+    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/wheelhouse_update/Wheelhouse_installing_updates.pdf",
     "search_terms": "Wheelhouse / Computer Programs",
     "source": "entries"
   },
@@ -491,7 +515,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse",
     "title": "Instructions for extracting GIDES data to insert into wheelhouse",
     "section": "Wheelhouse",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/InstructionsforExtractingGIDESdatatoInsertintoWHEELHOUSE.docx",
+    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/InstructionsforExtractingGIDESdatatoInsertintoWHEELHOUSE.docx",
     "search_terms": "Wheelhouse / Computer Programs",
     "source": "entries"
   },
@@ -499,7 +523,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse",
     "title": "Surface Temperature Algorithm",
     "section": "Wheelhouse",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/SurfaceTempDocumentation2013.pdf",
+    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/SurfaceTempdocs2013.pdf",
     "search_terms": "Wheelhouse / Computer Programs",
     "source": "entries"
   },
@@ -507,7 +531,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse",
     "title": "Wheelhouse DB Backup and Restore",
     "section": "Wheelhouse",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Instr_reblding_WH_OracleDB.pdf",
+    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/Instr_reblding_WH_OracleDB.pdf",
     "search_terms": "Wheelhouse / Computer Programs",
     "source": "entries"
   },
@@ -515,7 +539,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse",
     "title": "Wheelhouse File Formats",
     "section": "Wheelhouse",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/WH_file_formats.txt",
+    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/WH_file_formats.txt",
     "search_terms": "Wheelhouse / Computer Programs",
     "source": "entries"
   },
@@ -523,7 +547,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse - SiRF Demo GPS Fix",
     "title": "Change_GPScom1to2_marport_comp.pdf",
     "section": "Wheelhouse - SiRF Demo GPS Fix",
-    "url_loc": "../files/Manuals/GPSs/SirfDemo fix/Change_GPScom1to2_marport_comp.pdf",
+    "url_loc": "../files/software/computer_programs/gps/sirfdemo_fix/Change_GPScom1to2_marport_comp.pdf",
     "search_terms": "Wheelhouse - SiRF Demo GPS Fix / Computer Programs",
     "source": "entries"
   },
@@ -531,7 +555,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse - SiRF Demo GPS Fix",
     "title": "Changing boot order.docx",
     "section": "Wheelhouse - SiRF Demo GPS Fix",
-    "url_loc": "../files/Manuals/GPSs/SirfDemo fix/Changing boot order.docx",
+    "url_loc": "../files/software/computer_programs/gps/sirfdemo_fix/Changing_boot_order.docx",
     "search_terms": "Wheelhouse - SiRF Demo GPS Fix / Computer Programs",
     "source": "entries"
   },
@@ -539,7 +563,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse - SiRF Demo GPS Fix",
     "title": "Changing Computer boot order.docx",
     "section": "Wheelhouse - SiRF Demo GPS Fix",
-    "url_loc": "../files/Manuals/GPSs/SirfDemo fix/Changing Computer boot order.docx",
+    "url_loc": "../files/software/computer_programs/gps/sirfdemo_fix/Changing_Computer_boot_order.docx",
     "search_terms": "Wheelhouse - SiRF Demo GPS Fix / Computer Programs",
     "source": "entries"
   },
@@ -547,7 +571,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse - SiRF Demo GPS Fix",
     "title": "Changing_boot_order.pdf",
     "section": "Wheelhouse - SiRF Demo GPS Fix",
-    "url_loc": "../files/Manuals/GPSs/SirfDemo fix/Changing_boot_order.pdf",
+    "url_loc": "../files/software/computer_programs/gps/sirfdemo_fix/Changing_boot_order.pdf",
     "search_terms": "Wheelhouse - SiRF Demo GPS Fix / Computer Programs",
     "source": "entries"
   },
@@ -555,7 +579,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse - SiRF Demo GPS Fix",
     "title": "Changing_COM_port.docx",
     "section": "Wheelhouse - SiRF Demo GPS Fix",
-    "url_loc": "../files/Manuals/GPSs/SirfDemo fix/Changing_COM_port.docx",
+    "url_loc": "../files/software/computer_programs/gps/sirfdemo_fix/Changing_COM_port.docx",
     "search_terms": "Wheelhouse - SiRF Demo GPS Fix / Computer Programs",
     "source": "entries"
   },
@@ -563,7 +587,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse - SiRF Demo GPS Fix",
     "title": "Changing_COM_port.pdf",
     "section": "Wheelhouse - SiRF Demo GPS Fix",
-    "url_loc": "../files/Manuals/GPSs/SirfDemo fix/Changing_COM_port.pdf",
+    "url_loc": "../files/software/computer_programs/gps/sirfdemo_fix/Changing_COM_port.pdf",
     "search_terms": "Wheelhouse - SiRF Demo GPS Fix / Computer Programs",
     "source": "entries"
   },
@@ -571,7 +595,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse - SiRF Demo GPS Fix",
     "title": "Sirf demo fix instr.pdf",
     "section": "Wheelhouse - SiRF Demo GPS Fix",
-    "url_loc": "../files/Manuals/GPSs/SirfDemo fix/Sirf demo fix instr.pdf",
+    "url_loc": "../files/software/computer_programs/gps/sirfdemo_fix/Sirf_demo_fix_instr.pdf",
     "search_terms": "Wheelhouse - SiRF Demo GPS Fix / Computer Programs",
     "source": "entries"
   },
@@ -579,7 +603,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse - SiRF Demo GPS Fix",
     "title": "SiRFDemo Guide",
     "section": "Wheelhouse - SiRF Demo GPS Fix",
-    "url_loc": "../files/Manuals/GPSs/SiRFDemo-User-Guide.pdf",
+    "url_loc": "../files/software/computer_programs/gps/SiRFDemo_User_Guide.pdf",
     "search_terms": "Wheelhouse - SiRF Demo GPS Fix / Computer Programs",
     "source": "entries"
   },
@@ -587,7 +611,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse and Calypso",
     "title": "Calypso_2017.1.aliases",
     "section": "Wheelhouse and Calypso",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Calypso Software/Calypso_2017.1.aliases",
+    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/calypso_software/Calypso_2017.1.aliases",
     "search_terms": "Wheelhouse and Calypso / Computer Programs",
     "source": "entries"
   },
@@ -595,7 +619,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse and Calypso",
     "title": "Calypso_2017.1.exe",
     "section": "Wheelhouse and Calypso",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Calypso Software/Calypso_2017.1.exe",
+    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/calypso_software/Calypso_2017.1.exe",
     "search_terms": "Wheelhouse and Calypso / Computer Programs",
     "source": "entries"
   },
@@ -603,7 +627,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse and Calypso",
     "title": "Calypso_2017.1.ini",
     "section": "Wheelhouse and Calypso",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Calypso Software/Calypso_2017.1.ini",
+    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/calypso_software/Calypso_2017.1.ini",
     "search_terms": "Wheelhouse and Calypso / Computer Programs",
     "source": "entries"
   },
@@ -611,7 +635,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse and Calypso",
     "title": "How to log a haul with Wheelhouse and Calypso",
     "section": "Wheelhouse and Calypso",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Log hauls during survey.pdf",
+    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/Log_hauls_during_survey.pdf",
     "search_terms": "Wheelhouse and Calypso / Computer Programs",
     "source": "entries"
   },
@@ -619,7 +643,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse and Calypso",
     "title": "lvanlys.dll",
     "section": "Wheelhouse and Calypso",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Calypso Software/lvanlys.dll",
+    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/calypso_software/lvanlys.dll",
     "search_terms": "Wheelhouse and Calypso / Computer Programs",
     "source": "entries"
   },
@@ -627,7 +651,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse and Calypso",
     "title": "Wheelhouse and Calypso Manual",
     "section": "Wheelhouse and Calypso",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Wheelhouse and Calypso Manual v2023.1.pdf",
+    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/Wheelhouse_and_Calypso_Manual_v2023.1.pdf",
     "search_terms": "Wheelhouse and Calypso / Computer Programs",
     "source": "entries"
   },
@@ -635,7 +659,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse and Calypso",
     "title": "Wheelhouse and Calypso Training videos",
     "section": "Wheelhouse and Calypso",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/Training Videos",
+    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/training_videos",
     "search_terms": "Wheelhouse and Calypso / Computer Programs",
     "source": "entries"
   },
@@ -643,7 +667,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs",
     "title": "Diagram of Bridge Computer Setup",
     "section": "",
-    "url_loc": "../files/Manuals/Bridge_computers_setup/bridge computer setup.jpg",
+    "url_loc": "../files/admin/bridge_computers_setup/bridge_computer_setup.jpg",
     "search_terms": " / Computer Programs",
     "source": "entries"
   },
@@ -651,7 +675,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Computer Programs",
     "title": "Guide to Running Wheelhouse and Calypso for EBS survey",
     "section": "",
-    "url_loc": "../files/Manuals/Calypso_Wheelhouse/WheelhouseStepByStep&QuickRef.pdf",
+    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/WheelhouseStepByStep&QuickRef.pdf",
     "search_terms": " / Computer Programs",
     "source": "entries"
   },
@@ -659,7 +683,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Deck Sensors → Bottom Contact Sensor",
     "title": "BC Resources",
     "section": "Bottom Contact Sensor",
-    "url_loc": "../files/Manuals/Bottom contact sensor/",
+    "url_loc": "../files/sensors/bottom_contact_sensor/",
     "search_terms": "Bottom Contact Sensor / Deck Sensors",
     "source": "entries"
   },
@@ -667,7 +691,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Deck Sensors → BT/CTD",
     "title": "SBE39 (BT) Resources",
     "section": "BT/CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE39/",
+    "url_loc": "../files/sensors/CTD/sbe39/",
     "search_terms": "BT/CTD / Deck Sensors",
     "source": "entries"
   },
@@ -675,7 +699,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Deck Sensors → ES80",
     "title": "ES80 Resources",
     "section": "ES80",
-    "url_loc": "../files/Collections/ES80/",
+    "url_loc": "../files/sensors/es80/",
     "search_terms": "ES80 / Deck Sensors",
     "source": "entries"
   },
@@ -683,7 +707,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Deck Sensors → Light Meter",
     "title": "Light Meter Resources",
     "section": "Light Meter",
-    "url_loc": "../files/Manuals/Light meters",
+    "url_loc": "../files/sensors/light_meters/",
     "search_terms": "Light Meter / Deck Sensors",
     "source": "entries"
   },
@@ -691,7 +715,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Forms → Station Progression (AI/GOA)",
     "title": "[AKP] Station Progression Worksheet",
     "section": "Station Progression (AI/GOA)",
-    "url_loc": "../files/Station info/AI_GOA/Station Progression/Station Log and Progression 202601 AKP.xlsm",
+    "url_loc": "../files/station_info/progression/Station_Log_and_Progression_202601_AKP.xlsm",
     "search_terms": "Station Progression (AI/GOA) / Forms",
     "source": "entries"
   },
@@ -699,7 +723,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Forms → Station Progression (AI/GOA)",
     "title": "[OEX] Station Progression Worksheet",
     "section": "Station Progression (AI/GOA)",
-    "url_loc": "../files/Station info/AI_GOA/Station Progression/Station Log and Progression 202601 OEX.xlsm",
+    "url_loc": "../files/station_info/progression/Station_Log_and_Progression_202601_OEX.xlsm",
     "search_terms": "Station Progression (AI/GOA) / Forms",
     "source": "entries"
   },
@@ -707,7 +731,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Forms → Station Progression (AI/GOA)",
     "title": "Station Progression Worksheet Guide",
     "section": "Station Progression (AI/GOA)",
-    "url_loc": "../files/Station info/AI_GOA/Station Progression/New Station Log and Progression Sheet Guide.pdf",
+    "url_loc": "../files/station_info/progression/New_Station_Log_and_Progression_Sheet_Guide.pdf",
     "search_terms": "Station Progression (AI/GOA) / Forms",
     "source": "entries"
   },
@@ -715,7 +739,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Forms",
     "title": "Fuel Purchase Form",
     "section": "",
-    "url_loc": "../files/Purchase/Fuel Purchase Form.pdf",
+    "url_loc": "../files/admin/purchasing/Fuel_Purchase_Form.pdf",
     "search_terms": " / Forms",
     "source": "entries"
   },
@@ -723,7 +747,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Forms",
     "title": "Haul Forms",
     "section": "",
-    "url_loc": "../files/Collections/forms/haulforms",
+    "url_loc": "../files/admin/forms/",
     "search_terms": " / Forms",
     "source": "entries"
   },
@@ -731,7 +755,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Forms",
     "title": "Inter-leg Communication Log",
     "section": "",
-    "url_loc": "../files/Manuals/miscellaneous/Inter-Leg Communication Log.pdf",
+    "url_loc": "../files/admin/forms/InterLeg_Communication_Log.pdf",
     "search_terms": " / Forms",
     "source": "entries"
   },
@@ -739,7 +763,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Forms",
     "title": "Other Purchase Forms",
     "section": "",
-    "url_loc": "../files/purchase/",
+    "url_loc": "../files/admin/purchasing/",
     "search_terms": " / Forms",
     "source": "entries"
   },
@@ -747,7 +771,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Forms",
     "title": "Standard Trawling Procedures Form",
     "section": "",
-    "url_loc": "../files/Net and wire maintenance/Standard Trawling Procedures Form.pdf",
+    "url_loc": "../files/admin/forms/Standard_Trawling_Procedures_Form.pdf",
     "search_terms": " / Forms",
     "source": "entries"
   },
@@ -755,7 +779,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources → Net Repair",
     "title": "Net Repair",
     "section": "Net Repair",
-    "url_loc": "../files/Net and wire maintenance/net_repair/",
+    "url_loc": "../files/vessel_and_gear/nets/repair/",
     "search_terms": "Net Repair / Net Resources",
     "source": "entries"
   },
@@ -763,23 +787,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources → Net Repair",
     "title": "Net Repair and Maintenance Resources",
     "section": "Net Repair",
-    "url_loc": "../files/Net and wire maintenance/",
-    "search_terms": "Net Repair / Net Resources",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Net Resources → Net Repair",
-    "title": "Net Repair Tracking Forms",
-    "section": "Net Repair",
-    "url_loc": "../files/Net and wire maintenance/Net repair tracking forms/",
-    "search_terms": "Net Repair / Net Resources",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Net Resources → Net Repair",
-    "title": "NM Directory",
-    "section": "Net Repair",
-    "url_loc": "../files/Manuals/NM/",
+    "url_loc": "../files/vessel_and_gear/nets/",
     "search_terms": "Net Repair / Net Resources",
     "source": "entries"
   },
@@ -787,7 +795,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources → Scope Tables",
     "title": "EBS Scope Table",
     "section": "Scope Tables",
-    "url_loc": "../files/Manuals/Survey operation manuals/EBS Scope Table.pdf",
+    "url_loc": "../files/admin/scope_tables/EBS_Scope_Table.pdf",
     "search_terms": "Scope Tables / Net Resources",
     "source": "entries"
   },
@@ -795,7 +803,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources → Scope Tables",
     "title": "GOA / AI Scope Table",
     "section": "Scope Tables",
-    "url_loc": "../files/Manuals/Survey operation manuals/AI GOA Scope table.pdf",
+    "url_loc": "../files/admin/scope_tables/AI_GOA_Scope_table.pdf",
     "search_terms": "Scope Tables / Net Resources",
     "source": "entries"
   },
@@ -803,7 +811,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources → Scope Tables",
     "title": "NBS Scope Table",
     "section": "Scope Tables",
-    "url_loc": "../files/Manuals/Survey operation manuals/NBS Scope Table.pdf",
+    "url_loc": "../files/admin/scope_tables/NBS_Scope_Table.pdf",
     "search_terms": "Scope Tables / Net Resources",
     "source": "entries"
   },
@@ -811,7 +819,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources → Scope Tables",
     "title": "Scope vs. RAPP Counts",
     "section": "Scope Tables",
-    "url_loc": "../files/Manuals/Survey operation manuals/Scope_vs_RAPP_counts.pdf",
+    "url_loc": "../files/admin/scope_tables/Scope_vs_RAPP_counts.pdf",
     "search_terms": "Scope Tables / Net Resources",
     "source": "entries"
   },
@@ -819,7 +827,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources → Wiremarking",
     "title": "[OEX] Dockside Wiremarking Photos",
     "section": "Wiremarking",
-    "url_loc": "../files/net and wire maintenance/wiremarking/OEX 2022 photos/",
+    "url_loc": "../files/vessel_and_gear/wiremarking/oex_2022_photos/",
     "search_terms": "Wiremarking / Net Resources",
     "source": "entries"
   },
@@ -827,7 +835,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources → Wiremarking",
     "title": "Dockside Wiremarking Diagram (option 1)",
     "section": "Wiremarking",
-    "url_loc": "../files/net and wire maintenance/wiremarking/Wire Marking Dock Side.png",
+    "url_loc": "../files/vessel_and_gear/wiremarking/Wire_Marking_Dock_Side.png",
     "search_terms": "Wiremarking / Net Resources",
     "source": "entries"
   },
@@ -835,7 +843,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources → Wiremarking",
     "title": "Dockside Wiremarking Diagram (option 2)",
     "section": "Wiremarking",
-    "url_loc": "../files/net and wire maintenance/wiremarking/Wire Marking Dock Side option 2.png",
+    "url_loc": "../files/vessel_and_gear/wiremarking/Wire_Marking_Dock_Side_option_2.png",
     "search_terms": "Wiremarking / Net Resources",
     "source": "entries"
   },
@@ -843,7 +851,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources → Wiremarking",
     "title": "Dockside Wiremarking Protocols (EBS)",
     "section": "Wiremarking",
-    "url_loc": "../files/net and wire maintenance/wiremarking/wire_marking_dock_2018.pdf",
+    "url_loc": "../files/vessel_and_gear/wiremarking/Wire_marking_dock_2018.pdf",
     "search_terms": "Wiremarking / Net Resources",
     "source": "entries"
   },
@@ -851,7 +859,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources → Wiremarking",
     "title": "Dockside Wiremarking Walk Through (GOA / AI)",
     "section": "Wiremarking",
-    "url_loc": "../files/net and wire maintenance/wiremarking/Walk through dockside wiremarking.pdf",
+    "url_loc": "../files/vessel_and_gear/wiremarking/Walk_through_dockside_wiremarking.pdf",
     "search_terms": "Wiremarking / Net Resources",
     "source": "entries"
   },
@@ -859,7 +867,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources → Wiremarking",
     "title": "Trawl Warp Measuring Procedure Form",
     "section": "Wiremarking",
-    "url_loc": "../files/Net and wire maintenance/wiremarking/Trawl Warp Measuring Procedure form.pdf",
+    "url_loc": "../files/vessel_and_gear/wiremarking/Trawl_Warp_Measuring_Procedure_form.pdf",
     "search_terms": "Wiremarking / Net Resources",
     "source": "entries"
   },
@@ -867,7 +875,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources → Wiremarking",
     "title": "Wiremarking and Net-Related Procedures (GOA / AI)",
     "section": "Wiremarking",
-    "url_loc": "../files/Net and wire maintenance/wiremarking/GOA AI Wire Marking and other procedures.pdf",
+    "url_loc": "../files/vessel_and_gear/wiremarking/GOA_AI_Wire_Marking_and_other_procedures.pdf",
     "search_terms": "Wiremarking / Net Resources",
     "source": "entries"
   },
@@ -875,7 +883,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources",
     "title": "Net Configuration Diagram (GOA / AI)",
     "section": "",
-    "url_loc": "../files/Net and wire maintenance/Net_Configuration_Diagram.pdf",
+    "url_loc": "../files/vessel_and_gear/nets/Net_Configuration_Diagram.pdf",
     "search_terms": " / Net Resources",
     "source": "entries"
   },
@@ -883,7 +891,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources",
     "title": "Sink Times",
     "section": "",
-    "url_loc": "../files/Net and wire maintenance/sink times.pdf",
+    "url_loc": "../files/vessel_and_gear/nets/sink_times.pdf",
     "search_terms": " / Net Resources",
     "source": "entries"
   },
@@ -891,7 +899,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → References",
     "title": "[OEX] Scanmar Hydrophone Photos",
     "section": "",
-    "url_loc": "../files/Manuals/Scanmar/OEx/",
+    "url_loc": "../files/sensors/scanmar/oex/",
     "search_terms": " / References",
     "source": "entries"
   },
@@ -899,7 +907,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → References",
     "title": "AK Seacard Vendors (GOA)",
     "section": "",
-    "url_loc": "../files/Purchase/Fuel for GOA boats.pdf",
+    "url_loc": "../files/admin/purchasing/Fuel_for_GOA_boats.pdf",
     "search_terms": " / References",
     "source": "entries"
   },
@@ -907,7 +915,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → References",
     "title": "Artifact Handling",
     "section": "",
-    "url_loc": "../files/Manuals/Survey operation manuals/Artifact guidance.pdf",
+    "url_loc": "../files/admin/Artifact_guidance.pdf",
     "search_terms": " / References",
     "source": "entries"
   },
@@ -915,7 +923,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → References",
     "title": "Daily Temperature Entry Instructions",
     "section": "",
-    "url_loc": "../files/Manuals/Daily Temperature Entry.pdf",
+    "url_loc": "../files/admin/survey_manuals/daily_temperature_entry.pdf",
     "search_terms": " / References",
     "source": "entries"
   },
@@ -923,7 +931,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → References",
     "title": "FPC Backup Data Sources Table",
     "section": "",
-    "url_loc": "../files/Manuals/data backup sources.pdf",
+    "url_loc": "../files/admin/data_backup_sources.pdf",
     "search_terms": " / References",
     "source": "entries"
   },
@@ -931,7 +939,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → References",
     "title": "FPC Talking Points",
     "section": "",
-    "url_loc": "../files/Manuals/Checklist for FPC talk.pdf",
+    "url_loc": "../files/admin/Checklist_for_FPC_talk.pdf",
     "search_terms": " / References",
     "source": "entries"
   },
@@ -939,31 +947,15 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → References",
     "title": "GIS Training",
     "section": "",
-    "url_loc": "../files/Station info/GIS_Training_2019.pdf",
+    "url_loc": "../files/training/2020/GIS_Training_2019.pdf",
     "search_terms": " / References",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Vessel Inventory",
-    "title": "FPC File Box Items",
-    "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/FY25 EBS GOA Serialized Gear Requests.pdf",
-    "search_terms": " / Vessel Inventory",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Vessel Inventory",
-    "title": "FPC File Box Items (EBS)",
-    "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/EBS FPC File Box Gear.pdf",
-    "search_terms": " / Vessel Inventory",
     "source": "entries"
   },
   {
     "site_loc": "Field Operations → General → Administrative → Recreation",
     "title": "Sport Fishing Regulations",
     "section": "Recreation",
-    "url_loc": "../files/Port Info/Sport fishing regs",
+    "url_loc": "../files/admin/sport_fishing_regs/",
     "search_terms": "Recreation / Administrative",
     "source": "entries"
   },
@@ -971,7 +963,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Administrative → Social Media",
     "title": "Photo Consent Release Form",
     "section": "Social Media",
-    "url_loc": "../files/Social media policies/NMFS_Individual Release_Fillable.pdf",
+    "url_loc": "../files/admin/social_media/NMFS_Individual_Release_Fillable.pdf",
     "search_terms": "Social Media / Administrative",
     "source": "entries"
   },
@@ -979,7 +971,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Administrative → Social Media",
     "title": "Photo Sharing and Social Media Guidance",
     "section": "Social Media",
-    "url_loc": "../files/Social media policies/GAP Surveys Photo Sharing and Social Media.pdf",
+    "url_loc": "../files/admin/social_media/GAP_Surveys_Photo_Sharing_and_Social_Media.pdf",
     "search_terms": "Social Media / Administrative",
     "source": "entries"
   },
@@ -987,7 +979,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Manuals & References → Stations and Maps",
     "title": "EBS Stations & Maps",
     "section": "Stations and Maps",
-    "url_loc": "../files/Station info/EBS shelf",
+    "url_loc": "../files/station_info/",
     "search_terms": "Stations and Maps / Manuals & References",
     "source": "entries"
   },
@@ -995,15 +987,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Manuals & References → Stations and Maps",
     "title": "GOA / AI Station Logs",
     "section": "Stations and Maps",
-    "url_loc": "../files/Station info/AI_GOA/Station Logs/",
-    "search_terms": "Stations and Maps / Manuals & References",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → General → Manuals & References → Stations and Maps",
-    "title": "GOA / AI Stations & Maps",
-    "section": "Stations and Maps",
-    "url_loc": "../files/Station info/AI_GOA",
+    "url_loc": "../files/station_info/logs/",
     "search_terms": "Stations and Maps / Manuals & References",
     "source": "entries"
   },
@@ -1012,7 +996,7 @@ var searchData = [
     "title": "Contracts",
     "section": "",
     "subtitle": "Vessel contracts, Observer contract, etc.",
-    "url_loc": "../files/Contracts",
+    "url_loc": "../files/admin/contracts/",
     "search_terms": " / Administrative",
     "source": "entries"
   },
@@ -1020,7 +1004,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Administrative",
     "title": "OSI Dockside Services",
     "section": "",
-    "url_loc": "../files/Contracts/AFSC OSI Dockside Services Approved Vessels FY26.pdf",
+    "url_loc": "../files/admin/contracts/AFSC_OSI_Dockside_Services_Approved_Vessels_FY26.pdf",
     "search_terms": " / Administrative",
     "source": "entries"
   },
@@ -1029,16 +1013,7 @@ var searchData = [
     "title": "Permits",
     "section": "",
     "subtitle": "Letters of Examination, ADF&G, IPHC, Protected Species, SRPs",
-    "url_loc": "../files/Permits",
-    "search_terms": " / Administrative",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → General → Administrative",
-    "title": "Purchase & Rental Car Info",
-    "section": "",
-    "subtitle": "Tax exempt forms, etc.",
-    "url_loc": "../files/Purchase/",
+    "url_loc": "../files/admin/permits/",
     "search_terms": " / Administrative",
     "source": "entries"
   },
@@ -1046,7 +1021,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Administrative",
     "title": "Shipping",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/",
+    "url_loc": "../files/safety_and_health/hazmat/",
     "search_terms": " / Administrative",
     "source": "entries"
   },
@@ -1054,7 +1029,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Manuals & References → Survey Ops Manuals",
     "title": "GOA / AI Survey Ops Manual",
     "section": "Survey Ops Manuals",
-    "url_loc": "../files/Manuals/Survey operation manuals/AI Scientific Operations.pdf",
+    "url_loc": "../files/admin/survey_manuals/AI_Scientific_Operations.pdf",
     "search_terms": "Survey Ops Manuals / Manuals & References",
     "source": "entries"
   },
@@ -1062,7 +1037,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Manuals & References → Survey Ops Manuals",
     "title": "BS Shelf Sampling Protocols",
     "section": "Survey Ops Manuals",
-    "url_loc": "../files/Manuals/Survey operation manuals/2024_shelf_slope_sampling_protocols.pdf",
+    "url_loc": "../files/admin/survey_manuals/2024_shelf_slope_sampling_protocols.pdf",
     "search_terms": "Survey Ops Manuals / Manuals & References",
     "source": "entries"
   },
@@ -1070,7 +1045,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Manuals & References → Survey Ops Manuals",
     "title": "BS Survey Ops Manual",
     "section": "Survey Ops Manuals",
-    "url_loc": "../files/Manuals/Survey operation manuals/Bering Sea Survey Ops Manual.pdf",
+    "url_loc": "../files/admin/survey_manuals/Bering_Sea_Survey_Ops_Manual.pdf",
     "search_terms": "Survey Ops Manuals / Manuals & References",
     "source": "entries"
   },
@@ -1079,7 +1054,7 @@ var searchData = [
     "title": "BS Survey Contingency Plan",
     "section": "Survey Ops Manuals",
     "subtitle": "e.g. station dropping prorities",
-    "url_loc": "../files/Manuals/Survey operation manuals/EBS_NBS Survey Contingency Plan.pdf",
+    "url_loc": "../files/admin/survey_manuals/EBS_NBS_Survey_Contingency_Plan.pdf",
     "search_terms": "Survey Ops Manuals / Manuals & References",
     "source": "entries"
   },
@@ -1087,7 +1062,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Manuals & References",
     "title": "2026 Gear Testing Project",
     "section": "",
-    "url_loc": "../files/Manuals/Survey operation manuals/2026_Gear_Test_Project_Plan.pdf",
+    "url_loc": "../files/admin/survey_manuals/2026_Gear_Test_Project_Plan.pdf",
     "search_terms": " / Manuals & References",
     "source": "entries"
   },
@@ -1095,7 +1070,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Manuals & References",
     "title": "AI Cruise Announcement",
     "section": "",
-    "url_loc": "../files/Manuals/Survey operation manuals/Cruise Announcement AI.docx",
+    "url_loc": "../files/admin/Cruise Announcement AI.docx",
     "search_terms": " / Manuals & References",
     "source": "entries"
   },
@@ -1103,7 +1078,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Manuals & References",
     "title": "NOAA Protocols for Bottom Trawl Surveys",
     "section": "",
-    "url_loc": "../files/Manuals/Survey operation manuals/NOAA trawl protocols.pdf",
+    "url_loc": "../files/admin/survey_manuals/NOAA_trawl_protocols.pdf",
     "search_terms": " / Manuals & References",
     "source": "entries"
   },
@@ -1111,7 +1086,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Manuals & References",
     "title": "Survey Primers",
     "section": "",
-    "url_loc": "../files/Manuals/Survey operation manuals/primers/",
+    "url_loc": "../files/admin/primers",
     "search_terms": " / Manuals & References",
     "source": "entries"
   },
@@ -1119,7 +1094,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Port Information",
     "title": "Amchitka Nuclear Video",
     "section": "",
-    "url_loc": "../files/Port info/Cannikin-Nuclear-Series-Video.mp4",
+    "url_loc": "../files/admin/port_info/Cannikin_Nuclear_Series_Video.mp4",
     "search_terms": " / Port Information",
     "source": "entries"
   },
@@ -1127,7 +1102,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Port Information",
     "title": "EBS Port Guide",
     "section": "",
-    "url_loc": "../files/Port info/EBS Port Guide.pdf",
+    "url_loc": "../files/admin/port_info/EBS_Port_Guide.pdf",
     "search_terms": " / Port Information",
     "source": "entries"
   },
@@ -1135,7 +1110,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Port Information",
     "title": "GOA Port Guide",
     "section": "",
-    "url_loc": "../files/Port info/2025 GOA Port Guide.pdf",
+    "url_loc": "../files/admin/port_info/2025_GOA_Port_Guide.pdf",
     "search_terms": " / Port Information",
     "source": "entries"
   },
@@ -1143,7 +1118,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Port Information",
     "title": "Other Port Resources",
     "section": "",
-    "url_loc": "../files/Port info/",
+    "url_loc": "../files/admin/port_info",
     "search_terms": " / Port Information",
     "source": "entries"
   },
@@ -1175,7 +1150,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Training Resources",
     "title": "Current Training Resources",
     "section": "",
-    "url_loc": "../files/Trainings/2026 Training/",
+    "url_loc": "../files/training/2026",
     "search_terms": " / Training Resources",
     "source": "entries"
   },
@@ -1183,7 +1158,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Training Resources",
     "title": "Previous Training Resources",
     "section": "",
-    "url_loc": "../files/Trainings/Prior Years Training/",
+    "url_loc": "../files/training/",
     "search_terms": " / Training Resources",
     "source": "entries"
   },
@@ -1191,7 +1166,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Vessel Inventory → RSST Inventory",
     "title": "EBS Inventory Lists",
     "section": "RSST Inventory",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2026_GearList_Packing_EBS.pdf",
+    "url_loc": "../files/vessel_and_gear/inventory/rsst_inventory/2026_GearList_Packing_EBS.pdf",
     "search_terms": "RSST Inventory / Vessel Inventory",
     "source": "entries"
   },
@@ -1199,7 +1174,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Vessel Inventory → RSST Inventory",
     "title": "GOA / AI Inventory Lists",
     "section": "RSST Inventory",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2026_GearList_Packing_AI.pdf",
+    "url_loc": "../files/vessel_and_gear/inventory/rsst_inventory/2026_GearList_Packing_AI.pdf",
     "search_terms": "RSST Inventory / Vessel Inventory",
     "source": "entries"
   },
@@ -1207,7 +1182,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Vessel Inventory → RSST Inventory",
     "title": "Serialized Gear Tracking",
     "section": "RSST Inventory",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2026_Serialized_GearList.pdf",
+    "url_loc": "../files/vessel_and_gear/inventory/rsst_inventory/2026_Serialized_GearList.pdf",
     "search_terms": "RSST Inventory / Vessel Inventory",
     "source": "entries"
   },
@@ -1215,7 +1190,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Vessel Inventory",
     "title": "AKK Inventory",
     "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_EBS_AKK.pdf",
+    "url_loc": "../files/vessel_and_gear/inventory/rsst_inventory/2025_GearList_Packing_EBS_AKK.pdf",
     "search_terms": " / Vessel Inventory",
     "source": "entries"
   },
@@ -1223,7 +1198,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Vessel Inventory",
     "title": "AKP Inventory",
     "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_GOA-AKP.pdf",
+    "url_loc": "../files/vessel_and_gear/inventory/rsst_inventory/2025_GearList_Packing_GOA-AKP.pdf",
     "search_terms": " / Vessel Inventory",
     "source": "entries"
   },
@@ -1231,7 +1206,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Vessel Inventory",
     "title": "First Aid Kits",
     "section": "",
-    "url_loc": "../files/Survey inventory lists/First Aid kits/",
+    "url_loc": "../files/vessel_and_gear/inventory/first_aid_kits/",
     "search_terms": " / Vessel Inventory",
     "source": "entries"
   },
@@ -1239,7 +1214,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Vessel Inventory",
     "title": "GOA / AI Inventory Lists by vessel",
     "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_At-Sea_Inventory_GOA.xlsx",
+    "url_loc": "../files/vessel_and_gear/inventory/rsst_inventory/2025_GearList_At-Sea_Inventory_GOA.xlsx",
     "search_terms": " / Vessel Inventory",
     "source": "entries"
   },
@@ -1247,7 +1222,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Vessel Inventory",
     "title": "NWX Inventory",
     "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_EBS_NWX.pdf",
+    "url_loc": "../files/vessel_and_gear/inventory/rsst_inventory/2025_GearList_Packing_EBS_NWX.pdf",
     "search_terms": " / Vessel Inventory",
     "source": "entries"
   },
@@ -1255,7 +1230,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Vessel Inventory",
     "title": "OEX Inventory",
     "section": "",
-    "url_loc": "../files/Survey inventory lists/RSST Inventory/2025_GearList_Packing_GOA-OEX.pdf",
+    "url_loc": "../files/vessel_and_gear/inventory/rsst_inventory/2025_GearList_Packing_GOA-OEX.pdf",
     "search_terms": " / Vessel Inventory",
     "source": "entries"
   },
@@ -1263,7 +1238,7 @@ var searchData = [
     "site_loc": "Field Operations → General → Vessel Inventory",
     "title": "Other Inventory Lists",
     "section": "",
-    "url_loc": "../files/Survey inventory lists",
+    "url_loc": "../files/vessel_and_gear/inventory/",
     "search_terms": " / Vessel Inventory",
     "source": "entries"
   },
@@ -1271,7 +1246,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Biological → Food Habits (Stomachs)",
     "title": "GOA / AI Stomach Collections",
     "section": "Food Habits (Stomachs)",
-    "url_loc": "../files/Collections/Stomachs/2026 AI Stomach Collection.pdf",
+    "url_loc": "../files/collections/stomachs/2026_AI_Stomach_Collection.pdf",
     "search_terms": "Food Habits (Stomachs) / Biological",
     "source": "entries"
   },
@@ -1279,7 +1254,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Biological → Food Habits (Stomachs)",
     "title": "GOA / AI Stomach Scans",
     "section": "Food Habits (Stomachs)",
-    "url_loc": "../files/Collections/Stomachs/2026 AI Stomach Scan.pdf",
+    "url_loc": "../files/collections/stomachs/2026_AI_Stomach_Scan.pdf",
     "search_terms": "Food Habits (Stomachs) / Biological",
     "source": "entries"
   },
@@ -1287,7 +1262,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Biological → Food Habits (Stomachs)",
     "title": "BS Stomach Collections",
     "section": "Food Habits (Stomachs)",
-    "url_loc": "../files/Collections/Stomachs/2026 EBS Stomach Collection.pdf",
+    "url_loc": "../files/collections/stomachs/2026_EBS_Stomach_Collection.pdf",
     "search_terms": "Food Habits (Stomachs) / Biological",
     "source": "entries"
   },
@@ -1295,7 +1270,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Biological → Food Habits (Stomachs)",
     "title": "Stomach App Resources",
     "section": "Food Habits (Stomachs)",
-    "url_loc": "../files/Collections/Stomachs/Stomach_App_Resources/",
+    "url_loc": "../files/collections/stomachs/stomach_app_resources/",
     "search_terms": "Food Habits (Stomachs) / Biological",
     "source": "entries"
   },
@@ -1303,7 +1278,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Biological → Food Habits (Stomachs)",
     "title": "Stomach Collection Presentation",
     "section": "Food Habits (Stomachs)",
-    "url_loc": "../files/Collections/Stomachs/Stomach Collection Methods.pdf",
+    "url_loc": "../files/collections/stomachs/Stomach_Collection_Methods.pdf",
     "search_terms": "Food Habits (Stomachs) / Biological",
     "source": "entries"
   },
@@ -1311,7 +1286,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Biological → Maturity",
     "title": "Halibut Maturity Key",
     "section": "Maturity",
-    "url_loc": "../files/Collections/Maturity/Halibut Maturity Key.pdf",
+    "url_loc": "../files/collections/maturity/Halibut_Maturity_Key.pdf",
     "search_terms": "Maturity / Biological",
     "source": "entries"
   },
@@ -1319,7 +1294,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Biological → Maturity",
     "title": "Visual Maturity Keys (AI)",
     "section": "Maturity",
-    "url_loc": "../files/Collections/Maturity/Visual Maturity Key AI.pdf",
+    "url_loc": "../files/collections/maturity/Visual_Maturity_Key_AI.pdf",
     "search_terms": "Maturity / Biological",
     "source": "entries"
   },
@@ -1327,7 +1302,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Biological → Maturity",
     "title": "Visual Maturity Keys (EBS)",
     "section": "Maturity",
-    "url_loc": "../files/Collections/Maturity/Visual Maturity Key EBS.pdf",
+    "url_loc": "../files/collections/maturity/Visual_Maturity_Key_EBS.pdf",
     "search_terms": "Maturity / Biological",
     "source": "entries"
   },
@@ -1335,7 +1310,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Biological → Otoliths",
     "title": "Age Structure Collections Deck Poster (AI)",
     "section": "Otoliths",
-    "url_loc": "../files/Collections/Special Projects/AI_GOA/2026/2026 AI Otoliths.pdf",
+    "url_loc": "../files/collections/special_projects/ai_goa/2026/2026_AI_Otoliths.pdf",
     "search_terms": "Otoliths / Biological",
     "source": "entries"
   },
@@ -1343,7 +1318,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Biological → Otoliths",
     "title": "Age Structure Collections Deck Poster (EBS)",
     "section": "Otoliths",
-    "url_loc": "../files/collections/special projects/BS/2026/2026 EBS Otoliths.pdf",
+    "url_loc": "../files/collections/special_projects/bs/2026/2026_EBS_Otoliths.pdf",
     "search_terms": "Otoliths / Biological",
     "source": "entries"
   },
@@ -1351,7 +1326,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Biological → Otoliths",
     "title": "Age Structure Collections Deck Poster (NBS)",
     "section": "Otoliths",
-    "url_loc": "../files/collections/special projects/BS/2026/NBS.pdf",
+    "url_loc": "../files/collections/special_projects/bs/2026/NBS.pdf",
     "search_terms": "Otoliths / Biological",
     "source": "entries"
   },
@@ -1359,7 +1334,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Biological → Otoliths",
     "title": "Otolith Label Maker",
     "section": "Otoliths",
-    "url_loc": "../files/Collections/Otoliths/Otolith Label Maker.xls",
+    "url_loc": "../files/admin/forms/Otolith_Label_Maker.xls",
     "search_terms": "Otoliths / Biological",
     "source": "entries"
   },
@@ -1367,7 +1342,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Biological → Otoliths",
     "title": "Shipping Pollock Otoliths",
     "section": "Otoliths",
-    "url_loc": "../files/Shipping-Hazmat/Shipping of Pollock otoliths in Glycerin.pdf",
+    "url_loc": "../files/safety_and_health/hazmat/Shipping_of_Pollock_otoliths_in_Glycerin.pdf",
     "search_terms": "Otoliths / Biological",
     "source": "entries"
   },
@@ -1375,7 +1350,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → Bering",
     "title": "[AKK] Special Projects Deck Poster",
     "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/Deck Poster AKK.pdf",
+    "url_loc": "../files/collections/special_projects/bs/2026/Deck_Poster_AKK.pdf",
     "search_terms": "Bering / Scientific Projects",
     "source": "entries"
   },
@@ -1383,7 +1358,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → Bering",
     "title": "[AKK] Special Projects Full Packet",
     "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/2026_AKK_summary.pdf",
+    "url_loc": "../files/collections/special_projects/bs/2026/2026_EBS_AKK_summary.pdf",
     "search_terms": "Bering / Scientific Projects",
     "source": "entries"
   },
@@ -1391,7 +1366,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → Bering",
     "title": "[AKK] Special Projects Summary Table",
     "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/2026_EBS_AKK_Table_detailed.pdf",
+    "url_loc": "../files/collections/special_projects/bs/2026/2026_EBS_AKK_Table_detailed.pdf",
     "search_terms": "Bering / Scientific Projects",
     "source": "entries"
   },
@@ -1399,7 +1374,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → Bering",
     "title": "[NWX] Special Projects Deck Poster",
     "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/Deck Poster NWE.pdf",
+    "url_loc": "../files/collections/special_projects/bs/2026/Deck_Poster_NWE.pdf",
     "search_terms": "Bering / Scientific Projects",
     "source": "entries"
   },
@@ -1407,7 +1382,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → Bering",
     "title": "[NWX] Special Projects Full Packet",
     "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/2026_NWX_summary.pdf",
+    "url_loc": "../files/collections/special_projects/bs/2026/2026_EBS_NWX_summary.pdf",
     "search_terms": "Bering / Scientific Projects",
     "source": "entries"
   },
@@ -1415,7 +1390,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → Bering",
     "title": "[NWX] Special Projects Summary Table",
     "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/2026_EBS_NWX_Table_detailed.pdf",
+    "url_loc": "../files/collections/special_projects/bs/2026/2026_EBS_NWX_Table_detailed.pdf",
     "search_terms": "Bering / Scientific Projects",
     "source": "entries"
   },
@@ -1423,7 +1398,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → Bering",
     "title": "CTD pH/DO sensor calibration protocol",
     "section": "Bering",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD pH calibration protocol.pdf",
+    "url_loc": "../files/sensors/CTD/sbe19plus/CTD_pH_calibration_protocol.pdf",
     "search_terms": "Bering / Scientific Projects",
     "source": "entries"
   },
@@ -1431,7 +1406,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → Bering",
     "title": "IPHC Sampling Manual",
     "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/IPHC Sampling Manual.pdf",
+    "url_loc": "../files/collections/special_projects/bs/2026/IPHC_Sampling_Manual.pdf",
     "search_terms": "Bering / Scientific Projects",
     "source": "entries"
   },
@@ -1439,7 +1414,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → Bering",
     "title": "SAP Special Project Matrix Deck Poster",
     "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/SAP EBS Special Projects Matrix deck poster.pdf",
+    "url_loc": "../files/collections/special_projects/bs/2026/SAP EBS Special Projects Matrix deck poster.pdf",
     "search_terms": "Bering / Scientific Projects",
     "source": "entries"
   },
@@ -1447,7 +1422,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → Bering",
     "title": "Special Projects Folder",
     "section": "Bering",
-    "url_loc": "../files/collections/special projects/BS/2026/",
+    "url_loc": "../files/collections/special_projects/bs/2026/",
     "search_terms": "Bering / Scientific Projects",
     "source": "entries"
   },
@@ -1455,7 +1430,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → GOA/AI",
     "title": "[AKP] Special Project List",
     "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project List AKP.pdf",
+    "url_loc": "../files/collections/special_projects/ai_goa/2026/Project_List_AKP.pdf",
     "search_terms": "GOA/AI / Scientific Projects",
     "source": "entries"
   },
@@ -1463,7 +1438,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → GOA/AI",
     "title": "[AKP] Special Projects Deck Poster",
     "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Deck Poster AKP.pdf",
+    "url_loc": "../files/collections/special_projects/ai_goa/2026/Deck_Poster_AKP.pdf",
     "search_terms": "GOA/AI / Scientific Projects",
     "source": "entries"
   },
@@ -1471,7 +1446,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → GOA/AI",
     "title": "[AKP] Special Projects Full Packet",
     "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/AKP Project Packet.pdf",
+    "url_loc": "../files/collections/special_projects/ai_goa/2026/AKP_Project_Packet.pdf",
     "search_terms": "GOA/AI / Scientific Projects",
     "source": "entries"
   },
@@ -1479,7 +1454,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → GOA/AI",
     "title": "[AKP] Special Projects Summary Table",
     "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project Summaries AKP.pdf",
+    "url_loc": "../files/collections/special_projects/ai_goa/2026/Project_Summaries_AKP.pdf",
     "search_terms": "GOA/AI / Scientific Projects",
     "source": "entries"
   },
@@ -1487,7 +1462,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → GOA/AI",
     "title": "[AKP] Tally Sheet",
     "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Tally AK Provider.pdf",
+    "url_loc": "../files/collections/special_projects/ai_goa/2026/Tally_AK_Provider.pdf",
     "search_terms": "GOA/AI / Scientific Projects",
     "source": "entries"
   },
@@ -1495,7 +1470,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → GOA/AI",
     "title": "[OEX] Special Project List",
     "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project List OEX.pdf",
+    "url_loc": "../files/collections/special_projects/ai_goa/2026/Project_List_OEX.pdf",
     "search_terms": "GOA/AI / Scientific Projects",
     "source": "entries"
   },
@@ -1503,7 +1478,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → GOA/AI",
     "title": "[OEX] Special Projects Deck Poster",
     "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Deck Poster OEX.pdf",
+    "url_loc": "../files/collections/special_projects/ai_goa/2026/Deck_Poster_OEX.pdf",
     "search_terms": "GOA/AI / Scientific Projects",
     "source": "entries"
   },
@@ -1511,7 +1486,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → GOA/AI",
     "title": "[OEX] Special Projects Full Packet",
     "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/OEX Project Packet.pdf",
+    "url_loc": "../files/collections/special_projects/ai_goa/2026/OEX_Project_Packet.pdf",
     "search_terms": "GOA/AI / Scientific Projects",
     "source": "entries"
   },
@@ -1519,7 +1494,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → GOA/AI",
     "title": "[OEX] Special Projects Summary Table",
     "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Project Summaries OEX.pdf",
+    "url_loc": "../files/collections/special_projects/ai_goa/2026/Project_Summaries_OEX.pdf",
     "search_terms": "GOA/AI / Scientific Projects",
     "source": "entries"
   },
@@ -1527,7 +1502,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → GOA/AI",
     "title": "[OEX] Tally Sheet",
     "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/Tally OEX.pdf",
+    "url_loc": "../files/collections/special_projects/ai_goa/2026/Tally_OEX.pdf",
     "search_terms": "GOA/AI / Scientific Projects",
     "source": "entries"
   },
@@ -1535,7 +1510,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects → GOA/AI",
     "title": "Special Projects Folder",
     "section": "GOA/AI",
-    "url_loc": "../files/collections/special projects/AI_GOA/2026/",
+    "url_loc": "../files/collections/special_projects/ai_goa/2026/",
     "search_terms": "GOA/AI / Scientific Projects",
     "source": "entries"
   },
@@ -1543,7 +1518,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects",
     "title": "Tribuzio Sleeper Shark Sampling Data Sheet",
     "section": "",
-    "url_loc": "../files/Collections/DEAD Sleeper Shark sampling form with diagram.pdf",
+    "url_loc": "../files/collections/special_projects/Sleeper_Shark_sampling_form_with_diagram.pdf",
     "search_terms": " / Scientific Projects",
     "source": "entries"
   },
@@ -1551,23 +1526,15 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects",
     "title": "Tribuzio Sleeper Shark Sampling Procedure",
     "section": "",
-    "url_loc": "../files/collections/special projects/BS/2026/Tribuzio protocol.pdf",
+    "url_loc": "../files/collections/special_projects/bs/2026/Tribuzio_protocol.pdf",
     "search_terms": " / Scientific Projects",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → CTD",
-    "title": "All Resources",
-    "section": "CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus",
-    "search_terms": "CTD / Sensor/Environmental",
     "source": "entries"
   },
   {
     "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → CTD",
     "title": "CTD Settings and Troubleshooting",
     "section": "CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD Settings and Troubleshooting.pdf",
+    "url_loc": "../files/sensors/CTD/sbe19plus/CTD_Settings_and_Troubleshooting.pdf",
     "search_terms": "CTD / Sensor/Environmental",
     "source": "entries"
   },
@@ -1575,7 +1542,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → CTD",
     "title": "SBE Downloader How-to-Guide",
     "section": "CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/SBEDownloader How-to Guide.pdf",
+    "url_loc": "../files/sensors/CTD/SBEDownloader_How_to_Guide.pdf",
     "search_terms": "CTD / Sensor/Environmental",
     "source": "entries"
   },
@@ -1583,7 +1550,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → CTD",
     "title": "SBE Downloader Software",
     "section": "CTD",
-    "url_loc": "../files/software/SBEDownloader/SBEDownloader.exe",
+    "url_loc": "../files/sensors/CTD/SBEDownloader.exe",
     "search_terms": "CTD / Sensor/Environmental",
     "source": "entries"
   },
@@ -1591,7 +1558,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → CTD",
     "title": "Settings SOP",
     "section": "CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD Setting SOPs.pdf",
+    "url_loc": "../files/sensors/CTD/sbe19plus/CTD_Setting_SOPs.pdf",
     "search_terms": "CTD / Sensor/Environmental",
     "source": "entries"
   },
@@ -1599,7 +1566,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → CTD",
     "title": "Storage and Post-Processing",
     "section": "CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/CTD Storage and Post-Processing.pdf",
+    "url_loc": "../files/sensors/CTD/sbe19plus/CTD_Storage_and_Post_Processing.pdf",
     "search_terms": "CTD / Sensor/Environmental",
     "source": "entries"
   },
@@ -1607,7 +1574,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → CTD",
     "title": "User Manual",
     "section": "CTD",
-    "url_loc": "../files/Manuals/CTD Manuals/SBE19plus/SBE 19Plus At-Sea User Manual.pdf",
+    "url_loc": "../files/sensors/CTD/sbe19plus/SBE_19Plus_At_Sea_User_Manual.pdf",
     "search_terms": "CTD / Sensor/Environmental",
     "source": "entries"
   },
@@ -1615,7 +1582,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → ES80",
     "title": "ES60 ES70 Lockup Issue",
     "section": "ES80",
-    "url_loc": "../files/Collections/ES80/GPTlockup-issue.pdf",
+    "url_loc": "../files/sensors/es80/GPTlockup-issue.pdf",
     "search_terms": "ES80 / Sensor/Environmental",
     "source": "entries"
   },
@@ -1623,7 +1590,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → ES80",
     "title": "ES80 EBS Data Collection Quick Review",
     "section": "ES80",
-    "url_loc": "../files/Collections/ES80/2026 Quick review EBS AVO ES80 data collection.pdf",
+    "url_loc": "../files/sensors/es80/2026_Quick_review_EBS_AVO_ES80_data_collection.pdf",
     "search_terms": "ES80 / Sensor/Environmental",
     "source": "entries"
   },
@@ -1631,7 +1598,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → ES80",
     "title": "ES80 Protocols",
     "section": "ES80",
-    "url_loc": "../files/Collections/ES80/ES80_protocols_2026.pdf",
+    "url_loc": "../files/sensors/es80/ES80_protocols_2026.pdf",
     "search_terms": "ES80 / Sensor/Environmental",
     "source": "entries"
   },
@@ -1639,7 +1606,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → ES80",
     "title": "ES80 Training Slides",
     "section": "ES80",
-    "url_loc": "../files/Collections/ES80/2025 ES80 data collection.pdf",
+    "url_loc": "../files/sensors/es80/2025_ES80_data_collection.pdf",
     "search_terms": "ES80 / Sensor/Environmental",
     "source": "entries"
   },
@@ -1647,7 +1614,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → ES80",
     "title": "Forms",
     "section": "ES80",
-    "url_loc": "../files/Collections/ES80/forms/",
+    "url_loc": "../files/sensors/es80/forms/",
     "search_terms": "ES80 / Sensor/Environmental",
     "source": "entries"
   },
@@ -1655,7 +1622,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → ES80",
     "title": "Replacing Hard Drive",
     "section": "ES80",
-    "url_loc": "../files/Collections/ES80/ES60 Hard drive instructions.pdf",
+    "url_loc": "../files/sensors/es80/ES60_Hard_drive_instructions.pdf",
     "search_terms": "ES80 / Sensor/Environmental",
     "source": "entries"
   },
@@ -1663,7 +1630,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → ES80",
     "title": "Skipper Cheat Sheet",
     "section": "ES80",
-    "url_loc": "../files/Collections/ES80/ES60_skippercheatsheet.pdf",
+    "url_loc": "../files/sensors/es80/ES60_skippercheatsheet.pdf",
     "search_terms": "ES80 / Sensor/Environmental",
     "source": "entries"
   },
@@ -1671,7 +1638,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → ES80",
     "title": "Vessel Calibration Photos",
     "section": "ES80",
-    "url_loc": "../files/Collections/ES80/ES60photos",
+    "url_loc": "../files/sensors/es80/photos/",
     "search_terms": "ES80 / Sensor/Environmental",
     "source": "entries"
   },
@@ -1679,7 +1646,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → Light meter",
     "title": "Light Meter Instructions",
     "section": "Light meter",
-    "url_loc": "../files/Manuals/Light meters/Light meter instuctions 2018.pdf",
+    "url_loc": "../files/sensors/light_meters/Light_meter_instuctions_2018.pdf",
     "search_terms": "Light meter / Sensor/Environmental",
     "source": "entries"
   },
@@ -1687,7 +1654,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Schedules & Contacts → Survey Team → All Surveys",
     "title": "RACE Vessel Contact Info",
     "section": "All Surveys",
-    "url_loc": "../files/Contact lists/GAP BT Survey Vessel Contacts 2026.pdf",
+    "url_loc": "../files/personnel/GAP_BT_Survey_Vessel_Contacts_2026.pdf",
     "search_terms": "All Surveys / Survey Team",
     "source": "entries"
   },
@@ -1695,7 +1662,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Schedules & Contacts → Survey Team → All Surveys",
     "title": "Survey Personnel Availability",
     "section": "All Surveys",
-    "url_loc": "../files/contact lists/Personnel Availability.pdf",
+    "url_loc": "../files/personnel/Personnel_Availability.pdf",
     "search_terms": "All Surveys / Survey Team",
     "source": "entries"
   },
@@ -1703,7 +1670,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Schedules & Contacts → Survey Team → All Surveys",
     "title": "Vessel Crew Lists",
     "section": "All Surveys",
-    "url_loc": "../files/Staffing/Vessel Crew/",
+    "url_loc": "../files/personnel/vessel_crew/",
     "search_terms": "All Surveys / Survey Team",
     "source": "entries"
   },
@@ -1711,7 +1678,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Schedules & Contacts → Survey Team → Bering Sea",
     "title": "EBS & NBS Survey Staffing",
     "section": "Bering Sea",
-    "url_loc": "../files/Staffing/2026 EBS Survey Staffing.pdf",
+    "url_loc": "../files/personnel/2026_EBS_Survey_Staffing.pdf",
     "search_terms": "Bering Sea / Survey Team",
     "source": "entries"
   },
@@ -1719,7 +1686,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Schedules & Contacts → Survey Team → GOA/AI",
     "title": "GOA / AI Survey Staffing",
     "section": "GOA/AI",
-    "url_loc": "../files/Staffing/2026 AI Survey Staffing.pdf",
+    "url_loc": "../files/personnel/2026_AI_Survey_Staffing.pdf",
     "search_terms": "GOA/AI / Survey Team",
     "source": "entries"
   },
@@ -1727,7 +1694,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Schedules & Contacts → ",
     "title": "**EMERGENCY NOTIFICATION PLAN**",
     "section": "",
-    "url_loc": "../files/Safety/Accidents/EMERGENCY NOTIFICATION PLAN 2026.pdf",
+    "url_loc": "../files/safety_and_health/EMERGENCY_NOTIFICATION_PLAN_2026.pdf",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -1735,7 +1702,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Schedules & Contacts → ",
     "title": "AFSC Phone & Email lists",
     "section": "",
-    "url_loc": "../files/Contact lists/AFSC_phone_email.pdf",
+    "url_loc": "../files/personnel/AFSC_phone_email.pdf",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -1743,7 +1710,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Timekeeping T&A",
     "title": "CD-81 OT Authorization",
     "section": "",
-    "url_loc": "../files/Timekeeping/CD-81 OT Authorization.pdf",
+    "url_loc": "../files/travel/timekeeping/CD_81_OT_Authorization.pdf",
     "search_terms": " / Timekeeping T&A",
     "source": "entries"
   },
@@ -1751,7 +1718,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Timekeeping T&A",
     "title": "Comp Time for Air Travel",
     "section": "",
-    "url_loc": "../files/Travel/COMP TIME OFF FOR TRAVEL-Air-final.pdf",
+    "url_loc": "../files/travel/COMP_TIME_OFF_FOR_TRAVEL_Air_final.pdf",
     "search_terms": " / Timekeeping T&A",
     "source": "entries"
   },
@@ -1759,7 +1726,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Timekeeping T&A",
     "title": "Comp Time Travel Guide",
     "section": "",
-    "url_loc": "../files/Timekeeping/comptime_travel_guide.pdf",
+    "url_loc": "../files/travel/timekeeping/comptime_travel_guide.pdf",
     "search_terms": " / Timekeeping T&A",
     "source": "entries"
   },
@@ -1767,7 +1734,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Timekeeping T&A",
     "title": "Form OPM-71",
     "section": "",
-    "url_loc": "../files/Timekeeping/opm71.pdf",
+    "url_loc": "../files/travel/timekeeping/opm71.pdf",
     "search_terms": " / Timekeeping T&A",
     "source": "entries"
   },
@@ -1775,7 +1742,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Timekeeping T&A",
     "title": "Pay Periods",
     "section": "",
-    "url_loc": "../files/Timekeeping/pay periods.pdf",
+    "url_loc": "../files/travel/timekeeping/pay_periods.pdf",
     "search_terms": " / Timekeeping T&A",
     "source": "entries"
   },
@@ -1783,7 +1750,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Timekeeping T&A",
     "title": "RACE At Sea T&A Readme",
     "section": "",
-    "url_loc": "../files/Timekeeping/RACE AT SEA T&A READ ME.pdf",
+    "url_loc": "../files/travel/timekeeping/RACE_AT_SEA_T&A_READ_ME.pdf",
     "search_terms": " / Timekeeping T&A",
     "source": "entries"
   },
@@ -1791,7 +1758,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Timekeeping T&A",
     "title": "RACE At Sea-Timesheet",
     "section": "",
-    "url_loc": "../files/Timekeeping/Name_PP##_RACE at-sea timesheet_2026.xlsx",
+    "url_loc": "../files/travel/timekeeping/Name_PP_RACE_at_sea_timesheet_2026.xlsx",
     "search_terms": " / Timekeeping T&A",
     "source": "entries"
   },
@@ -1799,7 +1766,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Travel Resources → Post-Survey Forms",
     "title": "Travel Voucher Request",
     "section": "Post-Survey Forms",
-    "url_loc": "../files/Travel/Travel Voucher Request.pdf",
+    "url_loc": "../files/travel/Travel_Voucher_Request.pdf",
     "search_terms": "Post-Survey Forms / Travel Resources",
     "source": "entries"
   },
@@ -1807,7 +1774,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Travel Resources → Rental Cars",
     "title": "Rental Car Procedures AK",
     "section": "Rental Cars",
-    "url_loc": "../files/Travel/Travel Advisory 08-6 - Rental Car Procedures in Alaska.pdf",
+    "url_loc": "../files/travel/Travel_Advisory_08_6_Rental_Car_Procedures_in_Alaska.pdf",
     "search_terms": "Rental Cars / Travel Resources",
     "source": "entries"
   },
@@ -1815,7 +1782,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Travel Resources → Rental Cars",
     "title": "Vehicle Rental Tax Exempt Form",
     "section": "Rental Cars",
-    "url_loc": "../files/Travel/AS 43.52 Vehicle Form.pdf",
+    "url_loc": "../files/travel/AS_43.52_Vehicle_Form.pdf",
     "search_terms": "Rental Cars / Travel Resources",
     "source": "entries"
   },
@@ -1823,7 +1790,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Travel Resources",
     "title": "AK Tax Exempt Info",
     "section": "",
-    "url_loc": "../files/Travel/ALASKA-TAX EXEMPT INFO.pdf",
+    "url_loc": "../files/travel/ALASKA_TAX_EXEMPT_INFO.pdf",
     "search_terms": " / Travel Resources",
     "source": "entries"
   },
@@ -1831,15 +1798,23 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Travel Resources",
     "title": "Guide to Flight Cancellations",
     "section": "",
-    "url_loc": "../files/Travel/A Stranded NOAA Scientists Guide to Flight Cancellations.png",
+    "url_loc": "../files/travel/A_Stranded_NOAA_Scientists_Guide_to_Flight_Cancellations.png",
     "search_terms": " / Travel Resources",
+    "source": "entries"
+  },
+  {
+    "site_loc": "Safety & Health → Emergency Flow Chart → ",
+    "title": "Emergency Flow Chart",
+    "section": "",
+    "url_loc": "../files/safety_and_health/accidents/accident.htm",
+    "search_terms": " / ",
     "source": "entries"
   },
   {
     "site_loc": "Safety & Health → Ergonomic Resources → Injury Prevention Guidance",
     "title": "Back",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Back.pdf",
+    "url_loc": "../files/safety_and_health/ergonomics/injury_prevention_guidance/Injury_Prevention_Back.pdf",
     "search_terms": " / Injury Prevention Guidance",
     "source": "entries"
   },
@@ -1847,7 +1822,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → Injury Prevention Guidance",
     "title": "Core",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Core Concepts.pdf",
+    "url_loc": "../files/safety_and_health/ergonomics/injury_prevention_guidance/Injury_Prevention_Core_Concepts.pdf",
     "search_terms": " / Injury Prevention Guidance",
     "source": "entries"
   },
@@ -1855,7 +1830,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → Injury Prevention Guidance",
     "title": "Elbow",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Elbow.pdf",
+    "url_loc": "../files/safety_and_health/ergonomics/injury_prevention_guidance/Injury_Prevention_Elbow.pdf",
     "search_terms": " / Injury Prevention Guidance",
     "source": "entries"
   },
@@ -1863,7 +1838,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → Injury Prevention Guidance",
     "title": "Foot & Ankle",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Foot and Ankle.pdf",
+    "url_loc": "../files/safety_and_health/ergonomics/injury_prevention_guidance/Injury_Prevention_Foot_and_Ankle.pdf",
     "search_terms": " / Injury Prevention Guidance",
     "source": "entries"
   },
@@ -1871,7 +1846,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → Injury Prevention Guidance",
     "title": "Hand, Wrist & Forearm",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Hand Wrist and Forearm.pdf",
+    "url_loc": "../files/safety_and_health/ergonomics/injury_prevention_guidance/Injury_Prevention_Hand_Wrist_and_Forearm.pdf",
     "search_terms": " / Injury Prevention Guidance",
     "source": "entries"
   },
@@ -1879,7 +1854,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → Injury Prevention Guidance",
     "title": "Heat or Ice",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Heat or Ice.pdf",
+    "url_loc": "../files/safety_and_health/ergonomics/injury_prevention_guidance/Injury_Prevention_Heat_or_Ice.pdf",
     "search_terms": " / Injury Prevention Guidance",
     "source": "entries"
   },
@@ -1887,7 +1862,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → Injury Prevention Guidance",
     "title": "Hip",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Hip.pdf",
+    "url_loc": "../files/safety_and_health/ergonomics/injury_prevention_guidance/Injury_Prevention_Hip.pdf",
     "search_terms": " / Injury Prevention Guidance",
     "source": "entries"
   },
@@ -1895,7 +1870,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → Injury Prevention Guidance",
     "title": "Kinesiotape",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/NOAA Injury Prevention Kinesiotape.pdf",
+    "url_loc": "../files/safety_and_health/ergonomics/injury_prevention_guidance/NOAA_Injury_Prevention_Kinesiotape.pdf",
     "search_terms": " / Injury Prevention Guidance",
     "source": "entries"
   },
@@ -1903,7 +1878,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → Injury Prevention Guidance",
     "title": "Neck",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Neck.pdf",
+    "url_loc": "../files/safety_and_health/ergonomics/injury_prevention_guidance/Injury_Prevention_Neck.pdf",
     "search_terms": " / Injury Prevention Guidance",
     "source": "entries"
   },
@@ -1911,7 +1886,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → Injury Prevention Guidance",
     "title": "Self Massage Handout",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Self Massage Handout.pdf",
+    "url_loc": "../files/safety_and_health/ergonomics/injury_prevention_guidance/Self_Massage_Handout.pdf",
     "search_terms": " / Injury Prevention Guidance",
     "source": "entries"
   },
@@ -1919,7 +1894,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → Injury Prevention Guidance",
     "title": "Shoulder",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/Injury Prevention Shoulder.pdf",
+    "url_loc": "../files/safety_and_health/ergonomics/injury_prevention_guidance/Injury_Prevention_Shoulder.pdf",
     "search_terms": " / Injury Prevention Guidance",
     "source": "entries"
   },
@@ -1927,7 +1902,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → Injury Prevention Guidance",
     "title": "Strain/Sprain",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Injury Prevention Guidance Documents NOAA 2026/CHOICES.pdf",
+    "url_loc": "../files/safety_and_health/ergonomics/injury_prevention_guidance/CHOICES.pdf",
     "search_terms": " / Injury Prevention Guidance",
     "source": "entries"
   },
@@ -1935,7 +1910,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → Injury Prevention Program",
     "title": "IP Program Orientation Slides",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/IP Program Orientation Slides 2026.pdf",
+    "url_loc": "../files/safety_and_health/ergonomics/IP_Program_Orientation_Slides_2026.pdf",
     "search_terms": " / Injury Prevention Program",
     "source": "entries"
   },
@@ -1943,7 +1918,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → Injury Prevention Program",
     "title": "IP Program Promo NOAA v1",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/IPS Program Promo NOAA v1 2026.pdf",
+    "url_loc": "../files/safety_and_health/ergonomics/IPS_Program_Promo_NOAA_v1_2026.pdf",
     "search_terms": " / Injury Prevention Program",
     "source": "entries"
   },
@@ -1951,7 +1926,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → Injury Prevention Program",
     "title": "IP Program Promo NOAA v2",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/IPS Program Promo v2 NOAA 2026.pdf",
+    "url_loc": "../files/safety_and_health/ergonomics/IPS_Program_Promo_v2_NOAA_2026.pdf",
     "search_terms": " / Injury Prevention Program",
     "source": "entries"
   },
@@ -1959,7 +1934,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → Injury Prevention Program",
     "title": "NOAA IP Program Videos",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/NOAA IP Program Videos.pdf",
+    "url_loc": "../files/safety_and_health/ergonomics/NOAA_IP_Program_Videos.pdf",
     "search_terms": " / Injury Prevention Program",
     "source": "entries"
   },
@@ -1967,7 +1942,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → Warm Up Programs",
     "title": "Warm Up Hand and Wrist",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Warm Up Programs NOAA 2026/NOAA Hand and Wrist Program handout 2025.pdf",
+    "url_loc": "../files/safety_and_health/ergonomics/warm_up_programs/NOAA_Hand_and_Wrist_Program_Handout_2025.pdf",
     "search_terms": " / Warm Up Programs",
     "source": "entries"
   },
@@ -1975,7 +1950,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → Warm Up Programs",
     "title": "Warm Up Poster",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Warm Up Programs NOAA 2026/NOAA Warm Up Poster 2025.pptx",
+    "url_loc": "../files/safety_and_health/ergonomics/warm_up_programs/NOAA_Warm_Up_Poster_2025.pptx",
     "search_terms": " / Warm Up Programs",
     "source": "entries"
   },
@@ -1983,7 +1958,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → Warm Up Programs",
     "title": "Warm Up Routine",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Warm Up Programs NOAA 2026/NOAA Warm-Up Routine Handout 2025.pdf",
+    "url_loc": "../files/safety_and_health/ergonomics/warm_up_programs/NOAA_Warm_Up_Routine_Handout_2025.pdf",
     "search_terms": " / Warm Up Programs",
     "source": "entries"
   },
@@ -1991,7 +1966,7 @@ var searchData = [
     "site_loc": "Safety & Health → Ergonomic Resources → ",
     "title": "Educational Resources",
     "section": "",
-    "url_loc": "../files/Safety/Ergonomic Resource Library/Educational Resource Library NOAA 2026/",
+    "url_loc": "../files/safety_and_health/ergonomics/educational_resources/",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -1999,7 +1974,7 @@ var searchData = [
     "site_loc": "Safety & Health → Harassment Resources → ",
     "title": "AFSC SASH Packet",
     "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/2025_SASH_Packet.pdf",
+    "url_loc": "../files/safety_and_health/harassment/2025_SASH_Packet.pdf",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -2007,7 +1982,7 @@ var searchData = [
     "site_loc": "Safety & Health → Harassment Resources → ",
     "title": "Fieldwork Initiative: FISST Training",
     "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/noaa FISST.pdf",
+    "url_loc": "../files/safety_and_health/harassment/noaa_FISST.pdf",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -2015,7 +1990,7 @@ var searchData = [
     "site_loc": "Safety & Health → Harassment Resources → ",
     "title": "Harassment Vessel Briefing",
     "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/Harassment_vessel_briefing_2023.pdf",
+    "url_loc": "../files/safety_and_health/harassment/Harassment_vessel_briefing_2023.pdf",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -2023,7 +1998,7 @@ var searchData = [
     "site_loc": "Safety & Health → Harassment Resources → ",
     "title": "Harassment Video: Fostering a Respectful Work Environment",
     "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/Fostering a Respectful Work Environment.mp4",
+    "url_loc": "../files/safety_and_health/harassment/Fostering_a_Respectful_Work_Environment.mp4",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -2031,7 +2006,7 @@ var searchData = [
     "site_loc": "Safety & Health → Harassment Resources → ",
     "title": "NOAA Offical Ordinance (DAO 202-955)",
     "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/Allegations_of_Harassment.pdf",
+    "url_loc": "../files/safety_and_health/harassment/Allegations_of_Harassment.pdf",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -2039,7 +2014,7 @@ var searchData = [
     "site_loc": "Safety & Health → Harassment Resources → ",
     "title": "Reporting Harassment at NOAA Email",
     "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/Reporting Harassment at NOAA.pdf",
+    "url_loc": "../files/safety_and_health/harassment/Reporting_Harassment_at_NOAA.pdf",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -2047,7 +2022,7 @@ var searchData = [
     "site_loc": "Safety & Health → Harassment Resources → ",
     "title": "Reporting Harassment Overview",
     "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/Harassment Reporting _JR-PI_3.29.pdf",
+    "url_loc": "../files/safety_and_health/harassment/Harassment_Reporting_JR_PI_3.29.pdf",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -2055,7 +2030,7 @@ var searchData = [
     "site_loc": "Safety & Health → Harassment Resources → ",
     "title": "SASH Hotline",
     "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/Sexual (SASH) Helpline.pdf",
+    "url_loc": "../files/safety_and_health/harassment/SASH_Helpline.pdf",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -2063,7 +2038,7 @@ var searchData = [
     "site_loc": "Safety & Health → Harassment Resources → ",
     "title": "SASH_NAO_202-1106A",
     "section": "",
-    "url_loc": "../files/Safety/Sexual Harassment/SASH_NAO_202-1106A.pdf",
+    "url_loc": "../files/safety_and_health/harassment/SASH_NAO_202_1106A.pdf",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -2071,7 +2046,7 @@ var searchData = [
     "site_loc": "Safety & Health → Harassment Resources → ",
     "title": "WVPR Resource Webinar Handout",
     "section": "",
-    "url_loc": "../files/Safety/Psychological safety/WVPR Resource Webinar Handout.pdf",
+    "url_loc": "../files/safety_and_health/harassment/WVPR_Resource_Webinar_Handout.pdf",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -2079,7 +2054,7 @@ var searchData = [
     "site_loc": "Safety & Health → Hazmat → Sds",
     "title": "SDS Bouin's Fixative",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS_Bouins_Solution.pdf",
+    "url_loc": "../files/safety_and_health/hazmat/sds_pages/SDS_Bouins_Solution.pdf",
     "search_terms": " / Sds",
     "source": "entries"
   },
@@ -2087,7 +2062,7 @@ var searchData = [
     "site_loc": "Safety & Health → Hazmat → Sds",
     "title": "SDS Ethanol 100%",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS 200 Proof Ethanol- Anhydrous.pdf",
+    "url_loc": "../files/safety_and_health/hazmat/sds_pages/SDS_200_Proof_Ethanol_Anhydrous.pdf",
     "search_terms": " / Sds",
     "source": "entries"
   },
@@ -2095,7 +2070,7 @@ var searchData = [
     "site_loc": "Safety & Health → Hazmat → Sds",
     "title": "SDS Ethanol 70%",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS Ethanol 140 proof.pdf",
+    "url_loc": "../files/safety_and_health/hazmat/sds_pages/SDS_Ethanol_140_proof.pdf",
     "search_terms": " / Sds",
     "source": "entries"
   },
@@ -2103,7 +2078,7 @@ var searchData = [
     "site_loc": "Safety & Health → Hazmat → Sds",
     "title": "SDS Ethanol 95%",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS Ethanol 190 proof.pdf",
+    "url_loc": "../files/safety_and_health/hazmat/sds_pages/SDS_Ethanol_190_proof.pdf",
     "search_terms": " / Sds",
     "source": "entries"
   },
@@ -2111,7 +2086,7 @@ var searchData = [
     "site_loc": "Safety & Health → Hazmat → Sds",
     "title": "SDS Formaldehyde",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS Formaldehyde Solution.pdf",
+    "url_loc": "../files/safety_and_health/hazmat/sds_pages/SDS_Formaldehyde_Solution.pdf",
     "search_terms": " / Sds",
     "source": "entries"
   },
@@ -2119,7 +2094,7 @@ var searchData = [
     "site_loc": "Safety & Health → Hazmat → Sds",
     "title": "SDS Formalin 10%",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS Formalin Solution_neutral buffered_10%.pdf",
+    "url_loc": "../files/safety_and_health/hazmat/sds_pages/SDS_Formalin_Solution_neutral_buffered_10%.pdf",
     "search_terms": " / Sds",
     "source": "entries"
   },
@@ -2127,7 +2102,7 @@ var searchData = [
     "site_loc": "Safety & Health → Hazmat → Sds",
     "title": "SDS Glycerin",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS Glycerin.pdf",
+    "url_loc": "../files/safety_and_health/hazmat/sds_pages/SDS_Glycerin.pdf",
     "search_terms": " / Sds",
     "source": "entries"
   },
@@ -2135,7 +2110,7 @@ var searchData = [
     "site_loc": "Safety & Health → Hazmat → Sds",
     "title": "SDS Neutralex",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS Neutralex.pdf",
+    "url_loc": "../files/safety_and_health/hazmat/sds_pages/SDS_Neutralex.pdf",
     "search_terms": " / Sds",
     "source": "entries"
   },
@@ -2143,7 +2118,7 @@ var searchData = [
     "site_loc": "Safety & Health → Hazmat → Sds",
     "title": "SDS Permalite Epoxy Parts A and B",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDS pages/DevCon 2-part epoxy MSDS.pdf",
+    "url_loc": "../files/safety_and_health/hazmat/sds_pages/DevCon_2_part_epoxy_MSDS.pdf",
     "search_terms": " / Sds",
     "source": "entries"
   },
@@ -2151,7 +2126,7 @@ var searchData = [
     "site_loc": "Safety & Health → Hazmat → Sds",
     "title": "SDS Qiagen Allprotect Tissue Reagent",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDS pages/3028-AllprotectTissueReagent-en-US-US--1.00000.pdf",
+    "url_loc": "../files/safety_and_health/hazmat/sds_pages/3028_AllprotectTissueReagent_en_US_US_1.00000.pdf",
     "search_terms": " / Sds",
     "source": "entries"
   },
@@ -2159,7 +2134,7 @@ var searchData = [
     "site_loc": "Safety & Health → Hazmat → Sds",
     "title": "SDS Reagent Alcohol, 70% v/v",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS_70_Reagent_Acohol.pdf",
+    "url_loc": "../files/safety_and_health/hazmat/sds_pages/SDS_70_Reagent_Acohol.pdf",
     "search_terms": " / Sds",
     "source": "entries"
   },
@@ -2167,7 +2142,7 @@ var searchData = [
     "site_loc": "Safety & Health → Hazmat → Sds",
     "title": "SDS Thymol",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDS pages/SDS Thymol.pdf",
+    "url_loc": "../files/safety_and_health/hazmat/sds_pages/SDS_Thymol.pdf",
     "search_terms": " / Sds",
     "source": "entries"
   },
@@ -2175,7 +2150,7 @@ var searchData = [
     "site_loc": "Safety & Health → Hazmat → Shipping",
     "title": "Alkaline batteries",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/SDS pages/alkalinecylindrical_psds.pdf",
+    "url_loc": "../files/safety_and_health/hazmat/sds_pages/alkalinecylindrical_psds.pdf",
     "search_terms": " / Shipping",
     "source": "entries"
   },
@@ -2183,7 +2158,7 @@ var searchData = [
     "site_loc": "Safety & Health → Hazmat → Shipping",
     "title": "Dangerous Goods Declaration Form CFR49",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/Dangerous Goods Declaration - CFR49.pdf",
+    "url_loc": "../files/safety_and_health/hazmat/Dangerous Goods Declaration - CFR49.pdf",
     "search_terms": " / Shipping",
     "source": "entries"
   },
@@ -2191,7 +2166,7 @@ var searchData = [
     "site_loc": "Safety & Health → Hazmat → Shipping",
     "title": "HAZMAT Items Not To Pack",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/Do Not Pack List.pdf",
+    "url_loc": "../files/safety_and_health/hazmat/Do_Not_Pack_List.pdf",
     "search_terms": " / Shipping",
     "source": "entries"
   },
@@ -2199,7 +2174,7 @@ var searchData = [
     "site_loc": "Safety & Health → Hazmat → Shipping",
     "title": "HAZMAT Shipping Guidelines",
     "section": "",
-    "url_loc": "../files/Shipping-Hazmat/hazmat_shipping_guide.pdf",
+    "url_loc": "../files/safety_and_health/hazmat/hazmat_shipping_guide.pdf",
     "search_terms": " / Shipping",
     "source": "entries"
   },
@@ -2208,7 +2183,7 @@ var searchData = [
     "title": "At-Sea Incident Report Form",
     "section": "",
     "subtitle": "e.g., injury or near miss",
-    "url_loc": "../files/Safety/Accidents/At-Sea Incident Report Form_fillable.pdf",
+    "url_loc": "../files/safety_and_health/reporting/At_Sea_Incident_Report_Form_fillable.pdf",
     "search_terms": " / At-Sea Injury Forms",
     "source": "entries"
   },
@@ -2216,7 +2191,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → At-Sea Injury Forms",
     "title": "CA-1 and CA-2 Instructions",
     "section": "",
-    "url_loc": "../files/Safety/Accidents/Filing CA-1 and CA-2 Employee Instructions.pdf",
+    "url_loc": "../files/safety_and_health/reporting/Filing_CA_1_and_CA_2_Employee_Instructions.pdf",
     "search_terms": " / At-Sea Injury Forms",
     "source": "entries"
   },
@@ -2225,7 +2200,7 @@ var searchData = [
     "title": "CA-1 Reporting an Accident, Injury, or Illness",
     "section": "",
     "subtitle": "i.e., acute illness or injury",
-    "url_loc": "../files/Safety/Accidents/Pay Compensation Form ca-1.pdf",
+    "url_loc": "../files/safety_and_health/reporting/Pay_Compensation_Form_Ca_1.pdf",
     "search_terms": " / At-Sea Injury Forms",
     "source": "entries"
   },
@@ -2234,7 +2209,7 @@ var searchData = [
     "title": "CA-2 Report an Occupational Disease",
     "section": "",
     "subtitle": "i.e., occupational/repetative motion illness/injury",
-    "url_loc": "../files/Safety/Accidents/CA-2 Dept. of Labor Claim for Compensation.pdf",
+    "url_loc": "../files/safety_and_health/reporting/CA_2_Dept._of_Labor_Claim_for_Compensation.pdf",
     "search_terms": " / At-Sea Injury Forms",
     "source": "entries"
   },
@@ -2242,7 +2217,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → At-Sea Injury Forms",
     "title": "CD-137 Report of Incident, Injury, Illness",
     "section": "",
-    "url_loc": "../files/Safety/Accidents/cd-137.pdf",
+    "url_loc": "../files/safety_and_health/reporting/cd_137.pdf",
     "search_terms": " / At-Sea Injury Forms",
     "source": "entries"
   },
@@ -2250,7 +2225,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → At-Sea Injury Forms",
     "title": "CD-351 Report of Safety Hazard",
     "section": "",
-    "url_loc": "../files/Safety/Accidents/CD-351 report of Safety Hazard.pdf",
+    "url_loc": "../files/safety_and_health/reporting/CD_351_report_of_Safety_Hazard.pdf",
     "search_terms": " / At-Sea Injury Forms",
     "source": "entries"
   },
@@ -2258,7 +2233,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → At-Sea Injury Forms",
     "title": "UW Contractor Injury Report Form",
     "section": "",
-    "url_loc": "../files/Safety/Accidents/UW_accident-incident_report.pdf",
+    "url_loc": "../files/safety_and_health/reporting/UW_accident_incident_report.pdf",
     "search_terms": " / At-Sea Injury Forms",
     "source": "entries"
   },
@@ -2266,7 +2241,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → At-Sea Injury Forms",
     "title": "Workers Comp Supervisor Completion CA-1",
     "section": "",
-    "url_loc": "../files/Safety/Accidents/Workers Comp Supr Completion CA1.pdf",
+    "url_loc": "../files/safety_and_health/reporting/Workers_Comp_Supr_Completion_CA1.pdf",
     "search_terms": " / At-Sea Injury Forms",
     "source": "entries"
   },
@@ -2274,7 +2249,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → Covid",
     "title": "Dutch Harbor SIP Logistics",
     "section": "",
-    "url_loc": "../files/Port info/Dutch Harbor SIP Logistics.pdf",
+    "url_loc": "../files/admin/port_info/Dutch Harbor SIP Logistics.pdf",
     "search_terms": " / Covid",
     "source": "entries"
   },
@@ -2282,7 +2257,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → Covid",
     "title": "Dutch Harbor SIP Logistics Resources",
     "section": "",
-    "url_loc": "../files/Port info/Dutch Logistics 5-16-21.pdf",
+    "url_loc": "../files/admin/port_info/Dutch Logistics 5-16-21.pdf",
     "search_terms": " / Covid",
     "source": "entries"
   },
@@ -2290,7 +2265,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → Covid",
     "title": "GOA and EBS SIP Guide",
     "section": "",
-    "url_loc": "../files/Port info/Shelter in Place Guide.pdf",
+    "url_loc": "../files/admin/port_info/Shelter in Place Guide.pdf",
     "search_terms": " / Covid",
     "source": "entries"
   },
@@ -2298,7 +2273,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → Vehicular Accidents",
     "title": "SF-91 Vehicle Accident Report",
     "section": "",
-    "url_loc": "../files/Safety/Accidents/SF-91.pdf",
+    "url_loc": "../files/safety_and_health/reporting/SF_91.pdf",
     "search_terms": " / Vehicular Accidents",
     "source": "entries"
   },
@@ -2306,7 +2281,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → Vehicular Accidents",
     "title": "SF-94 Witness Statement",
     "section": "",
-    "url_loc": "../files/Safety/Accidents/SF-94.pdf",
+    "url_loc": "../files/safety_and_health/reporting/SF_94.pdf",
     "search_terms": " / Vehicular Accidents",
     "source": "entries"
   },
@@ -2314,7 +2289,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → Vehicular Accidents",
     "title": "SF-95 Tort Claim Form",
     "section": "",
-    "url_loc": "../files/Safety/Accidents/sf95.pdf",
+    "url_loc": "../files/safety_and_health/reporting/sf95.pdf",
     "search_terms": " / Vehicular Accidents",
     "source": "entries"
   },
@@ -2322,7 +2297,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → ",
     "title": "Injury Reporting Quick Guide",
     "section": "",
-    "url_loc": "../files/Safety/Accidents/AFSC_Injury_Reporting_Guide.pdf",
+    "url_loc": "../files/safety_and_health/reporting/AFSC_Injury_Reporting_Guide.pdf",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -2330,7 +2305,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → ",
     "title": "Medevac Info",
     "section": "",
-    "url_loc": "../files/Safety/Accidents/MedEvac Info.pdf",
+    "url_loc": "../files/safety_and_health/references/MedEvac_Info.pdf",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -2338,7 +2313,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Hypothermic Patient",
     "title": "Care for Hypothermic Patient",
     "section": "",
-    "url_loc": "../files/Safety/CareForColdPatient.jpg",
+    "url_loc": "../files/safety_and_health/references/CareForColdPatient.jpg",
     "search_terms": " / Hypothermic Patient",
     "source": "entries"
   },
@@ -2346,7 +2321,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Hypothermic Patient",
     "title": "Hypothermic Patient Assessment",
     "section": "",
-    "url_loc": "../files/Safety/AssessColdPatient.jpg",
+    "url_loc": "../files/safety_and_health/references/AssessColdPatient.jpg",
     "search_terms": " / Hypothermic Patient",
     "source": "entries"
   },
@@ -2354,7 +2329,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Hypothermic Patient",
     "title": "Hypothermic Patient Flow Chart",
     "section": "",
-    "url_loc": "../files/Safety/ColdPatientFlowChart.jpg",
+    "url_loc": "../files/safety_and_health/references/ColdPatientFlowChart.jpg",
     "search_terms": " / Hypothermic Patient",
     "source": "entries"
   },
@@ -2362,7 +2337,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Manuals",
     "title": "AED Manual",
     "section": "",
-    "url_loc": "../files/Safety/UserManual_AED_Hart_350P.pdf",
+    "url_loc": "../files/safety_and_health/manuals/UserManual_AED_Hart_350P.pdf",
     "search_terms": " / Manuals",
     "source": "entries"
   },
@@ -2370,7 +2345,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Manuals",
     "title": "Medical Course Manual",
     "section": "",
-    "url_loc": "../files/Safety/Two day med full manual.pdf",
+    "url_loc": "../files/safety_and_health/manuals/Two_Day_Med_full_manual.pdf",
     "search_terms": " / Manuals",
     "source": "entries"
   },
@@ -2378,7 +2353,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Manuals",
     "title": "PLB Manual",
     "section": "",
-    "url_loc": "../files/Safety/EPIRBs/aquafix_aquafixman.pdf",
+    "url_loc": "../files/safety_and_health/manuals/epirbs/aquafix_aquafixman.pdf",
     "search_terms": " / Manuals",
     "source": "entries"
   },
@@ -2386,7 +2361,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Psychological Safety",
     "title": "Mental Health and Trauma Resources",
     "section": "",
-    "url_loc": "../files/Safety/Mental health and trauma resources.pdf",
+    "url_loc": "../files/safety_and_health/psychological_safety/Mental_health_and_trauma_resources.pdf",
     "search_terms": " / Psychological Safety",
     "source": "entries"
   },
@@ -2394,7 +2369,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Psychological Safety",
     "title": "NOAA Psychological Safety",
     "section": "",
-    "url_loc": "../files/Safety/Psychological safety/NOAA Psychological Safety.pdf",
+    "url_loc": "../files/safety_and_health/psychological_safety/NOAA_Psychological_Safety.pdf",
     "search_terms": " / Psychological Safety",
     "source": "entries"
   },
@@ -2402,7 +2377,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources → Forms",
     "title": "Charter Vessel Safety Briefing Form",
     "section": "Forms",
-    "url_loc": "../files/Safety/Charter Vessel Safety Briefing Form.pdf",
+    "url_loc": "../files/safety_and_health/Charter_Vessel_Safety_Briefing_Form.pdf",
     "search_terms": "Forms / Safety Lead Resources",
     "source": "entries"
   },
@@ -2410,7 +2385,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources → Forms",
     "title": "Emergency Contact Form",
     "section": "Forms",
-    "url_loc": "../files/Safety/Emergency contact form.pdf",
+    "url_loc": "../files/safety_and_health/Emergency_Contact_Form.pdf",
     "search_terms": "Forms / Safety Lead Resources",
     "source": "entries"
   },
@@ -2418,7 +2393,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources → Forms",
     "title": "Safety Briefing Form",
     "section": "Forms",
-    "url_loc": "../files/Safety/Safety Briefing form.pdf",
+    "url_loc": "../files/safety_and_health/references/Safety_Briefing_form.pdf",
     "search_terms": "Forms / Safety Lead Resources",
     "source": "entries"
   },
@@ -2426,7 +2401,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources → Forms",
     "title": "Safety Drill Form",
     "section": "Forms",
-    "url_loc": "../files/Safety/Safetydrillform.pdf",
+    "url_loc": "../files/safety_and_health/references/Safetydrillform.pdf",
     "search_terms": "Forms / Safety Lead Resources",
     "source": "entries"
   },
@@ -2434,7 +2409,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources → Forms",
     "title": "Safety Evaluation Form",
     "section": "Forms",
-    "url_loc": "../files/Safety/Safety Evaluation Form.pdf",
+    "url_loc": "../files/safety_and_health/references/Safety_Evaluation_Form.pdf",
     "search_terms": "Forms / Safety Lead Resources",
     "source": "entries"
   },
@@ -2442,7 +2417,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources → Forms",
     "title": "Safety Leader Recording Form",
     "section": "Forms",
-    "url_loc": "../files/Safety/Safety Leader Personnel Recording Form Fillable.pdf",
+    "url_loc": "../files/safety_and_health/references/Safety_Leader_Personnel_Recording_Form_Fillable.pdf",
     "search_terms": "Forms / Safety Lead Resources",
     "source": "entries"
   },
@@ -2450,7 +2425,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources",
     "title": "AFSC Code of Conduct",
     "section": "",
-    "url_loc": "../files/Safety/AFSC Code of Conduct.pdf",
+    "url_loc": "../files/safety_and_health/AFSC_Code_of_Conduct.pdf",
     "search_terms": " / Safety Lead Resources",
     "source": "entries"
   },
@@ -2458,7 +2433,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources",
     "title": "Safety Leader Checklists",
     "section": "",
-    "url_loc": "../files/Safety/Safety lead checklists.pdf",
+    "url_loc": "../files/safety_and_health/references/Safety_Lead_Checklists.pdf",
     "search_terms": " / Safety Lead Resources",
     "source": "entries"
   },
@@ -2466,7 +2441,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources",
     "title": "Safety Leader Duties",
     "section": "",
-    "url_loc": "../files/Safety/Safety Lead Duties.pdf",
+    "url_loc": "../files/safety_and_health/references/Safety_Lead_Duties.pdf",
     "search_terms": " / Safety Lead Resources",
     "source": "entries"
   },
@@ -2474,7 +2449,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources",
     "title": "Safety Manual",
     "section": "",
-    "url_loc": "../files/Safety/At-Sea Safety Manual 2026.pdf",
+    "url_loc": "../files/safety_and_health/At_Sea_Safety_Manual_2026.pdf",
     "search_terms": " / Safety Lead Resources",
     "source": "entries"
   },
@@ -2482,7 +2457,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources",
     "title": "Vessel Safety Checklist",
     "section": "",
-    "url_loc": "../files/Safety/FV_Safety_checklist.pdf",
+    "url_loc": "../files/safety_and_health/references/FV_safety_checklist.pdf",
     "search_terms": " / Safety Lead Resources",
     "source": "entries"
   },
@@ -2490,7 +2465,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Volcanic Ashfall",
     "title": "Ashfall Prepardness Guidelines",
     "section": "",
-    "url_loc": "../files/Safety/Ashfall preparedness guidelines.pdf",
+    "url_loc": "../files/safety_and_health/references/Ashfall_preparedness_guidelines.pdf",
     "search_terms": " / Volcanic Ashfall",
     "source": "entries"
   },
@@ -2498,7 +2473,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Volcanic Ashfall",
     "title": "Ashfall Prepardness Infographic",
     "section": "",
-    "url_loc": "../files/Safety/Ashfall preparedness readiness.pdf",
+    "url_loc": "../files/safety_and_health/references/Ashfall_preparedness_readiness.pdf",
     "search_terms": " / Volcanic Ashfall",
     "source": "entries"
   },
@@ -2506,7 +2481,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → ",
     "title": "At-Sea Safety Action Plan",
     "section": "",
-    "url_loc": "../files/Safety/RACE Safety Action Plan.pdf",
+    "url_loc": "../files/safety_and_health/RACE_Safety_Action_Plan.pdf",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -2514,7 +2489,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Tsunami",
     "title": "Tsunami Preparedness",
     "section": "",
-    "url_loc": "../files/Safety/Tsunami Preparedness.pdf",
+    "url_loc": "../files/safety_and_health/references/Tsunami_Preparedness.pdf",
     "search_terms": " / Tsunami",
     "source": "entries"
   },
@@ -2522,7 +2497,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → ",
     "title": "Bedbugs",
     "section": "",
-    "url_loc": "../files/Safety/BedBugPrimer_final.pdf",
+    "url_loc": "../files/safety_and_health/references/BedBugPrimer_final.pdf",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -2530,7 +2505,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → ",
     "title": "Volunteer Service Agreement",
     "section": "",
-    "url_loc": "../files/Safety/Accidents/Volunteer Agreement - non-student.pdf",
+    "url_loc": "../files/safety_and_health/manuals/Volunteer_Agreement_non_student.pdf",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -2538,15 +2513,7 @@ var searchData = [
     "site_loc": "Software → Software & drivers → Gap Toolkit → GAPsurvey R Package",
     "title": "GAPsurvey Instructions",
     "section": "GAPsurvey R Package",
-    "url_loc": "../files/Manuals/R/GAPsurvey/docs/index.html",
-    "search_terms": "GAPsurvey R Package / Gap Toolkit",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Software → Software & drivers → Gap Toolkit → GAPsurvey R Package",
-    "title": "GAPsurvey Resources",
-    "section": "GAPsurvey R Package",
-    "url_loc": "../files/Manuals/R/GAPsurvey/",
+    "url_loc": "../files/software/r/gapsurvey/docs/index.html",
     "search_terms": "GAPsurvey R Package / Gap Toolkit",
     "source": "entries"
   },
@@ -2554,7 +2521,7 @@ var searchData = [
     "site_loc": "Software → Software & drivers → General Software",
     "title": "Acrobat Reader and CutePDF Writer",
     "section": "",
-    "url_loc": "../files/Software/PDFs/",
+    "url_loc": "../files/software/drivers/pdfs/",
     "search_terms": " / General Software",
     "source": "entries"
   },
@@ -2562,7 +2529,7 @@ var searchData = [
     "site_loc": "Software → Software & drivers → General Software",
     "title": "File Format Converter (docx-xlsx)",
     "section": "",
-    "url_loc": "../files/Software/docx_xlsx_file_converter",
+    "url_loc": "../files/software/drivers/docx_xlsx_file_converter/",
     "search_terms": " / General Software",
     "source": "entries"
   },
@@ -2570,7 +2537,7 @@ var searchData = [
     "site_loc": "Software → Software & drivers → General Software",
     "title": "Network Time Sync",
     "section": "",
-    "url_loc": "../files/Software/NetWork Time sync",
+    "url_loc": "../files/software/drivers/network_time_sync/",
     "search_terms": " / General Software",
     "source": "entries"
   },
@@ -2578,7 +2545,7 @@ var searchData = [
     "site_loc": "Software → Software & drivers → General Software",
     "title": "Tides and Currents",
     "section": "",
-    "url_loc": "../files/Manuals/Tides and Currents",
+    "url_loc": "../files/software/computer_programs/tides_and_currents",
     "search_terms": " / General Software",
     "source": "entries"
   },
@@ -2586,7 +2553,7 @@ var searchData = [
     "site_loc": "Software → Software & drivers → Globe Computer",
     "title": "GLOBE",
     "section": "",
-    "url_loc": "../files/Manuals/globe/Software",
+    "url_loc": "../files/software/computer_programs/globe",
     "search_terms": " / Globe Computer",
     "source": "entries"
   },
@@ -2594,7 +2561,7 @@ var searchData = [
     "site_loc": "Software → Software & drivers → Marport Computer",
     "title": "SiRFDemo",
     "section": "",
-    "url_loc": "../files/Manuals/GPSs",
+    "url_loc": "../files/software/computer_programs/gps",
     "search_terms": " / Marport Computer",
     "source": "entries"
   },
@@ -2602,7 +2569,8 @@ var searchData = [
     "site_loc": "Software → Software & drivers → R Resources",
     "title": "R, R Studio, and RTools",
     "section": "",
-    "url_loc": "../files/Manuals/R/R Program",
+    "subtitle": "Tarballs for required R packages",
+    "url_loc": "../files/software/r",
     "search_terms": " / R Resources",
     "source": "entries"
   },
@@ -2610,7 +2578,7 @@ var searchData = [
     "site_loc": "Software → Software & drivers → Tablets",
     "title": "Tablet Apps (.apk)",
     "section": "",
-    "url_loc": "../files/Manuals/Apps Software/Tablet apks",
+    "url_loc": "../files/software/tablets/tablet_apks/",
     "search_terms": " / Tablets",
     "source": "entries"
   },
@@ -2618,23 +2586,7 @@ var searchData = [
     "site_loc": "Software → Software & drivers → Wheelhouse Computer",
     "title": "BVDR Converter",
     "section": "",
-    "url_loc": "../files/Manuals/BVDR_converter/",
-    "search_terms": " / Wheelhouse Computer",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Software → Software & drivers → Wheelhouse Computer",
-    "title": "CTDs (SeaBird, Teledyne)",
-    "section": "",
-    "url_loc": "../files/Manuals/CTD Manuals/",
-    "search_terms": " / Wheelhouse Computer",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Software → Software & drivers → Wheelhouse Computer",
-    "title": "HOBO Lite 3.7.8",
-    "section": "",
-    "url_loc": "../files/Manuals/Bottom contact sensor",
+    "url_loc": "../files/software/bvdr_converter/",
     "search_terms": " / Wheelhouse Computer",
     "source": "entries"
   },
@@ -2642,7 +2594,7 @@ var searchData = [
     "site_loc": "Software → Software & drivers → Wheelhouse Computer",
     "title": "Hyperterm",
     "section": "",
-    "url_loc": "../files/Software/Hyperterm",
+    "url_loc": "../files/software/drivers/hyperterm/",
     "search_terms": " / Wheelhouse Computer",
     "source": "entries"
   },
@@ -2650,7 +2602,7 @@ var searchData = [
     "site_loc": "Species Info → Protected Species → Critical Habitats",
     "title": "Beluga",
     "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/critical habitat/Cook Inlet Beluga Critical Habitat.jpg",
+    "url_loc": "../files/speciesID/protected_species/critical_habitat/Cook_Inlet_Beluga_Critical_Habitat.jpg",
     "search_terms": " / Critical Habitats",
     "source": "entries"
   },
@@ -2658,7 +2610,7 @@ var searchData = [
     "site_loc": "Species Info → Protected Species → Critical Habitats",
     "title": "North Pacific Right Whale",
     "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/critical habitat/North Pacific Right Whale Critical Habitat.jpg",
+    "url_loc": "../files/speciesID/protected_species/critical_habitat/North_Pacific_Right_Whale_Critical_Habitat.jpg",
     "search_terms": " / Critical Habitats",
     "source": "entries"
   },
@@ -2666,7 +2618,7 @@ var searchData = [
     "site_loc": "Species Info → Protected Species → Critical Habitats",
     "title": "Sea Otter",
     "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/critical habitat/otter_range.jpg",
+    "url_loc": "../files/speciesID/protected_species/critical_habitat/otter_range.jpg",
     "search_terms": " / Critical Habitats",
     "source": "entries"
   },
@@ -2674,7 +2626,7 @@ var searchData = [
     "site_loc": "Species Info → Protected Species → Critical Habitats",
     "title": "Spectacled Eider",
     "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/critical habitat/Spectacled Eider Critical Habitat.jpg",
+    "url_loc": "../files/speciesID/protected_species/critical_habitat/Spectacled_Eider_Critical_Habitat.jpg",
     "search_terms": " / Critical Habitats",
     "source": "entries"
   },
@@ -2682,7 +2634,7 @@ var searchData = [
     "site_loc": "Species Info → Protected Species → Critical Habitats",
     "title": "Stellers Eider",
     "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/critical habitat/Stellers Eider critical habitat.jpg",
+    "url_loc": "../files/speciesID/protected_species/critical_habitat/Stellers_Eider_critical_habitat.jpg",
     "search_terms": " / Critical Habitats",
     "source": "entries"
   },
@@ -2690,7 +2642,7 @@ var searchData = [
     "site_loc": "Species Info → Protected Species → Critical Habitats",
     "title": "Stellers Sean Lion",
     "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/critical habitat/Western_Steller Sea Lion_critical habitat.jpg",
+    "url_loc": "../files/speciesID/protected_species/critical_habitat/Western_Steller_Sea_Lion_critical_habitat.jpg",
     "search_terms": " / Critical Habitats",
     "source": "entries"
   },
@@ -2698,7 +2650,7 @@ var searchData = [
     "site_loc": "Species Info → Protected Species → Procedures & References",
     "title": "Information to Report",
     "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/Interaction placard- encounters.pdf",
+    "url_loc": "../files/speciesID/protected_species/Interaction_placard_encounters.pdf",
     "search_terms": " / Procedures & References",
     "source": "entries"
   },
@@ -2706,7 +2658,7 @@ var searchData = [
     "site_loc": "Species Info → Protected Species → Procedures & References",
     "title": "Marine Mammal Sampling Flow Chart",
     "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/MM Sampling Matrix_Flow Chart.pdf",
+    "url_loc": "../files/speciesID/protected_species/MM_Sampling_Matrix_Flow_Chart.pdf",
     "search_terms": " / Procedures & References",
     "source": "entries"
   },
@@ -2714,7 +2666,7 @@ var searchData = [
     "site_loc": "Species Info → Protected Species → Procedures & References",
     "title": "Mitigation Measures Manual",
     "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/Manual Mitigation Measures.pdf",
+    "url_loc": "../files/speciesID/protected_species/manual_mitigation_measures.pdf",
     "search_terms": " / Procedures & References",
     "source": "entries"
   },
@@ -2722,7 +2674,7 @@ var searchData = [
     "site_loc": "Species Info → Protected Species → Procedures & References",
     "title": "Proctected Species Training FY26",
     "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/FY26 Protected species training Presentation.pdf",
+    "url_loc": "../files/speciesID/protected_species/FY26_Protected_species_training_Presentation.pdf",
     "search_terms": " / Procedures & References",
     "source": "entries"
   },
@@ -2730,7 +2682,7 @@ var searchData = [
     "site_loc": "Species Info → Protected Species → Procedures & References",
     "title": "Protected Species Sampling Safety Procedures",
     "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/AFSC Protected Species Sampling Safety Procedures.pdf",
+    "url_loc": "../files/speciesID/protected_species/AFSC_Protected_Species_Sampling_Safety_Procedures.pdf",
     "search_terms": " / Procedures & References",
     "source": "entries"
   },
@@ -2738,7 +2690,7 @@ var searchData = [
     "site_loc": "Species Info → Protected Species → Procedures & References",
     "title": "Reporting Contacts",
     "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/Interaction placard - contact sheet.pdf",
+    "url_loc": "../files/speciesID/protected_species/Interaction_placard_contact_sheet.pdf",
     "search_terms": " / Procedures & References",
     "source": "entries"
   },
@@ -2746,7 +2698,7 @@ var searchData = [
     "site_loc": "Species Info → Protected Species → Procedures & References",
     "title": "Species to Collect Samples",
     "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/Collect_Do NOT Collect MML.pdf",
+    "url_loc": "../files/speciesID/protected_species/Collect_Do_NOT_Collect_MML.pdf",
     "search_terms": " / Procedures & References",
     "source": "entries"
   },
@@ -2754,7 +2706,7 @@ var searchData = [
     "site_loc": "Species Info → Protected Species → Procedures & References",
     "title": "Whale Entanglement",
     "section": "",
-    "url_loc": "../files/SpeciesID/protected_species/whale_entanglement factsheet.pdf",
+    "url_loc": "../files/speciesID/protected_species/whale_entanglement_factsheet.pdf",
     "search_terms": " / Procedures & References",
     "source": "entries"
   },
@@ -2769,63 +2721,63 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → algae",
     "title": "Algae",
     "section": "algae",
-    "url_loc": "../files/SpeciesID/guides/algae/NOAA TM AFSC 389.pdf",
+    "url_loc": "../files/speciesID/guides/algae/NOAA_TM_AFSC_389.pdf",
     "search_terms": "algae",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → arthropods",
+    "site_loc": "Species Info → Species ID Guides → inverts → arthropods",
     "title": "Arctic Crustacea Photo Guide",
-    "section": "arthropods",
-    "url_loc": "../files/SpeciesID/guides/inverts/Crustacea_Arctic_photoguide_Jan2021.pdf",
-    "search_terms": "arthropods",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Crustacea_Arctic_photoguide_Jan2021.pdf",
+    "search_terms": "arthropods / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → arthropods",
+    "site_loc": "Species Info → Species ID Guides → inverts → arthropods",
     "title": "Chionecetes Crab Field Techniques",
-    "section": "arthropods",
-    "url_loc": "../files/SpeciesID/guides/inverts/Chionoecetes Crabs.pdf",
-    "search_terms": "arthropods",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Chionoecetes_Crabs.pdf",
+    "search_terms": "arthropods / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → arthropods",
+    "site_loc": "Species Info → Species ID Guides → inverts → arthropods",
     "title": "Crustacean Genera Key",
-    "section": "arthropods",
-    "url_loc": "../files/SpeciesID/guides/inverts/Crustacean Key notes.pdf",
-    "search_terms": "arthropods",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Crustacean_Key_notes.pdf",
+    "search_terms": "arthropods / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → arthropods",
+    "site_loc": "Species Info → Species ID Guides → inverts → arthropods",
     "title": "Hermit Crab ID Guide",
-    "section": "arthropods",
-    "url_loc": "../files/SpeciesID/guides/inverts/Acuna hermitcrabs.pdf",
-    "search_terms": "arthropods",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Acuna_hermitcrabs.pdf",
+    "search_terms": "arthropods / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → arthropods",
+    "site_loc": "Species Info → Species ID Guides → inverts → arthropods",
     "title": "Lithodid Crab Field Techniques",
-    "section": "arthropods",
-    "url_loc": "../files/SpeciesID/guides/inverts/Lithodid Crabs.pdf",
-    "search_terms": "arthropods",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Lithodid_Crabs.pdf",
+    "search_terms": "arthropods / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → ascidacea",
+    "site_loc": "Species Info → Species ID Guides → inverts → ascidacea",
     "title": "Tunicates of Alaska",
-    "section": "ascidacea",
-    "url_loc": "../files/SpeciesID/guides/inverts/tunicates-of-alaska.pdf",
-    "search_terms": "ascidacea",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/tunicates_of_alaska.pdf",
+    "search_terms": "ascidacea / inverts",
     "source": "guides"
   },
   {
     "site_loc": "Species Info → Species ID Guides → birds",
     "title": "Alaska Seabird Guide",
     "section": "birds",
-    "url_loc": "../files/SpeciesID/guides/birdmammal/AK Seabird Guide.pdf",
+    "url_loc": "../files/speciesID/guides/birdmammal/AK_Seabird_Guide.pdf",
     "search_terms": "birds",
     "source": "guides"
   },
@@ -2833,7 +2785,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → birds",
     "title": "Albatross ID Guide",
     "section": "birds",
-    "url_loc": "../files/SpeciesID/guides/birdmammal/Albatross ID Guide.pdf",
+    "url_loc": "../files/speciesID/guides/birdmammal/Albatross_ID_Guide.pdf",
     "search_terms": "birds",
     "source": "guides"
   },
@@ -2841,7 +2793,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → birds",
     "title": "ESA-listed AK Bird ID",
     "section": "birds",
-    "url_loc": "../files/SpeciesID/guides/birdmammal/ESA-listed AK Bird ID.pdf",
+    "url_loc": "../files/speciesID/guides/birdmammal/ESA_listed_AK_Bird_ID.pdf",
     "search_terms": "birds",
     "source": "guides"
   },
@@ -2849,7 +2801,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → birds",
     "title": "Spectacled Eider Factsheet",
     "section": "birds",
-    "url_loc": "../files/SpeciesID/guides/birdmammal/spectacled_eider_factsheet.pdf",
+    "url_loc": "../files/speciesID/guides/birdmammal/spectacled_eider_factsheet.pdf",
     "search_terms": "birds",
     "source": "guides"
   },
@@ -2857,63 +2809,63 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → birds",
     "title": "Stellers Eider Factsheet",
     "section": "birds",
-    "url_loc": "../files/SpeciesID/guides/birdmammal/Stellers Eider factsheet.pdf",
+    "url_loc": "../files/speciesID/guides/birdmammal/Stellers_Eider_factsheet.pdf",
     "search_terms": "birds",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → cnidaria",
+    "site_loc": "Species Info → Species ID Guides → inverts → cnidaria",
     "title": "**Coral Field Guide (Wilborn et al 2021)**",
-    "section": "cnidaria",
-    "url_loc": "../files/SpeciesID/guides/inverts/Coral field guide2021.pdf",
-    "search_terms": "cnidaria",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Coral_field_guide2021.pdf",
+    "search_terms": "cnidaria / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → cnidaria",
+    "site_loc": "Species Info → Species ID Guides → inverts → cnidaria",
     "title": "AK Coral Guide",
-    "section": "cnidaria",
-    "url_loc": "../files/SpeciesID/guides/inverts/AlaskaCoralguide.pdf",
-    "search_terms": "cnidaria",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/AlaskaCoralguide.pdf",
+    "search_terms": "cnidaria / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → cnidaria",
+    "site_loc": "Species Info → Species ID Guides → inverts → cnidaria",
     "title": "Coral Guide (Stone et al. 2023)",
-    "section": "cnidaria",
-    "url_loc": "../files/SpeciesID/guides/inverts/cnidaria/coral_guide_Stone2023.pdf",
-    "search_terms": "cnidaria",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/cnidaria/coral_guide_Stone2023.pdf",
+    "search_terms": "cnidaria / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → cnidaria",
+    "site_loc": "Species Info → Species ID Guides → inverts → cnidaria",
     "title": "Jellyfish Placard",
-    "section": "cnidaria",
-    "url_loc": "../files/SpeciesID/guides/inverts/Jellyfish placard.pdf",
-    "search_terms": "cnidaria",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Jellyfish_placard.pdf",
+    "search_terms": "cnidaria / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → echinoderms",
+    "site_loc": "Species Info → Species ID Guides → inverts → echinoderms",
     "title": "Arctic Echinodermata Photo Guide",
-    "section": "echinoderms",
-    "url_loc": "../files/SpeciesID/guides/inverts/Echinodermata_Arctic_photoguide_Jan2021.pdf",
-    "search_terms": "echinoderms",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Echinodermata_Arctic_photoguide_Jan2021.pdf",
+    "search_terms": "echinoderms / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → echinoderms",
+    "site_loc": "Species Info → Species ID Guides → inverts → echinoderms",
     "title": "Brittle Stars",
-    "section": "echinoderms",
-    "url_loc": "../files/SpeciesID/guides/inverts/echinoderm/Brittle stars.pdf",
-    "search_terms": "echinoderms",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/echinoderm/Brittle_stars.pdf",
+    "search_terms": "echinoderms / inverts",
     "source": "guides"
   },
   {
     "site_loc": "Species Info → Species ID Guides → fish → Gadidae",
     "title": "Gadid Guide",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/Gadids.pdf",
+    "url_loc": "../files/speciesID/guides/fish/Gadids.pdf",
     "search_terms": "Gadidae / fish",
     "source": "guides"
   },
@@ -2921,7 +2873,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish → Liparidae",
     "title": "Snailfish Guide",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/snailfishes_2022.pdf",
+    "url_loc": "../files/speciesID/guides/fish/snailfishes_2022.pdf",
     "search_terms": "Liparidae / fish",
     "source": "guides"
   },
@@ -2929,7 +2881,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish → Myctophidae",
     "title": "Alaska Lanternfishes",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/AKMyctophidae.pdf",
+    "url_loc": "../files/speciesID/guides/fish/AKMyctophidae.pdf",
     "search_terms": "Myctophidae / fish",
     "source": "guides"
   },
@@ -2937,7 +2889,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish → Pleuronectidae",
     "title": "Flatfish Key",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/Flatfish key.pdf",
+    "url_loc": "../files/speciesID/guides/fish/Flatfish_key.pdf",
     "search_terms": "Pleuronectidae / fish",
     "source": "guides"
   },
@@ -2945,7 +2897,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish → Rajiidae",
     "title": "Skate Egg Case Graph",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/Skate egg case graph.pdf",
+    "url_loc": "../files/speciesID/guides/fish/Skate_egg_case_graph.pdf",
     "search_terms": "Rajiidae / fish",
     "source": "guides"
   },
@@ -2953,7 +2905,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish → Rajiidae",
     "title": "Skate Egg Case Key",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/Skate eggcase key.pdf",
+    "url_loc": "../files/speciesID/guides/fish/Skate_eggcase_key.pdf",
     "search_terms": "Rajiidae / fish",
     "source": "guides"
   },
@@ -2961,7 +2913,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish → Salmonidae",
     "title": "Salmon Guide 2010",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/Salmon Guide 2010.pdf",
+    "url_loc": "../files/speciesID/guides/fish/Salmon_Guide_2010.pdf",
     "search_terms": "Salmonidae / fish",
     "source": "guides"
   },
@@ -2969,7 +2921,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish → Sebastidae",
     "title": "**FMA Rockfish Guide**",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/FMA Rockfish Guide 2016.pdf",
+    "url_loc": "../files/speciesID/guides/fish/FMA_Rockfish_Guide_2016.pdf",
     "search_terms": "Sebastidae / fish",
     "source": "guides"
   },
@@ -2977,7 +2929,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish → Sebastidae",
     "title": "Blackspotted/Rougheye One Pager",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/blackspot_rougheye_printout.pdf",
+    "url_loc": "../files/speciesID/guides/fish/blackspot_rougheye_printout.pdf",
     "search_terms": "Sebastidae / fish",
     "source": "guides"
   },
@@ -2985,7 +2937,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish → Sebastidae",
     "title": "Rockfish Guide",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/Rockfishes TM.pdf",
+    "url_loc": "../files/speciesID/guides/fish/Rockfishes_TM.pdf",
     "search_terms": "Sebastidae / fish",
     "source": "guides"
   },
@@ -2993,7 +2945,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish → Sebastidae",
     "title": "Rougheye Blackspotted Deck",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/RougheyeBspotDeck.pdf",
+    "url_loc": "../files/speciesID/guides/fish/RougheyeBspotDeck.pdf",
     "search_terms": "Sebastidae / fish",
     "source": "guides"
   },
@@ -3001,7 +2953,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish",
     "title": "**AK Fishes Deck Guide**",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/AK Fishes 2024.pdf",
+    "url_loc": "../files/speciesID/guides/fish/AK_Fishes_2024.pdf",
     "search_terms": "fish",
     "source": "guides"
   },
@@ -3009,7 +2961,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish",
     "title": "**FMA Species ID guide**",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/FMA SpeciesID 2019.pdf",
+    "url_loc": "../files/speciesID/guides/fish/FMA_speciesID_2019.pdf",
     "search_terms": "fish",
     "source": "guides"
   },
@@ -3017,7 +2969,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish",
     "title": "AK Fish Distributions (Love et al. 2021)",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/AK fish distributions Love et al. 2021.pdf",
+    "url_loc": "../files/speciesID/guides/fish/AK_fish_distributions_Love_et_al._2021.pdf",
     "search_terms": "fish",
     "source": "guides"
   },
@@ -3025,7 +2977,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish",
     "title": "Biodiversity of Arctic Marine Fishes (Mecklenburg et al. 2011)",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/Mecklenburg2011.pdf",
+    "url_loc": "../files/speciesID/guides/fish/Mecklenburg2011.pdf",
     "search_terms": "fish",
     "source": "guides"
   },
@@ -3033,7 +2985,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish",
     "title": "Chukchi 2012 Fish ID",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/Chukchi 2012 FishID.pdf",
+    "url_loc": "../files/speciesID/guides/fish/Chukchi_2012_FishID.pdf",
     "search_terms": "fish",
     "source": "guides"
   },
@@ -3041,7 +2993,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish",
     "title": "EBS 2012 Fish ID",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/EBS 2012 FishID.pdf",
+    "url_loc": "../files/speciesID/guides/fish/EBS_2012_FishID.pdf",
     "search_terms": "fish",
     "source": "guides"
   },
@@ -3049,7 +3001,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish",
     "title": "Ichthyofaul Baselines in Pacific Arctic Region (Mecklenburg 2015)",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/Mecklenburg2015.pdf",
+    "url_loc": "../files/speciesID/guides/fish/Mecklenburg2015.pdf",
     "search_terms": "fish",
     "source": "guides"
   },
@@ -3065,7 +3017,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish",
     "title": "Pacific Arctic Marine Fishes (Mecklenburg et al. 2016)",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/Atlas 2016.pdf",
+    "url_loc": "../files/speciesID/guides/fish/Atlas_2016.pdf",
     "search_terms": "fish",
     "source": "guides"
   },
@@ -3073,7 +3025,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish",
     "title": "Skates, Sculpins, Smelts AK Field Guide",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/Skates AK field guide.pdf",
+    "url_loc": "../files/speciesID/guides/fish/Skates_AK_field_guide.pdf",
     "search_terms": "fish",
     "source": "guides"
   },
@@ -3081,7 +3033,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish",
     "title": "Species ID Confidence (AI/GOA)",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/Species ID Confidence AIGOA.pdf",
+    "url_loc": "../files/speciesID/guides/fish/Species_ID_Confidence_AIGOA.pdf",
     "search_terms": "fish",
     "source": "guides"
   },
@@ -3089,7 +3041,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish",
     "title": "Species ID Confidence (EBS Slope)",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/Species ID Confidence EBSslope.pdf",
+    "url_loc": "../files/speciesID/guides/fish/Species_ID_Confidence_EBSslope.pdf",
     "search_terms": "fish",
     "source": "guides"
   },
@@ -3097,7 +3049,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → fish",
     "title": "Species ID Confidence (EBS)",
     "section": "fish",
-    "url_loc": "../files/SpeciesID/guides/fish/Species ID Confidence EBS.pdf",
+    "url_loc": "../files/speciesID/guides/fish/Species_ID_Confidence_EBS.pdf",
     "search_terms": "fish",
     "source": "guides"
   },
@@ -3105,7 +3057,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → mammals",
     "title": "Key to Pinnipeds",
     "section": "mammals",
-    "url_loc": "../files/SpeciesID/guides/birdmammal/Key to pinnipeds.pdf",
+    "url_loc": "../files/speciesID/guides/birdmammal/Key_to_pinnipeds.pdf",
     "search_terms": "mammals",
     "source": "guides"
   },
@@ -3113,7 +3065,7 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → mammals",
     "title": "Marine Mammals of Alaska Arctic",
     "section": "mammals",
-    "url_loc": "../files/SpeciesID/guides/birdmammal/MM of Alaska Arctic.pdf",
+    "url_loc": "../files/speciesID/guides/birdmammal/MM_of_Alaska_Arctic.pdf",
     "search_terms": "mammals",
     "source": "guides"
   },
@@ -3121,160 +3073,160 @@ var searchData = [
     "site_loc": "Species Info → Species ID Guides → mammals",
     "title": "North Pacific Right Whale Guide",
     "section": "mammals",
-    "url_loc": "../files/SpeciesID/guides/birdmammal/NPRight Whale Guide.pdf",
+    "url_loc": "../files/speciesID/guides/birdmammal/NPRight_Whale_Guide.pdf",
     "search_terms": "mammals",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → molluscs",
+    "site_loc": "Species Info → Species ID Guides → inverts → molluscs",
     "title": "Arctic Mollusca Photo Guide",
-    "section": "molluscs",
-    "url_loc": "../files/SpeciesID/guides/inverts/Mollusca_Arctic_photoguide_Jan2021.pdf",
-    "search_terms": "molluscs",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Mollusca_Arctic_photoguide_Jan2021.pdf",
+    "search_terms": "molluscs / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → molluscs",
+    "site_loc": "Species Info → Species ID Guides → inverts → molluscs",
     "title": "Ecology of Neptunea Snails",
-    "section": "molluscs",
-    "url_loc": "../files/SpeciesID/guides/inverts/Neptunea.pdf",
-    "search_terms": "molluscs",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Neptunea.pdf",
+    "search_terms": "molluscs / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → molluscs",
+    "site_loc": "Species Info → Species ID Guides → inverts → molluscs",
     "title": "Mollusca Training Presentation",
-    "section": "molluscs",
-    "url_loc": "../files/SpeciesID/guides/inverts/Mollusca training 2012.pdf",
-    "search_terms": "molluscs",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Mollusca_training_2012.pdf",
+    "search_terms": "molluscs / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → molluscs",
+    "site_loc": "Species Info → Species ID Guides → inverts → molluscs",
     "title": "Octopus Sexing",
-    "section": "molluscs",
-    "url_loc": "../files/SpeciesID/guides/inverts/OctopusSex.pdf",
-    "search_terms": "molluscs",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/OctopusSex.pdf",
+    "search_terms": "molluscs / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → molluscs",
+    "site_loc": "Species Info → Species ID Guides → inverts → molluscs",
     "title": "Poster: Chitons of AK",
-    "section": "molluscs",
-    "url_loc": "../files/SpeciesID/guides/inverts/poster chitons of AK.pdf",
-    "search_terms": "molluscs",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/poster_chitons_of_AK.pdf",
+    "search_terms": "molluscs / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → sponges",
+    "site_loc": "Species Info → Species ID Guides → inverts → sponges",
     "title": "Deepwater Sponges of AI",
-    "section": "sponges",
-    "url_loc": "../files/SpeciesID/guides/inverts/Deepwater sponges AI.pdf",
-    "search_terms": "sponges",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Deepwater_sponges_AI.pdf",
+    "search_terms": "sponges / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → sponges",
+    "site_loc": "Species Info → Species ID Guides → inverts → sponges",
     "title": "Sponge Morphotypes",
-    "section": "sponges",
-    "url_loc": "../files/SpeciesID/guides/inverts/Sponge Morphotypes.pdf",
-    "search_terms": "sponges",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Sponge_Morphotypes.pdf",
+    "search_terms": "sponges / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → worms",
+    "site_loc": "Species Info → Species ID Guides → inverts → worms",
     "title": "Arctic Annelidae Photo Guide",
-    "section": "worms",
-    "url_loc": "../files/SpeciesID/guides/inverts/Annelida_Arctic_photoguide_Jan2021.pdf",
-    "search_terms": "worms",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Annelida_Arctic_photoguide_Jan2021.pdf",
+    "search_terms": "worms / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → worms",
+    "site_loc": "Species Info → Species ID Guides → inverts → worms",
     "title": "Benthic Errantiate Polychaetes",
-    "section": "worms",
-    "url_loc": "../files/SpeciesID/guides/inverts/Errantiate Polychaetes.pdf",
-    "search_terms": "worms",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Errantiate_Polychaetes.pdf",
+    "search_terms": "worms / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → worms",
+    "site_loc": "Species Info → Species ID Guides → inverts → worms",
     "title": "Polychaeta of the Far Eastern Seas (subclass Errantiate)",
-    "section": "worms",
-    "url_loc": "../files/SpeciesID/guides/inverts/Errantiate Polychaeta.pdf",
-    "search_terms": "worms",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Errantiate_Polychaeta.pdf",
+    "search_terms": "worms / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → worms",
+    "site_loc": "Species Info → Species ID Guides → inverts → worms",
     "title": "Polychaeta of the Far Eastern Seas (subclass Sedentariate)",
-    "section": "worms",
-    "url_loc": "../files/SpeciesID/guides/inverts/Sedentariate Polychaeta.pdf",
-    "search_terms": "worms",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Sedentariate_Polychaeta.pdf",
+    "search_terms": "worms / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → worms",
+    "site_loc": "Species Info → Species ID Guides → inverts → worms",
     "title": "Polychaetes of BC (Baldwin 2009)",
-    "section": "worms",
-    "url_loc": "../files/SpeciesID/guides/inverts/Polychaetes of BC.pdf",
-    "search_terms": "worms",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Polychaetes_of_BC.pdf",
+    "search_terms": "worms / inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → Inverts",
+    "site_loc": "Species Info → Species ID Guides → inverts",
     "title": "**(old) AK Marine Invertebrates Deck Guide**",
-    "section": "Inverts",
-    "url_loc": "../files/SpeciesID/guides/inverts/AKinverts.pdf",
-    "search_terms": "Inverts",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/AKinverts.pdf",
+    "search_terms": "inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → Inverts",
+    "site_loc": "Species Info → Species ID Guides → inverts",
     "title": "**NEW AK Inverts Vol 1: Shelled Inverts**",
-    "section": "Inverts",
-    "url_loc": "../files/SpeciesID/guides/inverts/invert_guide_vol1.pdf",
-    "search_terms": "Inverts",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/invert_guide_vol1.pdf",
+    "search_terms": "inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → Inverts",
+    "site_loc": "Species Info → Species ID Guides → inverts",
     "title": "**NEW AK Inverts Vol 2: Echinoderms & Gelatinous Inverts**",
-    "section": "Inverts",
-    "url_loc": "../files/SpeciesID/guides/inverts/invert_guide_vol2.pdf",
-    "search_terms": "Inverts",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/invert_guide_vol2.pdf",
+    "search_terms": "inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → Inverts",
+    "site_loc": "Species Info → Species ID Guides → inverts",
     "title": "Alaska Invertebrate Checklist (Drumm et al 2016)",
-    "section": "Inverts",
-    "url_loc": "../files/SpeciesID/guides/inverts/Drumm AKinvertChecklist.pdf",
-    "search_terms": "Inverts",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Drumm_AKinvertChecklist.pdf",
+    "search_terms": "inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → Inverts",
+    "site_loc": "Species Info → Species ID Guides → inverts",
     "title": "Illustrated Keys Pelagic Inverts Vol1",
-    "section": "Inverts",
-    "url_loc": "../files/SpeciesID/guides/inverts/Keys to Free Vol1.pdf",
-    "search_terms": "Inverts",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Keys_to_Free_Vol1.pdf",
+    "search_terms": "inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → Inverts",
+    "site_loc": "Species Info → Species ID Guides → inverts",
     "title": "Illustrated Keys Pelagic Inverts Vol2",
-    "section": "Inverts",
-    "url_loc": "../files/SpeciesID/guides/inverts/Keys to Free Vol2.pdf",
-    "search_terms": "Inverts",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Keys_to_Free_Vol2.pdf",
+    "search_terms": "inverts",
     "source": "guides"
   },
   {
-    "site_loc": "Species Info → Species ID Guides → Inverts",
+    "site_loc": "Species Info → Species ID Guides → inverts",
     "title": "Arctic Misc. Taxa Photo Guide",
-    "section": "Inverts",
-    "url_loc": "../files/SpeciesID/guides/inverts/Misc_taxa_Arctic_photoguide_Jan2021.pdf",
-    "search_terms": "Inverts",
+    "section": "inverts",
+    "url_loc": "../files/speciesID/guides/inverts/Misc_taxa_Arctic_photoguide_Jan2021.pdf",
+    "search_terms": "inverts",
     "source": "guides"
   }
 ];

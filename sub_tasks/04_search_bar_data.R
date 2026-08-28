@@ -19,8 +19,8 @@ search_data_entries <- website_content %>%
 search_data_taxa <- taxa_guides %>%
   mutate(section = ifelse(is.na(section), "Inverts", section),
          site_loc = paste("Species Info → Species ID Guides →", section),
-         site_loc = ifelse(is.na(subsection), site_loc, paste(site_loc, "→", subsection)),
-         search_terms = ifelse(is.na(subsection), section, paste(subsection, "/", section))
+         site_loc = ifelse(is.na(subsection) | section == subsection, site_loc, paste(site_loc, "→", subsection)),
+         search_terms = ifelse(is.na(subsection) | section == subsection, section, paste(subsection, "/", section))
          ) %>%
   select(site_loc, title, section, url_loc, search_terms) %>%
   mutate(source = "guides") %>%
