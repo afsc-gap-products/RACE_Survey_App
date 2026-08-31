@@ -30,7 +30,7 @@ navbar:
     - text: "Safety & Health"
       menu:
         - text: "Emergency Flow Chart"
-          href: "./files/safety_and_health/accidents/accident.htm"
+          href: "../files/safety_and_health/accidents/accident.htm"
         - text: "Ergonomic Resources"
           href: "Safety_&_Health_Ergonomic_Resources.html"
         - text: "Harassment Resources"

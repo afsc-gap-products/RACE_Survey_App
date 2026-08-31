@@ -224,22 +224,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "site_loc": "Field Operations → Deck Lead Resources → Tablets → Barcodes",
-    "title": "ID Automation HC39M Code 39 Barcode (ttf)",
-    "section": "Barcodes",
-    "url_loc": "../files/collections/bluetooth_devices/barcodes/IDAutomationHC39M_Code_39_Barcode.ttf",
-    "search_terms": "Barcodes / Tablets",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → Deck Lead Resources → Tablets → Barcodes",
-    "title": "Length and Specimen Tab Barcodes 5/2017 (xlsx)",
-    "section": "Barcodes",
-    "url_loc": "../files/collections/bluetooth_devices/barcodes/LENG_&_SPEC_TAB_barcodes_2017.xlsx",
-    "search_terms": "Barcodes / Tablets",
-    "source": "entries"
-  },
-  {
     "site_loc": "Field Operations → Deck Lead Resources → Tablets → Tablet Set Up",
     "title": "Samsung Galaxy A7 Lite Tablet User Manual",
     "section": "Tablet Set Up",
@@ -325,14 +309,6 @@ var searchData = [
     "section": "GAP Toolkit",
     "url_loc": "../files/software/computer_programs/gaptools/",
     "search_terms": "GAP Toolkit / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Globe",
-    "title": "GLOBE",
-    "section": "Globe",
-    "url_loc": "../files/software/computer_programs/globe/",
-    "search_terms": "Globe / Computer Programs",
     "source": "entries"
   },
   {
@@ -493,190 +469,6 @@ var searchData = [
     "section": "TimeZero",
     "url_loc": "../files/software/computer_programs/timezero/TimeZero_Quick_Start_Guide.pdf",
     "search_terms": "TimeZero / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse",
-    "title": "GPS \"KickStart\" (if GPS stream suddenly stops)",
-    "section": "Wheelhouse",
-    "url_loc": "../files/software/computer_programs/gps/GPS_kickstart.pdf",
-    "search_terms": "Wheelhouse / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse",
-    "title": "How to Install Wheelhouse Updates",
-    "section": "Wheelhouse",
-    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/wheelhouse_update/Wheelhouse_installing_updates.pdf",
-    "search_terms": "Wheelhouse / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse",
-    "title": "Instructions for extracting GIDES data to insert into wheelhouse",
-    "section": "Wheelhouse",
-    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/InstructionsforExtractingGIDESdatatoInsertintoWHEELHOUSE.docx",
-    "search_terms": "Wheelhouse / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse",
-    "title": "Surface Temperature Algorithm",
-    "section": "Wheelhouse",
-    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/SurfaceTempdocs2013.pdf",
-    "search_terms": "Wheelhouse / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse",
-    "title": "Wheelhouse DB Backup and Restore",
-    "section": "Wheelhouse",
-    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/Instr_reblding_WH_OracleDB.pdf",
-    "search_terms": "Wheelhouse / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse",
-    "title": "Wheelhouse File Formats",
-    "section": "Wheelhouse",
-    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/WH_file_formats.txt",
-    "search_terms": "Wheelhouse / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse - SiRF Demo GPS Fix",
-    "title": "Change_GPScom1to2_marport_comp.pdf",
-    "section": "Wheelhouse - SiRF Demo GPS Fix",
-    "url_loc": "../files/software/computer_programs/gps/sirfdemo_fix/Change_GPScom1to2_marport_comp.pdf",
-    "search_terms": "Wheelhouse - SiRF Demo GPS Fix / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse - SiRF Demo GPS Fix",
-    "title": "Changing boot order.docx",
-    "section": "Wheelhouse - SiRF Demo GPS Fix",
-    "url_loc": "../files/software/computer_programs/gps/sirfdemo_fix/Changing_boot_order.docx",
-    "search_terms": "Wheelhouse - SiRF Demo GPS Fix / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse - SiRF Demo GPS Fix",
-    "title": "Changing Computer boot order.docx",
-    "section": "Wheelhouse - SiRF Demo GPS Fix",
-    "url_loc": "../files/software/computer_programs/gps/sirfdemo_fix/Changing_Computer_boot_order.docx",
-    "search_terms": "Wheelhouse - SiRF Demo GPS Fix / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse - SiRF Demo GPS Fix",
-    "title": "Changing_boot_order.pdf",
-    "section": "Wheelhouse - SiRF Demo GPS Fix",
-    "url_loc": "../files/software/computer_programs/gps/sirfdemo_fix/Changing_boot_order.pdf",
-    "search_terms": "Wheelhouse - SiRF Demo GPS Fix / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse - SiRF Demo GPS Fix",
-    "title": "Changing_COM_port.docx",
-    "section": "Wheelhouse - SiRF Demo GPS Fix",
-    "url_loc": "../files/software/computer_programs/gps/sirfdemo_fix/Changing_COM_port.docx",
-    "search_terms": "Wheelhouse - SiRF Demo GPS Fix / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse - SiRF Demo GPS Fix",
-    "title": "Changing_COM_port.pdf",
-    "section": "Wheelhouse - SiRF Demo GPS Fix",
-    "url_loc": "../files/software/computer_programs/gps/sirfdemo_fix/Changing_COM_port.pdf",
-    "search_terms": "Wheelhouse - SiRF Demo GPS Fix / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse - SiRF Demo GPS Fix",
-    "title": "Sirf demo fix instr.pdf",
-    "section": "Wheelhouse - SiRF Demo GPS Fix",
-    "url_loc": "../files/software/computer_programs/gps/sirfdemo_fix/Sirf_demo_fix_instr.pdf",
-    "search_terms": "Wheelhouse - SiRF Demo GPS Fix / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse - SiRF Demo GPS Fix",
-    "title": "SiRFDemo Guide",
-    "section": "Wheelhouse - SiRF Demo GPS Fix",
-    "url_loc": "../files/software/computer_programs/gps/SiRFDemo_User_Guide.pdf",
-    "search_terms": "Wheelhouse - SiRF Demo GPS Fix / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse and Calypso",
-    "title": "Calypso_2017.1.aliases",
-    "section": "Wheelhouse and Calypso",
-    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/calypso_software/Calypso_2017.1.aliases",
-    "search_terms": "Wheelhouse and Calypso / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse and Calypso",
-    "title": "Calypso_2017.1.exe",
-    "section": "Wheelhouse and Calypso",
-    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/calypso_software/Calypso_2017.1.exe",
-    "search_terms": "Wheelhouse and Calypso / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse and Calypso",
-    "title": "Calypso_2017.1.ini",
-    "section": "Wheelhouse and Calypso",
-    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/calypso_software/Calypso_2017.1.ini",
-    "search_terms": "Wheelhouse and Calypso / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse and Calypso",
-    "title": "How to log a haul with Wheelhouse and Calypso",
-    "section": "Wheelhouse and Calypso",
-    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/Log_hauls_during_survey.pdf",
-    "search_terms": "Wheelhouse and Calypso / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse and Calypso",
-    "title": "lvanlys.dll",
-    "section": "Wheelhouse and Calypso",
-    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/calypso_software/lvanlys.dll",
-    "search_terms": "Wheelhouse and Calypso / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse and Calypso",
-    "title": "Wheelhouse and Calypso Manual",
-    "section": "Wheelhouse and Calypso",
-    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/Wheelhouse_and_Calypso_Manual_v2023.1.pdf",
-    "search_terms": "Wheelhouse and Calypso / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs → Wheelhouse and Calypso",
-    "title": "Wheelhouse and Calypso Training videos",
-    "section": "Wheelhouse and Calypso",
-    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/training_videos",
-    "search_terms": "Wheelhouse and Calypso / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs",
-    "title": "Diagram of Bridge Computer Setup",
-    "section": "",
-    "url_loc": "../files/admin/bridge_computers_setup/bridge_computer_setup.jpg",
-    "search_terms": " / Computer Programs",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → Computer Programs",
-    "title": "Guide to Running Wheelhouse and Calypso for EBS survey",
-    "section": "",
-    "url_loc": "../files/software/computer_programs/calypso_wheelhouse/WheelhouseStepByStep&QuickRef.pdf",
-    "search_terms": " / Computer Programs",
     "source": "entries"
   },
   {
@@ -940,14 +732,6 @@ var searchData = [
     "title": "FPC Talking Points",
     "section": "",
     "url_loc": "../files/admin/Checklist_for_FPC_talk.pdf",
-    "search_terms": " / References",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → FPC Resources → References",
-    "title": "GIS Training",
-    "section": "",
-    "url_loc": "../files/training/2020/GIS_Training_2019.pdf",
     "search_terms": " / References",
     "source": "entries"
   },
@@ -1580,14 +1364,6 @@ var searchData = [
   },
   {
     "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → ES80",
-    "title": "ES60 ES70 Lockup Issue",
-    "section": "ES80",
-    "url_loc": "../files/sensors/es80/GPTlockup-issue.pdf",
-    "search_terms": "ES80 / Sensor/Environmental",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → ES80",
     "title": "ES80 EBS Data Collection Quick Review",
     "section": "ES80",
     "url_loc": "../files/sensors/es80/2026_Quick_review_EBS_AVO_ES80_data_collection.pdf",
@@ -1692,7 +1468,7 @@ var searchData = [
   },
   {
     "site_loc": "Personnel & Travel → Schedules & Contacts → ",
-    "title": "**EMERGENCY NOTIFICATION PLAN**",
+    "title": "files/safety_and_health/EMERGENCY_NOTIFICATION_PLAN_2026.pdf",
     "section": "",
     "url_loc": "../files/safety_and_health/EMERGENCY_NOTIFICATION_PLAN_2026.pdf",
     "search_terms": " / ",
@@ -1800,14 +1576,6 @@ var searchData = [
     "section": "",
     "url_loc": "../files/travel/A_Stranded_NOAA_Scientists_Guide_to_Flight_Cancellations.png",
     "search_terms": " / Travel Resources",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Safety & Health → Emergency Flow Chart → ",
-    "title": "Emergency Flow Chart",
-    "section": "",
-    "url_loc": "../files/safety_and_health/accidents/accident.htm",
-    "search_terms": " / ",
     "source": "entries"
   },
   {
@@ -2183,7 +1951,7 @@ var searchData = [
     "title": "At-Sea Incident Report Form",
     "section": "",
     "subtitle": "e.g., injury or near miss",
-    "url_loc": "../files/safety_and_health/reporting/At_Sea_Incident_Report_Form_fillable.pdf",
+    "url_loc": "../files/safety_and_health/forms/reporting/At_Sea_Incident_Report_Form_fillable.pdf",
     "search_terms": " / At-Sea Injury Forms",
     "source": "entries"
   },
@@ -2191,7 +1959,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → At-Sea Injury Forms",
     "title": "CA-1 and CA-2 Instructions",
     "section": "",
-    "url_loc": "../files/safety_and_health/reporting/Filing_CA_1_and_CA_2_Employee_Instructions.pdf",
+    "url_loc": "../files/safety_and_health/forms/reporting/Filing_CA_1_and_CA_2_Employee_Instructions.pdf",
     "search_terms": " / At-Sea Injury Forms",
     "source": "entries"
   },
@@ -2200,7 +1968,7 @@ var searchData = [
     "title": "CA-1 Reporting an Accident, Injury, or Illness",
     "section": "",
     "subtitle": "i.e., acute illness or injury",
-    "url_loc": "../files/safety_and_health/reporting/Pay_Compensation_Form_Ca_1.pdf",
+    "url_loc": "../files/safety_and_health/forms/reporting/Pay_Compensation_Form_Ca_1.pdf",
     "search_terms": " / At-Sea Injury Forms",
     "source": "entries"
   },
@@ -2209,7 +1977,7 @@ var searchData = [
     "title": "CA-2 Report an Occupational Disease",
     "section": "",
     "subtitle": "i.e., occupational/repetative motion illness/injury",
-    "url_loc": "../files/safety_and_health/reporting/CA_2_Dept._of_Labor_Claim_for_Compensation.pdf",
+    "url_loc": "../files/safety_and_health/forms/reporting/CA_2_Dept._of_Labor_Claim_for_Compensation.pdf",
     "search_terms": " / At-Sea Injury Forms",
     "source": "entries"
   },
@@ -2217,7 +1985,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → At-Sea Injury Forms",
     "title": "CD-137 Report of Incident, Injury, Illness",
     "section": "",
-    "url_loc": "../files/safety_and_health/reporting/cd_137.pdf",
+    "url_loc": "../files/safety_and_health/forms/reporting/cd_137.pdf",
     "search_terms": " / At-Sea Injury Forms",
     "source": "entries"
   },
@@ -2225,7 +1993,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → At-Sea Injury Forms",
     "title": "CD-351 Report of Safety Hazard",
     "section": "",
-    "url_loc": "../files/safety_and_health/reporting/CD_351_report_of_Safety_Hazard.pdf",
+    "url_loc": "../files/safety_and_health/forms/reporting/CD_351_report_of_Safety_Hazard.pdf",
     "search_terms": " / At-Sea Injury Forms",
     "source": "entries"
   },
@@ -2233,7 +2001,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → At-Sea Injury Forms",
     "title": "UW Contractor Injury Report Form",
     "section": "",
-    "url_loc": "../files/safety_and_health/reporting/UW_accident_incident_report.pdf",
+    "url_loc": "../files/safety_and_health/forms/reporting/UW_accident_incident_report.pdf",
     "search_terms": " / At-Sea Injury Forms",
     "source": "entries"
   },
@@ -2241,39 +2009,15 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → At-Sea Injury Forms",
     "title": "Workers Comp Supervisor Completion CA-1",
     "section": "",
-    "url_loc": "../files/safety_and_health/reporting/Workers_Comp_Supr_Completion_CA1.pdf",
+    "url_loc": "../files/safety_and_health/forms/reporting/Workers_Comp_Supr_Completion_CA1.pdf",
     "search_terms": " / At-Sea Injury Forms",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Safety & Health → Illness & Injury Reporting → Covid",
-    "title": "Dutch Harbor SIP Logistics",
-    "section": "",
-    "url_loc": "../files/admin/port_info/Dutch Harbor SIP Logistics.pdf",
-    "search_terms": " / Covid",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Safety & Health → Illness & Injury Reporting → Covid",
-    "title": "Dutch Harbor SIP Logistics Resources",
-    "section": "",
-    "url_loc": "../files/admin/port_info/Dutch Logistics 5-16-21.pdf",
-    "search_terms": " / Covid",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Safety & Health → Illness & Injury Reporting → Covid",
-    "title": "GOA and EBS SIP Guide",
-    "section": "",
-    "url_loc": "../files/admin/port_info/Shelter in Place Guide.pdf",
-    "search_terms": " / Covid",
     "source": "entries"
   },
   {
     "site_loc": "Safety & Health → Illness & Injury Reporting → Vehicular Accidents",
     "title": "SF-91 Vehicle Accident Report",
     "section": "",
-    "url_loc": "../files/safety_and_health/reporting/SF_91.pdf",
+    "url_loc": "../files/safety_and_health/forms/reporting/SF_91.pdf",
     "search_terms": " / Vehicular Accidents",
     "source": "entries"
   },
@@ -2281,7 +2025,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → Vehicular Accidents",
     "title": "SF-94 Witness Statement",
     "section": "",
-    "url_loc": "../files/safety_and_health/reporting/SF_94.pdf",
+    "url_loc": "../files/safety_and_health/forms/reporting/SF_94.pdf",
     "search_terms": " / Vehicular Accidents",
     "source": "entries"
   },
@@ -2289,7 +2033,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → Vehicular Accidents",
     "title": "SF-95 Tort Claim Form",
     "section": "",
-    "url_loc": "../files/safety_and_health/reporting/sf95.pdf",
+    "url_loc": "../files/safety_and_health/forms/reporting/sf95.pdf",
     "search_terms": " / Vehicular Accidents",
     "source": "entries"
   },
@@ -2297,7 +2041,7 @@ var searchData = [
     "site_loc": "Safety & Health → Illness & Injury Reporting → ",
     "title": "Injury Reporting Quick Guide",
     "section": "",
-    "url_loc": "../files/safety_and_health/reporting/AFSC_Injury_Reporting_Guide.pdf",
+    "url_loc": "../files/safety_and_health/forms/reporting/AFSC_Injury_Reporting_Guide.pdf",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -2337,7 +2081,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Manuals",
     "title": "AED Manual",
     "section": "",
-    "url_loc": "../files/safety_and_health/manuals/UserManual_AED_Hart_350P.pdf",
+    "url_loc": "../files/safety_and_health/references/UserManual_AED_Hart_350P.pdf",
     "search_terms": " / Manuals",
     "source": "entries"
   },
@@ -2345,7 +2089,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Manuals",
     "title": "Medical Course Manual",
     "section": "",
-    "url_loc": "../files/safety_and_health/manuals/Two_Day_Med_full_manual.pdf",
+    "url_loc": "../files/safety_and_health/references/Two_Day_Med_full_manual.pdf",
     "search_terms": " / Manuals",
     "source": "entries"
   },
@@ -2353,7 +2097,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Manuals",
     "title": "PLB Manual",
     "section": "",
-    "url_loc": "../files/safety_and_health/manuals/epirbs/aquafix_aquafixman.pdf",
+    "url_loc": "../files/safety_and_health/references/epirbs/aquafix_aquafixman.pdf",
     "search_terms": " / Manuals",
     "source": "entries"
   },
@@ -2377,7 +2121,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources → Forms",
     "title": "Charter Vessel Safety Briefing Form",
     "section": "Forms",
-    "url_loc": "../files/safety_and_health/Charter_Vessel_Safety_Briefing_Form.pdf",
+    "url_loc": "../files/safety_and_health/forms/Charter_Vessel_Safety_Briefing_Form.pdf",
     "search_terms": "Forms / Safety Lead Resources",
     "source": "entries"
   },
@@ -2385,7 +2129,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources → Forms",
     "title": "Emergency Contact Form",
     "section": "Forms",
-    "url_loc": "../files/safety_and_health/Emergency_Contact_Form.pdf",
+    "url_loc": "../files/safety_and_health/forms/Emergency_Contact_Form.pdf",
     "search_terms": "Forms / Safety Lead Resources",
     "source": "entries"
   },
@@ -2393,7 +2137,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources → Forms",
     "title": "Safety Briefing Form",
     "section": "Forms",
-    "url_loc": "../files/safety_and_health/references/Safety_Briefing_form.pdf",
+    "url_loc": "../files/safety_and_health/forms/Safety_Briefing_form.pdf",
     "search_terms": "Forms / Safety Lead Resources",
     "source": "entries"
   },
@@ -2401,7 +2145,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources → Forms",
     "title": "Safety Drill Form",
     "section": "Forms",
-    "url_loc": "../files/safety_and_health/references/Safetydrillform.pdf",
+    "url_loc": "../files/safety_and_health/forms/Safetydrillform.pdf",
     "search_terms": "Forms / Safety Lead Resources",
     "source": "entries"
   },
@@ -2409,7 +2153,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources → Forms",
     "title": "Safety Evaluation Form",
     "section": "Forms",
-    "url_loc": "../files/safety_and_health/references/Safety_Evaluation_Form.pdf",
+    "url_loc": "../files/safety_and_health/forms/Safety_Evaluation_Form.pdf",
     "search_terms": "Forms / Safety Lead Resources",
     "source": "entries"
   },
@@ -2417,7 +2161,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources → Forms",
     "title": "Safety Leader Recording Form",
     "section": "Forms",
-    "url_loc": "../files/safety_and_health/references/Safety_Leader_Personnel_Recording_Form_Fillable.pdf",
+    "url_loc": "../files/safety_and_health/forms/Safety_Leader_Personnel_Recording_Form_Fillable.pdf",
     "search_terms": "Forms / Safety Lead Resources",
     "source": "entries"
   },
@@ -2425,7 +2169,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources",
     "title": "AFSC Code of Conduct",
     "section": "",
-    "url_loc": "../files/safety_and_health/AFSC_Code_of_Conduct.pdf",
+    "url_loc": "../files/safety_and_health/references/AFSC_Code_of_Conduct.pdf",
     "search_terms": " / Safety Lead Resources",
     "source": "entries"
   },
@@ -2433,7 +2177,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources",
     "title": "Safety Leader Checklists",
     "section": "",
-    "url_loc": "../files/safety_and_health/references/Safety_Lead_Checklists.pdf",
+    "url_loc": "../files/safety_and_health/forms/Safety_Lead_Checklists.pdf",
     "search_terms": " / Safety Lead Resources",
     "source": "entries"
   },
@@ -2441,7 +2185,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources",
     "title": "Safety Leader Duties",
     "section": "",
-    "url_loc": "../files/safety_and_health/references/Safety_Lead_Duties.pdf",
+    "url_loc": "../files/safety_and_health/Safety_Lead_Duties.pdf",
     "search_terms": " / Safety Lead Resources",
     "source": "entries"
   },
@@ -2457,7 +2201,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → Safety Lead Resources",
     "title": "Vessel Safety Checklist",
     "section": "",
-    "url_loc": "../files/safety_and_health/references/FV_safety_checklist.pdf",
+    "url_loc": "../files/safety_and_health/forms/FV_safety_checklist.pdf",
     "search_terms": " / Safety Lead Resources",
     "source": "entries"
   },
@@ -2505,7 +2249,7 @@ var searchData = [
     "site_loc": "Safety & Health → Manuals & References → ",
     "title": "Volunteer Service Agreement",
     "section": "",
-    "url_loc": "../files/safety_and_health/manuals/Volunteer_Agreement_non_student.pdf",
+    "url_loc": "../files/safety_and_health/references/Volunteer_Agreement_non_student.pdf",
     "search_terms": " / ",
     "source": "entries"
   },
@@ -2550,14 +2294,6 @@ var searchData = [
     "source": "entries"
   },
   {
-    "site_loc": "Software → Software & drivers → Globe Computer",
-    "title": "GLOBE",
-    "section": "",
-    "url_loc": "../files/software/computer_programs/globe",
-    "search_terms": " / Globe Computer",
-    "source": "entries"
-  },
-  {
     "site_loc": "Software → Software & drivers → Marport Computer",
     "title": "SiRFDemo",
     "section": "",
@@ -2583,19 +2319,11 @@ var searchData = [
     "source": "entries"
   },
   {
-    "site_loc": "Software → Software & drivers → Wheelhouse Computer",
-    "title": "BVDR Converter",
-    "section": "",
-    "url_loc": "../files/software/bvdr_converter/",
-    "search_terms": " / Wheelhouse Computer",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Software → Software & drivers → Wheelhouse Computer",
+    "site_loc": "Software → Software & drivers → Wheelhouse Computers",
     "title": "Hyperterm",
     "section": "",
     "url_loc": "../files/software/drivers/hyperterm/",
-    "search_terms": " / Wheelhouse Computer",
+    "search_terms": " / Wheelhouse Computers",
     "source": "entries"
   },
   {

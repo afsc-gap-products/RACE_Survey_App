@@ -45,7 +45,7 @@ results <- lapply(names(app_links), function(source_name) {
 
 names(results) <- names(app_links)
 
-message("\nBroken links in survey_app_data spreasheet:\n")
+message("\nBroken links in survey_app_data spreadsheet:\n")
 print(results)
 
 
@@ -109,10 +109,10 @@ annual_audit |>
 
 
 
-# # ----------------------------------------------------------------
-# # Helpers to run the subsequent steps 
-# # ----------------------------------------------------------------
-# 
+# ----------------------------------------------------------------
+# Helpers to run the subsequent steps
+# ----------------------------------------------------------------
+
 # # Function to exclude paths matching any of the specified patterns (case-insensitive)
 # exclude_paths <- function(paths, patterns) {
 #   regex <- paste0(tolower(patterns), collapse = "|")
@@ -123,30 +123,27 @@ annual_audit |>
 # # List of manual exclusions for each check (case-insensitive patterns to exclude from each analysis)
 # EXCLUSIONS <- list(
 #   orphan = c(
-#     "Manuals/Globe/",
-#     "Collections/Special projects/",
-#     "SpeciesID/",
-#     "Travel/flight itineraries/",
-#     "Manuals/R/GAPsurvey/",
-#     "Safety/Accidents/slide",
-#     "Metis PC Required Directories and Control Files"
+#     "collections/special_projects/",
+#     "speciesID/fishid",
+#     "travel/flight_itineraries/",
+#     "software/r/gapsurvey",
+#     "safety_and_health/accidents",
+#     "metis/required_files"
 #   ),
-#   
+# 
 #   duplicates = c(
-#     "Manuals/Globe/",
-#     "Manuals/R/GAPsurvey/",
-#     "Collections/Special projects/",
-#     "Manuals/TimeZero/",
-#     "Manuals/Olex and OpenCPN/",
-#     "Prior Years Training Powerpoints and Resources"
+#     "software/r/gapsurvey",
+#     "collections/special_projects/",
+#     "computer_programs/timezero/",
+#     "computer_programs/olex_and_opencpn/",
+#     "training"
 #   ),
-#   
+# 
 #   old_files = c(
-#     "Manuals/Globe/",
-#     "Safety/Accidents/",
-#     "Collections/Special projects/",
-#     "Manuals/GPSs",
-#     "Manuals/Light meters/"
+#     "safety_and_health/accidents",
+#     "collections/special_projects/",
+#     "computer_programs/gps",
+#     "sensors/light_meters"
 #   )
 # )
 # 
@@ -303,7 +300,7 @@ annual_audit |>
 # # ----------------------------------------------------------------
 # # AUDIT SUMMARY
 # # ----------------------------------------------------------------
-#
+# 
 # cat("
 # ============================
 # FILE AUDIT SUMMARY
