@@ -17,7 +17,7 @@ var searchData = [
   },
   {
     "site_loc": "Field Operations → Deck Lead Resources → Deck Sensors → CTD",
-    "title": "All CTD Resources",
+    "title": "All Seabird Resources",
     "section": "CTD",
     "url_loc": "../files/sensors/CTD/",
     "search_terms": "CTD / Deck Sensors",
@@ -163,7 +163,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Sampling Resources → Scales",
     "title": "MSI (Load Cell/Crane Scale) Resources",
     "section": "Scales",
-    "url_loc": "../files/vessel_and_gear/msi_loadcells/",
+    "url_loc": "../files/vessel_and_gear/crane_scales/",
     "search_terms": "Scales / Sampling Resources",
     "source": "entries"
   },
@@ -291,7 +291,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Tablets",
     "title": "Crab App Powerpoints",
     "section": "",
-    "url_loc": "../files/software/tablets/crab_application_training_powerpoints/",
+    "url_loc": "../files/software/tablets/crab_app_powerpoints/",
     "search_terms": " / Tablets",
     "source": "entries"
   },
@@ -2257,6 +2257,7 @@ var searchData = [
     "site_loc": "Software → Software & drivers → Gap Toolkit → GAPsurvey R Package",
     "title": "GAPsurvey Instructions",
     "section": "GAPsurvey R Package",
+    "subtitle": "deprecated 2026",
     "url_loc": "../files/software/r/gapsurvey/docs/index.html",
     "search_terms": "GAPsurvey R Package / Gap Toolkit",
     "source": "entries"

@@ -107,7 +107,7 @@ p {
 # this code parses the names of the flight itineraries in this year's folder and generates a table with the person's name, what legs they are one, and the confirmation code. Files must be named with the following information in this order: NAME_Leg1_2_CONFIRMATIONCODE
 
 options(knitr.kable.NA = "")
-flights_dir <- "../files/Travel/flight itineraries/"
+flights_dir <- "../files/travel/flight_itineraries/"
 ```
 
 
@@ -188,7 +188,7 @@ cat(paste("##", year, "Survey Year"), "\n\n")
 
 for (i in seq_along(survey_keys)) {
 
-  cat(paste0("\n\n### ", survey_labels[i], "\n"))
+  cat(paste0("\n\n### ", toupper(survey_labels[i]), "\n"))
 
   g <- tabl[[survey_keys[i]]] %>% dplyr::select(-Survey)
 

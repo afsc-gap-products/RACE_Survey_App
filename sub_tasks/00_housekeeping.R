@@ -113,47 +113,59 @@ annual_audit |>
 # Helpers to run the subsequent steps
 # ----------------------------------------------------------------
 
-# # Function to exclude paths matching any of the specified patterns (case-insensitive)
-# exclude_paths <- function(paths, patterns) {
-#   regex <- paste0(tolower(patterns), collapse = "|")
-#   paths[!grepl(regex, tolower(paths))]
-# }
-# 
-# 
-# # List of manual exclusions for each check (case-insensitive patterns to exclude from each analysis)
-# EXCLUSIONS <- list(
-#   orphan = c(
-#     "collections/special_projects/",
-#     "speciesID/fishid",
-#     "travel/flight_itineraries/",
-#     "software/r/gapsurvey",
-#     "safety_and_health/accidents",
-#     "metis/required_files"
-#   ),
-# 
-#   duplicates = c(
-#     "software/r/gapsurvey",
-#     "collections/special_projects/",
-#     "computer_programs/timezero/",
-#     "computer_programs/olex_and_opencpn/",
-#     "training"
-#   ),
-# 
-#   old_files = c(
-#     "safety_and_health/accidents",
-#     "collections/special_projects/",
-#     "computer_programs/gps",
-#     "sensors/light_meters"
-#   )
-# )
+# Function to exclude paths matching any of the specified patterns (case-insensitive)
+exclude_paths <- function(paths, patterns) {
+  regex <- paste0(tolower(patterns), collapse = "|")
+  paths[!grepl(regex, tolower(paths))]
+}
+
+
+# List of manual exclusions for each check (case-insensitive patterns to exclude from each analysis)
+EXCLUSIONS <- list(
+  orphan = c(
+    "collections/special_projects/",
+    "speciesID/fishid",
+    "travel/flight_itineraries/",
+    "software/r/gapsurvey",
+    "safety_and_health/accidents",
+    "metis/required_files"
+  ),
+
+  duplicates = c(
+    "software/r/gapsurvey",
+    "collections/special_projects/",
+    "computer_programs/timezero/",
+    "computer_programs/olex_and_opencpn/",
+    "training"
+  ),
+
+  old_files = c(
+    "safety_and_health/accidents",
+    "collections/special_projects/",
+    "computer_programs/gps",
+    "sensors/light_meters"
+  )
+)
+
+
+# ----------------------------------------------------------------
+# STEP 3: Identify paths that exceed character limit
+# ----------------------------------------------------------------
+# Windows limits file paths to 260 characters by default and will not copy files that exceed this limit, therefore the path will break for anyone that tries to copy the survey app to their computer. Rename these files to something shorter or reorganize to shorten the path and that will solve the issue
+
+# All files on disk
+all_files <- list.files("./files/", recursive = TRUE, full.names = TRUE)
+
+exceeding_names <- all_files[nchar(all_files) > 230]
+
+message("\nResources that exceed character limit:")
+exceeding_names
+
 # 
 # 
 # # ----------------------------------------------------------------
-# # STEP 3: Identify files in /files not referenced in the app
+# # STEP 4: Identify files in /files not referenced in the app
 # # ----------------------------------------------------------------
-# 
-# # All files on disk
-# all_files <- list.files("./files/", recursive = TRUE, full.names = TRUE)
 # 
 # # remove hidden/temp/system files
 # all_files_clean <- clean_paths(all_files)
@@ -193,7 +205,7 @@ annual_audit |>
 # 
 # 
 # # ----------------------------------------------------------------
-# # STEP 4: Detect duplicate files by filename (case-insensitive)
+# # STEP 5: Detect duplicate files by filename (case-insensitive)
 # # ----------------------------------------------------------------
 # 
 # # files without manual exclusions for duplicates check
@@ -218,7 +230,7 @@ annual_audit |>
 # 
 # 
 # # ----------------------------------------------------------------
-# # STEP 4b: Detect duplicate files by hashes
+# # STEP 5b: Detect duplicate files by hashes
 # # ----------------------------------------------------------------
 # 
 # file_paths <- paste0("./files/", trim_files)
@@ -274,7 +286,7 @@ annual_audit |>
 # 
 # 
 # # ----------------------------------------------------------------
-# # STEP 5: Files not updated in the past 10 years
+# # STEP 6: Files not updated in the past 10 years
 # # ----------------------------------------------------------------
 # 
 # # File system metadata
