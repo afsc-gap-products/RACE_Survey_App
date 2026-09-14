@@ -3,7 +3,7 @@ output_dir: "docs"
 navbar:
   title: "RACE Survey App"
   logo:
-    image: img/Fish Icon PacCod.png
+    image: img/cod.png
     href: index.html
   search: true
   repository_url: https://github.com/afsc-gap-products/RACE_Survey_App
@@ -59,7 +59,7 @@ navbar:
           href: "Species_Info_Fish_ID_by_Taxa.html"
     - icon: fab fa-github
       href: https://github.com/afsc-gap-products/RACE_Survey_App
-favicon: img/Fish Icon PacCod.png
+favicon: img/cod_favicon.png
 base_url: https://github.com/afsc-gap-products/RACE_Survey_App
 output:
   distill::distill_article:

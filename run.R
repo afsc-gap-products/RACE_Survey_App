@@ -10,8 +10,9 @@ googledrive::drive_auth()
 
 
 ## Import helper functions -----------------------------------------------------
-srvys <- c("NBS", "EBS", "BS", "AI")
 source("sub_tasks/02_functions.R")
+srvys <- check_srvys(c("NBS", "EBS", "BS", "AI"))
+
 
 
 ##   Import and clean up data. If access_to_internet == TRUE, a local copy
@@ -23,7 +24,7 @@ source("sub_tasks/03_data.R")
 
 # Checks to make sure files work and are updated -------------------------------
 
-# Also has commented out code to find duplicate files, clean up further, etc. 
+# Also has a toggle for additional checks find duplicate files, clean up further, etc. Recommend running entire script periodically 
 source("sub_tasks/00_housekeeping.R")
 
 

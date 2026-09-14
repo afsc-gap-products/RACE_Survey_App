@@ -194,3 +194,14 @@ download_web_urls <- function(dat, col_in, dir_out) {
   return(dat)
 }
 
+
+# Quick function to double check correct surveys are selected
+check_srvys <- function(s_list){
+  current_year <- as.numeric(format(Sys.time(), "%Y"))
+  if(current_year %% 2 == 0 && any(grepl("GOA", s_list))){
+    message("This is an even year and GOA instead of AI survey is selected. Are you sure this is correct?\n")
+  }
+  if(current_year %% 2 == 1 && any(grepl("AI", s_list))){
+    message("This is an odd year and AI instead of GOA survey is selected. Are you sure this is correct?\n")
+  }
+}

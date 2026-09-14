@@ -16,6 +16,14 @@ var searchData = [
     "source": "entries"
   },
   {
+    "site_loc": "Field Operations → Deck Lead Resources → Computer Programs → METIS",
+    "title": "Other METIS guides",
+    "section": "METIS",
+    "url_loc": "../files/software/computer_programs/metis/",
+    "search_terms": "METIS / Computer Programs",
+    "source": "entries"
+  },
+  {
     "site_loc": "Field Operations → Deck Lead Resources → Deck Sensors → CTD",
     "title": "All Seabird Resources",
     "section": "CTD",
@@ -41,7 +49,7 @@ var searchData = [
   },
   {
     "site_loc": "Field Operations → Deck Lead Resources → Deck Sensors → CTD",
-    "title": "Seabird Program Resources",
+    "title": "Seabird Software",
     "section": "CTD",
     "url_loc": "../files/sensors/CTD/seabird_programs/",
     "search_terms": "CTD / Deck Sensors",
@@ -97,7 +105,7 @@ var searchData = [
   },
   {
     "site_loc": "Field Operations → Deck Lead Resources → Sampling Resources → Large Catch Resources",
-    "title": "**NEW** Volumetric Worksheet",
+    "title": "Volumetric Worksheet",
     "section": "Large Catch Resources",
     "url_loc": "../files/collections/large_catches/volumetric_worksheet.xlsm",
     "search_terms": "Large Catch Resources / Sampling Resources",
@@ -283,7 +291,7 @@ var searchData = [
     "site_loc": "Field Operations → Deck Lead Resources → Tablets",
     "title": "Catch App Powerpoints",
     "section": "",
-    "url_loc": "../files/software/tablets/training/introtocatchapp_ms_powerpoints/",
+    "url_loc": "../files/software/tablets/training/",
     "search_terms": " / Tablets",
     "source": "entries"
   },
@@ -587,7 +595,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources → Scope Tables",
     "title": "EBS Scope Table",
     "section": "Scope Tables",
-    "url_loc": "../files/admin/scope_tables/EBS_Scope_Table.pdf",
+    "url_loc": "../files/vessel_and_gear/scope_tables/EBS_Scope_Table.pdf",
     "search_terms": "Scope Tables / Net Resources",
     "source": "entries"
   },
@@ -595,7 +603,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources → Scope Tables",
     "title": "GOA / AI Scope Table",
     "section": "Scope Tables",
-    "url_loc": "../files/admin/scope_tables/AI_GOA_Scope_table.pdf",
+    "url_loc": "../files/vessel_and_gear/scope_tables/AI_GOA_Scope_table.pdf",
     "search_terms": "Scope Tables / Net Resources",
     "source": "entries"
   },
@@ -603,7 +611,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources → Scope Tables",
     "title": "NBS Scope Table",
     "section": "Scope Tables",
-    "url_loc": "../files/admin/scope_tables/NBS_Scope_Table.pdf",
+    "url_loc": "../files/vessel_and_gear/scope_tables/NBS_Scope_Table.pdf",
     "search_terms": "Scope Tables / Net Resources",
     "source": "entries"
   },
@@ -611,7 +619,7 @@ var searchData = [
     "site_loc": "Field Operations → FPC Resources → Net Resources → Scope Tables",
     "title": "Scope vs. RAPP Counts",
     "section": "Scope Tables",
-    "url_loc": "../files/admin/scope_tables/Scope_vs_RAPP_counts.pdf",
+    "url_loc": "../files/vessel_and_gear/scope_tables/Scope_vs_RAPP_counts.pdf",
     "search_terms": "Scope Tables / Net Resources",
     "source": "entries"
   },
@@ -1302,7 +1310,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Scientific Projects",
     "title": "Tribuzio Sleeper Shark Sampling Data Sheet",
     "section": "",
-    "url_loc": "../files/collections/special_projects/Sleeper_Shark_sampling_form_with_diagram.pdf",
+    "url_loc": "../files/collections/special_projects/Sleeper_Shark_sampling_form.pdf",
     "search_terms": " / Scientific Projects",
     "source": "entries"
   },
@@ -1468,7 +1476,7 @@ var searchData = [
   },
   {
     "site_loc": "Personnel & Travel → Schedules & Contacts → ",
-    "title": "files/safety_and_health/EMERGENCY_NOTIFICATION_PLAN_2026.pdf",
+    "title": "**Emergency Notification Plan**",
     "section": "",
     "url_loc": "../files/safety_and_health/EMERGENCY_NOTIFICATION_PLAN_2026.pdf",
     "search_terms": " / ",
@@ -1486,7 +1494,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Timekeeping T&A",
     "title": "CD-81 OT Authorization",
     "section": "",
-    "url_loc": "../files/travel/timekeeping/CD_81_OT_Authorization.pdf",
+    "url_loc": "../files/admin/timekeeping/CD_81_OT_Authorization.pdf",
     "search_terms": " / Timekeeping T&A",
     "source": "entries"
   },
@@ -1502,7 +1510,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Timekeeping T&A",
     "title": "Comp Time Travel Guide",
     "section": "",
-    "url_loc": "../files/travel/timekeeping/comptime_travel_guide.pdf",
+    "url_loc": "../files/admin/timekeeping/comptime_travel_guide.pdf",
     "search_terms": " / Timekeeping T&A",
     "source": "entries"
   },
@@ -1510,7 +1518,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Timekeeping T&A",
     "title": "Form OPM-71",
     "section": "",
-    "url_loc": "../files/travel/timekeeping/opm71.pdf",
+    "url_loc": "../files/admin/timekeeping/opm71.pdf",
     "search_terms": " / Timekeeping T&A",
     "source": "entries"
   },
@@ -1518,15 +1526,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Timekeeping T&A",
     "title": "Pay Periods",
     "section": "",
-    "url_loc": "../files/travel/timekeeping/pay_periods.pdf",
-    "search_terms": " / Timekeeping T&A",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Personnel & Travel → Travel & Timekeeping → Timekeeping T&A",
-    "title": "RACE At Sea T&A Readme",
-    "section": "",
-    "url_loc": "../files/travel/timekeeping/RACE_AT_SEA_T&A_READ_ME.pdf",
+    "url_loc": "../files/admin/timekeeping/pay_periods.pdf",
     "search_terms": " / Timekeeping T&A",
     "source": "entries"
   },
@@ -1534,7 +1534,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Timekeeping T&A",
     "title": "RACE At Sea-Timesheet",
     "section": "",
-    "url_loc": "../files/travel/timekeeping/Name_PP_RACE_at_sea_timesheet_2026.xlsx",
+    "url_loc": "../files/admin/timekeeping/Name_PP_RACE_at_sea_timesheet_2026.xlsx",
     "search_terms": " / Timekeeping T&A",
     "source": "entries"
   },
@@ -1550,7 +1550,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Travel Resources → Rental Cars",
     "title": "Rental Car Procedures AK",
     "section": "Rental Cars",
-    "url_loc": "../files/travel/Travel_Advisory_08_6_Rental_Car_Procedures_in_Alaska.pdf",
+    "url_loc": "../files/travel/Rental_Car_Procedures_in_Alaska.pdf",
     "search_terms": "Rental Cars / Travel Resources",
     "source": "entries"
   },
@@ -1735,6 +1735,14 @@ var searchData = [
     "title": "Educational Resources",
     "section": "",
     "url_loc": "../files/safety_and_health/ergonomics/educational_resources/",
+    "search_terms": " / ",
+    "source": "entries"
+  },
+  {
+    "site_loc": "Safety & Health → Ergonomic Resources → ",
+    "title": "One Pagers",
+    "section": "",
+    "url_loc": "../files/safety_and_health/ergonomics/one_pagers/",
     "search_terms": " / ",
     "source": "entries"
   },
