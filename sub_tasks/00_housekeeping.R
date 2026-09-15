@@ -12,11 +12,6 @@
 # ================================================================
 
 
-# OPTION FOR USERS: Set to TRUE if you want to run the full audit 
-# (Steps 5-7: Orphans, Duplicates, and 10-Year Old Files)
-RUN_FULL_AUDIT <- FALSE 
-
-
 # ----------------------------------------------------------------
 # REPORT INITIALIZATION HELPERS
 # ----------------------------------------------------------------
@@ -71,7 +66,7 @@ EXCLUSIONS <- list(
 )
 
 current_year <- format(Sys.Date(), "%Y")
-target_year  <- as.numeric(current_year) - 1
+last_year  <- as.numeric(current_year) - 1
 
 # ================================================================
 # START OF REPORT
@@ -145,12 +140,13 @@ if (exists("access_to_internet") && access_to_internet) {
       status_flag = dplyr::case_when(
         !exists ~ "missing",
         year != current_year ~ "stale",
+        grepl(last_year, path) ~ "outdated link",
         TRUE ~ "current"
       )
     )
   
   annual_audit_broken <- annual_audit |>
-    dplyr::filter(status_flag != "current") |>
+    dplyr::filter(status_flag != "current" & grepl("/", path)) |>
     dplyr::select(file, path, importance, status, status_flag, modified)
   
   if (nrow(annual_audit_broken) > 0) {
@@ -185,19 +181,19 @@ if (length(exceeding_names) > 0) {
 # ----------------------------------------------------------------
 add_section("4. Documents Needing Annual Rollover")
 
-files_last_year <- all_files[grepl(target_year, basename(all_files)) &
-                               !grepl(paste0("/", target_year, "/"), all_files)]
+files_last_year <- all_files[grepl(last_year, basename(all_files)) &
+                               !grepl(paste0("/", last_year, "/"), all_files)]
 
 if (length(files_last_year) > 0) {
-  print_status("WARN", sprintf("Found %d file(s) on disk referencing %d:", length(files_last_year), target_year))
+  print_status("WARN", sprintf("Found %d file(s) on disk referencing %d:", length(files_last_year), last_year))
   print(files_last_year)
 } else {
   print_status("PASS", "No disk files found needing year updates.")
 }
 
-names_last_year <- website_content[grepl(target_year, website_content$title), 2:6]
+names_last_year <- website_content[grepl(last_year, website_content$title), 2:6]
 if (nrow(names_last_year) > 0) {
-  print_status("WARN", sprintf("Found %d website content title(s) referencing %d:", nrow(names_last_year), target_year))
+  print_status("WARN", sprintf("Found %d website content title(s) referencing %d:", nrow(names_last_year), last_year))
   print(as.data.frame(names_last_year), row.names = FALSE)
 } else {
   print_status("PASS", "No website titles found needing year updates.")
@@ -317,7 +313,7 @@ if (RUN_FULL_AUDIT) {
   # ----------------------------------------------------------------
   # STEP 7: Files >10 Years Old
   # ----------------------------------------------------------------
-  add_section("7. Stale Files (>10 Years Old)")
+  add_section("7. Stale Files (>5 Years Old)")
   
   all_file_info <- file.info(all_files, ignore.case = TRUE)
   all_file_info <- data.frame(all_file_info) |>
@@ -326,7 +322,7 @@ if (RUN_FULL_AUDIT) {
   
   old_files <- all_file_info |>
     dplyr::mutate(year = as.numeric(format(mtime, "%Y"))) |>
-    dplyr::filter(as.numeric(current_year) - year > 10) |>
+    dplyr::filter(as.numeric(current_year) - year > 5) |>
     dplyr::select(path, year) |>
     dplyr::arrange(year) |>
     dplyr::filter(!grepl(
@@ -335,10 +331,10 @@ if (RUN_FULL_AUDIT) {
     ))
   
   if (nrow(old_files) > 0) {
-    print_status("WARN", sprintf("Found %d files modified over 10 years ago:", nrow(old_files)))
+    print_status("WARN", sprintf("Found %d files modified over 5 years ago:", nrow(old_files)))
     print(as.data.frame(old_files), row.names = FALSE)
   } else {
-    print_status("PASS", "No stale (>10yr) files found.")
+    print_status("PASS", "No stale (>5yr) files found.")
   }
   
 } else {

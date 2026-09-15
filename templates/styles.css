@@ -2,6 +2,10 @@
   font-size: 14px;
 }
 
+.distill-site-header.responsive {
+  min-height: 50px !important; 
+}
+
 /* ================================
    NAVBAR
    ================================ */

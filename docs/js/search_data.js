@@ -25,7 +25,7 @@ var searchData = [
   },
   {
     "site_loc": "Field Operations → Deck Lead Resources → Deck Sensors → CTD",
-    "title": "All Seabird Resources",
+    "title": "All CTD Resources",
     "section": "CTD",
     "url_loc": "../files/sensors/CTD/",
     "search_terms": "CTD / Deck Sensors",
@@ -49,7 +49,7 @@ var searchData = [
   },
   {
     "site_loc": "Field Operations → Deck Lead Resources → Deck Sensors → CTD",
-    "title": "Seabird Software",
+    "title": "All Seabird Resources",
     "section": "CTD",
     "url_loc": "../files/sensors/CTD/seabird_programs/",
     "search_terms": "CTD / Deck Sensors",
@@ -137,7 +137,7 @@ var searchData = [
   },
   {
     "site_loc": "Field Operations → Deck Lead Resources → Sampling Resources → Large Catch Resources",
-    "title": "Volumetric Sampling Form",
+    "title": "Volumetric Sampling Form (EBS)",
     "section": "Large Catch Resources",
     "url_loc": "../files/collections/large_catches/Volumetric_Sampling_Form.pdf",
     "search_terms": "Large Catch Resources / Sampling Resources",
@@ -208,99 +208,99 @@ var searchData = [
     "source": "entries"
   },
   {
-    "site_loc": "Field Operations → Deck Lead Resources → Tablets → Barcodes",
+    "site_loc": "Field Operations → Deck Lead Resources → Tablets/Wands → Barcodes",
     "title": "1-20 Barcode Numbers (xlsx)",
     "section": "Barcodes",
     "url_loc": "../files/collections/bluetooth_devices/barcodes/1_120_bar_code_numbers.xlsx",
-    "search_terms": "Barcodes / Tablets",
+    "search_terms": "Barcodes / Tablets/Wands",
     "source": "entries"
   },
   {
-    "site_loc": "Field Operations → Deck Lead Resources → Tablets → Barcodes",
+    "site_loc": "Field Operations → Deck Lead Resources → Tablets/Wands → Barcodes",
     "title": "1-20 Barcodes (pdf)",
     "section": "Barcodes",
     "url_loc": "../files/collections/bluetooth_devices/barcodes/1_120_barcode_codes.pdf",
-    "search_terms": "Barcodes / Tablets",
+    "search_terms": "Barcodes / Tablets/Wands",
     "source": "entries"
   },
   {
-    "site_loc": "Field Operations → Deck Lead Resources → Tablets → Barcodes",
+    "site_loc": "Field Operations → Deck Lead Resources → Tablets/Wands → Barcodes",
     "title": "100-199 Barcodes (pdf)",
     "section": "Barcodes",
     "url_loc": "../files/collections/bluetooth_devices/barcodes/Big_length_barcodes_2024.pdf",
-    "search_terms": "Barcodes / Tablets",
+    "search_terms": "Barcodes / Tablets/Wands",
     "source": "entries"
   },
   {
-    "site_loc": "Field Operations → Deck Lead Resources → Tablets → Tablet Set Up",
+    "site_loc": "Field Operations → Deck Lead Resources → Tablets/Wands → Tablet Set Up",
     "title": "Samsung Galaxy A7 Lite Tablet User Manual",
     "section": "Tablet Set Up",
     "url_loc": "../files/software/tablets/Samsung_Galaxy_A7_manual.pdf",
-    "search_terms": "Tablet Set Up / Tablets",
+    "search_terms": "Tablet Set Up / Tablets/Wands",
     "source": "entries"
   },
   {
-    "site_loc": "Field Operations → Deck Lead Resources → Tablets → Tablet Set Up",
+    "site_loc": "Field Operations → Deck Lead Resources → Tablets/Wands → Tablet Set Up",
     "title": "Sending Tablet Files via WiFi",
     "section": "Tablet Set Up",
     "url_loc": "../files/software/tablets/Sending_Tablet_Files_Via_WiFi.pdf",
-    "search_terms": "Tablet Set Up / Tablets",
+    "search_terms": "Tablet Set Up / Tablets/Wands",
     "source": "entries"
   },
   {
-    "site_loc": "Field Operations → Deck Lead Resources → Tablets → Tablet Set Up",
+    "site_loc": "Field Operations → Deck Lead Resources → Tablets/Wands → Tablet Set Up",
     "title": "Setting Up Maturity Collection",
     "section": "Tablet Set Up",
     "url_loc": "../files/software/tablets/BT_Survey_Maturity_Instructions.pdf",
-    "search_terms": "Tablet Set Up / Tablets",
+    "search_terms": "Tablet Set Up / Tablets/Wands",
     "source": "entries"
   },
   {
-    "site_loc": "Field Operations → Deck Lead Resources → Tablets → Tablet Set Up",
+    "site_loc": "Field Operations → Deck Lead Resources → Tablets/Wands → Tablet Set Up",
     "title": "Tablet Remote Access Documentation",
     "section": "Tablet Set Up",
     "url_loc": "../files/software/tablets/Tablet_Remote_Access_Documentation.pdf",
-    "search_terms": "Tablet Set Up / Tablets",
+    "search_terms": "Tablet Set Up / Tablets/Wands",
     "source": "entries"
   },
   {
-    "site_loc": "Field Operations → Deck Lead Resources → Tablets → Wands",
+    "site_loc": "Field Operations → Deck Lead Resources → Tablets/Wands → Wands",
     "title": "Wand Manual",
     "section": "Wands",
     "url_loc": "../files/collections/bluetooth_devices/WWR2900_WandManual.pdf",
-    "search_terms": "Wands / Tablets",
+    "search_terms": "Wands / Tablets/Wands",
     "source": "entries"
   },
   {
-    "site_loc": "Field Operations → Deck Lead Resources → Tablets → Wands",
+    "site_loc": "Field Operations → Deck Lead Resources → Tablets/Wands → Wands",
     "title": "Wand Pairing Barcodes (old)",
     "section": "Wands",
     "url_loc": "../files/collections/bluetooth_devices/wand_pairing_instructions_2021.pdf",
-    "search_terms": "Wands / Tablets",
+    "search_terms": "Wands / Tablets/Wands",
     "source": "entries"
   },
   {
-    "site_loc": "Field Operations → Deck Lead Resources → Tablets",
+    "site_loc": "Field Operations → Deck Lead Resources → Tablets/Wands",
     "title": "Caliper Digimatic Bluetooth Adapter Instructions",
     "section": "",
     "url_loc": "../files/collections/bluetooth_devices/Caliper_Digimatic_Bluetooth_Adapter_instructions.pdf",
-    "search_terms": " / Tablets",
+    "search_terms": " / Tablets/Wands",
     "source": "entries"
   },
   {
-    "site_loc": "Field Operations → Deck Lead Resources → Tablets",
+    "site_loc": "Field Operations → Deck Lead Resources → Tablets/Wands",
     "title": "Catch App Powerpoints",
     "section": "",
     "url_loc": "../files/software/tablets/training/",
-    "search_terms": " / Tablets",
+    "search_terms": " / Tablets/Wands",
     "source": "entries"
   },
   {
-    "site_loc": "Field Operations → Deck Lead Resources → Tablets",
+    "site_loc": "Field Operations → Deck Lead Resources → Tablets/Wands",
     "title": "Crab App Powerpoints",
     "section": "",
     "url_loc": "../files/software/tablets/crab_app_powerpoints/",
-    "search_terms": " / Tablets",
+    "search_terms": " / Tablets/Wands",
     "source": "entries"
   },
   {
@@ -1035,6 +1035,14 @@ var searchData = [
     "source": "entries"
   },
   {
+    "site_loc": "Field Operations → General → Vessel Inventory",
+    "title": "Ergonomic Kit",
+    "section": "",
+    "url_loc": "../files/safety_and_health/ergonomics/one_pagers/Ergonomic kit - whats in it.pdf",
+    "search_terms": " / Vessel Inventory",
+    "source": "entries"
+  },
+  {
     "site_loc": "Field Operations → Sampling & Collections → Biological → Food Habits (Stomachs)",
     "title": "GOA / AI Stomach Collections",
     "section": "Food Habits (Stomachs)",
@@ -1126,7 +1134,7 @@ var searchData = [
     "site_loc": "Field Operations → Sampling & Collections → Biological → Otoliths",
     "title": "Otolith Label Maker",
     "section": "Otoliths",
-    "url_loc": "../files/admin/forms/Otolith_Label_Maker.xls",
+    "url_loc": "../files/admin/forms/Otolith_Label_Maker.xlsm",
     "search_terms": "Otoliths / Biological",
     "source": "entries"
   },
@@ -1388,14 +1396,6 @@ var searchData = [
   },
   {
     "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → ES80",
-    "title": "ES80 Training Slides",
-    "section": "ES80",
-    "url_loc": "../files/sensors/es80/2025_ES80_data_collection.pdf",
-    "search_terms": "ES80 / Sensor/Environmental",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Field Operations → Sampling & Collections → Sensor/Environmental → ES80",
     "title": "Forms",
     "section": "ES80",
     "url_loc": "../files/sensors/es80/forms/",
@@ -1518,6 +1518,7 @@ var searchData = [
     "site_loc": "Personnel & Travel → Travel & Timekeeping → Timekeeping T&A",
     "title": "Form OPM-71",
     "section": "",
+    "subtitle": "Request for leave",
     "url_loc": "../files/admin/timekeeping/opm71.pdf",
     "search_terms": " / Timekeeping T&A",
     "source": "entries"
@@ -1731,6 +1732,14 @@ var searchData = [
     "source": "entries"
   },
   {
+    "site_loc": "Safety & Health → Ergonomic Resources → Warm Up Programs",
+    "title": "Recommended Exercises",
+    "section": "",
+    "url_loc": "../files/safety_and_health/ergonomics/one_pagers/Recommended_exercises.pdf",
+    "search_terms": " / Warm Up Programs",
+    "source": "entries"
+  },
+  {
     "site_loc": "Safety & Health → Ergonomic Resources → ",
     "title": "Educational Resources",
     "section": "",
@@ -1772,7 +1781,7 @@ var searchData = [
   },
   {
     "site_loc": "Safety & Health → Harassment Resources → ",
-    "title": "Harassment Video: Fostering a Respectful Work Environment",
+    "title": "**SASH Video: Fostering a Respectful Work Environment**",
     "section": "",
     "url_loc": "../files/safety_and_health/harassment/Fostering_a_Respectful_Work_Environment.mp4",
     "search_terms": " / ",
@@ -2015,7 +2024,7 @@ var searchData = [
   },
   {
     "site_loc": "Safety & Health → Illness & Injury Reporting → At-Sea Injury Forms",
-    "title": "Workers Comp Supervisor Completion CA-1",
+    "title": "Supervisor Guidance for CA-1",
     "section": "",
     "url_loc": "../files/safety_and_health/forms/reporting/Workers_Comp_Supr_Completion_CA1.pdf",
     "search_terms": " / At-Sea Injury Forms",
@@ -2262,12 +2271,11 @@ var searchData = [
     "source": "entries"
   },
   {
-    "site_loc": "Software → Software & drivers → Gap Toolkit → GAPsurvey R Package",
-    "title": "GAPsurvey Instructions",
-    "section": "GAPsurvey R Package",
-    "subtitle": "deprecated 2026",
-    "url_loc": "../files/software/r/gapsurvey/docs/index.html",
-    "search_terms": "GAPsurvey R Package / Gap Toolkit",
+    "site_loc": "Software → Software & drivers → Custom Gap Tools → Tablets",
+    "title": "Tablet Apps (.apk)",
+    "section": "Tablets",
+    "url_loc": "../files/software/tablets/tablet_apks/",
+    "search_terms": "Tablets / Custom Gap Tools",
     "source": "entries"
   },
   {
@@ -2288,9 +2296,26 @@ var searchData = [
   },
   {
     "site_loc": "Software → Software & drivers → General Software",
+    "title": "Hyperterminal",
+    "section": "",
+    "url_loc": "../files/software/drivers/hyperterm/",
+    "search_terms": " / General Software",
+    "source": "entries"
+  },
+  {
+    "site_loc": "Software → Software & drivers → General Software",
     "title": "Network Time Sync",
     "section": "",
     "url_loc": "../files/software/drivers/network_time_sync/",
+    "search_terms": " / General Software",
+    "source": "entries"
+  },
+  {
+    "site_loc": "Software → Software & drivers → General Software",
+    "title": "SiRFDemo",
+    "section": "",
+    "subtitle": "Software to configure GPS",
+    "url_loc": "../files/software/computer_programs/gps",
     "search_terms": " / General Software",
     "source": "entries"
   },
@@ -2303,36 +2328,12 @@ var searchData = [
     "source": "entries"
   },
   {
-    "site_loc": "Software → Software & drivers → Marport Computer",
-    "title": "SiRFDemo",
-    "section": "",
-    "url_loc": "../files/software/computer_programs/gps",
-    "search_terms": " / Marport Computer",
-    "source": "entries"
-  },
-  {
     "site_loc": "Software → Software & drivers → R Resources",
     "title": "R, R Studio, and RTools",
     "section": "",
     "subtitle": "Tarballs for required R packages",
     "url_loc": "../files/software/r",
     "search_terms": " / R Resources",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Software → Software & drivers → Tablets",
-    "title": "Tablet Apps (.apk)",
-    "section": "",
-    "url_loc": "../files/software/tablets/tablet_apks/",
-    "search_terms": " / Tablets",
-    "source": "entries"
-  },
-  {
-    "site_loc": "Software → Software & drivers → Wheelhouse Computers",
-    "title": "Hyperterm",
-    "section": "",
-    "url_loc": "../files/software/drivers/hyperterm/",
-    "search_terms": " / Wheelhouse Computers",
     "source": "entries"
   },
   {

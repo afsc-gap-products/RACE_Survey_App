@@ -11,7 +11,7 @@ googledrive::drive_auth()
 
 ## Import helper functions -----------------------------------------------------
 source("sub_tasks/02_functions.R")
-srvys <- check_srvys(c("NBS", "EBS", "BS", "AI"))
+check_srvys(srvys <- c("NBS", "EBS", "BS", "AI"))
 
 
 
@@ -24,8 +24,11 @@ source("sub_tasks/03_data.R")
 
 # Checks to make sure files work and are updated -------------------------------
 
-# Also has a toggle for additional checks find duplicate files, clean up further, etc. Recommend running entire script periodically 
+# OPTION FOR USERS: Set to TRUE if you want to run the full audit 
+# (Steps 5-7: Orphans, Duplicates, and 5-Year Old Files)
+RUN_FULL_AUDIT <- FALSE 
 source("sub_tasks/00_housekeeping.R")
+
 
 
 ## Create search bar data ------------------------------------------------------

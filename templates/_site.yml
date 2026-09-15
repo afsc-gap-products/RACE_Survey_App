@@ -48,7 +48,7 @@ navbar:
     - text: "Species Info"
       menu:
         - text: "Codebook"
-          href: "./files/admin/survey_manuals/SpeciesCodeManual.pdf"
+          href: "../files/admin/survey_manuals/SpeciesCodeManual.pdf"
         - text: "Protected Species"
           href: "Species_Info_Protected_Species.html"
         - text: "Minimum ID Table"
